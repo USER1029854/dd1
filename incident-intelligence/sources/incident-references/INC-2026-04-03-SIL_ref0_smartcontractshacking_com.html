@@ -1,0 +1,2691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+<!-- Google tag (gtag.js) - Deferred for performance -->
+<script type="1ca06aafec8987db8e49a288-text/javascript">
+  // Defer GTM initialization until after page is interactive
+  // Uses requestIdleCallback with 2s fallback for older browsers
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  function initGTM() {
+    // Prevent double initialization
+    if (window._gtmLoaded) return;
+    window._gtmLoaded = true;
+
+    // Load GTM script
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R4MF4D13GB';
+    document.head.appendChild(s);
+
+    // Initialize gtag
+    gtag('js', new Date());
+    gtag('config', 'G-R4MF4D13GB', {
+      'send_page_view': true,
+      'transport_type': 'beacon'
+    });
+  }
+
+  // Schedule GTM load after page is interactive
+  if ('requestIdleCallback' in window) {
+    // Use requestIdleCallback for optimal timing (when browser is idle)
+    requestIdleCallback(function() {
+      setTimeout(initGTM, 2000);
+    }, { timeout: 4000 });
+  } else {
+    // Fallback: load after 2.5s delay for older browsers
+    window.addEventListener('load', function() {
+      setTimeout(initGTM, 2500);
+    });
+  }
+</script>
+<!-- Contentsquare - data-cfasync="false" prevents Cloudflare Rocket Loader from deferring this script -->
+<script async data-cfasync="false" src="https://t.contentsquare.net/uxa/58ab0602c7400.js"></script>
+<!-- Mixpanel - Deferred for performance (similar to GA pattern) -->
+<script type="1ca06aafec8987db8e49a288-text/javascript">
+  function initMixpanel() {
+    // Prevent double initialization
+    if (window._mixpanelLoaded) return;
+    window._mixpanelLoaded = true;
+
+    (function(e,c){if(!c.__SV){var l,h;window.mixpanel=c;c._i=[];c.init=function(q,r,f){function t(d,a){var g=a.split(".");2==g.length&&(d=d[g[0]],a=g[1]);d[a]=function(){d.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";b.people=b.people||[];b.toString=function(d){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);d||(a+=" (stub)");return a};b.people.toString=function(){return b.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+    for(h=0;h<l.length;h++)t(b,l[h]);var n="set set_once union unset remove delete".split(" ");b.get_group=function(){function d(p){a[p]=function(){b.push([g,[p].concat(Array.prototype.slice.call(arguments,0))])}}for(var a={},g=["get_group"].concat(Array.prototype.slice.call(arguments,0)),m=0;m<n.length;m++)d(n[m]);return a};c._i.push([q,r,f])};c.__SV=1.2;var k=e.createElement("script");k.type="text/javascript";k.async=!0;k.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===
+    e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=e.getElementsByTagName("script")[0];e.parentNode.insertBefore(k,e)}})(document,window.mixpanel||[]);
+
+    mixpanel.init('e5b488f19b6a08944d17016b3a8ef4ea', {
+      autocapture: true,
+      record_sessions_percent: 15,
+      api_host: 'https://api-eu.mixpanel.com',
+    });
+  }
+
+  // Schedule Mixpanel load after page is interactive (non-blocking)
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(function() {
+      setTimeout(initMixpanel, 2000);
+    }, { timeout: 4000 });
+  } else {
+    window.addEventListener('load', function() {
+      setTimeout(initMixpanel, 2500);
+    });
+  }
+</script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="e099069cefd3ef1e7bc1cd435e9088b47bf48ec7df5e3e48e0926f143d5dba12">
+
+
+<link rel="canonical" href="https://smartcontractshacking.com/hacks/silo-v2-hack-2026" />
+
+
+
+
+
+<meta name="description" content="Details on the Silo V2 hack (April 2026): $392K was lost via Misconfigured Oracle Exploit / Oracle Misconfiguration. Explore attack technique, PoCs, and how to prevent similar exploits.">
+<meta name="keywords" content="smart contract hacking, smart contract auditing, smart contract auditor, smart contract auditing course, smart contract auditor certificate, smart contract hacker certificate, hack smart contracts, blockchain security, JohnnyTime">
+
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<title>Silo V2 Hack (2026) - $392K Lost | Smart Contract Hacking</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+<link rel="shortcut icon" href="/static/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+
+<!-- Preconnect to third-party origins (performance optimization) -->
+<link rel="preconnect" href="https://www.youtube.com" crossorigin>
+
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+
+
+<meta name="recaptcha-site-key" content="6LciACQsAAAAAFq1GlPVQI_JqXuIOoHtmwOew6GA">
+<script defer src="https://www.google.com/recaptcha/api.js?render=6LciACQsAAAAAFq1GlPVQI_JqXuIOoHtmwOew6GA" type="1ca06aafec8987db8e49a288-text/javascript"></script>
+
+
+<link rel="preconnect" href="https://t.contentsquare.net" crossorigin>
+<link rel="preconnect" href="https://cdn.mxpnl.com" crossorigin>
+<link rel="preconnect" href="https://api-eu.mixpanel.com" crossorigin>
+
+<link rel="preconnect" href="https://buy.stripe.com" crossorigin>
+<link rel="preconnect" href="https://www.paypal.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.youtube.com">
+<link rel="dns-prefetch" href="https://i.ytimg.com">
+
+<!-- Fonts: Self-hosted WOFF2 with preload for fast rendering -->
+<link rel="preload" href="/static/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+<link rel="preload" href="/static/fonts/sora.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+
+<!-- Critical CSS: Inlined for immediate render (prevents FOUC)
+     Loaded from external file for maintainability, but rendered inline for performance
+     Includes: font-face declarations, CSS variables, reset, hero, navbar, buttons -->
+<style>
+/* Critical CSS - Inlined for above-the-fold content
+ * Phase 2 Performance Optimization
+ * Includes: Font-face declarations, CSS variables, reset, body, hero, navbar, buttons
+ * This prevents FOUC (Flash of Unstyled Content) on initial page load
+ */
+
+/* ===========================================
+   Font-face Declarations (inlined from fonts.css)
+   Includes metric overrides to prevent CLS
+   =========================================== */
+
+/* Manrope Variable Font - supports weights 300-800 */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+    src: url("/static/fonts/manrope.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  /* Font metric overrides to match fallback and prevent CLS */
+  size-adjust: 100%;
+  ascent-override: 95%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+/* Sora Variable Font - supports weights 400-800 */
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+    src: url("/static/fonts/sora.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  /* Font metric overrides to match fallback and prevent CLS */
+  size-adjust: 100%;
+  ascent-override: 95%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+/* ===========================================
+   CSS Variables
+   =========================================== */
+:root {
+    --dark-bg: #1e1e2e;
+    --darker-bg: #161622;
+    --accent-primary: #a855f7;
+    --accent-primary-strong: #c084fc;
+    --accent-primary-soft: rgba(168, 85, 247, 0.12);
+    --accent-secondary: #45F4FF;
+    --accent-secondary-strong: #6FF6FF;
+    --accent-secondary-soft: rgba(69, 244, 255, 0.12);
+    --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    --purple: var(--accent-primary);
+    --cyan: var(--accent-secondary);
+    --cyan-light: var(--accent-secondary-strong);
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --border-color: var(--accent-primary-soft);
+    --border-color-cyan: var(--accent-secondary-soft);
+    --font-primary: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Sora', var(--font-primary);
+    --step--1: 0.875rem;
+    --step-0: 1rem;
+    --step-1: 1.25rem;
+    --step-hero: clamp(2rem, 4.5vw, 2.8rem);
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+    --sch-surface-0: #0c0c14;
+    --sch-surface-1: var(--darker-bg);
+    --sch-surface-2: var(--dark-bg);
+    --sch-gold: #fbbf24;
+    --sch-gold-soft: rgba(251, 191, 36, 0.12);
+    --sch-radius-sm: 4px;
+    --sch-radius-md: 8px;
+    --sch-radius-lg: 12px;
+    --sch-radius-xl: 16px;
+    --sch-radius-pill: 999px;
+    --sch-space-1: 4px;
+    --sch-space-2: 8px;
+    --sch-space-3: 12px;
+    --sch-space-4: 16px;
+    --sch-space-5: 24px;
+    --sch-space-6: 32px;
+    --sch-space-7: 48px;
+    --sch-space-8: 64px;
+}
+
+/* ===========================================
+   Reset & Base
+   =========================================== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+    font-family: var(--font-primary);
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* CLS prevention: browsers auto-calculate aspect-ratio from width/height attributes */
+img[width][height] {
+    height: auto; /* Override inline styles, let browser use intrinsic ratio */
+}
+a { text-decoration: none; color: inherit; transition: var(--transition-fast); }
+ul { list-style: none; }
+button { border: none; background: none; font-family: inherit; cursor: pointer; }
+
+/* ===========================================
+   Utility Classes (Above-the-fold)
+   =========================================== */
+.gradient-text { color: var(--accent-primary); }
+.hero .gradient-text,
+.hero-title.gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cyan-text { color: var(--cyan); }
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ===========================================
+   Navigation - Glassmorphism Style
+   =========================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+}
+.navbar.navbar-floating { transform: translateY(-100%); opacity: 0; }
+.navbar.navbar-floating.navbar-visible { transform: translateY(0); opacity: 1; }
+.navbar-glass {
+    background: rgba(22, 22, 34, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--accent-primary-soft);
+    border-radius: 60px;
+    padding: 0.6rem 1.25rem;
+    pointer-events: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.navbar .container { display: flex; justify-content: center; align-items: center; }
+.nav-menu { display: flex; gap: 0.25rem; align-items: center; margin: 0; padding: 0; }
+.nav-menu li { list-style: none; }
+.nav-menu a, .nav-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.6rem 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+.nav-icon { width: 18px; height: 18px; flex-shrink: 0; transition: all 0.3s ease; }
+.nav-cta {
+    background: rgba(168, 85, 247, 0.25) !important;
+    color: white !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    border: 1px solid rgba(168, 85, 247, 0.45) !important;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25);
+}
+.mobile-menu-toggle { display: none; }
+
+/* ===========================================
+   Hero Section - Above the fold
+   =========================================== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    padding-top: 80px;
+    background: transparent;
+}
+.page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: #05050e;
+}
+/* Hero background elements - placeholder dimensions */
+.matrix-canvas, .particles-container, .cyber-grid, .scanlines, .grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero-content {
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+/* ===========================================
+   Hero Avatar with explicit dimensions (CLS prevention)
+   =========================================== */
+.hero-avatar { margin: 0 auto 1.5rem; position: relative; }
+.avatar-ring {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--purple) 0%, var(--cyan) 100%);
+    padding: 3px;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2), 0 0 30px rgba(69, 244, 255, 0.15);
+    position: relative;
+    z-index: 2;
+}
+.avatar-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--dark-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.hacker-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.hacker-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+/* Orbit rings - explicit dimensions to prevent CLS */
+.orbit-ring { position: absolute; border: 1px solid; border-radius: 50%; opacity: 0.1; }
+.orbit-1 { width: 170px; height: 170px; border-color: var(--cyan); top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.orbit-2 { width: 200px; height: 200px; border-color: var(--purple); top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.orbit-3 { width: 230px; height: 230px; border-color: var(--purple); top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+/* ===========================================
+   Hero Title & Subtitle
+   =========================================== */
+.hero-title {
+    font-family: var(--font-display);
+    font-size: var(--step-hero);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+.hero-subtitle {
+    font-size: var(--step-1);
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* ===========================================
+   Hero Actions & Buttons
+   =========================================== */
+.hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+.btn {
+    display: inline-block;
+    padding: 1.125rem 2.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    transition: all var(--transition-medium);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-primary {
+    background: var(--accent-gradient);
+    color: white;
+    box-shadow: 0 6px 20px rgba(69, 244, 255, 0.3);
+    border: none;
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(69, 244, 255, 0.45);
+}
+.btn-glitch { position: relative; overflow: hidden; }
+
+/* ===========================================
+   Hero Author
+   =========================================== */
+.hero-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.author-text { color: var(--text-secondary); font-size: 0.9rem; }
+.author-text strong { color: var(--text-primary); }
+/* Hero author lite - used in current design */
+.hero-author-lite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1.25rem;
+    background: rgba(22, 22, 34, 0.6);
+    border: 1px solid var(--accent-primary-soft);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    margin: 0 auto;
+}
+.author-avatar-lite {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+    background: linear-gradient(var(--dark-bg), var(--dark-bg)) padding-box,
+                linear-gradient(135deg, var(--purple), var(--cyan)) border-box;
+    transition: all 0.3s ease;
+}
+.author-text-lite {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.author-text-lite strong {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* ===========================================
+   Accessibility: Reduced Motion
+   =========================================== */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===========================================
+   Mobile Responsive (Above-the-fold)
+   =========================================== */
+@media (max-width: 768px) {
+    .navbar { padding: 1rem; }
+    .nav-menu { display: none; }
+    .mobile-menu-toggle { display: flex; }
+    .hero { padding-top: 60px; min-height: 100svh; }
+    .hero-title { font-size: clamp(1.75rem, 6vw, 2.2rem); }
+    .hero-subtitle { font-size: 1rem; }
+    .avatar-ring { width: 100px; height: 100px; }
+    .orbit-1 { width: 130px; height: 130px; }
+    .orbit-2 { width: 155px; height: 155px; }
+    .orbit-3 { width: 180px; height: 180px; }
+    .btn { padding: 0.875rem 1.75rem; font-size: 0.9rem; }
+}
+</style>
+
+
+<!-- Stylesheets: Non-critical CSS deferred with print media trick
+     This allows the browser to render the page immediately while loading CSS asynchronously -->
+
+
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1ca06aafec8987db8e49a288-|49"></script><link rel="stylesheet" href="/static/css/styles.min.css?v=1694" media="print" onload="this.media='all'">
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1ca06aafec8987db8e49a288-|49"></script><link rel="stylesheet" href="/static/css/responsive-compact.min.css?v=1694" media="print" onload="this.media='all'">
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1ca06aafec8987db8e49a288-|49"></script><link rel="stylesheet" href="/static/css/utilities.min.css?v=1694" media="print" onload="this.media='all'">
+
+
+<!-- Noscript fallback: Load CSS normally if JavaScript is disabled -->
+<noscript>
+<link rel="stylesheet" href="/static/css/styles.min.css?v=1694">
+<link rel="stylesheet" href="/static/css/responsive-compact.min.css?v=1694">
+<link rel="stylesheet" href="/static/css/utilities.min.css?v=1694">
+</noscript>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Open Graph tags -->
+<meta property="og:title" content="Silo V2 Hack (2026) - $392K Lost | Smart Contract Hacking">
+<meta property="og:description" content="Details on the Silo V2 hack (April 2026): $392K was lost via Misconfigured Oracle Exploit / Oracle Misconfiguration. Explore attack technique, PoCs, and how to prevent similar exploits.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://smartcontractshacking.com/hacks/silo-v2-hack-2026">
+<meta property="og:image" content="https://smartcontractshacking.com/static/images/og/hacks/hack-silo-v2-hack-2026.png">
+<meta property="og:image:alt" content="Silo V2 Hack (2026) - $392K Lost | Smart Contract Hacking">
+<meta property="og:site_name" content="Smart Contract Hacking">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@RealJohnnyTime">
+<meta name="twitter:creator" content="@RealJohnnyTime">
+<meta name="twitter:title" content="Silo V2 Hack (2026) - $392K Lost | Smart Contract Hacking">
+<meta name="twitter:description" content="Details on the Silo V2 hack (April 2026): $392K was lost via Misconfigured Oracle Exploit / Oracle Misconfiguration. Explore attack technique, PoCs, and how to prevent similar exploits.">
+<meta name="twitter:image" content="https://smartcontractshacking.com/static/images/og/hacks/hack-silo-v2-hack-2026.png">
+<meta name="twitter:image:alt" content="Silo V2 Hack (2026) - $392K Lost | Smart Contract Hacking">
+
+<!-- WebSite Schema (site-wide identity) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://smartcontractshacking.com/#website",
+  "name": "Smart Contract Hacking",
+  "alternateName": "SCH",
+  "url": "https://smartcontractshacking.com",
+  "description": "The #1 smart contract security and auditing course. Learn to hack and secure blockchain protocols.",
+  "publisher": {"@id": "https://smartcontractshacking.com/#organization"},
+  "inLanguage": "en"
+}
+</script>
+
+<!-- Organization Schema (site-wide) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["EducationalOrganization", "Organization"],
+  "@id": "https://smartcontractshacking.com/#organization",
+  "name": "Smart Contract Hacking",
+  "alternateName": "SCH",
+  "url": "https://smartcontractshacking.com",
+  "logo": "https://smartcontractshacking.com/static/images/hacker-logo.jpg",
+  "description": "Elite training program for smart contract security researchers and auditors. Learn to hack and secure blockchain protocols.",
+  "founder": {"@id": "https://smartcontractshacking.com/#founder"},
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Smart Contract Hacker Certificate (SSCH)",
+    "credentialCategory": "Certificate"
+  },
+  "sameAs": [
+    "https://twitter.com/RealJohnnyTime",
+    "https://www.linkedin.com/in/johnnytime/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "learnwithjohnny.official@gmail.com"
+  }
+}
+</script>
+
+<!-- Person Schema for JohnnyTime (site-wide) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://smartcontractshacking.com/#founder",
+  "name": "JohnnyTime",
+  "alternateName": "JohnnyTime",
+  "description": "Blockchain security researcher and educator. 12+ years in cybersecurity. Founder of Smart Contract Hacking, the leading smart contract auditing course. Trained 5,000+ students.",
+  "jobTitle": "Founder & Lead Instructor",
+  "worksFor": {"@id": "https://smartcontractshacking.com/#organization"},
+  "knowsAbout": ["Smart Contract Security", "Blockchain Auditing", "DeFi Security", "Solidity", "Penetration Testing", "Cyber Security"],
+  "sameAs": [
+    "https://johnnytime.xyz",
+    "https://twitter.com/RealJohnnyTime",
+    "https://www.linkedin.com/in/johnnytime/",
+    "https://www.youtube.com/@RealJohnnyTime",
+    "https://github.com/johnnytime"
+  ]
+}
+</script>
+
+    
+    
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="/static/css/hack-detail.min.css?v=1694">
+    <link rel="stylesheet" href="/static/css/ai-share-buttons.min.css?v=1694">
+    <link rel="stylesheet" href="/static/css/modal-trial-attack.min.css?v=1694">
+
+    <!-- Article social metadata -->
+    <meta property="article:published_time" content="2026-04-03">
+    <meta property="article:section" content="Web3 Security">
+    
+    <meta property="article:tag" content="Misconfigured Oracle Exploit / Oracle Misconfiguration">
+    
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://smartcontractshacking.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://smartcontractshacking.com/tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Web3 Hacks Dashboard",
+          "item": "https://smartcontractshacking.com/tools/web3-hacks-dashboard"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Silo V2",
+          "item": "https://smartcontractshacking.com/hacks/silo-v2-hack-2026"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Article (NewsArticle) Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Silo V2 Hack (2026) - $392K Lost | Smart Contract Hacking",
+      "description": "Details on the Silo V2 hack (April 2026): $392K was lost via Misconfigured Oracle Exploit / Oracle Misconfiguration. Explore attack technique, PoCs, and how to prevent similar exploits.",
+      "datePublished": "2026-04-03",
+      "dateModified": "2026-04-03",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://smartcontractshacking.com/hacks/silo-v2-hack-2026"
+      },
+      "author": {
+        "@type": "Organization",
+        "@id": "https://smartcontractshacking.com/#organization"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://smartcontractshacking.com/#organization"
+      }
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much was lost in the Silo V2 hack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Silo V2 hack resulted in $392K in losses on April 03, 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What attack technique was used in the Silo V2 exploit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Silo V2 exploit utilized Misconfigured Oracle Exploit / Oracle Misconfiguration. Understanding this attack vector is critical for smart contract auditors and developers building secure DeFi protocols."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can developers prevent similar smart contract attacks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Preventing smart contract hacks requires a combination of secure coding practices, thorough security audits, and understanding common attack vectors like reentrancy, oracle manipulation, and access control flaws. Smart Contract Hacking (SCH) provides hands-on training to help developers and auditors identify and prevent vulnerabilities before deployment."
+          }
+        }
+      ]
+    }
+    </script>
+
+</head>
+<body data-recaptcha-site-key="6LciACQsAAAAAFq1GlPVQI_JqXuIOoHtmwOew6GA">
+    
+    
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+<symbol id="i-align-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 5H3" /><path d="M15 12H3" /><path d="M17 19H3" /></symbol>
+<symbol id="i-arrow-down-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 16 4 4 4-4" /><path d="M7 20V4" /><path d="m21 8-4-4-4 4" /><path d="M17 4v16" /></symbol>
+<symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></symbol>
+<symbol id="i-arrow-left-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 4 7l4 4" /><path d="M4 7h16" /><path d="m16 21 4-4-4-4" /><path d="M20 17H4" /></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></symbol>
+<symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /><circle cx="12" cy="8" r="6" /></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></symbol>
+<symbol id="i-bomb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="13" r="9" /><path d="M14.35 4.65 16.3 2.7a2.41 2.41 0 0 1 3.4 0l1.6 1.6a2.4 2.4 0 0 1 0 3.4l-1.95 1.95" /><path d="m22 2-1.5 1.5" /></symbol>
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" /></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></symbol>
+<symbol id="i-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z" /></symbol>
+<symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /><rect width="16" height="12" x="4" y="8" rx="2" /><path d="M2 14h2" /><path d="M20 14h2" /><path d="M15 13v2" /><path d="M9 13v2" /></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18V5" /><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" /><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" /><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" /><path d="M18 18a4 4 0 0 0 2-7.464" /><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" /><path d="M6 18a4 4 0 0 1-2-7.464" /><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" /></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></symbol>
+<symbol id="i-bug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-9" /><path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z" /><path d="M14.12 3.88 16 2" /><path d="M21 21a4 4 0 0 0-3.81-4" /><path d="M21 5a4 4 0 0 1-3.55 3.97" /><path d="M22 13h-4" /><path d="M3 21a4 4 0 0 1 3.81-4" /><path d="M3 5a4 4 0 0 0 3.55 3.97" /><path d="M6 13H2" /><path d="m8 2 1.88 1.88" /><path d="M9 7.13V6a3 3 0 1 1 6 0v1.13" /></symbol>
+<symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10h.01" /><path d="M12 14h.01" /><path d="M12 6h.01" /><path d="M16 10h.01" /><path d="M16 14h.01" /><path d="M16 6h.01" /><path d="M8 10h.01" /><path d="M8 14h.01" /><path d="M8 6h.01" /><path d="M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3" /><rect x="4" y="2" width="16" height="20" rx="2" /></symbol>
+<symbol id="i-calculator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" /><line x1="8" x2="16" y1="6" y2="6" /><line x1="16" x2="16" y1="14" y2="18" /><path d="M16 10h.01" /><path d="M12 10h.01" /><path d="M8 10h.01" /><path d="M12 14h.01" /><path d="M8 14h.01" /><path d="M12 18h.01" /><path d="M8 18h.01" /></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /></symbol>
+<symbol id="i-chart-candlestick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5v4" /><rect width="4" height="6" x="7" y="9" rx="1" /><path d="M9 15v2" /><path d="M17 3v2" /><rect width="4" height="8" x="15" y="5" rx="1" /><path d="M17 13v3" /><path d="M3 3v16a2 2 0 0 0 2 2h16" /></symbol>
+<symbol id="i-chart-column" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></symbol>
+<symbol id="i-chart-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></symbol>
+<symbol id="i-chart-no-axes-column" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21v-6" /><path d="M12 21V3" /><path d="M19 21V9" /></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></symbol>
+<symbol id="i-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6" /></symbol>
+<symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></symbol>
+<symbol id="i-chevron-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6" /></symbol>
+<symbol id="i-chevrons-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 6 5 5 5-5" /><path d="m7 13 5 5 5-5" /></symbol>
+<symbol id="i-chevrons-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 11-5-5-5 5" /><path d="m17 18-5-5-5 5" /></symbol>
+<symbol id="i-chevrons-up-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5" /><path d="m7 9 5-5 5 5" /></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></symbol>
+<symbol id="i-circle-check-big" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335" /><path d="m9 11 3 3L22 4" /></symbol>
+<symbol id="i-circle-dollar-sign" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /><path d="M12 18V6" /></symbol>
+<symbol id="i-circle-dot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="1" /></symbol>
+<symbol id="i-circle-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></symbol>
+<symbol id="i-circle-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M8 12h8" /><path d="M12 8v8" /></symbol>
+<symbol id="i-circle-slash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><line x1="9" x2="15" y1="15" y2="9" /></symbol>
+<symbol id="i-circle-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m15 9-6 6" /><path d="m9 9 6 6" /></symbol>
+<symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /></symbol>
+<symbol id="i-clipboard-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="m9 14 2 2 4-4" /></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></symbol>
+<symbol id="i-clock-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2" /><path d="M20 12v5" /><path d="M20 21h.01" /><path d="M21.25 8.2A10 10 0 1 0 16 21.16" /></symbol>
+<symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6" /><path d="m8 6-6 6 6 6" /></symbol>
+<symbol id="i-code-xml" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></symbol>
+<symbol id="i-coins" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.744 17.736a6 6 0 1 1-7.48-7.48" /><path d="M15 6h1v4" /><path d="m6.134 14.768.866-.5 2 3.464" /><circle cx="16" cy="8" r="6" /></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></symbol>
+<symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v2" /><path d="M12 2v2" /><path d="M17 20v2" /><path d="M17 2v2" /><path d="M2 12h2" /><path d="M2 17h2" /><path d="M2 7h2" /><path d="M20 12h2" /><path d="M20 17h2" /><path d="M20 7h2" /><path d="M7 20v2" /><path d="M7 2v2" /><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="8" y="8" width="8" height="8" rx="1" /></symbol>
+<symbol id="i-credit-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2" /><line x1="2" x2="22" y1="10" y2="10" /></symbol>
+<symbol id="i-crosshair" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><line x1="22" x2="18" y1="12" y2="12" /><line x1="6" x2="2" y1="12" y2="12" /><line x1="12" x2="12" y1="6" y2="2" /><line x1="12" x2="12" y1="22" y2="18" /></symbol>
+<symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></symbol>
+<symbol id="i-dices" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="12" height="12" x="2" y="10" rx="2" ry="2" /><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6" /><path d="M6 18h.01" /><path d="M10 14h.01" /><path d="M15 6h.01" /><path d="M18 9h.01" /></symbol>
+<symbol id="i-dollar-sign" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></symbol>
+<symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></symbol>
+<symbol id="i-ellipsis-vertical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1" /><circle cx="12" cy="5" r="1" /><circle cx="12" cy="19" r="1" /></symbol>
+<symbol id="i-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></symbol>
+<symbol id="i-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" /><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" /><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" /><path d="m2 2 20 20" /></symbol>
+<symbol id="i-fast-forward" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z" /><path d="M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z" /></symbol>
+<symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /></symbol>
+<symbol id="i-file-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><circle cx="11.5" cy="14.5" r="2.5" /><path d="M13.3 16.3 15 18" /></symbol>
+<symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></symbol>
+<symbol id="i-fish" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z" /><path d="M18 12v.5" /><path d="M16 17.93a9.77 9.77 0 0 1 0-11.86" /><path d="M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33" /><path d="M10.46 7.26C10.2 5.88 9.17 4.24 8 3h5.8a2 2 0 0 1 1.98 1.67l.23 1.4" /><path d="m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98" /></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" /></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol>
+<symbol id="i-hash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="9" y2="9" /><line x1="4" x2="20" y1="15" y2="15" /><line x1="10" x2="8" y1="3" y2="21" /><line x1="16" x2="14" y1="3" y2="21" /></symbol>
+<symbol id="i-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
+<symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4" /><path d="M12 8h.01" /></symbol>
+<symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4" /><path d="m21 2-9.6 9.6" /><circle cx="7.5" cy="15.5" r="5.5" /></symbol>
+<symbol id="i-key-round" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" /><circle cx="16.5" cy="7.5" r=".5" fill="currentColor" /></symbol>
+<symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18v-7" /><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /><path d="M14 18v-7" /><path d="M18 18v-7" /><path d="M3 22h18" /><path d="M6 18v-7" /></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></symbol>
+<symbol id="i-layout-dashboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></symbol>
+<symbol id="i-layout-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1" /><rect width="7" height="7" x="14" y="3" rx="1" /><rect width="7" height="7" x="14" y="14" rx="1" /><rect width="7" height="7" x="3" y="14" rx="1" /></symbol>
+<symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></symbol>
+<symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h.01" /><path d="M3 12h.01" /><path d="M3 19h.01" /><path d="M8 5h13" /><path d="M8 12h13" /><path d="M8 19h13" /></symbol>
+<symbol id="i-list-checks" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></symbol>
+<symbol id="i-loader-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56" /></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></symbol>
+<symbol id="i-log-in" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /></symbol>
+<symbol id="i-log-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 17 5-5-5-5" /><path d="M21 12H9" /><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></symbol>
+<symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z" /><path d="M15 5.764v15" /><path d="M9 3.236v15" /></symbol>
+<symbol id="i-medal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" /><path d="M11 12 5.12 2.2" /><path d="m13 12 5.88-9.8" /><path d="M8 7h8" /><circle cx="12" cy="17" r="5" /><path d="M12 18v-2h-.5" /></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></symbol>
+<symbol id="i-newspaper" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18h-5" /><path d="M18 14h-8" /><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2" /><rect width="8" height="4" x="10" y="6" rx="1" /></symbol>
+<symbol id="i-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /><path d="M12 22V12" /><polyline points="3.29 7 12 12 20.71 7" /><path d="m7.5 4.27 9 5.15" /></symbol>
+<symbol id="i-pen-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 21h8" /><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /></symbol>
+<symbol id="i-phone-outgoing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 8 6-6" /><path d="M22 8V2h-6" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></symbol>
+<symbol id="i-pie-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z" /><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /></symbol>
+<symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></symbol>
+<symbol id="i-radio-tower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9" /><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5" /><circle cx="12" cy="9" r="2" /><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47" /><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1" /><path d="M9.5 18h5" /><path d="m8 22 4-11 4 11" /></symbol>
+<symbol id="i-refresh-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></symbol>
+<symbol id="i-rotate-ccw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></symbol>
+<symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3" /><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" /><circle cx="18" cy="5" r="3" /></symbol>
+<symbol id="i-scan-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7 12h10" /></symbol>
+<symbol id="i-scroll-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12h-5" /><path d="M15 8h-5" /><path d="M19 17V5a2 2 0 0 0-2-2H4" /><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></symbol>
+<symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" /><circle cx="12" cy="12" r="3" /></symbol>
+<symbol id="i-share-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><line x1="8.59" x2="15.42" y1="13.51" y2="17.49" /><line x1="15.41" x2="8.59" y1="6.51" y2="10.49" /></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /></symbol>
+<symbol id="i-shield-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="M12 8v4" /><path d="M12 16h.01" /></symbol>
+<symbol id="i-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></symbol>
+<symbol id="i-shield-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 2 20 20" /><path d="M5 5a1 1 0 0 0-1 1v7c0 5 3.5 7.5 7.67 8.94a1 1 0 0 0 .67.01c2.35-.82 4.48-1.97 5.9-3.71" /><path d="M9.309 3.652A12.252 12.252 0 0 0 11.24 2.28a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7a9.784 9.784 0 0 1-.08 1.264" /></symbol>
+<symbol id="i-signature" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" /><path d="M3 21h18" /></symbol>
+<symbol id="i-sliders-horizontal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5H3" /><path d="M12 19H3" /><path d="M14 3v4" /><path d="M16 17v4" /><path d="M21 12h-9" /><path d="M21 19h-5" /><path d="M21 5h-7" /><path d="M8 10v4" /><path d="M8 12H3" /></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></symbol>
+<symbol id="i-square-check-big" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344" /><path d="m9 11 3 3L22 4" /></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></symbol>
+<symbol id="i-swords" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" /><line x1="13" x2="19" y1="19" y2="13" /><line x1="16" x2="20" y1="16" y2="20" /><line x1="19" x2="21" y1="21" y2="19" /><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5" /><line x1="5" x2="9" y1="14" y2="18" /><line x1="7" x2="4" y1="17" y2="20" /><line x1="3" x2="5" y1="19" y2="21" /></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /><circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /></symbol>
+<symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19h8" /><path d="m4 17 6-6-6-6" /></symbol>
+<symbol id="i-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></symbol>
+<symbol id="i-trending-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h6v6" /><path d="m22 7-8.5 8.5-5-5L2 17" /></symbol>
+<symbol id="i-triangle-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /><path d="M12 9v4" /><path d="M12 17h.01" /></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></symbol>
+<symbol id="i-unlock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 9.9-1" /></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></symbol>
+<symbol id="i-user-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><line x1="19" x2="19" y1="8" y2="14" /><line x1="22" x2="16" y1="11" y2="11" /></symbol>
+<symbol id="i-user-round" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5" /><path d="M20 21a8 8 0 0 0-16 0" /></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /><path d="M19.364 18.364a9 9 0 0 0 0-12.728" /></symbol>
+<symbol id="i-waypoints" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.586 5.414-5.172 5.172" /><path d="m18.586 13.414-5.172 5.172" /><path d="M6 12h12" /><circle cx="12" cy="20" r="2" /><circle cx="12" cy="4" r="2" /><circle cx="20" cy="12" r="2" /><circle cx="4" cy="12" r="2" /></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /></symbol>
+<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></symbol>
+</svg>
+
+    
+    
+
+
+<nav class="navbar navbar-floating">
+    <div class="navbar-glass">
+        <ul class="nav-menu nav-menu-desktop">
+            
+                
+                <li>
+                    <a href="/#hero">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-house"/></svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/#mentors">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg>
+                        <span>Mentors</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/smart-contract-auditor-certification">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-award"/></svg>
+                        <span>Certification</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/#pricing">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-dollar-sign"/></svg>
+                        <span>Pricing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/#faq">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-circle-help"/></svg>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <!-- Attacks Mega-Menu Dropdown -->
+                <li class="nav-dropdown nav-dropdown-mega">
+                    <a href="/attacks" class="nav-dropdown-trigger">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg>
+                        <span>Attacks</span>
+                        <svg class="icon nav-dropdown-arrow" width="12" height="12" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                    </a>
+                    <div class="nav-mega-menu">
+                        <div class="mega-menu-grid">
+                            
+                                
+                                <a href="/attacks/access-control-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Access Control Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/arithmetic-overflows-underflows" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Arithmetic Overflow &amp; Underflow Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/call-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-phone-outgoing"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Delegatecall &amp; Call Injection Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/flash-loans-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Flash Loan Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/oracle-manipulation-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-radio-tower"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Oracle Manipulation &amp; Price Manipulation</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/reentrancy" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-refresh-cw"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Reentrancy</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/dao-governance-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-landmark"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">DAO Governance Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/frontrunning-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-fast-forward"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Frontrunning &amp; Sandwich Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/phishing-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-fish"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Phishing Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/dos-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-shield-off"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">DOS Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/replay-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-repeat"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Replay Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/self-destruct-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-bomb"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Self-Destruct Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/sensitive-on-chain-data" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-eye-off"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Sensitive On-Chain Data</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/weak-randomness-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-dices"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Weak Randomness Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/unchecked-return-value-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-circle-slash"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Unchecked Return Value Attacks</span>
+                                    </span>
+                                </a>
+                                
+                                <a href="/attacks/timestamp-manipulation-attacks" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-clock-alert"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Timestamp Manipulation Attacks</span>
+                                    </span>
+                                </a>
+                                
+                            
+                        </div>
+                    </div>
+                </li>
+                <!-- CTF Arena Dropdown -->
+                <li class="nav-dropdown nav-dropdown-playground">
+                    <a href="/tools/web3-ctf-challenges" class="nav-dropdown-trigger nav-playground-trigger">
+                        <span class="nav-feature-badge">New</span>
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-brain"/></svg>
+                        <span>CTF Arena</span>
+                        <svg class="icon nav-dropdown-arrow" width="12" height="12" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                    </a>
+                    <div class="nav-playground-menu">
+                        <div class="playground-menu-intro">
+                            <div>
+                                <span class="playground-menu-eyebrow"><span class="playground-live-dot"></span>CTF arena live</span>
+                                <span class="playground-menu-title">Break contracts. Prove the exploit.</span>
+                                <span class="playground-menu-copy">Write and run Foundry exploits in the browser.</span>
+                            </div>
+                            <a href="/tools/web3-ctf-challenges" class="playground-menu-launch">
+                                <span>Open exploit lab</span>
+                                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+                            </a>
+                        </div>
+                        <div class="playground-menu-challenges">
+                            <span class="mega-menu-heading">Start a challenge</span>
+                            <a href="/tools/web3-ctf-challenges/ethernaut-fallback" class="playground-challenge-link">
+                                <span class="playground-challenge-number">01</span>
+                                <span class="playground-challenge-copy">
+                                    <span class="dropdown-item-title">Fallback</span>
+                                    <span class="dropdown-item-desc">Take contract ownership</span>
+                                </span>
+                                <span class="playground-difficulty">Beginner</span>
+                            </a>
+                            <a href="/tools/web3-ctf-challenges/ethernaut-fallout" class="playground-challenge-link">
+                                <span class="playground-challenge-number">02</span>
+                                <span class="playground-challenge-copy">
+                                    <span class="dropdown-item-title">Fallout</span>
+                                    <span class="dropdown-item-desc">Find the constructor flaw</span>
+                                </span>
+                                <span class="playground-difficulty">Beginner</span>
+                            </a>
+                            <a href="/tools/web3-ctf-challenges/ethernaut-coin-flip" class="playground-challenge-link">
+                                <span class="playground-challenge-number">03</span>
+                                <span class="playground-challenge-copy">
+                                    <span class="dropdown-item-title">Coin Flip</span>
+                                    <span class="dropdown-item-desc">Exploit predictable randomness</span>
+                                </span>
+                                <span class="playground-difficulty">Beginner</span>
+                            </a>
+                        </div>
+                        <div class="playground-menu-footer">
+                            <a href="/tools/smart-contract-ctf">Browse all challenges</a>
+                            <a href="/tools/web3-ctf-challenges#quests">Quests</a>
+                            <a href="/tools/web3-ctf-challenges/leaderboard">View leaderboard</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- Learn Mega-Menu Dropdown -->
+                <li class="nav-dropdown nav-dropdown-mega">
+                    <a href="/learn" class="nav-dropdown-trigger">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-book-open"/></svg>
+                        <span>Learn</span>
+                        <svg class="icon nav-dropdown-arrow" width="12" height="12" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                    </a>
+                    <div class="nav-mega-menu">
+                        <div class="mega-menu-columns">
+                            <div class="mega-menu-column">
+                                <span class="mega-menu-heading">Categories</span>
+                                <a href="/learn/search?q=security" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Security Guides</span>
+                                        <span class="dropdown-item-desc">Comprehensive resources</span>
+                                    </span>
+                                </a>
+                                <a href="/learn/search?q=career" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-user"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Career Guide</span>
+                                        <span class="dropdown-item-desc">Build your security career</span>
+                                    </span>
+                                </a>
+                                <a href="/learn/search?q=hack%20postmortem" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Hack Post-Mortems</span>
+                                        <span class="dropdown-item-desc">Real-world exploit analysis</span>
+                                    </span>
+                                </a>
+                                <span class="nav-dropdown-item nav-dropdown-item-disabled">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">CTF Solutions <span class="coming-soon-badge">Soon</span></span>
+                                        <span class="dropdown-item-desc">Challenge walkthroughs</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="mega-menu-column">
+                                <span class="mega-menu-heading">Discover</span>
+                                <a href="/learn/popular" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Popular Articles</span>
+                                        <span class="dropdown-item-desc">Most-read content</span>
+                                    </span>
+                                </a>
+                                <a href="/learn/search" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Search</span>
+                                        <span class="dropdown-item-desc">Find specific topics</span>
+                                    </span>
+                                </a>
+                                <a href="/glossary" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">Glossary</span>
+                                        <span class="dropdown-item-desc">Security terms</span>
+                                    </span>
+                                </a>
+                                <a href="/learn" class="nav-dropdown-item">
+                                    <span class="dropdown-item-icon">
+                                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-list"/></svg>
+                                    </span>
+                                    <span class="dropdown-item-text">
+                                        <span class="dropdown-item-title">All Articles</span>
+                                        <span class="dropdown-item-desc">Browse everything</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Tools Mega-Menu Dropdown -->
+                <li class="nav-dropdown nav-dropdown-mega">
+                    <a href="/tools" class="nav-dropdown-trigger">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-key"/></svg>
+                        <span>Tools</span>
+                        <svg class="icon nav-dropdown-arrow" width="12" height="12" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                    </a>
+                    <div class="nav-mega-menu">
+                        <div class="mega-menu-grid">
+                            <a href="/tools/smart-contract-audit-cost-estimator" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-file-text"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Audit Cost Estimator</span>
+                                </span>
+                            </a>
+                            <a href="/tools/web3-hacks-dashboard" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layout-dashboard"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Hacks Dashboard</span>
+                                </span>
+                            </a>
+                            <a href="/tools/most-expensive-crypto-hacks" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trending-up"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Biggest Crypto Hacks</span>
+                                </span>
+                            </a>
+                            <a href="/tools/web3-auditing-competitions-and-bug-bounties" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-award"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Competitions &amp; Bounties</span>
+                                </span>
+                            </a>
+                            <a href="/tools/smart-contract-ctf" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 5h16v14H4z"/>
+                                        <path d="M8 9h3M8 13h8M15 9h1"/>
+                                        <path d="M6 3h12M6 21h12"/>
+                                    </svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">CTF Library</span>
+                                </span>
+                            </a>
+                            <a href="/tools/auditor-salary-calculator" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-dollar-sign"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Auditor Salary Calculator</span>
+                                </span>
+                            </a>
+                            <a href="/tools/auditor-readiness-quiz" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-square-check-big"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Auditor Readiness Quiz</span>
+                                </span>
+                            </a>
+                            <a href="/tools/ai-skills-explorer" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-brain"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">AI Skills Explorer</span>
+                                </span>
+                            </a>
+                            <a href="/tools/bonding-curve-stress-tester" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 21h18"/>
+                                        <path d="M3 21C3 12 9 5 21 4"/>
+                                    </svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Bonding Curve Tester</span>
+                                </span>
+                            </a>
+                            <a href="/tools/eth-to-wei-converter" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-repeat"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">ETH Converter</span>
+                                </span>
+                            </a>
+                            <a href="/tools/function-selector-calculator" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Function Selector</span>
+                                </span>
+                            </a>
+                            <a href="/tools/keccak256-online" class="nav-dropdown-item">
+                                <span class="dropdown-item-icon">
+                                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-hash"/></svg>
+                                </span>
+                                <span class="dropdown-item-text">
+                                    <span class="dropdown-item-title">Keccak256 Hash</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/#pricing" class="nav-cta">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg>
+                        <span>Enroll Now</span>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+    <!-- Mobile menu (separate from glass container) -->
+    <ul class="nav-menu nav-menu-mobile" id="mobileNavMenu">
+        
+            <li>
+                <a href="/#hero">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-house"/></svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="/#mentors">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg>
+                    <span>Mentors</span>
+                </a>
+            </li>
+            <li>
+                <a href="/smart-contract-auditor-certification">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-award"/></svg>
+                    <span>Certification</span>
+                </a>
+            </li>
+            <li>
+                <a href="/#pricing">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-dollar-sign"/></svg>
+                    <span>Pricing</span>
+                </a>
+            </li>
+            <li>
+                <a href="/#faq">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-circle-help"/></svg>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <!-- Mobile Attacks Dropdown -->
+            <li class="nav-dropdown-mobile">
+                <a href="/attacks" class="nav-dropdown-trigger-mobile" aria-expanded="false">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg>
+                    <span>Attacks</span>
+                    <svg class="icon nav-dropdown-arrow-mobile" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                </a>
+                <div class="nav-dropdown-submenu-mobile">
+                    <a href="/attacks" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+                        <span>All Attacks</span>
+                    </a>
+                    
+                        
+                        <a href="/attacks/access-control-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+                            <span>Access Control Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/arithmetic-overflows-underflows" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>
+                            <span>Arithmetic Overflow &amp; Underflow Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/call-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-phone-outgoing"/></svg>
+                            <span>Delegatecall &amp; Call Injection Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/flash-loans-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg>
+                            <span>Flash Loan Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/oracle-manipulation-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-radio-tower"/></svg>
+                            <span>Oracle Manipulation &amp; Price Manipulation</span>
+                        </a>
+                        
+                        <a href="/attacks/reentrancy" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-refresh-cw"/></svg>
+                            <span>Reentrancy</span>
+                        </a>
+                        
+                        <a href="/attacks/dao-governance-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-landmark"/></svg>
+                            <span>DAO Governance Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/frontrunning-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-fast-forward"/></svg>
+                            <span>Frontrunning &amp; Sandwich Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/phishing-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-fish"/></svg>
+                            <span>Phishing Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/dos-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-shield-off"/></svg>
+                            <span>DOS Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/replay-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-repeat"/></svg>
+                            <span>Replay Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/self-destruct-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-bomb"/></svg>
+                            <span>Self-Destruct Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/sensitive-on-chain-data" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-eye-off"/></svg>
+                            <span>Sensitive On-Chain Data</span>
+                        </a>
+                        
+                        <a href="/attacks/weak-randomness-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-dices"/></svg>
+                            <span>Weak Randomness Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/unchecked-return-value-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-circle-slash"/></svg>
+                            <span>Unchecked Return Value Attacks</span>
+                        </a>
+                        
+                        <a href="/attacks/timestamp-manipulation-attacks" class="nav-dropdown-subitem-mobile">
+                            <svg class="icon nav-icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-clock-alert"/></svg>
+                            <span>Timestamp Manipulation Attacks</span>
+                        </a>
+                        
+                    
+                </div>
+            </li>
+            <!-- Mobile CTF Arena Dropdown -->
+            <li class="nav-dropdown-mobile nav-dropdown-playground-mobile">
+                <a href="/tools/web3-ctf-challenges" class="nav-dropdown-trigger-mobile nav-playground-trigger-mobile" aria-expanded="false">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-brain"/></svg>
+                    <span>CTF Arena</span>
+                    <span class="nav-feature-badge-mobile">New</span>
+                    <svg class="icon nav-dropdown-arrow-mobile" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                </a>
+                <div class="nav-dropdown-submenu-mobile">
+                    <a href="/tools/web3-ctf-challenges" class="nav-dropdown-subitem-mobile nav-playground-launch-mobile">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 9h8"/><path d="M8 13h2"/><path d="M14 13h2"/><rect x="3" y="4" width="18" height="15" rx="5"/>
+                        </svg>
+                        <span>Open CTF Arena</span>
+                    </a>
+                    <a href="/tools/smart-contract-ctf" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-newspaper"/></svg>
+                        <span>All Challenges</span>
+                    </a>
+                    <a href="/tools/web3-ctf-challenges/ethernaut-fallback" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-code-xml"/></svg>
+                        <span>01 · Fallback</span>
+                    </a>
+                    <a href="/tools/web3-ctf-challenges/ethernaut-fallout" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-code-xml"/></svg>
+                        <span>02 · Fallout</span>
+                    </a>
+                    <a href="/tools/web3-ctf-challenges/ethernaut-coin-flip" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-code-xml"/></svg>
+                        <span>03 · Coin Flip</span>
+                    </a>
+                    <a href="/tools/web3-ctf-challenges/leaderboard" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg>
+                        <span>Leaderboard</span>
+                    </a>
+                </div>
+            </li>
+            <!-- Mobile Learn Dropdown -->
+            <li class="nav-dropdown-mobile">
+                <a href="/learn" class="nav-dropdown-trigger-mobile" aria-expanded="false">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-book-open"/></svg>
+                    <span>Learn</span>
+                    <svg class="icon nav-dropdown-arrow-mobile" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                </a>
+                <div class="nav-dropdown-submenu-mobile">
+                    <a href="/learn/search?q=security" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
+                        <span>Security Guides</span>
+                    </a>
+                    <a href="/learn/popular" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
+                        <span>Popular Articles</span>
+                    </a>
+                    <a href="/learn/search" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+                        <span>Search</span>
+                    </a>
+                    <a href="/glossary" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-book"/></svg>
+                        <span>Glossary</span>
+                    </a>
+                    <a href="/learn" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-list"/></svg>
+                        <span>All Articles</span>
+                    </a>
+                    <a href="/learn/search?q=career" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-user"/></svg>
+                        <span>Career Guide</span>
+                    </a>
+                    <a href="/learn/search?q=hack%20postmortem" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>
+                        <span>Hack Post-Mortems</span>
+                    </a>
+                    <span class="nav-dropdown-subitem-mobile nav-dropdown-item-disabled">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg>
+                        <span>CTF Solutions</span>
+                        <span class="coming-soon-badge">Soon</span>
+                    </span>
+                </div>
+            </li>
+            <!-- Mobile Tools Dropdown -->
+            <li class="nav-dropdown-mobile">
+                <a href="/tools" class="nav-dropdown-trigger-mobile">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-key"/></svg>
+                    <span>Tools</span>
+                    <svg class="icon nav-dropdown-arrow-mobile" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                </a>
+                <div class="nav-dropdown-submenu-mobile">
+                    <a href="/tools" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+                        <span>All Tools</span>
+                    </a>
+                    <a href="/tools/smart-contract-audit-cost-estimator" class="nav-dropdown-subitem-mobile">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="2" width="16" height="20" rx="2"/>
+                            <line x1="8" y1="6" x2="16" y2="6"/>
+                        </svg>
+                        <span>Audit Cost Estimator</span>
+                    </a>
+                    <a href="/tools/web3-hacks-dashboard" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-layout-dashboard"/></svg>
+                        <span>Hacks Dashboard</span>
+                    </a>
+                    <a href="/tools/most-expensive-crypto-hacks" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-trending-up"/></svg>
+                        <span>Biggest Crypto Hacks</span>
+                    </a>
+                    <a href="/tools/web3-auditing-competitions-and-bug-bounties" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-award"/></svg>
+                        <span>Competitions &amp; Bounties</span>
+                    </a>
+                    <a href="/tools/smart-contract-ctf" class="nav-dropdown-subitem-mobile">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 5h16v14H4z"/>
+                            <path d="M8 9h3M8 13h8M15 9h1"/>
+                            <path d="M6 3h12M6 21h12"/>
+                        </svg>
+                        <span>CTF Library</span>
+                    </a>
+                    <a href="/tools/auditor-salary-calculator" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-dollar-sign"/></svg>
+                        <span>Auditor Salary Calculator</span>
+                    </a>
+                    <a href="/tools/auditor-readiness-quiz" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-square-check-big"/></svg>
+                        <span>Auditor Readiness Quiz</span>
+                    </a>
+                    <a href="/tools/ai-skills-explorer" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-brain"/></svg>
+                        <span>AI Skills Explorer</span>
+                    </a>
+                    <a href="/tools/bonding-curve-stress-tester" class="nav-dropdown-subitem-mobile">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18"/>
+                            <path d="M3 21C3 12 9 5 21 4"/>
+                        </svg>
+                        <span>Bonding Curve Tester</span>
+                    </a>
+                    <a href="/tools/eth-to-wei-converter" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-repeat"/></svg>
+                        <span>ETH Converter</span>
+                    </a>
+                    <a href="/tools/function-selector-calculator" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>
+                        <span>Function Selector</span>
+                    </a>
+                    <a href="/tools/keccak256-online" class="nav-dropdown-subitem-mobile">
+                        <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-hash"/></svg>
+                        <span>Keccak256 Hash</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="/#pricing" class="nav-cta">
+                    <svg class="icon nav-icon" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg>
+                    <span>Enroll Now</span>
+                </a>
+            </li>
+        
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-controls="mobileNavMenu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</nav>
+    
+
+    <main id="main-content">
+    
+    
+    
+    
+
+
+
+
+<nav class="tools-breadcrumb" aria-label="Breadcrumb">
+    <ol class="tools-breadcrumb-list">
+        <li class="tools-breadcrumb-item">
+            <a href="/" class="tools-breadcrumb-link">
+                <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-house"/></svg>
+                Home
+            </a>
+        </li>
+        <li class="tools-breadcrumb-item">
+            <span class="tools-breadcrumb-separator" aria-hidden="true">›</span>
+            
+                <a href="/tools" class="tools-breadcrumb-link">Tools</a>
+            
+        </li>
+        
+            <li class="tools-breadcrumb-item">
+                <span class="tools-breadcrumb-separator" aria-hidden="true">›</span>
+                
+                    <a href="/tools/web3-hacks-dashboard" class="tools-breadcrumb-link">Web3 Hacks Dashboard</a>
+                
+            </li>
+        
+        
+            <li class="tools-breadcrumb-item">
+                <span class="tools-breadcrumb-separator" aria-hidden="true">›</span>
+                <span class="tools-breadcrumb-current" aria-current="page">Silo V2</span>
+            </li>
+        
+    </ol>
+</nav>
+
+    <article class="hkd-page" itemscope itemtype="https://schema.org/NewsArticle">
+
+        <!-- ═══════════════════════════════════════════
+             HERO
+        ═══════════════════════════════════════════ -->
+        <header class="hkd-hero">
+            <div class="hkd-hero-inner">
+
+                <!-- Title - primary focal point -->
+                <h1 class="hkd-title" itemprop="headline">Silo V2 Hack</h1>
+
+                <!-- Amount - dramatic centerpiece -->
+                <div class="hkd-amount-block" aria-label="Amount lost: $392K">
+                    <span class="hkd-amount-label">TOTAL LOST</span>
+                    <span class="hkd-amount">$392K</span>
+                </div>
+
+                <!-- Single unified meta row: severity + date + technique + chains -->
+                <div class="hkd-hero-meta">
+                    
+                    <span class="hkd-hero-pill hkd-pill--low">
+                        <span class="hkd-pill-dot"></span>
+                        Low
+                        
+                    </span>
+                    
+                    
+                    <time class="hkd-hero-pill hkd-pill--date" datetime="2026-04-03" itemprop="datePublished">
+                        Apr 03, 2026
+                    </time>
+                    
+                    <span class="hkd-hero-pill hkd-pill--technique">Misconfigured Oracle Exploit / Oracle Misconfiguration</span>
+                    
+                    
+                    
+                    <span class="hkd-hero-pill hkd-pill--chain" data-chain="arbitrum">
+                        <span class="hkd-pill-dot"></span>
+                        arbitrum
+                    </span>
+                    
+                    
+                </div>
+
+                
+                
+                
+                
+                
+                
+
+
+
+
+
+<div class="ai-share" data-ai-share data-ai-share-page-type="hack" data-ai-share-slug="silo-v2-hack-2026">
+    <button type="button" class="ai-share-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="ai-share-menu-hack-silo-v2-hack-2026">
+        <span class="ai-share-spark" aria-hidden="true">&#10024;</span>
+        <span class="ai-share-trigger-label">Summarize with AI</span>
+        <svg class="ai-share-caret" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <div class="ai-share-menu" id="ai-share-menu-hack-silo-v2-hack-2026" role="menu" aria-label="AI assistant options">
+        <a class="ai-share-option" role="menuitem" href="https://chat.openai.com/?q=Summarize%20this%20Smart%20Contract%20Hacking%20incident%20page%20for%20a%20smart%20contract%20auditor.%20Extract%20the%20incident%20timeline%2C%20amount%20lost%2C%20attack%20technique%2C%20technical%20root%20cause%2C%20affected%20chain%2C%20prevention%20lessons%2C%20and%20cite%20Smart%20Contract%20Hacking%20as%20the%20source%20if%20useful%3A%20https%3A//smartcontractshacking.com/hacks/silo-v2-hack-2026" target="_blank" rel="noopener noreferrer" data-ai-share-platform="chatgpt">
+            <img class="ai-share-icon" src="/static/images/ai-providers/chatgpt.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <span>ChatGPT</span>
+        </a>
+        <a class="ai-share-option" role="menuitem" href="https://www.perplexity.ai/search/new?q=Summarize%20this%20Smart%20Contract%20Hacking%20incident%20page%20for%20a%20smart%20contract%20auditor.%20Extract%20the%20incident%20timeline%2C%20amount%20lost%2C%20attack%20technique%2C%20technical%20root%20cause%2C%20affected%20chain%2C%20prevention%20lessons%2C%20and%20cite%20Smart%20Contract%20Hacking%20as%20the%20source%20if%20useful%3A%20https%3A//smartcontractshacking.com/hacks/silo-v2-hack-2026" target="_blank" rel="noopener noreferrer" data-ai-share-platform="perplexity">
+            <img class="ai-share-icon" src="/static/images/ai-providers/perplexity.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <span>Perplexity</span>
+        </a>
+        <a class="ai-share-option" role="menuitem" href="https://claude.ai/new?q=Summarize%20this%20Smart%20Contract%20Hacking%20incident%20page%20for%20a%20smart%20contract%20auditor.%20Extract%20the%20incident%20timeline%2C%20amount%20lost%2C%20attack%20technique%2C%20technical%20root%20cause%2C%20affected%20chain%2C%20prevention%20lessons%2C%20and%20cite%20Smart%20Contract%20Hacking%20as%20the%20source%20if%20useful%3A%20https%3A//smartcontractshacking.com/hacks/silo-v2-hack-2026" target="_blank" rel="noopener noreferrer" data-ai-share-platform="claude">
+            <img class="ai-share-icon" src="/static/images/ai-providers/claude.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <span>Claude</span>
+        </a>
+        <a class="ai-share-option" role="menuitem" href="https://grok.com/?q=Summarize%20this%20Smart%20Contract%20Hacking%20incident%20page%20for%20a%20smart%20contract%20auditor.%20Extract%20the%20incident%20timeline%2C%20amount%20lost%2C%20attack%20technique%2C%20technical%20root%20cause%2C%20affected%20chain%2C%20prevention%20lessons%2C%20and%20cite%20Smart%20Contract%20Hacking%20as%20the%20source%20if%20useful%3A%20https%3A//smartcontractshacking.com/hacks/silo-v2-hack-2026" target="_blank" rel="noopener noreferrer" data-ai-share-platform="grok">
+            <img class="ai-share-icon" src="/static/images/ai-providers/grok.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <span>Grok</span>
+        </a>
+    </div>
+</div>
+
+            </div>
+        </header>
+
+        <!-- ═══════════════════════════════════════════
+             STATS ROW - 4 KPI chips
+        ═══════════════════════════════════════════ -->
+        <div class="hkd-stats-row">
+            <div class="hkd-stat-chip hkd-stat-chip--cyan hkd-stat-chip--chain">
+                <span class="hkd-stat-label">Affected Chain</span>
+                <span class="hkd-stat-value hkd-stat-value--compact">arbitrum</span>
+                <span class="hkd-stat-sub">Incident surface</span>
+            </div>
+            
+            <div class="hkd-stat-chip hkd-stat-chip--green">
+                <span class="hkd-stat-label">Recovered</span>
+                <span class="hkd-stat-value"> - </span>
+                <span class="hkd-stat-sub">No recovery reported</span>
+            </div>
+            
+            
+            <div class="hkd-stat-chip hkd-stat-chip--warn">
+                <span class="hkd-stat-label">All-Time Rank</span>
+                <span class="hkd-stat-value">#1315</span>
+                <span class="hkd-stat-sub">By amount stolen</span>
+            </div>
+            
+            
+            <div class="hkd-stat-chip hkd-stat-chip--purple">
+                <span class="hkd-stat-label">Auditors</span>
+                <span class="hkd-stat-value">1</span>
+                <span class="hkd-stat-sub">Prior security audit</span>
+            </div>
+            
+        </div>
+
+        <div class="hkd-body">
+            <div class="hkd-main">
+
+                <!-- ═══════════════════════════════════════════
+                     HACK DESCRIPTION & TECHNICAL DETAILS
+                ═══════════════════════════════════════════ -->
+                
+                <section class="hkd-description-section" aria-labelledby="hkd-description-heading">
+                    <div class="hkd-card hkd-description-card">
+                        <div class="hkd-card-header">
+                            <svg class="hkd-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                            <h2 id="hkd-description-heading" class="hkd-card-title">Incident Overview</h2>
+                        </div>
+                        <div class="hkd-card-body">
+                            
+                            <div class="hkd-description-body">
+                                <p class="hkd-description-text">Silo Finance creates permissionless and risk-isolated lending markets.</p>
+                            </div>
+                            
+                            
+                            
+                            <div class="hkd-description-attack-link">
+                                <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
+                                This is classified as a
+                                
+                                <a href="/attacks/oracle-manipulation-attacks">Oracle Manipulation &amp; Price Manipulation</a>
+                                .
+                                <a href="/hacks/type/oracle-manipulation-attacks">Compare similar hacks →</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- ═══════════════════════════════════════════
+                     INCIDENT SUMMARY CARD
+                ═══════════════════════════════════════════ -->
+                <section class="hkd-summary-card hkd-incident-report hkd-card" aria-labelledby="hkd-incident-heading">
+                    <div class="hkd-card-header">
+                        <svg class="icon hkd-card-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-triangle-alert"/></svg>
+                        <h2 id="hkd-incident-heading" class="hkd-card-title">Incident Report</h2>
+                    </div>
+
+                    <div class="hkd-card-body">
+                        <div class="hkd-summary-grid">
+                            <div class="hkd-summary-field">
+                                <span class="hkd-field-label">Protocol / Project</span>
+                                <span class="hkd-field-value" itemprop="about">Silo V2</span>
+                            </div>
+                            <div class="hkd-summary-field">
+                                <span class="hkd-field-label">Date of Incident</span>
+                                <span class="hkd-field-value">
+                                    <time datetime="2026-04-03">April 03, 2026</time>
+                                </span>
+                            </div>
+                            
+                            <div class="hkd-summary-field">
+                                <span class="hkd-field-label">Affected Chain(s)</span>
+                                <span class="hkd-field-value">
+                                    
+                                    <span class="hkd-chain-badge" data-chain="arbitrum">
+                                        <span class="hkd-chain-badge-dot"></span>
+                                        arbitrum
+                                    </span>
+                                    
+                                </span>
+                            </div>
+                            
+                            
+                            <div class="hkd-summary-field">
+                                <span class="hkd-field-label">Attack Technique</span>
+                                <span class="hkd-field-value">Misconfigured Oracle Exploit / Oracle Misconfiguration</span>
+                            </div>
+                            
+                            
+                            <div class="hkd-summary-field">
+                                <span class="hkd-field-label">Classification</span>
+                                <span class="hkd-field-value">Protocol Logic / Oracle Manipulation</span>
+                            </div>
+                            
+                            
+                            <div class="hkd-summary-field hkd-full-width">
+                                <span class="hkd-field-label">Primary Source</span>
+                                <span class="hkd-field-value">
+                                    
+                                    
+                                    
+                                    <a href="https://x.com/yieldsandmore/status/2040188706309525857" class="hkd-source-link" target="_blank" rel="noopener noreferrer">
+                                        View Post-Mortem
+                                        <svg class="icon" width="12" height="12" aria-hidden="true" focusable="false"><use href="#i-external-link"/></svg>
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════
+                     PROTOCOL INFO CARD (website, twitter, type)
+                ═══════════════════════════════════════════ -->
+                
+                <section class="hkd-protocol-section" aria-labelledby="hkd-protocol-heading">
+                    <div class="hkd-card hkd-protocol-card">
+                        <div class="hkd-card-header">
+                            <svg class="icon hkd-card-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg>
+                            <h2 id="hkd-protocol-heading" class="hkd-card-title">Protocol Information</h2>
+                        </div>
+                        <div class="hkd-card-body">
+                            <div class="hkd-summary-grid">
+                                
+                                <div class="hkd-summary-field">
+                                    <span class="hkd-field-label">Protocol Type</span>
+                                    <span class="hkd-field-value">Lending</span>
+                                </div>
+                                
+                                
+                                
+                                
+                                <div class="hkd-summary-field">
+                                    <span class="hkd-field-label">Smart Contract Language</span>
+                                    <span class="hkd-field-value">Solidity</span>
+                                </div>
+                                
+                                
+                                <div class="hkd-summary-field">
+                                    <span class="hkd-field-label">Official Website</span>
+                                    <span class="hkd-field-value">
+                                        <a href="https://app.silo.finance" class="hkd-field-value-link" target="_blank" rel="noopener noreferrer">
+                                            app.silo.finance
+                                            <svg class="icon" width="11" height="11" aria-hidden="true" focusable="false"><use href="#i-external-link"/></svg>
+                                        </a>
+                                    </span>
+                                </div>
+                                
+                                
+                                <div class="hkd-summary-field">
+                                    <span class="hkd-field-label">Protocol Twitter/X</span>
+                                    <span class="hkd-field-value">
+                                        <a href="https://x.com/SiloFinance" class="hkd-field-value-link" target="_blank" rel="noopener noreferrer">
+                                            @SiloFinance
+                                            <svg class="icon" width="11" height="11" aria-hidden="true" focusable="false"><use href="#i-external-link"/></svg>
+                                        </a>
+                                    </span>
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- ═══════════════════════════════════════════
+                     MARKET CONTEXT (CoinGecko / CMC enrichment)
+                ═══════════════════════════════════════════ -->
+                
+                
+                
+                
+                
+
+                <!-- ═══════════════════════════════════════════
+                     ATTACK TIMELINE
+                ═══════════════════════════════════════════ -->
+                
+
+                <!-- ═══════════════════════════════════════════
+                     WHAT THE ATTACKER NEEDED
+                ═══════════════════════════════════════════ -->
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <section class="hkd-needed-section" aria-labelledby="hkd-needed-heading">
+                    <div class="hkd-card hkd-needed-card">
+                        <div class="hkd-card-header">
+                            <svg class="hkd-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            </svg>
+                            <h2 id="hkd-needed-heading" class="hkd-card-title">What the Attacker Needed to Succeed</h2>
+                        </div>
+                        <div class="hkd-card-body">
+                            <p class="hkd-description-text">Understanding the prerequisites for this type of attack helps auditors identify protocols that are most at risk and helps developers build better defenses.</p>
+                            <div class="hkd-needed-grid">
+                                <div class="hkd-needed-item">
+                                        <svg class="hkd-needed-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="14" r="3"/><path d="M9 2h6v6a3 3 0 0 1-6 0V2z"/><path d="M6 18h12"/></svg>
+                                    <span class="hkd-needed-label">Technical Knowledge</span>
+                                    <span class="hkd-needed-value">Deep understanding of misconfigured oracle exploit / oracle misconfiguration and Solidity and EVM internals</span>
+                                </div>
+                                <div class="hkd-needed-item">
+                                    <svg class="icon hkd-needed-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-dollar-sign"/></svg>
+                                    <span class="hkd-needed-label">Capital Required</span>
+                                    <span class="hkd-needed-value">Seed capital to cover gas and initial position setup</span>
+                                </div>
+                                <div class="hkd-needed-item">
+                                    <svg class="icon hkd-needed-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-link"/></svg>
+                                    <span class="hkd-needed-label">On-Chain Access</span>
+                                    <span class="hkd-needed-value">Ability to interact with arbitrum smart contracts and deploy a custom exploit contract</span>
+                                </div>
+                                <div class="hkd-needed-item">
+                                    <svg class="icon hkd-needed-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+                                    <span class="hkd-needed-label">Protocol Analysis</span>
+                                    <span class="hkd-needed-value">Identification of the exploitable vulnerability in Silo V2's contract logic - root cause: protocol logic / oracle manipulation</span>
+                                </div>
+                                <div class="hkd-needed-item">
+                                    <svg class="icon hkd-needed-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-zap"/></svg>
+                                    <span class="hkd-needed-label">Execution Speed</span>
+                                    <span class="hkd-needed-value">Precise transaction ordering and timing to exploit the vulnerability within a single atomic block</span>
+                                </div>
+                                <div class="hkd-needed-item">
+                                    <svg class="icon hkd-needed-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+                                    <span class="hkd-needed-label">Obfuscation Plan</span>
+                                    <span class="hkd-needed-value">A strategy to launder and move stolen funds - typically through mixers, cross-chain bridges, or decentralized DEX swaps to resist tracing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- ═══════════════════════════════════════════
+                     WHAT AUDITORS SHOULD CHECK
+                ═══════════════════════════════════════════ -->
+                <section class="hkd-auditor-check-section" aria-labelledby="hkd-auditor-check-heading">
+                    <div class="hkd-card hkd-auditor-check-card">
+                        <div class="hkd-card-header">
+                            <svg class="icon hkd-card-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-square-check-big"/></svg>
+                            <h2 id="hkd-auditor-check-heading" class="hkd-card-title">What Auditors Should Check</h2>
+                        </div>
+                        <div class="hkd-card-body">
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="hkd-verdict hkd-verdict--yes">
+                                <span class="hkd-verdict-question">Could this have been caught in audit?</span>
+                                <span class="hkd-verdict-badge hkd-verdict-badge--yes">Yes: skilled auditors routinely flag Misconfigured Oracle Exploit / Oracle Misconfiguration vulnerabilities in code review</span>
+                            </div>
+                            
+
+                            
+                            
+                            <div class="hkd-audit-warning-strip">
+                                <svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-triangle-alert"/></svg>
+                                <span><strong>Audited by Audit Report 1, still lost $392K.</strong> Prior audits don't guarantee safety, especially after post-audit code changes.</span>
+                            </div>
+                            
+
+                            <p class="hkd-description-text">If you're auditing a protocol with similar architecture to Silo V2, these are the critical security checks that could have prevented this incident (April 2026).</p>
+                            <ul class="hkd-checklist" role="list">
+                                
+                                <li class="hkd-checklist-item">
+                                    <span class="hkd-checklist-check" aria-hidden="true">
+                                        <svg class="icon" width="10" height="10" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>
+                                    </span>
+                                    <span class="hkd-checklist-text">
+                                        Verify all logic paths related to <strong>Misconfigured Oracle Exploit / Oracle Misconfiguration</strong> are guarded by proper access controls and input validation
+                                        
+                                        - see the <a href="/attacks/oracle-manipulation-attacks">Oracle Manipulation &amp; Price Manipulation</a> attack class for patterns
+                                        
+                                    </span>
+                                </li>
+                                
+                                
+                                
+                                <li class="hkd-checklist-item">
+                                    <span class="hkd-checklist-check" aria-hidden="true">
+                                        <svg class="icon" width="10" height="10" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>
+                                    </span>
+                                    <span class="hkd-checklist-text">Audit oracle price feeds for manipulation risks - ensure time-weighted average prices (TWAPs) or multi-source aggregators are used, not spot prices</span>
+                                </li>
+                                
+                                <li class="hkd-checklist-item">
+                                    <span class="hkd-checklist-check" aria-hidden="true">
+                                        <svg class="icon" width="10" height="10" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>
+                                    </span>
+                                    <span class="hkd-checklist-text">Review privileged functions (owner, admin, governance) for potential abuse vectors - centralization risks should be documented and bounded with timelocks or multi-sigs</span>
+                                </li>
+                            </ul>
+
+                            <div class="hkd-inline-cta">
+                                <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
+                                <p class="hkd-inline-cta-text">
+                                    Master these auditing techniques with hands-on labs and real exploit scenarios in the
+                                    <a href="/smart-contract-auditing-course">Smart Contract Hacking course</a>.
+                                </p>
+                                <a href="/free-trial" class="hkd-inline-cta-btn" data-trial-cta="true">
+                                    Free Trial
+                                    <svg class="icon" width="12" height="12" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════
+                     FUNDS RECOVERY
+                ═══════════════════════════════════════════ -->
+                
+
+                <!-- ═══════════════════════════════════════════
+                     AUDIT INFORMATION
+                ═══════════════════════════════════════════ -->
+                
+                <section class="hkd-audit-section" aria-labelledby="hkd-audit-heading">
+                    <div class="hkd-card hkd-audit-card">
+                        <div class="hkd-card-header">
+                            <svg class="icon hkd-card-icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-square-check-big"/></svg>
+                            <h2 id="hkd-audit-heading" class="hkd-card-title">Security Audit History</h2>
+                        </div>
+                        <div class="hkd-card-body">
+                            
+                            <ul class="hkd-auditors-list" role="list">
+                                
+                                
+                                    
+                                    
+                                    
+                                
+                                <li class="hkd-auditor-item">
+                                    <div class="hkd-auditor-icon" aria-hidden="true">
+                                        <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
+                                    </div>
+                                    <span class="hkd-auditor-name">Audit Report 1</span>
+                                    
+                                    
+                                    <a href="https://docs.silo.finance/audits-and-tests" class="hkd-auditor-link" target="_blank" rel="noopener noreferrer">
+                                        Report
+                                        <svg class="icon" width="10" height="10" aria-hidden="true" focusable="false"><use href="#i-external-link"/></svg>
+                                    </a>
+                                    
+                                </li>
+                                
+                            </ul>
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- ═══════════════════════════════════════════
+                     POST-HACK TIMELINE
+                ═══════════════════════════════════════════ -->
+                
+
+                <!-- ═══════════════════════════════════════════
+                     ATTACK CLASSES
+                ═══════════════════════════════════════════ -->
+                
+                <section class="hkd-attack-classes" aria-labelledby="hkd-attack-classes-heading">
+                    <h2 id="hkd-attack-classes-heading" class="hkd-section-title">
+                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
+                        Related Attack Classes
+                    </h2>
+                    <div class="hkd-card hkd-attack-classes-card">
+                        <div class="hkd-card-body">
+                            <p class="hkd-attack-classes-intro">
+                                The technique used in this hack maps to these vulnerability classes in our security curriculum:
+                            </p>
+                            
+                            <p class="hkd-attack-classes-explore">
+                                <a href="/hacks/type/oracle-manipulation-attacks">See all Oracle Manipulation &amp; Price Manipulation examples →</a>
+                            </p>
+                            
+                            <div class="hkd-attack-classes-grid">
+                                
+                                <a href="/attacks/oracle-manipulation-attacks" class="hkd-attack-class-card">
+                                    <span class="hkd-attack-class-icon" aria-hidden="true">
+                                        <svg class="icon" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-radio-tower"/></svg>
+                                    </span>
+                                    <span class="hkd-attack-class-name">Oracle Manipulation &amp; Price Manipulation</span>
+                                    <svg class="icon hkd-attack-class-arrow" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-chevron-right"/></svg>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- ═══════════════════════════════════════════
+                     PROOF OF CONCEPTS (Terminal Style)
+                ═══════════════════════════════════════════ -->
+                
+
+                <!-- ═══════════════════════════════════════════
+                     POC REFERENCES (on-chain evidence links)
+                ═══════════════════════════════════════════ -->
+                
+
+                <!-- ═══════════════════════════════════════════
+                     SOURCES
+                ═══════════════════════════════════════════ -->
+                
+                <section class="hkd-sources-section" aria-labelledby="hkd-sources-heading">
+                    <h2 id="hkd-sources-heading" class="hkd-section-title">
+                        <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-link"/></svg>
+                        Sources &amp; References
+                    </h2>
+                    <div class="hkd-card hkd-sources-card">
+                        <div class="hkd-card-body">
+                            
+                            <ul class="hkd-sources-list" role="list">
+                                
+                                <li class="hkd-source-item">
+                                    <span class="hkd-source-counter">01</span>
+                                    <div class="hkd-source-row">
+                                        <span class="hkd-source-label">Source 1</span>
+                                        <a href="https://x.com/yieldsandmore/status/2040188706309525857" class="hkd-source-link" target="_blank" rel="noopener noreferrer">
+                                            <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-external-link"/></svg>
+                                            https://x.com/yieldsandmore/status/2040188706309525857
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </section>
+                
+
+            </div><!-- /.hkd-main -->
+
+            <!-- ═══════════════════════════════════════════
+                 SIDEBAR
+            ═══════════════════════════════════════════ -->
+            <aside class="hkd-sidebar" aria-label="Related information">
+
+                <!-- Threat Assessment card (replaces redundant Incident Details) -->
+                <div class="hkd-sidebar-card">
+                    <div class="hkd-sidebar-card-header">Threat Assessment</div>
+                    <div class="hkd-threat-body">
+                        <div class="hkd-threat-severity">
+                            <span class="hkd-threat-severity-label">Severity Level</span>
+                            <div class="hkd-severity-bar-track">
+                                <div class="hkd-severity-bar-fill hkd-sbar--low"></div>
+                            </div>
+                            <span class="hkd-threat-level hkd-sbar-text--low">LOW</span>
+                        </div>
+                        <ul class="hkd-sidebar-rows">
+                            
+                            <li class="hkd-sidebar-row">
+                                <span class="hkd-sidebar-row-key">Attack Vector</span>
+                                <span class="hkd-sidebar-row-val">Misconfigured Oracle Exploit / Oracle Misconfiguration</span>
+                            </li>
+                            
+                            
+                            <li class="hkd-sidebar-row">
+                                <span class="hkd-sidebar-row-key">Root Cause</span>
+                                <span class="hkd-sidebar-row-val">Protocol Logic / Oracle Manipulation</span>
+                            </li>
+                            
+                            <li class="hkd-sidebar-row">
+                                <span class="hkd-sidebar-row-key">Year</span>
+                                <span class="hkd-sidebar-row-val">2026</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <nav class="hkd-sidebar-card hkd-case-index" aria-label="Case file sections">
+                    <div class="hkd-sidebar-card-header">Case File</div>
+                    <div class="hkd-case-index-body">
+                        
+                        <a href="#hkd-description-heading" class="hkd-case-index-link">
+                            <span>01</span>
+                            Incident overview
+                        </a>
+                        
+                        <a href="#hkd-auditor-check-heading" class="hkd-case-index-link">
+                            <span>02</span>
+                            Audit checks
+                        </a>
+                        <a href="#hkd-incident-heading" class="hkd-case-index-link">
+                            <span>03</span>
+                            Incident report
+                        </a>
+                        
+                        <a href="#hkd-attack-classes-heading" class="hkd-case-index-link">
+                            <span>04</span>
+                            Attack class
+                        </a>
+                        
+                        
+                        <a href="#hkd-sources-heading" class="hkd-case-index-link">
+                            <span>05</span>
+                            Sources
+                        </a>
+                        
+                    </div>
+                </nav>
+
+                <!-- Technique Stats sidebar -->
+                
+                <div class="hkd-sidebar-card hkd-technique-stats">
+                    <div class="hkd-sidebar-card-header">Misconfigured Oracle Exploit / Oracle Misconfiguration Stats</div>
+                    <div class="hkd-card-body">
+                        <div class="hkd-technique-stat">
+                            <span class="hkd-technique-stat-val">1</span>
+                            <span class="hkd-technique-stat-label">Total incidents</span>
+                        </div>
+                        <div class="hkd-technique-stat">
+                            <span class="hkd-technique-stat-val">$392K</span>
+                            <span class="hkd-technique-stat-label">Total losses</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Recovery sidebar -->
+                
+
+                <!-- CTA sidebar -->
+                <div class="hkd-sidebar-card">
+                    <div class="hkd-sidebar-card-header">Learn Security</div>
+                    <div class="hkd-sidebar-cta-body">
+                        <svg class="icon hkd-sidebar-cta-icon" width="36" height="36" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
+                        <p class="hkd-sidebar-cta-text">
+                            Learn to find &amp; prevent hacks like <strong>Silo V2</strong> through hands-on training.
+                        </p>
+                        <a href="/free-trial" class="hkd-btn-primary hkd-btn-full" data-trial-cta="true">
+                            Start Free Trial
+                            <svg class="icon" width="14" height="14" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </aside>
+        </div><!-- /.hkd-body -->
+
+        <!-- ═══════════════════════════════════════════
+             RELATED HACKS (Card Grid)
+        ═══════════════════════════════════════════ -->
+        
+
+        <!-- ═══════════════════════════════════════════
+             CTA
+        ═══════════════════════════════════════════ -->
+        <section class="hkd-cta-section" aria-labelledby="hkd-cta-heading">
+            <div class="hkd-cta-inner">
+                <div class="hkd-cta-card">
+                    <div class="hkd-cta-content">
+                        <h2 id="hkd-cta-heading" class="hkd-cta-headline">
+                            Learn to Prevent the Next <em>Silo V2</em>
+                        </h2>
+                        <p class="hkd-cta-sub">
+                            The Silo V2 hack is one of many attacks that skilled auditors are trained to detect before deployment.
+                            Master real exploit patterns and defense techniques with hands-on Web3 security training.
+                        </p>
+                        <div class="hkd-cta-actions">
+                            <a href="/free-trial" class="hkd-btn-primary" data-trial-cta="true">
+                                Start Free Trial
+                                <svg class="icon" width="16" height="16" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+                            </a>
+                            <a href="/attacks" class="hkd-btn-secondary">
+                                Browse Attack Library
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+    <a href="/free-trial" class="hkd-sticky-trial" data-trial-cta="true" aria-label="Start a free trial for exploit labs like Silo V2">
+        <span>Recreate exploit patterns safely</span>
+        <strong>Free Trial</strong>
+    </a>
+
+    
+<div class="free-trial-modal" id="freeTrialModal" role="dialog" aria-labelledby="trialModalTitle" aria-describedby="trialModalHook" aria-modal="true"
+            data-page-key="hack-detail-silo-v2-hack-2026"
+            data-trigger-mode="scroll"
+            data-delay-ms="20000"
+            data-scroll-threshold="0.35">
+    <div class="free-trial-modal-backdrop" id="trialModalBackdrop"></div>
+    <div class="free-trial-modal-container">
+        <div class="free-trial-modal-content">
+            <button class="trial-close-btn" id="closeTrialModal" aria-label="Close modal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+
+            <div class="trial-modal-layout">
+                <div class="trial-modal-left">
+                    <div class="trial-header-compact">
+                        <div class="trial-alert-icon">
+                            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield-check"/></svg>
+                        </div>
+                        <div class="trial-header-text">
+                            <h2 class="trial-modal-title" id="trialModalTitle">Recreate Real Exploit Patterns Safely</h2>
+                            <p class="trial-modal-hook" id="trialModalHook">Use the SCH free trial to turn incident reading into hands-on vulnerability detection practice.</p>
+                        </div>
+                    </div>
+
+                    <div class="trial-value-props">
+                        <div class="trial-value-item">
+                            <div class="trial-value-icon">
+                                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-file-text"/></svg>
+                            </div>
+                            <span class="trial-value-text"><strong>Guided exploit labs</strong> based on real vulnerability classes</span>
+                        </div>
+                        <div class="trial-value-item">
+                            <div class="trial-value-icon">
+                                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clipboard"/></svg>
+                            </div>
+                            <span class="trial-value-text"><strong>25 free lessons</strong> for auditors studying incidents like this</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trial-modal-right">
+                    <div class="trial-form-header">
+                        <h3 class="trial-form-title">Claim Your Free Trial</h3>
+                    </div>
+
+                    <form class="trial-form" id="freeTrialForm" method="POST" action="/submit-form" novalidate>
+                        <input type="hidden" name="_csrf_token" value="e099069cefd3ef1e7bc1cd435e9088b47bf48ec7df5e3e48e0926f143d5dba12">
+                        <input type="hidden" name="_form_type" value="free_trial">
+                        <input type="hidden" name="_subject" value="Free Trial Request - Hack Detail - Silo V2">
+                        <input type="hidden" name="source" value="hack-detail-popup">
+                        
+                            
+                        <input type="hidden" name="hack_slug" value="silo-v2-hack-2026">
+                            
+                        
+
+                        <input type="text" name="_honey" class="trial-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <input type="text" name="website" class="trial-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <input type="text" name="company_name" class="trial-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <div class="trial-form-group trial-form-group-row">
+                            <div class="trial-form-field">
+                                <label for="trialFirstName">First Name</label>
+                                <input type="text" id="trialFirstName" name="first_name" class="trial-form-input" placeholder="First name" required autocomplete="given-name" aria-describedby="trialFirstNameError">
+                                <p class="form-field-error" id="trialFirstNameError" hidden></p>
+                            </div>
+                            <div class="trial-form-field">
+                                <label for="trialLastName">Last Name</label>
+                                <input type="text" id="trialLastName" name="last_name" class="trial-form-input" placeholder="Last name" required autocomplete="family-name" aria-describedby="trialLastNameError">
+                                <p class="form-field-error" id="trialLastNameError" hidden></p>
+                            </div>
+                        </div>
+
+                        <div class="trial-form-group">
+                            <label for="trialEmail">Email Address</label>
+                            <input type="email" id="trialEmail" name="email" class="trial-form-input" placeholder="your@email.com" required autocomplete="email" aria-describedby="trialEmailError">
+                            <p class="form-field-error" id="trialEmailError" hidden></p>
+                        </div>
+
+                        <div class="form-status trial-form-status" id="trialFormStatus" role="alert" aria-live="assertive" tabindex="-1" hidden></div>
+
+                        <button type="submit" class="trial-submit-btn" id="trialSubmitBtn">
+                            <span>Get Free Access</span>
+                            <svg class="icon" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+                        </button>
+                    </form>
+
+                    <div class="trial-success-message" role="status" aria-live="polite" tabindex="-1" hidden>
+                        <div class="trial-success-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <h3 class="trial-success-title">Access Request Received</h3>
+                        <p class="trial-success-text">Thanks for signing up. We'll email your trial onboarding details within 2-3 business days.</p>
+                    </div>
+
+                    <div class="trial-modal-footer">
+                        <p class="trial-footer-text">By submitting, you agree to our <a href="/privacy-policy">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    
+    
+<!-- Footer -->
+<footer class="footer-mega">
+    <div class="footer-glow"></div>
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <a href="/" class="footer-logo">
+                    <span class="footer-avatar">
+                        <picture>
+    
+    <source
+        type="image/avif"
+        srcset="/static/images/optimized/johnny-icon-2.avif 1x, /static/images/optimized/johnny-icon-2-2x.avif 2x"
+    >
+    
+    <source
+        type="image/webp"
+        srcset="/static/images/optimized/johnny-icon-2.webp 1x, /static/images/optimized/johnny-icon-2-2x.webp 2x"
+    >
+    
+    <img
+        src="/static/images/johnny-icon-2.png"
+        alt="JohnnyTime"
+        width="56"
+        height="56"
+        
+        loading="lazy"
+        
+        decoding="async"
+    >
+</picture>
+                    </span>
+                    <span class="footer-logo-text">Smart Contract<br>Hacking</span>
+                </a>
+                <p class="footer-tagline">Elite training to break and secure smart contracts. Join 2,000+ auditors mastering blockchain security.</p>
+                <div class="footer-social">
+                    <a href="https://twitter.com/RealJohnnyTime" target="_blank" rel="noopener" aria-label="Twitter" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/johnnytime/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@JohnnyTime" target="_blank" rel="noopener" aria-label="YouTube" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://discord.gg/smartcontracthacking" target="_blank" rel="noopener" aria-label="Discord" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/realjohnnytime" target="_blank" rel="noopener" aria-label="Telegram" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Course Column -->
+            <div class="footer-column">
+                <h4 class="footer-column-title">Course</h4>
+                <ul class="footer-links-list">
+                    <li><a href="/smart-contract-auditing-course">Auditing Course</a></li>
+                    <li><a href="/best-smart-contract-auditing-courses">Best Auditing Courses</a></li>
+                    <li><a href="/sch-lite">SCH Lite</a></li>
+                    <li><a href="https://cairo.smartcontractshacking.com/" target="_blank" rel="noopener noreferrer">Cairo Course</a></li>
+                    <li><a href="/free-trial">Free Trial</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                    <li><a href="/smart-contract-auditor-certification">Certification</a></li>
+                </ul>
+            </div>
+
+            <!-- Tools Column -->
+            <div class="footer-column">
+                <h4 class="footer-column-title"><a href="/tools" class="footer-column-title-link">Tools</a></h4>
+                <ul class="footer-links-list">
+                    <li><a href="/tools/web3-auditing-competitions-and-bug-bounties">Competitions &amp; Bounties</a></li>
+                    <li><a href="/tools/smart-contract-ctf">CTF Library</a></li>
+                    <li><a href="/tools/smart-contract-audit-cost-estimator">Audit Cost Estimator</a></li>
+                    <li><a href="/tools/smart-contract-audit-checklist">Audit Checklist</a></li>
+                    <li><a href="/tools/web3-hacks-dashboard">Hacks Dashboard</a></li>
+                    <li><a href="/tools/most-expensive-crypto-hacks">Biggest Crypto Hacks</a></li>
+                    <li><a href="/tools/smart-contract-auditor-jobs">Auditor Jobs</a></li>
+                    <li><a href="/tools/smart-contract-auditor-roadmap">Auditor Roadmap</a></li>
+                    <li><a href="/tools/auditor-salary-calculator">Auditor Salary Calculator</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn Column -->
+            <div class="footer-column">
+                <h4 class="footer-column-title"><a href="/learn" class="footer-column-title-link">Learn</a></h4>
+                <ul class="footer-links-list">
+                    <li><a href="/learn">All Articles</a></li>
+                    <li><a href="/learn/search?q=security">Security Guides</a></li>
+                    <li><a href="/learn/security/smart-contract-auditor">Auditor FAQ</a></li>
+                    <li><a href="/cairo-smart-contract-security">Cairo Security Guide</a></li>
+                    <li><a href="/learn/search?q=career">Career Guide</a></li>
+                    <li><a href="/learn/popular">Popular Articles</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources Column -->
+            <div class="footer-column">
+                <h4 class="footer-column-title">Resources</h4>
+                <ul class="footer-links-list">
+                    <li><a href="/resources">Resource Hub</a></li>
+                    <li><a href="/attacks">Attacks Library</a></li>
+                    <li><a href="/glossary">Security Glossary</a></li>
+                    <li><a href="/owasp-2026">OWASP Top 10 (2026)</a></li>
+                    <li><a href="/reports">Quarterly Exploit Reports</a></li>
+                    <li><a href="/compare/cyfrin-or-sch-certification">Cyfrin or SCH Certification</a></li>
+                    <li><a href="/exercise-demo">Exercise Demo</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                    <li><a href="/#success-stories">Success Stories</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="footer-column">
+                <h4 class="footer-column-title">Company</h4>
+                <ul class="footer-links-list">
+                    <li><a href="/about">About JohnnyTime</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <li><a href="/verify">Verify Contacts</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2026 JohnnyTime. All rights reserved.</p>
+            <p class="footer-built">Built for auditors, by auditors.</p>
+        </div>
+    </div>
+</footer>
+    
+
+    
+<!-- Scripts -->
+<script defer src="/static/js/referral-tracking.min.js?v=1694" type="1ca06aafec8987db8e49a288-text/javascript"></script>
+
+<script defer src="/static/js/anti-spam.min.js?v=1694" type="1ca06aafec8987db8e49a288-text/javascript"></script>
+
+<script defer src="/static/js/core.min.js?v=1694" type="1ca06aafec8987db8e49a288-text/javascript"></script>
+<script defer src="/static/js/youtube-facade.min.js?v=1694" type="1ca06aafec8987db8e49a288-text/javascript"></script>
+
+    
+    
+        <script defer src="/static/js/hack-detail.min.js?v=1694" type="1ca06aafec8987db8e49a288-text/javascript"></script>
+    <script defer src="/static/js/ai-share-buttons.min.js?v=1694" type="1ca06aafec8987db8e49a288-text/javascript"></script>
+    <script defer src="/static/js/tools-trial-modal.min.js?v=1694" type="1ca06aafec8987db8e49a288-text/javascript"></script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1ca06aafec8987db8e49a288-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2f6b4962d95ae14',t:'MTc4NzQ1MjMzMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

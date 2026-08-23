@@ -1,0 +1,39 @@
+{
+  "tag": "Base",
+  "category_filter": "Base",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=Base&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:25Z",
+      "sha256": "5719ba23f86a50b6e77dbf479615c16c980ed0f8733ff6aa7a8d98a6fd4f1b6d",
+      "bytes": 27182,
+      "snapshot": "Base_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 7,
+      "rows_older_than_window": 13,
+      "first_date": "2025-01-08",
+      "last_date": "2026-07-25",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=Base&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:27Z",
+      "sha256": "ce364003d00cd55fbb255bb20f5fdc8217860b1a7cdcaad7cbdd136ef1bec89c",
+      "bytes": 24624,
+      "snapshot": "Base_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2023-08-01",
+      "last_date": "2024-12-28",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 40
+}

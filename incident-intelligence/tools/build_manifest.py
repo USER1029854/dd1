@@ -1,0 +1,86 @@
+#!/usr/bin/env python3
+"""Build manifest.json: every load-bearing claim -> the artifact that supports it."""
+import json,os,hashlib,glob,datetime
+B='/home/user/dd1/incident-intelligence'
+def sha(p):
+    try: return hashlib.sha256(open(p,'rb').read()).hexdigest()
+    except Exception: return None
+def ent(rel,role,claim):
+    p=os.path.join(B,rel)
+    return {"path":rel,"exists":os.path.exists(p),
+            "bytes":os.path.getsize(p) if os.path.exists(p) else 0,
+            "sha256":sha(p),"role":role,"supports_claim":claim}
+crawl=json.load(open(f'{B}/sources/slowmist/crawl_log_all.json'))
+dlm=json.load(open(f'{B}/sources/defillama/protocols.meta.json'))
+M={
+ "run_id":json.load(open(f'{B}/run_config.json'))['run_id'],
+ "generated_utc":datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
+ "safety_attestation":{
+   "production_transactions_submitted":0,"production_transactions_constructed":0,
+   "credentials_recovered_or_used":0,"unauthorized_extraction_optimized":False,
+   "chain_access_methods":["eth_call","eth_getStorageAt","eth_getCode","explorer getsourcecode","HTTP GET"],
+   "statement":"All production-chain interaction was read-only. No transaction was constructed, signed, simulated as a broadcast against live user state, or submitted. No private key or credential was recovered, derived or used. No exploitation sequence was produced."},
+ "primary_sources":{
+   "slowmist_index":{"base_url":"https://hacked.slowmist.io/?c=&page=1",
+     "pages_fetched":len(crawl['pages']),
+     "boundary_status":crawl['pages'][-1]['status'],
+     "per_page":[{"page":p['page'],"url":p['url'],"retrieved_utc":p.get('retrieved_utc'),
+                  "sha256":p.get('sha256'),"snapshot":f"sources/slowmist/{p.get('snapshot')}" if p.get('snapshot') else None,
+                  "rows_parsed":p.get('rows_parsed'),"rows_in_window":p.get('rows_in_window'),
+                  "first_date":p.get('first_date'),"last_date":p.get('last_date'),"status":p['status']}
+                 for p in crawl['pages']]},
+   "defillama_protocols":{**dlm,"snapshot":"sources/defillama/protocols.json"},
+   "defillama_adapters_repo":"https://github.com/DefiLlama/DefiLlama-Adapters (raw reads of projects/* and registries/*)"},
+ "artifacts":[
+  ent("run_config.json","config","Window 2026-02-22..2026-08-22, thresholds, evidence-level definitions"),
+  ent("commands.sh","reproduction","Every retrieval and transformation step in execution order"),
+  ent("incidents/all_raw.jsonl","incident corpus","240 SlowMist rows; 205 inside the window; every row retained and dispositioned"),
+  ent("incidents/included.jsonl","incident corpus","110 grade-A/B on-chain incidents with reconstructed invariants and guards"),
+  ent("incidents/provisional.jsonl","incident corpus","22 grade-C incidents; excluded from statistics and ranking weight"),
+  ent("incidents/excluded.jsonl","incident corpus","Every exclusion with a concrete reason code from a controlled vocabulary"),
+  ent("incidents/duplicate_groups.json","dedup","Clone and repeat lineages; prevents clone incidents inflating independent recurrence"),
+  ent("families/families.json","pattern library","43 mechanism families with invariant, mechanism, preconditions, indicators and guards"),
+  ent("families/families.md","pattern library","Human-readable family library"),
+  ent("families/guard_library.jsonl","guard library","Decisive guards with evidence patterns and limitations"),
+  ent("families/near_miss_library.jsonl","guard library","Pairs killed by a precondition or a decisive guard, with residual uncertainty"),
+  ent("sources/slowmist/crawl_log_all.json","provenance","Per-page fetch log, hashes and boundary proof"),
+  ent("sources/incident-references/reference_index.json","provenance","Every reference URL with retrieval status; social posts marked LEAD_ONLY"),
+  ent("sources/defillama/protocols.json","universe","8103 DefiLlama protocol rows, all keys preserved"),
+  ent("protocols/defillama_universe.json","universe","Normalized universe with derived feature fields"),
+  ent("protocols/eligibility.json","screen","Eligibility decision and sub-threshold high-fit queue per protocol"),
+  ent("protocols/pairs_l0.json","screen","All generated protocol-family pairs at L0"),
+  ent("protocols/deep_screen_worklist.json","screen","Stratified deep-screen worklist across families and exposure tiers"),
+  ent("protocols/adapters_index.json","adapter evidence","Per-protocol adapter read, hashes, addresses, dynamic sources"),
+  ent("protocols/registry_configs.json","adapter evidence","Per-protocol configs from registries/compound.js, aave.js, curators.js"),
+  ent("protocols/dead_adapters.json","adapter evidence","DefiLlama registries/deadAdapters.json: 591 dead deployments with deadFrom"),
+  ent("protocols/onchain_probes.json","live state","Read-only eth_call/eth_getStorageAt/getsourcecode results"),
+  ent("protocols/prior_art.json","prior art","Researched prior-art status and documented decisive guards"),
+  ent("protocols/deep_screened.jsonl","scoring","Per-pair precondition gate, guards, MATCH/CONFIDENCE/PREVENTION with components"),
+  ent("results/candidates_all.csv","results","Every surviving pair with both ranks and full score components"),
+  ent("results/candidates_by_match.md","results","Ranking A - mechanism match"),
+  ent("results/candidates_by_prevention.md","results","Ranking B - expected loss prevention"),
+  ent("results/audit_variables.txt","handoff","One self-contained line per final candidate for the downstream audit prompt"),
+  ent("results/excluded_protocols.md","results","Universe exclusions and killed pairs with reasons"),
+  ent("results/run_summary.md","results","Required summary statistics"),
+  ent("quality_report.md","quality","Mechanical quality gates and known limitations"),
+ ],
+ "claim_map":{
+  "205 incidents inside the six-month window":"incidents/all_raw.jsonl + sources/slowmist/crawl_log_all.json (boundary proven on page 12)",
+  "110 included grade-A/B incidents":"incidents/included.jsonl",
+  "43 mechanism families":"families/families.json",
+  "family incident counts, losses and recency":"families/families.json (computed from incidents/all_raw.jsonl)",
+  "clone lineages do not inflate recurrence":"incidents/duplicate_groups.json + families.json unique_root_cause_count",
+  "8103 protocols fetched":"sources/defillama/protocols.meta.json",
+  "eligibility and sub-threshold high-fit queue":"protocols/eligibility.json",
+  "adapter read or marked missing for every candidate":"protocols/adapters_index.json",
+  "Compound-fork and curator lineage":"protocols/registry_configs.json (registries/compound.js, curators.js)",
+  "deprecated deployment evidence":"protocols/dead_adapters.json + eligibility.json deprecated/deadUrl flags",
+  "live-state evidence":"protocols/onchain_probes.json",
+  "score components and caps":"protocols/deep_screened.jsonl + results/candidates_all.csv",
+  "prior-art status per final pair":"protocols/prior_art.json + results/candidates_by_*.md",
+  "near misses":"families/near_miss_library.jsonl",
+ }}
+json.dump(M,open(f'{B}/manifest.json','w'),indent=1)
+missing=[a['path'] for a in M['artifacts'] if not a['exists'] or a['bytes']==0]
+print(json.dumps({"artifacts":len(M['artifacts']),"missing_or_empty":missing,
+ "slowmist_pages":len(crawl['pages']),"claims_mapped":len(M['claim_map'])},indent=2))

@@ -1,0 +1,46 @@
+[PASS] 18.6 every referenced artifact exists and is non-empty — missing/empty: []
+[PASS] 18.6 manifest maps every load-bearing claim — 14 claims mapped
+[PASS] 18.6 commands.sh replays retrieval and transformation
+[PASS] 18.1 crawling continued until the date boundary was proven — final page 12: in_window=0 older=20/20
+[PASS] 18.1 every in-window row retained and dispositioned — 110+22+73 vs 205
+[PASS] 18.1 actual incident date used, not publication date
+[PASS] 18.1 every exclusion has a concrete reason
+[PASS] 18.1 only A/B evidence entered the family library
+[PASS] 18.1 grade-C incidents are provisional only
+[PASS] 18.1 duplicate/clone lineages recorded
+[PASS] 18.1 clone incidents do not inflate independent recurrence — 2 families have unique_root_cause_count < incident_count
+[PASS] 18.2 every included incident names a broken invariant
+[PASS] 18.2 decisive missing guard named on every included incident
+[PASS] 18.2 root cause and amplifiers separated
+[PASS] 18.2 false-positive killers explicit on every family
+[PASS] 18.2 no family collapsed to a generic attack label — []
+[PASS] 18.2 families cluster on invariant+mechanism+preconditions+guard
+[PASS] 18.2 single-event families labelled, no recurrence claimed — 8 single-event families
+[PASS] 18.3 /protocols fetched — 8103 rows
+[PASS] 18.3 every retained protocol ties to a valid current DefiLlama slug
+[PASS] 18.3 adapter read or explicitly marked missing for every candidate — 1 marked missing (explicitly recorded): ['coin8']
+[PASS] 18.3 sub-threshold high-fit protocols preserved
+[PASS] 18.3 TVL, chains, category and deployment evidence recorded
+[PASS] 18.4 minimum deep-screened pairs met (>=80) — 243 pairs deep-screened
+[PASS] 18.4 mandatory-precondition gate applied to every pair
+[PASS] 18.4 decisive guards searched on every surviving pair
+[PASS] 18.4 score evidence shown
+[PASS] 18.4 confidence separate from technical fit
+[PASS] 18.4 live exposure separate from fit
+[PASS] 18.4 unknowns visible
+[PASS] 18.4 metadata-only pairs capped at 20 — 0 violations
+[PASS] 18.4 adapter-only pairs capped at 45 — 0 violations
+[PASS] 18.4 near misses written to the guard library — 13 near misses
+[PASS] 18.4 no candidate called vulnerable in candidates_by_match.md — []
+[PASS] 18.4 no candidate called vulnerable in candidates_by_prevention.md — []
+[PASS] 18.4 no candidate called vulnerable in run_summary.md — []
+[PASS] 18.4 prior art classified for every final pair
+[PASS] 18.4 novelty not claimed without an exhaustive prior-art search — NO_PUBLIC_MATCH_FOUND is deliberately never emitted; PRIOR_ART_SEARCH_INCOMPLETE is used instead
+[PASS] 18.5 all production interactions read-only
+[PASS] 18.5 no credentials recovered or used
+[PASS] 18.5 no production transaction built or submitted
+[PASS] 18.5 no unauthorized extraction optimized
+[PASS] 18.6 audit_variables.txt: one valid protocol per line, no multiline entries — 20 lines
+[PASS] 18.6 no secrets in audit_variables.txt
+
+SUMMARY: 44 pass, 0 fail, 0 warn

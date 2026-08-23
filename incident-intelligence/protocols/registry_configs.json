@@ -1,0 +1,4197 @@
+{
+ "bencu": {
+  "registry_keys": [
+   "compound:bencu"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xC5986Df018D1ff8ecA79fd3f266428616617cDF3"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    metis: { comptroller: '0xC5986Df018D1ff8ecA79fd3f266428616617cDF3' },\n  }",
+  "chains_in_config": [
+   "metis"
+  ]
+ },
+ "aquarius-loan": {
+  "registry_keys": [
+   "compound:aquarius-loan"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x6056Eb6a5634468647B8cB892d3DaA5F816939FC",
+    "0xf854c6b57e6d8ec3e790ec6da1a13060d19549d4"
+   ],
+   "cether": [
+    "0x03ef96f537a7cda4411c8643afd9d8814d5b4906",
+    "0x13f9a7f33550fe935bf7b544e536584d30ecf50a"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    // borrowed zeroed out due to bad debt (isInsolvent empties the borrowed bucket)\n    arbitrum: { comptroller: '0xf854c6b57e6d8ec3e790ec6da1a13060d19549d4', cether: '0x13f9a7f33550fe935bf7b544e536584d30ecf50a', isInsolvent: true },\n    core: { comptroller: '0x6056Eb6a5634468647B8cB892d3DaA5F816939FC', cether: '0x03ef96f537a7cda4411c8643afd9d8814d5b4906', isInsolvent: true, staking: ['0x959C7898318DC3c8fD11cbC5000f4e36F75144EC', '0x204e2D49b7cDA6d93301bcF667A2Da28Fb0e5780'] },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "core"
+  ]
+ },
+ "rho-markets": {
+  "registry_keys": [
+   "compound:rho-markets"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x8a67AB98A291d1AEA2E1eB0a79ae4ab7f2D76041"
+   ],
+   "cether": [
+    "0x639355f34Ca9935E0004e30bD77b9cE2ADA0E692"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    scroll: { comptroller: '0x8a67AB98A291d1AEA2E1eB0a79ae4ab7f2D76041', cether: '0x639355f34Ca9935E0004e30bD77b9cE2ADA0E692', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "scroll"
+  ]
+ },
+ "quantus": {
+  "registry_keys": [
+   "compound:quantus"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x1F1416EbbeAb7a13fC5B6111A1E77696Be600413",
+    "0xFc57bF0733e5e65d8549fc2922919Cfb97e62D5f"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: \"Counts the tokens locked in the contracts to be used as collateral to borrow or to earn yield. Borrowed coins are not counted towards the TVL, so only the coins actually locked in the contracts are counted. There's multiple reasons behind this but one of the main ones is to avoid inflating the TVL through cycled lending.\",\n    monad: { comptroller: '0xFc57bF0733e5e65d8549fc2922919Cfb97e62D5f', isInsolvent: true },\n    megaeth: { comptroller: '0x1F1416EbbeAb7a13fC5B6111A1E77696Be600413', isInsolvent: true },\n  }",
+  "chains_in_config": []
+ },
+ "takara": {
+  "registry_keys": [
+   "compound:takara"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x71034bf5eC0FAd7aEE81a213403c8892F3d8CAeE"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    sei: {\n      comptroller: '0x71034bf5eC0FAd7aEE81a213403c8892F3d8CAeE',\n      blacklistedTokens: [\n        '0x7F3C2A5bCA48150c7Ce07DcEAb9B73336a7e592a',\n        '0x963Db326b734FD58a9396C020BBb52C14acaFb02',\n        '0xabFb7A392a6DaaC50f99c5D14B5f27EFfd08Fe03',\n      ],\n    },\n  }",
+  "chains_in_config": []
+ },
+ "hover": {
+  "registry_keys": [
+   "compound:hover"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x3A4Ec955a18eF6eB33025599505E7d404a4d59eC"
+   ],
+   "cether": [
+    "0xb51eFaF2f7aFb8a2F5Be0b730281E414FB487636"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    kava: { comptroller: '0x3A4Ec955a18eF6eB33025599505E7d404a4d59eC', cether: '0xb51eFaF2f7aFb8a2F5Be0b730281E414FB487636' },\n  }",
+  "chains_in_config": [
+   "kava"
+  ]
+ },
+ "enzo": {
+  "registry_keys": [
+   "compound:enzo"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xe688a4a94AD1D32CD52A01306fc0a9552749F322"
+   ],
+   "cether": [
+    "0xe277Aed3fF3Eb9824EdC52Fe7703DF0c5ED8B313"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    btr: { cether: '0xe277Aed3fF3Eb9824EdC52Fe7703DF0c5ED8B313', comptroller: '0xe688a4a94AD1D32CD52A01306fc0a9552749F322', cetheEquivalent: ADDRESSES.btr.WBTC },\n  }",
+  "chains_in_config": []
+ },
+ "enclabs": {
+  "registry_keys": [
+   "compound:enclabs"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0c9425eCFbd64a96D306f36e8281EE5308446d31",
+    "0x1db5134ee31278809b2d85fab2796141dbe0d041",
+    "0x26190C71c27e089533186338d16abB2ba9528969",
+    "0x62c627e08f996d7d7563e135e527f422fee34786",
+    "0xA3F48548562A30A33257A752d396A20B4413E8E3",
+    "0xccAdFCFaa71407707fb3dC93D7d83950171aA2c9"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    // borrowed zeroed out due to bad debt -> isInsolvent empties the borrowed bucket\n    sonic: [\n      { comptroller: '0xccAdFCFaa71407707fb3dC93D7d83950171aA2c9', isInsolvent: true },\n      { comptroller: '0x1db5134ee31278809b2d85fab2796141dbe0d041', isInsolvent: true },\n      { comptroller: '0x62c627e08f996d7d7563e135e527f422fee34786', isInsolvent: true },\n      { comptroller: '0x26190C71c27e089533186338d16abB2ba9528969', isInsolvent: true },\n      { comptroller: '0x0c9425eCFbd64a96D306f36e8281EE5308446d31', isInsolvent: true },\n    ],\n    plasma: { comptroller: '0xA3F48548562A30A33257A752d396A20B4413E8E3', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "plasma",
+   "sonic"
+  ]
+ },
+ "jax-protocol": {
+  "registry_keys": [
+   "compound:jax-protocol"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x8D86d4070b9432863FE9522B2c931C410085E1d4"
+   ],
+   "cether": [
+    "0xdc1af71e6b9b4572cdf7832496efbea06cbecfc5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    taiko: { comptroller: '0x8D86d4070b9432863FE9522B2c931C410085E1d4', cether: '0xdc1af71e6b9b4572cdf7832496efbea06cbecfc5' },\n  }",
+  "chains_in_config": [
+   "taiko"
+  ]
+ },
+ "capyfi": {
+  "registry_keys": [
+   "compound:capyfi"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0b9af1fd73885aD52680A1aeAa7A3f17AC702afA",
+    "0x123Abe3A273FDBCeC7fc0EBedc05AaeF4eE63060",
+    "0x589d63300976759a0fc74ea6fA7D951f581252D7"
+   ],
+   "cether": [
+    "0x37DE57183491Fa9745d8Fa5DCd950f0c3a4645c9",
+    "0x465ebfceb3953e2922b686f2b4006173664d16ce",
+    "0xaAd91abe333c4536FFbF02b83daBaB49C9Aa23ed"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    lac: { comptroller: '0x123Abe3A273FDBCeC7fc0EBedc05AaeF4eE63060', cether: '0x465ebfceb3953e2922b686f2b4006173664d16ce' },\n    ethereum: { comptroller: '0x0b9af1fd73885aD52680A1aeAa7A3f17AC702afA', cether: '0x37DE57183491Fa9745d8Fa5DCd950f0c3a4645c9', blacklistedTokens: ['0xbaa6bc4e24686d710b9318b49b0bb16ec7c46bfa'] },\n    wc: { comptroller: '0x589d63300976759a0fc74ea6fA7D951f581252D7', cether: '0xaAd91abe333c4536FFbF02b83daBaB49C9Aa23ed' },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "elara": {
+  "registry_keys": [
+   "compound:elara"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x695aCEf58D1a10Cf13CBb4bbB2dfB7eDDd89B296"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    zircuit: { comptroller: '0x695aCEf58D1a10Cf13CBb4bbB2dfB7eDDd89B296' },\n  }",
+  "chains_in_config": [
+   "zircuit"
+  ]
+ },
+ "basic": {
+  "registry_keys": [
+   "compound:basic"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x47D7B83947Aa12fEb95f5f55527Dc9B32E4ec009"
+   ],
+   "cether": [
+    "0x83C51de03f03C5E23f02F674dbD2032e164112Fc"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    iotex: { cether: '0x83C51de03f03C5E23f02F674dbD2032e164112Fc', comptroller: '0x47D7B83947Aa12fEb95f5f55527Dc9B32E4ec009', cetheEquivalent: ADDRESSES.iotex.WIOTX },\n  }",
+  "chains_in_config": []
+ },
+ "whitehole-finance": {
+  "registry_keys": [
+   "compound:whitehole-finance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x1d019f2d14bdb81bab7ba4ec7e20868e669c32b1"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    arbitrum: { comptroller: '0x1d019f2d14bdb81bab7ba4ec7e20868e669c32b1',  isInsolvent: true, abis: { getAllMarkets: 'address[]:allMarkets', totalBorrows: 'uint256:totalBorrow' } },\n  }",
+  "chains_in_config": [
+   "arbitrum"
+  ]
+ },
+ "loanshark": {
+  "registry_keys": [
+   "compound:loanshark"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xEFB0697700E5c489073a9BDF7EF94a2B2bc884a5"
+   ],
+   "cether": [
+    "0xF017f9CF11558d143E603d56Ec81E4E3B6d39D7F"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    scroll: { comptroller: '0xEFB0697700E5c489073a9BDF7EF94a2B2bc884a5', cether: '0xF017f9CF11558d143E603d56Ec81E4E3B6d39D7F' },\n  }",
+  "chains_in_config": [
+   "scroll"
+  ]
+ },
+ "kawa": {
+  "registry_keys": [
+   "compound:kawa"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xD527237E176647cbF8A7c7bCeFEfBf9130Bec948"
+   ],
+   "cether": [
+    "0x20E56093357d91Ce85B0E3c2f0E4bdc676E94eDB"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    sei: { comptroller: '0xD527237E176647cbF8A7c7bCeFEfBf9130Bec948', cether: '0x20E56093357d91Ce85B0E3c2f0E4bdc676E94eDB' },\n  }",
+  "chains_in_config": []
+ },
+ "jiblend": {
+  "registry_keys": [
+   "compound:jiblend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x603122Cdd36abCD164e448e1f3fbd33730edf35a"
+   ],
+   "cether": [
+    "0xAc3e5aD93DDeac9B32772c8A864B5E73820c5d16"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    jbc: { comptroller: '0x603122Cdd36abCD164e448e1f3fbd33730edf35a', cether: '0xAc3e5aD93DDeac9B32772c8A864B5E73820c5d16' },\n  }",
+  "chains_in_config": []
+ },
+ "ionise-io": {
+  "registry_keys": [
+   "compound:ionise-io"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x5F8B5312636Af3bA626C12327a5d8EE4301A65F8"
+   ],
+   "cether": [
+    "0x9386c982fcb1aecbd949d04143d8a9e32b4b52bb"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    zilliqa: { comptroller: '0x5F8B5312636Af3bA626C12327a5d8EE4301A65F8', cether: '0x9386c982fcb1aecbd949d04143d8a9e32b4b52bb' },\n  }",
+  "chains_in_config": []
+ },
+ "blume-fm": {
+  "registry_keys": [
+   "compound:blume-fm"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x4EdF556c5664b4f86Ec50dB0F58B58B26210DC31"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    blast: { comptroller: '0x4EdF556c5664b4f86Ec50dB0F58B58B26210DC31' },\n  }",
+  "chains_in_config": [
+   "blast"
+  ]
+ },
+ "basilisk": {
+  "registry_keys": [
+   "compound:basilisk"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x4085f99720e699106bc483dAb6CAED171EdA8D15"
+   ],
+   "cether": [
+    "0x1e8F1099a3fe6D2c1A960528394F4fEB8f8A288D"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    era: { comptroller: '0x4085f99720e699106bc483dAb6CAED171EdA8D15', cether: '0x1e8F1099a3fe6D2c1A960528394F4fEB8f8A288D' },\n  }",
+  "chains_in_config": [
+   "era"
+  ]
+ },
+ "asofinance": {
+  "registry_keys": [
+   "compound:asofinance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xD5e60A396842D6C1D5470E16DA0BfDbb7Ba47101"
+   ],
+   "cether": [
+    "0x001FF326A2836bdD77B28E992344983681071f87"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    blast: { comptroller: '0xD5e60A396842D6C1D5470E16DA0BfDbb7Ba47101', cether: '0x001FF326A2836bdD77B28E992344983681071f87' },\n  }",
+  "chains_in_config": [
+   "blast"
+  ]
+ },
+ "neku": {
+  "registry_keys": [
+   "compound:neku"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xD5B649c7d27C13a2b80425daEe8Cb6023015Dc6B"
+   ],
+   "cether": [
+    "0xbc4a19345c598d73939b62371cf9891128eccb8b"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    arbitrum: { comptroller: '0xD5B649c7d27C13a2b80425daEe8Cb6023015Dc6B', cether: '0xbc4a19345c598d73939b62371cf9891128eccb8b' },\n    moonriver: { comptroller: '0xD5B649c7d27C13a2b80425daEe8Cb6023015Dc6B', cether: '0xbc4a19345c598d73939b62371cf9891128eccb8b' },\n    bsc: { comptroller: '0xD5B649c7d27C13a2b80425daEe8Cb6023015Dc6B', cether: '0xbc4a19345c598d73939b62371cf9891128eccb8b' },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "bsc",
+   "moonriver"
+  ]
+ },
+ "nyke": {
+  "registry_keys": [
+   "compound:nyke"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0040DCf62C380833dE60a502649567e939635fdB"
+   ],
+   "cether": [
+    "0x2896c67c0cea9D4954d6d8f695b6680fCfa7C0e0"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    ethereumclassic: { comptroller: '0x0040DCf62C380833dE60a502649567e939635fdB', cether: '0x2896c67c0cea9D4954d6d8f695b6680fCfa7C0e0' },\n  }",
+  "chains_in_config": []
+ },
+ "metalend": {
+  "registry_keys": [
+   "compound:metalend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x9E8FD99Fc64Cd2fF4B5846361a7eC457f2b3808e"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    ronin: { comptroller: '0x9E8FD99Fc64Cd2fF4B5846361a7eC457f2b3808e' },\n  }",
+  "chains_in_config": []
+ },
+ "mantradao": {
+  "registry_keys": [
+   "compound:mantradao"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x606246e9EF6C70DCb6CEE42136cd06D127E2B7C7"
+   ],
+   "cether": [
+    "0x4F905f75F5576228eD2D0EA508Fb0c32a0696090"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    ethereum: {\n      comptroller: '0x606246e9EF6C70DCb6CEE42136cd06D127E2B7C7',\n      cether: '0x4F905f75F5576228eD2D0EA508Fb0c32a0696090',\n      blacklistedTokens: ['0x3593d125a4f7849a1b059e64f4517a86dd60c95d'],\n      isInsolvent: true,\n      staking: { __sumTokens: { tokensAndOwners: [[\"0x3593D125a4f7849a1B059E64F4517A86Dd60c95d\",\"0x9E15Ad979919bB4db331Bfe864475Ae3BFFebA93\"],[\"0x3593D125a4f7849a1B059E64F4517A86Dd60c95d\",\"0xa01892d97e9c8290c2c225fb0b756bfe26bc9802\"],[\"0x3593D125a4f7849a1B059E64F4517A86Dd60c95d\",\"0x04493F715B08DeA8af77814d600bEf22f1f0C63B\"],[\"0x3593D125a4f7849a1B059E64F4517A86Dd60c95d\",\"0x1eA973A69643091410721C7D91aA5499CF8D2Cb7\"],[\"0xaf9f549774ecedbd0966c52f250acc548d3f36e5\",\"0x456DF576962289256A92290C9E48EE116B8Cb413\"],[\"0xdef1da03061ddd2a5ef6c59220c135dec623116d\",\"0xdbc34d084393ed8d7b750FfCCea5A139EC7b9349\"],[\"0x7eaF9C89037e4814DC0d9952Ac7F888C784548DB\",\"0x4Cd4c0eEDb2bC21f4e280d0Fe4C45B17430F94A9\"],[\"0x8a40c222996f9F3431f63Bf80244C36822060f12\",\"0x6BcDC61A7A6d86f7b7B66d461b7eF7fa268571a0\"],[\"0x4eed0fa8de12d5a86517f214c2f11586ba2ed88d\",\"0x1dfdb0fb85402dc7f8d72d92ada8fbbb3ffc8633\"],[\"0x5eaa69b29f99c84fe5de8200340b4e9b4ab38eac\",\"0x2d0ea72db9f9a63f4b185eab1ca74137",
+  "chains_in_config": [
+   "bsc",
+   "ethereum",
+   "polygon"
+  ]
+ },
+ "olafinance": {
+  "registry_keys": [
+   "compound:olafinance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x892701d128d63c9856A9Eb5d967982F78FD3F2AE"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    fantom: { comptroller: '0x892701d128d63c9856A9Eb5d967982F78FD3F2AE' },\n  }",
+  "chains_in_config": [
+   "fantom"
+  ]
+ },
+ "orbiter-one": {
+  "registry_keys": [
+   "compound:orbiter-one"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x27DC3DAdBfb40ADc677A2D5ef192d40aD7c4c97D"
+   ],
+   "cether": [
+    "0xCc444ca6bba3764Fc55BeEFe4FFA27435cF6c259"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    moonbeam: { comptroller: '0x27DC3DAdBfb40ADc677A2D5ef192d40aD7c4c97D', cether: '0xCc444ca6bba3764Fc55BeEFe4FFA27435cF6c259' },\n  }",
+  "chains_in_config": [
+   "moonbeam"
+  ]
+ },
+ "torches": {
+  "registry_keys": [
+   "compound:torches"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xfbAFd34A4644DC4f7c5b2Ae150279162Eb2B0dF6"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    kcc: { comptroller: '0xfbAFd34A4644DC4f7c5b2Ae150279162Eb2B0dF6' },\n  }",
+  "chains_in_config": []
+ },
+ "trustin": {
+  "registry_keys": [
+   "compound:trustin"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xF2EBc006a55ADFb3f50A521E5Db848942e7Dbb1F"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    btr: { comptroller: '0xF2EBc006a55ADFb3f50A521E5Db848942e7Dbb1F' },\n  }",
+  "chains_in_config": []
+ },
+ "coslend": {
+  "registry_keys": [
+   "compound:coslend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x5b32B588Af5F99F4e5c4038dDE6BDD991024F650"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    evmos: { comptroller: '0x5b32B588Af5F99F4e5c4038dDE6BDD991024F650' },\n  }",
+  "chains_in_config": []
+ },
+ "huckleberry-lending": {
+  "registry_keys": [
+   "compound:huckleberry-lending"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xcffef313b69d83cb9ba35d9c0f882b027b846ddc"
+   ],
+   "cether": [
+    "0x455d0c83623215095849abcf7cc046f78e3edae0"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    moonriver: { comptroller: '0xcffef313b69d83cb9ba35d9c0f882b027b846ddc', cether: '0x455d0c83623215095849abcf7cc046f78e3edae0' },\n  }",
+  "chains_in_config": [
+   "moonriver"
+  ]
+ },
+ "knightswap-lending": {
+  "registry_keys": [
+   "compound:knightswap-lending"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x4f92913b86d5e79593fa2e475a8232b22ef17ed1"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    bsc: { comptroller: '0x4f92913b86d5e79593fa2e475a8232b22ef17ed1', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "apeswap-lending": {
+  "registry_keys": [
+   "compound:apeswap-lending"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xad48b2c9dc6709a560018c678e918253a65df86e"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    bsc: { comptroller: '0xad48b2c9dc6709a560018c678e918253a65df86e' },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "netweave-lending": {
+  "registry_keys": [
+   "compound:netweave-lending"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x86112d3176c537B953560EA6fE43f79382E7bffE"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    mode: { comptroller: '0x86112d3176c537B953560EA6fE43f79382E7bffE' },\n  }",
+  "chains_in_config": [
+   "mode"
+  ]
+ },
+ "forlend": {
+  "registry_keys": [
+   "compound:forlend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x3b056De20d662B09f73bDb28Ea6fa7b7aC82259C"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    findora: { comptroller: '0x3b056De20d662B09f73bDb28Ea6fa7b7aC82259C' },\n  }",
+  "chains_in_config": []
+ },
+ "lander": {
+  "registry_keys": [
+   "compound:lander"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x344655CB08a25A7b2501CafB47CdF9490cE7fad3"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    bsc: { comptroller: '0x344655CB08a25A7b2501CafB47CdF9490cE7fad3' },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "traderjoe-lend": {
+  "registry_keys": [
+   "compound:traderjoe-lend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xdc13687554205E5b89Ac783db14bb5bba4A1eDaC"
+   ],
+   "cether": [
+    "0xC22F01ddc8010Ee05574028528614634684EC29e"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'We count liquidity on the pairs and we get that information from the \"traderjoe-xyz/exchange\" subgraph. The staking portion of TVL includes the JoeTokens within the JoeBar contract.',\n    avax: { comptroller: '0xdc13687554205E5b89Ac783db14bb5bba4A1eDaC', cether: '0xC22F01ddc8010Ee05574028528614634684EC29e', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "avax"
+  ]
+ },
+ "reactorfusion": {
+  "registry_keys": [
+   "compound:reactorfusion"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x19646a04BfDcf3553Adc8fAAf8B16D76EC41E494",
+    "0x23848c28Af1C3AA7B999fA57e6b6E8599C17F3f2"
+   ],
+   "cether": [
+    "0x7d94D2F6f91ED5ED0104D89B3D263026D990Ac5f",
+    "0xC5db68F30D21cBe0C9Eac7BE5eA83468d69297e6"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    telos: { comptroller: '0x19646a04BfDcf3553Adc8fAAf8B16D76EC41E494', cether: '0x7d94D2F6f91ED5ED0104D89B3D263026D990Ac5f' },\n    era: { comptroller: '0x23848c28Af1C3AA7B999fA57e6b6E8599C17F3f2', cether: '0xC5db68F30D21cBe0C9Eac7BE5eA83468d69297e6' },\n  }",
+  "chains_in_config": [
+   "era"
+  ]
+ },
+ "deepr-finance": {
+  "registry_keys": [
+   "compound:deepr-finance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xF7E452A8685D57083Edf4e4CC8064EcDcF71D7B7",
+    "0xee07121d97FDEA35675e02017837a7a43aeDa48F"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    shimmer_evm: { comptroller: '0xF7E452A8685D57083Edf4e4CC8064EcDcF71D7B7' },\n    iotaevm: { comptroller: '0xee07121d97FDEA35675e02017837a7a43aeDa48F' },\n  }",
+  "chains_in_config": []
+ },
+ "tonpound": {
+  "registry_keys": [
+   "compound:tonpound"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x1775286Cbe9db126a95AbF52c58a3214FCA26803"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    ethereum: { comptroller: '0x1775286Cbe9db126a95AbF52c58a3214FCA26803' },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "solidlizard-lending": {
+  "registry_keys": [
+   "compound:solidlizard-lending"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x9FfBdfcc508e76ee2b719eF6218879E938eF056C"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Same as Compound Finance, we just count all the tokens supplied (not borrowed money) on the lending markets',\n    arbitrum: {\n      comptroller: '0x9FfBdfcc508e76ee2b719eF6218879E938eF056C',\n      staking: ['0x08153c4C19Cb438A3bdC6303aF962a30E9f5e0B1', '0xe6AF844d5740B6B297B6Dd7Fb2ce299Ee9E3d16F'],\n      pool2: ['0x8082F587Ff2B24dadB2220026F4FCa9323Ed8080', '0xB70005C4980d78e8bE47D4C9ccCd7300D6a02501'],\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum"
+  ]
+ },
+ "teralend": {
+  "registry_keys": [
+   "compound:teralend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xEBf6ed25aB1F79B5C10C7145C5167367bE31651f"
+   ],
+   "cether": [
+    "0x02350987093a804556d65be52063E85eaF80C806"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    flare: { comptroller: '0xEBf6ed25aB1F79B5C10C7145C5167367bE31651f', cether: '0x02350987093a804556d65be52063E85eaF80C806', isInsolvent: true },\n  }",
+  "chains_in_config": []
+ },
+ "strike": {
+  "registry_keys": [
+   "compound:strike"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xe2e17b2CBbf48211FA7eB8A875360e5e39bA2602"
+   ],
+   "cether": [
+    "0xbee9cf658702527b0acb2719c1faa29edc006a92"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    ethereum: { comptroller: '0xe2e17b2CBbf48211FA7eB8A875360e5e39bA2602', cether: '0xbee9cf658702527b0acb2719c1faa29edc006a92', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "fenrirfinance": {
+  "registry_keys": [
+   "compound:fenrirfinance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x56b4B49f31517be8DacC2ED471BCc20508A0e29D"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    bsc: { comptroller: '0x56b4B49f31517be8DacC2ED471BCc20508A0e29D', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "paribus": {
+  "registry_keys": [
+   "compound:paribus"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x712E2B12D75fe092838A3D2ad14B6fF73d3fdbc9"
+   ],
+   "cether": [
+    "0xaffd437801434643b734d0b2853654876f66f7d7"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    arbitrum: { comptroller: '0x712E2B12D75fe092838A3D2ad14B6fF73d3fdbc9', cether: '0xaffd437801434643b734d0b2853654876f66f7d7', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "arbitrum"
+  ]
+ },
+ "fusefi-lending": {
+  "registry_keys": [
+   "compound:fusefi-lending"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x26a562B713648d7F3D1E1031DCc0860A4F3Fa340"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    hallmarks: [['2022-03-31', 'Ola Finance exploit']],\n    fuse: { comptroller: '0x26a562B713648d7F3D1E1031DCc0860A4F3Fa340', isInsolvent: true },\n  }",
+  "chains_in_config": []
+ },
+ "mendi-finance": {
+  "registry_keys": [
+   "compound:mendi-finance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x1b4d3b0421dDc1eB216D230Bc01527422Fb93103"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Same as Compound Finance, we just count all the tokens supplied (not borrowed money) on the lending markets',\n    linea: {\n      comptroller: '0x1b4d3b0421dDc1eB216D230Bc01527422Fb93103',\n      staking: [['0x150b1e51738cdf0ccfe472594c62d7d6074921ca', '0xcf8dedcdc62317beaedfbee3c77c08425f284486'], '0x43e8809ea748eff3204ee01f08872f063e44065f'],\n    },\n  }",
+  "chains_in_config": [
+   "linea"
+  ]
+ },
+ "qie-lend": {
+  "registry_keys": [
+   "compound:qie-lend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x69a31E3D361C69B37463aa67Ef93067dC760fBD4"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    qiev3: { comptroller: '0x69a31E3D361C69B37463aa67Ef93067dC760fBD4' },\n  }",
+  "chains_in_config": []
+ },
+ "tropykus": {
+  "registry_keys": [
+   "compound:tropykus"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x962308fEf8edFaDD705384840e7701F8f39eD0c0"
+   ],
+   "cether": [
+    "0x0aEaDb9d4C6a80462a47E87e76e487fa8b9A37d7"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    misrepresentedTokens: true,\n    rsk: { comptroller: '0x962308fEf8edFaDD705384840e7701F8f39eD0c0', cether: '0x0aEaDb9d4C6a80462a47E87e76e487fa8b9A37d7', blacklistedTokens: ['0xd2ec53e8dd00d204d3d9313af5474eb9f5188ef6', '0x3134b7fbfca5db217eca523eab1941452cf35163', '0xedaefc6b596ed38d712100976969975a37c84464', '0xe17551201eeaefbd625ca4fb48d49c06e7ac064b'] },\n  }",
+  "chains_in_config": []
+ },
+ "tashi": {
+  "registry_keys": [
+   "compound:tashi"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x053841Bd1D291380726a007eA834Ecd296923260"
+   ],
+   "cether": [
+    "0x1cd248D72248A0618932F77093Dc4ceC9757759d"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Same as compound, we just get all the collateral (not borrowed money) on the lending markets',\n    evmos: { comptroller: '0x053841Bd1D291380726a007eA834Ecd296923260', cether: '0x1cd248D72248A0618932F77093Dc4ceC9757759d' },\n  }",
+  "chains_in_config": []
+ },
+ "usdfi-lending": {
+  "registry_keys": [
+   "compound:usdfi-lending"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x87363D74CD88A6220926Cf64bDEFd23ae63BE115"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    bsc: { comptroller: '0x87363D74CD88A6220926Cf64bDEFd23ae63BE115' },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "sumer": {
+  "registry_keys": [
+   "compound:sumer"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x15B5220024c3242F7D61177D6ff715cfac4909eD",
+    "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA",
+    "0x2d9b96648C784906253c7FA94817437EF59Cf226",
+    "0x60A4570bE892fb41280eDFE9DB75e1a62C70456F",
+    "0x611375907733D9576907E125Fb29704712F0BAfA",
+    "0x7f5a7aE2688A7ba6a9B36141335044c058a08b3E",
+    "0x98Ec4C9605D69083089eCAf353037b40017b758e",
+    "0xAbcdc5827f92525F56004540459045Ec3e432ebF",
+    "0xB2fF02eEF85DC4eaE95Ab32AA887E0cC69DF8d8E",
+    "0xBfb69860C91A22A2287df1Ff3Cdf0476c5aab24A",
+    "0xcB4cdDA50C1B6B0E33F544c98420722093B7Aa88",
+    "0xdD9C863197df28f47721107f94eb031b548B5e48",
+    "0xe6099D924efEf37845867D45E3362731EaF8A98D"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    meter: { comptroller: '0xcB4cdDA50C1B6B0E33F544c98420722093B7Aa88', blacklistedTokens: ['0x755A39999FE536Ec327Cb84110383BFc30fd0F4D', '0x21c4123f62CA28c9ceF3dDd1c8ae71EE9a5003aE'] },\n    base: { comptroller: '0x611375907733D9576907E125Fb29704712F0BAfA', blacklistedTokens: ['0xa1aD8481e83a5b279D97ab371bCcd5AE3b446EA6', '0x56048C88309CAF13A942d688bfB9654432910d6e'] },\n    arbitrum: { comptroller: '0xBfb69860C91A22A2287df1Ff3Cdf0476c5aab24A', blacklistedTokens: ['0xe4B55045ed14815c7c42eeeF8EE431b89422c389', '0x9C93423939C4e3D48d99baD147AD808BE89B2043', '0xAc6bAF36B28d19EA10959102158Beb3d933C1fbf'] },\n    ethereum: { comptroller: '0x60A4570bE892fb41280eDFE9DB75e1a62C70456F', blacklistedTokens: ['0x2509bd3B69440D39238b464d09f9F04A61fd62C6', '0x4342e9bf67F89dea0Cf3c906F5113Dd8b588aC6F', '0x77CcA710E21A94B94a26A98eA23027D64e36B9d4'] },\n    core: { comptroller: '0x7f5a7aE2688A7ba6a9B36141335044c058a08b3E', blacklistedTokens: ['0xaAC83D5E45A2f67f2bFd1B804776EFa7DAF6cbF6', '0xaE6388F58b5b35D5B2eEC828C9633E7D245FEf62', '0xe04d21d999faedf1e72ade6629e20a11a1ed14fa'] },\n    bsc: { comptroller: '0x15B5220024c3242F7D61177D6ff715cfac4909eD', blacklistedTokens: [] },\n    berachain: { comptroll",
+  "chains_in_config": [
+   "arbitrum",
+   "base",
+   "berachain",
+   "bsc",
+   "core",
+   "ethereum"
+  ]
+ },
+ "segment-finance": {
+  "registry_keys": [
+   "compound:segment-finance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x2eea8fbA494d5008ba72f80E0091Cc74dB5f9926",
+    "0x57E09c96DAEE58B77dc771B017de015C38060173",
+    "0x69a6B3B96b26a15A588081Df17F46d61f625741c",
+    "0x71ac0e9A7113130280040d0189d0556f45a8CBB5",
+    "0xaba65b87eBEdB2D753b37AeCECD1E168341eE0DD",
+    "0xcD7C4F508652f33295F0aEd075936Cd95A4D2911"
+   ],
+   "cether": [
+    "0x5fcea94b96858048433359bb5278a402363328c3",
+    "0x7e844423510A5081DE839e600F7960C7cE84eb82",
+    "0x8F9958ec0FeeccCf0feC871B7bBB3D8d0B7A4D3c",
+    "0xEff5cD04B461247F5008b35074F45Ba0f0b11eFf",
+    "0xb57A4b3ccE8d999A1e6B0357c0a31C3808401B42",
+    "0xd7c6cc5aef7396182c5d7ebdac66ff674f3ddcf4"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Same as Compound Finance, we just count all the tokens supplied (not borrowed money) on the lending markets',\n    op_bnb: { comptroller: '0x71ac0e9A7113130280040d0189d0556f45a8CBB5', cether: '0x7e844423510A5081DE839e600F7960C7cE84eb82' },\n    bsc: { comptroller: '0x57E09c96DAEE58B77dc771B017de015C38060173', cether: '0x5fcea94b96858048433359bb5278a402363328c3' },\n    bob: { comptroller: '0xcD7C4F508652f33295F0aEd075936Cd95A4D2911', cether: '0xd7c6cc5aef7396182c5d7ebdac66ff674f3ddcf4', blacklistedTokens: ['0xecf21b335B41f9d5A89f6186A99c19a3c467871f'] },\n    rsk: { comptroller: '0x2eea8fbA494d5008ba72f80E0091Cc74dB5f9926', cether: '0x8F9958ec0FeeccCf0feC871B7bBB3D8d0B7A4D3c' },\n    core: { comptroller: '0xaba65b87eBEdB2D753b37AeCECD1E168341eE0DD', cether: '0xb57A4b3ccE8d999A1e6B0357c0a31C3808401B42' },\n    bsquared: { comptroller: '0x69a6B3B96b26a15A588081Df17F46d61f625741c', cether: '0xEff5cD04B461247F5008b35074F45Ba0f0b11eFf' },\n  }",
+  "chains_in_config": [
+   "bsc",
+   "core"
+  ]
+ },
+ "compound-onchain": {
+  "registry_keys": [
+   "compound:compound-onchain"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B"
+   ],
+   "cether": [
+    "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    hallmarks: [['2020-06-15', 'COMP distribution begins']],\n    methodology: `${require('../projects/helper/methodologies').lendingMarket}. TVL is calculated by getting the market addresses from comptroller and calling the getCash() on-chain method to get the amount of tokens locked in each of these addresses, then we get the price of each token from coingecko.`,\n    ethereum: { comptroller: '0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B', cether: '0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5' },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "cream": {
+  "registry_keys": [
+   "compound:cream"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x20ca53e2395fa571798623f1cfbd11fe2c114c24",
+    "0x589DE0F0Ccf905477646599bb3E5C622C84cC0BA",
+    "0x94d31f92a7f85b51F0B628467B3E660BA3e8D799",
+    "0xbadaC56c9aca307079e8B8FC699987AAc89813ee",
+    "0xbdC857eae1D15ad171E11af6FC3e99413Ed57Ec4"
+   ],
+   "cether": [
+    "0x1Ffe17B99b439bE0aFC831239dDECda2A790fF3A"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    timetravel: false,\n    start: '2020-09-08',\n    ethereum: { comptroller: '0xbdC857eae1D15ad171E11af6FC3e99413Ed57Ec4' },\n    bsc: { comptroller: '0x589DE0F0Ccf905477646599bb3E5C622C84cC0BA', cether: '0x1Ffe17B99b439bE0aFC831239dDECda2A790fF3A', cetheEquivalent: ADDRESSES.bsc.WBNB, isInsolvent: true },\n    polygon: { comptroller: '0x20ca53e2395fa571798623f1cfbd11fe2c114c24' },\n    arbitrum: { comptroller: '0xbadaC56c9aca307079e8B8FC699987AAc89813ee' },\n    base: { comptroller: '0x94d31f92a7f85b51F0B628467B3E660BA3e8D799' },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "base",
+   "bsc",
+   "ethereum",
+   "polygon"
+  ]
+ },
+ "0xlend": {
+  "registry_keys": [
+   "compound:0xLend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x1DD821C9E27fB2399DAb75AedB113c80C755DCa6",
+    "0x337d8719f70D514367aBe780F7c1eAd1c0113Bc7",
+    "0x599bb9202EE2D2F95EDe9f88F622854f7ef2c371"
+   ],
+   "cether": [
+    "0x309f1639018e8b272126c4b99af442aa25dcd1f2",
+    "0x9dae6c8c431ffc6d21b836e0d8d113e8365defb9",
+    "0xd9fcbd7b60966d013a28ff87925f75bb49e9b5ee"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    kcc: { comptroller: '0x337d8719f70D514367aBe780F7c1eAd1c0113Bc7', cether: '0x309f1639018e8b272126c4b99af442aa25dcd1f2', isInsolvent: true },\n    era: { comptroller: '0x599bb9202EE2D2F95EDe9f88F622854f7ef2c371', cether: '0x9dae6c8c431ffc6d21b836e0d8d113e8365defb9' },\n    blast: { comptroller: '0x1DD821C9E27fB2399DAb75AedB113c80C755DCa6', cether: '0xd9fcbd7b60966d013a28ff87925f75bb49e9b5ee' },\n  }",
+  "chains_in_config": [
+   "blast",
+   "era"
+  ]
+ },
+ "filda": {
+  "registry_keys": [
+   "compound:filda"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x55E5F6E48FD4715e1c05b9dAfa5CfD0B387425Ee",
+    "0xD2CBE89a36df2546eebc71766264e0F306d38196",
+    "0xE52792E024697A6be770e5d6F1C455550265B2CD",
+    "0xEc1e6e331e990a0D8e40AC51f773e9c998ec7BC3",
+    "0xF0700A310Cb14615a67EEc1A8dAd5791859f65f1",
+    "0xF67EF5E77B350A81DcbA5430Bc8bE876eDa8D591",
+    "0xb74633f2022452f377403B638167b0A135DB096d",
+    "0xfBE0f3A3d1405257Bd69691406Eafa73f5095723"
+   ],
+   "cether": [
+    "0x824151251b38056d54a15e56b73c54ba44811af8"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    hallmarks: [['2023-04-24', 'Protocol was hacked']],\n    heco: { comptroller: '0xb74633f2022452f377403B638167b0A135DB096d', cether: '0x824151251b38056d54a15e56b73c54ba44811af8' },\n    iotex: { comptroller: '0x55E5F6E48FD4715e1c05b9dAfa5CfD0B387425Ee' },\n    bsc: { comptroller: '0xF0700A310Cb14615a67EEc1A8dAd5791859f65f1' },\n    rei: { comptroller: '0xEc1e6e331e990a0D8e40AC51f773e9c998ec7BC3' },\n    polygon: { comptroller: '0xfBE0f3A3d1405257Bd69691406Eafa73f5095723' },\n    arbitrum: { comptroller: '0xF67EF5E77B350A81DcbA5430Bc8bE876eDa8D591' },\n    elastos: { comptroller: '0xE52792E024697A6be770e5d6F1C455550265B2CD' },\n    kava: { comptroller: '0xD2CBE89a36df2546eebc71766264e0F306d38196' },\n    bittorrent: { comptroller: '0xE52792E024697A6be770e5d6F1C455550265B2CD' },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "bsc",
+   "kava",
+   "polygon"
+  ]
+ },
+ "lumen-money": {
+  "registry_keys": [
+   "compound:lumen-money"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x252dBa92827744e6d2b01f1c9D77dcD3CBAb4573"
+   ],
+   "cether": [
+    "0x3A81c854dCF6172cE3a7fFF024ECF20d8Ac2A1af"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Same as Compound Finance, we just count all the tokens supplied (not borrowed money) on the lending markets',\n    neon_evm: { comptroller: '0x252dBa92827744e6d2b01f1c9D77dcD3CBAb4573', cether: '0x3A81c854dCF6172cE3a7fFF024ECF20d8Ac2A1af' },\n  }",
+  "chains_in_config": []
+ },
+ "nebula": {
+  "registry_keys": [
+   "compound:nebula"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x7bf2f10A061eAA9d12eff11D1c3cBaf402f86C22"
+   ],
+   "cether": [
+    "0xFC0De9060D413b60fEE6B735A0291CC7fC2Dc966"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    nibiru: { comptroller: '0x7bf2f10A061eAA9d12eff11D1c3cBaf402f86C22', cether: '0xFC0De9060D413b60fEE6B735A0291CC7fC2Dc966' },\n  }",
+  "chains_in_config": []
+ },
+ "machfi": {
+  "registry_keys": [
+   "compound:machfi"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x646F91AbD5Ab94B76d1F9C5D9490A2f6DDf25730"
+   ],
+   "cether": [
+    "0x9F5d9f2FDDA7494aA58c90165cF8E6B070Fe92e6"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    sonic: { comptroller: '0x646F91AbD5Ab94B76d1F9C5D9490A2f6DDf25730', cether: '0x9F5d9f2FDDA7494aA58c90165cF8E6B070Fe92e6' },\n  }",
+  "chains_in_config": [
+   "sonic"
+  ]
+ },
+ "liqee": {
+  "registry_keys": [
+   "compound:liqee"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x6d290f45A280A688Ff58d095de480364069af110",
+    "0x8f1f15DCf4c70873fAF1707973f6029DEc4164b3"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    start: '2021-08-24',\n    ethereum: { comptroller: '0x8f1f15DCf4c70873fAF1707973f6029DEc4164b3', abis: { getAllMarkets: 'address[]:getAlliTokens' } },\n    bsc: { comptroller: '0x6d290f45A280A688Ff58d095de480364069af110', abis: { getAllMarkets: 'address[]:getAlliTokens' } },\n  }",
+  "chains_in_config": [
+   "bsc",
+   "ethereum"
+  ]
+ },
+ "ironbank": {
+  "registry_keys": [
+   "compound:ironbank"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x2eE80614Ccbc5e28654324a66A396458Fa5cD7Cc",
+    "0x4250a6d3bd57455d7c6821eecb6206f507576cd2",
+    "0xAB1c342C7bf5Ec5F02ADEA1c2270670bCa144CbB",
+    "0xE0B57FEEd45e7D908f2d0DaCd26F113Cf26715BF"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    start: '2020-09-08',\n    ethereum: { comptroller: '0xAB1c342C7bf5Ec5F02ADEA1c2270670bCa144CbB', isInsolvent: true, blacklistedTokens: ['0x96E61422b6A9bA0e068B6c5ADd4fFaBC6a4aae27', '0x95dfdc8161832e4ff7816ac4b6367ce201538253', '0xfafdf0c4c1cb09d430bf88c75d88bb46dae09967', '0x5555f75e3d5278082200fb451d1b6ba946d8e13b', '0x1cc481ce2bd2ec7bf67d1be64d4878b16078f309', '0x69681f8fde45345c3870bcd5eaf4a05a60e7d227', '0x81d66D255D47662b6B16f3C5bbfBb15283B05BC2', '0x4e3a36A633f63aee0aB57b5054EC78867CB3C0b8'] },\n    fantom: { comptroller: '0x4250a6d3bd57455d7c6821eecb6206f507576cd2', isInsolvent: true },\n    avax: { comptroller: '0x2eE80614Ccbc5e28654324a66A396458Fa5cD7Cc' },\n    optimism: { comptroller: '0xE0B57FEEd45e7D908f2d0DaCd26F113Cf26715BF' },\n  }",
+  "chains_in_config": [
+   "avax",
+   "ethereum",
+   "fantom",
+   "optimism"
+  ]
+ },
+ "wepiggy": {
+  "registry_keys": [
+   "compound:wepiggy"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0C8c1ab017c3C0c8A48dD9F1DB2F59022D190f0b",
+    "0x3401D01E31BB6DefcFc7410c312C0181E19b9dd5",
+    "0x5Ea2321aBFF78E81702cE877319cD775E0dc865B",
+    "0x896aecb9E73Bf21C50855B7874729596d0e511CB",
+    "0x8c925623708A94c7DE98a8e83e8200259fF716E0",
+    "0x9a9b2bF1d1c96332C55d0B6aCb8C2B441381116d",
+    "0xFfceAcfD39117030314A07b2C86dA36E51787948",
+    "0xaa87715E858b482931eB2f6f92E504571588390b",
+    "0xaa87715e858b482931eb2f6f92e504571588390b"
+   ],
+   "cether": [
+    "0x17933112E9780aBd0F27f2B7d9ddA9E840D43159",
+    "0x27A94869341838D5783368a8503FdA5fbCd7987c",
+    "0x33A32f0ad4AA704e28C93eD8Ffa61d50d51622a7",
+    "0x621CE6596E0B9CcF635316BFE7FdBC80C3029Bec",
+    "0x621ce6596e0b9ccf635316bfe7fdbc80c3029bec",
+    "0x75DCd2536a5f414B8F90Bb7F2F3c015a26dc8c79",
+    "0x8e1e582879Cb8baC6283368e8ede458B63F499a5",
+    "0xC1B02E52e9512519EDF99671931772E452fb4399",
+    "0xd1121aDe04EE215524aeFbF7f8D45029214d668D"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'TVL is comprised of tokens deposited to the protocol as collateral, similar to Compound Finance and other lending protocols the borrowed tokens are not counted as TVL.',\n    ethereum: { comptroller: '0x0C8c1ab017c3C0c8A48dD9F1DB2F59022D190f0b', cether: '0x27A94869341838D5783368a8503FdA5fbCd7987c' },\n    okexchain: { comptroller: '0xaa87715e858b482931eb2f6f92e504571588390b', cether: '0x621ce6596e0b9ccf635316bfe7fdbc80c3029bec' },\n    bsc: { comptroller: '0x8c925623708A94c7DE98a8e83e8200259fF716E0', cether: '0x33A32f0ad4AA704e28C93eD8Ffa61d50d51622a7' },\n    polygon: { comptroller: '0xFfceAcfD39117030314A07b2C86dA36E51787948', cether: '0xC1B02E52e9512519EDF99671931772E452fb4399' },\n    heco: { comptroller: '0x3401D01E31BB6DefcFc7410c312C0181E19b9dd5', cether: '0x75DCd2536a5f414B8F90Bb7F2F3c015a26dc8c79' },\n    arbitrum: { comptroller: '0xaa87715E858b482931eB2f6f92E504571588390b', cether: '0x17933112E9780aBd0F27f2B7d9ddA9E840D43159' },\n    optimism: { comptroller: '0x896aecb9E73Bf21C50855B7874729596d0e511CB', cether: '0x8e1e582879Cb8baC6283368e8ede458B63F499a5' },\n    moonriver: { comptroller: '0x9a9b2bF1d1c96332C55d0B6aCb8C2B441381116d', cether: '0x621CE6596E0B9Cc",
+  "chains_in_config": [
+   "arbitrum",
+   "bsc",
+   "ethereum",
+   "moonbeam",
+   "moonriver",
+   "optimism",
+   "polygon"
+  ]
+ },
+ "wemix-lend": {
+  "registry_keys": [
+   "compound:wemix-lend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x929620a759a564e3C273e8a4efCDa5806da168F2"
+   ],
+   "cether": [
+    "0x34b9B18fDBE2aBC6DfB41A7f6d39B5E511ce3e23"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    wemix: { comptroller: '0x929620a759a564e3C273e8a4efCDa5806da168F2', cether: '0x34b9B18fDBE2aBC6DfB41A7f6d39B5E511ce3e23' },\n  }",
+  "chains_in_config": []
+ },
+ "vivacity": {
+  "registry_keys": [
+   "compound:vivacity"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xe49627059Dd2A0fba4A81528207231C508d276CB"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    canto: { comptroller: '0xe49627059Dd2A0fba4A81528207231C508d276CB' },\n  }",
+  "chains_in_config": [
+   "canto"
+  ]
+ },
+ "zkfox": {
+  "registry_keys": [
+   "compound:zkfox"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xc3D157Ee5D602E9CEAF6eA4c15C9b52B313A1364"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    era: { comptroller: '0xc3D157Ee5D602E9CEAF6eA4c15C9b52B313A1364' },\n  }",
+  "chains_in_config": [
+   "era"
+  ]
+ },
+ "ocp": {
+  "registry_keys": [
+   "compound:OCP"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xc001c415b7e78ea4a3edf165d8f44b70391f8c3c"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    hallmarks: [['2022-02-14', 'Project abandoned by the team']],\n    bsc: { comptroller: '0xc001c415b7e78ea4a3edf165d8f44b70391f8c3c', blacklistedTokens: ['0x3c70260eee0a2bfc4b375feb810325801f289fbd', '0x5801d0e1c7d977d78e4890880b8e579eb4943276'] },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "fluxfinance": {
+  "registry_keys": [
+   "compound:fluxfinance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x95Af143a021DF745bc78e845b54591C53a8B3A51"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: `${require('../projects/helper/methodologies').lendingMarket}. TVL is calculated by getting the market addresses from comptroller and calling the getCash() on-chain method to get the amount of tokens locked in each of these addresses, then we get the price of each token from coingecko.`,\n    ethereum: { comptroller: '0x95Af143a021DF745bc78e845b54591C53a8B3A51' },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "cozy": {
+  "registry_keys": [
+   "compound:cozy"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x895879b2c1fbb6ccfcd101f2d3f3c76363664f92"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Count tokens the same way we count for compound',\n    ethereum: { comptroller: '0x895879b2c1fbb6ccfcd101f2d3f3c76363664f92' },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "aurigami": {
+  "registry_keys": [
+   "compound:aurigami"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x817af6cfAF35BdC1A634d6cC94eE9e4c68369Aeb"
+   ],
+   "cether": [
+    "0xca9511B610bA5fc7E311FDeF9cE16050eE4449E9"
+   ],
+   "chain_shorthand": [
+    "0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    aurora: { comptroller: '0x817af6cfAF35BdC1A634d6cC94eE9e4c68369Aeb', cether: '0xca9511B610bA5fc7E311FDeF9cE16050eE4449E9', cetheEquivalent: '0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb' },\n  }",
+  "chains_in_config": []
+ },
+ "novation": {
+  "registry_keys": [
+   "compound:novation"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x3090Cd174218BB451C7865bDC621d47E1Bd6831C"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    blast: { comptroller: '0x3090Cd174218BB451C7865bDC621d47E1Bd6831C', abis: { getAllMarkets: 'address[]:allMarkets', totalBorrows: 'uint256:totalBorrow' } },\n  }",
+  "chains_in_config": [
+   "blast"
+  ]
+ },
+ "damm-finance": {
+  "registry_keys": [
+   "compound:damm-finance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x4F96AB61520a6636331a48A11eaFBA8FB51f74e4"
+   ],
+   "cether": [
+    "0xe970c37243F3d0B2AeB041b855Ef6466CB140BcA"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Same as Compound Finance, we just count all the tokens supplied (not borrowed money) on the lending markets',\n    hallmarks: [['2022-10-05', 'Liquidity Bonding Start']],\n    ethereum: { comptroller: '0x4F96AB61520a6636331a48A11eaFBA8FB51f74e4', cether: '0xe970c37243F3d0B2AeB041b855Ef6466CB140BcA' },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "canto-lending": {
+  "registry_keys": [
+   "compound:canto-lending"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x5E23dC409Fc2F832f83CEc191E245A191a4bCc5C"
+   ],
+   "cether": [
+    "0xb65ec550ff356eca6150f733ba9b954b2e0ca488"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    hallmarks: [['2022-08-25', 'Remove canto dex LPs from tvl computation']],\n    canto: {\n      comptroller: '0x5E23dC409Fc2F832f83CEc191E245A191a4bCc5C',\n      cether: '0xb65ec550ff356eca6150f733ba9b954b2e0ca488',\n      cetheEquivalent: ADDRESSES.canto.WCANTO,\n      blacklistedTokens: [\n        ADDRESSES.canto.NOTE,\n        '0x1d20635535307208919f0b67c3b2065965a85aa9',\n        '0x216400ba362d8fce640085755e47075109718c8b',\n        '0x30838619c55b787bafc3a4cd9aea851c1cfb7b19',\n        '0x9571997a66d63958e1b3de9647c22bd6b9e7228c',\n        '0x35db1f3a6a6f07f82c76fcc415db6cfb1a7df833',\n      ],\n    },\n  }",
+  "chains_in_config": [
+   "canto"
+  ]
+ },
+ "bao-markets": {
+  "registry_keys": [
+   "compound:bao-markets"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0Be1fdC1E87127c4fe7C05bAE6437e3cf90Bf8d8"
+   ],
+   "cether": [
+    "0xf635fdf9b36b557bd281aa02fdfaebec04cd084a"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    ethereum: { comptroller: '0x0Be1fdC1E87127c4fe7C05bAE6437e3cf90Bf8d8', cether: '0xf635fdf9b36b557bd281aa02fdfaebec04cd084a', cetheEquivalent: nullAddress, blacklistedTokens: ['0xe7a52262c1934951207c5fc7a944a82d283c83e5', '0xc0601094C0C88264Ba285fEf0a1b00eF13e79347'] },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "venus": {
+  "registry_keys": [
+   "compound:venus"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0C7973F9598AA62f9e03B94E92C967fD5437426C",
+    "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326",
+    "0x5593FF68bE84C966821eEf5F0a988C285D5B7CeC",
+    "0x687a01ecF6d3907658f7A7c714749fAC32336D1B",
+    "0xd6e3e2a1d8d95cae355d15b3b9f8e5c2511874dd",
+    "0xddE4D098D9995B659724ae6d5E3FB9681Ac941B1",
+    "0xe22af1e6b78318e1Fe1053Edbd7209b8Fc62c4Fe",
+    "0xfd36e2c2a6789db23113685031d7f16329158384"
+   ],
+   "cether": [
+    "0xA07c5b74C9B40447a954e1466938b865b6BBea36"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    bsc: { comptroller: '0xfd36e2c2a6789db23113685031d7f16329158384', cether: '0xA07c5b74C9B40447a954e1466938b865b6BBea36' },\n    ethereum: { comptroller: '0x687a01ecF6d3907658f7A7c714749fAC32336D1B' },\n    op_bnb: { comptroller: '0xd6e3e2a1d8d95cae355d15b3b9f8e5c2511874dd' },\n    arbitrum: { comptroller: '0x317c1A5739F39046E20b08ac9BeEa3f10fD43326' },\n    era: { comptroller: '0xddE4D098D9995B659724ae6d5E3FB9681Ac941B1' },\n    base: { comptroller: '0x0C7973F9598AA62f9e03B94E92C967fD5437426C' },\n    optimism: { comptroller: '0x5593FF68bE84C966821eEf5F0a988C285D5B7CeC' },\n    unichain: { comptroller: '0xe22af1e6b78318e1Fe1053Edbd7209b8Fc62c4Fe' },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "base",
+   "bsc",
+   "era",
+   "ethereum",
+   "optimism",
+   "unichain"
+  ]
+ },
+ "zenolend": {
+  "registry_keys": [
+   "compound:zenolend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x086036b34689709cFAe75dfC453846b744bD8dcA",
+    "0x5075A7E2B018f352220874718E3f5Bd38C6DFD5D",
+    "0xc2C583093Af9241E17B2Ec51844154468D21bF6F"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    apechain: { comptroller: '0xc2C583093Af9241E17B2Ec51844154468D21bF6F', isInsolvent: true },\n    unichain: { comptroller: '0x086036b34689709cFAe75dfC453846b744bD8dcA', isInsolvent: true },\n    soneium: { comptroller: '0x5075A7E2B018f352220874718E3f5Bd38C6DFD5D', isInsolvent: true },\n    sty: { comptroller: '0x5075A7E2B018f352220874718E3f5Bd38C6DFD5D' },\n    hemi: { comptroller: '0xc2C583093Af9241E17B2Ec51844154468D21bF6F' },\n  }",
+  "chains_in_config": [
+   "unichain"
+  ]
+ },
+ "mare-finance-v2": {
+  "registry_keys": [
+   "compound:mare-finance-v2"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xFcD7D41D5cfF03C7f6D573c9732B0506C72f5C72"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Same as Compound Finance, we just count all the tokens supplied (not borrowed money) on the lending markets',\n    kava: { comptroller: '0xFcD7D41D5cfF03C7f6D573c9732B0506C72f5C72', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "kava"
+  ]
+ },
+ "unitus": {
+  "registry_keys": [
+   "compound:unitus"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0b53E608bD058Bb54748C35148484fD627E6dc0A",
+    "0x52eaCd19E38D501D006D2023C813d7E37F025f37",
+    "0x8B53Ab2c0Df3230EA327017C91Eb909f815Ad113",
+    "0x8E7e9eA9023B81457Ae7E6D2a51b003D421E5408",
+    "0xA300A84D8970718Dac32f54F61Bd568142d8BCF4",
+    "0xA377eCF53253275125D0a150aF195186271f6a56",
+    "0xBae8d153331129EB40E390A7Dd485363135fcE22"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    start: '2019-07-26',\n    ethereum: { comptroller: '0x8B53Ab2c0Df3230EA327017C91Eb909f815Ad113', abis: { getAllMarkets: 'address[]:getAlliTokens' }, blacklistedTokens: ['0x1AdC34Af68e970a93062b67344269fD341979eb0', '0x44c324970e5CbC5D4C3F3B7604CbC6640C2dcFbF'] },\n    bsc: { comptroller: '0x0b53E608bD058Bb54748C35148484fD627E6dc0A', abis: { getAllMarkets: 'address[]:getAlliTokens' }, blacklistedTokens: ['0x7B933e1c1F44bE9Fb111d87501bAADA7C8518aBe', '0x983A727Aa3491AB251780A13acb5e876D3f2B1d8'] },\n    arbitrum: { comptroller: '0x8E7e9eA9023B81457Ae7E6D2a51b003D421E5408', abis: { getAllMarkets: 'address[]:getAlliTokens' }, blacklistedTokens: ['0x0385F851060c09A552F1A28Ea3f612660256cBAA', '0x5675546Eb94c2c256e6d7c3F7DcAB59bEa3B0B8B'] },\n    optimism: { comptroller: '0xA300A84D8970718Dac32f54F61Bd568142d8BCF4', abis: { getAllMarkets: 'address[]:getAlliTokens' }, blacklistedTokens: ['0x7e7e1d8757b241Aa6791c089314604027544Ce43'] },\n    polygon: { comptroller: '0x52eaCd19E38D501D006D2023C813d7E37F025f37', abis: { getAllMarkets: 'address[]:getAlliTokens' }, blacklistedTokens: ['0xc171EBE1A2873F042F1dDdd9327D00527CA29882', '0x15962427A9795005c640A6BF7f99c2BA1531aD6d'] },\n    conflux: { ",
+  "chains_in_config": [
+   "arbitrum",
+   "base",
+   "bsc",
+   "ethereum",
+   "optimism",
+   "polygon"
+  ]
+ },
+ "minterest": {
+  "registry_keys": [
+   "compound:minterest"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x121D54E653a63D90569813E7c6a4C5E6084ff7DE",
+    "0xD13f50274a68ABF2384C79248ADc259b3777c081",
+    "0xe53a90EFd263363993A3B41Aa29f7DaBde1a932D",
+    "0xe56c0d4d6A08C05ec42E923EFd06497F115D4799"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    hallmarks: [\n      ['2023-02-23', 'MINTY distribution begins on Ethereum'],\n      ['2024-01-04', 'MINTY distribution begins on Mantle'],\n      ['2024-05-31', 'MINTY distribution begins on Taiko'],\n      ['2025-02-19', 'MINTY distribution begins on Morph'],\n    ],\n    ethereum: { comptroller: '0xD13f50274a68ABF2384C79248ADc259b3777c081' },\n    mantle: { comptroller: '0xe53a90EFd263363993A3B41Aa29f7DaBde1a932D' },\n    taiko: { comptroller: '0xe56c0d4d6A08C05ec42E923EFd06497F115D4799' },\n    morph: { comptroller: '0x121D54E653a63D90569813E7c6a4C5E6084ff7DE' },\n  }",
+  "chains_in_config": [
+   "Ethereum",
+   "Mantle",
+   "Taiko",
+   "ethereum",
+   "mantle",
+   "taiko"
+  ]
+ },
+ "hundredfinance": {
+  "registry_keys": [
+   "compound:hundredfinance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0f390559f258eb8591c8e31cf0905e97cf36ace2",
+    "0x5a5755E1916F547D04eF43176d4cbe0de4503d5d",
+    "0x6bb6ebCf3aC808E26545d59EA60F27A202cE8586",
+    "0x7d166777bd19a916c2edf5f1fc1ec138b37e7391",
+    "0xedba32185baf7fef9a26ca567bc4a6cbe426e499"
+   ],
+   "cether": [
+    "0x1A61A72F5Cf5e857f15ee502210b81f8B3a66263",
+    "0x6edcb931168c9f7c20144f201537c0243b19dca4",
+    "0x8e15a22853a0a60a0fbb0d875055a8e66cff0235",
+    "0xEbd7f3349AbA8bB15b897e03D6c1a4Ba95B55e31",
+    "0xbb93c7f378b9b531216f9ad7b5748be189a55807",
+    "0xd6fcbccfc375c2c61d7ee2952b329dceba2d4e10",
+    "0xfCD8570AD81e6c77b8D252bEbEBA62ed980BD64D",
+    "0xfcd8570ad81e6c77b8d252bebeba62ed980bd64d"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    hallmarks: [['2023-04-15', 'Protocol hacked (oc Optimism)']],\n    ethereum: { comptroller: '0x0f390559f258eb8591c8e31cf0905e97cf36ace2', cether: '0xfcd8570ad81e6c77b8d252bebeba62ed980bd64d', isInsolvent: true },\n    arbitrum: { comptroller: '0x0f390559f258eb8591c8e31cf0905e97cf36ace2', cether: '0x8e15a22853a0a60a0fbb0d875055a8e66cff0235', isInsolvent: true },\n    fantom: { comptroller: '0x0f390559f258eb8591c8e31cf0905e97cf36ace2', cether: '0xfCD8570AD81e6c77b8D252bEbEBA62ed980BD64D', isInsolvent: true },\n    harmony: { comptroller: '0x0f390559f258eb8591c8e31cf0905e97cf36ace2', cether: '0xbb93c7f378b9b531216f9ad7b5748be189a55807', isInsolvent: true },\n    moonriver: { comptroller: '0x7d166777bd19a916c2edf5f1fc1ec138b37e7391', cether: '0xd6fcbccfc375c2c61d7ee2952b329dceba2d4e10', isInsolvent: true },\n    xdai: { comptroller: '0x6bb6ebCf3aC808E26545d59EA60F27A202cE8586', cether: '0x6edcb931168c9f7c20144f201537c0243b19dca4', isInsolvent: true },\n    polygon: { comptroller: '0xedba32185baf7fef9a26ca567bc4a6cbe426e499', cether: '0xEbd7f3349AbA8bB15b897e03D6c1a4Ba95B55e31', isInsolvent: true },\n    optimism: { comptroller: '0x5a5755E1916F547D04eF43176d4cbe0de4503d5d', cether: '0x1A6",
+  "chains_in_config": [
+   "Optimism",
+   "arbitrum",
+   "ethereum",
+   "fantom",
+   "moonriver",
+   "optimism",
+   "polygon",
+   "xdai"
+  ]
+ },
+ "tender-finance": {
+  "registry_keys": [
+   "compound:tender-finance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xeed247Ba513A8D6f78BE9318399f5eD1a4808F8e"
+   ],
+   "cether": [
+    "0x0706905b2b21574DEFcF00B5fc48068995FCdCdf"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: 'Same as compound, we just get all the collateral (not borrowed money) on the lending markets.',\n    arbitrum: { comptroller: '0xeed247Ba513A8D6f78BE9318399f5eD1a4808F8e', cether: '0x0706905b2b21574DEFcF00B5fc48068995FCdCdf', cetheEquivalent: ADDRESSES.arbitrum.WETH },\n  }",
+  "chains_in_config": [
+   "arbitrum"
+  ]
+ },
+ "paxo-finance": {
+  "registry_keys": [
+   "compound:paxo-finance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x1eDf64B621F17dc45c82a65E1312E8df988A94D3",
+    "0x301C76e7b60e9824E32991B8F29e1c4a03B4F65b"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology: `${require('../projects/helper/methodologies').lendingMarket}. TVL is calculated by getting the market addresses from comptroller and calling the getCash() on-chain method to get the amount of tokens locked in each of these addresses.`,\n    polygon: {\n      comptroller: '0x1eDf64B621F17dc45c82a65E1312E8df988A94D3',\n      staking: ['0xC1704c99278c3e5A91AfB117301eA61B003Aa650', '0xfFA188493C15DfAf2C206c97D8633377847b6a52'],\n    },\n    xdc: { comptroller: '0x301C76e7b60e9824E32991B8F29e1c4a03B4F65b' },\n    linea: { comptroller: '0x301C76e7b60e9824E32991B8F29e1c4a03B4F65b' },\n    boba: { comptroller: '0x301C76e7b60e9824E32991B8F29e1c4a03B4F65b' },\n  }",
+  "chains_in_config": [
+   "linea",
+   "polygon"
+  ]
+ },
+ "sonne-finance": {
+  "registry_keys": [
+   "compound:sonne-finance"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x1DB2466d9F5e10D7090E7152B68d62703a2245F0",
+    "0x60CF091cD3f50420d50fD7f707414d0DF4751C58"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    optimism: {\n      comptroller: '0x60CF091cD3f50420d50fD7f707414d0DF4751C58',\n      isInsolvent: true,\n      staking: [['0xdc05d85069dc4aba65954008ff99f2d73ff12618', '0x41279e29586eb20f9a4f65e031af09fced171166'], '0x1DB2466d9F5e10D7090E7152B68d62703a2245F0'],\n    },\n    base: { comptroller: '0x1DB2466d9F5e10D7090E7152B68d62703a2245F0' },\n  }",
+  "chains_in_config": [
+   "base",
+   "optimism"
+  ]
+ },
+ "moonwell": {
+  "registry_keys": [
+   "compound:moonwell"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x8E00D5e02E65A19337Cdba98bbA9F84d4186a180",
+    "0xCa889f40aae37FFf165BccF69aeF1E82b5C511B9",
+    "0xdec80bB934397575594E91970b37baf65f5b21bE",
+    "0xfBb21d0380beE3312B33c4353c8936a0F13EF26C"
+   ],
+   "cether": [
+    "0x091608f4e4a15335145be0a279483c0f8e4c7955"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    hallmarks: [['2022-08-01', 'Nomad Bridge Exploit']],\n    moonbeam: {\n      comptroller: '0x8E00D5e02E65A19337Cdba98bbA9F84d4186a180',\n      cether: '0x091608f4e4a15335145be0a279483c0f8e4c7955',\n      staking: ['0x8568A675384d761f36eC269D695d6Ce4423cfaB1', '0x511aB53F793683763E5a8829738301368a2411E3'],\n    },\n    base: {\n      comptroller: '0xfBb21d0380beE3312B33c4353c8936a0F13EF26C',\n      staking: ['0xe66E3A37C3274Ac24FE8590f7D84A2427194DC17', '0xa88594d404727625a9437c3f886c7643872296ae'],\n    },\n    optimism: { comptroller: '0xCa889f40aae37FFf165BccF69aeF1E82b5C511B9' },\n    ethereum: { comptroller: '0xdec80bB934397575594E91970b37baf65f5b21bE' },\n  }",
+  "chains_in_config": [
+   "base",
+   "ethereum",
+   "moonbeam",
+   "optimism"
+  ]
+ },
+ "moonwell-apollo": {
+  "registry_keys": [
+   "compound:moonwell-apollo"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0b7a0EAA884849c6Af7a129e899536dDDcA4905E"
+   ],
+   "cether": [
+    "0x6a1a771c7826596652dadc9145feaae62b1cd07f"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    moonriver: {\n      comptroller: '0x0b7a0EAA884849c6Af7a129e899536dDDcA4905E',\n      cether: '0x6a1a771c7826596652dadc9145feaae62b1cd07f',\n      staking: ['0xCd76e63f3AbFA864c53b4B98F57c1aA6539FDa3a', '0xBb8d88bcD9749636BC4D2bE22aaC4Bb3B01A58F1'],\n    },\n  }",
+  "chains_in_config": [
+   "moonriver"
+  ]
+ },
+ "donkey": {
+  "registry_keys": [
+   "compound:donkey"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x35dc04eE1D6E600C0d13B21FdfB5C83D022CEF25",
+    "0x55e41bc3a99aa24E194D507517b1e8b65eFdAa9e"
+   ],
+   "cether": [
+    "0xacc72a0ca4e85f79876ed4c5e6ea29be1cd26c2e",
+    "0xec0d3f28d37a3393cf09ee3ad446c485b6afdaa3"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    ethereum: {\n      comptroller: '0x55e41bc3a99aa24E194D507517b1e8b65eFdAa9e',\n      cether: '0xec0d3f28d37a3393cf09ee3ad446c485b6afdaa3',\n      staking: [['0x4f2ED52bC4CbdE54e2b3547D3758474A21598D7c', '0x024510151204DeC56Cc4D54ed064f62efAC264d5', '0x2EacD2D7cF5Cba9dA031C0a9C5d7FDeDc056216C', '0x8c9886Aca8B6984c10F988078C5e1D91976dFD16', '0x63D21dBD5A30940C605d77882D065736e8fffC94'], '0x4576E6825B462b6916D2a41E187626E9090A92c6'],\n    },\n    klaytn: { comptroller: '0x35dc04eE1D6E600C0d13B21FdfB5C83D022CEF25', cether: '0xacc72a0ca4e85f79876ed4c5e6ea29be1cd26c2e', isInsolvent: true },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "onyx": {
+  "registry_keys": [
+   "compound:onyx"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x7D61ed92a6778f5ABf5c94085739f1EDAbec2800"
+   ],
+   "cether": [
+    "0x714bD93aB6ab2F0bcfD2aEaf46A46719991d0d79"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    ethereum: {\n      comptroller: '0x7D61ed92a6778f5ABf5c94085739f1EDAbec2800',\n      cether: '0x714bD93aB6ab2F0bcfD2aEaf46A46719991d0d79',\n      isInsolvent: true,\n      staking: ['0x23445c63FeEf8D85956dc0f19aDe87606D0e19A9', '0xA2cd3D43c775978A96BdBf12d733D5A1ED94fb18'],\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "zoro": {
+  "registry_keys": [
+   "compound:zoro"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x410ffcC8f37dCb3116cA8F59B30CCbe4c60F2385",
+    "0x90f2810B85f02122159cB18f6abF2776a7Ca3152"
+   ],
+   "cether": [
+    "0x2ff7bF02a7C4f63fBc3b764A12c723B2abdA2905",
+    "0x3a6F5eA6b9B781C37F25164D9c25534eDd87d290"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    era: [\n      { comptroller: '0x90f2810B85f02122159cB18f6abF2776a7Ca3152', cether: '0x3a6F5eA6b9B781C37F25164D9c25534eDd87d290' },\n      { comptroller: '0x410ffcC8f37dCb3116cA8F59B30CCbe4c60F2385', cether: '0x2ff7bF02a7C4f63fBc3b764A12c723B2abdA2905' },\n    ],\n  }",
+  "chains_in_config": [
+   "era"
+  ]
+ },
+ "kinetic": {
+  "registry_keys": [
+   "compound:kinetic"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x15F69897E6aEBE0463401345543C26d1Fd994abB",
+    "0x8041680Fb73E1Fe5F851e76233DCDfA0f2D2D7c8",
+    "0xDcce91d46Ecb209645A26B5885500127819BeAdd"
+   ],
+   "cether": [
+    "0xb84f771305d10607dd086b2f89712c0ced379407",
+    "0xd7291D5001693d15b6e4d56d73B5d2cD7eCfE5c6"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    flare: [\n      { comptroller: '0x8041680Fb73E1Fe5F851e76233DCDfA0f2D2D7c8', cether: '0xb84f771305d10607dd086b2f89712c0ced379407' },\n      { comptroller: '0xDcce91d46Ecb209645A26B5885500127819BeAdd', cether: '0xd7291D5001693d15b6e4d56d73B5d2cD7eCfE5c6' },\n      { comptroller: '0x15F69897E6aEBE0463401345543C26d1Fd994abB' },\n    ],\n  }",
+  "chains_in_config": []
+ },
+ "tectonic": {
+  "registry_keys": [
+   "compound:tectonic"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x7E0067CEf1e7558daFbaB3B1F8F6Fa75Ff64725f",
+    "0x8312A8d5d1deC499D00eb28e1a2723b13aA53C1e",
+    "0xb3831584acb95ed9ccb0c11f677b5ad01deaeec0"
+   ],
+   "cether": [
+    "0x972173afb7eefb80a0815831b318a643442ad0c1",
+    "0xeadf7c01da7e93fdb5f16b0aa9ee85f978e89e95",
+    "0xf4ff4b8ee660d4276eda17e79094a7cc519e9606"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    cronos: [\n      { comptroller: '0xb3831584acb95ed9ccb0c11f677b5ad01deaeec0', cether: '0xeadf7c01da7e93fdb5f16b0aa9ee85f978e89e95' },\n      { comptroller: '0x8312A8d5d1deC499D00eb28e1a2723b13aA53C1e', cether: '0xf4ff4b8ee660d4276eda17e79094a7cc519e9606' },\n      { comptroller: '0x7E0067CEf1e7558daFbaB3B1F8F6Fa75Ff64725f', cether: '0x972173afb7eefb80a0815831b318a643442ad0c1' },\n    ],\n  }",
+  "chains_in_config": []
+ },
+ "mage": {
+  "registry_keys": [
+   "compound:mage"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0xCE3bcCd2b0A457782f79000Be1b534C04B3F5aDD",
+    "0xe7464Caa3fD31A1A8B458a634e72F94A00695d17"
+   ],
+   "cether": [
+    "0xe3b51f15dc086fba15426b8d42b4cd6feb46968e"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    merlin: [\n      { comptroller: '0xCE3bcCd2b0A457782f79000Be1b534C04B3F5aDD', cether: '0xe3b51f15dc086fba15426b8d42b4cd6feb46968e' },\n      { comptroller: '0xe7464Caa3fD31A1A8B458a634e72F94A00695d17' },\n    ],\n  }",
+  "chains_in_config": []
+ },
+ "keom": {
+  "registry_keys": [
+   "compound:keom"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x5B7136CFFd40Eee5B882678a5D02AA25A48d669F",
+    "0x6EA32f626e3A5c41547235ebBdf861526e11f482",
+    "0x91e9e99AC7C39d5c057F83ef44136dFB1e7adD7d",
+    "0xBAc1e5A0B14490Dd0b32fE769eb5637183D8655d",
+    "0xcD906c5f632daFCBD23d574f85294B32E7986fD9"
+   ],
+   "cether": [
+    "0x7854D4Cfa7d0B877E399bcbDFfb49536d7A14fc7",
+    "0x79D7c05352a900bE30992D525f946eA939f6FA3E",
+    "0x8903Dc1f4736D2FcB90C1497AebBABA133DaAC76",
+    "0xd773ffa79258F2D7458F1B74d075F4524Ee3CCa0",
+    "0xee1727f5074e747716637e1776b7f7c7133f16b1"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    polygon_zkevm: [\n      { comptroller: '0x6EA32f626e3A5c41547235ebBdf861526e11f482', cether: '0xee1727f5074e747716637e1776b7f7c7133f16b1' },\n    ],\n    polygon: [\n      { comptroller: '0x5B7136CFFd40Eee5B882678a5D02AA25A48d669F', cether: '0x7854D4Cfa7d0B877E399bcbDFfb49536d7A14fc7' },\n    ],\n    manta: [\n      { comptroller: '0x91e9e99AC7C39d5c057F83ef44136dFB1e7adD7d', cether: '0x8903Dc1f4736D2FcB90C1497AebBABA133DaAC76' },\n      { comptroller: '0xBAc1e5A0B14490Dd0b32fE769eb5637183D8655d', cether: '0xd773ffa79258F2D7458F1B74d075F4524Ee3CCa0' },\n    ],\n    astrzk: [\n      { comptroller: '0xcD906c5f632daFCBD23d574f85294B32E7986fD9', cether: '0x79D7c05352a900bE30992D525f946eA939f6FA3E' },\n    ],\n  }",
+  "chains_in_config": [
+   "manta",
+   "polygon"
+  ]
+ },
+ "orbitlending-io": {
+  "registry_keys": [
+   "compound:orbitlending-io"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x1E18C3cb491D908241D0db14b081B51be7B6e652",
+    "0x273683CA19D9CF827628EE216E4a9604EfB077A3",
+    "0xe9266ae95bB637A7Ad598CB0390d44262130F433",
+    "0xfFF8Fc176697D04607cF4e23E91c65aeD1c3d3F5"
+   ],
+   "cether": [
+    "0x0872b71efc37cb8dde22b2118de3d800427fdba0",
+    "0x530a8d3fdf61112f8a879d753fe02e9e37ec36aa",
+    "0x795dcd51eac6eb3123b7a4a1f906992eaa54cb0e",
+    "0xafabd582e82042f4a8574f75c36409abea916ac5",
+    "0xf9b3b455f5d900f62bc1792a6ca6e1d47b989389"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    blast: [\n      { comptroller: '0x1E18C3cb491D908241D0db14b081B51be7B6e652', cether: ['0xf9b3b455f5d900f62bc1792a6ca6e1d47b989389', '0x0872b71efc37cb8dde22b2118de3d800427fdba0'], blacklistedTokens: ['0xf92996ddc677a8dcb032ac5fe62bbf00f92ae2ec'], isInsolvent: true },\n      { comptroller: '0x273683CA19D9CF827628EE216E4a9604EfB077A3', cether: ['0x795dcd51eac6eb3123b7a4a1f906992eaa54cb0e'], isInsolvent: true },\n      { comptroller: '0xe9266ae95bB637A7Ad598CB0390d44262130F433', cether: ['0xafabd582e82042f4a8574f75c36409abea916ac5'], isInsolvent: true },\n      { comptroller: '0xfFF8Fc176697D04607cF4e23E91c65aeD1c3d3F5', cether: ['0x530a8d3fdf61112f8a879d753fe02e9e37ec36aa'], isInsolvent: true },\n    ],\n  }",
+  "chains_in_config": [
+   "blast"
+  ]
+ },
+ "wanlend": {
+  "registry_keys": [
+   "compound:wanlend"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x21c72522005ccf570f40acaa04b448918aecc2ad",
+    "0xd6980C52C20Fb106e54cC6c8AE04c089C3F6B9d6"
+   ],
+   "cether": [
+    "0x48c42529c4c8e3d10060e04240e9ec6cd0eb1218",
+    "0xE8548014f731194764AF27C8edc9bbAA7d2f4C46"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    methodology,\n    wan: [\n      { comptroller: '0x21c72522005ccf570f40acaa04b448918aecc2ad', cether: '0xE8548014f731194764AF27C8edc9bbAA7d2f4C46', cetheEquivalent: ADDRESSES.wan.WWAN, isInsolvent: true },\n      { comptroller: '0xd6980C52C20Fb106e54cC6c8AE04c089C3F6B9d6', cether: '0x48c42529c4c8e3d10060e04240e9ec6cd0eb1218', cetheEquivalent: ADDRESSES.wan.WWAN },\n    ],\n  }",
+  "chains_in_config": []
+ },
+ "demeter": {
+  "registry_keys": [
+   "compound:demeter"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x3632E78219227b172F0aaF56F92FB08D87C94379"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    bsc: [{ comptroller: '0x3632E78219227b172F0aaF56F92FB08D87C94379', },],\n    heco: [{ comptroller: '0x3632E78219227b172F0aaF56F92FB08D87C94379', },],\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "midas-capital": {
+  "registry_keys": [
+   "compound:midas-capital"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x0fAbd597BDecb0EEE1fDFc9B8458Fe1ed0E35028",
+    "0x1851e32F34565cb95754310b031C5a2Fc0a8a905",
+    "0x185Fa7d0e7d8A4FE7E09eB9df68B549c660e1116",
+    "0x1B6D43501E0c7201Ea061961cBAEc88FB012f57B",
+    "0x20a0ED8c794F96C1479e2867995C99E931Ee36Ba",
+    "0x31d76A64Bc8BbEffb601fac5884372DEF910F044",
+    "0x35F3a59389Dc3174A98610727C2e349E275Dc909",
+    "0x3F239A5C45849391E7b839190597B5130780790d",
+    "0x44a03C14F30D49cB43b7F7E91E987ecC10cc0b09",
+    "0x5373C052Df65b317e48D6CAD8Bb8AC50995e9459",
+    "0x59013D8a77D656777329D74ea1C88DA796005F1B",
+    "0x5EB884651F50abc72648447dCeabF2db091e4117",
+    "0x7f8B5fCA1a63C632776ffc9936D2e323c14B57f8",
+    "0xB08A309eFBFFa41f36A06b2D0C9a4629749b17a2",
+    "0xBc06411a6204B36ce6a5559FFBE3a56C5960F6fe",
+    "0xBd82D36B9CDfB9747aA12025CeCE3782EDe767FE",
+    "0xCB2841d6d300b9245EB7745Db89A0A50D8468501",
+    "0xCc248E6106CB7B05293eF027D5c1c05BF3E39F21",
+    "0xD265ff7e5487E9DD556a4BB900ccA6D087Eb3AD2",
+    "0xEF0B026F93ba744cA3EDf799574538484c2C4f80",
+    "0xF1ABd146B4620D2AE67F34EA39532367F73bbbd2",
+    "0xb2234eE69555EE4C3b6cEA4fd25c4979BbDBf0fd",
+    "0xeB2D3A9D962d89b4A9a34ce2bF6a2650c938e185"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    bsc: [\n      { comptroller: '0x1851e32F34565cb95754310b031C5a2Fc0a8a905' },\n      { comptroller: '0x31d76A64Bc8BbEffb601fac5884372DEF910F044' },\n      { comptroller: '0xb2234eE69555EE4C3b6cEA4fd25c4979BbDBf0fd' },\n      { comptroller: '0xEF0B026F93ba744cA3EDf799574538484c2C4f80' },\n      { comptroller: '0x5373C052Df65b317e48D6CAD8Bb8AC50995e9459' },\n      { comptroller: '0xCB2841d6d300b9245EB7745Db89A0A50D8468501' },\n      { comptroller: '0x35F3a59389Dc3174A98610727C2e349E275Dc909' },\n      { comptroller: '0x3F239A5C45849391E7b839190597B5130780790d' },\n      { comptroller: '0x7f8B5fCA1a63C632776ffc9936D2e323c14B57f8' },\n      { comptroller: '0x20a0ED8c794F96C1479e2867995C99E931Ee36Ba' },\n      { comptroller: '0x5EB884651F50abc72648447dCeabF2db091e4117' },\n      { comptroller: '0xBc06411a6204B36ce6a5559FFBE3a56C5960F6fe' },\n      { comptroller: '0x1B6D43501E0c7201Ea061961cBAEc88FB012f57B' },\n    ],\n    moonbeam: [\n      { comptroller: '0xeB2D3A9D962d89b4A9a34ce2bF6a2650c938e185' },\n      { comptroller: '0x0fAbd597BDecb0EEE1fDFc9B8458Fe1ed0E35028' },\n      { comptroller: '0xCc248E6106CB7B05293eF027D5c1c05BF3E39F21' },\n    ],\n    polygon: [\n      { comptroller: '0xD265ff7e5487E9",
+  "chains_in_config": [
+   "arbitrum",
+   "bsc",
+   "moonbeam",
+   "polygon"
+  ]
+ },
+ "bastion": {
+  "registry_keys": [
+   "compound:bastion"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x6De54724e128274520606f038591A00C5E94a1F6",
+    "0xA195b3d7AA34E47Fb2D2e5A682DF2d9EFA2daF06",
+    "0xE550A886716241AFB7ee276e647207D7667e1E79",
+    "0xe1cf09BDa2e089c63330F0Ffe3F6D6b790835973"
+   ],
+   "cether": [
+    "0x4E8fE8fd314cFC09BDb0942c5adCC37431abDCD0"
+   ],
+   "chain_shorthand": [
+    "0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    aurora: [\n      { comptroller: '0x6De54724e128274520606f038591A00C5E94a1F6', cether: '0x4E8fE8fd314cFC09BDb0942c5adCC37431abDCD0', cetheEquivalent: '0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb' },\n      { comptroller: '0xA195b3d7AA34E47Fb2D2e5A682DF2d9EFA2daF06' },\n      { comptroller: '0xe1cf09BDa2e089c63330F0Ffe3F6D6b790835973' },\n      { comptroller: '0xE550A886716241AFB7ee276e647207D7667e1E79' },\n    ],\n  }",
+  "chains_in_config": []
+ },
+ "xpert": {
+  "registry_keys": [
+   "compound:xpert"
+  ],
+  "addresses": {
+   "comptroller": [
+    "0x4f3b08B7FE4E14f728d084850A7B9CFF2E759Eb7",
+    "0xaE9dFbb5E3848AB056acA352D783d7e569EF83b3"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "flux-finance__registries__compound.js"
+  ],
+  "compound_config_excerpt": "{\n    ink: [{ comptroller: '0x4f3b08B7FE4E14f728d084850A7B9CFF2E759Eb7' }],\n    base: [{ comptroller: '0xaE9dFbb5E3848AB056acA352D783d7e569EF83b3' }],\n  }",
+  "chains_in_config": [
+   "base"
+  ]
+ },
+ "tokos-fi": {
+  "registry_keys": [
+   "aave:tokos-fi"
+  ],
+  "addresses": {
+   "registry": [
+    "0xEC6758e6324c167DB39B6908036240460a2b0168"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    somnia: { registry: '0xEC6758e6324c167DB39B6908036240460a2b0168', isAaveV3Fork: true },\n  }",
+  "chains_in_config": []
+ },
+ "pholend": {
+  "registry_keys": [
+   "aave:pholend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x09e7b6BF92ba8566939d59fE3e3844385d492E77"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    crossfi: '0x09e7b6BF92ba8566939d59fE3e3844385d492E77',\n  }",
+  "chains_in_config": []
+ },
+ "hydration-lending": {
+  "registry_keys": [
+   "aave:hydration-lending"
+  ],
+  "addresses": {
+   "registry": [
+    "0x1b02E051683b5cfaC5929C25E84adb26ECf87B38"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    hydradx: {\n      registry: '0x1b02E051683b5cfaC5929C25E84adb26ECf87B38',\n      abis: {\n        getReserveData: \"function getReserveData(address asset) view returns (((uint256 data) configuration, uint128 liquidityIndex, uint128 currentLiquidityRate, uint128 variableBorrowIndex, uint128 currentVariableBorrowRate, uint128 currentStableBorrowRate, uint40 lastUpdateTimestamp, uint16 id, address aTokenAddress, address stableDebtTokenAddress, address variableDebtTokenAddress, address interestRateStrategyAddress, uint128 accruedToTreasury, uint128 unbacked, uint128 isolationModeTotalDebt))\",\n      },\n    },\n  }",
+  "chains_in_config": []
+ },
+ "dorian": {
+  "registry_keys": [
+   "aave:dorian"
+  ],
+  "addresses": {
+   "registry": [
+    "0x29604bF5D09bcb714D13549f98CC4Bb49c2Ff672"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    core: {\n      registry: '0x29604bF5D09bcb714D13549f98CC4Bb49c2Ff672',\n      fromBlock: 15251455,\n      staking: ['0x3C57d20A70d4D34331d442Cd634B0ccAF6Ad89A4', '0x6191F90724cD0aa791B7476e804ae00146618Ab6'],\n    },\n  }",
+  "chains_in_config": [
+   "core"
+  ]
+ },
+ "klaybank": {
+  "registry_keys": [
+   "aave:klaybank"
+  ],
+  "addresses": {
+   "registry": [
+    "0x4B6Ece52D0EF60aE054f45c45D6bA4F7a0C2cC67"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    klaytn: {\n      registry: '0x4B6Ece52D0EF60aE054f45c45D6bA4F7a0C2cC67',\n      staking: ['0x32FE0F8d0BC59836028E80bc2ed94AE8E169344B', '0x946bc715501413b9454bb6a31412a21998763f2d'],\n    },\n  }",
+  "chains_in_config": []
+ },
+ "unleash": {
+  "registry_keys": [
+   "aave:unleash"
+  ],
+  "addresses": {
+   "registry": [
+    "0xC62Af8aa9E2358884B6e522900F91d3c924e1b38"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    sty: { registry: '0xC62Af8aa9E2358884B6e522900F91d3c924e1b38', isAaveV3Fork: true, isInsolvent: true },\n  }",
+  "chains_in_config": []
+ },
+ "lendle": {
+  "registry_keys": [
+   "aave:lendle"
+  ],
+  "addresses": {
+   "registry": [
+    "0x30D990834539E1CE8Be816631b73a534e5044856"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    mantle: {\n      registry: '0x30D990834539E1CE8Be816631b73a534e5044856',\n      fromBlock: 56556,\n      staking: ['0x5C75A733656c3E42E44AFFf1aCa1913611F49230', '0x25356aeca4210eF7553140edb9b8026089E49396'],\n    },\n  }",
+  "chains_in_config": [
+   "mantle"
+  ]
+ },
+ "bonzo": {
+  "registry_keys": [
+   "aave:bonzo"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x236897c518996163E7b313aD21D1C9fCC7BA1afc"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    timetravel: false,\n    methodology,\n    hedera: '0x236897c518996163E7b313aD21D1C9fCC7BA1afc',\n  }",
+  "chains_in_config": []
+ },
+ "takotako": {
+  "registry_keys": [
+   "aave:takoTako"
+  ],
+  "addresses": {
+   "registry": [
+    "0xD07B62ee683267D4A884453eaE982A151653515E"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    taiko: {\n      registry: '0xD07B62ee683267D4A884453eaE982A151653515E',\n      fromBlock: 381054,\n      blacklistedTokens: ['0xf7fb2df9280eb0a76427dc3b34761db8b1441a49'],\n    },\n  }",
+  "chains_in_config": [
+   "taiko"
+  ]
+ },
+ "the-granary": {
+  "registry_keys": [
+   "aave:the-granary"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x773E0277667F0c38d3Ca2Cf771b416bfd065da83",
+    "0xC043BA54F34C9fb3a0B45d22e2Ef1f171272Bc9D",
+    "0x872B9e8aea5D65Fbf29b8B05bfA4AA3fE94cC11f",
+    "0x5C93B799D31d3d6a7C977f75FDB88d069565A55b",
+    "0x37133A8dCA96400c249102E59B11e25b0F663Ee0",
+    "0x512f582fFCCF3C14bD872152EeAe60866dCB2A1e",
+    "0x7c8E7536c5044E1B3693eB564C6dE3a3CE58bbDa"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    fantom: '0x773E0277667F0c38d3Ca2Cf771b416bfd065da83',\n    avax: '0xC043BA54F34C9fb3a0B45d22e2Ef1f171272Bc9D',\n    optimism: '0x872B9e8aea5D65Fbf29b8B05bfA4AA3fE94cC11f',\n    ethereum: '0x5C93B799D31d3d6a7C977f75FDB88d069565A55b',\n    metis: '0x37133A8dCA96400c249102E59B11e25b0F663Ee0',\n    arbitrum: '0x512f582fFCCF3C14bD872152EeAe60866dCB2A1e',\n    bsc: '0x7c8E7536c5044E1B3693eB564C6dE3a3CE58bbDa',\n    base: '0x5C93B799D31d3d6a7C977f75FDB88d069565A55b',\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "avax",
+   "base",
+   "bsc",
+   "ethereum",
+   "fantom",
+   "metis",
+   "optimism"
+  ]
+ },
+ "aave-arc": {
+  "registry_keys": [
+   "aave:aave-arc"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    ethereum: {\n      addressesProviderRegistry: '0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00',\n      dataHelpers: ['0x71B53fC437cCD988b1b89B1D4605c3c3d0C810ea'],\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "ssap": {
+  "registry_keys": [
+   "aave:ssap"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x070CaAeac85CCaA7E8DCd88421904C2259Abed34",
+    "0xBB4dfd53BA393DCD1AD1e30809C9527e9a00d522"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    clv: {\n      addressesProviderRegistry: '0x070CaAeac85CCaA7E8DCd88421904C2259Abed34',\n      dataHelpers: ['0x49617386d6aAaA6aE23c0E7799B5c4F79f33f1B1'],\n    },\n    oasis: {\n      addressesProviderRegistry: '0xBB4dfd53BA393DCD1AD1e30809C9527e9a00d522',\n      dataHelpers: ['0x2b8DD6DE52F20EfA309BC56454b7A929B7a1E66D'],\n    },\n  }",
+  "chains_in_config": []
+ },
+ "luckypeaches": {
+  "registry_keys": [
+   "aave:luckypeaches"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    hemi: { dataHelpers: ['0x986b04d0a228b8cB81E236F9Add85e43758F21B2'] },\n    hyperliquid: { dataHelpers: ['0x473f5e779b36DdC54f63107B255580Db049EFc5b'] },\n  }",
+  "chains_in_config": [
+   "hyperliquid"
+  ]
+ },
+ "seamless": {
+  "registry_keys": [
+   "aave:seamless"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x90C5055530C0465AbB077FA016a3699A3F53Ef99"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    base: {\n      addressesProviderRegistry: '0x90C5055530C0465AbB077FA016a3699A3F53Ef99',\n      dataHelpers: ['0x2A0979257105834789bC6b9E1B00446DFbA8dFBa'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": [
+   "base"
+  ]
+ },
+ "hyperlend": {
+  "registry_keys": [
+   "aave:hyperlend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x24E301BcBa5C098B3b41eA61a52bFe95Cb728b20"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    hyperliquid: {\n      addressesProviderRegistry: '0x24E301BcBa5C098B3b41eA61a52bFe95Cb728b20',\n      dataHelpers: ['0x5481bf8d3946E6A3168640c1D7523eB59F055a29'],\n      staking: ['0x09b2236327d76fcd9e4b72db70a6608c21a94292', '0xbd6dab50f03a305a80037294fa8d1a9dc0cac91b'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": [
+   "hyperliquid"
+  ]
+ },
+ "radiant": {
+  "registry_keys": [
+   "aave:radiant"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x7BB843f889e3a0B307299c3B65e089bFfe9c0bE0"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    arbitrum: {\n      addressesProviderRegistry: '0x7BB843f889e3a0B307299c3B65e089bFfe9c0bE0',\n      staking: ['0xc2054A8C33bfce28De8aF4aF548C48915c455c13', '0x0C4681e6C0235179ec3D4F4fc4DF3d14FDD96017'],\n      pool2: ['0xc963ef7d977ECb0Ab71d835C4cb1Bf737f28d010', '0x24704aFF49645D32655A76Df6d407E02d146dAfC'],\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum"
+  ]
+ },
+ "phiat": {
+  "registry_keys": [
+   "aave:phiat"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x9B979a359410544236343Dfa11b8e1401e4DdCd6"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    pulse: {\n      addressesProviderRegistry: '0x9B979a359410544236343Dfa11b8e1401e4DdCd6',\n      staking: ['0xeAa92F835757a8B3fA4cbCA3Db9D2Ea342651D44', '0x96e035ae0905efac8f733f133462f971cfa45db1'],\n    },\n  }",
+  "chains_in_config": []
+ },
+ "sculptor-finance": {
+  "registry_keys": [
+   "aave:sculptor-finance"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xa1eBB37b5A19050A192c38C82f25f4aBf0158F39"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    bsc: {\n      addressesProviderRegistry: '0xa1eBB37b5A19050A192c38C82f25f4aBf0158F39',\n      staking: ['0xd4F7F739488f5C9930A60e85afbE26a8B71BA795', '0xAd3E02e83b886543D1171FF446C130D52068C106'],\n      pool2: ['0x18542eEe45272a29BC572F0EdB727da4e3506DD2', '0xB1F3bE619648B4a2dF6ddaCFD42B051F21bF3dc8'],\n    },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "valas": {
+  "registry_keys": [
+   "aave:valas"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x99E41A7F2Dd197187C8637D1D151Dc396261Bc14"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    bsc: {\n      addressesProviderRegistry: '0x99E41A7F2Dd197187C8637D1D151Dc396261Bc14',\n      blacklistedTokens: [ADDRESSES.bsc.BUSD, ADDRESSES.bsc.BTUSD],\n      staking: ['0x685D3b02b9b0F044A3C01Dbb95408FC2eB15a3b3', '0xB1EbdD56729940089Ecc3aD0BBEEB12b6842ea6F'],\n      pool2: ['0x3eB63cff72f8687f8DE64b2f0e40a5B95302D028', '0x829F540957DFC652c4466a7F34de611E172e64E8'],\n      isInsolvent: true,\n    },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "betterbank": {
+  "registry_keys": [
+   "aave:betterbank"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x21597Ae2f941b5022c6E72fd02955B7f3C87f4Cb"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    pulse: {\n      addressesProviderRegistry: '0x21597Ae2f941b5022c6E72fd02955B7f3C87f4Cb',\n      dataHelpers: ['0x2369cf50ee0e5727bd971c0d2d172ea6f376edaa'],\n      v3: true,\n      isInsolvent: true,\n    },\n  }",
+  "chains_in_config": []
+ },
+ "spark-fi": {
+  "registry_keys": [
+   "aave:spark-fi"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x03cFa0C4622FF84E50E75062683F44c9587e6Cc1",
+    "0xA98DaCB3fC964A6A0d2ce3B77294241585EAbA6d"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    ethereum: {\n      addressesProviderRegistry: '0x03cFa0C4622FF84E50E75062683F44c9587e6Cc1',\n      dataHelpers: ['0xFc21d6d146E6086B8359705C8b28512a983db0cb'],\n      v3: true,\n      staking: ['0xc6132FAF04627c8d05d6E759FAbB331Ef2D8F8fD', '0xc20059e0317DE91738d13af027DfC4a50781b066'],\n    },\n    xdai: {\n      addressesProviderRegistry: '0xA98DaCB3fC964A6A0d2ce3B77294241585EAbA6d',\n      dataHelpers: ['0x2a002054A06546bB5a264D57A81347e23Af91D18'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": [
+   "ethereum",
+   "xdai"
+  ]
+ },
+ "zerolend": {
+  "registry_keys": [
+   "aave:zerolend"
+  ],
+  "addresses": {},
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    hallmarks: [\n      [\"2026-02-17\", \"winddown announced\"],\n    ],\n    // borrowed marked insolvent on every chain (protocol winddown) => borrowed excluded from TVL\n    era: { dataHelpers: ['0xB73550bC1393207960A385fC8b34790e5133175E'], isInsolvent: true },\n    manta: { dataHelpers: ['0x67f93d36792c49a4493652B91ad4bD59f428AD15'], isInsolvent: true },\n    blast: { dataHelpers: ['0xc6DF4ddDBFaCb866e78Dcc01b813A41C15A08C10'], isInsolvent: true },\n    hemi: { dataHelpers: ['0x9698FdF843cbe4531610aC231B0047d9FFc13bC6'], isInsolvent: true },\n    base: { dataHelpers: ['0xA754b2f1535287957933db6e2AEE2b2FE6f38588'], isInsolvent: true },\n    linea: {\n      dataHelpers: [\n        '0x67f93d36792c49a4493652B91ad4bD59f428AD15', // main linea market\n        '0x9aFB91a3cfB9aBc8Cbc8429aB57b6593FE36E173', // croak linea market\n        '0xEe9ec60657B714E3FAC5255a5443AC5EC7Ba5bB0', // foxy linea market\n      ],\n      isInsolvent: true,\n      staking: ['0x08D5FEA625B1dBf9Bae0b97437303a0374ee02F8', '0x78354f8DcCB269a615A7e0a24f9B0718FDC3C7A7'], // zeroLocker, zero\n      pool2: [['0x8bb8b092f3f872a887f377f73719c665dd20ab06'], ['0x0040f36784dda0821e74ba67f86e084d70d67a3a']], // zlpLocker, zeroEthNileLP",
+  "chains_in_config": [
+   "base",
+   "blast",
+   "era",
+   "ethereum",
+   "linea",
+   "manta",
+   "zircuit"
+  ]
+ },
+ "palomino-finance": {
+  "registry_keys": [
+   "aave:palomino-finance"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    saga: {\n      dataHelpers: ['0x96a5A828c554b4D5ACdb9f0f4bb15b24C0423B69'],\n      v3: true,\n      blacklistedTokens: ['0xB76144F87DF95816e8c55C240F874C554B4553C3'],\n    },\n  }",
+  "chains_in_config": []
+ },
+ "haven1-hlend": {
+  "registry_keys": [
+   "aave:haven1-hlend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x989CdA7ea2953F9AF743C7cc51B8fA71d156aE27"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology: \"Counts the tokens locked in Haven1 contracts that are used as collateral or to generate yield. Borrowed tokens are excluded, so only assets directly locked in the protocol are counted. This prevents inflating TVL through recursive lending.\",\n    haven1: {\n      addressesProviderRegistry: '0x989CdA7ea2953F9AF743C7cc51B8fA71d156aE27',\n      dataHelpers: ['0x91e097513f45D4aA93E6acBa20272AA769fa9D27'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": []
+ },
+ "bitfire": {
+  "registry_keys": [
+   "aave:bitfire"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xD489a9cc2eF0b990c6a30Ed9AfF6EC63A2765F25"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    mezo: {\n      addressesProviderRegistry: '0xD489a9cc2eF0b990c6a30Ed9AfF6EC63A2765F25',\n      dataHelpers: ['0xBB7cF099BAfc69a30D4f21878F2FE3Ac10e768fA'],\n      v3: true,\n      abis: {\n        getAllATokens: \"function getAllBTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n  }",
+  "chains_in_config": []
+ },
+ "betterlend": {
+  "registry_keys": [
+   "aave:betterlend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x6a52A961CF2241Cca78F8e5Fdc980a824afD6d8c"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    pulse: {\n      addressesProviderRegistry: '0x6a52A961CF2241Cca78F8e5Fdc980a824afD6d8c',\n      dataHelpers: ['0x1847a4e03D02cf2b86614153Eb76432fF499C732'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": []
+ },
+ "quokkalend": {
+  "registry_keys": [
+   "aave:quokkalend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x8C28AAA6c07c6c4e3E68B2e426C847614A9c0Dea"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    morph: {\n      addressesProviderRegistry: '0x8C28AAA6c07c6c4e3E68B2e426C847614A9c0Dea',\n      dataHelpers: ['0x367ab6F3e883617f8385Eb5eA9d6e41A6e5c0D35'],\n    },\n  }",
+  "chains_in_config": []
+ },
+ "lendos": {
+  "registry_keys": [
+   "aave:lendOS"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    neon_evm: {\n      dataHelpers: ['0x3A1ca459F21D8FAcF9A30bC4773f5dBf07C1191d'],\n      v3: true,\n    },\n    hemi: {\n      dataHelpers: ['0xfBF6Aab10f696F3BA098BBE4EA9CF2503FC0f358'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": []
+ },
+ "kinza": {
+  "registry_keys": [
+   "aave:kinza"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x37D7Eb561E189895E5c8601Cd03EEAB67C269189",
+    "0xcf46F77cD75a17900d59676fBe4B88aAdcBA9533",
+    "0xad48812a9d81aCf8De5bfc93c7d6d7165920aBc2",
+    "0x37c9E6eEAbE799878FF9d32984A3a0b91243cbC6"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    bsc: {\n      addressesProviderRegistry: '0x37D7Eb561E189895E5c8601Cd03EEAB67C269189',\n      dataHelpers: ['0x09ddc4ae826601b0f9671b9edffdf75e7e6f5d61'],\n      v3: true,\n    },\n    op_bnb: {\n      addressesProviderRegistry: '0xcf46F77cD75a17900d59676fBe4B88aAdcBA9533',\n      dataHelpers: ['0xBb5f2d30c0fC9B0f71f7B19DaF19e7Cf3D23eb5E'],\n      v3: true,\n    },\n    mantle: {\n      addressesProviderRegistry: '0xad48812a9d81aCf8De5bfc93c7d6d7165920aBc2',\n      dataHelpers: ['0x18cc2c55b429EE08748951bBD33FF2e68c95ec38'],\n      v3: true,\n    },\n    ethereum: {\n      addressesProviderRegistry: '0x37c9E6eEAbE799878FF9d32984A3a0b91243cbC6',\n      dataHelpers: ['0xE44990a8a732605Eddc0870597d2Cf4A2637F038'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": [
+   "bsc",
+   "ethereum",
+   "mantle"
+  ]
+ },
+ "jolt": {
+  "registry_keys": [
+   "aave:jolt"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x3d8a1ea95ea4afa2469bfb80d94a4f9068670e82"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    optimism: {\n      addressesProviderRegistry: '0x3d8a1ea95ea4afa2469bfb80d94a4f9068670e82',\n      dataHelpers: ['0xe9c0EFeA9236467fa9aaC41E2c728aD47aaD74d3'],\n    },\n  }",
+  "chains_in_config": [
+   "optimism"
+  ]
+ },
+ "hypurrfi": {
+  "registry_keys": [
+   "aave:hypurrfi"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    hyperliquid: {\n      dataHelpers: ['0x48684a2316eac7b458ad22c459e12eb1c0fa28c4'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": [
+   "hyperliquid"
+  ]
+ },
+ "harbor": {
+  "registry_keys": [
+   "aave:harbor"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x31406A8c12813b64bF9985761BA51412B92fFb4E"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    bsc: '0x31406A8c12813b64bF9985761BA51412B92fFb4E',\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "extra-xlend": {
+  "registry_keys": [
+   "aave:extra-xlend"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    optimism: {\n      dataHelpers: ['0xCC61E9470B5f0CE21a3F6255c73032B47AaeA9C0'],\n      v3: true,\n    },\n    base: {\n      dataHelpers: ['0x1566DA4640b6a0b32fF309b07b8df6Ade40fd98D'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "optimism"
+  ]
+ },
+ "dtrinity-dlend": {
+  "registry_keys": [
+   "aave:dtrinity-dlend"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    fraxtal: {\n      dataHelpers: ['0xFB3adf4c845fD6352D24F3F0981eb7954401829c'],\n      v3: true,\n      blacklistedTokens: ['0x788D96f655735f52c676A133f4dFC53cEC614d4A'],\n    },\n    sonic: {\n      dataHelpers: ['0xB245F8321E7A4938DEf8bDb2D5E2E16481268c42'],\n      v3: true,\n      blacklistedTokens: ['0x53a6aBb52B2F968fA80dF6A894e4f1b1020DA975', '0x614914B028A7D1fD4Fab1E5a53a3E2dF000bcB0e'],\n    },\n    ethereum: {\n      dataHelpers: ['0x7BC6d94344392ac7898Ce197Ae382e21c71347f2'],\n      v3: true,\n      blacklistedTokens: ['0x07fFf99e1664d9B116fbC158c0E99785F81cA236', '0xb419ecdd222981e7e54cec316797ecb799c6afdc'],  // exclude dETH & dUSD\n    },\n  }",
+  "chains_in_config": [
+   "ethereum",
+   "fraxtal",
+   "sonic"
+  ]
+ },
+ "apebank": {
+  "registry_keys": [
+   "aave:apebank"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xEeec4D3C3aa8B4B2589b6a076717e5B045f7F0E9"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    apechain: '0xEeec4D3C3aa8B4B2589b6a076717e5B045f7F0E9',\n  }",
+  "chains_in_config": []
+ },
+ "yieldlend": {
+  "registry_keys": [
+   "aave:yieldlend"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    base: {\n      dataHelpers: ['0x43A5803c5f1Cb6241858669ad6F63fe5B3882434'],\n    },\n  }",
+  "chains_in_config": [
+   "base"
+  ]
+ },
+ "u235": {
+  "registry_keys": [
+   "aave:u235"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xE58Ebf93885c8Ea0368fCe84aF79EC983b80c8D5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    scroll: {\n      addressesProviderRegistry: '0xE58Ebf93885c8Ea0368fCe84aF79EC983b80c8D5',\n      dataHelpers: ['0xeB3C203418f0cb55b351C3E45A5C4f47bE5DA77A'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": [
+   "scroll"
+  ]
+ },
+ "tropykus-zkevm": {
+  "registry_keys": [
+   "aave:tropykus-zkevm"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x4Dac514F520D051551372d277d1b2Fa3cF2AfdFF"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    polygon_zkevm: '0x4Dac514F520D051551372d277d1b2Fa3cF2AfdFF',\n  }",
+  "chains_in_config": []
+ },
+ "superlend": {
+  "registry_keys": [
+   "aave:superlend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xEcbDd440C7a929d7524784Af634dF9EB0747b9e7"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    etlk: {\n      addressesProviderRegistry: '0xEcbDd440C7a929d7524784Af634dF9EB0747b9e7',\n      dataHelpers: ['0x99e8269dDD5c7Af0F1B3973A591b47E8E001BCac'],\n      v3: true,\n      isInsolvent: true,\n    },\n  }",
+  "chains_in_config": []
+ },
+ "sio2": {
+  "registry_keys": [
+   "aave:sio2"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x9D8bB85b1c728f69672923dD4A0209EC8b75EFda"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    astar: {\n      addressesProviderRegistry: '0x9D8bB85b1c728f69672923dD4A0209EC8b75EFda',\n      abis: {\n        getAllATokens: \"function getAllSTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n  }",
+  "chains_in_config": []
+ },
+ "seismic": {
+  "registry_keys": [
+   "aave:seismic"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xEEcA436A6d4AfF6f0d55d71e9B1C271AbF511Cd0"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    blast: '0xEEcA436A6d4AfF6f0d55d71e9B1C271AbF511Cd0',\n  }",
+  "chains_in_config": [
+   "blast"
+  ]
+ },
+ "roe": {
+  "registry_keys": [
+   "aave:roe"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x0029B254d039d8C5C88512a44EAa6FF999296009",
+    "0x1ceb99Acd9788bb7d7Ce4a90219cBb0627b008F9",
+    "0x01b76559D512Fa28aCc03630E8954405BcBB1E02"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    ethereum: {\n      addressesProviderRegistry: '0x0029B254d039d8C5C88512a44EAa6FF999296009',\n      dataHelpers: ['0xC68A4F7764f5219f250614d5647258a17A51a6c7'],\n    },\n    polygon: {\n      addressesProviderRegistry: '0x1ceb99Acd9788bb7d7Ce4a90219cBb0627b008F9',\n      dataHelpers: ['0xA0132fF55E4ee9818B2F2d769f6Ba5c14Cfe0DA4'],\n    },\n    arbitrum: {\n      addressesProviderRegistry: '0x01b76559D512Fa28aCc03630E8954405BcBB1E02',\n      dataHelpers: ['0x156a166B58afB948f4c60e1DC6bEdFF55760c319'],\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "ethereum",
+   "polygon"
+  ]
+ },
+ "rhombus": {
+  "registry_keys": [
+   "aave:rhombus"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    klaytn: {\n      dataHelpers: ['0x3eFC37753ec2501b406F3443cFD8D406B52abEa6'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": []
+ },
+ "realtoken-rmm-v3": {
+  "registry_keys": [
+   "aave:realtoken-rmm-v3"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xC6c4b123e731819AC5f7F9E0fe3A118e9b1227Cd"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    xdai: {\n      addressesProviderRegistry: '0xC6c4b123e731819AC5f7F9E0fe3A118e9b1227Cd',\n      dataHelpers: ['0x11B45acC19656c6C52f93d8034912083AC7Dd756'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": [
+   "xdai"
+  ]
+ },
+ "realtmarkets": {
+  "registry_keys": [
+   "aave:realtmarkets"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xae6933231Fb83257696E29B050cA6068D6E6Cc84",
+    "0x1a88d967936a73326562d2310062eCE226Ed6664"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    misrepresentedTokens: true,\n    methodology,\n    xdai: {\n      addressesProviderRegistry: '0xae6933231Fb83257696E29B050cA6068D6E6Cc84',\n      oracle: '0x1a88d967936a73326562d2310062eCE226Ed6664',\n    },\n  }",
+  "chains_in_config": [
+   "xdai"
+  ]
+ },
+ "pu239": {
+  "registry_keys": [
+   "aave:pu239"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x0fBB7d9866D357f75a8fAf83330b7d089703464e"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    map: {\n      addressesProviderRegistry: '0x0fBB7d9866D357f75a8fAf83330b7d089703464e',\n      dataHelpers: ['0xa9fc4Ea8A1dE8C722D8a70a73f26E2DBD89475bd'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": []
+ },
+ "palmy": {
+  "registry_keys": [
+   "aave:palmy"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xf4A3dDC5F629d9CB14DF4e7d5f78326153eA02A3"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    oas: {\n      addressesProviderRegistry: '0xf4A3dDC5F629d9CB14DF4e7d5f78326153eA02A3',\n      abis: {\n        getAllATokens: \"function getAllLTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n  }",
+  "chains_in_config": []
+ },
+ "mooncakefi": {
+  "registry_keys": [
+   "aave:mooncakefi"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    linea: {\n      dataHelpers: ['0x593C2d762B1CDe79101D946Ca7816eeaF17Ad744'],\n    },\n    base: {\n      dataHelpers: ['0x32aB5e8ad83d4afbEe7103d7ed4A9CAF7B76F195'],\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "linea"
+  ]
+ },
+ "monolend": {
+  "registry_keys": [
+   "aave:monolend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x49Ce0308F3F55955D224453aECe7610b6983c123"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    polygon: '0x49Ce0308F3F55955D224453aECe7610b6983c123',\n  }",
+  "chains_in_config": [
+   "polygon"
+  ]
+ },
+ "molend": {
+  "registry_keys": [
+   "aave:molend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xB6796E12ADC78993DB1a33Cedbc459a4A848ED69"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    mode: '0xB6796E12ADC78993DB1a33Cedbc459a4A848ED69',\n  }",
+  "chains_in_config": [
+   "mode"
+  ]
+ },
+ "mahalend": {
+  "registry_keys": [
+   "aave:mahalend"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    ethereum: {\n      dataHelpers: ['0xCB5a1D4a394C4BA58999FbD7629d64465DdA70BC'],\n    },\n    arbitrum: {\n      dataHelpers: ['0xE76C1D2a7a56348574810e83D38c07D47f0641F3'],\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "ethereum"
+  ]
+ },
+ "lore": {
+  "registry_keys": [
+   "aave:lore"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xBc6DE4458b7D6fbf82240ce8cC0CA6a2f4986eb5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    scroll: '0xBc6DE4458b7D6fbf82240ce8cC0CA6a2f4986eb5',\n  }",
+  "chains_in_config": [
+   "scroll"
+  ]
+ },
+ "iolend": {
+  "registry_keys": [
+   "aave:iolend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xA9Bb7ebb4F51B0e0BbD0FaE640e32298a0Bcf4A5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    iotaevm: '0xA9Bb7ebb4F51B0e0BbD0FaE640e32298a0Bcf4A5',\n  }",
+  "chains_in_config": []
+ },
+ "hana-finance": {
+  "registry_keys": [
+   "aave:hana-finance"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x47EC2cEF8468dbaC060410E2BDde35A3B8f725e5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    taiko: {\n      addressesProviderRegistry: '0x47EC2cEF8468dbaC060410E2BDde35A3B8f725e5',\n      dataHelpers: ['0x9E3D95b518f68349464da1b6dbd0B94DB59addc1'],\n    },\n  }",
+  "chains_in_config": [
+   "taiko"
+  ]
+ },
+ "hadouken-fi-lending": {
+  "registry_keys": [
+   "aave:hadouken-fi-lending"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x10797360711178183455cCa40533FfB62a17C60f"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    godwoken_v1: '0x10797360711178183455cCa40533FfB62a17C60f',\n  }",
+  "chains_in_config": []
+ },
+ "glyph-fi": {
+  "registry_keys": [
+   "aave:glyph-fi"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xcD0c5BA79018F37898A58eF56d197828d84f36Ad"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    fraxtal: '0xcD0c5BA79018F37898A58eF56d197828d84f36Ad',\n  }",
+  "chains_in_config": [
+   "fraxtal"
+  ]
+ },
+ "fathom-lending": {
+  "registry_keys": [
+   "aave:fathom-lending"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xDAb3B99eb3569466750c436d6F4c99d57850Cc89"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    xdc: {\n      addressesProviderRegistry: '0xDAb3B99eb3569466750c436d6F4c99d57850Cc89',\n      dataHelpers: ['0x7fa488a5C88E9E35B0B86127Ec76B0c1F0933191'],\n      v3: true,\n      abis: {\n        getAllATokens: \"function getAllFmTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n  }",
+  "chains_in_config": []
+ },
+ "amply-finance": {
+  "registry_keys": [
+   "aave:amply-finance"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    cronos_zkevm: {\n      dataHelpers: ['0x47656eb2A31094b348EBF458Eccb942d471324eD'],\n      v3: true,\n    },\n  }",
+  "chains_in_config": []
+ },
+ "magsinio": {
+  "registry_keys": [
+   "aave:magsinio"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x67389503F9EF03D5C10074dEfd96E18bc7755194"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    sonic: '0x67389503F9EF03D5C10074dEfd96E18bc7755194',\n  }",
+  "chains_in_config": [
+   "sonic"
+  ]
+ },
+ "k613": {
+  "registry_keys": [
+   "aave:k613"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    monad: {\n      dataHelpers: ['0xfc87bE7f3657AAD69baDb6247A88E924D1F8bc53'],\n    },\n  }",
+  "chains_in_config": []
+ },
+ "meridian-lend": {
+  "registry_keys": [
+   "aave:meridian-lend"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0xb84171C0824B4F3C0B415706C99A4A8ED5779b75",
+    "0x64Be9ee529E555860DA0705819138F41247e76E6",
+    "0xbdD3d2f93cc1c6C951342C42Ef0795323CE83719",
+    "0x8Cf3E0e7aE4eB82237d0931388EA72D5649D76e0",
+    "0x96a52CdFE64749C146E13F68641073566275433e"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    telos: {\n      addressesProviderRegistry: '0xb84171C0824B4F3C0B415706C99A4A8ED5779b75',\n      abis: {\n        getAllATokens: \"function getAllOTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n    meter: {\n      addressesProviderRegistry: '0x64Be9ee529E555860DA0705819138F41247e76E6',\n      abis: {\n        getAllATokens: \"function getAllOTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n    fuse: {\n      addressesProviderRegistry: '0xbdD3d2f93cc1c6C951342C42Ef0795323CE83719',\n      abis: {\n        getAllATokens: \"function getAllOTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n    taiko: {\n      addressesProviderRegistry: '0x8Cf3E0e7aE4eB82237d0931388EA72D5649D76e0',\n      abis: {\n        getAllATokens: \"function getAllOTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n    tara: {\n      addressesProviderRegistry: '0x96a52CdFE64749C146E13F68641073566275433e',\n      abis: {\n        getAllATokens: \"function getAllOTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n  }",
+  "chains_in_config": [
+   "taiko"
+  ]
+ },
+ "blend-finance": {
+  "registry_keys": [
+   "aave:blend-finance"
+  ],
+  "addresses": {
+   "chain_shorthand": [
+    "0x6aB5d5E96aC59f66baB57450275cc16961219796",
+    "0x58cCCdafe3B0DE4cB94d35F9CcC0680E4199C06B",
+    "0xD489a9cc2eF0b990c6a30Ed9AfF6EC63A2765F25"
+   ]
+  },
+  "flags": [
+   "isInsolvent"
+  ],
+  "registry_files": [
+   "_registry__aave.js"
+  ],
+  "aave_config_excerpt": "{\n    methodology,\n    bevm: {\n      addressesProviderRegistry: '0x6aB5d5E96aC59f66baB57450275cc16961219796',\n      dataHelpers: ['0x5F314b36412765f3E1016632fD1Ad528929536CA'],\n      v3: true,\n      isInsolvent: true,\n      abis: {\n        getAllATokens: \"function getAllBTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n    occ: {\n      addressesProviderRegistry: '0x58cCCdafe3B0DE4cB94d35F9CcC0680E4199C06B',\n      dataHelpers: ['0xf444a0333DAa67efC5b1C2c0B79F435dd0f652a9'],\n      v3: true,\n      isInsolvent: true,\n      abis: {\n        getAllATokens: \"function getAllBTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n    arbitrum: {\n      addressesProviderRegistry: '0xD489a9cc2eF0b990c6a30Ed9AfF6EC63A2765F25',\n      dataHelpers: ['0xBB7cF099BAfc69a30D4f21878F2FE3Ac10e768fA'],\n      v3: true,\n      isInsolvent: true,\n      abis: {\n        getAllATokens: \"function getAllBTokens() view returns (tuple(string symbol, address tokenAddress)[])\",\n      },\n    },\n    base: {\n      addressesProviderRegistry: '0xD489a9cc2eF0b990c6a30Ed9AfF6EC63A2765F25',\n      dataHelpers: ['0xBB7cF099BAfc69a30D4f21878F2FE3Ac10e768fA'],\n",
+  "chains_in_config": [
+   "arbitrum",
+   "base"
+  ]
+ },
+ "9summits": {
+  "registry_keys": [
+   "curators:9summits"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x23E6aecB76675462Ad8f2B31eC7C492060c2fAEF",
+    "0x59e608E4842162480591032f3c8b0aE55C98d104"
+   ],
+   "morpho": [
+    "0x0bB2751a90fFF62e844b1521637DeD28F3f5046A",
+    "0x1E2aAaDcF528b9cC08F43d4fd7db488cE89F5741",
+    "0xb5e4576C2FAA16b0cC59D1A2f3366164844Ef9E0"
+   ],
+   "turtleclub": [
+    "0x7388d4b5c4cfc96c9105de913717ba7519178129",
+    "0xAF87B90E8a3035905697E07Bb813d2d59D2b0951",
+    "0xDe7CFf032D453Ce6B0a796043E75d380Df258812",
+    "0xa853d8f5f253468495c5a92d54a3fe6cca2aa26b"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by 9Summits.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x23E6aecB76675462Ad8f2B31eC7C492060c2fAEF',\n          ],\n          morpho: [\n            '0xb5e4576C2FAA16b0cC59D1A2f3366164844Ef9E0', // co-curator with tulip-capital\n            '0x1E2aAaDcF528b9cC08F43d4fd7db488cE89F5741', // co-curator with tulip-capital\n            '0x0bB2751a90fFF62e844b1521637DeD28F3f5046A', // co-curator with tulip-capital\n          ],\n          turtleclub: [\n            '0xa853d8f5f253468495c5a92d54a3fe6cca2aa26b',\n            '0x7388d4b5c4cfc96c9105de913717ba7519178129',\n            '0xDe7CFf032D453Ce6B0a796043E75d380Df258812',\n            '0xAF87B90E8a3035905697E07Bb813d2d59D2b0951',\n          ],\n        },\n        base: {\n          morphoVaultOwners: [\n            '0x23E6aecB76675462Ad8f2B31eC7C492060c2fAEF',\n          ],\n        },\n        unichain: {\n          morphoVaultOwners: [\n            '0x59e608E4842162480591032f3c8b0aE55C98d104',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "ethereum",
+   "unichain"
+  ]
+ },
+ "greenhouse-finance": {
+  "registry_keys": [
+   "curators:Greenhouse-Finance"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets deposited in Greenhouse curated vaults.',\n      blockchains: {\n        arbitrum: {\n          siloVaultOwners: [\n            '0x1B35727072435BB97FBe8cC378eb6973c98FaAb3',\n          ],\n        },\n        sonic: {\n          siloVaultOwners: [\n            '0x1B35727072435BB97FBe8cC378eb6973c98FaAb3',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "sonic"
+  ]
+ },
+ "alphaping": {
+  "registry_keys": [
+   "curators:alphaping"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0xEB4Af6fA3AFA08B10d593EC8fF87efB03BC04645"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Alphaping.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0xEB4Af6fA3AFA08B10d593EC8fF87efB03BC04645',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "alterscope": {
+  "registry_keys": [
+   "curators:alterscope"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Alterscope.',\n      blockchains: {\n        ethereum: {\n          eulerVaultOwners: [\n            '0x0d8249DD621fB1c386A7A7A949504035Dd3436A3',\n          ],\n        },\n        base: {\n          eulerVaultOwners: [\n            '0xf3ED34523E35279a1deB2960c0aC46Be8E23a2f4'\n          ]\n        },\n        starknet: {\n          vesu: [\n            '0x7bafdbd2939cc3f3526c587cb0092c0d9a93b07b9ced517873f7f6bf6c65563',\n            '0x27f2bb7fb0e232befc5aa865ee27ef82839d5fad3e6ec1de598d0fab438cb56',\n            '0x5c678347b60b99b72f245399ba27900b5fc126af11f6637c04a193d508dda26',\n            '0x2906e07881acceff9e4ae4d9dacbcd4239217e5114001844529176e1f0982ec',\n          ],\n        },\n      }\n    },\n    _meta: {\n      timetravel: false,\n      hallmarks: [\n        ['2025-06-01', \"Start tracking vaults on starknet\"],\n      ],\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "ethereum"
+  ]
+ },
+ "anthias": {
+  "registry_keys": [
+   "curators:anthias"
+  ],
+  "addresses": {
+   "morpho": [
+    "0x48a90E85be5C56b0A669985A12ee7C449fC79965",
+    "0x5083b1387Ec3d4Ee6467B83890D98f1AF93F7c48",
+    "0x543257eF2161176D7C8cD90BA65C2d4CaEF5a796",
+    "0x89BeDBB1C4837444Da215A377275Ff96A84D6f53",
+    "0xa0E430870c4604CcfC7B38Ca7845B1FF653D0ff1",
+    "0xbB2F06CeAE42CBcF5559Ed0713538c8892D977c9",
+    "0xc1256Ae5FF1cf2719D4937adb3bbCCab2E00A2Ca",
+    "0xdbA76Bc542bb07538e046B40F2e8a215B409F7A8",
+    "0xf24608E0CCb972b0b0f4A6446a0BBf58c701a026"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets deposited in all vaults curated by Anthias Labs.',\n      start: '2025-05-27', // https://snapshot.box/#/s:moonwell-governance.eth/proposal/0x38bba3ecc2c5421f7660e124a8d874c70485aec16b2097520cf8fd217efca86d\n      blockchains: {\n        base: {\n          morpho: [\n            '0xa0E430870c4604CcfC7B38Ca7845B1FF653D0ff1',\n            '0xc1256Ae5FF1cf2719D4937adb3bbCCab2E00A2Ca',\n            '0x543257eF2161176D7C8cD90BA65C2d4CaEF5a796',\n            '0xf24608E0CCb972b0b0f4A6446a0BBf58c701a026',\n            '0xdbA76Bc542bb07538e046B40F2e8a215B409F7A8',\n            '0x89BeDBB1C4837444Da215A377275Ff96A84D6f53',\n            '0xbB2F06CeAE42CBcF5559Ed0713538c8892D977c9',\n            '0x5083b1387Ec3d4Ee6467B83890D98f1AF93F7c48',\n            '0x48a90E85be5C56b0A669985A12ee7C449fC79965',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "base"
+  ]
+ },
+ "apostro": {
+  "registry_keys": [
+   "curators:apostro"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x3B8DfE237895f737271371F339eEcbd66Face43e",
+    "0xf726311F85D45a7fECfFbC94bD8508a0A39958c6"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are depoisted in all vaults curated by Apostro.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x3B8DfE237895f737271371F339eEcbd66Face43e',\n            '0xf726311F85D45a7fECfFbC94bD8508a0A39958c6',\n          ],\n          eulerVaultOwners: [\n            '0x3B8DfE237895f737271371F339eEcbd66Face43e',\n            '0xf726311F85D45a7fECfFbC94bD8508a0A39958c6',\n          ],\n        },\n        base: {\n          morphoVaultOwners: [\n            '0x3B8DfE237895f737271371F339eEcbd66Face43e',\n            '0xf726311F85D45a7fECfFbC94bD8508a0A39958c6',\n          ],\n          eulerVaultOwners: [\n            '0x3B8DfE237895f737271371F339eEcbd66Face43e',\n            '0xf726311F85D45a7fECfFbC94bD8508a0A39958c6',\n          ],\n        },\n        bsc: {\n          eulerVaultOwners: [\n            '0x3B8DfE237895f737271371F339eEcbd66Face43e',\n            '0xf726311F85D45a7fECfFbC94bD8508a0A39958c6',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "bsc",
+   "ethereum"
+  ]
+ },
+ "armitage": {
+  "registry_keys": [
+   "curators:armitage"
+  ],
+  "addresses": {
+   "morpho": [
+    "0x55C1B6e461a6334B567bAF0FEb5D728715446f05",
+    "0x5dc53a23AdC9f2Bed98de6F59F7F309a7c71FF2B",
+    "0xA2EAaD0D586cF9FD73bb2c09cF6A7E3e187D68cd"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Counts all assets that are deposited in all vaults curated by Armitage.',\n      blockchains: {\n        ethereum: {\n          morpho: [\n            '0x5dc53a23AdC9f2Bed98de6F59F7F309a7c71FF2B',\n            '0xA2EAaD0D586cF9FD73bb2c09cF6A7E3e187D68cd',\n            '0x55C1B6e461a6334B567bAF0FEb5D728715446f05',\n          ],\n        },\n      },\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "avantgarde": {
+  "registry_keys": [
+   "curators:avantgarde"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0xb263237E30fe9be53d6F401FCC50dF125D60F01a"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Avantgarde.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0xb263237E30fe9be53d6F401FCC50dF125D60F01a',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "b-protocol": {
+  "registry_keys": [
+   "curators:b-protocol"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x17e7bB9fe7983947FdCf02c1E3d8e6C92C21da54",
+    "0x2566f66f68ed438726AD904524FB306A03FdB80B",
+    "0xf7D44D5a28d5AF27a7F9c8fc6eFe0129e554d7c4"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by B protocol.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0xf7D44D5a28d5AF27a7F9c8fc6eFe0129e554d7c4',\n            '0x2566f66f68ed438726AD904524FB306A03FdB80B',\n            // '0x17e7bB9fe7983947FdCf02c1E3d8e6C92C21da54', // Anthias is now curator for Moonwell's Morpho vaults\n          ],\n        },\n        base: {\n          morphoVaultOwners: [\n            // '0x17e7bB9fe7983947FdCf02c1E3d8e6C92C21da54', // Anthias is now curator for Moonwell's Morpho vaults: https://x.com/MoonwellDeFi/status/1928491680031969510\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "ethereum"
+  ]
+ },
+ "blend": {
+  "registry_keys": [
+   "curators:blend"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults allocated by Blend Protocol.',\n      blockchains: {\n        btnx: {\n          erc4626: [\n            '0x9dF5A760820b0C8d6667eDDfc07641E0D0095616',\n            '0xDF4C4A81e1b55F54E7f084e90b69817bA72821D6'\n          ],\n          nestedVaults: [\n            '0xEBda86CB77E9e328d42bbba9B50E998d3534937D'\n          ]\n        },\n        scroll: {\n          erc4626: [\n            '0xd39df22a3cd1C91B22d5E748Cc62b03eD3e8A8aD',\n            '0xec5906675a92e4113a39d719c5c65a62a0995d59'\n          ],\n          nestedVaults: [\n            '0x8a23d825467860edb4ACA0909f29D0a6A8e3a0a7',\n          ]\n        },\n        arbitrum: {\n          erc4626: [\n            '0xa47c5203d22ae173788a9d9be0f2beecc97f4df9',\n            '0xE3637cA4D1D6dD756dE0ecd527c40077029eCE6e',\n            '0x75E9d4FEa6c408097eE4F3C63359D0dc617AcB4F',\n            '0x567c1B5c2E58C66f84B80dff4C97b084B23B4E87',\n            '0x9cE8A73296704d4689586347eF6e2087c2128F45'\n          ],\n        }\n      },\n      // deadFrom: 'xxx', // https://github.com/DefiLlama/DefiLlama-Adapters/pull/18409 - shifting focus to tradfi rails\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "scroll"
+  ]
+ },
+ "cassa": {
+  "registry_keys": [
+   "curators:cassa"
+  ],
+  "addresses": {
+   "euler": [
+    "0x61332fE07Ee0faa8a087ba00f43d581871441139",
+    "0x6876374E4AC054bfCA389109570Ae15b4d25e279",
+    "0xBc79C4DA0452152D2C329ADE328C79705a964CEE"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Cassa.',\n      blockchains: {\n        ethereum: {\n          euler: [\n            '0xBc79C4DA0452152D2C329ADE328C79705a964CEE',\n            '0x61332fE07Ee0faa8a087ba00f43d581871441139',\n            '0x6876374E4AC054bfCA389109570Ae15b4d25e279',\n          ],\n        },\n      },\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "cian-curating": {
+  "registry_keys": [
+   "curators:cian-curating"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by CIAN Protocol.',\n      blockchains: {\n        ethereum: {\n          turtleclub_erc4626: [\n            '0x0d1862e73a1430A5FD3245B47859c1BEcD6f3A1D',\n            '0x2B11527e1fab84a5382D20efD198BF3d332f7E73',\n            '0x65939777a9dC5A370707bb6b44b1ad0BC9e2D8a4',\n            '0x34d16e4fB8757A88D986f9EfE2484F0badBF22C1',\n            '0x0982eB22086183bF10acd2991A2dBeD1e3B9Ac2A',\n            '0x76f31800eFdE39A5f98189447c7a514d974f4364',\n            '0xd72c3a44b51C8D6631C004ecf3A318b9D2c58F80',\n            '0x6945f516413cB2d7311297e8A39E7D004dEB5566',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "clearstar": {
+  "registry_keys": [
+   "curators:clearstar"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x30988479C2E6a03E7fB65138b94762D41a733458",
+    "0x829A13850b684A575C0580a83322890e19c5eFaa"
+   ],
+   "morpho": [
+    "0x1aEadA3C251215f1294720B80FcB3D1D005F3585",
+    "0x53184aDaBF312b490BF1EbcFdC896FEfF6019a14",
+    "0xE8dd6A1e13244A27bDaa19CcBf33013647C675d1"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Clearstar.',\n      blockchains: {\n        base: {\n          morphoVaultOwners: [\n            '0x30988479C2E6a03E7fB65138b94762D41a733458',\n            '0x829A13850b684A575C0580a83322890e19c5eFaa',\n          ],\n          eulerVaultOwners: [\n            '0xb3CF59A5f12cA319861376C5e63Eef4790a42B44',\n            '0x6539519E69343535a2aF6583D9BAE3AD74c6A293',\n          ],\n          erc4626: [\n            '0x1166250D1d6B5a1DBb73526257f6bb2Bbe235295', // yoUSD IPOR Fusion\n            '0xfd843a3D9329C91CA22c5daA994BeA762541F954', // yoETH IPOR Fusion\n            '0x17d0f109EE895bAD0b68AA104AA72bd0b003AD8E', // ETH Lending Optimizer IPOR Fusion\n            '0x5900C3b72458F12967DC1bef35b92d271F5cDBc1', // cbETH Looper IPOR Fusion\n            '0xD46a3C2D958d0a2cB098d48C48dC19FE3A710F37', // USDC Lending Optimizer IPOR Fusion\n            '0xc2dEC6328d9EF1eF2ee85901f9C1a8db8DD1C9C1', // wETH Metavault on Spectra\n          ],\n        },\n        ethereum: {\n          morphoVaultOwners: [\n            '0x30988479C2E6a03E7fB65138b94762D41a733458',\n            '0x829A13850b684A575C0580a83322890e19c5eFaa',\n     ",
+  "chains_in_config": [
+   "Core",
+   "arbitrum",
+   "base",
+   "ethereum",
+   "hyperliquid",
+   "katana",
+   "polygon",
+   "unichain"
+  ]
+ },
+ "coinmerce-capital": {
+  "registry_keys": [
+   "curators:coinmerce-capital"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Coinmerce Capital.',\n      blockchains: {\n        hyperliquid: {\n          upshiftV2: [\n            '0xcfe06d2499aE635830D11859941e76354D5717CC', // co-curator with clearstar\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "hyperliquid"
+  ]
+ },
+ "cozy-v3": {
+  "registry_keys": [
+   "curators:cozy-v3"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: \"Count all assets deposited in Euler vaults curated by Cozy.\",\n      blockchains: {\n        ethereum: {\n          eulerVaultOwners: [\"0xd7E606CB833fEdB224CA2360477C7519898d187B\"],\n        },\n      },\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "edge-capital": {
+  "registry_keys": [
+   "curators:edge-capital"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Counts all assets deposited in vaults curated by Edge-Capital.',\n      blockchains: {\n        tac: {\n          eulerVaultOwners: [\n            '0xB2b9a27a6160Bf9ffbD1a8d245f5de75541b1DDD',\n            '0x1280e86Cd7787FfA55d37759C0342F8CD3c7594a',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": []
+ },
+ "feather": {
+  "registry_keys": [
+   "curators:feather"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x6Ba8f7039bC7d79c1959cB8E409Dff2ba05A133E",
+    "0x81c76F62f7E05DEC75800150bA5A23f62e2f091F"
+   ],
+   "morpho": [
+    "0x015F10a56e97e02437D294815D8e079e1903E41C",
+    "0x50715ae180FF0EA799dc8AB635C2D876e528bfe8",
+    "0x85fCb4604f25e17Ae4e1EAc202adba4F999d7FF5",
+    "0x8E181221D5602D4Cf2b87f3A817C0Dac680A7223",
+    "0x902Af532d51D4983DBf9B8E29d1f01E430B24435",
+    "0x922c843349e3Bd9e4C3572171DfCa5e08836151F",
+    "0x948FcC6b7f68f4830Cd69dB1481a9e1A142A4923",
+    "0x94E6A8714f36cd7220560638882Fc137AB5eb79c",
+    "0x9f3BEbF1159323f78E5c97Cc30f10907B71fCf8C",
+    "0xbD183661d2E8ceFA31799fE3A4cc6f2127963dc5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      blockchains: {\n        ethereum: {\n          morpho: [\n            '0x9f3BEbF1159323f78E5c97Cc30f10907B71fCf8C', // Feather USDC vault\n          ],\n        },\n        sei: {\n          morpho: [\n            '0x015F10a56e97e02437D294815D8e079e1903E41C',\n            '0x8E181221D5602D4Cf2b87f3A817C0Dac680A7223',\n            '0x94E6A8714f36cd7220560638882Fc137AB5eb79c',\n            '0x948FcC6b7f68f4830Cd69dB1481a9e1A142A4923',\n            '0xbD183661d2E8ceFA31799fE3A4cc6f2127963dc5',\n            '0x50715ae180FF0EA799dc8AB635C2D876e528bfe8',\n          ],\n        },\n        celo: {\n          morphoVaultOwners: [\n            '0x81c76F62f7E05DEC75800150bA5A23f62e2f091F',\n          ],\n        },\n        klaytn: {\n          morphoVaultOwners: [\n            '0x6Ba8f7039bC7d79c1959cB8E409Dff2ba05A133E',\n          ],\n        },\n        megaeth: {\n          morpho: [\n            '0x85fCb4604f25e17Ae4e1EAc202adba4F999d7FF5', // Feather MegaETH vault\n          ],\n        },\n        polygon: {\n          morpho: [\n            '0x902Af532d51D4983DBf9B8E29d1f01E430B24435', // Feather BRZ vault\n            '0x922c843349e3Bd9e4C3572171DfCa5e08836151F', // Feather frxUSD vault\n      ",
+  "chains_in_config": [
+   "celo",
+   "ethereum",
+   "polygon"
+  ]
+ },
+ "fence": {
+  "registry_keys": [
+   "curators:fence"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0xF92971B4D9e6257CF562400ed81d2986F28a8c26"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Fence.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0xF92971B4D9e6257CF562400ed81d2986F28a8c26',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "galaxy": {
+  "registry_keys": [
+   "curators:galaxy"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x42D510eDeb9257f8D920d5B9f5109D95cB22419d"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: \"TVL is calculated by summing the assets deposited in all Morpho vaults curated by Galaxy on each supported chain.\",\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\"0x42D510eDeb9257f8D920d5B9f5109D95cB22419d\"],\n        },\n        base: {\n          morphoVaultOwners: [\"0x42D510eDeb9257f8D920d5B9f5109D95cB22419d\"],\n        },\n      },\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "ethereum"
+  ]
+ },
+ "gami-labs": {
+  "registry_keys": [
+   "curators:gami-labs"
+  ],
+  "addresses": {
+   "silo": [
+    "0x0F78Ea587D8E2950319e0b467c665bD2CB73051B",
+    "0x1F0570a081FeE0e4dF6eAC470f9d2D53CDEDa1c5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology:\n        \"Count all assets deposited in all vaults curated by Gami Labs\",\n      blockchains: {\n        ethereum: {\n          erc4626: [\n            // Lagoon\n            \"0xdae854d0896ad2fee335689a3f7b4a95fd1a3e46\", // Lagoon - Gami USDC\n            \"0x33e1339567c183fbadcb43f72d11c47229d468ab\", // Lagoon - Gami Stake DAO USDC\n            \"0x57e6824a8b15b709cefb4ccef644ba1349057e77\", // Lagoon - xBTCY (cbBTC)\n            \"0x2a676c2744421b4fae65ce86b47adacb620047d4\", // Lagoon - Gami hemiBTC\n            \"0x2031eceec018549a2c729cacd6c0bfc4be2524ed\", // Lagoon - Gami ETH (WETH)\n            \"0xfab0f56c28e3f874b15922b213e696f37b670916\", // Lagoon - Coinshift USPC Prime\n            \"0x09252d2c4afca9b1479efdd39faa53de9ff23114\", // Lagoon - Coinshift Leveraged USPC\n            // Gearbox\n            \"0x683faf5bafd88d4c383ccaf3d61c26af2e164409\", // Gearbox - Gami WBTC\n          ],\n          midasTokens: [\n            \"0xc462f87f78abdd27b1e41c9ede862275d2c7f36b\", // Midas - Turtle Huma PST Vault\n          ],\n        },\n        robinhood: {\n          erc4626: [\n            \"0xd5c6c79692715145098a65d1eb1f2a10c524f8e8\", // T3tris - Gami WBTC\n          ],\n       ",
+  "chains_in_config": [
+   "AVAX",
+   "Avalanche",
+   "Core",
+   "avax",
+   "base",
+   "ethereum"
+  ]
+ },
+ "hakutora": {
+  "registry_keys": [
+   "curators:hakutora"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x76c303fA012109eCBb34E4bAf1789c3e9FbEb3A4"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Hakutora.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x76c303fA012109eCBb34E4bAf1789c3e9FbEb3A4',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "invariant-group": {
+  "registry_keys": [
+   "curators:invariant-group"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Invariant Group.',\n      blockchains: {\n        ethereum: {\n          erc4626: [\n            '0xc155444481854c60e7a29f4150373f479988f32d',\n          ],\n        },\n        plasma: {\n          erc4626: [\n            '0x76309a9a56309104518847bba321c261b7b4a43f',\n          ],\n        },\n        hemi: {\n          erc4626: [\n            '0x614eb485de3c6c49701b40806ac1b985ad6f0a2f', '0xD172B64AA13d892bb5EB35f3482058eAE0BC5B2a',\n          ]\n        }\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum",
+   "plasma"
+  ]
+ },
+ "keyring": {
+  "registry_keys": [
+   "curators:keyring"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Keyring Network.',\n      blockchains: {\n        avax: {\n          eulerVaultOwners: [\n            '0x0B50beaE6aac0425e31d5a29080F2A7Dec22754a',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "avax"
+  ]
+ },
+ "llamarisk": {
+  "registry_keys": [
+   "curators:llamarisk"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x0FB44352bcfe4c5A53a64Dd0faD9a41184A1D609"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Llama Risk.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x0FB44352bcfe4c5A53a64Dd0faD9a41184A1D609',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "m11c": {
+  "registry_keys": [
+   "curators:m11c"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x71807287926c5195D92D2872e73FC212C150C112"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by M11C.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x71807287926c5195D92D2872e73FC212C150C112',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "meridian-perps": {
+  "registry_keys": [
+   "curators:meridian-perps"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets deposited in the Meridian perps LP vault.',\n      blockchains: {\n        robinhood: {\n          accountableVaults: [\n            '0x24b84023c8e4Da635be228C380C09bfE5271BF9d', // Meridian LP vault\n          ],\n        },\n      },\n    },\n  }",
+  "chains_in_config": []
+ },
+ "muscadine": {
+  "registry_keys": [
+   "curators:muscadine"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0xf35B121bA32cBeaA27716abEfFb6B65a55f9B333"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Counts all assets deposited in all vaults curated by Muscadine.',\n      blockchains: {\n        base: {\n          morphoVaultOwners: [\n            '0xf35B121bA32cBeaA27716abEfFb6B65a55f9B333', // V2 Prime USDC, WETH, cbBTC, Frontier USDC.\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "base"
+  ]
+ },
+ "ouroboros": {
+  "registry_keys": [
+   "curators:ouroboros"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x517aBc7f49DFF75b57A88b9970eF35D6e4C3BD49"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Ouroboros Capital.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x517aBc7f49DFF75b57A88b9970eF35D6e4C3BD49',\n          ],\n          eulerVaultOwners: [\n            '0x517aBc7f49DFF75b57A88b9970eF35D6e4C3BD49',\n          ],\n        },\n        monad: {\n          accountableVaults: [\n            '0x03ef37626BC7C7B3F6cEA4Bcbfeb7764B51E22fB'\n          ]\n        }\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "poppie": {
+  "registry_keys": [
+   "curators:poppie"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets deposited in Euler vaults curated by Poppie.',\n      blockchains: {\n        bsc: {\n          eulerVaultOwners: [\n            '0xf4d92bC8006836132364B355DB9CfF204466ABc3',\n          ],\n        },\n      },\n    },\n  }",
+  "chains_in_config": [
+   "bsc"
+  ]
+ },
+ "re7": {
+  "registry_keys": [
+   "curators:re7"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x06590Fef209Ebc1f8eEF83dA05984cD4eFf0d0E3",
+    "0x187620a61f4f00Cb629b38e1b38BEe8Ea60d2B8D",
+    "0x46BA7bCD764a692208781B0Fdc642E272ee597bC",
+    "0x598A41fA4826e673829D4c5AfD982C0a43977ca6",
+    "0x7B41b9891887820A75A51a1025dB1A54f4798521",
+    "0xD8B0F4e54a8dac04E0A57392f5A630cEdb99C940",
+    "0xE86399fE6d7007FdEcb08A2ee1434Ee677a04433"
+   ],
+   "turtleclub": [
+    "0x294eecec65A0142e84AEdfD8eB2FBEA8c9a9fbad"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Re7 Labs.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x46BA7bCD764a692208781B0Fdc642E272ee597bC',\n            '0xE86399fE6d7007FdEcb08A2ee1434Ee677a04433',\n          ],\n          eulerVaultOwners: [\n            '0xa563FEEA4028FADa193f1c1F454d446eEaa6cfD7',\n            '0x46BA7bCD764a692208781B0Fdc642E272ee597bC',\n          ],\n          mellow: [\n            '0x84631c0d0081FDe56DeB72F6DE77abBbF6A9f93a',\n            '0x62F0BAf53959AF18Cab47082f5aB58A5B93e041C',\n            '0x8b0e80716c4be087C271E964E0bDc7780d32A2E8',\n            '0x2759E4741b370506BE2ccEf898960108e98f2faf',\n            '0x4C690C311d8A5aa16eC2a595D4ea3928a73C48d6',\n            '0x617895460004821C8DE800d4a644593cAb0aD40c',\n            '0x3a828C183b3F382d030136C824844Ea30145b4c7',\n            '0x7F43fDe12A40dE708d908Fb3b9BFB8540d9Ce444',\n            '0xc65433845ecD16688eda196497FA9130d6C47Bd8',\n            '0x7a4EffD87C2f3C55CA251080b1343b605f327E3a',\n            '0x82f5104b23FF2FA54C2345F821dAc9369e9E0B26',\n          ],\n          turtleclub: [\n            '0x294eecec65A0142e84AEdfD8eB",
+  "chains_in_config": [
+   "Core",
+   "avax",
+   "base",
+   "berachain",
+   "bsc",
+   "ethereum",
+   "linea",
+   "plasma",
+   "polygon",
+   "sonic",
+   "unichain"
+  ]
+ },
+ "relend": {
+  "registry_keys": [
+   "curators:relend"
+  ],
+  "addresses": {
+   "morpho": [
+    "0x0F359FD18BDa75e9c49bC027E7da59a4b01BF32a",
+    "0x70F796946eD919E4Bc6cD506F8dACC45E4539771",
+    "0xB9C9158aB81f90996cAD891fFbAdfBaad733c8C6"
+   ],
+   "euler": [
+    "0xc5976e0356f0A3Ce8307fF08C88bB05933F88761"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Relend Network.',\n      blockchains: {\n        ethereum: {\n          morpho: [\n            '0x0F359FD18BDa75e9c49bC027E7da59a4b01BF32a',\n            '0xB9C9158aB81f90996cAD891fFbAdfBaad733c8C6',\n          ],\n        },\n        base: {\n          morpho: [\n            '0x70F796946eD919E4Bc6cD506F8dACC45E4539771',\n          ],\n        },\n        swellchain: {\n          euler: [\n            '0xc5976e0356f0A3Ce8307fF08C88bB05933F88761',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "ethereum"
+  ]
+ },
+ "sharewoods": {
+  "registry_keys": [
+   "curators:sharewoods"
+  ],
+  "addresses": {
+   "morpho": [
+    "0x5FE15021a7C0Ff4A9965b400E474f616451BA128",
+    "0xf8f8654A26bfe134ee290d0b6a749Ba45F03a104"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Sharewoods.',\n      blockchains: {\n        robinhood: {\n          morpho: [\n            '0x5FE15021a7C0Ff4A9965b400E474f616451BA128', // Sharewoods RWA USDG\n            '0xf8f8654A26bfe134ee290d0b6a749Ba45F03a104', // Sharewoods Classic USDG\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": []
+ },
+ "singularv": {
+  "registry_keys": [
+   "curators:singularv"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x46057881E0B9d190920FB823F840B837f65745d5"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by singularV.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x46057881E0B9d190920FB823F840B837f65745d5',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "sky-money": {
+  "registry_keys": [
+   "curators:sky-money"
+  ],
+  "addresses": {
+   "morpho": [
+    "0x23f5E9c35820f4baB695Ac1F19c203cC3f8e1e11",
+    "0x2bD3A43863c07B6A01581FADa0E1614ca5DF0E3d",
+    "0x56bfa6f53669B836D1E0Dfa5e99706b12c373ecf",
+    "0xE15fcC81118895b67b6647BBd393182dF44E11E0",
+    "0xf42bca228D9bd3e2F8EE65Fec3d21De1063882d4"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets deposited in all vaults curated by Sky Money.',\n      blockchains: {\n        ethereum: {\n          morpho: [\n            '0x23f5E9c35820f4baB695Ac1F19c203cC3f8e1e11',\n            '0xE15fcC81118895b67b6647BBd393182dF44E11E0',\n            '0x56bfa6f53669B836D1E0Dfa5e99706b12c373ecf',\n            '0xf42bca228D9bd3e2F8EE65Fec3d21De1063882d4',\n            '0x2bD3A43863c07B6A01581FADa0E1614ca5DF0E3d'\n          ],\n\n        },\n\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "steakhouse": {
+  "registry_keys": [
+   "curators:steakhouse"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x0000aeB716a0DF7A9A1AAd119b772644Bc089dA8",
+    "0x0A0e559bc3b0950a7e448F0d4894db195b9cf8DD",
+    "0x0b1aA22117E38f260e0F3aB3b0F12a22c2691ffC",
+    "0x255c7705e8BB334DfCae438197f7C4297988085a",
+    "0x2b1D7d0CE2816C83c9bABe48b2FB545488139DCD",
+    "0x328Dc4A2950b4A19fd440e9ffc6e9c3A496AFCFd",
+    "0x351D76EC45f0aD6Deb498806F1320F75F861a114",
+    "0x4D7bd498Bb24098Ca281C05519629c605407f71d",
+    "0x639bfA26472906Ccd40513408284a8aD292bC5D6",
+    "0x706931c18022d7Af5a76350545B93aBFB54B62FC",
+    "0x769699C75c4E17ebd5D678A9c58776179DDC254B",
+    "0x7E17eC774beCd5f4f129fA5F150046dD0ECe5BB0",
+    "0x84ae7f8eb667b391a5ae2f69bd5a0e4b5b77c999",
+    "0x8A7cDA8322FB96d3457A5b32C8869A7B1A5b1DB7",
+    "0x96632d28Ac99A3edAb5F7B223a88d8fAf9004178",
+    "0xc01Ba42d4Bd241892B813FA8bD4589EAA4C60672",
+    "0xca9f621aAFD28d0F2decFb69Db0d9e6393A9f5ee",
+    "0xd3e5c0FEB60563dc70ab08B9a7Fdf27B8d04b30b",
+    "0xd546dc0db55c28860176147b2d0fefcc533ecf08",
+    "0xe6FC2a011153DD5a230725a9F0c89a9c81aB4887",
+    "0xec0Caa2CbAe100CEAaC91A665157377603a6B766"
+   ],
+   "morpho": [
+    "0x6cbF3Eed95976D226FFB0bEb09550A9407f47b60",
+    "0x6f48cE6380693808682E43140E3Eeb877a096Aa1",
+    "0x7d4741ba166B21cf3168A9A0ea71388531C52FF7",
+    "0xAb5955EB671d150527f8E61A42B703832F86616C",
+    "0xBEEFF0DeaC1aBa71EF0D88C4291354eb92ef4589",
+    "0xBEEFFF13dD098De415e07F033daE65205B31A894",
+    "0xBEEFFF4716a49418D69c251cab8759bB107e57C8",
+    "0xBEEFFF506B52B3323c48aFE0Cb405A284F0f9cF2",
+    "0xBEEFFF7e4EedD83A4a4aB53A68D03eC77C9a57a8",
+    "0xBEEFFFC57A26fD8D3b693Ba025ead597DbECEBfe",
+    "0xBEEFFFDE1CABD3d8A3cd4fd5e04DbA51B9D4Ac39",
+    "0xBEEFFFFE0E9b26bBe3B5cE851539366991C3BF39",
+    "0xBEEFFFcbA46C49A24cfBfFc19166e8f089B59300",
+    "0xBEEFFFdeADc2c172130Ac4C5Ae48c8D4708BFb40",
+    "0xBEEFFFe68dFc2D3BD1ABdAd37c70634973b16478",
+    "0xBEEf0F82E269760429BE6255Fa00821b7e4b592A",
+    "0xBEEf3f3A04e28895f3D5163d910474901981183D",
+    "0xBEEfF0d672ab7F5018dFB614c93981045D4aA98a",
+    "0xBEEff02DE231f8B08c627C769edC73e7AcE47264",
+    "0xBEEff039907422219Fb367e525954DDC092854d9",
+    "0xBEeF007ECFBfdF9B919d0050821A9B6DbD634fF0",
+    "0xBEeF1f5Bd88285E5B239B6AAcb991d38ccA23Ac9",
+    "0xBEeFF047C03714965a54b671A37C18beF6b96210",
+    "0xBEeFf08E1887A11D91B9Ca68c133c08Ae3c4B44f",
+    "0xBeEF00283d2b26a55F56B9f8c283b25e9a22E95b",
+    "0xBeEF00fc6e87dE086A0e29169A2f6e25cF5C11a9",
+    "0xBeEFDebfaea8350Ce8C4b3a6B7E5FE629c9e27A8",
+    "0xBeEff033F34C046626B8D0A041844C5d1A5409dd",
+    "0xBeefF08dF54897e7544aB01d0e86f013DA354111",
+    "0xF03C521F3F1D122ffFEF451936D483EAB95BE17c",
+    "0xbEeF006fb43820C864894892db0eCFEee3FdF587",
+    "0xbEeFF0fb1Dc19344A87b8479dAb60A2e16160737",
+    "0xbeEF346d7099865208Ff331e4f648f4154DDAa05",
+    "0xbeEFF75262b2eC16a3C62a807F02EE7627654931",
+    "0xbeEFfc7b7d0604b4afB92628a8E4B09dc01d008A",
+    "0xbeEf003c7df2AB8dEF9Fbfc4B233CC13f83D1dA5",
+    "0xbeEf00890534C736186f3126187Da80c961EdCa1",
+    "0xbeEfFF136E3684273e6aA75A1669B784B373A4FD",
+    "0xbeef003E31546C7210687f1A7b40d096BE83ec58",
+    "0xbeef009FF4FB1727297BF2526806F4A73E4b99aD",
+    "0xbeef00b4ebc8094A60006D75B277d30480e0a6D8",
+    "0xbeef06Fc20699603b995bab8AB03a0592BB4C12f",
+    "0xbeef0c68466183937a22e1F414E8789a45032302",
+    "0xbeeff2490FEffa212faC2f6553682C219E6a8845",
+    "0xbeeff8d3F412A586A204085Cf777867d06763b40",
+    "0xbeeff9eBE518d1C7E552c4BbfB99487435c4dEc9",
+    "0xbeeffABcd0dB09589Dd21854aa760C52aB4bf04F",
+    "0xd8A6511979D9C5D387c819E9F8ED9F3a5C6c5379"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Steakhouse Financial.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x0000aeB716a0DF7A9A1AAd119b772644Bc089dA8',\n            '0x255c7705e8BB334DfCae438197f7C4297988085a',\n            '0x0A0e559bc3b0950a7e448F0d4894db195b9cf8DD',\n            '0xc01Ba42d4Bd241892B813FA8bD4589EAA4C60672',\n            '0xd3e5c0FEB60563dc70ab08B9a7Fdf27B8d04b30b',\n            '0x4D7bd498Bb24098Ca281C05519629c605407f71d',\n            '0x7E17eC774beCd5f4f129fA5F150046dD0ECe5BB0', // v2 USDC\n            '0x328Dc4A2950b4A19fd440e9ffc6e9c3A496AFCFd', // v2 EURC\n            '0xec0Caa2CbAe100CEAaC91A665157377603a6B766', // v2 USDT/ETH/AUSD\n          ],\n          morpho: [\n            '0x6cbF3Eed95976D226FFB0bEb09550A9407f47b60', // Steakhouse High Yield ETH\n            '0xbeef003E31546C7210687f1A7b40d096BE83ec58', // Steakhouse Prime EURC\n            '0xbeef009FF4FB1727297BF2526806F4A73E4b99aD', // Steakhouse Prime frxUSD\n            '0xbeef06Fc20699603b995bab8AB03a0592BB4C12f', // Steakhouse Prime Instant tGBP\n            '0xbeef0c68466183937a22e1F414E8789a45032302', // Steakhou",
+  "chains_in_config": [
+   "arbitrum",
+   "base",
+   "ethereum",
+   "katana",
+   "polygon",
+   "unichain"
+  ]
+ },
+ "tanken-capital": {
+  "registry_keys": [
+   "curators:tanken-capital"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets deposited in all vaults curated by Tanken Capital.',\n      blockchains: {\n        base: {\n          erc4626: [\n            '0xebc6c7883ca32ef9484740ba32a816f5f88b7a41', // Tanken Capital vault (IPOR Fusion, Morpho, Euler)\n          ],\n        },\n        ethereum: {\n          erc4626: [\n            '0xca7c196f00e04A5e1c71B91476d0d58f82499734', // Tanken USDC vault (Morpho Blue)\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "base",
+   "ethereum"
+  ]
+ },
+ "taulabs": {
+  "registry_keys": [
+   "curators:taulabs"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets deposited in TAU Labs vaults.',\n      blockchains: {\n        ethereum: {\n          erc4626: [\n            '0xb0f56bb0bf13ee05fef8cd2d8df5ffdfcac7a74f',\n            '0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40',\n            '0x43a32d4f6c582f281c52393f8f9e5ace1d4a1e68',\n            '0xe48cdd5ecec5aa53e630a7b4df12f79067b68dac',\n            '0x63103375659d0aa94e9f35df15be01a3dd1ae9c0',\n            '0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b',\n            '0xc2a119ea6de75e4b1451330321cb2474eb8d82d4',\n            '0x60e36a79c3d21120350e39b5ea59ae26b75ae74c',\n            '0xd36f53497507e948df9f277cf8c3ececb09a1c1d',\n            '0x604117f0c94561231060f56cd2ddd16245d434c5',\n            '0xad685fec2066d7f5436f5804882998ba79725706',\n            '0xdf8a0d3c90462c4c9b5a8697c119fa67cb84a874',\n            '0x5fe86b1adee4b18f6a8c55ea0bdbb55e2e445159'\n          ],\n        },\n        flow: {\n          erc4626: [\n            '0xc52E820d2D6207D18667a97e2c6Ac22eB26E803c',\n          ]\n        },\n        plasma: {\n          erc4626: [\n            '0x0a71624ab3e8101f78d95dfc81e0f1f31128ed7a',\n          ]\n        },\n        base: {\n          erc4626: [\n ",
+  "chains_in_config": [
+   "base",
+   "ethereum",
+   "plasma"
+  ]
+ },
+ "telosc": {
+  "registry_keys": [
+   "curators:telosc"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by TelosC.',\n      blockchains: {\n        plasma: {\n          eulerVaultOwners: [\n            '0x7054b25D47b9342dA3517AD41A4BD083De8D3f70',\n            '0x7d07BFdd01422D7b655B333157eB551B9712dCd8',\n          ],\n        },\n        ethereum: {\n          eulerVaultOwners: [\n            '0x7054b25D47b9342dA3517AD41A4BD083De8D3f70',\n            '0x7d07BFdd01422D7b655B333157eB551B9712dCd8',\n          ],\n        }\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum",
+   "plasma"
+  ]
+ },
+ "term-finance-parity": {
+  "registry_keys": [
+   "curators:term-finance-parity"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0xbfFcAdCd5549cC378693108BcD4435776A6fa795"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Counts all assets deposited in the Parity vaults on Morpho, curated by Term Finance.',\n      start: '2026-04-23',\n      blockchains: {\n        // Parity vaults: pcUSDC, pcETH, pcHYUSDC\n        ethereum: {\n          morphoVaultOwners: [\n            '0xbfFcAdCd5549cC378693108BcD4435776A6fa795',\n          ],\n        },\n        arbitrum: {\n          morphoVaultOwners: [\n            '0xbfFcAdCd5549cC378693108BcD4435776A6fa795',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "ethereum"
+  ]
+ },
+ "trinity-protocol": {
+  "registry_keys": [
+   "curators:trinity-protocol"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0xA3336Bb25F231Fa25E66D2DDA3a9Aa0ed8be09DB"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Tracks USDC in the Trinity Protocol MetaMorpho vault on Morpho Blue.',\n      blockchains: {\n        arbitrum: {\n          morphoVaultOwners: [\n            '0xA3336Bb25F231Fa25E66D2DDA3a9Aa0ed8be09DB',\n          ],\n        },\n      },\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum"
+  ]
+ },
+ "tulip-capital": {
+  "registry_keys": [
+   "curators:tulip-capital"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x59e608E4842162480591032f3c8b0aE55C98d104"
+   ],
+   "turtleclub": [
+    "0x686c83Aa81ba206354fDcbc2cd282B4531365E29",
+    "0x6Bf340dB729d82af1F6443A0Ea0d79647b1c3DDf",
+    "0x7895a046b26cc07272b022a0c9bafc046e6f6396"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Tulip Capital.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0x59e608E4842162480591032f3c8b0aE55C98d104',\n          ],\n          eulerVaultOwners: [\n            '0x7c615e12D1163fc0DdDAA01B51922587034F5C93',\n          ],\n          turtleclub: [\n            '0x6Bf340dB729d82af1F6443A0Ea0d79647b1c3DDf',\n            '0x7895a046b26cc07272b022a0c9bafc046e6f6396',\n            '0x686c83Aa81ba206354fDcbc2cd282B4531365E29',\n          ],\n          erc4626: [\n            \"0x936facdf10c8c36294e7b9d28345255539d81bc7\", // Lagoon: RockSolid rock.rETH\n            \"0xb09f761cb13baca8ec087ac476647361b6314f98\", // Lagoon: Flagship cbBTC\n            \"0x7a12D4B719F5aA479eCD60dEfED909fb2A37e428\", // Lagoon: RockSolid Looped ETH Vault\n            \"0xce0b790ae0d8cf91e01f3fb69025e14569b574f3\", // Lagoon: Tulipa USDC\n          ],\n        },\n        berachain: {\n          eulerVaultOwners: [\n            '0x18d23B961b11079EcD499c0EAD8E4F347e4d3A66',\n          ],\n        },\n        bob: {\n          eulerVaultOwners: [\n            '0x7c615e12D1163fc0DdDAA01B51922587034F5C93',\n     ",
+  "chains_in_config": [
+   "Avalanche",
+   "avax",
+   "base",
+   "berachain",
+   "bsc",
+   "ethereum"
+  ]
+ },
+ "unblock-equity": {
+  "registry_keys": [
+   "curators:unblock-equity"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x6D9DA17560d584bB03255905ab42C2F4d67eA9B4"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology:\n        'Sum of totalAssets() across all UnblockEquity MetaMorpho V2 vaults on Base. Each vault accepts USDC deposits and lends against tokenized residential property liens (ERC-1155). Vaults are segmented by borrower verification level (Verified/Prime/Standard), recovery type (Lien-Only/Foreclosure), and escrow tier (None/BR3/BR6/BR12).',\n      start: 1774396800, // 2026-03-25 UTC \u2014 Phase 06.1 deployment date\n      blockchains: {\n        base: {\n          morphoVaultOwners: [\n            '0x6D9DA17560d584bB03255905ab42C2F4d67eA9B4',\n          ],\n        },\n      },\n    },\n  }",
+  "chains_in_config": [
+   "Base",
+   "base"
+  ]
+ },
+ "unified-labs": {
+  "registry_keys": [
+   "curators:unified-labs"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x75B3C335B85C931B1eE7BEeB3c0e40429F002373"
+   ],
+   "morpho": [
+    "0x0ED3615ff949C8A34D15441970900E849A3409FC",
+    "0x35E4f3111B37135B1A8EBd72d8cBC9624AeE863a"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets deposited in vaults curated by Unified Labs.',\n      blockchains: {\n        monad: {\n          morphoVaultOwners: [\n            '0x75B3C335B85C931B1eE7BEeB3c0e40429F002373',\n          ],\n          morpho: [\n            '0x35E4f3111B37135B1A8EBd72d8cBC9624AeE863a',\n            '0x0ED3615ff949C8A34D15441970900E849A3409FC',\n          ],\n        },\n      },\n    },\n  }",
+  "chains_in_config": []
+ },
+ "valos": {
+  "registry_keys": [
+   "curators:valos"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Counts the AUSD managed by the Valos institutional private credit vault using convertToAssets(totalSupply()).',\n      start: '2026-02-13',\n      blockchains: {\n        monad: {\n          accountableVaults: [\n            '0x8d3F9f9Eb2f5E8B48EFBB4074440D1E2A34Bc365',\n          ],\n        },\n      },\n    },\n  }",
+  "chains_in_config": []
+ },
+ "varlamore-capital": {
+  "registry_keys": [
+   "curators:varlamore-capital"
+  ],
+  "addresses": {},
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Varlamore Capital.',\n      blockchains: {\n        ethereum: {\n          siloVaultOwners: [\n            '0xd8454B3787c6Aab1cf2846AF7882f8c440C3903d',\n          ],\n        },\n        arbitrum: {\n          siloVaultOwners: [\n            '0xd8454B3787c6Aab1cf2846AF7882f8c440C3903d',\n          ],\n        },\n        sonic: {\n          siloVaultOwners: [\n            '0xd8454B3787c6Aab1cf2846AF7882f8c440C3903d',\n          ],\n        },\n        avax: {\n          siloVaultOwners: [\n            '0xd8454B3787c6Aab1cf2846AF7882f8c440C3903d',\n          ]\n        }\n      }\n    },\n    _meta: {\n      hallmarks: [['2026-02-23', 'broken Stream finance vaults blacklisted']],\n    },\n  }",
+  "chains_in_config": [
+   "arbitrum",
+   "avax",
+   "ethereum",
+   "sonic"
+  ]
+ },
+ "vault-bridge": {
+  "registry_keys": [
+   "curators:vault-bridge"
+  ],
+  "addresses": {
+   "morpho": [
+    "0x31A5684983EeE865d943A696AAC155363bA024f9",
+    "0x812B2C6Ab3f4471c0E43D4BB61098a9211017427",
+    "0xBEefb9f61CC44895d8AEc381373555a64191A9c4",
+    "0xc54b4E08C1Dcc199fdd35c6b5Ab589ffD3428a8d"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Count all assets are deposited in all vaults curated by Vault Bridge and its partners.',\n      blockchains: {\n        ethereum: {\n          morpho: [\n            '0xBEefb9f61CC44895d8AEc381373555a64191A9c4',\n            '0xc54b4E08C1Dcc199fdd35c6b5Ab589ffD3428a8d',\n            '0x31A5684983EeE865d943A696AAC155363bA024f9',\n            '0x812B2C6Ab3f4471c0E43D4BB61098a9211017427',\n          ],\n          erc4626: [\n            '0x3DD459dE96F9C28e3a343b831cbDC2B93c8C4855',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "ethereum"
+  ]
+ },
+ "birch-hill": {
+  "registry_keys": [
+   "curators:birch-hill"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0xbCC5C59E64B0Ff3a3Ee5eAb74BE7c787A0a438F1"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      blockchains: {\n        base: {\n          morphoVaultOwners: [\n            '0xbCC5C59E64B0Ff3a3Ee5eAb74BE7c787A0a438F1',\n          ],\n        },\n      }\n    },\n  }",
+  "chains_in_config": [
+   "base"
+  ]
+ },
+ "yearn-curating": {
+  "registry_keys": [
+   "curators:yearn-curating"
+  ],
+  "addresses": {
+   "morphoVaultOwners": [
+    "0x50B75d586929Ab2F75dC15f07E1B921b7C4Ba8fA",
+    "0x50b75d586929ab2f75dc15f07e1b921b7c4ba8fa",
+    "0x518C21DC88D9780c0A1Be566433c571461A70149",
+    "0x75a1253432356f90611546a487b5350CEF08780D",
+    "0xFc5F89d29CCaa86e5410a7ad9D9d280d4455C12B"
+   ]
+  },
+  "flags": [],
+  "registry_files": [
+   "clearstar__registries__curators.js"
+  ],
+  "curators_config_excerpt": "{\n    config: {\n      methodology: 'Counts all assets that are deposited in all vaults curated by Yearn.',\n      blockchains: {\n        ethereum: {\n          morphoVaultOwners: [\n            '0xFc5F89d29CCaa86e5410a7ad9D9d280d4455C12B',\n            '0x50B75d586929Ab2F75dC15f07E1B921b7C4Ba8fA',\n            '0x75a1253432356f90611546a487b5350CEF08780D',\n          ],\n          turtleclub_erc4626: [\n            '0xF470EB50B4a60c9b069F7Fd6032532B8F5cC014d',\n            '0xA5DaB32DbE68E6fa784e1e50e4f620a0477D3896',\n            '0xe1Ac97e2616Ad80f69f705ff007A4bbb3655544a',\n            '0x77570CfEcf83bc6bB08E2cD9e8537aeA9F97eA2F',\n          ],\n        },\n        base: {\n          morphoVaultOwners: [\n            '0xFc5F89d29CCaa86e5410a7ad9D9d280d4455C12B',\n            '0x50b75d586929ab2f75dc15f07e1b921b7c4ba8fa',\n            '0x75a1253432356f90611546a487b5350CEF08780D',\n          ],\n        },\n        katana: {\n          morphoVaultOwners: [\n            '0xFc5F89d29CCaa86e5410a7ad9D9d280d4455C12B',\n            '0x518C21DC88D9780c0A1Be566433c571461A70149',\n            '0x50b75d586929ab2f75dc15f07e1b921b7c4ba8fa',\n            '0x75a1253432356f90611546a487b5350CEF08780D',\n          ],\n       ",
+  "chains_in_config": [
+   "arbitrum",
+   "base",
+   "ethereum",
+   "hyperliquid",
+   "katana"
+  ]
+ }
+}

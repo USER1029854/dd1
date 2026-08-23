@@ -1,0 +1,2147 @@
+[
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  },
+  {
+    "event_date": "2024-12-23",
+    "target": "Moonhacker",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 320000.0,
+    "reported_loss_raw": "$ 320,000",
+    "description_raw": "The Moonhacker contract suffered a flash loan attack, resulting in a loss of approximately $320,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0xd12016b25d7aef681ade3dc3c9d1a1cc12f35b2c99953ff0e0ee23a59454c4fe"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Sonne Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "Based on Compound's Optimism native lending protocol, Sonne Finance has fallen victim to a lightning loan attack by hackers, resulting in losses exceeding $20 million USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://medium.com/@SonneFinance/post-mortem-sonne-finance-exploit-12f3daa82b06"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "MOBOX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 750000.0,
+    "reported_loss_raw": "$ 750,000",
+    "description_raw": "The DeFi protocol MOBOX was attacked due to a vulnerability in the borrow function, resulting in a loss of approximately $750,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://optimistic.etherscan.io/tx/0x4ec3061724ca9f0b8d400866dd83b92647ad8c943a1c0ae9ae6c9bd1ef789417"
+    ]
+  },
+  {
+    "event_date": "2024-01-26",
+    "target": "AltLayer",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "AltLayer, a temporary extension layer built on Optimistic Rollups, tweeted that early this morning, its Twitter profile was not displaying past tweets on the timeline. After approximately 3 hours of handling, the account has now been restored to normal. The entire incident may have been an organized attack. AltLayer advises users to stay safe and cross-check any information and links across multiple channels.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/351794"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Nebula Revelation",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "On January 25th, the staking contract of the space-themed open-world Web3 game Nebula Revelation suffered a reentrancy attack. On January 28th, Nebula Revelation announced a compensation plan of 159,831 USDT. The team promises comprehensive compensation and has decided to reimburse users at the price before the theft to ensure fairness.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/NBLGAME/status/1750503951294976436"
+    ]
+  },
+  {
+    "event_date": "2024-01-18",
+    "target": "Manta Pacific",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a tweet from Manta Network, the Manta Pacific chain encountered an RPC attack at approximately 9 AM UTC. Kenny Li, co-founder of Manta Network (@superanonymousk), provided updates on Twitter regarding the DDoS attack on Manta Network. He mentioned that Manta Network experienced a calculated DDoS attack at 9:30 AM UTC, coinciding with the start of their TGE activity. Since then, the RPC nodes have faced over 135 million requests, indicating that this was a very aggressive and timed attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/superanonymousk/status/1747968680686993800"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Velodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "Optimism decentralized trading protocol Velodrome tweeted that the frontend is currently compromised, please do not interact with Velodrome for the time being, the team is investigating. On December 1, Velodrome posted an update stating, \"We are happy to announce that earlier today we were able to regain control of our domain following a social engineering attack on our provider. We are still working to restore our primary domain and will share an update soon. More details on the attack + response will follow.\" On December 2, Velodrome tweeted that their provider was exploited again and please do not interact with our front end. On the same day, Velodrome stated that \"the domain has been restored again and is locked at the TLD level pending transfer to a new provider.  You can now resume using https://velodrome.finance. Our decentralized frontend can be accessed at http://velo.drome.eth.limo and has remained uncompromised.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1729771762752135463"
+    ]
+  },
+  {
+    "event_date": "2023-04-16",
+    "target": "Hundred Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The loss of today's HundredFinance hack is ~$7m.The root cause appears the attacker donates 200 WBTC to inflate hWBTC's exchange rate so that even a tiny amount (2 wei) of  hWBTC can basically drain current lending pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1647307128267476992"
+    ]
+  },
+  {
+    "event_date": "2022-10-23",
+    "target": "Layer2DAO",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 499500002.0,
+    "reported_loss_raw": "49,950,000 L2DAO",
+    "description_raw": "The project Layer2DAO on Optimism was attacked by hackers. The hackers stole 49.95 million L2DAO tokens and sold some tokens by obtaining the multi-signature permission of Layer2DAO. Layer2DAO said it has repurchased more than 30 million tokens remaining in the hands of hackers through treasury funds. The L2DAO price fell by about 90% at one point.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/TheLayer2DAO/status/1583994186982109185"
+    ]
+  },
+  {
+    "event_date": "2022-10-19",
+    "target": "BitBTC",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "As reported by Cointelegraph, the BitBTC team has now fixed the bug after Twitter user @PlasmaPower0 disclosed a \u201cfake minting\u201d bug that existed in the cross-chain bridge between BitBTC and Optimism. It is reported that the vulnerability allows an attacker to fake tokens on one side of the bridge and exchange them for real tokens on the other side. Attackers have tried to extract 200 billion BitBTC tokens from Optimism through this vulnerability, but it is only a test.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://cointelegraph.com/news/twitter-user-saves-cross-chain-bridge-from-potential-exploit"
+    ]
+  },
+  {
+    "event_date": "2022-08-04",
+    "target": "Velodrome",
+    "slowmist_attack_method": "Internal evil",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On August 4, Team at Velodrome, an AMM project built on Optimism, noticed that $350,000 had been taken from a team-operated wallet that was normally used for operational funds. They announced they were beginning an investigation into the theft, which they initially believed was due to a compromised wallet. Their team member Gabagool tweeted more details, underscoring that no user funds were lost. On August 13, Gabagool posted a long confession to his Twitter account, writing that he had stolen the $350,000, and had previously taken $56,000 over the course of two months, to try to \"revenge trade\" the money he had lost in the crypto crash. Explaining why he took the $350,000, he wrote, \"I thought I could make the 56k back and return all of the funds, which was delusional\". He also wrote that \"the majority of the funds have been returned to the Velodrome team. The rest will be.\" Velodrome later confirmed they had recovered all of the stolen money.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Optimism&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/VelodromeFi/status/1558499944562151425"
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "schema": "Groups of rows describing the same event, and clone/repeat lineages sharing one root cause.",
+  "same_event_duplicate_rows": [],
+  "note_no_duplicate_rows": "No two SlowMist rows in the window describe the same event; each row is a distinct incident.",
+  "clone_and_repeat_lineages": [
+    {
+      "lineage_id": "LIN-VERUS-IMPORT",
+      "incident_ids": [
+        "INC-2026-05-18-VER",
+        "INC-2026-07-23-VER"
+      ],
+      "type": "REPEAT_SAME_UNREMEDIATED_ROOT_CAUSE",
+      "unique_root_causes": 1,
+      "note": "Same checkCCEValues value-equality gap exploited twice; the flaw was not patched between May and July and reserves were redeposited on 8 July. Counts once toward unique root causes and toward family recurrence."
+    },
+    {
+      "lineage_id": "LIN-DN404-BT404",
+      "incident_ids": [
+        "INC-2026-06-08-FLO",
+        "INC-2026-06-09-AST"
+      ],
+      "type": "FORK_CLONE_SHARED_CODEBASE",
+      "unique_root_causes": 1,
+      "note": "Asterix Labs is a Flooring Protocol fork; both were hit through the same shared DN404/BT404 packed-ownership defect one day apart. One root cause, two deployments."
+    },
+    {
+      "lineage_id": "LIN-AZTEC-DEPRECATED",
+      "incident_ids": [
+        "INC-2026-06-14-AZT",
+        "INC-2026-06-17-AZT"
+      ],
+      "type": "SAME_ORG_DISTINCT_DEFECTS",
+      "unique_root_causes": 2,
+      "note": "Two different deprecated Aztec deployments (Connect Router; Private Rollup Bridge escape hatch) with distinct defects. Counted separately, but they share the deprecation precondition."
+    },
+    {
+      "lineage_id": "LIN-COMPUTILITY",
+      "incident_ids": [
+        "INC-2026-04-07-TGA",
+        "INC-2026-05-29-YSD"
+      ],
+      "type": "SAME_OPERATOR_TEMPLATE",
+      "unique_root_causes": 1,
+      "note": "Both Computility-associated BSC projects using the same reserve-manipulation template. One code lineage."
+    },
+    {
+      "lineage_id": "LIN-THETANUTS",
+      "incident_ids": [
+        "INC-2026-04-20-THE",
+        "INC-2026-06-15-THE"
+      ],
+      "type": "SAME_PROTOCOL_DISTINCT_DEFECTS",
+      "unique_root_causes": 2,
+      "note": "Same protocol, different vaults and different mechanisms (first-depositor inflation; legacy redemption math). Counted separately."
+    },
+    {
+      "lineage_id": "LIN-BSC-DEFERRED-BURN-TEMPLATE",
+      "incident_ids": [
+        "INC-2026-06-04-BYT",
+        "INC-2026-04-13-MON",
+        "INC-2026-04-02-SAS",
+        "INC-2026-04-04-BSC",
+        "INC-2026-05-26-SKP",
+        "INC-2026-03-10-MTW",
+        "INC-2026-03-12-AMU",
+        "INC-2026-03-23-BCE",
+        "INC-2026-06-20-LAB",
+        "INC-2026-06-17-LIT",
+        "INC-2026-04-07-TGA",
+        "INC-2026-06-19-JBX",
+        "INC-2026-04-28-JUD",
+        "INC-2026-07-28-LUL"
+      ],
+      "type": "TEMPLATE_PROPAGATION_INDEPENDENT_DEPLOYMENTS",
+      "unique_root_causes": 13,
+      "note": "Independent token deployments reimplementing the same deferred-burn/pair-desync template rather than forking one codebase. Counted as independent root causes except the Computility pair, but the recurrence multiplier is capped because they share a template rather than representing 13 independent discoveries."
+    }
+  ]
+}

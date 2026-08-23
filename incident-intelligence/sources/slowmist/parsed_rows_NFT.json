@@ -1,0 +1,522 @@
+[
+  {
+    "event_date": "2026-06-08",
+    "target": "Flooring Protocol & BitmapPunks",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Flooring Protocol V2 and BitmapPunks (BT404 / $BMP) were exploited due to a BT404-style packed ownership logic vulnerability (malicious high-bit token ID alias + unchecked integer underflow). The attacker minted near-infinite fpTokens/$BMP with a dust amount of WETH, drained liquidity pools, and extracted high-value NFTs (e.g., BAYC, CryptoPunks) at low cost. Yuga Labs quickly intervened with a white-hat operation via GrailsOTC, rescuing 68 NFTs worth over $500,000, now held safely for return after fixes.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/mfigge/status/2063782936399544740"
+    ]
+  },
+  {
+    "event_date": "2026-05-29",
+    "target": "MoneyMon",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 85519.47,
+    "reported_loss_raw": "$ 85,519.47",
+    "description_raw": "The LegendaryMoneyMonNft contract\u2019s cliamRewred function had a signature verification flaw. The verify() only checked if recoverSigner(...) == admin, without properly validating cases where ecrecover returns address(0). The attacker set admin to zero address, then used an invalid signature (r=0, s=0, v=27) to bypass checks, arbitrarily claim rewards, drain all tokens from the contract, and swap them for USDT via PancakeSwap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2060205558687486441"
+    ]
+  },
+  {
+    "event_date": "2026-04-15",
+    "target": "LootBot AI",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 9600.0,
+    "reported_loss_raw": "$ 9,600",
+    "description_raw": "LootBot AI\u2019s xLoot NFT Staking contract was exploited via a Logic Error (Duplicate NFT ID in Redemption). The redeem() function did not validate duplicate token IDs in the input array. The _redeemable() logic accumulated ETH rewards per epoch for each ID without checking for duplicates, and the nextRedeem mapping was only updated after payout. The attacker flash-loaned 2.1 ETH, triggered a new epoch, called redeem() with 7 NFT IDs each duplicated 155 times, draining ~6.21 ETH. After repaying the flash loan, net profit was ~4.1 ETH ($9,600). The project appears largely abandoned (last official X activity in 2025).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/DefimonAlerts/status/2044709964091187660"
+    ]
+  },
+  {
+    "event_date": "2025-07-28",
+    "target": "SuperRare",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 730000.0,
+    "reported_loss_raw": "$ 730,000",
+    "description_raw": "According to monitoring by SlowMist's MistEye security system, the NFT platform SuperRare was exploited. The root cause of the vulnerability was an incorrect permission check in the updateMerkleRoot function, which allowed anyone to modify the Merkle Root and claim tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1949770231733530682"
+    ]
+  },
+  {
+    "event_date": "2025-04-08",
+    "target": "Next Earth",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 17000.0,
+    "reported_loss_raw": "$ 17,000",
+    "description_raw": "According to the SlowMist MistEye security monitoring system, the NFT project Next Earth has suffered a reentrancy attack on Polygon.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1909458997113164232"
+    ]
+  },
+  {
+    "event_date": "2025-01-14",
+    "target": "The Idols",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 324000.0,
+    "reported_loss_raw": "$ 324,000",
+    "description_raw": "The attacker exploited a vulnerability in The Idols project's smart contract to steal 97 stETH (approximately $324,000) from the project.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=idols-nft-exploit"
+    ]
+  },
+  {
+    "event_date": "2024-10-12",
+    "target": "KOR Protocol",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The official X account of the decentralized intellectual property (IP) platform KOR Protocol appears to have been compromised. The hacker has posted a fake phishing link. Please avoid interacting with it.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/realScamSniffer/status/1844965791432892619"
+    ]
+  },
+  {
+    "event_date": "2024-06-14",
+    "target": "Holograph",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 14400000.0,
+    "reported_loss_raw": "$ 14,400,000",
+    "description_raw": "The Omnichain NFT protocol Holograph protocol was exploited, resulting in a loss of  approximately $14.4 million. According to the team, a former contractor exploited an infinite mint vulnerability in their smart contract to release an additional 1 billion HLG tokens, which were further dumped. This malicious actor, who had funded the operator contract roughly 26 days before the attack, deployed an unverified contract on Mantle, which was used to mint the additional tokens caused by a function that exploited the protocol's verification method.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/holographxyz/status/1801702424236990600"
+    ]
+  },
+  {
+    "event_date": "2024-05-29",
+    "target": "MetaDragon",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 181000.0,
+    "reported_loss_raw": "$ 181,000",
+    "description_raw": "According to the SlowMist security team, potential suspicious activity has been detected in the GameFi protocol MetaDragon, and users are advised to remain vigilant. MetaDragon stated that users need to convert their META NFTs into tokens as soon as possible to minimize community losses. The META NFT contract has just been hacked. The hacker converted many NFTs in wallets to META tokens and sold them. The attack path originated from the META NFT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/MetaDragonDao/status/1795750901820665925"
+    ]
+  },
+  {
+    "event_date": "2024-05-10",
+    "target": "Galaxy Fox",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 300000.0,
+    "reported_loss_raw": "$ 300,000",
+    "description_raw": "According to the monitoring of the SlowMist Security Alert system, the Web3 game project Galaxy Fox has been attacked, resulting in a loss of approximately $300,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/SlowMist_Team/status/1788757935017079258"
+    ]
+  },
+  {
+    "event_date": "2024-04-28",
+    "target": "Ember Sword NFT",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 195000.0,
+    "reported_loss_raw": "$ 195,000",
+    "description_raw": "A vulnerability has been detected in the unverified Ember Sword NFT auction that allowed the extraction of 60 WETH, equivalent to approximately $195,000, from 159 victims who approved the contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.binance.com/en/square/post/2024-04-28-unverified-ember-sword-nft-auction-contract-vulnerability-detected-users-cautioned-7364618042609"
+    ]
+  },
+  {
+    "event_date": "2024-03-17",
+    "target": "Remilia",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "The treasury of Remilia, the parent company of Milady, has been drained, with assets from multiple official Remilia wallets being transferred and sold.\n\nThe hot wallet and multi-signature treasury of Remilia's parent company, Remilia, were hacked, with assets from multiple official Remilia wallets being transferred and sold. Charlotte Fang, the founder of Milady, claimed he was hacked and drained of ETH and NFTs potentially worth several million dollars. Although the project's treasury used a multi-signature model, the private keys were stored in one password manager, which Fang says was compromised. The attacker stole around 490 ETH (~$1.8 million) and $58,000 USDC, along with more than 130 Milady NFTs, 320 Remilio NFTs, and hundreds of derivative tokens issued on the NFTX platform. Based on floor prices, the assets are valued at north of $6 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/_Enoch/status/1769228547619446975"
+    ]
+  },
+  {
+    "event_date": "2024-03-16",
+    "target": "Wilder World",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 1800000.0,
+    "reported_loss_raw": "$ 1,800,000",
+    "description_raw": "The deployer wallet of the NFT marketplace Wilder World was attacked, and ownership was transferred to the attacker. Following a malicious upgrade, the attacker withdrew WILD and MEOW tokens and converted them into approximately $1.8 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=wilder-world-theft"
+    ]
+  },
+  {
+    "event_date": "2024-02-19",
+    "target": "Rugged Art",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 32395.0,
+    "reported_loss_raw": "$ 32,395",
+    "description_raw": "The ERC 404 project Rugged Art was attacked due to a reentrancy vulnerability, resulting in a loss of 11 ETH.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://etherscan.io/tx/0x5a63da39b5b83fccdd825fed0226f330f802e995b8e49e19fbdd246876c67e1f"
+    ]
+  },
+  {
+    "event_date": "2024-01-01",
+    "target": "Wabalaba Land",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "A global IP of FREE Digital Collectibles, Art and community Wabalaba Land's Discord has been compromised. Do not click any links until the team regain control of the server.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/wabalabaland/status/1741550353051717907"
+    ]
+  },
+  {
+    "event_date": "2023-12-29",
+    "target": "INSC NFT",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "There is a vulnerability in the INSC NFT contract, and multiple hackers have exploited it to steal NFTs and transfer them to Blur and OpenSea for sale. According to Blur market data, the floor price of INSC (ins-20) has dropped to 0.0048 ETH, with a decrease of 96.76% in the last 24 hours.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/wublockchain12/status/1740636382874488904"
+    ]
+  },
+  {
+    "event_date": "2023-12-22",
+    "target": "Pine Protocol",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 90000.0,
+    "reported_loss_raw": "$ 90,000",
+    "description_raw": "PineProtocol seems to have been exploited. According to SlowMist's analysis, the exploiter's IP is 116.*.*.112. The exploiter has withdrawn ETH from FixedFloat and ChangeNOW, and has transferred 20 ETH to TornadoCash. The exploiter appears to have received part of the bounty.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/MistTrack_io/status/1738131780459430338"
+    ]
+  },
+  {
+    "event_date": "2023-12-18",
+    "target": "Metakey",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Metakey's Discord has been compromised. Do not click the link in announcements.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/Plumferno/status/1736562536575574281"
+    ]
+  },
+  {
+    "event_date": "2023-12-17",
+    "target": "Flooring Protocol",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1600000.0,
+    "reported_loss_raw": "$ 1,600,000",
+    "description_raw": "On December 17th, according to SlowMist Cos, Flooring Protocol may have been subjected to a hacker attack, and users are advised to promptly revoke contract authorizations. In a tweet on December 17th, Flooring Protocol announced that \"We have determined the cause of exploit to be linked to FP's peripheral/multi-call contract. The team has deployed a fix 2 hours ago, patching the issue. While we continue to investigate and monitor, rest assured that the main contract is safe. Assets in vaults and safeboxes are not affected.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/0xfoobar/status/1736190355257627064"
+    ]
+  },
+  {
+    "event_date": "2023-12-16",
+    "target": "NFT Trader",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "On December 16, the SlowMist security team issued an alert that @NftTrader appeared to have been exploited due to a reentrancy issue. On December 17, the NFT Trader hacker claimed in on-chain messages that the original attack had been perpetrated by someone else, but that they were one of the many copycat attackers, describing themselves as someone who had \"[come] here to pick up residual garbage\". They requested victims send additional ETH to get their NFTs back. \"If you want the monkey nft back, then you need to pay me a bouty, which is what I deserve\", they wrote, asking for NFT holders to send them 10% of the Ape floor price. On December 17, Boring Security tweeted, \"All 36 BAYC and 18 MAYC that the exploiter had are now in our possession. We sent her 10% of the floor price of the collections as bounty. We will be working with the affected victims getting them back to them free of charge.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/SlowMist_Team/status/1736005523550646535"
+    ]
+  },
+  {
+    "event_date": "2023-11-14",
+    "target": "Builders NFT (BuiLDerS)",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 89296.0,
+    "reported_loss_raw": "$ 89,296",
+    "description_raw": "Builders NFT (BuiLDerS) on BSC is suspected of a rug pull, with the deployer removing substantial liquidity, causing a 100% price decline.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://bscscan.com/tx/0xb622506ea94495d3c559d24897bb0da5285d3f7423dcf8e1b717461268027faa"
+    ]
+  },
+  {
+    "event_date": "2023-10-12",
+    "target": "Loozr",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "There is a fake collab land verification in the Loozr Discord. The verification will take you to a phishing site that connects to a wallet drainer",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/officialloozr/status/1712076664916652381"
+    ]
+  },
+  {
+    "event_date": "2023-10-10",
+    "target": "Starksport",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Starksport announced that a community team member's Discord was  compromised.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/starkfinance/status/1711483205684281402"
+    ]
+  },
+  {
+    "event_date": "2023-10-10",
+    "target": "Cryptopreneurs",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Cryptopreneurs' Discord server was hacked and the attacker posted a phishing link.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/KonstVlad2/status/1711811593413984361"
+    ]
+  },
+  {
+    "event_date": "2023-10-08",
+    "target": "MetaMundo",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "A phishing link has been posted in the announcements channel of MetaMundo Discord server. Do not interact with hxxps://mint-metamundo.co/.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Futuremoney247/status/1710891870111371360"
+    ]
+  },
+  {
+    "event_date": "2023-10-05",
+    "target": "Metropolis World",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Metropolis World announced that their Discord server was compromised.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/metropolisworld/status/1709920393765507195"
+    ]
+  },
+  {
+    "event_date": "2023-10-02",
+    "target": "GEMIE",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The GEMIE Discord server was hacked and the attackers posted phishing links in the announcement channel. Please do not interact with hxxps://gemie.site/.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Gemie_Official/status/1708741008975098300"
+    ]
+  },
+  {
+    "event_date": "2023-10-02",
+    "target": "VendX",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "VendX Discord server was compromised.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/VendXNFT/status/1709276102768669108"
+    ]
+  },
+  {
+    "event_date": "2023-09-28",
+    "target": "LuckyFactoryNFT",
+    "slowmist_attack_method": "Phishing Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "A phishing link has been posted in the factory-updates channel of LuckyFactoryNFT. Do not interact with the malicious link.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/phoenixb1ue/status/1707480908553716137"
+    ]
+  },
+  {
+    "event_date": "2023-09-27",
+    "target": "Venom Bears",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 27th, Venom Bears\u2018 Discord server was compromised.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/VenomBears/status/1706780486343999820"
+    ]
+  },
+  {
+    "event_date": "2023-09-23",
+    "target": "Synthtopia",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Synthtopia Discord server was compromised.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/D3STAB1LIZED/status/1705437709781598701"
+    ]
+  },
+  {
+    "event_date": "2023-09-21",
+    "target": "TimeSoul",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "A phishing link has been posted in the announcements channel of timesoul Discord server.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/timesoulcom/status/1704845188424696117"
+    ]
+  },
+  {
+    "event_date": "2023-09-17",
+    "target": "One Mint",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 17th, the NFT solution -- One Mint's Discord account was compromised. The attacker posted malicious links and shut down channels like support.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/AnorakDAO/status/1703225909442932787"
+    ]
+  },
+  {
+    "event_date": "2023-09-11",
+    "target": "Milady",
+    "slowmist_attack_method": "Insider Manipulation",
+    "reported_loss_usd": 1000000.0,
+    "reported_loss_raw": "$ 1,000,000",
+    "description_raw": "Milady founder Charlotte Fang said that a developer of Milady misappropriated approximately $1 million from the Bonkler treasury of Milady's official project. The developer also seized the code base and asked the team to hand over more funds and NFT reserves. Currently, the Twitter accounts of miladymaker and remilionaire are controlled by this developer. Charlotte Fang said the relevant members have been identified and will be held accountable to the fullest extent of the law. Minting of Bonkler NFTs is temporarily suspended and Bonkler\u2019s community vaults, contracts, and NFTs are safe. Other series of NFTs from Milady parent company Remilia are not affected for the time being.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/charlottefang77/status/1701245168039452947"
+    ]
+  },
+  {
+    "event_date": "2023-09-09",
+    "target": "ACG WORLDS",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "A phishing link was posted in the announcements channel of ACG WORLDS discord server. Do not interact with hxxps://asusworlds.com/tcom/.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/ACGWORLDS_META/status/1701846441499787702"
+    ]
+  },
+  {
+    "event_date": "2023-09-06",
+    "target": "Big.B",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Big.B Discord Server was hacked. The attacker posted a phishing link in Big.B Discord Server. Do not click on any links until the team has confirmed they\u2019ve regained control of the server.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/BigB_NFTs/status/1699241721417039936"
+    ]
+  },
+  {
+    "event_date": "2023-09-03",
+    "target": "Paras",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "NFT marketplace Paras tweeted that its discord was under attack. Please do not click on the link, mint, or approve any transactions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/ParasHQ/status/1698151376403222609"
+    ]
+  },
+  {
+    "event_date": "2023-09-03",
+    "target": "Paras",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On Sept 3, Paras Discord server was compromised.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/ParasHQ/status/1698151376403222609"
+    ]
+  },
+  {
+    "event_date": "2023-09-02",
+    "target": "Balthazar",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Balthazar tweeted that his Discord was under attack and please do not click on the link, mint, or approve any transactions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/BalthazarDao/status/1697656320231637140"
+    ]
+  },
+  {
+    "event_date": "2023-09-01",
+    "target": "Lamas Finance",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Lamas Finance's Discord is under attack, phishing site is lamas[.]co/airdrop, please do not click on the link, mint or approve any transactions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=NFT&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/lamasfinance/status/1697323988362699057"
+    ]
+  }
+]

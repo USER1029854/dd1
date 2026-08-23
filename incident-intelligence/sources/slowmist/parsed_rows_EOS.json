@@ -1,0 +1,3900 @@
+[
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2019-05-24",
+    "target": "Poker EOS",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 26992.2297,
+    "reported_loss_raw": "26,992.2297 EOS",
+    "description_raw": "EOS game Poker EOS appears abnormal, which is confirmed to be caused by the disclosure of the private key of the game. The hackers made more than 20,000 EOS in total, and more than 10,000 of them have been transferred to the exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.jinse.com/lives/97365.htm"
+    ]
+  },
+  {
+    "event_date": "2019-04-29",
+    "target": "eosblue.one",
+    "slowmist_attack_method": "Memo attack",
+    "reported_loss_usd": 12883.0,
+    "reported_loss_raw": "12,883 EOS",
+    "description_raw": "The attacker constructed the malicious memo, which caused the eosblue.one server parsing exceptions, thus continuously winning prizes or leading to unusually large refunds.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "http://www.longkuicj.com/27528.html"
+    ]
+  },
+  {
+    "event_date": "2019-04-03",
+    "target": "DEOS Games",
+    "slowmist_attack_method": "Automatically attack lucky draw system",
+    "reported_loss_usd": 2090.0,
+    "reported_loss_raw": "2,090 EOS",
+    "description_raw": "Attackers continue to make continuous profits by creating new accounts and calling the luckydraw method of the EOS quiz game DEOS Games contract. Currently, over 300 accounts have been created and thousands of EOS have been accumulated. Different from the known attack characteristics in the past, it is preliminarily judged that this attack is a new type of attack. The attacker creates new accounts in batches, and then places small bets in exchange for a larger return. The return rate of betting is abnormally high, resembling \"wool wool\".",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.8btc.com/article/385671"
+    ]
+  },
+  {
+    "event_date": "2019-04-03",
+    "target": "EOSlots",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 2468.92,
+    "reported_loss_raw": "2,468.92 EOS",
+    "description_raw": "The attacker launched continuously attacks and profit from the EOSlots, and the game has been suspended operations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "http://www.longkuicj.com/18119.html"
+    ]
+  },
+  {
+    "event_date": "2019-04-01",
+    "target": "EosNow",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 200.0,
+    "reported_loss_raw": "200 EOS",
+    "description_raw": "The attacker once again launched an attack on the EOS quiz game eosnowbetext. After preliminary analysis, the attacker still manipulated multiple trumpets to attack the game through transaction squeeze, and has already made a profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "http://www.seldenfrance.com/wen/redian/54227.html"
+    ]
+  },
+  {
+    "event_date": "2019-03-28",
+    "target": "ZION",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 2849.0,
+    "reported_loss_raw": "2,849 EOS",
+    "description_raw": "ZION.games sustained attack by malicious users ggggggggggxx, profits of more than 2849 EOS, and transferred to the Binance Exchange. The attack is similar to the attack on TGON, suspected to be the same group.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.doubanfx.com/news/11367.html"
+    ]
+  },
+  {
+    "event_date": "2019-03-27",
+    "target": "TGON",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 1606.8268,
+    "reported_loss_raw": "1,606.8268 EOS",
+    "description_raw": "The attacker controlled multiple accounts to launch continuously attacks on the TGON, made thousands of EOS in profit from the TGON, and transferred to the Binance Exchange.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.btcsearch.com/t/1297890"
+    ]
+  },
+  {
+    "event_date": "2019-03-20",
+    "target": "dBet Games",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 24.8,
+    "reported_loss_raw": "24.8 EOS",
+    "description_raw": "The attacker launch continuously attacks and profit from the dBet Games.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.chainnews.com/news/072202672656.htm"
+    ]
+  },
+  {
+    "event_date": "2019-03-18",
+    "target": "EOS Cube",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 49.6,
+    "reported_loss_raw": "49.6 EOS",
+    "description_raw": "The attacker justjiezhan1 launched an attack on the EOS game \"cubecontract\" and has already made a profit. Prior to this, the attacker justjiezhan1 started deploying the attack contract at around 12:00:41 on the same day. The analysts preliminary analyzed that the attacker was, still the same as the previous attack mean, transaction congestion attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.jinse.com/lives/85405.htm"
+    ]
+  },
+  {
+    "event_date": "2019-03-18",
+    "target": "EOSVegas",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 39.0,
+    "reported_loss_raw": "39 EOS",
+    "description_raw": "The attacker launched continuously attacks and profit from the EOSVegas. The analysis found that the attack mean used by the attacker was transaction congestion attack. The account is extremely active. It just attacked the quiz game EOS Cube and its related account has been marked as high risk.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.fxtank.com/qukuailian/11258.html"
+    ]
+  },
+  {
+    "event_date": "2019-03-15",
+    "target": "YUM.games",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 113.0,
+    "reported_loss_raw": "113 EOS",
+    "description_raw": "The attacker justjiezhan1 launched an attack on the EOS game \"YUM.games\" and has already made a profit. After analysis,  it is suspected that the attacker calls \"gamestart\" and draws the prize directly without betting the game.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.jinse.com/lives/85098.htm"
+    ]
+  },
+  {
+    "event_date": "2019-03-14",
+    "target": "LuckyGo",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 200.0,
+    "reported_loss_raw": "200 EOS",
+    "description_raw": "The attacker launched continuously attacks on the LuckyGo, profiting hundreds of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.jinse.com/lives/84915.htm"
+    ]
+  },
+  {
+    "event_date": "2019-03-12",
+    "target": "dBet Games",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 685.0,
+    "reported_loss_raw": "685 EUSD",
+    "description_raw": "The attacker launched continuously attacks on the dBet Games, profiting hundreds of EUSD which stablecoins issued on EOS. And has sold through the decentralized exchange Newdex.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "http://www.seldenfrance.com/wen/gushi/53783.html"
+    ]
+  },
+  {
+    "event_date": "2019-03-11",
+    "target": "nkpaymentcap",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 50000.0,
+    "reported_loss_raw": "50,000 EOS",
+    "description_raw": "The attacker launched continuous attacks on EOS DApp nkpaymentcap and successfully profited 50,000 EOS. After analysis, it was found that the attacker used a fake transfer notification attack to obtain a large number of contract tokens, and then exchanged the tokens into real EOS for cash out through the DApp contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://cloud.tencent.com/developer/article/1419237"
+    ]
+  },
+  {
+    "event_date": "2019-03-10",
+    "target": "Vegas Town",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": 2219.0,
+    "reported_loss_raw": "2,219 EOS",
+    "description_raw": "The attacker launched a continuous attack on the EOS quiz game Vegas Town, profited thousands of EOS, and has been transferred to the ZB exchange. Preliminary analysis found that hackers used the failed (hard_fail) transfer transaction to cheat the game server, resulting in continued awards.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://developer.aliyun.com/article/693323"
+    ]
+  },
+  {
+    "event_date": "2019-03-09",
+    "target": "Gamble EOS",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 2043.6,
+    "reported_loss_raw": "2,043.6 EOS",
+    "description_raw": "The attacker launched a continuous attack on the EOS quiz game Gamble EOS, successfully profited thousands of EOS, and has been transferred to the Huobi exchange. After analysis, it was found that the attack method used by the attacker was a false transfer notification.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.btcsearch.com/t/1244139"
+    ]
+  },
+  {
+    "event_date": "2019-03-08",
+    "target": "Fishing Joy",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 109.33,
+    "reported_loss_raw": "109.33 EOS",
+    "description_raw": "The attacker launched a series of attacks on the EOS quiz game Fishing Joy, profiting hundreds of EOS. According to analysis, the attacker used the transaction crowding attack to trigger the game's refund mechanism, resulting in 100% profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "http://www.longkuicj.com/22045.html"
+    ]
+  },
+  {
+    "event_date": "2019-03-06",
+    "target": "ExtremeLoto",
+    "slowmist_attack_method": "Logic Vulnerability",
+    "reported_loss_usd": 42.0,
+    "reported_loss_raw": "42 EOS",
+    "description_raw": "The attacker co****op launched continuous attacks on the EOS quiz game contract xlo*****io and has already profited hundreds of EOS. After preliminary analysis, the attacker used the logic defect of the game contract by directly invoking the transfer method, and multiple accounts coordinated to carry out the attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.jinse.com/lives/83611.htm"
+    ]
+  },
+  {
+    "event_date": "2019-03-05",
+    "target": "OnePlay",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 449.0,
+    "reported_loss_raw": "449 EOS",
+    "description_raw": "The attacker launched continuously attacks on the OnePlay, getting almost all EOS of the game contract. And use the same attack mean to bet the game token ONE, profit nearly one million game tokens, and then transfer to the newdex exchange for sale.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "http://www.longkuicj.com/21649.html"
+    ]
+  },
+  {
+    "event_date": "2019-03-04",
+    "target": "EOS \u6b22\u4e50\u8c37(Happy Pool)",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 419.0,
+    "reported_loss_raw": "419 EOS",
+    "description_raw": "Hackers launched continuous attacks on the EOS quiz game EOS Happy Valley, and they have profited hundreds of EOS. The game party has transferred the account balance away. Attackers still use transaction crowding out attacks. To completely fix this vulnerability, DApp developers should remove controllable variables such as account balance or time factors to participate in random number generation.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.jinse.com/lives/83229.htm"
+    ]
+  },
+  {
+    "event_date": "2019-02-22",
+    "target": "\u8d85\u7ea7\u8282\u70b9(BP)games.eos",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2090000.0,
+    "reported_loss_raw": "2,090,000 EOS",
+    "description_raw": "Tracking the blacklist account gm3dcnqgenes found that its associated account newdexmobapp received 2.09 million EOS, and has now transferred 50,000 EOS to its associated account guagddoefdqu. And in batches of hundreds to thousands of EOS each time, transferred to the stock exchange account (huobideposit), and the remaining 2.04 million EOS, has been dispersed to ftsqfgjoscma, hpbcc4k42nxy, 3qyty1khhkhv, xzr2fbvxwtgt, myqdqdj4qbge, Shprzailrazt, qkwrmqowelyu, lmfsopxpr324, lhjuy3gdkpq4, lcxunh51a1gt, geydddsfkk5e, pnsdiia1pcuy, kwmvzswquqpb, etc., there is the possibility of further turning to the exchange.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/81695.htm"
+    ]
+  },
+  {
+    "event_date": "2019-02-15",
+    "target": "Gameboy",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Gameboy, a EOS game was attacked. Attacker cont****inop deployed a contract and attacked by calling launch function. According to the analysis of SlowMist security team and confirmed with project side by communication.The project side wrongly add a controlled seed in random algorithm which lead the attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/80574.htm"
+    ]
+  },
+  {
+    "event_date": "2019-02-05",
+    "target": "EOSPlaystation",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 20000.0,
+    "reported_loss_raw": "~20000 EOS",
+    "description_raw": "The attacker launched an attack on the EOS game EOSPlaystation.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/79416.htm"
+    ]
+  },
+  {
+    "event_date": "2019-02-04",
+    "target": "WinDice",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 300.0,
+    "reported_loss_raw": "~300 EOS",
+    "description_raw": "The attacker deploys the attack contract rep******net to attack the project party contract windiceadmin.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/79342.htm"
+    ]
+  },
+  {
+    "event_date": "2019-02-04",
+    "target": "EOSreel",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2046.0,
+    "reported_loss_raw": "2046 EOS",
+    "description_raw": "The attacker deploys the attack contract con******nop and combines multiple accounts to attack the project contract eosreeladmin.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/79323.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-31",
+    "target": "FASTWIN",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker deployed multiple attack contracts to attack the EOS game FASTWIN.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/78835.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-31",
+    "target": "EOSlots",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker launched continuous attacks on the EOS game EOSlots.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/78811.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-31",
+    "target": "Fastwin",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000.0,
+    "reported_loss_raw": "2000 EOS",
+    "description_raw": "The attacker is the same batch of accounts that previously attacked BETX.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/78765.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-30",
+    "target": "EOSABC",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "This is the third attack on the contract, not a transaction congestion attack, but the real purpose of the attack is the transaction rollback attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/78682.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-28",
+    "target": "EOSABC",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Similar to the way EOSABC was attacked two days ago, the problem has not been fixed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/78358.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-28",
+    "target": "BETX",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker launched continuously attacks on the TGON.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/78270.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-27",
+    "target": "EOSlots",
+    "slowmist_attack_method": "Replay attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "Unknown",
+    "description_raw": "The attacker controlled multiple accounts to launch continuously attacks on the EOSlots.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/78220.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-26",
+    "target": "EOSABC",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "It is consistent with the previous principles of attacking EOS.Win, FarmEOS, etc., but the technique has changed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/78055.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-23",
+    "target": "Crazy Dice",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "It is consistent with the previous principles of attacking EOS.Win, FarmEOS, etc., but the method has changed. The attacker controls multiple accounts to cooperate to complete the transaction congestion attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/77473.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-22",
+    "target": "EOSLuck",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker is targeting the game's random number algorithm, and his winning percentage is much higher than other ordinary players.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/77278.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-21",
+    "target": "idicefungame",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker launched continuously attacks on idicefungame and has already made a profit, and transferred to the bitfinex exchange.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/77095.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-17",
+    "target": "21Dice",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker used the transaction congestion attack to attack the game contract and ultimately profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/76440.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-17",
+    "target": "SuperMonopoly",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker uses the trade crowding attack to attack the game contract and ultimately profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/76440.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-16",
+    "target": "playgames",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 2158.0,
+    "reported_loss_raw": "2158 EOS",
+    "description_raw": "The game playgames has been continuously attacked by malicious user niyoubudou33. It has been attacked 295 times as of press time, which is consistent with the previous attacks on EOS.Win, FarmEOS, idice, LuckBet, GameBet, EOSDice, STACK DICE and many other games.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/76371.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-16",
+    "target": "LuckBet",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker uses the trade crowding attack to attack the game contract and ultimately profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.jinse.com/lives/76287.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-16",
+    "target": "idice(\u5f71\u9ab0)",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker useed the transaction congestion attack to attack the game contract and ultimately profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/76239.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-15",
+    "target": "FarmEOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "This time the attacker is the same person as the last time. Both flo******now and sil******day are the account of the hacker. The two attack methods are also the same. The attacker points to FarmEOS. After placing a bet, and when the attacking contract receives a transfer notification, a large number of defer transactions are initiated, which delays the subsequent lottery draw of FarmEOS, which is the \"transaction crowding attack\".",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/76160.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-15",
+    "target": "FarmEOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 2000.0,
+    "reported_loss_raw": "2,000 EOS",
+    "description_raw": "The attacker made a profit of nearly 2000 EOS through the Dice game by deploying the attack contract flo*****now in just a few minutes.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/76137.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-14",
+    "target": "GameBet",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker used transaction congestion attack to exploit  vulnerability in the old-version BP nodeos.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/75816.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-13",
+    "target": "Fishing",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker used transaction congestion attack to exploit vulnerability in the old-version BP nodeos.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/75813.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-13",
+    "target": "STACK DICE",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker used deferBomb to exploit vulnerability in the old-version BP nodeos.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/75813.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-13",
+    "target": "FarmEOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 5000.0,
+    "reported_loss_raw": "5,000 EOS",
+    "description_raw": "After the attack contract sil******day places a bet on FarmEOS, and when the attack contract receives a transfer notification, it initiates a large number of defer transactions, which delays the subsequent lottery draw of FarmEOS. The SlowMist security team first two days (1 November 11) disclosed EOS.WIN was attacked in the same way",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/75739.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-12",
+    "target": "BetDoge",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker launched continuous attacks on the EOS game BetDoge and has successfully profited hundreds of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/75693.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-12",
+    "target": "EOS.WIN",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker loveforlover launched an attack on EOS.WIN and has already made a profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/75547.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-10",
+    "target": "uugame",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The random number was cracked.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/75378.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-04",
+    "target": "HotDice",
+    "slowmist_attack_method": "transaction congestion attack",
+    "reported_loss_usd": 1262.74,
+    "reported_loss_raw": "1,262.74 eos",
+    "description_raw": "Developers have not been able to effectively detect, block, and isolate accounts which is contract high risk or marked as blacklisted.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/74290.htm"
+    ]
+  },
+  {
+    "event_date": "2019-01-01",
+    "target": "EOS BUFF",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker launched continuous attacks on the EOS BUFF and has successfully profited hundreds of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/q0YsUGllFJnsRszfLFy84A"
+    ]
+  },
+  {
+    "event_date": "2019-01-01",
+    "target": "ggeos",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The contract was attacked by a transaction rollback.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/73908.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-29",
+    "target": "LuckBet",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The random number was attacked by the attacker for the second time.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/search/LuckBet"
+    ]
+  },
+  {
+    "event_date": "2018-12-28",
+    "target": "GameBet",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker launched an attack on the GameBet game contract gamebetdices, and transfer most of the acquired EOS to the FreeWallet wallet account.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/73416.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-28",
+    "target": "LuckyMe",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker continued to attack the LuckyMe game contract luckymedice1 and had benefited thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/73410.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-26",
+    "target": "Lucky Nuts",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker continued to attack the Lucky Nuts game contract nutsgambling and continues to profit from it. Eventually most of the stolen EOS was transferred to the Binance exchange account binancecleos.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/73116.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-25",
+    "target": "FastWin",
+    "slowmist_attack_method": "Minting Attack",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 EOS",
+    "description_raw": "The hacker mastered and modified FAST's token contract, deliberately created a vulnerability that can be used for multiple \"additional\" tokens for free.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/72989.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-23",
+    "target": "Pickown",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"Transfer Error Prompt\", as the game contract does not filter the false notifications provided by the game player.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/search/FastWin"
+    ]
+  },
+  {
+    "event_date": "2018-12-22",
+    "target": "LuckBet",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker snowredgreen attacked the LuckBet game contract luckbetadmin and transfers most of the acquired EOS to the Huobi exchange account huobideposit",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.jinse.com/lives/72463.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-21",
+    "target": "EosDice",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker binaryfunxxx attacked the EosDice's game contract bocai.game and transfers most of the acquired EOS to the Binance exchange account binancecleos.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/72348.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-19",
+    "target": "TRUSTBET",
+    "slowmist_attack_method": "Replay attack",
+    "reported_loss_usd": 11501.0,
+    "reported_loss_raw": "11,501 EOS",
+    "description_raw": "The attacker (panming12345) launched an attack on the EOS quiz game TRUSTBET game contract (trustbetgame), profiting a total of 11,501 EOS, and then transferred the EOS obtained from the attack to the Huobideposit account in two times. The attacker took advantage of the replay attack vulnerability. This is a form of attack that first appeared in the early days of the EOS DApp ecosystem. Due to the serious flaws in the random lottery algorithm designed by the developer, the attacker can use the contract vulnerabilities to draw the lottery repeatedly. Lower-level errors.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/71724.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-19",
+    "target": "BetDice",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 200000.0,
+    "reported_loss_raw": "200,000 EOS",
+    "description_raw": "Rollback transaction attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/71797.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-19",
+    "target": "Big.game",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 8000.0,
+    "reported_loss_raw": "8,000 EOS",
+    "description_raw": "Big.game is suspected of being attacked by hacker eykkxszdrnnc. Big.game officially stated that the actual loss was about 8,000 EOS, and the balance of the dice prize pool has been transferred to a secure account.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/71765.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-19",
+    "target": "ToBet",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 22403.69,
+    "reported_loss_raw": "22,403.69 EOS",
+    "description_raw": "The attacker rolls back the transaction when placing a bet. From the time the bet is placed until the transaction is rolled back, the betting data will temporarily exist in the database of the current node; and Tobet queries the betting by polling the node database outside the contract. The lottery will be drawn outside the contract and the result will be passed to the lottery action; when the attacker keeps betting and rolls back the transaction, because the betting and Tobet polling use the same node, the Tobet lottery polling can query the database betting information for a short time and draw the lottery. . However, the attacker's bet was not successful, and the contract would continue to draw prizes for him, resulting in no capital arbitrage.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/71877.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-19",
+    "target": "EOS Max",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 55526.0,
+    "reported_loss_raw": "55,526 EOS",
+    "description_raw": "The attacker (eykkxszdrnnc) launched an attack on the EOS MAX game contract (eosmaxiodice), an EOS quiz game, earning a total of 55,526.05 EOS. The game party has suspended the game operation at 6:40 am on the 19th, and issued an announcement saying that it was caused by a loophole in EOS Node, not a loophole in the game contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/71741.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-12",
+    "target": "kittyfishing",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 558.85,
+    "reported_loss_raw": "558.85 EOS",
+    "description_raw": "The attacker helookitiqas launched attacks on the EOS game kittyfishing, which launched a total of 91 attacks in two hours.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/70394.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-05",
+    "target": "Fastwin",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 1929.17,
+    "reported_loss_raw": "1,929.17 EOS",
+    "description_raw": "The attacker ha4tsojigyge launched 124 attacks on the Fastwin game contract fastwindice3.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/68797.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-03",
+    "target": "Dice3D",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 10569.0,
+    "reported_loss_raw": "10,569 EOS",
+    "description_raw": "Similar to the previous attack on EOS.WIN on November 11, multiple contract accounts were used to send transaction requests at the same time, and the front feint account was used to implement small bets. After ensuring a higher probability for the main attack account, increase the betting amount. And then get high bonuses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/68308.htm"
+    ]
+  },
+  {
+    "event_date": "2018-12-01",
+    "target": "Dice3D",
+    "slowmist_attack_method": "Transaction Rollback Attack",
+    "reported_loss_usd": 5710.0,
+    "reported_loss_raw": "5,710 EOS",
+    "description_raw": "Use multiple accounts to simultaneously send transaction requests for attack, so that the last attacker account gets the highest winning rate.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/q0YsUGllFJnsRszfLFy84A"
+    ]
+  },
+  {
+    "event_date": "2018-11-30",
+    "target": "Atidium",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 3183.0,
+    "reported_loss_raw": "3,183 EOS",
+    "description_raw": "EOS Atidium's official account wwwatidiumio was abnormal.  A total of 6 tokens including ATD tokens 337,759,004 were transferred to account b4jmqvvktgjx. The account then transferred 130 million ATD tokens to Newdex Exchange for cash, a total of 3,183.8564 EOS were profitable..",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/67820.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-28",
+    "target": "nutsgambling",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 1141.71,
+    "reported_loss_raw": "1,141.71 EOS",
+    "description_raw": "Hacker ybdzmtgouwxn launched an attack on nutsgambling, an EOS quiz game. In less than an hour, a total of 144 attacks were launched, and a total of 1,141.71 EOS was obtained. In order to prevent the flow of funds from being tracked, the hacker used multiple sub-accounts to sequentially transfer the acquired assets to the account kcbtvwtxeabc, which has not been withdrawn to the exchange yet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/67268.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-21",
+    "target": "vegasgame111",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The attacker (kuybupeykieh) launched an attack on the EOS quiz game contract (vegasgame111), making a total of hundreds of EOS. The data on the tracking chain found that, in order to prevent the flow of funds from being tracked, the hacker used dozens of operations to create sub-accounts. In order to transfer the acquired assets sequentially, the attacker used the \"fake EOS\" vulnerability to carry out the attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/65894.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-19",
+    "target": "EOS Lelego",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 6282.5,
+    "reported_loss_raw": "6,282.5 EOS",
+    "description_raw": "The attacker malisringho continually initiated 35 game requests to the EOS Lelego contract llgcontract1., eventually guessing 27 times, making a total profit of 6,282.5 EOS, and then successfully transferring 6,500 EOS to the Binance Exchange.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/65284.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-15",
+    "target": "LuckyGo",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "EOS game contract LuckyGo has been off the line and the attacker iloveloveeos (malicious contract) was exposed in September because of attack on FairDice.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/64543.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-12",
+    "target": "HireVibes & AirDropsDAC",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 2514.0,
+    "reported_loss_raw": "2,514 EOS",
+    "description_raw": "A large number of HVTs in the AirDropsDAC contract account were transferred to the sym111111add account under abnormal operation, the account was then exchanged for 2,514 EOS at Newdex, which was subsequently transferred to the gizdkmjvhege account.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2018-11-11",
+    "target": "EOS.WIN",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 20000.0,
+    "reported_loss_raw": "20,000 EOS",
+    "description_raw": "The game contract was attacked by the attacker lockonthecha.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/63433.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-10",
+    "target": "EOSDice",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 4633.0,
+    "reported_loss_raw": "4,633 EOS",
+    "description_raw": "The well-known DApp EOSDice was hacked again due to random number issues. The attacker was a hacker who previously attacked EOSDice and FFGame DApp. The project side wrongly add a controlled seed in random algorithm which lead the attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/63312.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-10",
+    "target": "MyEosVegas",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 EOS",
+    "description_raw": "The hacker has launched a total of 700 attacks on the MyEosVegas game contract eosvegasjack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/63359.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-08",
+    "target": "FFgame",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 1331.0,
+    "reported_loss_raw": "1,331 EOS",
+    "description_raw": "By deploying the attack contract and using the same algorithm as FFgame to calculate the random number in the contract, the attacker immediately uses the random number attack contract in inline_action after generating the random number, resulting in the winning result being \"predicted\", thus reaching the super high winning rate.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.jinse.com/lives/62867.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-07",
+    "target": "CaseGo",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 200.0,
+    "reported_loss_raw": "200 EOS",
+    "description_raw": "Attacked by the attacker, the specific content is unknown.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/q0YsUGllFJnsRszfLFy84A"
+    ]
+  },
+  {
+    "event_date": "2018-11-04",
+    "target": "EOSDice",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 2545.0,
+    "reported_loss_raw": "2,545 EOS",
+    "description_raw": "Random number was cracked by attacker.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/62050.htm"
+    ]
+  },
+  {
+    "event_date": "2018-11-04",
+    "target": "EOSeven",
+    "slowmist_attack_method": "Insider Manipulation",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "EOSeven was transferred 600 million SVN from eosevendice2 to account tuningfinish,  then back 450 million to eosevendice2. After that, tuningfinish sold the SVN token on Newdex and finally transferred the resulting EOS to Binance Exchange.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2018-10-31",
+    "target": "EOSCast",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 70000.0,
+    "reported_loss_raw": "70,000 EOS",
+    "description_raw": "The hacker \"refundwallet\" tried to attack the EOSCast game contract \"eoscastdmgb1\". The hacker first used the \"fake EOS\" attack method to conduct 8 transfer attacks, but failed, and then successfully attacked 9 times by using the \"fake EOS transfer variant\". According to the rules of the game, hackers launched attacks with 100, 1,000, and 10,000 fake EOS. Each attack can get 198, 9,800, 19,600 EOS. When the last attack was carried out, the game party noticed an abnormal attack and transferred it in time. After leaving the remaining 8,000 EOS in the bonus pool, in the end, the hacker made a total of 72,912 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/61261.htm"
+    ]
+  },
+  {
+    "event_date": "2018-10-28",
+    "target": "EOS Poker",
+    "slowmist_attack_method": "Operational Mistake",
+    "reported_loss_usd": 1374.375,
+    "reported_loss_raw": "1374.375 EOS",
+    "description_raw": "The official forgot to put the seed into the database when expanding the server, and no longer record the seed after the 868590 game.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2018-10-26",
+    "target": "EosRoyale",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 11000.0,
+    "reported_loss_raw": "11,000 EOS",
+    "description_raw": "Vulnerability of the random number generator, the attacker can try to calculate the future number of random number generator algorithms by using the information of the previous block and stolen $60,000 from the EosRoyale wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/61280.htm"
+    ]
+  },
+  {
+    "event_date": "2018-10-16",
+    "target": "WORLD CONQUEST",
+    "slowmist_attack_method": "Rule Exploitation",
+    "reported_loss_usd": 4555.0,
+    "reported_loss_raw": "4,555 EOS",
+    "description_raw": "RatingToken, a third-party big data platform owned by Cheetah, has detected that DAPP World Conquest developed based on EOS was hacked. Subsequently, the official issued an announcement on its Discord to confirm the fact of the attack. The hacker used the tax payment rules of the game to reject subsequent buyers, which led to the abnormal end of the game. The hacker took all the EOS in the fund pool, and only 0.0155 EOS was left in the contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/58271.htm"
+    ]
+  },
+  {
+    "event_date": "2018-10-15",
+    "target": "EOSBet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 145321.0,
+    "reported_loss_raw": "145,321 EOS",
+    "description_raw": "The attacker exploited the vulnerabilities in the EOSBet contract to falsify the transfer prompt.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/57970.htm"
+    ]
+  },
+  {
+    "event_date": "2018-10-05",
+    "target": "EOSBank",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "The owner permission of the contract account had been modified, after that, 18,000 EOS was transferred to the EOS account fuzl4ta23d1a.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2018-09-14",
+    "target": "Newdex",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 11803.0,
+    "reported_loss_raw": "11,803 EOS",
+    "description_raw": "After EOSBet broke the security vulnerability of hackers using counterfeit currency bets to win real coins, at 2 o'clock in the afternoon, EOS contract account oo1122334455 issued a token named \"EOS\", and allocated one billion fake EOS tokens to EOS accounts in full dapphub12345, and then transfer the fake tokens to the account iambillgates (the account that carried out the attack) from this account. After the attacking account used a small fake EOS to verify the attack, a large-scale attack was carried out from 14:31:34 to 14:45:41. There were 11,800 fake EOS listing orders to buy BLACK, IQ, and ADD, and all of them were traded.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/53145.htm"
+    ]
+  },
+  {
+    "event_date": "2018-09-14",
+    "target": "EOS.Win",
+    "slowmist_attack_method": "Code Vulnerability",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "The attacker exchanged true EOS token with fake token within the vulnerability in the code,winning without betting",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": []
+  },
+  {
+    "event_date": "2018-09-14",
+    "target": "EOSBet",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The game contract does not check the transfer action must initiated by eosio.token or token contract of the game itself.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/52227.htm"
+    ]
+  },
+  {
+    "event_date": "2018-09-12",
+    "target": "EOSBet",
+    "slowmist_attack_method": "Code Vulnerability",
+    "reported_loss_usd": 42000.0,
+    "reported_loss_raw": "42,000 EOS",
+    "description_raw": "the attacker exchanged true EOS token with fake token within the vulnerability in the code, winning without betting.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/q0YsUGllFJnsRszfLFy84A"
+    ]
+  },
+  {
+    "event_date": "2018-09-12",
+    "target": "FairDice",
+    "slowmist_attack_method": "Replay attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Because of its random algorithm associated with the time, the same bet will yield different results at different times. Hackers use this feature to reject failed lottery results.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2018-09-12",
+    "target": "EOS Happy Slot",
+    "slowmist_attack_method": "Replay attack",
+    "reported_loss_usd": 5000.0,
+    "reported_loss_raw": "5,000 EOS",
+    "description_raw": "The attacker uses the replay attack to obtain multiple winnings in one go.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2018-09-10",
+    "target": "DEOSBET",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "The law of the random number generated by DEOSBET was cracked by hackers.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/51212.htm"
+    ]
+  },
+  {
+    "event_date": "2018-09-02",
+    "target": "EOS.Win",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 2000.0,
+    "reported_loss_raw": "2,000 EOS",
+    "description_raw": "On September 2, 2018, the EOS WIN random number was cracked and 2000 EOS was lost, this attack was not disclosed to the public.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2018-08-27",
+    "target": "Luckyos",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The law of the random number generated by Lucky's rock-paper-scissors game was cracked by hackers, and the attacker won the prize by continuing to use rock at the specified time, which has a 38% chance of winning.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2018-08-26",
+    "target": "EOSBET",
+    "slowmist_attack_method": "Fake Transfer Notification",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "RAM was swallowed up by the malicious contract, and the game party failed to check the caller of transfer action, which led to the exchange of real token with fake token and \"Transfer Error Prompt\" vulnerability",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.jinse.com/lives/48517.htm"
+    ]
+  },
+  {
+    "event_date": "2018-07-25",
+    "target": "\u72fc\u4eba\u6e38\u620f(EOS Fomo3D)",
+    "slowmist_attack_method": "Overflow vulnerability",
+    "reported_loss_usd": 60686.0,
+    "reported_loss_raw": "60,686 EOS",
+    "description_raw": "The EOS Fomo3D game contract suffered an overflow attack and the cash pooling became negative.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/DnhtzdWeRziK030FSolDbA"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  },
+  {
+    "event_date": "2023-05-01",
+    "target": "pcash",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The EOS project pcash was attacked and lost about $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://bloks.io/account/nrwgthbeupex"
+    ]
+  },
+  {
+    "event_date": "2021-12-08",
+    "target": "PIZZA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "At 8 pm on December 8, the hacker account itsspiderman used an overflow vulnerability to issue additional tripool market-making certificates in eCurve out of thin air, pledged and loaned most of the tokens in the agreement in PIZZA. Afterwards, hackers created more than 1.3 million accounts and dispersed the stolen assets. The loss of the PIZZA protocol in this attack is equivalent to about 5 million U.S. dollars. After negotiations, the hackers agreed to a ransom of $500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://pizza-finance.medium.com/a-brief-review-on-the-12-08-spiderman-hacking-incident-8739c23322ab"
+    ]
+  },
+  {
+    "event_date": "2021-09-17",
+    "target": "Defibox",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4863.0,
+    "reported_loss_raw": "4,863 EOS",
+    "description_raw": "Defibox discovered an abnormal exchange situation of the EOS-EMOON trading pair at 22:00 on September 16th. After an emergency investigation, the swap contract was suspended at 0:00 on September 17th, and it was reopened on the morning of September 17th after auditing and multiple signings were completed. Swap contract. This exchange abnormality is caused by the incompatibility between the Defibox Swap contract and the EMOON contract. Before the event, the number of pots was 482636464535179.88 EMOON/4866.1494 EOS. When the contract was suspended, the EMOON pot was 5790970803030.11 EMOON/3.4553EOS, resulting in about 4863 EOS. loss. At present, the Defibox team has eliminated this type of risk caused by other burning tokens, and has upgraded the Swap contract to further improve the security of the contract. The Defibox Foundation will activate the risk reserve and pay 4863 EOS to the EMOON community.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://support.defibox.cc/hc/zh-cn/articles/4406632860569"
+    ]
+  },
+  {
+    "event_date": "2021-05-14",
+    "target": "flash.sx",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 11742000.0,
+    "reported_loss_raw": "$ 11,742,000",
+    "description_raw": "According to previous news, starting from 11:28 UTC on May 14th, the flash.sx flash loan smart contract suffered a reentry attack vulnerability, and approximately 1.2 million EOS and 462,000 USDT were stolen. According to official sources, after EOS Nation's Lightning Loan was hacked, the project party initiated a proposal to directly change the hacker's EOS account permissions and return the assets. It is reported that the proposal initiated by the project party changed the hacker address authority to BP, which will be executed after approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://cmichel.io/eos-vault-sx-hack/"
+    ]
+  },
+  {
+    "event_date": "2020-09-26",
+    "target": "GemSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 26, the SushiSwap imitation project named GemSwap was exposed and LP was taken away. The query found that the project posted a tweet at around 15:00 today and revealed that it was attacked by the developer of \"whatitdobb\". It is understood that the project completed the liquidity migration earlier today, but the developer who initiated the attack had The relevant permission was obtained and the tokens in the liquidity pool were able to be taken away. The specific losses caused by this attack are currently unclear.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/cryptoculgin/status/1310922743555080192"
+    ]
+  },
+  {
+    "event_date": "2020-09-10",
+    "target": "Coral",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 120000.0,
+    "reported_loss_raw": "120,000 EOS",
+    "description_raw": "The wRAM of the EOS ecological DeFi liquidity mining project Coral was attacked by hackers and lost more than 120,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.sohu.com/a/417422116_100217347"
+    ]
+  },
+  {
+    "event_date": "2020-09-09",
+    "target": "EMD",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2468838.0,
+    "reported_loss_raw": "$ 2,468,838",
+    "description_raw": "According to SlowMist Zone intelligence, EOS project EMD is suspected to be on the run. To date, EmeraldMine1 has transferred 780,000 USDT, 490,000 EOS and 56,000 DFS to Account SJI111111111, and 121,000 EOS has been transferred to Changenow coin Laundering. Current lost MARKET value: US $2,468,838 =17,281,866 RMB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.mytoken.io/news/159516.html"
+    ]
+  },
+  {
+    "event_date": "2020-04-30",
+    "target": "Felix",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 25329.291,
+    "reported_loss_raw": "25,329.291 EOS",
+    "description_raw": "EOS gambling DApp suffered fake EOS attack",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://mobile.twitter.com/chiachih_wu/status/1258250199459221504"
+    ]
+  },
+  {
+    "event_date": "2019-11-07",
+    "target": "BetHash",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "BetHash's betting game mechanism allows players to guess the ratio of the number between 0-100 and the random number given by the system to win the bonus of the corresponding odds. The smaller the bet number, the greater the odds. Every time a player makes a bet, the dicereceipt() function of the BetHash smart contract will be called to notify the player's account. At this point, the hacker can control the malicious program to hijack the notification and embed the inline operation to implement the attack. Although the attacker also needs to pay a certain amount of bet for every attack, as long as it keeps 0.1 EOS and is conservative",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://cmichel.io/what-really-happened-with-the-eos-play-hack/"
+    ]
+  },
+  {
+    "event_date": "2019-10-12",
+    "target": "BitDice",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "Hackers launched a \"fake EOS\" attack on BitDice, a guessing game, earning more than 4,000 EOS and transferring it to EXMO, ChangeNOW and other exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.fxajax.com/1620051039.html"
+    ]
+  },
+  {
+    "event_date": "2019-09-02",
+    "target": "skreosladder",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "\"skreosladder\" has been attacked again by hackers, who have earned thousands of EOS. The hacker has attacked the game several times and has been blacklisted by the project side, but the hacker still used the trumpet to circumvent the restrictions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.jinse.com/lives/117430.html"
+    ]
+  },
+  {
+    "event_date": "2019-08-13",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": 4000.0,
+    "reported_loss_raw": "4,000 EOS",
+    "description_raw": "SKR EOS games have again been attacked by hackers, who have now earned about 4,000 EOS. After analysis, hackers still use the transaction congestion attack, operating multiple trumpet attacks on the game in turn.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/9UD5Rf1xYVyS2imHb71_Tw"
+    ]
+  },
+  {
+    "event_date": "2019-08-10",
+    "target": "SKReos",
+    "slowmist_attack_method": "Transaction congestion attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The skreosladder game has been attacked by hackers again, and hackers have now profited thousands of EOS. After preliminary analysis, hackers still use transaction crowding attacks, but the difference is that hackers control a large number of accounts to place bets at the same time, and then multiple accounts are used to push blocks due to the large number of accounts participating in the attack. The connection between accounts is not obvious, and the attack is highly concealed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.jinse.com/lives/113210.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-04",
+    "target": "Royale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "18,000 EOS",
+    "description_raw": "EOS Royale has been attacked by hackers, who have gained around 18,000 EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111995.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "LuckyClover",
+    "slowmist_attack_method": "Hard_fail attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game LuckyClover, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-08-02",
+    "target": "UnicornBet",
+    "slowmist_attack_method": "Fake EOS Vulnerability Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multiple hackers have launched a series of attacks on the EOS game UnicornBet, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.jinse.com/lives/111644.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-03",
+    "target": "HiGold Game",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hacker launched a continuous attack on the HiGold Game and realized the profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105520.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-24",
+    "target": "yizeslotsbet",
+    "slowmist_attack_method": "Transfer error prompt",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "10,000 FB",
+    "description_raw": "EOS contract yizeslotsbet suffers transfer error prompt, the attacker has already obtained 1,0000 FB token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.qklw.com/lives/20190624/6774.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-14",
+    "target": "SKR EOS",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Continuous attack by hackers to SKR EOS, earning thousands of EOS.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101608.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-11",
+    "target": "BETX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 600000000.0,
+    "reported_loss_raw": "600,000,000 BETX",
+    "description_raw": "The 600 million BETX tokens held by BETX managers were stolen by hacker and sold on the Newdex exchange. Preliminary analysis shows that the cause of this attack is that the private key of BETX project is stolen, and the hacker gains the owner privilege and transfers all the existing tokens of the contract. The selloff caused the BETX token to fluctuate sharply and close to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=EOS&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.jinse.com/lives/100822.htm"
+    ]
+  }
+]

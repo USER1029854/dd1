@@ -1,0 +1,32 @@
+{
+  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
+  "run_date_utc": "2026-08-23",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "window_inclusive": true,
+  "window_rule": "rolling six calendar months ending on the UTC run date; both endpoints included; incident date (not publication date) governs",
+  "incident_index": "https://hacked.slowmist.io/?c=&page=1",
+  "defillama_endpoints": {
+    "protocols": "https://api.llama.fi/protocols",
+    "protocol_detail": "https://api.llama.fi/protocol/{slug}",
+    "tvl": "https://api.llama.fi/tvl/{slug}"
+  },
+  "adapter_repo": "https://github.com/DefiLlama/DefiLlama-Adapters",
+  "operational_settings": {
+    "minimum_tvl_usd": 1000000,
+    "final_candidate_count": 20,
+    "deep_screen_multiplier": 4,
+    "minimum_deep_screened_pairs": 80,
+    "include_below_threshold_high_fit": true,
+    "exclude_cex_wallet_and_non_protocol_entries": true
+  },
+  "safety_posture": {
+    "production_interactions": "READ_ONLY",
+    "transactions_broadcast": 0,
+    "credentials_recovered_or_used": 0,
+    "exploit_calldata_constructed": 0,
+    "scope": "DefiLlama-listed protocols with documented relationship only"
+  },
+  "evidence_levels": ["L0_METADATA","L1_ADAPTER","L2_DEPLOYMENT","L3_STATE","L4_GUARD_REVIEW"],
+  "evidence_grades": {"A":"deployed code/trace + official or independent technical analysis","B":"one strong technical source + corroborating chain evidence","C":"plausible, material link unverified","D":"vague/contradictory/unsupported"}
+}

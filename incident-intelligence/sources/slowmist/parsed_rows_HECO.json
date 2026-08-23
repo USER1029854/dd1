@@ -1,0 +1,977 @@
+[
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  },
+  {
+    "event_date": "2023-04-23",
+    "target": "FilDA",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Multi-chain lending protocol FilDA released a vulnerability exploit statement saying that it was attacked earlier today on the Elastos Smart Chain (ESC) and REI networks, causing losses of approximately $700,000. No other FilDA deployments were affected. Vulnerabilities identified and attack vectors isolated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://fildafinance.medium.com/filda-exploit-statement-49ec69e34c53"
+    ]
+  },
+  {
+    "event_date": "2023-01-13",
+    "target": "LendHub",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6000000.0,
+    "reported_loss_raw": "$ 6,000,000",
+    "description_raw": "According to SlowMist, LendHub, the HECO ecological cross-chain lending platform, was suspected of being attacked and lost nearly 6 million US dollars. The main hacker profit address is 0x9d01..ab03. The reason for this attack is that there are two lBSV cTokens in LendHub, one of which has been abandoned in April 2021 but has not been removed from the market, which resulted in both the old and new lBSV existing in the market. Moreover, the Comptrollers corresponding to the old and new lBSV are not the same, but both have prices in the market, which results in a split in the calculation of liabilities in the old and new markets. Attackers take advantage of this problem to redeem mortgages in the old market and carry out lending operations in the new market, maliciously extorting protocol funds in the new market. At present, the main profit address for hackers is 0x9d01..ab03, and the source of the hacker attack fee is the 100 ETH received from Tornado.Cash on January 12. SlowMist said that through the threat intelligence network, some traces of hackers have been obtained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/obl5l5ms.html"
+    ]
+  },
+  {
+    "event_date": "2021-07-02",
+    "target": "XDX Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The XDX Swap (DDEX) on the Heco chain's cross-chain decentralized exchange DDEX was attacked. The attacker made a profit of 85.17 ETH (approximately $176,000) and cross-chained it to Ethereum. The DDEX code appears to have a backdoor. With the support and cooperation of DDEX, Star Labs, and HECO White Hat Security Alliance, XDX Swap has successively recovered most of the funds involved in this attack, with a total value of more than 5 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-507462.html"
+    ]
+  },
+  {
+    "event_date": "2021-06-08",
+    "target": "GainSwap",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "At around 4:00 a.m. on June 8, the GainSwap project, which had been online for less than 12 hours, suddenly swept away nearly $8 million in digital assets pledged by users, closed the website access, and then entered a state of losing contact and running away. This is also Heco. One of the projects with the largest amount of running away on the show. In January 2022, according to the public security information of Chizhou City, Anhui Province, the police in Chizhou City recently cracked a case of illegally obtaining virtual currency data from a computer system using blockchain technology, involving a value of about 50 million yuan. After the cooperation of the police in Guangdong, Sichuan and Hunan, all eight suspects were arrested. The police seized and seized the assets involved in the case, such as villas and luxury cars worth tens of millions purchased by the suspect with the full amount of the stolen money, and frozen about 6 million virtual assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.chaincatcher.com/article/2069096"
+    ]
+  },
+  {
+    "event_date": "2021-03-10",
+    "target": "HSO",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 5177.0,
+    "reported_loss_raw": "5,177 HT",
+    "description_raw": "The oracle project HSO on the Huobi Eco-Chain HECO carried out IDO and ran away with 30,000 HT. The website and TELEGRAM could not be opened. Later, under the full promotion of HECO core code contribution team Star Lab, HECO technical community and HECO White Hat Security Alliance, 24823 HTs have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=HECO&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.wu-talk.com/html/kuaixun/2021_1052.html"
+    ]
+  }
+]

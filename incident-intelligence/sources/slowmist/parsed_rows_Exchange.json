@@ -1,0 +1,522 @@
+[
+  {
+    "event_date": "2026-07-19",
+    "target": "Zilliqa exchange partner",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Zilliqa announced that ZIL was stolen from a cold wallet of one of its exchange partners. Investigation confirmed the root cause was a nonce-generation vulnerability in the Zilliqa Ledger app (present since 2019), allowing private key recovery from on-chain Schnorr signatures (after ~5+ native transactions). It was not due to the exchange\u2019s operations. Native transactions were suspended and a fix is being coordinated.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/zilliqa/status/2079847348780536050"
+    ]
+  },
+  {
+    "event_date": "2026-05-20",
+    "target": "RetoSwap",
+    "slowmist_attack_method": "Protocol Logic Vulnerability",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "RetoSwap (a Tor-based P2P multisig DEX powered by the Haveno trade protocol for trading Monero) was actively exploited. Attackers sent fake, out-of-order ACK messages impersonating the arbitrator during ongoing trades. This tricked the client into updating the arbitrator\u2019s node address to the attacker\u2019s controlled address, allowing them to create a compromised multisig wallet before the victim deposited funds. The exploit mainly affected crypto-to-crypto trades. RetoSwap immediately banned the attacker\u2019s onion address, forced a client version update to halt all trading, and is working on a patch and potential recovery for affected users. Approximately 7,000 XMR were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/retoswap/status/2056984875383632226?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-05-15",
+    "target": "THORChain",
+    "slowmist_attack_method": "GG20 TSS Vulnerability",
+    "reported_loss_usd": 10700000.0,
+    "reported_loss_raw": "$ 10,700,000",
+    "description_raw": "One of THORChain\u2019s Asgard vaults was compromised, with the attacker draining funds simultaneously across multiple supported chains (at least nine), resulting in losses of approximately $10-11 million+ (including ~36.75 BTC worth ~$3M and ~$7M+ in EVM tokens). The protocol halted trading and signing after automatic detection of abnormal behavior. User funds and LP positions were safe; only protocol-owned funds were affected. The attack is linked to vault churn address poisoning or a vulnerability in the GG20 TSS (threshold signature scheme) implementation, allowing key material leakage and private key reconstruction over time. THORChain confirmed the incident, is investigating with security partners, and launched a recovery portal for claims (no user compensation program for protocol losses).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/THORChain/status/2055300162331742233"
+    ]
+  },
+  {
+    "event_date": "2026-05-01",
+    "target": "Bisq v1",
+    "slowmist_attack_method": "Business Logic Vulnerability",
+    "reported_loss_usd": 876000.0,
+    "reported_loss_raw": "$ 876,000",
+    "description_raw": "A vulnerability in Bisq v1 trade protocol allowed attackers (possibly using modified clients) to bypass verification and drain Bitcoin from open offers. Primarily affected altcoin trades. User wallets holding BTC were not directly impacted. The team activated emergency measures to disable trading and is preparing a DAO vote for full reimbursement.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/bisq_network/status/2050917431699460231"
+    ]
+  },
+  {
+    "event_date": "2026-04-16",
+    "target": "Grinex",
+    "slowmist_attack_method": "Hot Wallet Infrastructure Breach",
+    "reported_loss_usd": 15000000.0,
+    "reported_loss_raw": "$ 15,000,000",
+    "description_raw": "According to The Block, Grinex, an exchange registered in Kyrgyzstan with ties to the Russian crypto market, has suspended withdrawals and trading following a large-scale cyberattack. A statement on the exchange\u2019s website said that more than 1 billion rubles (approximately $13.1 million) were stolen, describing the attack as a \u201ccoordinated operation aimed at undermining Russia\u2019s financial sovereignty,\u201d requiring resources and capabilities exclusive to \u201chostile states\u201d to carry out. Blockchain analytics firm Elliptic stated that the suspected attacker stole approximately $15 million worth of USDT from wallets associated with Grinex. The funds were then routed through the TRON and Ethereum networks and converted into TRX and ETH, likely in an attempt to reduce the risk of being frozen by Tether. Grinex is considered the successor to the previously sanctioned Garantex exchange. After Garantex shut down, Grinex absorbed its liquidity and users and has since become a major venue for ruble-to-crypto trading.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.theblock.co/post/397814/russia-linked-grinex-exchange-suspends-operations-15-million-hack-hostile-states"
+    ]
+  },
+  {
+    "event_date": "2026-01-21",
+    "target": "Paradex",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "According to an announcement from Paradex, the internal systems of the Mithril trading bot were compromised by an attacker, resulting in the exposure of approximately 57 user subkeys. While these subkeys do not allow withdrawals, they grant trading permissions and are commonly used to connect third-party applications and trading bots. Paradex has suspended all XP transfers and revoked all subkeys associated with Mithril. The affected users are limited to accounts that had previously authorized the Mithril bot. The team also reminded users to exercise caution when authorizing third-party services and to independently assess the associated risks.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/paradex/status/2013819618499141651?s=20"
+    ]
+  },
+  {
+    "event_date": "2025-12-17",
+    "target": "ICRYPEX Global",
+    "slowmist_attack_method": "Security Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "SlowMist has issued a security alert to the cryptocurrency exchange ICRYPEX Global, stating that a potentially critical vulnerability has been identified.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2001117011699753029"
+    ]
+  },
+  {
+    "event_date": "2025-12-16",
+    "target": "Azbitm",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "SlowMist sent a security alert to the cryptocurrency exchange Azbitm, stating that a potential vulnerability has been detected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2000784214472692072"
+    ]
+  },
+  {
+    "event_date": "2025-11-27",
+    "target": "Upbit",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 30300000.0,
+    "reported_loss_raw": "$ 30,300,000",
+    "description_raw": "Upbit CEO Woo Kyung-sik issued a public statement regarding the recent security breach and apologized to users, noting that the incident resulted from shortcomings in Upbit\u2019s internal security management. On the morning of the 27th, Upbit detected abnormal withdrawals from its Solana-based wallets, prompting an immediate full-scale inspection of related networks and wallet systems. During the investigation, the team identified a vulnerability that could potentially be exploited to infer private keys, which has since been patched. To safeguard user assets, Upbit suspended all cryptocurrency deposits and withdrawals and initiated on-chain tracking and asset-freezing procedures for funds transferred externally. On December 6, after completing the replacement of all virtual asset wallets and strengthening security controls, Upbit restored full deposit and withdrawal services. According to current estimates, the total value affected by the incident is approximately KRW 44.5 billion (about USD 30.3 million). Of this amount, approximately KRW 38.6 billion (about USD 26.33 million) belongs to users, and KRW 2.3 billion (about USD 1.57 million) has been successfully frozen. Upbit\u2019s own funds affected total approximately KRW 5.9 billion (about USD 4.02 million). On December 8, Upbit\u2019s operating company Dunamu provided an update, stating that an additional KRW 2.6 billion (approximately USD 1.77 million) in compromised assets has now been frozen. Recovery procedures are currently in progress to ensure the secured funds can be safely reclaimed. On January 8, according to MistTrack monitoring, the attacker behind the Upbit hack (address starting with 0x93A0) is continuously transferring funds to Tornado Cash. So far, 1,400 ETH have been moved.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://upbit.com/service_center/notice?id=5803&amp;view=share"
+    ]
+  },
+  {
+    "event_date": "2025-08-14",
+    "target": "BtcTurk",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 54000000.0,
+    "reported_loss_raw": "$ 54,000,000",
+    "description_raw": "The Turkish cryptocurrency exchange BtcTurk has reportedly suffered another hack. BtcTurk acknowledged \u201cunusual activity\u201d in its hot wallets and has suspended deposits and withdrawals. However, the exchange did not disclose further details regarding the scale of the attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/BtcTurkKripto/status/1955973500583170252"
+    ]
+  },
+  {
+    "event_date": "2025-07-24",
+    "target": "WOO X",
+    "slowmist_attack_method": "Phishing Attack",
+    "reported_loss_usd": 14000000.0,
+    "reported_loss_raw": "$ 14,000,000",
+    "description_raw": "Crypto trading platform WOO X suffered an attack resulting in a loss of approximately $14 million. According to the official disclosure, the incident stemmed from a targeted phishing attack that compromised a team member\u2019s device, allowing the attacker to gain access to the development environment.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/_WOO_X/status/1948573397178339577"
+    ]
+  },
+  {
+    "event_date": "2025-07-19",
+    "target": "CoinDCX",
+    "slowmist_attack_method": "Security Vulnerability",
+    "reported_loss_usd": 44200000.0,
+    "reported_loss_raw": "$ 44,200,000",
+    "description_raw": "On July 19, on-chain investigator ZachXBT posted on his personal channel: \u201cLooks like the India centralized exchange 'CoinDCX' was likely drained for ~$44.2M almost 17 hours ago and has yet to disclose the incident to the community.\u201d Shortly afterward, the company confirmed the breach on X, describing it as a \u201csophisticated server breach\u201d and stating that only corporate funds were affected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/CoinDCX/status/1947625144379445682"
+    ]
+  },
+  {
+    "event_date": "2025-07-16",
+    "target": "BigONE",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 27000000.0,
+    "reported_loss_raw": "$ 27,000,000",
+    "description_raw": "According to monitoring by the SlowMist security team, cryptocurrency exchange BigONE has suffered a supply chain attack, with losses exceeding $27 million. The attacker breached the production network and altered the operating logic of servers related to account management and risk control, enabling unauthorized fund withdrawals. Notably, no private keys were leaked in this incident.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1945346830222680330"
+    ]
+  },
+  {
+    "event_date": "2025-06-18",
+    "target": "Nobitex",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 90000000.0,
+    "reported_loss_raw": "$ 90,000,000",
+    "description_raw": "The Iran-based Nobitex cryptocurrency exchange suffered a $90 million hack, and the attacker has also promised to imminently release data and source code from the platform. The hacking group appears to have burned the crypto assets, effectively destroying them rather than taking them for their own profits.\n\nGonjeshke Darande (also \"Predatory Sparrow\"), a hacking group with links to Israel, claimed responsibility for the theft, accusing the platform of serving as a \"key regime tool\" to finance terror and violate sanctions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1935246606095593578"
+    ]
+  },
+  {
+    "event_date": "2025-05-08",
+    "target": "BitoPro",
+    "slowmist_attack_method": "Malicious Software",
+    "reported_loss_usd": 11500000.0,
+    "reported_loss_raw": "$ 11,500,000",
+    "description_raw": "According to on-chain investigator ZachXBT, crypto exchange BitoPro was reportedly hacked on May 8, 2025, resulting in losses of approximately $11.5 million. The attacker drained assets from BitoPro\u2019s hot wallets on Tron, Ethereum, Solana, and Polygon, then sold them via DEXs. The stolen funds were subsequently laundered through Tornado Cash or bridged via Thorchain to the Bitcoin network, eventually ending up in a Wasabi Wallet. BitoPro stated that the tactics used in this incident closely resemble those seen in several major international cases, attributing the attack to the North Korean hacking group Lazarus.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/zachxbt/status/1929417001296146868"
+    ]
+  },
+  {
+    "event_date": "2025-02-21",
+    "target": "Bybit",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 1460000000.0,
+    "reported_loss_raw": "$ 1,460,000,000",
+    "description_raw": "On February 21, 2025, on-chain investigator ZachXBT revealed a large-scale outflow of funds from the Bybit platform, resulting in the theft of over $1.46 billion.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1892963250385592345"
+    ]
+  },
+  {
+    "event_date": "2025-01-23",
+    "target": "Phemex",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 70000000.0,
+    "reported_loss_raw": "$ 70,000,000",
+    "description_raw": "The Singapore-based Phemex cryptocurrency exchange's hot wallets were hacked, resulting in a loss of approximately $70 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=phemex-hack"
+    ]
+  },
+  {
+    "event_date": "2025-01-01",
+    "target": "NoOnes",
+    "slowmist_attack_method": "Security Vulnerability",
+    "reported_loss_usd": 7900000.0,
+    "reported_loss_raw": "$ 7,900,000",
+    "description_raw": "The peer-to-peer cryptocurrency trading platform NoOnes suffered a major security breach earlier this month. CEO Ray Youssef explained that the breach occurred on January 1st due to an exploit involving their Solana bridge.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/ray_noOnes/status/1882744360812306885"
+    ]
+  },
+  {
+    "event_date": "2024-12-10",
+    "target": "Clober",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 501000.0,
+    "reported_loss_raw": "$ 501,000",
+    "description_raw": "Clober DEX liquidity vault on Base Network was exploited resulting in a loss of 133.7 ETH (~$501k). The root cause of the attack was a reentrancy vulnerability in the _burn() function of the Rebalancer contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/CloberDEX/status/1866426442294469033"
+    ]
+  },
+  {
+    "event_date": "2024-12-01",
+    "target": "Clipper DEX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 457878.0,
+    "reported_loss_raw": "$ 457,878",
+    "description_raw": "According to Clipper's post-mortem, on December 1, 2024, an attacker exploited a vulnerability in a smart contract used by Clipper, manipulating the single-asset deposit and withdrawal feature. This manipulation affected the liquidity pools on the Optimism and Base networks, causing an imbalance that allowed the attacker to withdraw more assets than they had deposited. The attack resulted in a loss of approximately $457,878.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://blog.clipper.exchange/clipper-dec-24-exploit-post-mortem/"
+    ]
+  },
+  {
+    "event_date": "2024-11-28",
+    "target": "XT Exchange",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 1700000.0,
+    "reported_loss_raw": "$ 1,700,000",
+    "description_raw": "The cryptocurrency exchange XT has reportedly fallen victim to a hacking incident, resulting in the loss of approximately $1.7 million worth of crypto assets. The hacker has converted the funds into 461.58 ETH and deposited them into the address 0xB43f\u20268F83.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/XTexchange/status/1862072439154569282"
+    ]
+  },
+  {
+    "event_date": "2024-10-31",
+    "target": "SUNRAY FINANCE",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 2855000.0,
+    "reported_loss_raw": "$ 2,855,000",
+    "description_raw": "SUNRAY FINANCE experienced a private key compromise, allowing the exploiter to gain control of the SUN and ARC tokens and sell them off, draining the funds from DEX pairs. So far, the attacker has stolen approximately $2.855 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9crsujac.html"
+    ]
+  },
+  {
+    "event_date": "2024-10-31",
+    "target": "M2",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 13700000.0,
+    "reported_loss_raw": "$ 13,700,000",
+    "description_raw": "According to on-chain detective ZachXBT on his personal channel, cryptocurrency exchange M2 was hacked, resulting in the theft of approximately $13 million from several on-chain hot wallets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/398576"
+    ]
+  },
+  {
+    "event_date": "2024-10-25",
+    "target": "Aark Digital",
+    "slowmist_attack_method": "Incorrect Balance Update",
+    "reported_loss_usd": 1900000.0,
+    "reported_loss_raw": "$ 1,900,000",
+    "description_raw": "During a routine GM token burn, Aark Digital encountered a callback error due to a third-party contract modification. To resolve this, Aark Digital initiated a contract upgrade and GM delisting to adjust affected user balances. Users holding GM were required to convert GM to USDC. Aark Digital ran a script to process these conversions, receiving inputs like target user, amount, token address, and decimals from event data. While executing, a single user\u2019s USD Value shifted erroneously from 0.498942 to 498,942 * (10 ^ 12), due to an incorrect balance update (not from a deployed contract error). Exploiting this security vulnerability, the attacker caused Aark Digital a loss of 1,499,841 USDC and 159.09 ETH.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://aarkdigital.medium.com/incident-of-october-25th-d074f32d6535"
+    ]
+  },
+  {
+    "event_date": "2024-10-19",
+    "target": "Ambient Finance",
+    "slowmist_attack_method": "DNS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Scroll-based DEX protocol Ambient Finance announced on X platform that their domain has been hijacked. Until further notice, please do not interact with the Ambient Finance frontend.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/articledetails/8euzht4y.html"
+    ]
+  },
+  {
+    "event_date": "2024-09-20",
+    "target": "BingX",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 45000000.0,
+    "reported_loss_raw": "$ 45,000,000",
+    "description_raw": "According to the announcement from BingX, at around 4 AM Singapore time on September 20, BingX's security systems detected an unauthorized intrusion targeting one of their hot wallets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Vivien_BingX/status/1836940851873992845"
+    ]
+  },
+  {
+    "event_date": "2024-09-11",
+    "target": "Indodax",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 22000000.0,
+    "reported_loss_raw": "$ 22,000,000",
+    "description_raw": "Indonesian crypto exchange Indodax suffered an attack a few hours ago, with the hacker stealing various tokens from hot wallets. The total loss is approximately $22 million. According to the analysis by the SlowMist security team, the possibility that the hot wallet has been compromised can be ruled out. It is possible that the withdrawal system has been hacked.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1833757841880158673"
+    ]
+  },
+  {
+    "event_date": "2024-08-28",
+    "target": "1inch",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to monitoring by the SlowMist security team, the official 1inch Discord appears to have been hacked, and phishing links have been posted. Please be cautious with your funds.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/MistTrack_io/status/1828643547710701762"
+    ]
+  },
+  {
+    "event_date": "2024-07-25",
+    "target": "MonoSwap",
+    "slowmist_attack_method": "Malware Attack",
+    "reported_loss_usd": 1300000.0,
+    "reported_loss_raw": "$ 1,300,000",
+    "description_raw": "Blast ecosystem DEX MonoSwap disclosed on Twitter that the platform has been hacked. Users are advised not to add liquidity or stake. If you have any staking positions, please withdraw them immediately to avoid financial loss.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/monoswapio/status/1816151998267547851"
+    ]
+  },
+  {
+    "event_date": "2024-07-23",
+    "target": "dYdX",
+    "slowmist_attack_method": "DNS Attack",
+    "reported_loss_usd": 31000.0,
+    "reported_loss_raw": "$ 31,000",
+    "description_raw": "On July 23, the dydx.exchange domain was discovered to have been compromised. The attacker changed the DNS Nameservers from Cloudflare to DDoS-Guard. The attacker also successfully removed the DNSSEC settings on the domain. The attacker hosted a malicious site which requested that any connected wallets transfer ETH and other ERC20 tokens to the attacker\u2019s Ethereum address. Two users were affected, resulting in a loss of approximately $31,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://dydx.exchange/blog/dns-nameserver-hijacking-postmortem"
+    ]
+  },
+  {
+    "event_date": "2024-07-18",
+    "target": "WazirX",
+    "slowmist_attack_method": "Wallet Stolen",
+    "reported_loss_usd": 230000000.0,
+    "reported_loss_raw": "$ 230,000,000",
+    "description_raw": "The cryptocurrency exchange WazirX posted preliminary investigation results of the cyber attack on Twitter, stating that one of its multisig wallets was compromised, resulting in a loss of over $230 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1813848794360139808"
+    ]
+  },
+  {
+    "event_date": "2024-06-22",
+    "target": "BtcTurk",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 90000000.0,
+    "reported_loss_raw": "$ 90,000,000",
+    "description_raw": "The Turkish cryptocurrency exchange BtcTurk has acknowledged that they suffered a hack. The exchange halted deposits and withdrawals while investigating, and said they are working with law enforcement. Furthermore, the exploiter sold substantial amounts of some cryptocurrencies, including Luna Classic, causing major price movements in those tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=btcturk-exploited-for-at-least-55-million"
+    ]
+  },
+  {
+    "event_date": "2024-06-14",
+    "target": "nftperp",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On June 14, NFT perpetual contract trading platform nftperp announced on Twitter that a critical bug had been found in the clearingHouse contract. All vulnerable contracts have been suspended until further notice. On June 15, nftperp stated that all funds lost due to the vulnerability had been successfully recovered. The developers are currently prioritizing the resumption of the contracts so trading and withdrawal can go live.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/spreekaway/status/1801410447637086285"
+    ]
+  },
+  {
+    "event_date": "2024-06-09",
+    "target": "Lykke",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 22400000.0,
+    "reported_loss_raw": "$ 22,400,000",
+    "description_raw": "Lykke, the zero-fee crypto exchange, was suspected to be exploited, which resulted in a loss of assets worth over $22.4 million. The root cause of the exploit is unknown at the moment, and the team has yet to acknowledge the occurrence of the exploit. The stolen assets include roughly 158 BTC from the Bitcoin network and over 2161 ETH from the Ethereum Mainnet, among other assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/somaxbt/status/1799812652610511043"
+    ]
+  },
+  {
+    "event_date": "2024-06-02",
+    "target": "Velocore",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 6800000.0,
+    "reported_loss_raw": "$ 6,800,000",
+    "description_raw": "DEX Velocore experienced a security breach on June 2nd, 2024, resulting in financial losses approximating $6.8 million in ETH. The primary cause of the incident was faulty logic within the velocore__execute() function of the ConstantProductPool. When a user makes a swap on Velocore, the Vault contract makes an external call to this function to calculate the result of the swap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://velocorexyz.medium.com/velocore-incident-post-mortem-6197020ec3e9"
+    ]
+  },
+  {
+    "event_date": "2024-05-31",
+    "target": "DMM Bitcoin",
+    "slowmist_attack_method": "Malware Attack",
+    "reported_loss_usd": 305000000.0,
+    "reported_loss_raw": "$ 305,000,000",
+    "description_raw": "DMM Bitcoin, a Japanese cryptocurrency exchange, announced it lost 48.2 billion yen ($305 million) worth of bitcoin (BTC) due to a hack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/articledetails/3lu51z5z.html"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Equalizer Exchange",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On May 14th, the decentralized trading protocol Equalizer Exchange within the Fantom ecosystem was suspected to have been attacked. The official team tweeted that they are investigating the incident and advised users not to interact with the Equalizer Exchange frontend. On May 15th, Equalizer Exchange announced that the domain has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Equalizer0x/status/1790245836716388554"
+    ]
+  },
+  {
+    "event_date": "2024-04-29",
+    "target": "Rain",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 14800000.0,
+    "reported_loss_raw": "$ 14,800,000",
+    "description_raw": "Crypto detective ZachXBT stated on his Telegram channel that the Middle Eastern cryptocurrency exchange Rain appears to have been hacked, resulting in a loss of $14.8 million USD. The breach occurred on April 29, 2024, when Rain's BTC, ETH, SOL, and XRP wallets experienced suspicious outflows of funds, which were quickly transferred to instant exchanges and converted into BTC and ETH.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/u54xv6ns.html"
+    ]
+  },
+  {
+    "event_date": "2024-03-31",
+    "target": "FixedFloat",
+    "slowmist_attack_method": "Third-party Vulnerability",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "FixedFloat, a decentralized exchange, tweeted that they have encountered another attack, with hackers exploiting vulnerabilities in their third-party services. The company assured that both company and user funds remain unaffected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://ff.io/en/blog/news/reasons-for-hacking"
+    ]
+  },
+  {
+    "event_date": "2024-03-20",
+    "target": "ParaSwap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 24000.0,
+    "reported_loss_raw": "$ 24,000",
+    "description_raw": "Decentralized exchange (DEX) aggregator ParaSwap announced the discovery of a critical vulnerability affecting its approved aggregation smart contract Augustus V6. This vulnerability impacts users who have authorized the Augustus V6 contract. In response, ParaSwap has temporarily halted the V6 API and employed white-hat attack methods to ensure the safety of user funds. These funds have been securely transferred to a secure wallet starting with 0x66E90 and are slated to be returned to users promptly. Additionally, ParaSwap urges users to revoke authorization for the Augustus V6 contract to mitigate potential risks. Currently, it is known that 4 addresses have been affected by this vulnerability, resulting in a total loss of approximately $24,000. ParaSwap is taking measures to address and fix this vulnerability while ensuring the safety of user funds.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/articledetails/bgv603ia.html"
+    ]
+  }
+]

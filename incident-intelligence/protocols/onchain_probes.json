@@ -1,0 +1,3820 @@
+{
+ "percent-finance": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0190bF688fF57B935e99487AaceBAccf450C5D4f",
+     "code_size": 4656,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x79faee4b277d07ce23e2387ef67ef45acc62f156",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x23b53026187626Ed8488e119767ACB2Fe5F8de4e",
+     "code_size": 4656,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x79faee4b277d07ce23e2387ef67ef45acc62f156",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x41284a88d970d3552a26fae680692ed40b34010c",
+     "code_size": 22537,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x45f157b3d3d7c415a0e40012d64465e3a0402c64",
+     "code_size": 21889,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x5859D111210dd9FE6F11502b65C1BF26a46018d2",
+     "code_size": 4656,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x79faee4b277d07ce23e2387ef67ef45acc62f156",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x8124502fB129eB1B0052725CfD126e8EB0975ab1",
+     "code_size": 4656,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x79faee4b277d07ce23e2387ef67ef45acc62f156",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "sumer.money": {
+  "deployment": {
+   "chain_probed": "berachain",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  },
+  "compound": {
+   "registry_key": "sumer",
+   "comptrollers": [
+    "0x15B5220024c3242F7D61177D6ff715cfac4909eD",
+    "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA",
+    "0x2d9b96648C784906253c7FA94817437EF59Cf226",
+    "0x60A4570bE892fb41280eDFE9DB75e1a62C70456F",
+    "0x611375907733D9576907E125Fb29704712F0BAfA",
+    "0x7f5a7aE2688A7ba6a9B36141335044c058a08b3E",
+    "0x98Ec4C9605D69083089eCAf353037b40017b758e",
+    "0xAbcdc5827f92525F56004540459045Ec3e432ebF",
+    "0xB2fF02eEF85DC4eaE95Ab32AA887E0cC69DF8d8E",
+    "0xBfb69860C91A22A2287df1Ff3Cdf0476c5aab24A",
+    "0xcB4cdDA50C1B6B0E33F544c98420722093B7Aa88",
+    "0xdD9C863197df28f47721107f94eb031b548B5e48",
+    "0xe6099D924efEf37845867D45E3362731EaF8A98D"
+   ],
+   "registry_flags": [],
+   "markets": [
+    {
+     "chain": "berachain",
+     "comptroller": "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA",
+     "cToken": "0xe19fd48c972e2db074c4b0b29ff2f0d3e1aefe52",
+     "exchangeRateStored": 1003704376945728094,
+     "totalSupply": null,
+     "getCash": 3251229605,
+     "totalBorrows": 34908001,
+     "supplyCap": null
+    },
+    {
+     "chain": "berachain",
+     "comptroller": "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA",
+     "cToken": "0xb2ff02eef85dc4eae95ab32aa887e0cc69df8d8e",
+     "exchangeRateStored": 1007553513532557551,
+     "totalSupply": 2942003922022359308086,
+     "getCash": 2390008889789943500516,
+     "totalBorrows": null,
+     "supplyCap": null
+    },
+    {
+     "chain": "berachain",
+     "comptroller": "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA",
+     "cToken": "0x10a2e256bed7b3c49c151ad1bad01f4936fc9276",
+     "exchangeRateStored": 1000636159485519353,
+     "totalSupply": 10131076412857876351,
+     "getCash": 10090862821276803587,
+     "totalBorrows": null,
+     "supplyCap": null
+    },
+    {
+     "chain": "berachain",
+     "comptroller": "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA",
+     "cToken": "0xb1fdc3f660b0953253141b2509c43014d5d3d733",
+     "exchangeRateStored": 1001337586171416812,
+     "totalSupply": 9719,
+     "getCash": 9494,
+     "totalBorrows": null,
+     "supplyCap": null
+    },
+    {
+     "chain": "berachain",
+     "comptroller": "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA",
+     "cToken": "0x163cebbd83a4e2821ff06c9b0707a8a64fec0abc",
+     "exchangeRateStored": 1000000000000000000,
+     "totalSupply": 0,
+     "getCash": 0,
+     "totalBorrows": null,
+     "supplyCap": null
+    },
+    {
+     "chain": "berachain",
+     "comptroller": "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA",
+     "cToken": "0xa6ae238d9caf65dfa67670fde3156efee9334488",
+     "exchangeRateStored": 1000000000000000000,
+     "totalSupply": 0,
+     "getCash": 0,
+     "totalBorrows": null,
+     "supplyCap": null
+    }
+   ],
+   "markets_by_comptroller": {
+    "0x15B5220024c3242F7D61177D6ff715cfac4909eD": {
+     "chain": "ethereum",
+     "code_size": 1901,
+     "markets": 0
+    },
+    "0x16C7d1F9EA48F7DE5E8bc3165A04E8340Da574fA": {
+     "chain": "berachain",
+     "code_size": 1919,
+     "markets": 11
+    },
+    "0x2d9b96648C784906253c7FA94817437EF59Cf226": {
+     "chain": "berachain",
+     "code_size": 1919,
+     "markets": 0
+    },
+    "0x60A4570bE892fb41280eDFE9DB75e1a62C70456F": {
+     "chain": "base",
+     "code_size": 23552,
+     "markets": 0
+    }
+   },
+   "chains_tried": [
+    "berachain",
+    "core",
+    "arbitrum",
+    "base",
+    "ethereum"
+   ],
+   "market_source": {
+    "chain": "berachain",
+    "address": "0xe19fd48c972e2db074c4b0b29ff2f0d3e1aefe52",
+    "name": "SumerProxy",
+    "verified": true,
+    "has_getCashPrior_balanceOf": true,
+    "has_balanceOf_this_in_cash_path": true,
+    "has_internal_cash_counter": false,
+    "has_exchange_rate_cap": false,
+    "mentions_supply_cap": true,
+    "source_chars": 31775,
+    "implementation_reviewed": true,
+    "implementation_names": [
+     "CErc20"
+    ]
+   },
+   "status": "PROBED",
+   "implementation_review": [
+    {
+     "cToken": "0xe19fd48c972e2db074c4b0b29ff2f0d3e1aefe52",
+     "chain": "berachain",
+     "implementation": "0x313ba7e5508e3deb17cd5aba9d7a1b15bde77879",
+     "resolved_via": "erc1967 slot",
+     "implementation_name": "CErc20",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": true,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": true,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": false,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": true,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 131141
+     }
+    },
+    {
+     "cToken": "0xb2ff02eef85dc4eae95ab32aa887e0cc69df8d8e",
+     "chain": "berachain",
+     "implementation": "0x313ba7e5508e3deb17cd5aba9d7a1b15bde77879",
+     "resolved_via": "erc1967 slot",
+     "implementation_name": "CErc20",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": true,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": true,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": false,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": true,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 131141
+     }
+    },
+    {
+     "cToken": "0x10a2e256bed7b3c49c151ad1bad01f4936fc9276",
+     "chain": "berachain",
+     "implementation": "0x313ba7e5508e3deb17cd5aba9d7a1b15bde77879",
+     "resolved_via": "erc1967 slot",
+     "implementation_name": "CErc20",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": true,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": true,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": false,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": true,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 131141
+     }
+    },
+    {
+     "cToken": "0xb1fdc3f660b0953253141b2509c43014d5d3d733",
+     "chain": "berachain",
+     "implementation": "0x313ba7e5508e3deb17cd5aba9d7a1b15bde77879",
+     "resolved_via": "erc1967 slot",
+     "implementation_name": "CErc20",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": true,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": true,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": false,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": true,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 131141
+     }
+    }
+   ]
+  }
+ },
+ "feather": {
+  "compound": {
+   "comptrollers": [],
+   "registry_key": "feather",
+   "registry_flags": [],
+   "markets": [],
+   "status": "NO_COMPTROLLER_OR_CHAIN"
+  },
+  "deployment": {
+   "chain_probed": "celo",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "granary-finance": {
+  "deployment": {
+   "chain_probed": "optimism",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  },
+  "aave": {
+   "registry_key": "the-granary",
+   "addresses_providers": [
+    "0x773E0277667F0c38d3Ca2Cf771b416bfd065da83",
+    "0xC043BA54F34C9fb3a0B45d22e2Ef1f171272Bc9D",
+    "0x872B9e8aea5D65Fbf29b8B05bfA4AA3fE94cC11f",
+    "0x5C93B799D31d3d6a7C977f75FDB88d069565A55b",
+    "0x37133A8dCA96400c249102E59B11e25b0F663Ee0",
+    "0x512f582fFCCF3C14bD872152EeAe60866dCB2A1e",
+    "0x7c8E7536c5044E1B3693eB564C6dE3a3CE58bbDa"
+   ],
+   "providers": [
+    {
+     "addressesProvider": "0x773E0277667F0c38d3Ca2Cf771b416bfd065da83",
+     "status": "NO_CODE_ON_TRIED_CHAINS"
+    },
+    {
+     "addressesProvider": "0xC043BA54F34C9fb3a0B45d22e2Ef1f171272Bc9D",
+     "chain": "arbitrum",
+     "code_size": 6922,
+     "priceOracle": null,
+     "pool": null,
+     "owner": "0xe027880ceb8114f2e367211df977899d00e66138",
+     "reserve_count": 0,
+     "reserves_sample": [],
+     "status": "OK"
+    },
+    {
+     "addressesProvider": "0x872B9e8aea5D65Fbf29b8B05bfA4AA3fE94cC11f",
+     "chain": "arbitrum",
+     "code_size": 10423,
+     "priceOracle": null,
+     "pool": null,
+     "owner": "0xe027880ceb8114f2e367211df977899d00e66138",
+     "reserve_count": 0,
+     "reserves_sample": [],
+     "status": "OK"
+    },
+    {
+     "addressesProvider": "0x5C93B799D31d3d6a7C977f75FDB88d069565A55b",
+     "chain": "bsc",
+     "code_size": 2153,
+     "priceOracle": null,
+     "pool": null,
+     "owner": "0x0ce5e78139090cbf36fc6fb7f655204a981907e2",
+     "reserve_count": 0,
+     "reserves_sample": [],
+     "status": "OK"
+    },
+    {
+     "addressesProvider": "0x37133A8dCA96400c249102E59B11e25b0F663Ee0",
+     "chain": "bsc",
+     "code_size": 15891,
+     "priceOracle": null,
+     "pool": null,
+     "owner": null,
+     "reserve_count": 0,
+     "reserves_sample": [],
+     "status": "OK"
+    }
+   ],
+   "chains_tried": [
+    "optimism",
+    "metis",
+    "arbitrum",
+    "bsc",
+    "avalanche"
+   ],
+   "status": "PROVIDER_UNRESPONSIVE"
+  }
+ },
+ "pac-finance": {
+  "deployment": {
+   "chain_probed": "blast",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  },
+  "dead_adapter": {
+   "key": "pac-finance",
+   "deadFrom": "2025-03-01",
+   "hallmarks": null,
+   "source": "DefiLlama registries/deadAdapters.json"
+  }
+ },
+ "alpaca-finance-2.0": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "sentora": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x13DE0cEE0B83562CBfD46682e10FfA4E3c5090e1",
+     "code_size": 23,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x13cc1b39cb259ba10cd174eae42012e698ed7c51",
+     "code_size": 7514,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x3cc0d33b1aeac3d23ea89214b3ac5b4607032167",
+     "code_size": 2001,
+     "erc1967_implementation": "0x4eac314be8fec32bfe8f7189040b64e050e801ab",
+     "erc1967_admin": "0x54286709668e7545cb92856c2df90aac0f08f124",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": "0x71e9c31ec170a0659d1b135d2468eab757c790ab",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x63d124cf1afc22f0ccea376168200508d2a0868e",
+     "code_size": 7514,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "gauntlet": {
+  "deployment": {
+   "chain_probed": "base",
+   "addresses_probed": [
+    {
+     "address": "0x0baafdbe8a709f5d9d586db916e907f82f2d474d",
+     "code_size": 14024,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x3e6049f23adbcbc0a0298d38e6414832ecbe5ae5",
+     "owner_is_zero": false,
+     "paused": false
+    },
+    {
+     "address": "0x280218bcdef1cee7036a884f61baccf5f935fd87",
+     "code_size": 14024,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x36d9be7fa9e6582280262750059d30dfe0292fd5",
+     "owner_is_zero": false,
+     "paused": false
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "stake-dao": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0C30476f66034E11782938DF8e4384970B6c9e8a",
+     "code_size": 3620,
+     "erc1967_implementation": "0xe4c978731617096d04ea271a2499cf48b99cdc3e",
+     "erc1967_admin": "0xfe612c237a81527a86f2cac1fd19939cf4f91b9b",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x20D1b558Ef44a6e23D9BF4bf8Db1653626e642c3",
+     "code_size": 11855,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xb36a0671b3d49587236d7833b01e79798175875f",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x58900d761Ae3765B75DDFc235c1536B527F25d8F",
+     "code_size": 45,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x73968b9a57c6E53d41345FD57a6E6ae27d6CDB2F",
+     "code_size": 3666,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xfea5e213bbd81a8a94d0e1edb09dbd7ceab61e1c",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x98b540fa89690969D111D045afCa575C91519B1A",
+     "code_size": 23635,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xaC14864ce5A98aF3248Ffbf549441b04421247D3",
+     "code_size": 5725,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xb36a0671b3d49587236d7833b01e79798175875f",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "agave": {
+  "deployment": {
+   "chain_probed": "xdai",
+   "addresses_probed": [
+    {
+     "address": "0x24dCbd376Db23e4771375092344f5CbEA3541FC0",
+     "code_size": 6961,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x3a97704a1b25F08aa230ae53B352e2e72ef52843",
+     "code_size": 6141,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x4BaacD04B13523D5e81f398510238E7444E11744",
+     "code_size": 2153,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": "0x70225281599ba586039e7bd52736681dff6c2fc4",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x610525b415c1BFAeAB1a3fc3d85D87b92f048221",
+     "code_size": 2309,
+     "erc1967_implementation": "0x2e91cd1bf5ab2104633112ef35a7eb6998ec2695",
+     "erc1967_admin": "0xdead00000000000000000000000000000000dead",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0xa5E80AEAa020Ae41b1cBEe75dE7826297F7D803E",
+     "code_size": 2153,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": "0x79c815a50f2f0cb91772945d94fc65371f5d9881",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0xa874f66342a04c24b213BF0715dFf18818D24014",
+     "code_size": 6961,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "flux-finance": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x004c0908518e19aa8b27a55c171564097fa3c354",
+     "code_size": 20277,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x024510151204DeC56Cc4D54ed064f62efAC264d5",
+     "code_size": 2141,
+     "erc1967_implementation": "0x0c96e50e4c3a369ab2eab98e01dff752d6868663",
+     "erc1967_admin": "0xa120d15bb37e1155152518b6368bf6217313cf74",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  },
+  "compound": {
+   "registry_key": "fluxfinance",
+   "comptrollers": [
+    "0x95Af143a021DF745bc78e845b54591C53a8B3A51"
+   ],
+   "registry_flags": [],
+   "markets": [
+    {
+     "chain": "ethereum",
+     "comptroller": "0x95Af143a021DF745bc78e845b54591C53a8B3A51",
+     "cToken": "0x1dd7950c266fb1be96180a8fdb0591f70200e018",
+     "exchangeRateStored": 199999999999991169553513242,
+     "totalSupply": 1681697808629403,
+     "getCash": 336339561725865749857494,
+     "totalBorrows": 0,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x95Af143a021DF745bc78e845b54591C53a8B3A51",
+     "cToken": "0x465a5a630482f3abd6d3b84b39b29b07214d19e5",
+     "exchangeRateStored": 232849911452004,
+     "totalSupply": 48292401307100507,
+     "getCash": 2591849612483,
+     "totalBorrows": 8653031755680,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x95Af143a021DF745bc78e845b54591C53a8B3A51",
+     "cToken": "0xe2ba8693ce7474900a045757fe0efca900f6530b",
+     "exchangeRateStored": 233097642990405361919548066,
+     "totalSupply": 39663343730741828,
+     "getCash": 756032420998713856844574,
+     "totalBorrows": 8489399515755477463309800,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x95Af143a021DF745bc78e845b54591C53a8B3A51",
+     "cToken": "0x81994b9607e06ab3d5cf3afff9a67374f05f27d7",
+     "exchangeRateStored": 232859891793787,
+     "totalSupply": 83130991844923120,
+     "getCash": 2071148218282,
+     "totalBorrows": 17286725547437,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x95Af143a021DF745bc78e845b54591C53a8B3A51",
+     "cToken": "0x1c9a2d6b33b4826757273d47ebee0e2dddcd978b",
+     "exchangeRateStored": 213595815895170998619989480,
+     "totalSupply": 2778561907922,
+     "getCash": 589167447409912926264,
+     "totalBorrows": 4321750327929658008,
+     "supplyCap": null
+    }
+   ],
+   "markets_by_comptroller": {
+    "0x95Af143a021DF745bc78e845b54591C53a8B3A51": {
+     "chain": "ethereum",
+     "code_size": 1492,
+     "markets": 5
+    }
+   },
+   "chains_tried": [
+    "ethereum"
+   ],
+   "market_source": {
+    "chain": "ethereum",
+    "address": "0x1dd7950c266fb1be96180a8fdb0591f70200e018",
+    "name": "CErc20DelegatorKYC",
+    "verified": true,
+    "has_getCashPrior_balanceOf": true,
+    "has_balanceOf_this_in_cash_path": true,
+    "has_internal_cash_counter": false,
+    "has_exchange_rate_cap": false,
+    "mentions_supply_cap": false,
+    "source_chars": 40003,
+    "implementation_reviewed": true,
+    "implementation_names": [
+     "CCashDelegate",
+     "CTokenDelegate"
+    ]
+   },
+   "status": "PROBED",
+   "implementation_review": [
+    {
+     "cToken": "0x1dd7950c266fb1be96180a8fdb0591f70200e018",
+     "chain": "ethereum",
+     "implementation": "0x159d359b55a6d0cbe9b306862d13515fa1992d0a",
+     "resolved_via": "implementation()",
+     "implementation_name": "CCashDelegate",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": true,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": true,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": false,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": false,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 96924
+     }
+    },
+    {
+     "cToken": "0x465a5a630482f3abd6d3b84b39b29b07214d19e5",
+     "chain": "ethereum",
+     "implementation": "0xb521dcf5b12e878811e079c2159ec56d5edafbc5",
+     "resolved_via": "implementation()",
+     "implementation_name": "CTokenDelegate",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": true,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": true,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": false,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": false,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 96920
+     }
+    },
+    {
+     "cToken": "0xe2ba8693ce7474900a045757fe0efca900f6530b",
+     "chain": "ethereum",
+     "implementation": "0x690ef7cd8af50179fbbd09abc4017e59c2ae7d82",
+     "resolved_via": "implementation()",
+     "implementation_name": "CTokenDelegate",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": true,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": true,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": false,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": false,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 96920
+     }
+    },
+    {
+     "cToken": "0x81994b9607e06ab3d5cf3afff9a67374f05f27d7",
+     "chain": "ethereum",
+     "implementation": "0x48a56c40ec7458252b4fdcd7772463278bfbe6bf",
+     "resolved_via": "implementation()",
+     "implementation_name": "CTokenDelegate",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": true,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": true,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": false,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": false,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 96920
+     }
+    }
+   ]
+  }
+ },
+ "clearstar": {
+  "curator": {
+   "registry_key": "clearstar",
+   "curator_owner_addresses": [
+    "0x30988479C2E6a03E7fB65138b94762D41a733458",
+    "0x829A13850b684A575C0580a83322890e19c5eFaa"
+   ],
+   "declared_vaults": [
+    "0x1aEadA3C251215f1294720B80FcB3D1D005F3585",
+    "0x53184aDaBF312b490BF1EbcFdC896FEfF6019a14",
+    "0xE8dd6A1e13244A27bDaa19CcBf33013647C675d1"
+   ],
+   "declared_vault_count": 3,
+   "vault_reads": [],
+   "chains_tried": [
+    "base",
+    "ethereum",
+    "arbitrum",
+    "unichain",
+    "polygon"
+   ],
+   "status": "VAULTS_UNRESPONSIVE"
+  },
+  "deployment": {
+   "chain_probed": "base",
+   "addresses_probed": [
+    {
+     "address": "0x0000aeB716a0DF7A9A1AAd119b772644Bc089dA8",
+     "code_size": 171,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x01a6ff6eb333c1393ef424f5894b18367f1499a8",
+     "code_size": 45,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "rockawayx": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x030b69280892c888670EDCDCD8B69Fd8026A0BF3",
+     "code_size": 2227,
+     "erc1967_implementation": "0x4fe7f62b2f4ef077aed8f458c8b4652f5de8080f",
+     "erc1967_admin": "0xbf25b58cb8dfad688f7bcb2b87d71c23a6600aac",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": false
+    },
+    {
+     "address": "0x0F0a9d3F0bc6006143c96E6995572b51413CB3c4",
+     "code_size": 130,
+     "erc1967_implementation": "0x8e2af6538ac78d62fcf954ae2c83a2b4eb5c7121",
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": false
+    },
+    {
+     "address": "0x3BD9AdAE6643dDcddD02746b8B60075E56DF9478",
+     "code_size": 21808,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xbbacdcfb9691dfa1066ab29edfcc4a73f6def918",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x5f829B1B473cBA86838E1B7BB7E144DbDE228e21",
+     "code_size": 21808,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xbbacdcfb9691dfa1066ab29edfcc4a73f6def918",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "singular-farm": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x23894C0ce2d79B79Ea33A4D02e67ae843Ef6e563",
+     "code_size": 20359,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x31b05a72037e91b86393a0f935fe7094141ba0a7",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x31B05a72037E91B86393a0f935fE7094141ba0a7",
+     "code_size": 16886,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x12d6bda2b7108634313bf52d0ac2a6e70a372741",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "multichain": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0xc342774492b54ce5f8ac662113ed702fc1b34972",
+     "code_size": 10895,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x56de05b6a7cdf80feee17ad3bdf80ad72603b666",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "curve-llamalend": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0xeA6876DDE9e3467564acBeE1Ed5bac88783205E0",
+     "code_size": 5733,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "grove-finance": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x1DB91ad50446a671e2231f77e00948E68876F812",
+     "code_size": 1001,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x491EDFB0B8b608044e227225C715981a30F3A44E",
+     "code_size": 2274,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x51C2d74017390CbBd30550179A16A1c28F7210fc",
+     "code_size": 170,
+     "erc1967_implementation": "0x77684815f44b28726bc3efa4471b88ef3b93feb0",
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": true,
+     "owner": "0x59c1eacec450c57dcb9b8725d0f96635c2b676ee",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x5a0f93d040de44e78f251b03c43be9cf317dcf64",
+     "code_size": 9417,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "coinbase-bridge": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "ccip": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "delea": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "tulipa-capital": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0000aeB716a0DF7A9A1AAd119b772644Bc089dA8",
+     "code_size": 171,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  },
+  "curator": {
+   "registry_key": "tulip-capital",
+   "curator_owner_addresses": [
+    "0x59e608E4842162480591032f3c8b0aE55C98d104"
+   ],
+   "declared_vaults": [
+    "0x686c83Aa81ba206354fDcbc2cd282B4531365E29",
+    "0x6Bf340dB729d82af1F6443A0Ea0d79647b1c3DDf",
+    "0x7895a046b26cc07272b022a0c9bafc046e6f6396"
+   ],
+   "declared_vault_count": 3,
+   "vault_reads": [
+    {
+     "vault": "0x686c83Aa81ba206354fDcbc2cd282B4531365E29",
+     "chain": "ethereum",
+     "code_size": 2001,
+     "totalAssets": 53974792511106717850370,
+     "totalSupply": 54727414393865702363985,
+     "asset": "0x66a1e37c9b0eaddca17d3662d6c05f4decf3e110",
+     "owner": "0xb36ad4c19448782576b5773003ef0f9ee33e46d6",
+     "implied_share_price": 0.9862478085052133
+    },
+    {
+     "vault": "0x6Bf340dB729d82af1F6443A0Ea0d79647b1c3DDf",
+     "chain": "ethereum",
+     "code_size": 7514,
+     "totalAssets": null,
+     "totalSupply": 23130430,
+     "asset": null,
+     "owner": "0x0000000000000000000000000000000000000000",
+     "implied_share_price": null
+    },
+    {
+     "vault": "0x7895a046b26cc07272b022a0c9bafc046e6f6396",
+     "chain": "ethereum",
+     "code_size": 283,
+     "totalAssets": 0,
+     "totalSupply": 7127711412518659035381189,
+     "asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "owner": "0xa766cda5848ffd7d33ce3861f6dc0a5ee38f3550",
+     "implied_share_price": null
+    }
+   ],
+   "chains_tried": [
+    "ethereum",
+    "avalanche",
+    "berachain",
+    "bsc",
+    "base"
+   ],
+   "status": "PROBED"
+  }
+ },
+ "01": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "venus-core-pool": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x004c0908518e19aa8b27a55c171564097fa3c354",
+     "code_size": 20598,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xd4eee3d50588d7dee8dcc42635e50093e0aa8cc0",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  },
+  "compound": {
+   "registry_key": "venus",
+   "comptrollers": [
+    "0x0C7973F9598AA62f9e03B94E92C967fD5437426C",
+    "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326",
+    "0x5593FF68bE84C966821eEf5F0a988C285D5B7CeC",
+    "0x687a01ecF6d3907658f7A7c714749fAC32336D1B",
+    "0xd6e3e2a1d8d95cae355d15b3b9f8e5c2511874dd",
+    "0xddE4D098D9995B659724ae6d5E3FB9681Ac941B1",
+    "0xe22af1e6b78318e1Fe1053Edbd7209b8Fc62c4Fe",
+    "0xfd36e2c2a6789db23113685031d7f16329158384"
+   ],
+   "registry_flags": [],
+   "markets": [
+    {
+     "chain": "base",
+     "comptroller": "0x0C7973F9598AA62f9e03B94E92C967fD5437426C",
+     "cToken": "0x7bbd1005bb24ec84705b04e1f2dfccad533b6d72",
+     "exchangeRateStored": 1001052952764166663,
+     "totalSupply": 19015098,
+     "getCash": 18864696,
+     "totalBorrows": 170394,
+     "supplyCap": null
+    },
+    {
+     "chain": "base",
+     "comptroller": "0x0C7973F9598AA62f9e03B94E92C967fD5437426C",
+     "cToken": "0xeb8a79bd44cf4500943bf94a2b4434c95c008599",
+     "exchangeRateStored": 10095729731373446170926400910,
+     "totalSupply": 474694989,
+     "getCash": 4536053070417475741,
+     "totalBorrows": 256331991143597963,
+     "supplyCap": null
+    },
+    {
+     "chain": "base",
+     "comptroller": "0x0C7973F9598AA62f9e03B94E92C967fD5437426C",
+     "cToken": "0x3cb752d175740043ec463673094e06acda2f9a2e",
+     "exchangeRateStored": 10364240269692389,
+     "totalSupply": 802084094317,
+     "getCash": 3531192447,
+     "totalBorrows": 4781317074,
+     "supplyCap": null
+    },
+    {
+     "chain": "base",
+     "comptroller": "0x0C7973F9598AA62f9e03B94E92C967fD5437426C",
+     "cToken": "0x75201d81b3b0b9d17b179118837be37f64fc4930",
+     "exchangeRateStored": 10000022826680231226252011597,
+     "totalSupply": 4221147,
+     "getCash": 42211566354772778,
+     "totalBorrows": 0,
+     "supplyCap": null
+    },
+    {
+     "chain": "base",
+     "comptroller": "0x0C7973F9598AA62f9e03B94E92C967fD5437426C",
+     "cToken": "0x133d3bcd77158d125b75a17cb517ffd4b4be64c5",
+     "exchangeRateStored": 10001635681870008584744829758,
+     "totalSupply": 289021986,
+     "getCash": 2889140707579802916,
+     "totalBorrows": 1543668677677018,
+     "supplyCap": null
+    },
+    {
+     "chain": "arbitrum",
+     "comptroller": "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326",
+     "cToken": "0xada57840b372d4c28623e87fc175de8490792811",
+     "exchangeRateStored": 1005638296563992530,
+     "totalSupply": 546165489,
+     "getCash": 523360009,
+     "totalBorrows": 25884923,
+     "supplyCap": null
+    },
+    {
+     "chain": "arbitrum",
+     "comptroller": "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326",
+     "cToken": "0x68a34332983f4bf866768dd6d6e638b02ef5e1f0",
+     "exchangeRateStored": 10247792700352001191194505227,
+     "totalSupply": 7116862916,
+     "getCash": 16357706281525138426,
+     "totalBorrows": 56574429558465518998,
+     "supplyCap": null
+    },
+    {
+     "chain": "arbitrum",
+     "comptroller": "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326",
+     "cToken": "0x7d8609f8da70ff9027e9bc5229af4f6727662707",
+     "exchangeRateStored": 11087043123715954,
+     "totalSupply": 23806206953269,
+     "getCash": 115477478857,
+     "totalBorrows": 148425538758,
+     "supplyCap": null
+    },
+    {
+     "chain": "arbitrum",
+     "comptroller": "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326",
+     "cToken": "0xb9f9117d4200dc296f9acd1e8be1937df834a2fd",
+     "exchangeRateStored": 11099034499365123,
+     "totalSupply": 24459967054209,
+     "getCash": 105171838865,
+     "totalBorrows": 166255667031,
+     "supplyCap": null
+    },
+    {
+     "chain": "arbitrum",
+     "comptroller": "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326",
+     "cToken": "0xaeb0fed69354f34831fe1d16475d9a83ddacada6",
+     "exchangeRateStored": 10093637155495559953447966965,
+     "totalSupply": 147438728303367,
+     "getCash": 1465434447653712886336275,
+     "totalBorrows": 22756693507800824539552,
+     "supplyCap": null
+    },
+    {
+     "chain": "arbitrum",
+     "comptroller": "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326",
+     "cToken": "0x9bb8cec9c0d46f53b4f2173bb2a0221f66c353cc",
+     "exchangeRateStored": 10000000000122110659511396486,
+     "totalSupply": 8118605965366,
+     "getCash": 81186059654651368328744,
+     "totalBorrows": 0,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x687a01ecF6d3907658f7A7c714749fAC32336D1B",
+     "cToken": "0x8716554364f20bca783cb2baa744d39361fd1d8d",
+     "exchangeRateStored": 1009543034271077053,
+     "totalSupply": 415860814,
+     "getCash": 419662333,
+     "totalBorrows": 167055,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x687a01ecF6d3907658f7A7c714749fAC32336D1B",
+     "cToken": "0x7c8ff7d2a1372433726f879bd945ffb250b94c65",
+     "exchangeRateStored": 10211355712361999217451890201,
+     "totalSupply": 38337834600,
+     "getCash": 256639709135556873098,
+     "totalBorrows": 134842080510508240077,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x687a01ecF6d3907658f7A7c714749fAC32336D1B",
+     "cToken": "0x17c07e0c232f2f80dfdbd7a95b942d893a4c5acb",
+     "exchangeRateStored": 11269151360832202,
+     "totalSupply": 33593618865817,
+     "getCash": 87298471414,
+     "totalBorrows": 82619025645,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x687a01ecF6d3907658f7A7c714749fAC32336D1B",
+     "cToken": "0x8c3e3821259b82ffb32b2450a95d2dcbf161c24e",
+     "exchangeRateStored": 11269462384591543,
+     "totalSupply": 90646949641336,
+     "getCash": 611347773769,
+     "totalBorrows": 404326260884,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x687a01ecF6d3907658f7A7c714749fAC32336D1B",
+     "cToken": "0x672208c10aaaa2f9a6719f449c4c8227bc0bc202",
+     "exchangeRateStored": 10624518437940011612478686311,
+     "totalSupply": 50342721463,
+     "getCash": 360194807012031143246,
+     "totalBorrows": 174672365387690712864,
+     "supplyCap": null
+    },
+    {
+     "chain": "ethereum",
+     "comptroller": "0x687a01ecF6d3907658f7A7c714749fAC32336D1B",
+     "cToken": "0xd8add9b41d4e1cd64edad8722ab0ba8d35536657",
+     "exchangeRateStored": 10854353768425305022357237308,
+     "totalSupply": 527753813550,
+     "getCash": 1981939348796756766973,
+     "totalBorrows": 3746487246110511536898,
+     "supplyCap": null
+    }
+   ],
+   "markets_by_comptroller": {
+    "0x0C7973F9598AA62f9e03B94E92C967fD5437426C": {
+     "chain": "base",
+     "code_size": 332,
+     "markets": 5
+    },
+    "0x317c1A5739F39046E20b08ac9BeEa3f10fD43326": {
+     "chain": "arbitrum",
+     "code_size": 332,
+     "markets": 7
+    },
+    "0x5593FF68bE84C966821eEf5F0a988C285D5B7CeC": "NO_CODE_ON_TRIED_CHAINS",
+    "0x687a01ecF6d3907658f7A7c714749fAC32336D1B": {
+     "chain": "ethereum",
+     "code_size": 849,
+     "markets": 23
+    }
+   },
+   "chains_tried": [
+    "bsc",
+    "ethereum",
+    "arbitrum",
+    "base",
+    "unichain"
+   ],
+   "market_source": {
+    "chain": "base",
+    "address": "0x7bbd1005bb24ec84705b04e1f2dfccad533b6d72",
+    "name": "BeaconProxy",
+    "verified": true,
+    "has_getCashPrior_balanceOf": false,
+    "has_balanceOf_this_in_cash_path": true,
+    "has_internal_cash_counter": true,
+    "has_exchange_rate_cap": false,
+    "mentions_supply_cap": true,
+    "source_chars": 28895,
+    "implementation_reviewed": true,
+    "implementation_names": [
+     "VToken"
+    ]
+   },
+   "status": "PROBED",
+   "implementation_review": [
+    {
+     "cToken": "0x7bbd1005bb24ec84705b04e1f2dfccad533b6d72",
+     "chain": "base",
+     "implementation": "0x107ba74c87e75b6cc291510d3a85d0c8eaa73e82",
+     "resolved_via": "beacon 0x87a6476510368c4bfb70d04a3b0e5a881ec7f0d1",
+     "implementation_name": "VToken",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": false,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": false,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": true,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": true,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 299021
+     }
+    },
+    {
+     "cToken": "0xeb8a79bd44cf4500943bf94a2b4434c95c008599",
+     "chain": "base",
+     "implementation": "0x107ba74c87e75b6cc291510d3a85d0c8eaa73e82",
+     "resolved_via": "beacon 0x87a6476510368c4bfb70d04a3b0e5a881ec7f0d1",
+     "implementation_name": "VToken",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": false,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": false,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": true,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": true,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 299021
+     }
+    },
+    {
+     "cToken": "0x3cb752d175740043ec463673094e06acda2f9a2e",
+     "chain": "base",
+     "implementation": "0x107ba74c87e75b6cc291510d3a85d0c8eaa73e82",
+     "resolved_via": "beacon 0x87a6476510368c4bfb70d04a3b0e5a881ec7f0d1",
+     "implementation_name": "VToken",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": false,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": false,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": true,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": true,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 299021
+     }
+    },
+    {
+     "cToken": "0x75201d81b3b0b9d17b179118837be37f64fc4930",
+     "chain": "base",
+     "implementation": "0x107ba74c87e75b6cc291510d3a85d0c8eaa73e82",
+     "resolved_via": "beacon 0x87a6476510368c4bfb70d04a3b0e5a881ec7f0d1",
+     "implementation_name": "VToken",
+     "guard_review": {
+      "has_getCashPrior_balanceOf": false,
+      "has_balanceOf_this_in_cash_path": true,
+      "has_exchangeRateStoredInternal": false,
+      "cash_plus_borrows_minus_reserves": true,
+      "has_internal_cash_counter": true,
+      "has_exchange_rate_cap": false,
+      "mentions_supply_cap": true,
+      "has_sweep_or_skim_of_unaccounted": true,
+      "source_chars": 299021
+     }
+    }
+   ]
+  }
+ },
+ "ether.fi-liquid": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x04B8136820598A4e50bEe21b8b6a23fE25Df9Bd8",
+     "code_size": 7892,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x075e60550C6f77f430B284E76aF699bC31651f75",
+     "code_size": 7428,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x08c6F91e2B681FaF5e17227F2a44C307b3C1364C",
+     "code_size": 7487,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x0d05D94a5F1E76C18fbeB7A13d17C8a314088198",
+     "code_size": 6440,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x126af21dc55C300B7D0bBfC4F3898F558aE8156b",
+     "code_size": 7428,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x1D4F0F05e50312d3E7B65659Ef7d06aa74651e0C",
+     "code_size": 7428,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "guru-network-classic": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0xD600Ec98cf6418c50EE051ACE53219D95AeAa134",
+     "code_size": 22216,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "mev-capital": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0f37f1ff51fc2f8a9907ef3e226a12fdc47de4ad",
+     "code_size": 1107,
+     "erc1967_implementation": "0x0c5bc4c8406fe03214d18bbf2962ae2fa378c6f7",
+     "erc1967_admin": "0x80b394aff4c9718350e4b9ad56c0106d91f5fe06",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0fdf3b986d62be6ae1d5228e5da90ff6f00c15f6",
+     "code_size": 808,
+     "erc1967_implementation": "0xdd649adab2e67cadc2ec29d75abe73f3df08065c",
+     "erc1967_admin": "0xaeb6bdd95c502390db8f52c8909f703e9af6a346",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": true,
+     "owner": "0x9c97ae2b1baacad1240c34bf013225ee4dabedb4",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x1265a81d42d513df40d0031f8f2e1346954d665a",
+     "code_size": 19340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x38afc3aa2c76b4ca1f8e1daba68e998e1f4782db",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "shimmerbridge": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x000000000000040470635EB91b7CE4D132D616eD",
+     "code_size": 18700,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000007732aBAd9e86BDd0C3A270197EF2e1",
+     "code_size": 10573,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "etherfi-borrowing-market": {
+  "deployment": {
+   "chain_probed": "optimism",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "tau-labs": {
+  "deployment": {
+   "chain_probed": "base",
+   "addresses_probed": [
+    {
+     "address": "0x0000aeB716a0DF7A9A1AAd119b772644Bc089dA8",
+     "code_size": 171,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x01a6ff6eb333c1393ef424f5894b18367f1499a8",
+     "code_size": 45,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "saddle-finance": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x29FD31d37AB8D27f11EAB68F96424bf64231fFce",
+     "code_size": 2622,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x3f8e527af4e0c6e763e8f368ac679c44c45626ae",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x7003102c75587E8D29c56124060463Ef319407D0",
+     "code_size": 2712,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x3f8e527af4e0c6e763e8f368ac679c44c45626ae",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "ultrayield-curator": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "fassets": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "cooler-loans": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0ab87046fBb341D058F17CBC4c1133F25a20a52f",
+     "code_size": 11811,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x1e094fe00e13fd06d64eea4fb3cd912893606fe0",
+     "code_size": 14384,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xd6a6e8d9e82534bd65821142fccd91ec9cf31880",
+     "code_size": 12821,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xe6343ad0675c9b8d3f32679ae6adba0766a2ab4c",
+     "code_size": 13019,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "apx-bridge": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x0782b6d8c4551B9760e74c0545a9bCD90bdc41E5",
+     "code_size": 2141,
+     "erc1967_implementation": "0xf5bd9b192092517d60e90c9af17b69b134c4d7f8",
+     "erc1967_admin": "0x1fa3e4718168077975ff4039304cc2e19ae58c4c",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
+     "code_size": 7285,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x73feaa1ee314f8c655e354234017be2193c9e24e",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x1b6F2d3844C6ae7D56ceb3C3643b9060ba28FEb0",
+     "code_size": 6039,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": false
+    },
+    {
+     "address": "0x2c8368f8f474ed9af49b87eac77061beb986c2f1",
+     "code_size": 14216,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x75a049632d65e2e9cf7f7bbcb4488b492f64e78f",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x53e562b9b7e5e94b81f10e96ee70ad06df3d2657",
+     "code_size": 7307,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x5da29e4afe94784fde4b7a62c5cd8a8aebcfd6e4",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x5A5454A6030FB50ceb3eb78977D140198A27be5e",
+     "code_size": 680,
+     "erc1967_implementation": "0xbc76b3fd0d18c7496c0b04aea0fe7c3ed0e4d9c9",
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "rocketswap-anubis": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "empiredex": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x00000021543ed46B665A74484c82B71E4eB61e34",
+     "code_size": 6655,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0082123Cf29a85f48Cd977D3000aec145A3B452F",
+     "code_size": 4413,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x596e78f1896a7ab52c103ccc34d7bc1f4cbba69a",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "yield-basis": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x370a449FeBb9411c95bf897021377fe0B7D100c0",
+     "code_size": 7064,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "gami-labs": {
+  "compound": {
+   "comptrollers": [],
+   "registry_key": "gami-labs",
+   "registry_flags": [],
+   "markets": [],
+   "status": "NO_COMPTROLLER_OR_CHAIN"
+  },
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0000aeB716a0DF7A9A1AAd119b772644Bc089dA8",
+     "code_size": 171,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "layerzero-v2": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "steakhouse-financial": {
+  "deployment": {
+   "chain_probed": "base",
+   "addresses_probed": [
+    {
+     "address": "0x0000aeB716a0DF7A9A1AAd119b772644Bc089dA8",
+     "code_size": 171,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x01a6ff6eb333c1393ef424f5894b18367f1499a8",
+     "code_size": 45,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "justcryptos": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "orion-pools": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x3dc27D9973DFB583989B1C876e9723C32C2F9429",
+     "code_size": 1581,
+     "erc1967_implementation": "0x32be193e8a9fb1bfb4b64c01f7f754b6cf81da4e",
+     "erc1967_admin": "0x368eec4c9fdb508ee8cd9f39550b7acca9a183ec",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": "0x33459acd9ca8493c0e0163eac92a928e293b2218",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x3e902c462103D45C073826bD9d134799fb427669",
+     "code_size": 7336,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xE52cCf7B6cE4817449F2E6fA7efD7B567803E4b4",
+     "code_size": 11101,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "lista-dex": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "nerve": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3763,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "termmax": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x01D8C1e0584751085a876892151Bf8490e862E3E",
+     "code_size": 1653,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x09E01425780094a9754B2bd8A3298f73ce837CF9",
+     "code_size": 8778,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xa00d50a40b1635d293c87ba36503bd2504b5d818",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "counterstake": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "abstradex": {
+  "deployment": {
+   "chain_probed": "blast",
+   "addresses_probed": [
+    {
+     "address": "0x174c4C03DfeA09682728A5959A253bf1F7C7766F",
+     "code_size": 17871,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x174c4c03dfea09682728a5959a253bf1f7c7766f",
+     "code_size": 17871,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xA7afB6163c331DDb0845843889D6f9544328846F",
+     "code_size": 10886,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xa7afb6163c331ddb0845843889d6f9544328846f",
+     "code_size": 10886,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "merlins-seal": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x147A198d803D4a02b8bEc7CC78be1AbE0C3d93E5",
+     "code_size": 171,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x7122985656e38BDC0302Db86685bb972b145bD3C",
+     "code_size": 15517,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xc1364ad857462e1b60609d9e56b5e24c5c21a312",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "k3-capital": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0243755a22E37b835486fdAE9A839523ADABd336",
+     "code_size": 2001,
+     "erc1967_implementation": "0xa00958a1ad0d028313b1015c0562efc22b88b187",
+     "erc1967_admin": "0x57b7c03bdaff03284c90f09215a0ebc23e9b8572",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": "0xa818e7c08b8dc37a2953bc97c4f9b44c881cdd9a",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x056f3a2E41d2778D3a0c0714439c53af2987718E",
+     "code_size": 366,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": "0x29a56a1b8214d9cf7c5561811750d5cbdb45cc8e",
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x060DB084bF41872861f175d83f3cb1B5566dfEA3",
+     "code_size": 171,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "quickswap-v3": {
+  "deployment": {
+   "chain_probed": "polygon",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "poly-network": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  },
+  "dead_adapter": {
+   "key": "polynetwork",
+   "deadFrom": "2024-09-30",
+   "hallmarks": null,
+   "source": "DefiLlama registries/deadAdapters.json"
+  }
+ },
+ "tarot": {
+  "deployment": {
+   "chain_probed": "base",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "hope-collateral": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x000000000000040470635EB91b7CE4D132D616eD",
+     "code_size": 18700,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000007732aBAd9e86BDd0C3A270197EF2e1",
+     "code_size": 10573,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "synapse-cross-chain-bridge": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x4a86c01d67965f8cb3d0aaa2c655705e64097c31",
+     "code_size": 9079,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xd10ef2a513cee0db54e959ef16cac711470b62cf",
+     "code_size": 11017,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x67f60b0891ebd842ebe55e4ccca1098d7aac1a55",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "marginfi-lst": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "diamondswap": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x81a1417cbec636e631fa62b81f970a5ec23b39ca",
+     "code_size": 11288,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xE1046fcB1057ef82B68f3A6B8eBb0e411Cf334E0",
+     "code_size": 9272,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x59730c9a437fd6d245266ed1cb2162efe938c243",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "hord": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "hyperliquid-hlp": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "lighter-bridge": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x000000000000040470635EB91b7CE4D132D616eD",
+     "code_size": 18700,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000007732aBAd9e86BDd0C3A270197EF2e1",
+     "code_size": 10573,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "gearbox": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x354fe9f450F60b8547f88BE042E4A45b46128a06",
+     "code_size": 24264,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "derive-v2": {
+  "deployment": {
+   "chain_probed": "base",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "rakeoff": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "extended-perps": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x000000000000040470635EB91b7CE4D132D616eD",
+     "code_size": 18700,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000007732aBAd9e86BDd0C3A270197EF2e1",
+     "code_size": 10573,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "cbridge": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x000000000000040470635EB91b7CE4D132D616eD",
+     "code_size": 18700,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000007732aBAd9e86BDd0C3A270197EF2e1",
+     "code_size": 10573,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "near-intents": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x000000000000040470635EB91b7CE4D132D616eD",
+     "code_size": 18700,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000007732aBAd9e86BDd0C3A270197EF2e1",
+     "code_size": 10573,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "hyperlane": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "btngroup": {
+  "dead_adapter": {
+   "key": "btn-group",
+   "deadFrom": "2025-09-01",
+   "hallmarks": null,
+   "source": "DefiLlama registries/deadAdapters.json"
+  },
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "maxshot": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0xCe0F05f19845CdE36058CcFb53C755Ab8739b880",
+     "code_size": 2143,
+     "erc1967_implementation": "0xe1657d93671d0b4b7cd1abe558ed09795d3aaf7f",
+     "erc1967_admin": "0x0d8606c97a71fd79b8f9daabcd9f842dca494377",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": "0x9089ef7b48f3cdaec62ce83e05db15cce1dbee7d",
+     "owner_is_zero": false,
+     "paused": false
+    },
+    {
+     "address": "0xd507d9D4F356B84e3EEEc33eeDef85BB57f59CfB",
+     "code_size": 2143,
+     "erc1967_implementation": "0xe1657d93671d0b4b7cd1abe558ed09795d3aaf7f",
+     "erc1967_admin": "0x0d8606c97a71fd79b8f9daabcd9f842dca494377",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": "0x9089ef7b48f3cdaec62ce83e05db15cce1dbee7d",
+     "owner_is_zero": false,
+     "paused": false
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "acryptos": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "morpho-optimizer-aavev2": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x507fa343d0a90786d86c7cd885f5c49263a91ff4",
+     "code_size": 2091,
+     "erc1967_implementation": "0x4bf26012b64312b462bf70f2e42d1be8881d0f84",
+     "erc1967_admin": "0x99917ca0426fbc677e84f873fb0b726bb4799cd8",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "ichi": {
+  "deployment": {
+   "chain_probed": "base",
+   "addresses_probed": [
+    {
+     "address": "0x0248b992ac2a75294b05286E9DD3A2bD3C9CFE4B",
+     "code_size": 1839,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x7d11de61c219b70428bb3199f0dd88ba9e76bfee",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x101eB16BdbA37979a771c86e1CAAfbaDbABfc879",
+     "code_size": 23587,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": false
+    },
+    {
+     "address": "0x111111111117dC0aa78b770fA6A738034120C302",
+     "code_size": 1456,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "gmd-protocol": {
+  "deployment": {
+   "chain_probed": "arbitrum",
+   "addresses_probed": [
+    {
+     "address": "0x48c81451d1fddeca84b47ff86f91708fa5c32e93",
+     "code_size": 12809,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x4bf7a0c21660879fdd051f5ee92cd2936779ec57",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x4945970EfeEc98D393b4b979b9bE265A3aE28A8B",
+     "code_size": 6755,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x49E050dF648E9477c7545fE1779B940f879B787A",
+     "code_size": 12702,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x4bf7a0c21660879fdd051f5ee92cd2936779ec57",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x5517c5F22177BcF7b320A2A5daF2334344eFb38C",
+     "code_size": 12623,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xd70811f1e4992aa051d54e29a04c8925b32fba7d",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "thruster-v2": {
+  "deployment": {
+   "chain_probed": "blast",
+   "addresses_probed": [
+    {
+     "address": "0x37836821a2c03c171fB1a595767f4a16e2b93Fc4",
+     "code_size": 15935,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xb4A7D971D0ADea1c73198C97d7ab3f9CE4aaFA13",
+     "code_size": 15935,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "yearn-curating": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0000aeB716a0DF7A9A1AAd119b772644Bc089dA8",
+     "code_size": 171,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "beefy": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "bscswap": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x00000021543ed46B665A74484c82B71E4eB61e34",
+     "code_size": 6655,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0082123Cf29a85f48Cd977D3000aec145A3B452F",
+     "code_size": 4413,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x596e78f1896a7ab52c103ccc34d7bc1f4cbba69a",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "homora-v2": {
+  "dead_adapter": {
+   "key": "alpha-homora",
+   "deadFrom": "2025-10-11",
+   "hallmarks": [
+    [
+     "2021-02-13",
+     "37M exploit"
+    ],
+    [
+     "2021-07-14",
+     "Upgrade to V2 on ETH"
+    ]
+   ],
+   "source": "DefiLlama registries/deadAdapters.json"
+  },
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "marginfi-lending": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "ra-exchange": {
+  "deployment": {
+   "chain_probed": "fraxtal",
+   "addresses_probed": [
+    {
+     "address": "0xAAA32926fcE6bE95ea2c51cB4Fcb60836D320C42",
+     "code_size": 2420,
+     "erc1967_implementation": "0x30fde68848d4463578e971e51652602ed9825c0c",
+     "erc1967_admin": "0x8e01fc0d89b93a6447d6c6eca6fbd30e6e4a1ce3",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": "0xaaa29803885d86e8a07773c3c049fd4ef7a8fa9c",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0xaaa16c016bf556fcd620328f0759252e29b1ab57",
+     "code_size": 2420,
+     "erc1967_implementation": "0xa54419918081e5b7638884acab0415c5964b8c0f",
+     "erc1967_admin": "0x8e01fc0d89b93a6447d6c6eca6fbd30e6e4a1ce3",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": "0xaaa29803885d86e8a07773c3c049fd4ef7a8fa9c",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "vaultcraft": {
+  "deployment": {
+   "chain_probed": "arbitrum",
+   "addresses_probed": [
+    {
+     "address": "0x1F0a3bF1e4Ea8f27449AFa0a3A27eFc3817431fc",
+     "code_size": 9531,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x25172C73958064f9ABc757ffc63EB859D7dc2219",
+     "code_size": 13787,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x44a7b29335cfc61C2bEA1c48710A1fE11f4aFBa9",
+     "code_size": 9531,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "lido": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x9ee91F9f426fA633d227f7a9b000E28b9dfd8599",
+     "code_size": 2141,
+     "erc1967_implementation": "0x6c25aebd494a9984a3d7c8cf395c8713e0c74d98",
+     "erc1967_admin": "0x0833f5bd45803e05ef54e119a77e463ce6b1a963",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": false
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "base-bridge": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x000000000000040470635EB91b7CE4D132D616eD",
+     "code_size": 18700,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000007732aBAd9e86BDd0C3A270197EF2e1",
+     "code_size": 10573,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "midas-rwa": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "summer.fi-pro": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "vitex": {
+  "dead_adapter": {
+   "key": "vitex",
+   "deadFrom": "2025-03-01",
+   "hallmarks": null,
+   "source": "DefiLlama registries/deadAdapters.json"
+  },
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "deeplock": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "viva": {
+  "dead_adapter": {
+   "key": "viva",
+   "deadFrom": "2025-03-01",
+   "hallmarks": null,
+   "source": "DefiLlama registries/deadAdapters.json"
+  },
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "zircuit-staking": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+     "code_size": 2837,
+     "erc1967_implementation": "0x7159107483e623707c18c6e06cbc095bd0717783",
+     "erc1967_admin": "0xb61e0e39b6d4030c36a176f576aabe44bf59dc78",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": false
+    },
+    {
+     "address": "0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6",
+     "code_size": 8720,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xacaa4dde6c4fb90bb1948904f0308296f7c74252",
+     "owner_is_zero": false,
+     "paused": false
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "pinksale": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "avault": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "sdai": {
+  "deployment": {
+   "chain_probed": "xdai",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "pancakeswap-amm": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+     "code_size": 7285,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x73feaa1ee314f8c655e354234017be2193c9e24e",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x29115Bf4863648BB01a9cEc43d8306EC51800642",
+     "code_size": 14866,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xecc90d54b10add1ab746abe7e83abe178b72aa9e",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "stability": {
+  "deployment": {
+   "chain_probed": "sonic",
+   "addresses_probed": [
+    {
+     "address": "0x589a504f2ee9d054b483c700fa814863d639381e",
+     "code_size": 978,
+     "erc1967_implementation": "0x83c7ec7857f1b9c16e6f5fa846cd17eaa4005848",
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": true,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x7146efaab12A083b9826c66162062c21eC70fe3c",
+     "code_size": 19798,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x000000000000000000000000000000000000000000000000ffffffffffffffff",
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "uniswap-v2": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
+     "code_size": 13859,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "armada": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "bouncebit-cedefi-yield": {
+  "deployment": {
+   "chain_probed": "binance",
+   "addresses_probed": [
+    {
+     "address": "0x131711b38BE467212D328269482EfF626D0Ae586",
+     "code_size": 2739,
+     "erc1967_implementation": "0x5bbab6ea55cef194e0bba9fa0d60707aab4d7d1f",
+     "erc1967_admin": "0x851a66471344e14fc9d6b5df9a6e3afdc83c2d05",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": true,
+     "owner": "0x88d0a269b924b535c96337082edf6b22d72d5ccf",
+     "owner_is_zero": false,
+     "paused": false
+    },
+    {
+     "address": "0x38D239a8D33BF7424A1Df6d39cb8523cCc25DE0e",
+     "code_size": 2739,
+     "erc1967_implementation": "0xf624426d0944fbe8ba23622bcb4a9bab5632bd76",
+     "erc1967_admin": "0x7e0629427b81f317a8026bf23d7d585046fa297f",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": true,
+     "owner": "0x88d0a269b924b535c96337082edf6b22d72d5ccf",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0x471461A60EC3855DC58E00De81E3510b8945D2f9",
+     "code_size": 2739,
+     "erc1967_implementation": "0xbd2a61dbd141bc8dc5121af5ba2767013b8e13eb",
+     "erc1967_admin": "0x7e0629427b81f317a8026bf23d7d585046fa297f",
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "0x0000000000000000000000000000000000000000000000000000000000000001",
+     "is_proxy": true,
+     "owner": "0x88d0a269b924b535c96337082edf6b22d72d5ccf",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "splice-finance": {
+  "deployment": {
+   "chain_probed": "blast",
+   "addresses_probed": [
+    {
+     "address": "0x96A6C433078059577F0CEB707d596A5F81d64375",
+     "code_size": 4339,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": "Max calls per sec rate limit reached (3/sec)",
+     "is_proxy": true,
+     "owner": "0x88653cb81db25da4136448bdf561b41b77b052c4",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0xf87E18913f7143E7C7eFee714813ABbC8e0E34bf",
+     "code_size": 4266,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": true,
+     "owner": "0x04d440ce29fec9a47ed471ff0dc7d002caadbc66",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "raydium-amm": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "kaio": {
+  "deployment": {
+   "chain_probed": "avalanche",
+   "addresses_probed": [],
+   "adapter_status": "READ",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "polynomial-trade": {
+  "dead_adapter": {
+   "key": "polynomial-trade",
+   "deadFrom": "2026-03-02",
+   "hallmarks": [
+    [
+     "2023-03-27",
+     "Trade Launch"
+    ],
+    [
+     "2024-08-21",
+     "Polynomial Trade Launch"
+    ],
+    [
+     "2025-05-13",
+     "Multicollateral Launch"
+    ],
+    [
+     "2026-02-13",
+     "winddown announced"
+    ]
+   ],
+   "source": "DefiLlama registries/deadAdapters.json"
+  },
+  "deployment": {
+   "chain_probed": "optimism",
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_LIVE_CODE_AT_ADAPTER_ADDRESSES"
+  }
+ },
+ "nado-spot": {
+  "deployment": {
+   "chain_probed": null,
+   "addresses_probed": [],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ },
+ "pickle": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5",
+     "code_size": 3647,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0xbd17b1ce622d73bd438b9e658aca5996dc394b0d",
+     "owner_is_zero": false,
+     "paused": null
+    },
+    {
+     "address": "0xEd4064f376cB8d68F770FB1Ff088a3d0F3FF5c4d",
+     "code_size": 3124,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xbBCf169eE191A1Ba7371F30A1C344bFC498b29Cf",
+     "code_size": 12866,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xdc98556Ce24f007A5eF6dC1CE96322d65832A819",
+     "code_size": 11293,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0xfAA267C3Bb25a82CFDB604136a29895D30fd3fd8",
+     "code_size": 9721,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "piedao": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x0327112423f3a68efdf1fcf402f6c5cb9f7c33fd",
+     "code_size": 3373,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0c4Ff8982C66cD29eA7eA96d985f36aE60b85B1C",
+     "code_size": 12533,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x17525E4f4Af59fbc29551bC4eCe6AB60Ed49CE31",
+     "code_size": 1416,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x1d616dad84dd0b3ce83e5fe518e90617c7ae3915",
+     "code_size": 10193,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x33e18a092a93ff21ad04746c7da12e35d34dc7c4",
+     "code_size": 1416,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": true,
+     "paused": null
+    },
+    {
+     "address": "0x3A05D2394F7241e00F4ae90A1f14D9c9c48A1E9B",
+     "code_size": 2030,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": "0x6458a23b020f489651f2777bd849dded34dfccd2",
+     "owner_is_zero": false,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ",
+   "status": "PROBED"
+  }
+ },
+ "tornado-cash": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [
+    {
+     "address": "0x000000000000040470635EB91b7CE4D132D616eD",
+     "code_size": 18700,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000000008882D72EfA6cCE4B6a40b24C860",
+     "code_size": 12724,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
+     "code_size": 3340,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    },
+    {
+     "address": "0x00000000007732aBAd9e86BDd0C3A270197EF2e1",
+     "code_size": 10573,
+     "erc1967_implementation": null,
+     "erc1967_admin": null,
+     "erc1967_beacon": null,
+     "oz5_initializable_slot": null,
+     "is_proxy": false,
+     "owner": null,
+     "owner_is_zero": null,
+     "paused": null
+    }
+   ],
+   "adapter_status": "READ_VIA_REGISTRY",
+   "status": "PROBED"
+  }
+ },
+ "coin8": {
+  "deployment": {
+   "chain_probed": "ethereum",
+   "addresses_probed": [],
+   "adapter_status": "ADAPTER_MISSING",
+   "status": "NO_ADDRESSES_OR_CHAIN"
+  }
+ }
+}

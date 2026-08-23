@@ -1,0 +1,39 @@
+{
+  "tag": "Polygon",
+  "category_filter": "Polygon",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:17:28Z",
+      "sha256": "3488b9ef47c66991c0e6345812206e0db38543d4da05670e71077ed53cfe8645",
+      "bytes": 26129,
+      "snapshot": "Polygon_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 5,
+      "rows_older_than_window": 15,
+      "first_date": "2022-05-14",
+      "last_date": "2026-06-25",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:17:30Z",
+      "sha256": "c3ee1ad0ced4d3f7bd355187d66fec8950acff69c0f7e4d17b84ba1cc1d0d8e0",
+      "bytes": 13789,
+      "snapshot": "Polygon_page_002.html",
+      "rows_parsed": 9,
+      "rows_in_window": 0,
+      "rows_older_than_window": 9,
+      "first_date": "2021-04-20",
+      "last_date": "2021-10-21",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 29
+}

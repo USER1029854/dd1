@@ -1,0 +1,2147 @@
+[
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  },
+  {
+    "event_date": "2024-08-26",
+    "target": "ZkSync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZkSync's official Discord has been compromised, and hackers have posted a malicious link promoting a fake \"second round airdrop\" plan, falsely promising users free ZK tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/9msplk6g.html"
+    ]
+  },
+  {
+    "event_date": "2024-06-08",
+    "target": "Gemholic",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "Gemholic, a crypto project, is accused of a rug pull after moving $3.5M in recently recovered funds and vanishing from social media.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://x.com/0xAA_Science/status/1799333616767635514"
+    ]
+  },
+  {
+    "event_date": "2024-04-27",
+    "target": "xBank Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 550000.0,
+    "reported_loss_raw": "$ 550,000",
+    "description_raw": "According to feedback from multiple community members, the zkSync ecosystem lending platform @xBankFinance is suspected of a rug pull. Currently, the official account displays that it has been frozen, and the platform's liquidity is reduced to single-digit assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/366578"
+    ]
+  },
+  {
+    "event_date": "2024-04-20",
+    "target": "ZKasino",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 33000000.0,
+    "reported_loss_raw": "$ 33,000,000",
+    "description_raw": "The decentralized betting platform ZKasino is suspected to have exited. Recently, users on Twitter reported that ZKasino removed the message \"Ethereum will be returned and can be bridged back\" from the Bridge Funds interface, causing users to be unable to withdraw. Subsequently, the project team transferred the ETH assets deposited by users to the 0x791 multi-signature address, and then deposited them into the staking protocol Lido for yield farming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/j5ci23yx.html"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "ZeroLend",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The lending market ZeroLend has experienced a DDoS attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/zerolendxyz/status/1752589716837306878"
+    ]
+  },
+  {
+    "event_date": "2023-07-29",
+    "target": "Kannagi Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2130000.0,
+    "reported_loss_raw": "$ 2,130,000",
+    "description_raw": "Kannagi Finance has rug pulled, making away with up to $2.13 million in investor funds. The platform runs o the zkSync Era, which is in the race for the best Ethereum Layer 2 network. The network has deleted its official website, including social media and communication accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/zksync-era-revenue-aggregator-protocol-kannagi-finance-has-reportedly-rug-pulled-over-2-million-2023072"
+    ]
+  },
+  {
+    "event_date": "2023-07-25",
+    "target": "Eralend",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2760000.0,
+    "reported_loss_raw": "$ 2,760,000",
+    "description_raw": "On July 25th, according to reports from several users, Eralend, the lending protocol on Zksync, was attacked by lightning loans, and it is currently unable to borrow, but it can be proposed temporarily. On July 26, EraLend released the progress of the attack. EraLend stated that the attacker manipulated the price of the oracle machine, resulting in the USDC mining pool being used for about 2.76 million US dollars. All other pools remain safe and unaffected. The attackers used multiple bridges to spread the exploited funds across multiple wallets on various chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/Era_Lend/status/1683897328938389505"
+    ]
+  },
+  {
+    "event_date": "2023-06-27",
+    "target": "ZigZag",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZK Rollup Order Book DEX Protocol ZigZag tweeted, \"Our Discord has been hacked, please note that there is no airdrop activity at ZigZag at this time, please do not click on phishing links. We are working to resolve this issue and will provide an update when control is regained.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/ZigZagExchange/status/1673363843299287040"
+    ]
+  },
+  {
+    "event_date": "2023-04-26",
+    "target": "Merlin",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1820000.0,
+    "reported_loss_raw": "$ 1,820,000",
+    "description_raw": "Bobie, the founder of 0xScope, the Web3 knowledge graph protocol, tweeted that the liquidity of the zkSync ecological DEX Merlin was exhausted, and hackers stole $1.82 million in funds and bridged to Ethereum. According to analysis, this is an internal Rug Pull, and Merlin internal members maliciously used the privileges of the owner's wallet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/0xBobie/status/1651051380155744256"
+    ]
+  },
+  {
+    "event_date": "2023-04-09",
+    "target": "CoreHunter",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 510000.0,
+    "reported_loss_raw": "$ 510,000",
+    "description_raw": "On April 9th, a rug pull occurred on the ZkSync ecological project CoreHunter, and the scammers made a profit of about 510,000 US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/samurai_lit/status/1646140606333300736"
+    ]
+  },
+  {
+    "event_date": "2021-01-06",
+    "target": "ZKS",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The ZKSwap token ZKS, a decentralized exchange based on ZK Rollup, has problems due to Uniswap adding liquidity. ZKSwap officially stated that the reason for this phenomenon was that someone used scripts to brush transactions, resulting in a higher price for first adding liquidity. The project party can only sell a part of ZKS to return the price to normal levels. All the USDT obtained from selling ZKS has been injected into the liquidity pool and will not be withdrawn in the next 3 months",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=zkSync&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.coinonpro.com/kuaixun/178459.html"
+    ]
+  }
+]

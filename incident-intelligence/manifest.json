@@ -1,0 +1,446 @@
+{
+ "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
+ "generated_utc": "2026-08-23T03:38:57Z",
+ "safety_attestation": {
+  "production_transactions_submitted": 0,
+  "production_transactions_constructed": 0,
+  "credentials_recovered_or_used": 0,
+  "unauthorized_extraction_optimized": false,
+  "chain_access_methods": [
+   "eth_call",
+   "eth_getStorageAt",
+   "eth_getCode",
+   "explorer getsourcecode",
+   "HTTP GET"
+  ],
+  "statement": "All production-chain interaction was read-only. No transaction was constructed, signed, simulated as a broadcast against live user state, or submitted. No private key or credential was recovered, derived or used. No exploitation sequence was produced."
+ },
+ "primary_sources": {
+  "slowmist_index": {
+   "base_url": "https://hacked.slowmist.io/?c=&page=1",
+   "pages_fetched": 12,
+   "boundary_status": "BOUNDARY_PROVEN",
+   "per_page": [
+    {
+     "page": 1,
+     "url": "https://hacked.slowmist.io/?c=&page=1",
+     "retrieved_utc": "2026-08-23T02:15:36Z",
+     "sha256": "c07771a8b467998c39df10a7ec48a96c48044db532d47dec5816d7e1ac8961c2",
+     "snapshot": "sources/slowmist/all_page_001.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-07-28",
+     "last_date": "2026-08-18",
+     "status": "OK"
+    },
+    {
+     "page": 2,
+     "url": "https://hacked.slowmist.io/?c=&page=2",
+     "retrieved_utc": "2026-08-23T02:15:38Z",
+     "sha256": "e73086bde7c3799066016012024992b5a0b91afff06361cb39e74c7d687a58ba",
+     "snapshot": "sources/slowmist/all_page_002.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-07-15",
+     "last_date": "2026-07-26",
+     "status": "OK"
+    },
+    {
+     "page": 3,
+     "url": "https://hacked.slowmist.io/?c=&page=3",
+     "retrieved_utc": "2026-08-23T02:15:41Z",
+     "sha256": "1206ed1c5af0f52399ad79b4731260835e2b787b27375cd6976e7f442ab1f775",
+     "snapshot": "sources/slowmist/all_page_003.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-06-20",
+     "last_date": "2026-07-15",
+     "status": "OK"
+    },
+    {
+     "page": 4,
+     "url": "https://hacked.slowmist.io/?c=&page=4",
+     "retrieved_utc": "2026-08-23T02:15:44Z",
+     "sha256": "2878f1fe80b41304472748d5155291285c9167fca33b24c95f24bcc56000542e",
+     "snapshot": "sources/slowmist/all_page_004.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-06-05",
+     "last_date": "2026-06-19",
+     "status": "OK"
+    },
+    {
+     "page": 5,
+     "url": "https://hacked.slowmist.io/?c=&page=5",
+     "retrieved_utc": "2026-08-23T02:15:47Z",
+     "sha256": "6f22248e02856281ee7f7475801bcd945b33ba3e593bc73423b43aa4f46bd184",
+     "snapshot": "sources/slowmist/all_page_005.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-05-26",
+     "last_date": "2026-06-04",
+     "status": "OK"
+    },
+    {
+     "page": 6,
+     "url": "https://hacked.slowmist.io/?c=&page=6",
+     "retrieved_utc": "2026-08-23T02:15:49Z",
+     "sha256": "63084f31c3192b9ee00a731144bc194888b0fbbc8529f5fc4187bfee3dcf4a6d",
+     "snapshot": "sources/slowmist/all_page_006.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-05-11",
+     "last_date": "2026-05-25",
+     "status": "OK"
+    },
+    {
+     "page": 7,
+     "url": "https://hacked.slowmist.io/?c=&page=7",
+     "retrieved_utc": "2026-08-23T02:15:52Z",
+     "sha256": "563dd4096ab26c733ac53f215b1503b10261159d5316da2e36c81eaf3a25422d",
+     "snapshot": "sources/slowmist/all_page_007.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-04-22",
+     "last_date": "2026-05-11",
+     "status": "OK"
+    },
+    {
+     "page": 8,
+     "url": "https://hacked.slowmist.io/?c=&page=8",
+     "retrieved_utc": "2026-08-23T02:15:55Z",
+     "sha256": "8e02354aa82d066b061136d7a4fea556cfb6dfe65f8b20f06a5288c1723cee0f",
+     "snapshot": "sources/slowmist/all_page_008.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-04-05",
+     "last_date": "2026-04-21",
+     "status": "OK"
+    },
+    {
+     "page": 9,
+     "url": "https://hacked.slowmist.io/?c=&page=9",
+     "retrieved_utc": "2026-08-23T02:15:58Z",
+     "sha256": "ec82792bee96dfdd21f24f8f50bd4aa5029e8a3acbd101c416f7992b81a91ca2",
+     "snapshot": "sources/slowmist/all_page_009.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-03-22",
+     "last_date": "2026-04-04",
+     "status": "OK"
+    },
+    {
+     "page": 10,
+     "url": "https://hacked.slowmist.io/?c=&page=10",
+     "retrieved_utc": "2026-08-23T02:16:01Z",
+     "sha256": "aa8f58a3e8041c998be31879ab7ff37f9ad3c58681f26361667b72423cc76c93",
+     "snapshot": "sources/slowmist/all_page_010.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-02-26",
+     "last_date": "2026-03-22",
+     "status": "OK"
+    },
+    {
+     "page": 11,
+     "url": "https://hacked.slowmist.io/?c=&page=11",
+     "retrieved_utc": "2026-08-23T02:16:04Z",
+     "sha256": "3d2c2c9cd275a13b1c68d43e043d80e816dcc7356c25c8aff624be356e70806a",
+     "snapshot": "sources/slowmist/all_page_011.html",
+     "rows_parsed": 20,
+     "rows_in_window": 5,
+     "first_date": "2026-01-20",
+     "last_date": "2026-02-26",
+     "status": "OK"
+    },
+    {
+     "page": 12,
+     "url": "https://hacked.slowmist.io/?c=&page=12",
+     "retrieved_utc": "2026-08-23T02:16:08Z",
+     "sha256": "d8ed7a716bc09df60dc221837a99511b93700c31f919c3a0d26dbea42867a4bd",
+     "snapshot": "sources/slowmist/all_page_012.html",
+     "rows_parsed": 20,
+     "rows_in_window": 0,
+     "first_date": "2025-12-17",
+     "last_date": "2026-01-19",
+     "status": "BOUNDARY_PROVEN"
+    }
+   ]
+  },
+  "defillama_protocols": {
+   "url": "https://api.llama.fi/protocols",
+   "retrieved_utc": "2026-08-23T02:21:21Z",
+   "sha256": "4a74cae500aa4eae8419e9f3ea39600ac9aff8992ec80b71c8a584b8bcfd5fd9",
+   "bytes": 8643007,
+   "rows": 8103,
+   "snapshot": "sources/defillama/protocols.json"
+  },
+  "defillama_adapters_repo": "https://github.com/DefiLlama/DefiLlama-Adapters (raw reads of projects/* and registries/*)"
+ },
+ "artifacts": [
+  {
+   "path": "run_config.json",
+   "exists": true,
+   "bytes": 1518,
+   "sha256": "9c9ba1776f3ce3d483194429a3ef4111c576b7e61b298e6821d521d71f5b218b",
+   "role": "config",
+   "supports_claim": "Window 2026-02-22..2026-08-22, thresholds, evidence-level definitions"
+  },
+  {
+   "path": "commands.sh",
+   "exists": true,
+   "bytes": 4711,
+   "sha256": "44f558368ca59673ab43361a03ff52ca2cd3ed02fbc478273d4827cd1ca83fb8",
+   "role": "reproduction",
+   "supports_claim": "Every retrieval and transformation step in execution order"
+  },
+  {
+   "path": "incidents/all_raw.jsonl",
+   "exists": true,
+   "bytes": 244676,
+   "sha256": "5569a017540506c5c55b7f3887381c9a2f5d9d468259f5cfaf2eaeca41a441e6",
+   "role": "incident corpus",
+   "supports_claim": "240 SlowMist rows; 205 inside the window; every row retained and dispositioned"
+  },
+  {
+   "path": "incidents/included.jsonl",
+   "exists": true,
+   "bytes": 539932,
+   "sha256": "f4ade2838d96f9c12777ecdfd9e21b06e17e2ca61062dbb4e83f9e3d438144d3",
+   "role": "incident corpus",
+   "supports_claim": "110 grade-A/B on-chain incidents with reconstructed invariants and guards"
+  },
+  {
+   "path": "incidents/provisional.jsonl",
+   "exists": true,
+   "bytes": 115067,
+   "sha256": "0e1fccdd28274d4d4af42fbab6a769df2e8beed0309c2ba68770b53072c2e68e",
+   "role": "incident corpus",
+   "supports_claim": "22 grade-C incidents; excluded from statistics and ranking weight"
+  },
+  {
+   "path": "incidents/excluded.jsonl",
+   "exists": true,
+   "bytes": 78017,
+   "sha256": "c702dcae945ec088997bd2c5114fa5903965d6ac42fde59da1fd58eaff29fa9b",
+   "role": "incident corpus",
+   "supports_claim": "Every exclusion with a concrete reason code from a controlled vocabulary"
+  },
+  {
+   "path": "incidents/duplicate_groups.json",
+   "exists": true,
+   "bytes": 3225,
+   "sha256": "73d910f7566887eb1edc0d2a55e9cb08cc23f7651677993f43824c280bb0dba4",
+   "role": "dedup",
+   "supports_claim": "Clone and repeat lineages; prevents clone incidents inflating independent recurrence"
+  },
+  {
+   "path": "families/families.json",
+   "exists": true,
+   "bytes": 170568,
+   "sha256": "4085489afa236249d7ae9a72fe4cc3acca381c4986f28fb3f24131f0ce59538c",
+   "role": "pattern library",
+   "supports_claim": "43 mechanism families with invariant, mechanism, preconditions, indicators and guards"
+  },
+  {
+   "path": "families/families.md",
+   "exists": true,
+   "bytes": 173361,
+   "sha256": "d1e98254dc3372b7674467f601a542e8a0bbc91c8cb3d76a7225e4e538e06ff3",
+   "role": "pattern library",
+   "supports_claim": "Human-readable family library"
+  },
+  {
+   "path": "families/guard_library.jsonl",
+   "exists": true,
+   "bytes": 136693,
+   "sha256": "efbf373262f24d282220aa896c4eff98417a1ca3987991c9f4ab5ed787a6911b",
+   "role": "guard library",
+   "supports_claim": "Decisive guards with evidence patterns and limitations"
+  },
+  {
+   "path": "families/near_miss_library.jsonl",
+   "exists": true,
+   "bytes": 11128,
+   "sha256": "234ee5dce02d384d15761c0e81acccbfc790b32940a117f95e1e01bfd68dc373",
+   "role": "guard library",
+   "supports_claim": "Pairs killed by a precondition or a decisive guard, with residual uncertainty"
+  },
+  {
+   "path": "sources/slowmist/crawl_log_all.json",
+   "exists": true,
+   "bytes": 5838,
+   "sha256": "fc3ba42ff81e8333ac7d5599e393d047ebd87f22c7b18797daa64db4fe097521",
+   "role": "provenance",
+   "supports_claim": "Per-page fetch log, hashes and boundary proof"
+  },
+  {
+   "path": "sources/incident-references/reference_index.json",
+   "exists": true,
+   "bytes": 52986,
+   "sha256": "0b644f6ba511471f6f55b92bede33c83b1a7bd88fc65d457eb300fbf744f7873",
+   "role": "provenance",
+   "supports_claim": "Every reference URL with retrieval status; social posts marked LEAD_ONLY"
+  },
+  {
+   "path": "sources/defillama/protocols.json",
+   "exists": true,
+   "bytes": 8643007,
+   "sha256": "4a74cae500aa4eae8419e9f3ea39600ac9aff8992ec80b71c8a584b8bcfd5fd9",
+   "role": "universe",
+   "supports_claim": "8103 DefiLlama protocol rows, all keys preserved"
+  },
+  {
+   "path": "protocols/defillama_universe.json",
+   "exists": true,
+   "bytes": 14736814,
+   "sha256": "871e66d7496379274e6182d6bbd9eed3905b3c51a94e40b29ee65022e4809315",
+   "role": "universe",
+   "supports_claim": "Normalized universe with derived feature fields"
+  },
+  {
+   "path": "protocols/eligibility.json",
+   "exists": true,
+   "bytes": 9388938,
+   "sha256": "3fca52aab162046e8fb6a23b8bfc0d94d2ada78522000b7c9a674b9011df47e3",
+   "role": "screen",
+   "supports_claim": "Eligibility decision and sub-threshold high-fit queue per protocol"
+  },
+  {
+   "path": "protocols/pairs_l0.json",
+   "exists": true,
+   "bytes": 19350636,
+   "sha256": "381a018fd8d7d81d235018d276cdf10f6b52a1c74e5956103a377c58cc77e403",
+   "role": "screen",
+   "supports_claim": "All generated protocol-family pairs at L0"
+  },
+  {
+   "path": "protocols/deep_screen_worklist.json",
+   "exists": true,
+   "bytes": 323640,
+   "sha256": "888de49792e9f956daf0ae55ebb154e590b408460394b8ede4703deb9656c4b0",
+   "role": "screen",
+   "supports_claim": "Stratified deep-screen worklist across families and exposure tiers"
+  },
+  {
+   "path": "protocols/adapters_index.json",
+   "exists": true,
+   "bytes": 261251,
+   "sha256": "5bda91c48b326caff06341d561c63d225d35b36e1abd225802867400cdca9603",
+   "role": "adapter evidence",
+   "supports_claim": "Per-protocol adapter read, hashes, addresses, dynamic sources"
+  },
+  {
+   "path": "protocols/registry_configs.json",
+   "exists": true,
+   "bytes": 165007,
+   "sha256": "645f4dce83d5dee6484d688ad5265af087a9f275f9a76b9281623ca6d1a5a2ed",
+   "role": "adapter evidence",
+   "supports_claim": "Per-protocol configs from registries/compound.js, aave.js, curators.js"
+  },
+  {
+   "path": "protocols/dead_adapters.json",
+   "exists": true,
+   "bytes": 98370,
+   "sha256": "b461c20ed0b20f68489a4fadb4cf4a4a43f47801ed4113c1d95e1b92f75e9774",
+   "role": "adapter evidence",
+   "supports_claim": "DefiLlama registries/deadAdapters.json: 591 dead deployments with deadFrom"
+  },
+  {
+   "path": "protocols/onchain_probes.json",
+   "exists": true,
+   "bytes": 104834,
+   "sha256": "cba460c96466f6a5ddecc31dbf2947528789b2b97b4f8d133c01e65f28938a31",
+   "role": "live state",
+   "supports_claim": "Read-only eth_call/eth_getStorageAt/getsourcecode results"
+  },
+  {
+   "path": "protocols/prior_art.json",
+   "exists": true,
+   "bytes": 9318,
+   "sha256": "d212bbb7f45ac020bb2ba74468ea0e6d0c416dea8644879d935394d747e1aeda",
+   "role": "prior art",
+   "supports_claim": "Researched prior-art status and documented decisive guards"
+  },
+  {
+   "path": "protocols/deep_screened.jsonl",
+   "exists": true,
+   "bytes": 520919,
+   "sha256": "20afce1ec91f0d57596ef91cf591313738de41b2006a3b87c92b1847b574d18a",
+   "role": "scoring",
+   "supports_claim": "Per-pair precondition gate, guards, MATCH/CONFIDENCE/PREVENTION with components"
+  },
+  {
+   "path": "results/candidates_all.csv",
+   "exists": true,
+   "bytes": 92493,
+   "sha256": "649936fc41a35f150d805dd592900331b472801686de9d209fd195c1c53ce74b",
+   "role": "results",
+   "supports_claim": "Every surviving pair with both ranks and full score components"
+  },
+  {
+   "path": "results/candidates_by_match.md",
+   "exists": true,
+   "bytes": 73792,
+   "sha256": "bb5448acf4d755f49ba2a6a3d5be0f43635a0a28480eb63a18902b355e464154",
+   "role": "results",
+   "supports_claim": "Ranking A - mechanism match"
+  },
+  {
+   "path": "results/candidates_by_prevention.md",
+   "exists": true,
+   "bytes": 73658,
+   "sha256": "f029a33db6987e1c11093bb47867f1c726fb8e74cc826d3956acd6fb49fea18e",
+   "role": "results",
+   "supports_claim": "Ranking B - expected loss prevention"
+  },
+  {
+   "path": "results/audit_variables.txt",
+   "exists": true,
+   "bytes": 18497,
+   "sha256": "a103c7e5ea134249c4096208d50b06c19f906ca3ac4623b328c93bd0b380f1f9",
+   "role": "handoff",
+   "supports_claim": "One self-contained line per final candidate for the downstream audit prompt"
+  },
+  {
+   "path": "results/excluded_protocols.md",
+   "exists": true,
+   "bytes": 5400,
+   "sha256": "dd590592cdfe022339c08a694b7ce836a67c78902ec3b2f6f3e4480a4193a0b7",
+   "role": "results",
+   "supports_claim": "Universe exclusions and killed pairs with reasons"
+  },
+  {
+   "path": "results/run_summary.md",
+   "exists": true,
+   "bytes": 5508,
+   "sha256": "ccb75f707f182426137dae54ad727d46e08d6026c00ed544fae53994eac344dd",
+   "role": "results",
+   "supports_claim": "Required summary statistics"
+  },
+  {
+   "path": "quality_report.md",
+   "exists": true,
+   "bytes": 8775,
+   "sha256": "0f320556d83b40da7e749b811ee843df1b5c27922a74ecda9eaffc7a98a94418",
+   "role": "quality",
+   "supports_claim": "Mechanical quality gates and known limitations"
+  }
+ ],
+ "claim_map": {
+  "205 incidents inside the six-month window": "incidents/all_raw.jsonl + sources/slowmist/crawl_log_all.json (boundary proven on page 12)",
+  "110 included grade-A/B incidents": "incidents/included.jsonl",
+  "43 mechanism families": "families/families.json",
+  "family incident counts, losses and recency": "families/families.json (computed from incidents/all_raw.jsonl)",
+  "clone lineages do not inflate recurrence": "incidents/duplicate_groups.json + families.json unique_root_cause_count",
+  "8103 protocols fetched": "sources/defillama/protocols.meta.json",
+  "eligibility and sub-threshold high-fit queue": "protocols/eligibility.json",
+  "adapter read or marked missing for every candidate": "protocols/adapters_index.json",
+  "Compound-fork and curator lineage": "protocols/registry_configs.json (registries/compound.js, curators.js)",
+  "deprecated deployment evidence": "protocols/dead_adapters.json + eligibility.json deprecated/deadUrl flags",
+  "live-state evidence": "protocols/onchain_probes.json",
+  "score components and caps": "protocols/deep_screened.jsonl + results/candidates_all.csv",
+  "prior-art status per final pair": "protocols/prior_art.json + results/candidates_by_*.md",
+  "near misses": "families/near_miss_library.jsonl"
+ }
+}
