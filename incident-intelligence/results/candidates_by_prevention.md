@@ -4,83 +4,1167 @@
 
 Ranking B answers: *where could a focused audit plausibly prevent the most loss?* It multiplies technical fit by evidence confidence, live exposure, family recency and a capped recurrence multiplier. It is a prioritisation heuristic, not a probability.
 
-### 1. Flux Finance  —  `ORACLE-SPOT-THIN-LIQUIDITY`
+### 1. Lista Lending  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
 - **Rank (Ranking B — expected loss prevention):** 1
-- **Protocol:** Flux Finance (`flux-finance`)
-- **DefiLlama URL:** https://defillama.com/protocol/flux-finance
-- **Current TVL:** $44,535,722
-- **Chains:** Ethereum
+- **Protocol:** Lista Lending (`lista-lending`)
+- **DefiLlama URL:** https://defillama.com/protocol/lista-lending
+- **Current TVL:** $837,427,118
+- **Chains:** Binance, Ethereum
 - **Category:** Lending
-- **Matched family IDs:** `ORACLE-SPOT-THIN-LIQUIDITY` (other pairs generated for this protocol: ACC-DONATION-UNACCOUNTED-BALANCE, LIQUIDATION-ON-MANIPULABLE-VALUATION, ORACLE-STALE-OR-SILENT-FALLBACK)
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `ACC-DUPLICATE-ID-ACCUMULATION` (63.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (60), `LIQUIDATION-ON-MANIPULABLE-VALUATION` (60), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (60), `ORACLE-SPOT-THIN-LIQUIDITY` (60); plus 15 further pairs, all in results/candidates_all.csv
 - **Ranking:**
-    - MATCH_SCORE: **77.3** / 100
-    - EVIDENCE_CONFIDENCE: **89.0** / 100 (mapping 100, deployment parity 90, live state 85, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **62.932** = MATCH 77.3 × CONF 89.0/100 × EXPOSURE 0.7709 × RECENCY 0.9884 × RECURRENCE 1.2
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **58.429** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8923 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `Moolah` @ 0x9321587e…(bsc), `VeListaRevenueDistributor` @ 0xf820fB46…(bsc)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for Moolah@0x9321587e…(bsc), VeListaRevenueDistributor@0xf820fB46…(bsc); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $837,427,118
+- **Implementation and deployment status:** adapter `lista-lending/index.js` (READ); 2 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#lista-lending|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#lista-lending`, `protocols/onchain_probes.json#lista-lending`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/lista-lending__lista-lending__index.js`
+- **Responsible disclosure channel, if public:** https://lista.org/lending · audits: https://github.com/lista-dao/moolah/tree/master/docs/audits
+
+### 2. Steakhouse Financial  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+
+- **Rank (Ranking B — expected loss prevention):** 2
+- **Protocol:** Steakhouse Financial (`steakhouse-financial`)
+- **DefiLlama URL:** https://defillama.com/protocol/steakhouse-financial
+- **Current TVL:** $2,981,071,163
+- **Chains:** Base, Ethereum, Robinhood Chain, Solana, Monad, Arbitrum, Katana, Polygon …
+- **Category:** Risk Curators
+- **Matched family IDs:** `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+    - Next-strongest families for this protocol: `ACC-DUPLICATE-ID-ACCUMULATION` (63.8), `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (63.8), `ACC-HARDCODED-PEG-REDEMPTION` (63.8), `METATX-SENDER-IDENTITY-CONFUSION` (63.8), `ACC-DONATION-UNACCOUNTED-BALANCE` (63.8); plus 9 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **85.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 65, guard review 85)
+    - PREVENTION_SCORE: **57.695** = MATCH 73.8 × CONF 85.4/100 × EXPOSURE 0.9474 × RECENCY 0.9669 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `GnosisSafeProxy` @ 0x0000aeB7…(base), `PlasmaVault` @ 0x01a6ff6e…(base)): prerequisites matched: claim_without_eligibility_map; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: claim_without_eligibility_map
+    - Deep-screen observations: deployed source read for GnosisSafeProxy@0x0000aeB7…(base), PlasmaVault@0x01a6ff6e…(base); indicators matched: claim_without_eligibility_map
+- **Mandatory preconditions PRESENT:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** merkle_proof_gate
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $2,981,071,163
+- **Implementation and deployment status:** adapter `registries/curators.js` (READ_VIA_REGISTRY); 2 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
+- **Recommended audit focus:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#steakhouse-financial|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/adapters_index.json#steakhouse-financial`, `protocols/onchain_probes.json#steakhouse-financial`, `families/families.json#AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `sources/defillama/adapters/_shared__registries__curators.js`
+- **Responsible disclosure channel, if public:** https://www.steakhouse.financial/
+
+### 3. Circle USYC  —  `SIG-VERIFIER-DEFEATABLE`
+
+- **Rank (Ranking B — expected loss prevention):** 3
+- **Protocol:** Circle USYC (`circle-usyc`)
+- **DefiLlama URL:** https://defillama.com/protocol/circle-usyc
+- **Current TVL:** $2,922,761,052
+- **Chains:** Binance, Ethereum, Noble, Near
+- **Category:** RWA
+- **Matched family IDs:** `SIG-VERIFIER-DEFEATABLE`
+    - Next-strongest families for this protocol: `UPGRADE-INITIALIZER-REACHABLE-LIVE` (60), `SETTLEMENT-EPOCH-BOUNDARY-CREDIT` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45), `AUTH-ZERO-ADDRESS-ACCEPTED` (45), `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (45); plus 10 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **57.045** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.9466 × RECENCY 0.9039 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `USYCSatellite` @ 0x191fb6f3…(bsc)): prerequisites matched: ecrecover_without_zero_check; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: ecrecover_without_zero_check
+    - Deep-screen observations: deployed source read for USYCSatellite@0x191fb6f3…(bsc); indicators matched: ecrecover_without_zero_check
+- **Mandatory preconditions PRESENT:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** uses_oz_ecdsa
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $2,922,761,052
+- **Implementation and deployment status:** adapter `hashnote/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
+- **Recommended audit focus:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#circle-usyc|SIG-VERIFIER-DEFEATABLE`, `protocols/adapters_index.json#circle-usyc`, `protocols/onchain_probes.json#circle-usyc`, `families/families.json#SIG-VERIFIER-DEFEATABLE`, `sources/defillama/adapters/circle-usyc__hashnote__index.js`
+- **Responsible disclosure channel, if public:** https://www.circle.com/usyc
+
+### 4. USDD  —  `ACC-ZERO-SUPPLY-INFLATION`
+
+- **Rank (Ranking B — expected loss prevention):** 4
+- **Protocol:** USDD (`usdd`)
+- **DefiLlama URL:** https://defillama.com/protocol/usdd
+- **Current TVL:** $1,282,517,967
+- **Chains:** Tron, Ethereum, Binance
+- **Category:** CDP
+- **Matched family IDs:** `ACC-ZERO-SUPPLY-INFLATION`
+    - Next-strongest families for this protocol: `UPGRADE-INITIALIZER-REACHABLE-LIVE` (60), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (52.5), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `ACC-SPLIT-NONINVARIANT` (45); plus 13 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **56.574** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.9108 × RECENCY 0.8873 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** The first depositor must not be able to set an arbitrary asset-per-share ratio, and no operation may drive supply low enough to restore that branch.
+    - Deployed-source indicators (read from `ZAMM` @ 0x00000000…(ethereum), `ChiToken` @ 0x00000000…(ethereum)): prerequisites matched: zero_supply_branch_unguarded; no guard indicator matched
+    - Screening evidence: archetype applicable: category=CDP; exposure tilt from TVL $1,282,517,967
+    - Deep-screen observations: deployed source read for ZAMM@0x00000000…(ethereum), ChiToken@0x00000000…(ethereum); indicators matched: zero_supply_branch_unguarded
+- **Mandatory preconditions PRESENT:** src::zero_supply_branch_unguarded, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** virtual_shares_offset, dead_shares_minted
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $1,282,517,967
+- **Implementation and deployment status:** adapter `registries/sumTokens.js` (READ_VIA_REGISTRY); 5 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Dead shares minted at creation (kills the pair); Vault creation is permissioned and every vault is seeded; Virtual offset present in the deployed bytecode
+- **Recommended audit focus:** On a fork, for every vault with dust or zero supply, attempt the 1-wei-plus-donation sequence and assert a later depositor's shares are proportional.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#usdd|ACC-ZERO-SUPPLY-INFLATION`, `protocols/adapters_index.json#usdd`, `protocols/onchain_probes.json#usdd`, `families/families.json#ACC-ZERO-SUPPLY-INFLATION`, `sources/defillama/adapters/_shared__registries__sumTokens.js`
+- **Responsible disclosure channel, if public:** https://usdd.io/
+
+### 5. Gauntlet  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+
+- **Rank (Ranking B — expected loss prevention):** 5
+- **Protocol:** Gauntlet (`gauntlet`)
+- **DefiLlama URL:** https://defillama.com/protocol/gauntlet
+- **Current TVL:** $1,508,509,956
+- **Chains:** Base, Binance, Ethereum, Morph, Stable, Solana, Hyperliquid L1, Arbitrum …
+- **Category:** Risk Curators
+- **Matched family IDs:** `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ACC-ZERO-SUPPLY-INFLATION` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45), `SIG-VERIFIER-DEFEATABLE` (45); plus 11 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **85.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 65, guard review 85)
+    - PREVENTION_SCORE: **55.898** = MATCH 73.8 × CONF 85.4/100 × EXPOSURE 0.9179 × RECENCY 0.9669 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `AeraVaultV2` @ 0x0baafdbe…(base), `AeraVaultV2` @ 0x280218bc…(base)): prerequisites matched: claim_without_eligibility_map; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: claim_without_eligibility_map
+    - Deep-screen observations: deployed source read for AeraVaultV2@0x0baafdbe…(base), AeraVaultV2@0x280218bc…(base); indicators matched: claim_without_eligibility_map
+- **Mandatory preconditions PRESENT:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** merkle_proof_gate
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $1,508,509,956
+- **Implementation and deployment status:** adapter `gauntlet/index.js` (READ); 2 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
+- **Recommended audit focus:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#gauntlet|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/adapters_index.json#gauntlet`, `protocols/onchain_probes.json#gauntlet`, `families/families.json#AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `sources/defillama/adapters/gauntlet__gauntlet__index.js`
+- **Responsible disclosure channel, if public:** https://www.gauntlet.xyz
+
+### 6. Morpho Blue  —  `ACC-DONATION-UNACCOUNTED-BALANCE`
+
+- **Rank (Ranking B — expected loss prevention):** 6
+- **Protocol:** Morpho Blue (`morpho-blue`)
+- **DefiLlama URL:** https://defillama.com/protocol/morpho-blue
+- **Current TVL:** $9,388,226,379
+- **Chains:** Ethereum, Base, Robinhood Chain, Hyperliquid L1, Monad, Flare, Katana, Tempo …
+- **Category:** Lending
+- **Matched family IDs:** `ACC-DONATION-UNACCOUNTED-BALANCE`
+    - Next-strongest families for this protocol: `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (63.8), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` (45); plus 13 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **63.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **55.647** = MATCH 63.8 × CONF 90.4/100 × EXPOSURE 0.9973 × RECENCY 0.9221 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A share price, exchange rate or totalAssets must be a function of value the protocol accounted for on entry. Reading a raw balance makes any direct transfer into the accounting boundary an unpriced increase in every holder's claim.
+    - Deployed-source indicators (read from `MetaMorphoV1_1` @ 0xBeEFC1CD…(ethereum)): prerequisites matched: totalAssets_reads_balanceOf; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Lending; exposure tilt from TVL $9,388,226,379
+    - Deep-screen observations: deployed source read for MetaMorphoV1_1@0xBeEFC1CD…(ethereum); indicators matched: totalAssets_reads_balanceOf
+- **Mandatory preconditions PRESENT:** src::totalAssets_reads_balanceOf, unprivileged_inbound_transfer_possible, live_value_exposed
+- **Mandatory preconditions UNKNOWN:** src::getCashPrior_balanceOf
+- **Decisive guards searched:** internal_cash_counter
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $9,388,226,379
+- **Implementation and deployment status:** adapter `morpho-blue/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** totalAssets derived from an internal counter, not balanceOf (kills the pair); Rate is monotonic and rate-limited per block; Inbound transfers to the accounting boundary are rejected or swept to a reserve
+- **Recommended audit focus:** On a fork, transfer an arbitrary amount of each counted asset directly into every accounting boundary; the share price, exchange rate and derived borrow power must not change.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#morpho-blue|ACC-DONATION-UNACCOUNTED-BALANCE`, `protocols/adapters_index.json#morpho-blue`, `protocols/onchain_probes.json#morpho-blue`, `families/families.json#ACC-DONATION-UNACCOUNTED-BALANCE`, `sources/defillama/adapters/morpho-blue__morpho-blue__index.js`
+- **Responsible disclosure channel, if public:** https://app.morpho.org · audits: https://docs.morpho.org/morpho-blue/concepts/security/audits/
+
+### 7. Centrifuge Protocol  —  `SIG-VERIFIER-DEFEATABLE`
+
+- **Rank (Ranking B — expected loss prevention):** 7
+- **Protocol:** Centrifuge Protocol (`centrifuge-protocol`)
+- **DefiLlama URL:** https://defillama.com/protocol/centrifuge-protocol
+- **Current TVL:** $1,635,404,079
+- **Chains:** Ethereum, Avalanche, Base, Plume Mainnet, Monad, Pharos, Binance, Optimism …
+- **Category:** RWA
+- **Matched family IDs:** `SIG-VERIFIER-DEFEATABLE`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (52.5), `SETTLEMENT-EPOCH-BOUNDARY-CREDIT` (45), `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45), `AUTH-ZERO-ADDRESS-ACCEPTED` (45); plus 9 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **55.526** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.9214 × RECENCY 0.9039 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `ERC7540VaultFactory` @ 0x7f192F34…(ethereum), `PoolManager` @ 0x91808B5E…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: ecrecover_without_zero_check
+    - Deep-screen observations: deployed source read for ERC7540VaultFactory@0x7f192F34…(ethereum), PoolManager@0x91808B5E…(ethereum); indicators matched: ecrecover_without_zero_check
+- **Mandatory preconditions PRESENT:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** uses_oz_ecdsa
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $1,635,404,079
+- **Implementation and deployment status:** adapter `centrifuge/index.js` (READ); 4 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — The deployed-source sweep flags ecrecover use without an adjacent zero-address check on three Centrifuge-family entries (centrifuge-protocol, anemoy-capital, circle-usyc). Those are very likely one shared codebase rather than three independent findings, so they should be triaged as a single lineage and counted once. No per-deployment audit or advisory search was performed. (search scope: none performed for this pair; lineage observation only)
+- **What would falsify the hypothesis:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
+- **Recommended audit focus:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#centrifuge-protocol|SIG-VERIFIER-DEFEATABLE`, `protocols/adapters_index.json#centrifuge-protocol`, `protocols/onchain_probes.json#centrifuge-protocol`, `families/families.json#SIG-VERIFIER-DEFEATABLE`, `sources/defillama/adapters/centrifuge-protocol__centrifuge__index.js`
+- **Responsible disclosure channel, if public:** https://centrifuge.io · audits: https://docs.centrifuge.io/developer/security/
+
+### 8. Lista CDP  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 8
+- **Protocol:** Lista CDP (`lista-cdp`)
+- **DefiLlama URL:** https://defillama.com/protocol/lista-cdp
+- **Current TVL:** $276,144,936
+- **Chains:** Binance
+- **Category:** CDP
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `ACC-ZERO-SUPPLY-INFLATION` (73.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (60), `LIQUIDATION-ON-MANIPULABLE-VALUATION` (60), `ORACLE-SPOT-THIN-LIQUIDITY` (60), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (60); plus 13 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **55.273** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8441 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `ERC20LpListaDistributor` @ 0x7c81da7a…(bsc), `USDTLpListaDistributor` @ 0x24e5debb…(bsc)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for ERC20LpListaDistributor@0x7c81da7a…(bsc), USDTLpListaDistributor@0x24e5debb…(bsc); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $276,144,936
+- **Implementation and deployment status:** adapter `helio-money/index.js` (READ); 8 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#lista-cdp|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#lista-cdp`, `protocols/onchain_probes.json#lista-cdp`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/lista-cdp__helio-money__index.js`
+- **Responsible disclosure channel, if public:** https://lista.org/ · audits: https://github.com/lista-dao/lista-dao-contracts/tree/master/audits
+
+### 9. OpenEden TBILL  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 9
+- **Protocol:** OpenEden TBILL (`openeden-tbill`)
+- **DefiLlama URL:** https://defillama.com/protocol/openeden-tbill
+- **Current TVL:** $253,285,392
+- **Chains:** Binance, Ripple, Ethereum, Solana, Arbitrum
+- **Category:** RWA
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `ACC-HARDCODED-PEG-REDEMPTION` (63.8), `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (63.8), `UPGRADE-INITIALIZER-REACHABLE-LIVE` (60), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (52.5), `SETTLEMENT-EPOCH-BOUNDARY-CREDIT` (45); plus 10 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **55.03** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8404 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `OpenEdenVaultV5` @ 0xf3c7bbd9…(bsc)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for OpenEdenVaultV5@0xf3c7bbd9…(bsc); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $253,285,392
+- **Implementation and deployment status:** adapter `openeden-tbill/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 2 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#openeden-tbill|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#openeden-tbill`, `protocols/onchain_probes.json#openeden-tbill`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/openeden-tbill__openeden-tbill__index.js`
+- **Responsible disclosure channel, if public:** https://portal.openeden.com · audits: https://openeden.com/Verichains%20Public%20Audit%20Report%20-%20OpenEden%20Vault%20-%20310323.pdf, https://hacken.io/audits/openeden/sca-openeden-vault-nov2024
+
+### 10. Pareto Credit  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 10
+- **Protocol:** Pareto Credit (`pareto-credit`)
+- **DefiLlama URL:** https://defillama.com/protocol/pareto-credit
+- **Current TVL:** $235,130,078
+- **Chains:** Ethereum, Polygon, Arbitrum, Optimism
+- **Category:** RWA Lending
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (73.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (52.5), `SETTLEMENT-EPOCH-BOUNDARY-CREDIT` (45); plus 11 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **54.814** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8371 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `IdleCDOEpochVariant` @ 0xdd596250…(ethereum), `IdleCDOEpochVariant` @ 0xf70e9826…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for IdleCDOEpochVariant@0xdd596250…(ethereum), IdleCDOEpochVariant@0xf70e9826…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $235,130,078
+- **Implementation and deployment status:** adapter `pareto/index.js` (READ); 5 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#pareto-credit|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#pareto-credit`, `protocols/onchain_probes.json#pareto-credit`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/pareto-credit__pareto__index.js`
+- **Responsible disclosure channel, if public:** https://pareto.credit/ · audits: https://docs.pareto.credit/developers/security/audits
+
+### 11. Euler V2  —  `UPGRADE-INITIALIZER-REACHABLE-LIVE`
+
+- **Rank (Ranking B — expected loss prevention):** 11
+- **Protocol:** Euler V2 (`euler-v2`)
+- **DefiLlama URL:** https://defillama.com/protocol/euler-v2
+- **Current TVL:** $364,282,309
+- **Chains:** Monad, Ethereum, Base, Plasma, BOB, Avalanche, Hyperliquid L1, Unichain …
+- **Category:** Lending
+- **Matched family IDs:** `UPGRADE-INITIALIZER-REACHABLE-LIVE`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `AMM-POOL-RATIO-SKEW-EXTRACTION` (45), `CALLBACK-STATE-LOCK-INCOMPLETE` (45); plus 14 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **85.0** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **54.659** = MATCH 85.0 × CONF 90.4/100 × EXPOSURE 0.8561 × RECENCY 0.8309 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** After deployment, no caller may (re)establish ownership, admin, or implementation wiring. Initialization state must be provably consumed.
+    - Deployed-source indicators (read from `EVault` @ 0x8ff1c814…(ethereum)): prerequisites matched: initialize_without_modifier; no guard indicator matched
+    - Screening evidence: archetype-agnostic family (applies to any archetype); exposure tilt from TVL $364,282,309
+    - Deep-screen observations: deployed source read for EVault@0x8ff1c814…(ethereum); indicators matched: initialize_without_modifier; 1/1 live proxies read a zero ERC-7201 Initializable slot (inconclusive alone: older OZ versions store the flag elsewhere)
+- **Mandatory preconditions PRESENT:** src::initialize_without_modifier, upgradeable_architecture, initializer_flag_unset, live_value_or_approvals
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** initializer_modifier_present, upgrade_timelocked
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $364,282,309
+- **Implementation and deployment status:** adapter `euler-v2/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Simulated re-initialization reverts (kills the pair); Contract is non-upgradeable and holds no approvals
+- **Recommended audit focus:** Read the initialization slot on every live proxy/facet and simulate re-initialization from an unprivileged address; it must revert.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#euler-v2|UPGRADE-INITIALIZER-REACHABLE-LIVE`, `protocols/adapters_index.json#euler-v2`, `protocols/onchain_probes.json#euler-v2`, `families/families.json#UPGRADE-INITIALIZER-REACHABLE-LIVE`, `sources/defillama/adapters/euler-v2__euler-v2__index.js`
+- **Responsible disclosure channel, if public:** https://www.euler.finance · audits: https://www.euler.finance/#security
+
+### 12. KPK  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 12
+- **Protocol:** KPK (`kpk`)
+- **DefiLlama URL:** https://defillama.com/protocol/kpk
+- **Current TVL:** $190,339,993
+- **Chains:** Ethereum, xDai, Arbitrum, Base, Binance, Optimism, Polygon
+- **Category:** Risk Curators
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (66.0), `ORACLE-STALE-OR-SILENT-FALLBACK` (60), `LIQUIDATION-ON-MANIPULABLE-VALUATION` (60), `ACC-ZERO-SUPPLY-INFLATION` (45), `CALLDATA-CALLER-CONTROLLED-TARGET` (45); plus 13 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **54.218** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.828 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `TransparentUpgradeableProxy` @ 0x00E95754…(ethereum), `MarketConfigurator` @ 0x1b265b97…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for TransparentUpgradeableProxy@0x00E95754…(ethereum), MarketConfigurator@0x1b265b97…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $190,339,993
+- **Implementation and deployment status:** adapter `kpk/index.js` (READ); 2 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#kpk|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#kpk`, `protocols/onchain_probes.json#kpk`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/kpk__kpk__index.js`
+- **Responsible disclosure channel, if public:** https://kpk.io/
+
+### 13. Anemoy Capital  —  `SIG-VERIFIER-DEFEATABLE`
+
+- **Rank (Ranking B — expected loss prevention):** 13
+- **Protocol:** Anemoy Capital (`anemoy-capital`)
+- **DefiLlama URL:** https://defillama.com/protocol/anemoy-capital
+- **Current TVL:** $873,251,843
+- **Chains:** Ethereum, Celo, Base
+- **Category:** RWA
+- **Matched family IDs:** `SIG-VERIFIER-DEFEATABLE`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (52.5), `SETTLEMENT-EPOCH-BOUNDARY-CREDIT` (45), `TOKEN-TRANSFER-OVERRIDE-BREAKS-CONSERVATION` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45), `AUTH-ZERO-ADDRESS-ACCEPTED` (45); plus 12 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **53.881** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8941 × RECENCY 0.9039 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `Tranche` @ 0x8c213ee7…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: ecrecover_without_zero_check
+    - Deep-screen observations: deployed source read for Tranche@0x8c213ee7…(ethereum); indicators matched: ecrecover_without_zero_check
+- **Mandatory preconditions PRESENT:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** uses_oz_ecdsa
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $873,251,843
+- **Implementation and deployment status:** adapter `anemoy-capital/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
+- **Recommended audit focus:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#anemoy-capital|SIG-VERIFIER-DEFEATABLE`, `protocols/adapters_index.json#anemoy-capital`, `protocols/onchain_probes.json#anemoy-capital`, `families/families.json#SIG-VERIFIER-DEFEATABLE`, `sources/defillama/adapters/anemoy-capital__anemoy-capital__index.js`
+- **Responsible disclosure channel, if public:** https://www.anemoy.io
+
+### 14. Convex Finance  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+
+- **Rank (Ranking B — expected loss prevention):** 14
+- **Protocol:** Convex Finance (`convex-finance`)
+- **DefiLlama URL:** https://defillama.com/protocol/convex-finance
+- **Current TVL:** $561,472,963
+- **Chains:** Ethereum, Fraxtal, Arbitrum, Polygon
+- **Category:** Yield
+- **Matched family IDs:** `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+    - Next-strongest families for this protocol: `AUTH-ZERO-ADDRESS-ACCEPTED` (63.8), `CALLDATA-CALLER-CONTROLLED-TARGET` (45), `SIG-DIGEST-AMBIGUOUS-OR-UNBOUND` (45), `CALLBACK-STATE-LOCK-INCOMPLETE` (45), `CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS` (45); plus 17 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **85.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 65, guard review 85)
+    - PREVENTION_SCORE: **53.279** = MATCH 73.8 × CONF 85.4/100 × EXPOSURE 0.8749 × RECENCY 0.9669 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `TokenLocker` @ 0x3f785443…(ethereum), `FraxVoterProxy` @ 0x59CFCD38…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: claim_without_eligibility_map
+    - Deep-screen observations: deployed source read for TokenLocker@0x3f785443…(ethereum), FraxVoterProxy@0x59CFCD38…(ethereum); indicators matched: claim_without_eligibility_map
+- **Mandatory preconditions PRESENT:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** merkle_proof_gate
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $561,472,963
+- **Implementation and deployment status:** adapter `convex/index.js` (READ); 6 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
+- **Recommended audit focus:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#convex-finance|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/adapters_index.json#convex-finance`, `protocols/onchain_probes.json#convex-finance`, `families/families.json#AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `sources/defillama/adapters/convex-finance__convex__index.js`
+- **Responsible disclosure channel, if public:** https://www.convexfinance.com/ · audits: https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf
+
+### 15. Aster asBNB  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 15
+- **Protocol:** Aster asBNB (`aster-asbnb`)
+- **DefiLlama URL:** https://defillama.com/protocol/aster-asbnb
+- **Current TVL:** $129,489,229
+- **Chains:** Binance
+- **Category:** Yield
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `ACC-CREDIT-NOT-RECEIVED` (63.8), `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (63.8), `UPGRADE-INITIALIZER-REACHABLE-LIVE` (52.5), `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (45), `INCENTIVE-PER-ADDRESS-NO-SYBIL-COST` (45); plus 19 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **53.118** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8112 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `AsBnbMinter` @ 0x7f527730…(bsc), `AsBNB` @ 0x77734e70…(bsc)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for AsBnbMinter@0x7f527730…(bsc), AsBNB@0x77734e70…(bsc); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $129,489,229
+- **Implementation and deployment status:** adapter `astherus-asBNB/index.js` (READ); 3 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#aster-asbnb|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#aster-asbnb`, `protocols/onchain_probes.json#aster-asbnb`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/aster-asbnb__astherus-asBNB__index.js`
+- **Responsible disclosure channel, if public:** https://www.asterdex.com/en/earn
+
+### 16. Wise Token  —  `ORACLE-SPOT-THIN-LIQUIDITY`
+
+- **Rank (Ranking B — expected loss prevention):** 16
+- **Protocol:** Wise Token (`wise-token`)
+- **DefiLlama URL:** https://defillama.com/protocol/wise-token
+- **Current TVL:** $69,109,753
+- **Chains:** Ethereum
+- **Category:** Yield
+- **Matched family IDs:** `ORACLE-SPOT-THIN-LIQUIDITY`
+    - Next-strongest families for this protocol: `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (63.8), `SIG-REPLAY-CROSS-POSITION` (45), `CALLDATA-CALLER-CONTROLLED-TARGET` (45), `SIG-DIGEST-AMBIGUOUS-OR-UNBOUND` (45), `CALLBACK-STATE-LOCK-INCOMPLETE` (45); plus 17 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **62.5** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **52.539** = MATCH 62.5 × CONF 90.4/100 × EXPOSURE 0.784 × RECENCY 0.9884 × RECURRENCE 1.2
 - **Evidence level:** `L4_GUARD_REVIEW`
 - **Why the family applies:** Borrowing capacity, mint size, reward size or collateral value must not be derived from a price that a single actor can move within the manipulation window, and the value unlocked must never exceed the cost of moving that price.
-    - Screening evidence: archetype applicable: category=Lending; description/methodology signals: borrow, collateral, yield; no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: onchain_governance_authority; no oracle declared in DefiLlama metadata (unknown pricing path)
-    - Deep-screen observations: declared oracles: none declared in DefiLlama metadata
-- **Mandatory preconditions PRESENT:** value_decision_reads_configured_feed, live_positions_exposed, single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** feed_selection_is_configuration, failure_path_returns_usable_number
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
+    - Deployed-source indicators (read from `UniswapV2Pair` @ 0x21b8065d…(ethereum), `WETH9` @ 0xC02aaA39…(ethereum)): prerequisites matched: spot_without_twap; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Yield; description/methodology signals: yield; no oracle declared in DefiLlama metadata; exposure tilt from TVL $69,109,753
+    - Deep-screen observations: deployed source read for UniswapV2Pair@0x21b8065d…(ethereum), WETH9@0xC02aaA39…(ethereum); indicators matched: spot_without_twap; only one oracle (or none) is declared in DefiLlama metadata; this is a prioritisation signal about disclosure, not evidence that no cross-source deviation bound exists in code; declared oracles: none declared
+- **Mandatory preconditions PRESENT:** src::spot_without_twap, live_positions_exposed
+- **Mandatory preconditions UNKNOWN:** value_decision_reads_configured_feed, feed_selection_is_configuration
+- **Decisive guards searched:** twap_present, supply_cap_present, deviation_bound_vs_independent_source
 - **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $51,216,080; on-chain governance authority
-- **Implementation and deployment status:** adapter `registries/compound.js` (READ_VIA_REGISTRY); 5 lending market(s) read on-chain; 2 adapter address(es) probed; 4 proxy implementation(s) resolved and reviewed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `KNOWN_ISSUE_DEPLOYMENT_STATUS_UNKNOWN` — Flux is a Compound V2 fork run by the Ondo team, audited through Code4rena, with a public Immunefi bug-bounty programme and Ondo DAO governance. Its collateral set includes tokenized treasuries (OUSG, backed by BlackRock BUIDL since the 2024 migration), which is precisely the pricing surface that failed in Solido Cash and Ploutos Money inside this window. The class of issue is publicly known; the deployed oracle's venue depth, deviation bounds and borrow caps were not resolved by read-only screening. (search scope: protocol documentation, Code4rena audit reference, Immunefi programme; per-market oracle adapter NOT decompiled)
+- **Live value / authority / approval relevance:** exposure basis $69,109,753
+- **Implementation and deployment status:** adapter `wise-token/index.js` (READ); 2 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
 - **What would falsify the hypothesis:** All collateral priced by a deep aggregated feed with a deviation cap (kills the pair); Caps are set from measured venue depth and enforced on-chain; The action is sized from realised transfer amounts, so price is never an input
 - **Recommended audit focus:** On a fork, execute a max-size flash-funded swap against every venue in the pricing path and assert that no value-bearing entrypoint changes its output beyond the configured deviation bound.
     - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#flux-finance|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/adapters_index.json#flux-finance`, `protocols/onchain_probes.json#flux-finance`, `families/families.json#ORACLE-SPOT-THIN-LIQUIDITY`, `sources/defillama/adapters/flux-finance__registries__compound.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
+- **Evidence paths:** `protocols/deep_screened.jsonl#wise-token|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/adapters_index.json#wise-token`, `protocols/onchain_probes.json#wise-token`, `families/families.json#ORACLE-SPOT-THIN-LIQUIDITY`, `sources/defillama/adapters/wise-token__wise-token__index.js`
+- **Responsible disclosure channel, if public:** https://app.wisetoken.com/
 
-### 2. Sumer.money  —  `ACC-DONATION-UNACCOUNTED-BALANCE`
+### 17. K3 Capital  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — expected loss prevention):** 2
-- **Protocol:** Sumer.money (`sumer.money`)
-- **DefiLlama URL:** https://defillama.com/protocol/sumer.money
-- **Current TVL:** $1,222,366
-- **Chains:** Berachain, CORE, Meter, Arbitrum, Goat, Base, Ethereum, Binance …
+- **Rank (Ranking B — expected loss prevention):** 17
+- **Protocol:** K3 Capital (`k3-capital`)
+- **DefiLlama URL:** https://defillama.com/protocol/k3-capital
+- **Current TVL:** $421,516,058
+- **Chains:** Monad, Ethereum, Optimism, Plasma, Arbitrum, Binance, Unichain, BOB …
+- **Category:** Risk Curators
+- **Matched family IDs:** `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `ACC-ZERO-SUPPLY-INFLATION` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45); plus 12 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **85.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 65, guard review 85)
+    - PREVENTION_SCORE: **52.524** = MATCH 73.8 × CONF 85.4/100 × EXPOSURE 0.8625 × RECENCY 0.9669 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `TokenizedVault` @ 0xa00958a1…(ethereum), `BeaconProxy` @ 0x056f3a2E…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: claim_without_eligibility_map
+    - Deep-screen observations: deployed source read for TokenizedVault@0xa00958a1…(ethereum), BeaconProxy@0x056f3a2E…(ethereum); indicators matched: claim_without_eligibility_map
+- **Mandatory preconditions PRESENT:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** merkle_proof_gate
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $421,516,058
+- **Implementation and deployment status:** adapter `k3/index.js` (READ); 3 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
+- **Recommended audit focus:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#k3-capital|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/adapters_index.json#k3-capital`, `protocols/onchain_probes.json#k3-capital`, `families/families.json#AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `sources/defillama/adapters/k3-capital__k3__index.js`
+- **Responsible disclosure channel, if public:** https://k3.capital
+
+### 18. Venus Core Pool  —  `ORACLE-SPOT-THIN-LIQUIDITY`
+
+- **Rank (Ranking B — expected loss prevention):** 18
+- **Protocol:** Venus Core Pool (`venus-core-pool`)
+- **DefiLlama URL:** https://defillama.com/protocol/venus-core-pool
+- **Current TVL:** $1,252,650,314
+- **Chains:** Binance, Ethereum, Arbitrum, zkSync Era, Base, Unichain, Optimism, Op_Bnb
+- **Category:** Lending
+- **Matched family IDs:** `ORACLE-SPOT-THIN-LIQUIDITY`
+    - Next-strongest families for this protocol: `ORACLE-STALE-OR-SILENT-FALLBACK` (63.8), `LIQUIDATION-ON-MANIPULABLE-VALUATION` (63.8), `AUTH-ZERO-ADDRESS-ACCEPTED` (63.8), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (45); plus 13 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **63.8** / 100
+    - EVIDENCE_CONFIDENCE: **76.0** / 100 (mapping 100, deployment parity 90, live state 85, corroboration 90, guard review 15)
+    - PREVENTION_SCORE: **52.282** = MATCH 63.8 × CONF 76.0/100 × EXPOSURE 0.9098 × RECENCY 0.9884 × RECURRENCE 1.2
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** Borrowing capacity, mint size, reward size or collateral value must not be derived from a price that a single actor can move within the manipulation window, and the value unlocked must never exceed the cost of moving that price.
+    - Deployed-source indicators (read from `StakingPool` @ 0x004c0908…(binance)): no prerequisite indicator matched; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Lending; description/methodology signals: borrow; exposure tilt from TVL $1,252,650,314
+    - Deep-screen observations: RELEVANCE GATE: the contract(s) actually read (StakingPool) show no distinguishing indicator for this family, so they are probably not the contracts that implement it. Every source-derived signal is therefore UNKNOWN, including the absence of a guard: not finding a staleness check in a data-provider contract says nothing about the oracle.; protocol declares a Fallback/Secondary oracle: fallback selection logic exists by its own declaration; declared oracles: RedStone, Chainlink (types: Primary, Secondary)
+- **Mandatory preconditions PRESENT:** value_decision_reads_configured_feed, fallback_selection_logic_exists, live_positions_exposed
+- **Mandatory preconditions UNKNOWN:** feed_selection_is_configuration
+- **Decisive guards searched:** deviation_bound_vs_independent_source
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $1,252,650,314
+- **Implementation and deployment status:** adapter `registries/compound.js` (READ_VIA_REGISTRY); 17 lending market(s) read on-chain; 1 adapter address(es) probed; 4 proxy implementation(s) resolved and reviewed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** All collateral priced by a deep aggregated feed with a deviation cap (kills the pair); Caps are set from measured venue depth and enforced on-chain; The action is sized from realised transfer amounts, so price is never an input
+- **Recommended audit focus:** On a fork, execute a max-size flash-funded swap against every venue in the pricing path and assert that no value-bearing entrypoint changes its output beyond the configured deviation bound.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#venus-core-pool|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/adapters_index.json#venus-core-pool`, `protocols/onchain_probes.json#venus-core-pool`, `families/families.json#ORACLE-SPOT-THIN-LIQUIDITY`, `sources/defillama/adapters/_shared__registries__compound.js`
+- **Responsible disclosure channel, if public:** https://app.venus.io/#/core-pool · audits: https://www.certik.org/projects/swipe
+
+### 19. Cooler Loans  —  `ACC-ZERO-SUPPLY-INFLATION`
+
+- **Rank (Ranking B — expected loss prevention):** 19
+- **Protocol:** Cooler Loans (`cooler-loans`)
+- **DefiLlama URL:** https://defillama.com/protocol/cooler-loans
+- **Current TVL:** $217,378,305
+- **Chains:** Ethereum
+- **Category:** Lending
+- **Matched family IDs:** `ACC-ZERO-SUPPLY-INFLATION`
+    - Next-strongest families for this protocol: `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (73.8), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `CALLBACK-STATE-LOCK-INCOMPLETE` (45); plus 12 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **51.785** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8337 × RECENCY 0.8873 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** The first depositor must not be able to set an arbitrary asset-per-share ratio, and no operation may drive supply low enough to restore that branch.
+    - Deployed-source indicators (read from `gOHM` @ 0x0ab87046…(ethereum), `Clearinghouse` @ 0x1e094fe0…(ethereum)): prerequisites matched: zero_supply_branch_unguarded; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Lending; exposure tilt from TVL $217,378,305
+    - Deep-screen observations: deployed source read for gOHM@0x0ab87046…(ethereum), Clearinghouse@0x1e094fe0…(ethereum); indicators matched: zero_supply_branch_unguarded
+- **Mandatory preconditions PRESENT:** src::zero_supply_branch_unguarded, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** virtual_shares_offset, dead_shares_minted
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $217,378,305
+- **Implementation and deployment status:** adapter `cooler-loans/index.js` (READ); 4 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Dead shares minted at creation (kills the pair); Vault creation is permissioned and every vault is seeded; Virtual offset present in the deployed bytecode
+- **Recommended audit focus:** On a fork, for every vault with dust or zero supply, attempt the 1-wei-plus-donation sequence and assert a later depositor's shares are proportional.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#cooler-loans|ACC-ZERO-SUPPLY-INFLATION`, `protocols/adapters_index.json#cooler-loans`, `protocols/onchain_probes.json#cooler-loans`, `families/families.json#ACC-ZERO-SUPPLY-INFLATION`, `sources/defillama/adapters/cooler-loans__cooler-loans__index.js`
+- **Responsible disclosure channel, if public:** https://app.olympusdao.finance/#/lending/cooler
+
+### 20. ether.fi Liquid  —  `SIG-VERIFIER-DEFEATABLE`
+
+- **Rank (Ranking B — expected loss prevention):** 20
+- **Protocol:** ether.fi Liquid (`ether.fi-liquid`)
+- **DefiLlama URL:** https://defillama.com/protocol/ether.fi-liquid
+- **Current TVL:** $388,960,571
+- **Chains:** Ethereum
+- **Category:** Onchain Capital Allocator
+- **Matched family IDs:** `SIG-VERIFIER-DEFEATABLE`
+    - Next-strongest families for this protocol: `ACC-DUPLICATE-ID-ACCUMULATION` (63.8), `AUTH-ZERO-ADDRESS-ACCEPTED` (63.8), `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (45), `TOKEN-TRANSFER-OVERRIDE-BREAKS-CONSERVATION` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45); plus 11 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **51.766** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.859 × RECENCY 0.9039 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `AccountantWithRateProviders` @ 0x04B81368…(ethereum), `AccountantWithRateProviders` @ 0x075e6055…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: ecrecover_without_zero_check
+    - Deep-screen observations: deployed source read for AccountantWithRateProviders@0x04B81368…(ethereum), AccountantWithRateProviders@0x075e6055…(ethereum); indicators matched: ecrecover_without_zero_check
+- **Mandatory preconditions PRESENT:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** uses_oz_ecdsa
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $388,960,571
+- **Implementation and deployment status:** adapter `etherfi-liquid/index.js` (READ); 6 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
+- **Recommended audit focus:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#ether.fi-liquid|SIG-VERIFIER-DEFEATABLE`, `protocols/adapters_index.json#ether.fi-liquid`, `protocols/onchain_probes.json#ether.fi-liquid`, `families/families.json#SIG-VERIFIER-DEFEATABLE`, `sources/defillama/adapters/ether.fi-liquid__etherfi-liquid__index.js`
+- **Responsible disclosure channel, if public:** https://www.ether.fi
+
+### 21. Stake DAO  —  `ACC-ZERO-SUPPLY-INFLATION`
+
+- **Rank (Ranking B — expected loss prevention):** 21
+- **Protocol:** Stake DAO (`stake-dao`)
+- **DefiLlama URL:** https://defillama.com/protocol/stake-dao
+- **Current TVL:** $138,809,701
+- **Chains:** Ethereum, Base, Fraxtal, Arbitrum, Polygon, Optimism, Avalanche, Sonic …
+- **Category:** Yield
+- **Matched family IDs:** `ACC-ZERO-SUPPLY-INFLATION`
+    - Next-strongest families for this protocol: `ACC-DUPLICATE-ID-ACCUMULATION` (63.8), `AUTH-ZERO-ADDRESS-ACCEPTED` (63.8), `BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE` (45), `CALLDATA-CALLER-CONTROLLED-TARGET` (45), `SIG-DIGEST-AMBIGUOUS-OR-UNBOUND` (45); plus 19 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **50.952** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8203 × RECENCY 0.8873 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** The first depositor must not be able to set an arbitrary asset-per-share ratio, and no operation may drive supply low enough to restore that branch.
+    - Deployed-source indicators (read from `Voting Escrow v2.0.0` @ 0xe4c97873…(ethereum), `DarkParadiseV2` @ 0x20D1b558…(ethereum)): prerequisites matched: zero_supply_branch_unguarded; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Yield; exposure tilt from TVL $138,809,701
+    - Deep-screen observations: deployed source read for Voting Escrow v2.0.0@0xe4c97873…(ethereum), DarkParadiseV2@0x20D1b558…(ethereum); indicators matched: zero_supply_branch_unguarded
+- **Mandatory preconditions PRESENT:** src::zero_supply_branch_unguarded, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** virtual_shares_offset, dead_shares_minted
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $159,631,156; on-chain governance authority
+- **Implementation and deployment status:** adapter `stakedao/index.js` (READ); 6 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Dead shares minted at creation (kills the pair); Vault creation is permissioned and every vault is seeded; Virtual offset present in the deployed bytecode
+- **Recommended audit focus:** On a fork, for every vault with dust or zero supply, attempt the 1-wei-plus-donation sequence and assert a later depositor's shares are proportional.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#stake-dao|ACC-ZERO-SUPPLY-INFLATION`, `protocols/adapters_index.json#stake-dao`, `protocols/onchain_probes.json#stake-dao`, `families/families.json#ACC-ZERO-SUPPLY-INFLATION`, `sources/defillama/adapters/stake-dao__stakedao__index.js`
+- **Responsible disclosure channel, if public:** https://stakedao.org/ · audits: https://docs.stakedao.org/audits
+
+### 22. Uniswap V4  —  `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL`
+
+- **Rank (Ranking B — expected loss prevention):** 22
+- **Protocol:** Uniswap V4 (`uniswap-v4`)
+- **DefiLlama URL:** https://defillama.com/protocol/uniswap-v4
+- **Current TVL:** $5,690,882,664
+- **Chains:** Binance, Ethereum, Base, Robinhood Chain, Arbitrum, Monad, Polygon, Unichain …
+- **Category:** Dexs
+- **Matched family IDs:** `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL`
+    - Next-strongest families for this protocol: `ACC-MULTI-PATH-CREDIT-DRIFT` (45), `CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS` (45), `CALLBACK-STATE-LOCK-INCOMPLETE` (45), `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` (45), `CALLDATA-CALLER-CONTROLLED-TARGET` (45); plus 13 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **63.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **50.63** = MATCH 63.8 × CONF 90.4/100 × EXPOSURE 0.9755 × RECENCY 0.9006 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A transfer of zero (or dust) must be economically inert. Hooks that accrue, mint, harvest or burn must not be reachable by an operation that moves no value and bypasses authorisation.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `UXLINKToken` @ 0x1a6b3a62…(bsc)): prerequisites matched: hook_zero_amount_unguarded; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: hook_zero_amount_unguarded
+    - Deep-screen observations: deployed source read for UXLINKToken@0x1a6b3a62…(bsc); indicators matched: hook_zero_amount_unguarded
+- **Mandatory preconditions PRESENT:** src::hook_zero_amount_unguarded, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** none reachable at this evidence level
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $5,690,882,664
+- **Implementation and deployment status:** adapter `uniswap-v4/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 2 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Zero-amount transfers revert or short-circuit before the hook (kills the pair); Hooks are pure bookkeeping with no mint/transfer
+- **Recommended audit focus:** On a fork, issue zero-value transfers in a loop against every hook-bearing token and assert no state with economic value changes.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#uniswap-v4|HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL`, `protocols/adapters_index.json#uniswap-v4`, `protocols/onchain_probes.json#uniswap-v4`, `families/families.json#HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL`, `sources/defillama/adapters/uniswap-v4__uniswap-v4__index.js`
+- **Responsible disclosure channel, if public:** https://app.uniswap.org/ · audits: https://github.com/Uniswap/v4-core/tree/main/docs/security/audits, https://github.com/Uniswap/v4-periphery/tree/main/audits
+
+### 23. Aave V3  —  `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
+
+- **Rank (Ranking B — expected loss prevention):** 23
+- **Protocol:** Aave V3 (`aave-v3`)
+- **DefiLlama URL:** https://defillama.com/protocol/aave-v3
+- **Current TVL:** $16,959,761,663
+- **Chains:** Ethereum, Plasma, Base, Arbitrum, Monad, Avalanche, Binance, Polygon …
+- **Category:** Lending
+- **Matched family IDs:** `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
+    - Next-strongest families for this protocol: `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `LIQUIDATION-ON-MANIPULABLE-VALUATION` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (52.5), `ACC-MULTI-PATH-CREDIT-DRIFT` (45); plus 16 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **60** / 100
+    - EVIDENCE_CONFIDENCE: **77.0** / 100 (mapping 100, deployment parity 55, live state 85, corroboration 90, guard review 55)
+    - PREVENTION_SCORE: **50.506** = MATCH 60 × CONF 77.0/100 × EXPOSURE 1.0229 × RECENCY 0.8906 × RECURRENCE 1.2
+- **Evidence level:** `L3_STATE`
+- **Why the family applies:** Deprecation must remove capability, not just remove the user interface. A contract that is no longer maintained must not still hold value, still hold user approvals, or still be able to mint, release or authorise anything.
+    - Conditions observed: `VERSION_SIBLING_LEGACY`, `MULTICHAIN_VERSION_DRIFT`
+    - Screening evidence: archetype-agnostic family (applies to any archetype); [PRECOND] VERSION_SIBLING_LEGACY: v3 alongside newer sibling(s) Aave V4; [PRIORITY] MULTICHAIN_VERSION_DRIFT: 21 chains; description/methodology signals: v3; exposure tilt from TVL $16,959,761,663
+    - Deep-screen observations: condition MULTICHAIN_VERSION_DRIFT (PRIORITY): Deployed across many chains, where per-chain deployments drift and the least-watched chain sets the risk.; condition VERSION_SIBLING_LEGACY (PRECOND): Shares a parent protocol with a higher-version sibling while still holding value: the classic sibling-deployment-retains-the-old-version shape.; 2 address(es) still hold deployed code on-chain
+- **Mandatory preconditions PRESENT:** prior_version_still_callable, still_holds_value_or_authority
+- **Mandatory preconditions UNKNOWN:** unmaintained_or_differing_code_path, not_paused
+- **Decisive guards searched:** paused_and_drained, approvals_revoked
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $16,959,761,663
+- **Implementation and deployment status:** adapter `aave-v3/index.js` (READ); 2 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Legacy address holds zero balance, zero allowances and zero roles (kills exposure even if code is flawed); Contract reverts on every state-changing entrypoint (verified paused)
+- **Recommended audit focus:** For each historical deployment generation, prove on a pinned fork that every state-changing entrypoint either reverts or cannot move value/authority.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#aave-v3|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `protocols/adapters_index.json#aave-v3`, `protocols/onchain_probes.json#aave-v3`, `families/families.json#UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `sources/defillama/adapters/aave-v3__aave-v3__index.js`
+- **Responsible disclosure channel, if public:** https://aave.com · audits: https://aave.com/security
+
+### 24. USD AI  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+
+- **Rank (Ranking B — expected loss prevention):** 24
+- **Protocol:** USD AI (`usd-ai`)
+- **DefiLlama URL:** https://defillama.com/protocol/usd-ai
+- **Current TVL:** $172,523,191
+- **Chains:** Arbitrum
+- **Category:** RWA Lending
+- **Matched family IDs:** `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `ACC-DUPLICATE-ID-ACCUMULATION` (63.8), `METATX-SENDER-IDENTITY-CONFUSION` (63.8), `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (63.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5); plus 11 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **85.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 65, guard review 85)
+    - PREVENTION_SCORE: **50.162** = MATCH 73.8 × CONF 85.4/100 × EXPOSURE 0.8237 × RECENCY 0.9669 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `USDai` @ 0x0ab74df5…(arbitrum), `StakedUSDai` @ 0x88a233b8…(arbitrum)): prerequisites matched: claim_without_eligibility_map; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: claim_without_eligibility_map
+    - Deep-screen observations: deployed source read for USDai@0x0ab74df5…(arbitrum), StakedUSDai@0x88a233b8…(arbitrum); indicators matched: claim_without_eligibility_map
+- **Mandatory preconditions PRESENT:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** merkle_proof_gate
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $172,523,191
+- **Implementation and deployment status:** adapter `usdai/index.js` (READ); 8 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
+- **Recommended audit focus:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#usd-ai|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/adapters_index.json#usd-ai`, `protocols/onchain_probes.json#usd-ai`, `families/families.json#AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `sources/defillama/adapters/usd-ai__usdai__index.js`
+- **Responsible disclosure channel, if public:** https://usd.ai/ · audits: https://docs.usd.ai/technical-overview/audits
+
+### 25. Reserve Protocol  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 25
+- **Protocol:** Reserve Protocol (`reserve-protocol`)
+- **DefiLlama URL:** https://defillama.com/protocol/reserve-protocol
+- **Current TVL:** $36,894,566
+- **Chains:** Ethereum, Base, Arbitrum, Binance
+- **Category:** Indexes
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (73.8), `CALLDATA-CALLER-CONTROLLED-TARGET` (45), `CALLBACK-STATE-LOCK-INCOMPLETE` (45), `SIG-VERIFIER-DEFEATABLE` (45), `AUTH-ZERO-ADDRESS-ACCEPTED` (45); plus 10 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **49.949** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.7628 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `DeployerP1` @ 0x15480f5b…(ethereum), `DeployerP1` @ 0x1bd20253…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for DeployerP1@0x15480f5b…(ethereum), DeployerP1@0x1bd20253…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $42,428,751; on-chain governance authority
+- **Implementation and deployment status:** adapter `reserve/index.js` (READ); 6 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#reserve-protocol|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#reserve-protocol`, `protocols/onchain_probes.json#reserve-protocol`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/reserve-protocol__reserve__index.js`
+- **Responsible disclosure channel, if public:** https://reserve.org · audits: https://reserve.org/protocol/security/?search=audit#s-result
+
+### 26. Brickken  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 26
+- **Protocol:** Brickken (`brickken`)
+- **DefiLlama URL:** https://defillama.com/protocol/brickken
+- **Current TVL:** $42,405,841
+- **Chains:** Binance, Ethereum, Base, Avalanche, Polygon
+- **Category:** RWA
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `UPGRADE-INITIALIZER-REACHABLE-LIVE` (60), `SETTLEMENT-EPOCH-BOUNDARY-CREDIT` (45), `TOKEN-TRANSFER-OVERRIDE-BREAKS-CONSERVATION` (45), `ACC-HARDCODED-PEG-REDEMPTION` (45), `AUTH-IDENTITY-SATISFIABLE-BY-ATTACKER-CONTRACT` (45); plus 12 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **49.943** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.7627 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `STOFactoryManagedUpgradeable` @ 0x8bfd31ca…(bsc)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for STOFactoryManagedUpgradeable@0x8bfd31ca…(bsc); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $42,405,841
+- **Implementation and deployment status:** adapter `brickken/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#brickken|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#brickken`, `protocols/onchain_probes.json#brickken`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/brickken__brickken__index.js`
+- **Responsible disclosure channel, if public:** https://www.brickken.com · audits: https://skynet.certik.com/projects/brickken
+
+### 27. Compound V2  —  `ACC-ZERO-SUPPLY-INFLATION`
+
+- **Rank (Ranking B — expected loss prevention):** 27
+- **Protocol:** Compound V2 (`compound-v2`)
+- **DefiLlama URL:** https://defillama.com/protocol/compound-v2
+- **Current TVL:** $104,089,118
+- **Chains:** Ethereum
+- **Category:** Lending
+- **Matched family IDs:** `ACC-ZERO-SUPPLY-INFLATION`
+    - Next-strongest families for this protocol: `ACC-CREDIT-NOT-RECEIVED` (63.8), `AUTH-ZERO-ADDRESS-ACCEPTED` (63.8), `ACC-DONATION-UNACCOUNTED-BALANCE` (63.8), `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` (60), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5); plus 14 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **49.797** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.8017 × RECENCY 0.8873 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** The first depositor must not be able to set an arbitrary asset-per-share ratio, and no operation may drive supply low enough to restore that branch.
+    - Deployed-source indicators (read from `CErc20Immutable` @ 0x004c0908…(ethereum)): prerequisites matched: zero_supply_branch_unguarded; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Lending; exposure tilt from TVL $104,089,118
+    - Deep-screen observations: deployed source read for CErc20Immutable@0x004c0908…(ethereum); indicators matched: zero_supply_branch_unguarded
+- **Mandatory preconditions PRESENT:** src::zero_supply_branch_unguarded, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** virtual_shares_offset, dead_shares_minted
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $104,089,118
+- **Implementation and deployment status:** adapter `registries/compound.js` (READ_VIA_REGISTRY); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Dead shares minted at creation (kills the pair); Vault creation is permissioned and every vault is seeded; Virtual offset present in the deployed bytecode
+- **Recommended audit focus:** On a fork, for every vault with dust or zero supply, attempt the 1-wei-plus-donation sequence and assert a later depositor's shares are proportional.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#compound-v2|ACC-ZERO-SUPPLY-INFLATION`, `protocols/adapters_index.json#compound-v2`, `protocols/onchain_probes.json#compound-v2`, `families/families.json#ACC-ZERO-SUPPLY-INFLATION`, `sources/defillama/adapters/_shared__registries__compound.js`
+- **Responsible disclosure channel, if public:** https://www.compound.xyz/ · audits: https://compound.finance/docs/security
+
+### 28. UNCX Network V3  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 28
+- **Protocol:** UNCX Network V3 (`uncx-network-v3`)
+- **DefiLlama URL:** https://defillama.com/protocol/uncx-network-v3
+- **Current TVL:** $34,504,157
+- **Chains:** Ethereum, Base, Robinhood Chain, Binance, Polygon, Arbitrum, Unichain, Hyperliquid L1 …
+- **Category:** Token Locker
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` (60), `ACC-MULTI-PATH-CREDIT-DRIFT` (45), `SIG-VERIFIER-DEFEATABLE` (45), `AUTH-ZERO-ADDRESS-ACCEPTED` (45), `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (45); plus 10 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **49.36** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.7538 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `UNCX_ProofOfReservesUniV3` @ 0x231278ed…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for UNCX_ProofOfReservesUniV3@0x231278ed…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $34,504,157
+- **Implementation and deployment status:** adapter `unicrypt-v3/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#uncx-network-v3|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#uncx-network-v3`, `protocols/onchain_probes.json#uncx-network-v3`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/uncx-network-v3__unicrypt-v3__index.js`
+- **Responsible disclosure channel, if public:** https://uncx.network/ · audits: https://blog.openzeppelin.com/uncx-uniswapv3-liquidity-locker-audit
+
+### 29. Vesper  —  `ACC-ZERO-SUPPLY-INFLATION`
+
+- **Rank (Ranking B — expected loss prevention):** 29
+- **Protocol:** Vesper (`vesper`)
+- **DefiLlama URL:** https://defillama.com/protocol/vesper
+- **Current TVL:** $74,152,346
+- **Chains:** Ethereum, Base, Optimism, Avalanche, Polygon
+- **Category:** Yield Aggregator
+- **Matched family IDs:** `ACC-ZERO-SUPPLY-INFLATION`
+    - Next-strongest families for this protocol: `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (45), `CALLDATA-CALLER-CONTROLLED-TARGET` (45), `SIG-DIGEST-AMBIGUOUS-OR-UNBOUND` (45), `CALLBACK-STATE-LOCK-INCOMPLETE` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45); plus 13 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **49.263** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.7931 × RECENCY 0.8873 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** The first depositor must not be able to set an arbitrary asset-per-share ratio, and no operation may drive supply low enough to restore that branch.
+    - Deployed-source indicators (read from `VSP` @ 0x1b40183e…(ethereum), `VVSP` @ 0xbA4cFE57…(ethereum)): prerequisites matched: zero_supply_branch_unguarded; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Yield Aggregator; exposure tilt from TVL $74,152,346
+    - Deep-screen observations: deployed source read for VSP@0x1b40183e…(ethereum), VVSP@0xbA4cFE57…(ethereum); indicators matched: zero_supply_branch_unguarded
+- **Mandatory preconditions PRESENT:** src::zero_supply_branch_unguarded, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** virtual_shares_offset, dead_shares_minted
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $85,275,198; on-chain governance authority
+- **Implementation and deployment status:** adapter `vesper/index.js` (READ); 2 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Dead shares minted at creation (kills the pair); Vault creation is permissioned and every vault is seeded; Virtual offset present in the deployed bytecode
+- **Recommended audit focus:** On a fork, for every vault with dust or zero supply, attempt the 1-wei-plus-donation sequence and assert a later depositor's shares are proportional.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#vesper|ACC-ZERO-SUPPLY-INFLATION`, `protocols/adapters_index.json#vesper`, `protocols/onchain_probes.json#vesper`, `families/families.json#ACC-ZERO-SUPPLY-INFLATION`, `sources/defillama/adapters/vesper__vesper__index.js`
+- **Responsible disclosure channel, if public:** https://vesper.finance/ · audits: https://github.com/vesperfi/doc/tree/main/audit
+
+### 30. Lido  —  `ACC-DUPLICATE-ID-ACCUMULATION`
+
+- **Rank (Ranking B — expected loss prevention):** 30
+- **Protocol:** Lido (`lido`)
+- **DefiLlama URL:** https://defillama.com/protocol/lido
+- **Current TVL:** $23,256,609,669
+- **Chains:** Ethereum, Solana, Terra, Moonriver, Moonbeam
+- **Category:** Liquid Staking
+- **Matched family IDs:** `ACC-DUPLICATE-ID-ACCUMULATION`
+    - Next-strongest families for this protocol: `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (45), `ACC-REWARD-INDEX-INIT-AND-ORDERING` (45), `CALLDATA-CALLER-CONTROLLED-TARGET` (45), `PROOF-VERIFICATION-BYPASSED` (45), `ACC-HARDCODED-PEG-REDEMPTION` (45); plus 13 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **63.8** / 100
+    - EVIDENCE_CONFIDENCE: **85.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 65, guard review 85)
+    - PREVENTION_SCORE: **49.24** = MATCH 63.8 × CONF 85.4/100 × EXPOSURE 1.0427 × RECENCY 0.8674 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** An entitlement attached to an identifier may be counted at most once per period. A caller-supplied ID list must be deduplicated, or each ID's claim state consumed before the next read.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `StMATIC` @ 0x6c25aebd…(ethereum)): prerequisites matched: id_array_loop_without_dedup; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: id_array_loop_without_dedup
+    - Deep-screen observations: deployed source read for StMATIC@0x6c25aebd…(ethereum); indicators matched: id_array_loop_without_dedup
+- **Mandatory preconditions PRESENT:** src::id_array_loop_without_dedup, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** none reachable at this evidence level
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $26,745,101,120; on-chain governance authority
+- **Implementation and deployment status:** adapter `lido/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Consumed marker written inside the loop (kills the pair); IDs required strictly increasing
+- **Recommended audit focus:** On a fork, call the batch function with one ID repeated k times; payout must equal the single-ID payout.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#lido|ACC-DUPLICATE-ID-ACCUMULATION`, `protocols/adapters_index.json#lido`, `protocols/onchain_probes.json#lido`, `families/families.json#ACC-DUPLICATE-ID-ACCUMULATION`, `sources/defillama/adapters/lido__lido__index.js`
+- **Responsible disclosure channel, if public:** https://lido.fi/ · audits: https://github.com/lidofinance/audits
+
+### 31. Gearbox  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 31
+- **Protocol:** Gearbox (`gearbox`)
+- **DefiLlama URL:** https://defillama.com/protocol/gearbox
+- **Current TVL:** $21,850,472
+- **Chains:** Ethereum, Etherlink, Monad, Plasma, Hemi, Arbitrum, Optimism, Somnia …
+- **Category:** Lending
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (45), `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` (45); plus 16 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **48.456** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.74 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `MarketConfiguratorLegacy` @ 0x354fe9f4…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for MarketConfiguratorLegacy@0x354fe9f4…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $25,128,042; on-chain governance authority
+- **Implementation and deployment status:** adapter `gearbox/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#gearbox|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#gearbox`, `protocols/onchain_probes.json#gearbox`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/gearbox__gearbox__index.js`
+- **Responsible disclosure channel, if public:** https://gearbox.finance/ · audits: https://docs.gearbox.finance/risk-and-security/audits-bug-bounty
+
+### 32. cSigma Finance  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 32
+- **Protocol:** cSigma Finance (`csigma-finance`)
+- **DefiLlama URL:** https://defillama.com/protocol/csigma-finance
+- **Current TVL:** $21,601,384
+- **Chains:** Arbitrum, Ethereum, Hedera, Base
+- **Category:** RWA Lending
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (63.8), `ACC-DONATION-UNACCOUNTED-BALANCE` (63.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `SETTLEMENT-EPOCH-BOUNDARY-CREDIT` (45); plus 12 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **48.024** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.7334 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `Diamond` @ 0x45dCf4F9…(arbitrum), `CsigmaV2Factory` @ 0x63da09d5…(arbitrum)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for Diamond@0x45dCf4F9…(arbitrum), CsigmaV2Factory@0x63da09d5…(arbitrum); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $21,601,384
+- **Implementation and deployment status:** adapter `csigma-finance/index.js` (READ); 2 adapter address(es) probed; not flagged deprecated; 2 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#csigma-finance|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#csigma-finance`, `protocols/onchain_probes.json#csigma-finance`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/csigma-finance__csigma-finance__index.js`
+- **Responsible disclosure channel, if public:** https://csigma.finance · audits: https://github.com/csigma-labs/audit-reports/blob/main/cSigma%20Edge%20Audit%20Report%20-%20QuillAudits.pdf, https://github.com/csigma-labs/audit-reports/blob/main/cSigma%20Institutional%20Audit%20Report%20-%20Immunebytes.pdf
+
+### 33. AUTOfinance  —  `ACC-ZERO-SUPPLY-INFLATION`
+
+- **Rank (Ranking B — expected loss prevention):** 33
+- **Protocol:** AUTOfinance (`autofinance`)
+- **DefiLlama URL:** https://defillama.com/protocol/autofinance
+- **Current TVL:** $44,407,314
+- **Chains:** Ethereum, Base, Arbitrum, Sonic, Plasma, Monad
+- **Category:** Yield
+- **Matched family IDs:** `ACC-ZERO-SUPPLY-INFLATION`
+    - Next-strongest families for this protocol: `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` (73.8), `UPGRADE-INITIALIZER-REACHABLE-LIVE` (60), `CALLDATA-CALLER-CONTROLLED-TARGET` (45), `SIG-DIGEST-AMBIGUOUS-OR-UNBOUND` (45), `CALLBACK-STATE-LOCK-INCOMPLETE` (45); plus 19 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **47.878** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.7708 × RECENCY 0.8873 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** The first depositor must not be able to set an arbitrary asset-per-share ratio, and no operation may drive supply low enough to restore that branch.
+    - Deployed-source indicators (read from `BaseRewardPool` @ 0x02E2151D…(ethereum), `Pool` @ 0xd899ac92…(ethereum)): prerequisites matched: zero_supply_branch_unguarded; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Yield; exposure tilt from TVL $44,407,314
+    - Deep-screen observations: deployed source read for BaseRewardPool@0x02E2151D…(ethereum), Pool@0xd899ac92…(ethereum); indicators matched: zero_supply_branch_unguarded
+- **Mandatory preconditions PRESENT:** src::zero_supply_branch_unguarded, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** virtual_shares_offset, dead_shares_minted
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $51,068,411; on-chain governance authority
+- **Implementation and deployment status:** adapter `tokemak/index.js` (READ); 3 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Dead shares minted at creation (kills the pair); Vault creation is permissioned and every vault is seeded; Virtual offset present in the deployed bytecode
+- **Recommended audit focus:** On a fork, for every vault with dust or zero supply, attempt the 1-wei-plus-donation sequence and assert a later depositor's shares are proportional.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#autofinance|ACC-ZERO-SUPPLY-INFLATION`, `protocols/adapters_index.json#autofinance`, `protocols/onchain_probes.json#autofinance`, `families/families.json#ACC-ZERO-SUPPLY-INFLATION`, `sources/defillama/adapters/autofinance__tokemak__index.js`
+- **Responsible disclosure channel, if public:** https://www.auto.finance · audits: https://docs.tokemak.xyz/developer-docs/security-and-audits
+
+### 34. GAIB  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — expected loss prevention):** 34
+- **Protocol:** GAIB (`gaib`)
+- **DefiLlama URL:** https://defillama.com/protocol/gaib
+- **Current TVL:** $20,086,887
+- **Chains:** Ethereum, Base, Arbitrum, Binance
+- **Category:** RWA
+- **Matched family IDs:** `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+    - Next-strongest families for this protocol: `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (63.8), `UPGRADE-INITIALIZER-REACHABLE-LIVE` (52.5), `SETTLEMENT-EPOCH-BOUNDARY-CREDIT` (45), `SIG-VERIFIER-DEFEATABLE` (45), `AUTH-ZERO-ADDRESS-ACCEPTED` (45); plus 12 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **47.821** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.7303 × RECENCY 0.9354 × RECURRENCE 1.05
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `AID` @ 0x2db74834…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: unsafe_cross_sign_cast
+    - Deep-screen observations: deployed source read for AID@0x2db74834…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Mandatory preconditions PRESENT:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** safecast_used
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $20,086,887
+- **Implementation and deployment status:** adapter `gaib/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Recommended audit focus:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#gaib|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/adapters_index.json#gaib`, `protocols/onchain_probes.json#gaib`, `families/families.json#ACC-SIGN-OR-BOUND-CHECK-MISSING`, `sources/defillama/adapters/gaib__gaib__index.js`
+- **Responsible disclosure channel, if public:** https://aid.gaib.ai · audits: https://docs.gaib.ai/audits
+
+### 35. Capyfi  —  `ACC-DONATION-UNACCOUNTED-BALANCE`
+
+- **Rank (Ranking B — expected loss prevention):** 35
+- **Protocol:** Capyfi (`capyfi`)
+- **DefiLlama URL:** https://defillama.com/protocol/capyfi
+- **Current TVL:** $6,641,113
+- **Chains:** Ethereum, LaChain Network, World Chain
 - **Category:** Lending
 - **Matched family IDs:** `ACC-DONATION-UNACCOUNTED-BALANCE`
+    - Next-strongest families for this protocol: `ACC-ZERO-SUPPLY-INFLATION` (73.8), `AUTH-ZERO-ADDRESS-ACCEPTED` (63.8), `ACC-CREDIT-NOT-RECEIVED` (63.8), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5); plus 12 further pairs, all in results/candidates_all.csv
 - **Ranking:**
-    - MATCH_SCORE: **100.0** / 100
-    - EVIDENCE_CONFIDENCE: **89.0** / 100 (mapping 100, deployment parity 90, live state 85, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **52.452** = MATCH 100.0 × CONF 89.0/100 × EXPOSURE 0.6087 × RECENCY 0.9221 × RECURRENCE 1.05
+    - MATCH_SCORE: **78.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **47.022** = MATCH 78.8 × CONF 90.4/100 × EXPOSURE 0.6822 × RECENCY 0.9221 × RECURRENCE 1.05
 - **Evidence level:** `L4_GUARD_REVIEW`
 - **Why the family applies:** A share price, exchange rate or totalAssets must be a function of value the protocol accounted for on entry. Reading a raw balance makes any direct transfer into the accounting boundary an unpriced increase in every holder's claim.
-    - Screening evidence: archetype applicable: category=Lending; fork lineage matches a family upstream: Compound V2; dead front end with residual TVL; DefiLlama warning banner; sub-threshold high-fit: dead_front_end_with_residual_tvl, defillama_warning_banner
-    - Deep-screen observations: deployed market implementation(s) resolved and read: CErc20 (followed from the delegator/beacon proxy); cash read from balanceOf(address(this))=yes; internal cash counter=absent; exchange-rate change cap=absent; 4 live market(s) read across 1 chain(s); sample: 0xe19fd48c… cash=3251229605 borrows=34908001; 0xb2ff02ee… cash=2390008889789943500516 borrows=None; 0x10a2e256… cash=10090862821276803587 borrows=None; fork lineage: Compound V2
-- **Mandatory preconditions PRESENT:** rate_reads_raw_balance, unprivileged_inbound_transfer_possible, inflated_rate_consumed_by_value_decision, third_party_claims_exposed
-- **Mandatory preconditions UNKNOWN:** none
-- **Decisive guards searched:** internal_cash_counter, exchange_rate_change_cap, supply_cap_binds_rate
+    - Deployed-source indicators (read from `CErc20Immutable` @ 0x004c0908…(ethereum), `TransparentUpgradeableProxy` @ 0x02451015…(ethereum)): prerequisites matched: getCashPrior_balanceOf; no guard indicator matched
+    - Screening evidence: archetype applicable: category=Lending; description/methodology signals: compound; fork lineage matches a family upstream: Compound V2; exposure tilt from TVL $6,641,113
+    - Deep-screen observations: deployed source read for CErc20Immutable@0x004c0908…(ethereum), TransparentUpgradeableProxy@0x02451015…(ethereum); indicators matched: getCashPrior_balanceOf
+- **Mandatory preconditions PRESENT:** src::getCashPrior_balanceOf, unprivileged_inbound_transfer_possible, live_value_exposed
+- **Mandatory preconditions UNKNOWN:** src::totalAssets_reads_balanceOf
+- **Decisive guards searched:** internal_cash_counter
 - **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $1,222,366
-- **Implementation and deployment status:** adapter `registries/compound.js` (READ_VIA_REGISTRY); 6 lending market(s) read on-chain; 4 proxy implementation(s) resolved and reviewed; not flagged deprecated; 1 audit link(s) listed
+- **Live value / authority / approval relevance:** exposure basis $6,641,113
+- **Implementation and deployment status:** adapter `registries/compound.js` (READ_VIA_REGISTRY); 3 adapter address(es) probed; not flagged deprecated; no audit link listed
 - **Prior-art status:** `KNOWN_ISSUE_DEPLOYMENT_STATUS_UNKNOWN` — The Compound-fork donation/exchange-rate vector is publicly documented and was raised in Venus's own Code4rena audit before the March 2026 THE-market exploit. Whether THIS deployment carries a fix is not established by the read-only evidence collected here. (search scope: family-level public prior art only; per-deployment audit-competition and advisory search NOT performed)
 - **What would falsify the hypothesis:** totalAssets derived from an internal counter, not balanceOf (kills the pair); Rate is monotonic and rate-limited per block; Inbound transfers to the accounting boundary are rejected or swept to a reserve
 - **Recommended audit focus:** On a fork, transfer an arbitrary amount of each counted asset directly into every accounting boundary; the share price, exchange rate and derived borrow power must not change.
     - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#sumer.money|ACC-DONATION-UNACCOUNTED-BALANCE`, `protocols/adapters_index.json#sumer.money`, `protocols/onchain_probes.json#sumer.money`, `families/families.json#ACC-DONATION-UNACCOUNTED-BALANCE`, `sources/defillama/adapters/sumer.money__registries__compound.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata · audits: https://docs.sumer.money/security/audits
+- **Evidence paths:** `protocols/deep_screened.jsonl#capyfi|ACC-DONATION-UNACCOUNTED-BALANCE`, `protocols/adapters_index.json#capyfi`, `protocols/onchain_probes.json#capyfi`, `families/families.json#ACC-DONATION-UNACCOUNTED-BALANCE`, `sources/defillama/adapters/_shared__registries__compound.js`
+- **Responsible disclosure channel, if public:** https://capyfi.com/
 
-### 3. Base Bridge  —  `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
+### 36. Base Bridge  —  `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
 
-- **Rank (Ranking B — expected loss prevention):** 3
+- **Rank (Ranking B — expected loss prevention):** 36
 - **Protocol:** Base Bridge (`base-bridge`)
 - **DefiLlama URL:** https://defillama.com/protocol/base-bridge
 - **Current TVL:** $2,790,942,273
 - **Chains:** Ethereum
 - **Category:** Canonical Bridge
 - **Matched family IDs:** `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
+    - Next-strongest families for this protocol: `PROOF-VERIFICATION-BYPASSED` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45), `SIG-VERIFIER-DEFEATABLE` (45), `AUTH-ZERO-ADDRESS-ACCEPTED` (45), `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` (45); plus 8 further pairs, all in results/candidates_all.csv
 - **Ranking:**
-    - MATCH_SCORE: **62.5** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **47.321** = MATCH 62.5 × CONF 75.0/100 × EXPOSURE 0.9446 × RECENCY 0.8906 × RECURRENCE 1.2
+    - MATCH_SCORE: **60** / 100
+    - EVIDENCE_CONFIDENCE: **77.0** / 100 (mapping 100, deployment parity 55, live state 85, corroboration 90, guard review 55)
+    - PREVENTION_SCORE: **46.639** = MATCH 60 × CONF 77.0/100 × EXPOSURE 0.9446 × RECENCY 0.8906 × RECURRENCE 1.2
 - **Evidence level:** `L3_STATE`
 - **Why the family applies:** Deprecation must remove capability, not just remove the user interface. A contract that is no longer maintained must not still hold value, still hold user approvals, or still be able to mint, release or authorise anything.
-    - Screening evidence: archetype-agnostic family (applies to any archetype); DefiLlama deprecated flag (weight 16 for this family); no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: deprecated_deployment_may_retain_live_exposure, bridge_authority_over_external_value; exposure tilt from TVL $2,790,942,273
-    - Deep-screen observations: CAUTION: DefiLlama's `deprecated` flag is set but uncorroborated. That flag is also used when an adapter is superseded or its TVL is counted elsewhere, so on its own it does NOT establish an abandoned deployment. Treated as UNKNOWN (no positive score).; DefiLlama deprecated flag set with non-zero residual TVL
+    - Screening evidence: archetype-agnostic family (applies to any archetype); DefiLlama deprecated flag (weight 16; ambiguous on its own); exposure tilt from TVL $2,790,942,273
+    - Deep-screen observations: CAUTION: DefiLlama's `deprecated` flag is set but uncorroborated; it is also used when an adapter is superseded or its TVL is counted elsewhere. Treated as UNKNOWN.; 4 address(es) still hold deployed code on-chain
 - **Mandatory preconditions PRESENT:** prior_version_still_callable, still_holds_value_or_authority
 - **Mandatory preconditions UNKNOWN:** unmaintained_or_differing_code_path, not_paused
 - **Decisive guards searched:** paused_and_drained, approvals_revoked
@@ -91,515 +1175,138 @@ Ranking B answers: *where could a focused audit plausibly prevent the most loss?
 - **What would falsify the hypothesis:** Legacy address holds zero balance, zero allowances and zero roles (kills exposure even if code is flawed); Contract reverts on every state-changing entrypoint (verified paused)
 - **Recommended audit focus:** For each historical deployment generation, prove on a pinned fork that every state-changing entrypoint either reverts or cannot move value/authority.
     - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#base-bridge|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `protocols/adapters_index.json#base-bridge`, `protocols/onchain_probes.json#base-bridge`, `families/families.json#UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `sources/defillama/adapters/base-bridge__registries__sumTokens.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
+- **Evidence paths:** `protocols/deep_screened.jsonl#base-bridge|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `protocols/adapters_index.json#base-bridge`, `protocols/onchain_probes.json#base-bridge`, `families/families.json#UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `sources/defillama/adapters/_shared__registries__sumTokens.js`
+- **Responsible disclosure channel, if public:** https://docs.base.org/base-chain/network-information/bridges-mainnet
 
-### 4. Sentora  —  `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE`
+### 37. Uniswap V2  —  `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL`
 
-- **Rank (Ranking B — expected loss prevention):** 4
-- **Protocol:** Sentora (`sentora`)
-- **DefiLlama URL:** https://defillama.com/protocol/sentora
-- **Current TVL:** $2,417,461,031
-- **Chains:** Ethereum, Ink, Solana, Tempo
-- **Category:** Risk Curators
-- **Matched family IDs:** `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (other pairs generated for this protocol: ACC-NAV-SHAREPRICE-MANIPULABLE, ACC-ZERO-SUPPLY-INFLATION)
-- **Ranking:**
-    - MATCH_SCORE: **56.7** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **36.44** = MATCH 56.7 × CONF 75.0/100 × EXPOSURE 0.9383 × RECENCY 0.9138 × RECURRENCE 1.0
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** A vault share rate is an accounting quantity of another protocol, not a market price. Using it as a feed imports every way that vault's rate can be moved, including donation inflation and same-transaction redemption effects.
-    - Screening evidence: archetype applicable: category=Risk Curators; no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: curator_authority_over_third_party_vaults; multi-chain surface (4 chains); single declared oracle: Chainlink
-    - Deep-screen observations: declared oracles: Chainlink
-- **Mandatory preconditions PRESENT:** value_decision_reads_configured_feed, feed_selection_is_configuration, single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $2,417,461,031
-- **Implementation and deployment status:** adapter `sentora/index.js` (READ); 4 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Growth-capped rate adapter in the deployed oracle (kills the pair); Wrapper's own rate is monotonic and rate-limited; Collateral priced by an independent market feed instead
-- **Recommended audit focus:** On a fork, donate to and cycle the underlying vault; assert the lending market's reported collateral price moves no more than the configured cap.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#sentora|ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE`, `protocols/adapters_index.json#sentora`, `protocols/onchain_probes.json#sentora`, `families/families.json#ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE`, `sources/defillama/adapters/sentora__sentora__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 5. Saddle Finance  —  `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
-
-- **Rank (Ranking B — expected loss prevention):** 5
-- **Protocol:** Saddle Finance (`saddle-finance`)
-- **DefiLlama URL:** https://defillama.com/protocol/saddle-finance
-- **Current TVL:** $945,997
-- **Chains:** Ethereum, Arbitrum, Optimism, Aurora, Fantom, Evmos, Kava
-- **Category:** Dexs
-- **Matched family IDs:** `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` (other pairs generated for this protocol: ACC-MULTI-PATH-CREDIT-DRIFT, AMM-POOL-RATIO-SKEW-EXTRACTION, ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED, CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS, GOV-CHEAP-CONTROL-NO-TIMELOCK)
-- **Ranking:**
-    - MATCH_SCORE: **75.0** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **36.292** = MATCH 75.0 × CONF 75.0/100 × EXPOSURE 0.6037 × RECENCY 0.8906 × RECURRENCE 1.2
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** Deprecation must remove capability, not just remove the user interface. A contract that is no longer maintained must not still hold value, still hold user approvals, or still be able to mint, release or authorise anything.
-    - Screening evidence: archetype-agnostic family (applies to any archetype); DefiLlama deprecated flag (weight 16 for this family); dead front end with residual TVL; misrepresentedTokens flag; sub-threshold high-fit: deprecated_deployment_may_retain_live_exposure, dead_front_end_with_residual_tvl, onchain_governance_authority
-    - Deep-screen observations: DefiLlama deprecated flag set with non-zero residual TVL; front end dead; contracts still hold value
-- **Mandatory preconditions PRESENT:** prior_version_still_callable, unmaintained_or_differing_code_path, still_holds_value_or_authority
-- **Mandatory preconditions UNKNOWN:** not_paused
-- **Decisive guards searched:** paused_and_drained, approvals_revoked
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $1,087,896; on-chain governance authority
-- **Implementation and deployment status:** adapter `saddle/index.js` (READ); 2 adapter address(es) probed; deprecated flag set; 3 audit link(s) listed
-- **Prior-art status:** `KNOWN_FIX_DEPLOYED` — The Saddle DAO voted in SIP-54 to wind the protocol down, pausing all pools and dissolving the community multisig, and the contracts repository was archived read-only on 2026-02-10. Pausing is the decisive guard for this family. The hypothesis is therefore downgraded rather than promoted; residual DefiLlama TVL means value is still parked in paused contracts, so the remaining question is withdrawal-path liveness, not exploitability. (search scope: protocol docs, governance record (SIP-54) and repository state)
-- **What would falsify the hypothesis:** Legacy address holds zero balance, zero allowances and zero roles (kills exposure even if code is flawed); Contract reverts on every state-changing entrypoint (verified paused)
-- **Recommended audit focus:** For each historical deployment generation, prove on a pinned fork that every state-changing entrypoint either reverts or cannot move value/authority.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#saddle-finance|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `protocols/adapters_index.json#saddle-finance`, `protocols/onchain_probes.json#saddle-finance`, `families/families.json#UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `sources/defillama/adapters/saddle-finance__saddle__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata · audits: https://github.com/saddle-finance/saddle-audits/blob/master/10-29-2020_Certik.pdf, https://blog.openzeppelin.com/saddle-contracts-audit
-
-### 6. Extended Perps  —  `LIQUIDATION-ON-MANIPULABLE-VALUATION`
-
-- **Rank (Ranking B — expected loss prevention):** 6
-- **Protocol:** Extended Perps (`extended-perps`)
-- **DefiLlama URL:** https://defillama.com/protocol/extended-perps
-- **Current TVL:** $121,536,393
-- **Chains:** Starknet, Ethereum
-- **Category:** Derivatives
-- **Matched family IDs:** `LIQUIDATION-ON-MANIPULABLE-VALUATION`
-- **Ranking:**
-    - MATCH_SCORE: **56.7** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **35.855** = MATCH 56.7 × CONF 75.0/100 × EXPOSURE 0.8085 × RECENCY 0.9486 × RECURRENCE 1.1
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** A position may be liquidated only on a valuation that the liquidator cannot move, and the discount captured must not exceed the cost of moving the price.
-    - Screening evidence: archetype applicable: category=Derivatives; description/methodology signals: margin, perp, collateral; no audit link listed (prioritisation signal only, never evidence of a defect); single declared oracle: Stork; exposure tilt from TVL $121,536,393
-    - Deep-screen observations: declared oracles: Stork
-- **Mandatory preconditions PRESENT:** value_decision_reads_configured_feed, feed_selection_is_configuration, single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $121,536,393
-- **Implementation and deployment status:** adapter `registries/sumTokens.js` (READ_VIA_REGISTRY); 4 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Deviation-capped, independently sourced price plus a grace period (kills the pair); Liquidations rate-limited per block; Collateral only in deep assets with caps sized to depth
-- **Recommended audit focus:** On a fork, execute the largest flash-funded move available on each pricing venue and assert that no position becomes liquidatable beyond the configured deviation bound.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#extended-perps|LIQUIDATION-ON-MANIPULABLE-VALUATION`, `protocols/adapters_index.json#extended-perps`, `protocols/onchain_probes.json#extended-perps`, `families/families.json#LIQUIDATION-ON-MANIPULABLE-VALUATION`, `sources/defillama/adapters/extended-perps__registries__sumTokens.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 7. Cooler Loans  —  `ORACLE-SPOT-THIN-LIQUIDITY`
-
-- **Rank (Ranking B — expected loss prevention):** 7
-- **Protocol:** Cooler Loans (`cooler-loans`)
-- **DefiLlama URL:** https://defillama.com/protocol/cooler-loans
-- **Current TVL:** $217,378,305
-- **Chains:** Ethereum
-- **Category:** Lending
-- **Matched family IDs:** `ORACLE-SPOT-THIN-LIQUIDITY`
-- **Ranking:**
-    - MATCH_SCORE: **48.3** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **35.845** = MATCH 48.3 × CONF 75.0/100 × EXPOSURE 0.8337 × RECENCY 0.9884 × RECURRENCE 1.2
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** Borrowing capacity, mint size, reward size or collateral value must not be derived from a price that a single actor can move within the manipulation window, and the value unlocked must never exceed the cost of moving that price.
-    - Screening evidence: archetype applicable: category=Lending; description/methodology signals: borrow, collateral, apr; no audit link listed (prioritisation signal only, never evidence of a defect); no oracle declared in DefiLlama metadata (unknown pricing path); exposure tilt from TVL $217,378,305
-    - Deep-screen observations: declared oracles: none declared in DefiLlama metadata
-- **Mandatory preconditions PRESENT:** value_decision_reads_configured_feed, single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** feed_selection_is_configuration, failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $217,378,305
-- **Implementation and deployment status:** adapter `cooler-loans/index.js` (READ); 4 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** All collateral priced by a deep aggregated feed with a deviation cap (kills the pair); Caps are set from measured venue depth and enforced on-chain; The action is sized from realised transfer amounts, so price is never an input
-- **Recommended audit focus:** On a fork, execute a max-size flash-funded swap against every venue in the pricing path and assert that no value-bearing entrypoint changes its output beyond the configured deviation bound.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#cooler-loans|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/adapters_index.json#cooler-loans`, `protocols/onchain_probes.json#cooler-loans`, `families/families.json#ORACLE-SPOT-THIN-LIQUIDITY`, `sources/defillama/adapters/cooler-loans__cooler-loans__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 8. Granary Finance  —  `ORACLE-SPOT-THIN-LIQUIDITY`
-
-- **Rank (Ranking B — expected loss prevention):** 8
-- **Protocol:** Granary Finance (`granary-finance`)
-- **DefiLlama URL:** https://defillama.com/protocol/granary-finance
-- **Current TVL:** $169,396
-- **Chains:** Optimism, Metis, Arbitrum, Binance, Avalanche, Fantom, Ethereum, Base
-- **Category:** Lending
-- **Matched family IDs:** `ORACLE-SPOT-THIN-LIQUIDITY`
-- **Ranking:**
-    - MATCH_SCORE: **65.7** / 100
-    - EVIDENCE_CONFIDENCE: **86.0** / 100 (mapping 100, deployment parity 75, live state 85, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **35.433** = MATCH 65.7 × CONF 86.0/100 × EXPOSURE 0.529 × RECENCY 0.9884 × RECURRENCE 1.2
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** Borrowing capacity, mint size, reward size or collateral value must not be derived from a price that a single actor can move within the manipulation window, and the value unlocked must never exceed the cost of moving that price.
-    - Screening evidence: archetype applicable: category=Lending; description/methodology signals: borrow, collateral, yield; dead front end with residual TVL; no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: dead_front_end_with_residual_tvl, onchain_governance_authority
-    - Deep-screen observations: addresses-provider probe: 0x773E0277… priceOracle=None pool=None reserves=None owner=None; 0xC043BA54… priceOracle=None pool=None reserves=0 owner=0xe027880ceb; 0x872B9e8a… priceOracle=None pool=None reserves=0 owner=0xe027880ceb; addresses-provider owner is a live address: oracle re-registration is a configuration action, so feed-to-asset binding depends on that role, not on code; declared oracles: Chainlink
-- **Mandatory preconditions PRESENT:** value_decision_reads_configured_feed, feed_selection_is_configuration, single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $194,806; on-chain governance authority
-- **Implementation and deployment status:** adapter `registries/aave.js` (READ_VIA_REGISTRY); 5 addresses-provider(s) read; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** All collateral priced by a deep aggregated feed with a deviation cap (kills the pair); Caps are set from measured venue depth and enforced on-chain; The action is sized from realised transfer amounts, so price is never an input
-- **Recommended audit focus:** On a fork, execute a max-size flash-funded swap against every venue in the pricing path and assert that no value-bearing entrypoint changes its output beyond the configured deviation bound.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#granary-finance|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/adapters_index.json#granary-finance`, `protocols/onchain_probes.json#granary-finance`, `families/families.json#ORACLE-SPOT-THIN-LIQUIDITY`, `sources/defillama/adapters/granary-finance__registries__aave.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 9. Curve LlamaLend  —  `ORACLE-SPOT-THIN-LIQUIDITY`
-
-- **Rank (Ranking B — expected loss prevention):** 9
-- **Protocol:** Curve LlamaLend (`curve-llamalend`)
-- **DefiLlama URL:** https://defillama.com/protocol/curve-llamalend
-- **Current TVL:** $78,074,979
-- **Chains:** Ethereum, Arbitrum, Fraxtal, Optimism
-- **Category:** Lending
-- **Matched family IDs:** `ORACLE-SPOT-THIN-LIQUIDITY` (other pairs generated for this protocol: ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED, LIQUIDATION-ON-MANIPULABLE-VALUATION, ORACLE-STALE-OR-SILENT-FALLBACK)
-- **Ranking:**
-    - MATCH_SCORE: **48.3** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **33.936** = MATCH 48.3 × CONF 75.0/100 × EXPOSURE 0.7893 × RECENCY 0.9884 × RECURRENCE 1.2
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** Borrowing capacity, mint size, reward size or collateral value must not be derived from a price that a single actor can move within the manipulation window, and the value unlocked must never exceed the cost of moving that price.
-    - Screening evidence: archetype applicable: category=Lending; description/methodology signals: borrow, collateral; no audit link listed (prioritisation signal only, never evidence of a defect); multi-chain surface (4 chains); no oracle declared in DefiLlama metadata (unknown pricing path)
-    - Deep-screen observations: declared oracles: none declared in DefiLlama metadata
-- **Mandatory preconditions PRESENT:** value_decision_reads_configured_feed, single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** feed_selection_is_configuration, failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $78,074,979
-- **Implementation and deployment status:** adapter `llamalend-curve/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** All collateral priced by a deep aggregated feed with a deviation cap (kills the pair); Caps are set from measured venue depth and enforced on-chain; The action is sized from realised transfer amounts, so price is never an input
-- **Recommended audit focus:** On a fork, execute a max-size flash-funded swap against every venue in the pricing path and assert that no value-bearing entrypoint changes its output beyond the configured deviation bound.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#curve-llamalend|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/adapters_index.json#curve-llamalend`, `protocols/onchain_probes.json#curve-llamalend`, `families/families.json#ORACLE-SPOT-THIN-LIQUIDITY`, `sources/defillama/adapters/curve-llamalend__llamalend-curve__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 10. RockawayX  —  `ORACLE-STALE-OR-SILENT-FALLBACK`
-
-- **Rank (Ranking B — expected loss prevention):** 10
-- **Protocol:** RockawayX (`rockawayx`)
-- **DefiLlama URL:** https://defillama.com/protocol/rockawayx
-- **Current TVL:** $193,301,703
-- **Chains:** Ethereum, Solana, Sei, Pharos, Binance, Etherlink, Base, Plume Mainnet
-- **Category:** Risk Curators
-- **Matched family IDs:** `ORACLE-STALE-OR-SILENT-FALLBACK` (other pairs generated for this protocol: ACC-NAV-SHAREPRICE-MANIPULABLE, ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE)
-- **Ranking:**
-    - MATCH_SCORE: **48.3** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **32.826** = MATCH 48.3 × CONF 75.0/100 × EXPOSURE 0.8286 × RECENCY 0.9503 × RECURRENCE 1.15
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** A valuation used to size borrowing, minting, redemption or liquidation must come from a feed proven to describe that exact asset, be within a bounded age, and fail closed. A feed that returns a wrong asset's price, a stale price, a capped price, or zero must revert rather than be used.
-    - Screening evidence: archetype applicable: category=Risk Curators; no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: curator_authority_over_third_party_vaults; multi-chain surface (8 chains); no oracle declared in DefiLlama metadata (unknown pricing path)
-    - Deep-screen observations: declared oracles: none declared in DefiLlama metadata
-- **Mandatory preconditions PRESENT:** value_decision_reads_configured_feed, single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** feed_selection_is_configuration, failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $193,301,703
-- **Implementation and deployment status:** adapter `rockawayx/index.js` (READ); 4 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Oracle registration is timelocked AND the adapter asserts the feed's base/quote on set (kills the misassignment shape); Every feed read reverts on zero/stale (kills the silent-fallback shape); Asset valuations cross-checked against a second independent oracle with a hard deviation cap
-- **Recommended audit focus:** On a fork, force each configured feed to return zero, a stale timestamp, and a 10x/0.1x value; every value-bearing entrypoint must revert rather than transact.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#rockawayx|ORACLE-STALE-OR-SILENT-FALLBACK`, `protocols/adapters_index.json#rockawayx`, `protocols/onchain_probes.json#rockawayx`, `families/families.json#ORACLE-STALE-OR-SILENT-FALLBACK`, `sources/defillama/adapters/rockawayx__rockawayx__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 11. Grove Finance  —  `UPGRADE-INITIALIZER-REACHABLE-LIVE`
-
-- **Rank (Ranking B — expected loss prevention):** 11
-- **Protocol:** Grove Finance (`grove-finance`)
-- **DefiLlama URL:** https://defillama.com/protocol/grove-finance
-- **Current TVL:** $2,387,522,579
-- **Chains:** Ethereum, Base, Avalanche, Plume Mainnet
-- **Category:** Onchain Capital Allocator
-- **Matched family IDs:** `UPGRADE-INITIALIZER-REACHABLE-LIVE` (other pairs generated for this protocol: ORACLE-STALE-OR-SILENT-FALLBACK)
-- **Ranking:**
-    - MATCH_SCORE: **66.7** / 100
-    - EVIDENCE_CONFIDENCE: **62.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 15)
-    - PREVENTION_SCORE: **32.208** = MATCH 66.7 × CONF 62.0/100 × EXPOSURE 0.9378 × RECENCY 0.8309 × RECURRENCE 1.0
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** After deployment, no caller may (re)establish ownership, admin, or implementation wiring. Initialization state must be provably consumed.
-    - Screening evidence: archetype-agnostic family (applies to any archetype); description/methodology signals: proxy; no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: curator_authority_over_third_party_vaults; multi-chain surface (4 chains)
-    - Deep-screen observations: 1/4 probed adapter addresses are ERC-1967 proxies; implementations: 0x77684815f4
-- **Mandatory preconditions PRESENT:** prior_version_still_callable, upgradeable_architecture, live_value_or_approvals
-- **Mandatory preconditions UNKNOWN:** initializer_flag_unset
-- **Decisive guards searched:** initializer_consumed, upgrade_timelocked
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $2,387,522,579
-- **Implementation and deployment status:** adapter `grove/index.js` (READ); 4 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Simulated re-initialization reverts (kills the pair); Contract is non-upgradeable and holds no approvals
-- **Recommended audit focus:** Read the initialization slot on every live proxy/facet and simulate re-initialization from an unprivileged address; it must revert.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#grove-finance|UPGRADE-INITIALIZER-REACHABLE-LIVE`, `protocols/adapters_index.json#grove-finance`, `protocols/onchain_probes.json#grove-finance`, `families/families.json#UPGRADE-INITIALIZER-REACHABLE-LIVE`, `sources/defillama/adapters/grove-finance__grove__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 12. Stability  —  `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
-
-- **Rank (Ranking B — expected loss prevention):** 12
-- **Protocol:** Stability (`stability`)
-- **DefiLlama URL:** https://defillama.com/protocol/stability
-- **Current TVL:** $1,906,982
-- **Chains:** Sonic, Base, Polygon, re.al
-- **Category:** Liquidity Manager
-- **Matched family IDs:** `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
-- **Ranking:**
-    - MATCH_SCORE: **62.5** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **31.46** = MATCH 62.5 × CONF 75.0/100 × EXPOSURE 0.628 × RECENCY 0.8906 × RECURRENCE 1.2
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** Deprecation must remove capability, not just remove the user interface. A contract that is no longer maintained must not still hold value, still hold user approvals, or still be able to mint, release or authorise anything.
-    - Screening evidence: archetype-agnostic family (applies to any archetype); DefiLlama deprecated flag (weight 16 for this family); no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: deprecated_deployment_may_retain_live_exposure; multi-chain surface (4 chains)
-    - Deep-screen observations: CAUTION: DefiLlama's `deprecated` flag is set but uncorroborated. That flag is also used when an adapter is superseded or its TVL is counted elsewhere, so on its own it does NOT establish an abandoned deployment. Treated as UNKNOWN (no positive score).; DefiLlama deprecated flag set with non-zero residual TVL
-- **Mandatory preconditions PRESENT:** prior_version_still_callable, still_holds_value_or_authority
-- **Mandatory preconditions UNKNOWN:** unmaintained_or_differing_code_path, not_paused
-- **Decisive guards searched:** paused_and_drained, approvals_revoked
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $1,906,982
-- **Implementation and deployment status:** adapter `stability/index.js` (READ); 2 adapter address(es) probed; deprecated flag set; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Legacy address holds zero balance, zero allowances and zero roles (kills exposure even if code is flawed); Contract reverts on every state-changing entrypoint (verified paused)
-- **Recommended audit focus:** For each historical deployment generation, prove on a pinned fork that every state-changing entrypoint either reverts or cannot move value/authority.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#stability|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `protocols/adapters_index.json#stability`, `protocols/onchain_probes.json#stability`, `families/families.json#UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `sources/defillama/adapters/stability__stability__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 13. Morpho Optimizer AaveV2  —  `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
-
-- **Rank (Ranking B — expected loss prevention):** 13
-- **Protocol:** Morpho Optimizer AaveV2 (`morpho-optimizer-aavev2`)
-- **DefiLlama URL:** https://defillama.com/protocol/morpho-optimizer-aavev2
-- **Current TVL:** $138,237
-- **Chains:** Ethereum
-- **Category:** Lending
-- **Matched family IDs:** `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` (other pairs generated for this protocol: ACC-MULTI-PATH-CREDIT-DRIFT)
-- **Ranking:**
-    - MATCH_SCORE: **75.0** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **30.905** = MATCH 75.0 × CONF 75.0/100 × EXPOSURE 0.5141 × RECENCY 0.8906 × RECURRENCE 1.2
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** Deprecation must remove capability, not just remove the user interface. A contract that is no longer maintained must not still hold value, still hold user approvals, or still be able to mint, release or authorise anything.
-    - Screening evidence: archetype-agnostic family (applies to any archetype); description/methodology signals: v2; DefiLlama deprecated flag (weight 16 for this family); dead front end with residual TVL; DefiLlama warning banner
-    - Deep-screen observations: DefiLlama deprecated flag set with non-zero residual TVL; front end dead; contracts still hold value
-- **Mandatory preconditions PRESENT:** prior_version_still_callable, unmaintained_or_differing_code_path, still_holds_value_or_authority
-- **Mandatory preconditions UNKNOWN:** not_paused
-- **Decisive guards searched:** paused_and_drained, approvals_revoked
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $138,237
-- **Implementation and deployment status:** adapter `morpho-aave/index.js` (READ); 1 adapter address(es) probed; deprecated flag set; 1 audit link(s) listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Legacy address holds zero balance, zero allowances and zero roles (kills exposure even if code is flawed); Contract reverts on every state-changing entrypoint (verified paused)
-- **Recommended audit focus:** For each historical deployment generation, prove on a pinned fork that every state-changing entrypoint either reverts or cannot move value/authority.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#morpho-optimizer-aavev2|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `protocols/adapters_index.json#morpho-optimizer-aavev2`, `protocols/onchain_probes.json#morpho-optimizer-aavev2`, `families/families.json#UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `sources/defillama/adapters/morpho-optimizer-aavev2__morpho-aave__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata · audits: https://docs.morpho.org/security-reviews
-
-### 14. Stake DAO  —  `ORACLE-SPOT-THIN-LIQUIDITY`
-
-- **Rank (Ranking B — expected loss prevention):** 14
-- **Protocol:** Stake DAO (`stake-dao`)
-- **DefiLlama URL:** https://defillama.com/protocol/stake-dao
-- **Current TVL:** $138,809,701
-- **Chains:** Ethereum, Base, Fraxtal, Arbitrum, Polygon, Optimism, Avalanche, Sonic …
-- **Category:** Yield
-- **Matched family IDs:** `ORACLE-SPOT-THIN-LIQUIDITY` (other pairs generated for this protocol: ACC-MULTI-PATH-CREDIT-DRIFT, ACC-REWARD-INDEX-INIT-AND-ORDERING, CALLBACK-STATE-LOCK-INCOMPLETE, CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS, GOV-CHEAP-CONTROL-NO-TIMELOCK, INCENTIVE-PER-ADDRESS-NO-SYBIL-COST, SETTLEMENT-EPOCH-BOUNDARY-CREDIT, SIG-REPLAY-CROSS-POSITION)
-- **Ranking:**
-    - MATCH_SCORE: **40.0** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **29.188** = MATCH 40.0 × CONF 75.0/100 × EXPOSURE 0.8203 × RECENCY 0.9884 × RECURRENCE 1.2
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** Borrowing capacity, mint size, reward size or collateral value must not be derived from a price that a single actor can move within the manipulation window, and the value unlocked must never exceed the cost of moving that price.
-    - Screening evidence: archetype applicable: category=Yield; description/methodology signals: stake, yield; misrepresentedTokens flag; sub-threshold high-fit: onchain_governance_authority; multi-chain surface (10 chains)
-    - Deep-screen observations: declared oracles: none declared in DefiLlama metadata
-- **Mandatory preconditions PRESENT:** single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** value_decision_reads_configured_feed, feed_selection_is_configuration, failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $159,631,156; on-chain governance authority
-- **Implementation and deployment status:** adapter `stakedao/index.js` (READ); 6 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** All collateral priced by a deep aggregated feed with a deviation cap (kills the pair); Caps are set from measured venue depth and enforced on-chain; The action is sized from realised transfer amounts, so price is never an input
-- **Recommended audit focus:** On a fork, execute a max-size flash-funded swap against every venue in the pricing path and assert that no value-bearing entrypoint changes its output beyond the configured deviation bound.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#stake-dao|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/adapters_index.json#stake-dao`, `protocols/onchain_probes.json#stake-dao`, `families/families.json#ORACLE-SPOT-THIN-LIQUIDITY`, `sources/defillama/adapters/stake-dao__stakedao__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata · audits: https://docs.stakedao.org/audits
-
-### 15. Yield Basis  —  `ORACLE-SPOT-THIN-LIQUIDITY`
-
-- **Rank (Ranking B — expected loss prevention):** 15
-- **Protocol:** Yield Basis (`yield-basis`)
-- **DefiLlama URL:** https://defillama.com/protocol/yield-basis
-- **Current TVL:** $156,332,797
-- **Chains:** Ethereum
-- **Category:** Leveraged Farming
-- **Matched family IDs:** `ORACLE-SPOT-THIN-LIQUIDITY`
-- **Ranking:**
-    - MATCH_SCORE: **40.0** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **29.156** = MATCH 40.0 × CONF 75.0/100 × EXPOSURE 0.8194 × RECENCY 0.9884 × RECURRENCE 1.2
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** Borrowing capacity, mint size, reward size or collateral value must not be derived from a price that a single actor can move within the manipulation window, and the value unlocked must never exceed the cost of moving that price.
-    - Screening evidence: archetype applicable: category=Leveraged Farming; description/methodology signals: borrow, reward, yield; no audit link listed (prioritisation signal only, never evidence of a defect); no oracle declared in DefiLlama metadata (unknown pricing path); exposure tilt from TVL $156,332,797
-    - Deep-screen observations: declared oracles: none declared in DefiLlama metadata
-- **Mandatory preconditions PRESENT:** single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** value_decision_reads_configured_feed, feed_selection_is_configuration, failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $156,332,797
-- **Implementation and deployment status:** adapter `yield-basis/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** All collateral priced by a deep aggregated feed with a deviation cap (kills the pair); Caps are set from measured venue depth and enforced on-chain; The action is sized from realised transfer amounts, so price is never an input
-- **Recommended audit focus:** On a fork, execute a max-size flash-funded swap against every venue in the pricing path and assert that no value-bearing entrypoint changes its output beyond the configured deviation bound.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#yield-basis|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/adapters_index.json#yield-basis`, `protocols/onchain_probes.json#yield-basis`, `families/families.json#ORACLE-SPOT-THIN-LIQUIDITY`, `sources/defillama/adapters/yield-basis__yield-basis__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 16. Lido  —  `GOV-CHEAP-CONTROL-NO-TIMELOCK`
-
-- **Rank (Ranking B — expected loss prevention):** 16
-- **Protocol:** Lido (`lido`)
-- **DefiLlama URL:** https://defillama.com/protocol/lido
-- **Current TVL:** $23,256,609,669
-- **Chains:** Ethereum, Solana, Terra, Moonriver, Moonbeam
-- **Category:** Liquid Staking
-- **Matched family IDs:** `GOV-CHEAP-CONTROL-NO-TIMELOCK` (other pairs generated for this protocol: ACC-REWARD-INDEX-INIT-AND-ORDERING)
-- **Ranking:**
-    - MATCH_SCORE: **42.5** / 100
-    - EVIDENCE_CONFIDENCE: **62.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 15)
-    - PREVENTION_SCORE: **28.319** = MATCH 42.5 × CONF 62.0/100 × EXPOSURE 1.0427 × RECENCY 0.937 × RECURRENCE 1.1
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** The cost of acquiring decisive voting power must exceed the value governance controls, and execution must be separated from passage by a delay long enough for holders to exit or a guardian to veto.
-    - Screening evidence: archetype-agnostic family (applies to any archetype); sub-threshold high-fit: onchain_governance_authority; multi-chain surface (5 chains); on-chain governance registered: snapshot:lido-snapshot.eth; exposure tilt from TVL $23,256,609,669
-    - Deep-screen observations: Cost to acquire decisive voting power was NOT measured against controlled value, and timelock parameters were NOT read on-chain. Both remain UNKNOWN and therefore score zero: this pair is listed as an open question about governance economics, not as an assertion that control is cheap.
-- **Mandatory preconditions PRESENT:** governance_can_move_value_mint_or_upgrade, live_value_or_approvals_reachable_by_governance
-- **Mandatory preconditions UNKNOWN:** decisive_voting_power_cheaper_than_controlled_value, no_timelock_or_timelock_shorter_than_response_window
-- **Decisive guards searched:** timelock_plus_guardian_veto, quorum_scaled_to_controlled_value
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $26,745,101,120; on-chain governance authority
-- **Implementation and deployment status:** adapter `lido/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Timelock plus an active guardian with veto (kills execution speed); Cost to acquire quorum exceeds controlled value by a wide margin; Governance cannot upgrade or mint
-- **Recommended audit focus:** Compute, from live market depth, the capital required to reach quorum, and compare it with treasury plus TVL plus the value reachable through approvals; the ratio is the finding.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#lido|GOV-CHEAP-CONTROL-NO-TIMELOCK`, `protocols/adapters_index.json#lido`, `protocols/onchain_probes.json#lido`, `families/families.json#GOV-CHEAP-CONTROL-NO-TIMELOCK`, `sources/defillama/adapters/lido__lido__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata · audits: https://github.com/lidofinance/audits
-
-### 17. ether.fi Liquid  —  `ORACLE-STALE-OR-SILENT-FALLBACK`
-
-- **Rank (Ranking B — expected loss prevention):** 17
-- **Protocol:** ether.fi Liquid (`ether.fi-liquid`)
-- **DefiLlama URL:** https://defillama.com/protocol/ether.fi-liquid
-- **Current TVL:** $388,960,571
-- **Chains:** Ethereum
-- **Category:** Onchain Capital Allocator
-- **Matched family IDs:** `ORACLE-STALE-OR-SILENT-FALLBACK`
-- **Ranking:**
-    - MATCH_SCORE: **40.0** / 100
-    - EVIDENCE_CONFIDENCE: **75.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 80)
-    - PREVENTION_SCORE: **28.163** = MATCH 40.0 × CONF 75.0/100 × EXPOSURE 0.859 × RECENCY 0.9503 × RECURRENCE 1.15
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** A valuation used to size borrowing, minting, redemption or liquidation must come from a feed proven to describe that exact asset, be within a bounded age, and fail closed. A feed that returns a wrong asset's price, a stale price, a capped price, or zero must revert rather than be used.
-    - Screening evidence: archetype applicable: category=Onchain Capital Allocator; no audit link listed (prioritisation signal only, never evidence of a defect); misrepresentedTokens flag; sub-threshold high-fit: curator_authority_over_third_party_vaults; no oracle declared in DefiLlama metadata (unknown pricing path)
-    - Deep-screen observations: declared oracles: none declared in DefiLlama metadata
-- **Mandatory preconditions PRESENT:** single_or_undeclared_oracle
-- **Mandatory preconditions UNKNOWN:** value_decision_reads_configured_feed, feed_selection_is_configuration, failure_path_returns_usable_number, live_positions_exposed
-- **Decisive guards searched:** staleness_check_reverts, deviation_bound_vs_independent_source, caps_sized_to_venue_depth
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $388,960,571
-- **Implementation and deployment status:** adapter `etherfi-liquid/index.js` (READ); 6 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Oracle registration is timelocked AND the adapter asserts the feed's base/quote on set (kills the misassignment shape); Every feed read reverts on zero/stale (kills the silent-fallback shape); Asset valuations cross-checked against a second independent oracle with a hard deviation cap
-- **Recommended audit focus:** On a fork, force each configured feed to return zero, a stale timestamp, and a 10x/0.1x value; every value-bearing entrypoint must revert rather than transact.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#ether.fi-liquid|ORACLE-STALE-OR-SILENT-FALLBACK`, `protocols/adapters_index.json#ether.fi-liquid`, `protocols/onchain_probes.json#ether.fi-liquid`, `families/families.json#ORACLE-STALE-OR-SILENT-FALLBACK`, `sources/defillama/adapters/ether.fi-liquid__etherfi-liquid__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 18. Tulipa Capital  —  `ACC-NAV-SHAREPRICE-MANIPULABLE`
-
-- **Rank (Ranking B — expected loss prevention):** 18
-- **Protocol:** Tulipa Capital (`tulipa-capital`)
-- **DefiLlama URL:** https://defillama.com/protocol/tulipa-capital
-- **Current TVL:** $44,238,986
-- **Chains:** Ethereum, Avalanche, Berachain, BOB, Monad, Binance, TAC, Base
-- **Category:** Risk Curators
-- **Matched family IDs:** `ACC-NAV-SHAREPRICE-MANIPULABLE`
-- **Ranking:**
-    - MATCH_SCORE: **54.5** / 100
-    - EVIDENCE_CONFIDENCE: **69.0** / 100 (mapping 100, deployment parity 55, live state 85, corroboration 90, guard review 15)
-    - PREVENTION_SCORE: **27.839** = MATCH 54.5 × CONF 69.0/100 × EXPOSURE 0.7646 × RECENCY 0.9221 × RECURRENCE 1.05
-- **Evidence level:** `L3_STATE`
-- **Why the family applies:** totalAssets() must equal value the vault could actually realise now. Any component valued at book, at a manipulable rate, or after economic impairment lets a redeemer convert other depositors' claims into their own.
-    - Screening evidence: archetype applicable: category=Risk Curators; description/methodology signals: vault, strateg, curat; no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: curator_authority_over_third_party_vaults; multi-chain surface (8 chains)
-    - Deep-screen observations: curator controls 3 declared vaults via registries/curators.js; owner keys 0x59e608E4842162480591032f3c8b0aE55C98d104; live vault reads: 0x686c83Aa… totalAssets=53974792511106717850370; 0x6Bf340dB… totalAssets=None; 0x7895a046… totalAssets=0
-- **Mandatory preconditions PRESENT:** multi_component_totalAssets, live_pooled_depositor_value
-- **Mandatory preconditions UNKNOWN:** component_valuation_externally_influenceable, deposit_and_redeem_reachable
-- **Decisive guards searched:** per_block_share_price_cap, component_valuation_deviation_bound
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $44,238,986; curator authority over third-party vaults
-- **Implementation and deployment status:** adapter `registries/curators.js` (READ_VIA_REGISTRY); 3 curated vault(s) read; 1 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Share price rate-limited per block (kills same-transaction extraction); Single-asset vault with no external valuation; Withdrawals queued with a delay and priced at settlement
-- **Recommended audit focus:** On a fork, for each component, force its valuation to zero and to 10x; the vault's mint/redeem must revert or be bounded, never transfer more than the depositor's pro-rata realisable share.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#tulipa-capital|ACC-NAV-SHAREPRICE-MANIPULABLE`, `protocols/adapters_index.json#tulipa-capital`, `protocols/onchain_probes.json#tulipa-capital`, `families/families.json#ACC-NAV-SHAREPRICE-MANIPULABLE`, `sources/defillama/adapters/tulipa-capital__registries__curators.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 19. Lighter Bridge  —  `PROOF-VERIFICATION-BYPASSED`
-
-- **Rank (Ranking B — expected loss prevention):** 19
-- **Protocol:** Lighter Bridge (`lighter-bridge`)
-- **DefiLlama URL:** https://defillama.com/protocol/lighter-bridge
-- **Current TVL:** $530,440,530
-- **Chains:** Ethereum, Arbitrum
-- **Category:** Bridge
-- **Matched family IDs:** `PROOF-VERIFICATION-BYPASSED`
-- **Ranking:**
-    - MATCH_SCORE: **45** / 100
-    - EVIDENCE_CONFIDENCE: **62.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 15)
-    - PREVENTION_SCORE: **26.743** = MATCH 45 × CONF 62.0/100 × EXPOSURE 0.8725 × RECENCY 0.9155 × RECURRENCE 1.2
-- **Evidence level:** `L1_ADAPTER`
-- **Why the family applies:** A withdrawal or mint gated by a proof must verify that proof against the correct verifying key, over all the public inputs that bind the action, and must reject when any component is absent.
-    - Screening evidence: archetype applicable: category=Bridge; description/methodology signals: zk, rollup; no audit link listed (prioritisation signal only, never evidence of a defect); sub-threshold high-fit: bridge_authority_over_external_value; exposure tilt from TVL $530,440,530
-    - Deep-screen observations: GENERIC-FAMILY SCREEN: no family-specific precondition was verified for this pair. Evidence is adapter-level architecture only, so the score is capped at the L1 adapter ceiling and this pair is preliminary by construction.; adapter `registries/sumTokens.js` read: 6880 hardcoded addresses, dynamic=True, external API=True
-- **Mandatory preconditions PRESENT:** _generic_family_adapter_only, family_architecture_signals_in_adapter, live_value_present
-- **Mandatory preconditions UNKNOWN:** none
-- **Decisive guards searched:** decisive_guard_reviewed
-- **Decisive guards found:** none found in the reviewed path
-- **Live value / authority / approval relevance:** exposure basis $530,440,530
-- **Implementation and deployment status:** adapter `registries/sumTokens.js` (READ_VIA_REGISTRY); 4 adapter address(es) probed; not flagged deprecated; no audit link listed
-- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** Verifying key immutable and attested (kills the misconfiguration shape); No alternative release path exists (enumerate selectors)
-- **Recommended audit focus:** On a fork, submit an empty proof, a proof for different public inputs, and a proof under a foreign key; every release path must revert.
-    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#lighter-bridge|PROOF-VERIFICATION-BYPASSED`, `protocols/adapters_index.json#lighter-bridge`, `protocols/onchain_probes.json#lighter-bridge`, `families/families.json#PROOF-VERIFICATION-BYPASSED`, `sources/defillama/adapters/lighter-bridge__registries__sumTokens.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata
-
-### 20. Uniswap V2  —  `ACC-MULTI-PATH-CREDIT-DRIFT`
-
-- **Rank (Ranking B — expected loss prevention):** 20
+- **Rank (Ranking B — expected loss prevention):** 37
 - **Protocol:** Uniswap V2 (`uniswap-v2`)
 - **DefiLlama URL:** https://defillama.com/protocol/uniswap-v2
 - **Current TVL:** $912,700,838
 - **Chains:** Ethereum, Base, Polygon, Robinhood Chain, Arbitrum, Binance, X Layer, Monad …
 - **Category:** Dexs
-- **Matched family IDs:** `ACC-MULTI-PATH-CREDIT-DRIFT` (other pairs generated for this protocol: QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET)
+- **Matched family IDs:** `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL`
+    - Next-strongest families for this protocol: `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` (60), `ACC-MULTI-PATH-CREDIT-DRIFT` (45), `AMM-POOL-RATIO-SKEW-EXTRACTION` (45), `TOKEN-TRANSFER-OVERRIDE-BREAKS-CONSERVATION` (45), `CALLDATA-CALLER-CONTROLLED-TARGET` (45); plus 17 further pairs, all in results/candidates_all.csv
 - **Ranking:**
-    - MATCH_SCORE: **45** / 100
-    - EVIDENCE_CONFIDENCE: **62.0** / 100 (mapping 100, deployment parity 55, live state 50, corroboration 90, guard review 15)
-    - PREVENTION_SCORE: **26.075** = MATCH 45 × CONF 62.0/100 × EXPOSURE 0.896 × RECENCY 0.9934 × RECURRENCE 1.05
-- **Evidence level:** `L1_ADAPTER`
-- **Why the family applies:** Every path that can credit or debit a given balance must apply identical accounting. Where a protocol offers module sidecars, legacy plus current paths, or several entrypoints to one pool, cycling between them must be value-neutral.
-    - Screening evidence: archetype applicable: category=Dexs; description/methodology signals: v2; misrepresentedTokens flag; multi-chain surface (14 chains); exposure tilt from TVL $912,700,838
-    - Deep-screen observations: GENERIC-FAMILY SCREEN: no family-specific precondition was verified for this pair. Evidence is adapter-level architecture only, so the score is capped at the L1 adapter ceiling and this pair is preliminary by construction.; adapter `uniswap-v2/index.js` read: 13 hardcoded addresses, dynamic=True, external API=True
-- **Mandatory preconditions PRESENT:** _generic_family_adapter_only, family_architecture_signals_in_adapter, live_value_present
+    - MATCH_SCORE: **63.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **46.504** = MATCH 63.8 × CONF 90.4/100 × EXPOSURE 0.896 × RECENCY 0.9006 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A transfer of zero (or dust) must be economically inert. Hooks that accrue, mint, harvest or burn must not be reachable by an operation that moves no value and bypasses authorisation.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `UniswapV2Factory` @ 0x5C69bEe7…(ethereum)): prerequisites matched: hook_zero_amount_unguarded; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: hook_zero_amount_unguarded
+    - Deep-screen observations: deployed source read for UniswapV2Factory@0x5C69bEe7…(ethereum); indicators matched: hook_zero_amount_unguarded
+- **Mandatory preconditions PRESENT:** src::hook_zero_amount_unguarded, live_value_present, deployment_reachable_on_chain
 - **Mandatory preconditions UNKNOWN:** none
-- **Decisive guards searched:** decisive_guard_reviewed
+- **Decisive guards searched:** none reachable at this evidence level
 - **Decisive guards found:** none found in the reviewed path
 - **Live value / authority / approval relevance:** exposure basis $912,700,838
 - **Implementation and deployment status:** adapter `uniswap-v2/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 3 audit link(s) listed
 - **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
-- **What would falsify the hypothesis:** All mint/burn routes through a single internal function with a closing invariant assert (kills the pair); Only one live entrypoint per balance
-- **Recommended audit focus:** On a fork, enumerate all entrypoints touching a given balance and fuzz orderings; assert the global share/asset invariant holds after every sequence.
+- **What would falsify the hypothesis:** Zero-amount transfers revert or short-circuit before the hook (kills the pair); Hooks are pure bookkeeping with no mint/transfer
+- **Recommended audit focus:** On a fork, issue zero-value transfers in a loop against every hook-bearing token and assert no state with economic value changes.
     - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
-- **Evidence paths:** `protocols/deep_screened.jsonl#uniswap-v2|ACC-MULTI-PATH-CREDIT-DRIFT`, `protocols/adapters_index.json#uniswap-v2`, `protocols/onchain_probes.json#uniswap-v2`, `families/families.json#ACC-MULTI-PATH-CREDIT-DRIFT`, `sources/defillama/adapters/uniswap-v2__uniswap-v2__index.js`
-- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata · audits: https://github.com/Uniswap/uniswap-v3-core/tree/main/audits, https://github.com/Uniswap/uniswap-v3-periphery/tree/main/audits
+- **Evidence paths:** `protocols/deep_screened.jsonl#uniswap-v2|HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL`, `protocols/adapters_index.json#uniswap-v2`, `protocols/onchain_probes.json#uniswap-v2`, `families/families.json#HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL`, `sources/defillama/adapters/uniswap-v2__uniswap-v2__index.js`
+- **Responsible disclosure channel, if public:** https://app.uniswap.org/ · audits: https://github.com/Uniswap/uniswap-v3-core/tree/main/audits, https://github.com/Uniswap/uniswap-v3-periphery/tree/main/audits
+
+### 38. Sentora  —  `SIG-VERIFIER-DEFEATABLE`
+
+- **Rank (Ranking B — expected loss prevention):** 38
+- **Protocol:** Sentora (`sentora`)
+- **DefiLlama URL:** https://defillama.com/protocol/sentora
+- **Current TVL:** $2,417,461,031
+- **Chains:** Ethereum, Ink, Solana, Tempo
+- **Category:** Risk Curators
+- **Matched family IDs:** `SIG-VERIFIER-DEFEATABLE`
+    - Next-strongest families for this protocol: `ACC-DUPLICATE-ID-ACCUMULATION` (60), `AUTH-ZERO-ADDRESS-ACCEPTED` (60), `ORACLE-STALE-OR-SILENT-FALLBACK` (52.5), `ORACLE-SPOT-THIN-LIQUIDITY` (52.5), `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` (52.5); plus 12 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **60** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **46.003** = MATCH 60 × CONF 90.4/100 × EXPOSURE 0.9383 × RECENCY 0.9039 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `BoringVault` @ 0x13cc1b39…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard indicator matched
+    - 1 implementation(s) behind a proxy are unverified on the explorer: implementation identity unresolved, which caps this pair at 60.
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: ecrecover_without_zero_check
+    - Deep-screen observations: deployed source read for BoringVault@0x13cc1b39…(ethereum); indicators matched: ecrecover_without_zero_check; 1 implementation(s) behind a proxy are NOT verified on the explorer: implementation identity unresolved, score capped at 60
+- **Mandatory preconditions PRESENT:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** uses_oz_ecdsa
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $2,417,461,031
+- **Implementation and deployment status:** adapter `sentora/index.js` (READ); 4 adapter address(es) probed; not flagged deprecated; no audit link listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
+- **Recommended audit focus:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#sentora|SIG-VERIFIER-DEFEATABLE`, `protocols/adapters_index.json#sentora`, `protocols/onchain_probes.json#sentora`, `families/families.json#SIG-VERIFIER-DEFEATABLE`, `sources/defillama/adapters/sentora__sentora__index.js`
+- **Responsible disclosure channel, if public:** https://sentora.com/
+
+### 39. Balancer V2  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+
+- **Rank (Ranking B — expected loss prevention):** 39
+- **Protocol:** Balancer V2 (`balancer-v2`)
+- **DefiLlama URL:** https://defillama.com/protocol/balancer-v2
+- **Current TVL:** $32,632,264
+- **Chains:** Ethereum, Polygon, Arbitrum, Base, xDai, Avalanche, Mode, Fraxtal …
+- **Category:** Dexs
+- **Matched family IDs:** `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+    - Next-strongest families for this protocol: `SECRET-EMBEDDED-IN-PUBLIC-CODE-AS-AUTH` (63.8), `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` (60), `ACC-MULTI-PATH-CREDIT-DRIFT` (45), `SIG-DIGEST-AMBIGUOUS-OR-UNBOUND` (45), `CALLBACK-STATE-LOCK-INCOMPLETE` (45); plus 12 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **85.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 65, guard review 85)
+    - PREVENTION_SCORE: **45.759** = MATCH 73.8 × CONF 85.4/100 × EXPOSURE 0.7514 × RECENCY 0.9669 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `SafeguardFactory` @ 0x03c01aca…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: claim_without_eligibility_map
+    - Deep-screen observations: deployed source read for SafeguardFactory@0x03c01aca…(ethereum); indicators matched: claim_without_eligibility_map
+- **Mandatory preconditions PRESENT:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** merkle_proof_gate
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $32,632,264
+- **Implementation and deployment status:** adapter `registries/balancer.js` (READ_VIA_REGISTRY); 1 adapter address(es) probed; not flagged deprecated; 1 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
+- **Recommended audit focus:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#balancer-v2|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/adapters_index.json#balancer-v2`, `protocols/onchain_probes.json#balancer-v2`, `families/families.json#AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `sources/defillama/adapters/_shared__registries__balancer.js`
+- **Responsible disclosure channel, if public:** https://balancer.fi/ · audits: https://github.com/balancer/balancer-v2-monorepo/tree/master/audits
+
+### 40. Multichain  —  `SIG-VERIFIER-DEFEATABLE`
+
+- **Rank (Ranking B — expected loss prevention):** 40
+- **Protocol:** Multichain (`multichain`)
+- **DefiLlama URL:** https://defillama.com/protocol/multichain
+- **Current TVL:** $37,621,575
+- **Chains:** Binance, Ethereum, Polygon, Arbitrum, Optimism, Avalanche, Klaytn, Fantom …
+- **Category:** Bridge
+- **Matched family IDs:** `SIG-VERIFIER-DEFEATABLE`
+    - Next-strongest families for this protocol: `BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE` (45), `CALLDATA-CALLER-CONTROLLED-TARGET` (45), `SIG-DIGEST-AMBIGUOUS-OR-UNBOUND` (45), `ACC-SIGN-OR-BOUND-CHECK-MISSING` (45), `AUTH-ZERO-ADDRESS-ACCEPTED` (45); plus 11 further pairs, all in results/candidates_all.csv
+- **Ranking:**
+    - MATCH_SCORE: **73.8** / 100
+    - EVIDENCE_CONFIDENCE: **90.4** / 100 (mapping 100, deployment parity 92, live state 85, corroboration 90, guard review 85)
+    - PREVENTION_SCORE: **45.649** = MATCH 73.8 × CONF 90.4/100 × EXPOSURE 0.7575 × RECENCY 0.9039 × RECURRENCE 1.0
+- **Evidence level:** `L4_GUARD_REVIEW`
+- **Why the family applies:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
+    - Pair origin: `DEPLOYED_SOURCE` - this pair exists because an observed condition or a deployed-source indicator supplied the applicability evidence, not because of the category label.
+    - Deployed-source indicators (read from `BGeoToken` @ 0xc3427744…(binance)): prerequisites matched: ecrecover_without_zero_check; no guard indicator matched
+    - Screening evidence: pair created because deployed code was read for this protocol and this family is screened by deployed-source static indicators rather than by category; source indicators matched: ecrecover_without_zero_check
+    - Deep-screen observations: deployed source read for BGeoToken@0xc3427744…(binance); indicators matched: ecrecover_without_zero_check
+- **Mandatory preconditions PRESENT:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain
+- **Mandatory preconditions UNKNOWN:** none
+- **Decisive guards searched:** uses_oz_ecdsa
+- **Decisive guards found:** none found in the reviewed path
+- **Live value / authority / approval relevance:** exposure basis $37,621,575
+- **Implementation and deployment status:** adapter `anyswap/index.js` (READ); 1 adapter address(es) probed; not flagged deprecated; 4 audit link(s) listed
+- **Prior-art status:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, audit competitions, upstream advisories, postmortems and relevant forks was performed for this pair. Novelty is therefore NOT claimed and NO_PUBLIC_MATCH_FOUND is deliberately not used. (search scope: none performed for this pair)
+- **What would falsify the hypothesis:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
+- **Recommended audit focus:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
+    - Questions: Is every mandatory precondition present in the live deployment? · Is any decisive guard present in the deployed bytecode, not just the repository? · What live value, authority or approval is reachable through this path?
+- **Evidence paths:** `protocols/deep_screened.jsonl#multichain|SIG-VERIFIER-DEFEATABLE`, `protocols/adapters_index.json#multichain`, `protocols/onchain_probes.json#multichain`, `families/families.json#SIG-VERIFIER-DEFEATABLE`, `sources/defillama/adapters/multichain__anyswap__index.js`
+- **Responsible disclosure channel, if public:** not listed in DefiLlama metadata · audits: https://github.com/anyswap/Anyswap-Audit/blob/master/TrailOfBits/Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final%20Report.pdf, https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/AnySwap%20CrossChain-Bridge%20Security%20Audit%20Report.pdf

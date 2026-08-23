@@ -13,12 +13,13 @@
   },
   "adapter_repo": "https://github.com/DefiLlama/DefiLlama-Adapters",
   "operational_settings": {
-    "minimum_tvl_usd": 1000000,
-    "final_candidate_count": 20,
+    "minimum_tvl_usd": 50000,
+    "final_candidate_count": 40,
     "deep_screen_multiplier": 4,
     "minimum_deep_screened_pairs": 80,
-    "include_below_threshold_high_fit": true,
-    "exclude_cex_wallet_and_non_protocol_entries": true
+    "include_below_threshold_high_fit": false,
+    "exclude_cex_wallet_and_non_protocol_entries": true,
+    "tvl_floor_rule": "HARD floor at $50,000 per operator directive: protocols below it are identified and recorded in protocols/subfloor_authority_deferred.json but never screened or ranked."
   },
   "safety_posture": {
     "production_interactions": "READ_ONLY",
@@ -27,6 +28,28 @@
     "exploit_calldata_constructed": 0,
     "scope": "DefiLlama-listed protocols with documented relationship only"
   },
-  "evidence_levels": ["L0_METADATA","L1_ADAPTER","L2_DEPLOYMENT","L3_STATE","L4_GUARD_REVIEW"],
-  "evidence_grades": {"A":"deployed code/trace + official or independent technical analysis","B":"one strong technical source + corroborating chain evidence","C":"plausible, material link unverified","D":"vague/contradictory/unsupported"}
+  "evidence_levels": [
+    "L0_METADATA",
+    "L1_ADAPTER",
+    "L2_DEPLOYMENT",
+    "L3_STATE",
+    "L4_GUARD_REVIEW"
+  ],
+  "evidence_grades": {
+    "A": "deployed code/trace + official or independent technical analysis",
+    "B": "one strong technical source + corroborating chain evidence",
+    "C": "plausible, material link unverified",
+    "D": "vague/contradictory/unsupported"
+  },
+  "expansion_pass": {
+    "reason": "Operator asked for a broader sweep at a $50,000 floor with additional observable conditions.",
+    "condition_layer": "tools/conditions.py - 24 observable conditions incl. fork-of-an-in-window-victim, dead adapter with residual TVL, version-sibling legacy, declared fallback oracle, RWA pricing surface, co-curated vaults and tag-driven architecture",
+    "deployed_source_sweep": "tools/source_sweep.py - static indicators evaluated against verified deployed source, cached under sources/deployments/",
+    "precision_controls": [
+      "relevance gate: a guard can only read as absent if the contract actually shows a distinguishing indicator for that family",
+      "prevalence demotion: any indicator firing on more than 25% of the swept population is demoted to ordering-only",
+      "metadata-derived oracle counts never establish a code precondition or prove a guard absent",
+      "approval-dependent families keep an UNKNOWN exposure precondition because live allowances were not enumerated"
+    ]
+  }
 }

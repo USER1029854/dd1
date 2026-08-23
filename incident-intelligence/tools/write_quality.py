@@ -71,7 +71,43 @@ L.append("- **Steakhouse Financial was downgraded by documented guards.** It was
          "a candidate. The residual question recorded in the near-miss library is narrower and more useful: a multi-day "
          "timelock does not address the Lazy Summer shape, where the loss came from a component that was already "
          "approved and still counted in `totalAssets()` during an incomplete offboarding.\n")
-L.append("## 4. Known limitations\n")
+L.append("## 4. The expansion pass\n")
+L.append("A second pass widened the screen on operator instruction: a **hard $50,000 TVL floor** (replacing the "
+         "$1M threshold plus a sub-threshold queue), plus two new evidence layers.\n")
+L.append("**Condition layer** (`tools/conditions.py`, 24 observable conditions). Rather than screening only by "
+         "DefiLlama category, a condition can now *create* a protocol-family pair on its own, because the condition "
+         "is itself the applicability evidence. The highest-yield ones: forked from a protocol exploited inside the "
+         "window; listed in DefiLlama's own `deadAdapters.json` while still reporting value; a version sibling of a "
+         "newer deployment; a declared Fallback or Secondary oracle; an RWA pricing surface; vaults co-curated with "
+         "another curator; and architecture tags (hook-based AMM, CLMM, StableSwap, ve(3,3), order book) that map to "
+         "specific families.\n")
+L.append("**Deployed-source sweep** (`tools/source_sweep.py`). Verified source is fetched for the contracts actually "
+         "found on-chain, following delegator and beacon proxies to their implementations, and each family's "
+         "documented `static_indicators` are evaluated against it. Source is cached under `sources/deployments/`, so "
+         "re-analysis after an indicator change costs nothing. This is what converted 11 families from "
+         "*no addressable population* into screenable pairs, and it is why 40 of 40 final candidates reach "
+         "`L4_GUARD_REVIEW` rather than stopping at adapter evidence.\n")
+L.append("### Precision controls, and why they were necessary\n")
+L.append("A static-indicator sweep at this scale manufactures false candidates unless it is disciplined. Four "
+         "controls were added after inspecting what the first version actually produced:\n")
+L.append("1. **Relevance gate.** A guard can only read as *absent* if the contract that was read shows at least one "
+         "distinguishing indicator for that family. The first version reported *no staleness check* for Aave V3 "
+         "after reading `AaveProtocolDataProvider`, and for Sky after reading `LockstakeEngine` — neither is the "
+         "pricing contract. Not finding an oracle guard in a contract that is not the oracle says nothing, so every "
+         "source-derived signal for such a pair is now UNKNOWN.\n")
+L.append("2. **Prevalence demotion.** Any indicator firing on more than 25% of the swept population is describing a "
+         "common architecture, not a distinguishing prerequisite, and is demoted to ordering-only. This removed "
+         "Lido, Uniswap V3, PancakeSwap and usdt0 from the top of the loss-prevention ranking, where they had been "
+         "placed by a generic *takes an address and bytes and calls it* pattern that half of all routers match. The "
+         "measured prevalence is published on every affected pair.\n")
+L.append("3. **Metadata cannot prove code.** DefiLlama's oracle list is a disclosure, not a code fact. It no longer "
+         "establishes a precondition or proves a deviation bound absent; it is recorded as a note.\n")
+L.append("4. **Approval-dependent families keep an UNKNOWN exposure precondition,** because live allowances and "
+         "credit delegations were not enumerated. Those families cannot reach a full score from code shape alone.\n")
+L.append("Two narrower regex fixes came from the same inspection: Aave's zero-argument `getPool()` is not Uniswap's "
+         "`getPool(token0, token1, fee)`, and CCIP's `releaseOrMint` is bridge plumbing rather than a user claim "
+         "path. Both had produced top-ranked entries that were purely naming collisions.\n")
+L.append("## 5. Known limitations\n")
 L.append("1. **Corpus completeness.** The index is a lead source, not a census. At least one in-window on-chain "
          "incident documented elsewhere (STO token, 2026-02-23, pair-burn reserve manipulation) does not appear in it. "
          "Frequency and loss statistics are therefore lower bounds.\n")
@@ -104,6 +140,19 @@ L.append("8. **DefiLlama's `deprecated` flag is ambiguous.** It is also used whe
 L.append("9. **Governance economics were not measured.** For `GOV-CHEAP-CONTROL-NO-TIMELOCK`, the cost of acquiring "
          "decisive voting power was not compared against controlled value and timelock parameters were not read "
          "on-chain. Both preconditions stay UNKNOWN and score zero, so those pairs are open questions, not claims.\n")
+L.append("11. **Static indicators are heuristics, not analysis.** The deployed-source sweep is regular expressions "
+         "over verified source. It cannot follow control flow, resolve inheritance, or tell a guard in a library "
+         "from a guard on the path that matters. A matched indicator means *this shape is present in this file*, "
+         "which is a reason to look, never a finding. Three Centrifuge-family entries flagged for the same "
+         "`ecrecover` shape are very likely one shared codebase rather than three independent results, and are "
+         "recorded that way in `prior_art.json`.\n")
+L.append("12. **Only the contracts an adapter or registry names were read.** Where an adapter is dynamic or has no "
+         "hardcoded addresses, no contract was reached at all, and those pairs stay at adapter evidence. "
+         "251 worklist protocols yielded no on-chain address to probe.\n")
+L.append("13. **The $50,000 floor is the operator's, not the methodology's.** 662 authority-bearing protocols below "
+         "it were identified and recorded in `protocols/subfloor_authority_deferred.json` but never screened. "
+         "Several carry conditions that would otherwise have ranked them, including in-window victims still holding "
+         "value. TVL remains a poor proxy for value at risk.\n")
 L.append("10. **Scores are not probabilities.** `MATCH_SCORE` measures how much of a family's observable prerequisite "
          "signature was confirmed. `PREVENTION_SCORE` is a prioritisation heuristic. Neither is an exploit likelihood, "
          "and neither should be reported as one.\n")

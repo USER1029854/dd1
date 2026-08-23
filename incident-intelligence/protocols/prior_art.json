@@ -110,5 +110,11 @@
    "https://docs.ondo.finance/protocols/flux",
    "https://immunefi.com/bug-bounty/fluxfinance/information/"
   ]
+ },
+ "centrifuge-protocol|SIG-VERIFIER-DEFEATABLE": {
+  "status": "PRIOR_ART_SEARCH_INCOMPLETE",
+  "basis": "The deployed-source sweep flags ecrecover use without an adjacent zero-address check on three Centrifuge-family entries (centrifuge-protocol, anemoy-capital, circle-usyc). Those are very likely one shared codebase rather than three independent findings, so they should be triaged as a single lineage and counted once. No per-deployment audit or advisory search was performed.",
+  "search_scope": "none performed for this pair; lineage observation only",
+  "sources": []
  }
 }

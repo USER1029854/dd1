@@ -90,21 +90,27 @@ APPLIC = {
   prio_desc=("points","airdrop","reward","incentiv","referr")),
 }
 # families whose live prerequisite base is essentially absent from the DefiLlama universe
+# Families still without an addressable population or an observable read-only signature.
+# Everything previously listed here that the deployed-source sweep can now evaluate has been
+# promoted into APPLIC_SOURCE below and is screened as a real protocol-family pair.
 NOT_SCREENABLE = {
  "TOKEN-DEFERRED-BURN-LP-RESERVE-DESYNC":"Victims are individually deployed BSC/Base tokens with custom transfer logic that are not listed as DefiLlama protocols; the family has no addressable protocol population in this universe. Handed to the token-level monitoring workstream instead.",
  "TOKEN-TRANSFER-OVERRIDE-BREAKS-CONSERVATION":"Same population problem as the deferred-burn family.",
  "TOKEN-TRANSFER-INTENT-HEURISTIC-FORGEABLE":"Same population problem as the deferred-burn family.",
- "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL":"Applies to token contracts with accrual hooks; only reachable through per-token screening, not the protocol universe.",
+
  "TOKEN-PACKED-OWNERSHIP-UNDERFLOW":"Requires DN404/BT404 lineage; no in-universe protocol above the TVL threshold carries it.",
- "AUTH-ZERO-ADDRESS-ACCEPTED":"Screened as a cheap read-only sweep (owner()==address(0) with non-zero balance) rather than as a protocol-family pair.",
- "SECRET-EMBEDDED-IN-PUBLIC-CODE-AS-AUTH":"Requires bytecode constant analysis per contract; run as a sweep over deep-screened deployments rather than as a ranked pair.",
+
  "STORAGE-LAYOUT-COLLISION-PHANTOM-CREDIT":"Requires a storage-layout dump per contract; run as a sweep over deep-screened deployments.",
- "METATX-SENDER-IDENTITY-CONFUSION":"Requires ERC-2771 detection per contract; run as a sweep.",
- "ACC-CREDIT-NOT-RECEIVED":"Reward-tracker contracts are rarely separate DefiLlama entries; folded into the reward-index sweep.",
- "ACC-DUPLICATE-ID-ACCUMULATION":"Detected by selector-shape sweep over deep-screened deployments.",
- "ACC-SIGN-OR-BOUND-CHECK-MISSING":"Detected by parameter-shape sweep over deep-screened deployments.",
- "ACC-HARDCODED-PEG-REDEMPTION":"Folded into the stablecoin-issuer oracle screen.",
- "SIG-VERIFIER-DEFEATABLE":"Detected by source-grep sweep over deep-screened deployments.",
- "AUTH-IDENTITY-SATISFIABLE-BY-ATTACKER-CONTRACT":"Detected by source-grep sweep over deep-screened deployments.",
- "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY":"Detected by selector sweep over deep-screened deployments.",
+
+
+}
+
+
+# Families screened purely from the deployed-source static-indicator sweep: they have no
+# useful category gate, so a pair is generated wherever a deployed contract was read.
+APPLIC_SOURCE = {
+ "SIG-VERIFIER-DEFEATABLE","AUTH-ZERO-ADDRESS-ACCEPTED","SECRET-EMBEDDED-IN-PUBLIC-CODE-AS-AUTH",
+ "METATX-SENDER-IDENTITY-CONFUSION","ACC-DUPLICATE-ID-ACCUMULATION","ACC-SIGN-OR-BOUND-CHECK-MISSING",
+ "ACC-HARDCODED-PEG-REDEMPTION","AUTH-IDENTITY-SATISFIABLE-BY-ATTACKER-CONTRACT",
+ "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY","ACC-CREDIT-NOT-RECEIVED","HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL",
 }

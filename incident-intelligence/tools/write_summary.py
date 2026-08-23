@@ -14,6 +14,15 @@ U=json.load(open(f'{B}/protocols/defillama_universe.json'))
 el=json.load(open(f'{B}/protocols/eligibility.json'))
 AD=json.load(open(f'{B}/protocols/adapters_index.json'))
 D=[json.loads(l) for l in open(f'{B}/protocols/deep_screened.jsonl')]
+PRB=json.load(open(f'{B}/protocols/onchain_probes.json'))
+try:
+    _cond=json.load(open(f'{B}/protocols/conditions.json'))
+    _ch=collections.Counter()
+    _elig={r['slug'] for r in el if r['_queue']=='MAIN'}
+    for k,v in _cond.items():
+        if k in _elig: _ch.update(v.keys())
+except Exception: _ch=collections.Counter()
+
 pairs=json.load(open(f'{B}/protocols/pairs_l0.json'))
 NS=json.load(open(f'{B}/protocols/families_not_screenable_in_universe.json'))
 live=[d for d in D if not d['killed']]
@@ -50,6 +59,9 @@ L.append("\n### Exclusion counts by reason\n")
 L.append("| Reason code | Count |"); L.append("|---|---:|")
 for k,v in collections.Counter(e['exclusion_reason_code'] for e in exc).most_common():
     L.append(f"| `{k}` | {v} |")
+L.append("\n### Top observable conditions across eligible protocols\n")
+L.append("| Condition | Protocols |"); L.append("|---|---:|")
+for k,v in _ch.most_common(14): L.append(f"| `{k}` | {v} |")
 L.append("\n### Largest families by incident count\n")
 L.append("| Family | Incidents | Unique root causes | 6-month loss | Most recent |")
 L.append("|---|---:|---:|---:|---|")
@@ -58,14 +70,24 @@ for f in F[:12]:
 L.append("\n## DefiLlama screen\n")
 L.append("| Metric | Value |"); L.append("|---|---:|")
 L.append(f"| Protocols fetched from /protocols | {len(U)} |")
-L.append(f"| Protocols eligible (main queue, TVL ≥ ${cfg['operational_settings']['minimum_tvl_usd']:,}) | {sum(1 for r in el if r['_queue']=='MAIN')} |")
-L.append(f"| Sub-threshold high-fit queue preserved | {sum(1 for r in el if r['_queue']=='HIGH_FIT_SUBTHRESHOLD')} |")
+L.append(f"| TVL floor applied | ${cfg['operational_settings']['minimum_tvl_usd']:,} (hard) |")
+L.append(f"| Protocols eligible (above the floor) | {sum(1 for r in el if r['_queue']=='MAIN')} |")
+try:
+    _sf=json.load(open(f'{B}/protocols/subfloor_authority_deferred.json'))
+except Exception: _sf=[]
+L.append(f"| Authority-bearing protocols below the floor: identified, recorded, deliberately not screened | {len(_sf)} |")
+L.append(f"| Observable conditions evaluated per protocol | {len(_ch)} distinct |")
 L.append(f"| Excluded from the universe | {sum(1 for r in el if r['_queue']=='OUT')} |")
 L.append(f"| Protocol-family pairs generated | {len(pairs)} |")
 L.append(f"| Families screened as protocol-family pairs | {len(set(p['family_id'] for p in pairs))} |")
 L.append(f"| Families with no addressable population in this universe | {len(NS)} |")
 L.append(f"| Protocols in the stratified deep-screen worklist | {len(set(d['protocol_slug'] for d in D))} |")
 L.append(f"| Pairs deep-screened | {len(D)} (requirement: ≥ {cfg['operational_settings']['minimum_deep_screened_pairs']}) |")
+L.append(f"| Pairs created by an observed condition rather than by category | {sum(1 for p in pairs if p.get('pair_origin')=='CONDITION')} |")
+L.append(f"| Pairs created because deployed source was read | {sum(1 for p in pairs if p.get('pair_origin')=='DEPLOYED_SOURCE')} |")
+L.append(f"| Protocols with deployed source read and analysed | {sum(1 for v in PRB.values() if v.get('source_sweep',{}).get('indicators'))} |")
+L.append(f"| Verified contracts analysed | {sum(1 for v in PRB.values() for c in v.get('source_sweep',{}).get('contracts',[]) if c.get('status')=='VERIFIED')} |")
+L.append(f"| Implementations behind a proxy that are unverified | {sum(1 for v in PRB.values() for c in v.get('source_sweep',{}).get('contracts',[]) if c.get('status')=='IMPLEMENTATION_NOT_VERIFIED')} |")
 L.append(f"| Adapters successfully read | {sum(1 for v in AD.values() if v['status'].startswith('READ'))} |")
 L.append(f"| Adapters read via a shared registry | {sum(1 for v in AD.values() if v.get('shared_registry_adapter'))} |")
 L.append(f"| Adapters missing | {sum(1 for v in AD.values() if not v['status'].startswith('READ'))} |")

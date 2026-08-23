@@ -41,6 +41,25 @@
 | `EXC_RUG_OR_ADMIN_MISUSE` | 1 |
 | `EXC_OFFCHAIN_SIGNING_INFRA` | 1 |
 
+### Top observable conditions across eligible protocols
+
+| Condition | Protocols |
+|---|---:|
+| `NO_AUDIT_MATERIAL_TVL` | 1361 |
+| `DEAD_FRONTEND_FUNDED` | 395 |
+| `PRICING_SURFACE_UNDECLARED` | 391 |
+| `AUTHORITY_ADDRESSES_BEYOND_TVL` | 380 |
+| `MISREPRESENTED_TOKENS` | 292 |
+| `MULTICHAIN_VERSION_DRIFT` | 275 |
+| `FORK_OF_KNOWN_VULNERABLE_UPSTREAM` | 271 |
+| `SINGLE_PRIMARY_ORACLE_NO_CROSSCHECK` | 203 |
+| `TAG_CLMM` | 160 |
+| `VERSION_SIBLING_LEGACY` | 124 |
+| `RWA_PRICING_SURFACE` | 119 |
+| `REBRANDED_DEPLOYMENT` | 115 |
+| `DEAD_ADAPTER_WITH_RESIDUAL_TVL` | 50 |
+| `DECLARED_FALLBACK_ORACLE` | 47 |
+
 ### Largest families by incident count
 
 | Family | Incidents | Unique root causes | 6-month loss | Most recent |
@@ -63,34 +82,41 @@
 | Metric | Value |
 |---|---:|
 | Protocols fetched from /protocols | 8103 |
-| Protocols eligible (main queue, TVL ≥ $1,000,000) | 1284 |
-| Sub-threshold high-fit queue preserved | 543 |
-| Excluded from the universe | 6276 |
-| Protocol-family pairs generated | 19186 |
-| Families screened as protocol-family pairs | 27 |
+| TVL floor applied | $50,000 (hard) |
+| Protocols eligible (above the floor) | 2662 |
+| Authority-bearing protocols below the floor: identified, recorded, deliberately not screened | 662 |
+| Observable conditions evaluated per protocol | 24 distinct |
+| Excluded from the universe | 5441 |
+| Protocol-family pairs generated | 33660 |
+| Families screened as protocol-family pairs | 39 |
 | Families with no addressable population in this universe | 16 |
-| Protocols in the stratified deep-screen worklist | 105 |
-| Pairs deep-screened | 243 (requirement: ≥ 80) |
-| Adapters successfully read | 104 |
-| Adapters read via a shared registry | 35 |
+| Protocols in the stratified deep-screen worklist | 626 |
+| Pairs deep-screened | 5197 (requirement: ≥ 80) |
+| Pairs created by an observed condition rather than by category | 2438 |
+| Pairs created because deployed source was read | 2955 |
+| Protocols with deployed source read and analysed | 229 |
+| Verified contracts analysed | 350 |
+| Implementations behind a proxy that are unverified | 36 |
+| Adapters successfully read | 670 |
+| Adapters read via a shared registry | 240 |
 | Adapters missing | 1 |
-| Dynamic adapters (factory/registry driven) | 49 |
-| Adapters depending on an external API | 57 |
-| Pairs killed by a mandatory precondition | 11 |
-| Pairs killed by a decisive guard | 1 |
-| Pairs killed for lack of a lawful disclosure recipient | 1 |
-| Surviving pairs | 230 |
-| Final candidates | 20 |
+| Dynamic adapters (factory/registry driven) | 335 |
+| Adapters depending on an external API | 305 |
+| Pairs killed by a mandatory precondition | 162 |
+| Pairs killed by a decisive guard | 37 |
+| Pairs killed for lack of a lawful disclosure recipient | 15 |
+| Surviving pairs | 4983 |
+| Final candidates | 40 |
 
 ### Candidates at each evidence level
 
 | Evidence level | Surviving pairs | Final candidates |
 |---|---:|---:|
 | `L0_METADATA` | 0 | 0 |
-| `L1_ADAPTER` | 177 | 0 |
-| `L2_DEPLOYMENT` | 14 | 0 |
-| `L3_STATE` | 34 | 18 |
-| `L4_GUARD_REVIEW` | 5 | 2 |
+| `L1_ADAPTER` | 4143 | 0 |
+| `L2_DEPLOYMENT` | 0 | 0 |
+| `L3_STATE` | 584 | 1 |
+| `L4_GUARD_REVIEW` | 256 | 39 |
 
 ## Quality
 
@@ -98,9 +124,9 @@
 |---|---|
 | Unresolved source contradictions | 1 — `INC-2026-04-01-DRI` (Drift Protocol, ~$285M): the index's attack-method label reads *Social Engineering* while its own description describes a vault exploit with no mechanism given. Graded D and excluded from pattern derivation. |
 | Corpus completeness gap | At least one in-window on-chain incident documented elsewhere is absent from the SlowMist index (STO token, 2026-02-23, pair-burn reserve manipulation, per DARKNAVY). The index is a lead source, not a census. |
-| Unresolved deployment mappings | 1 adapter(s) unresolved; 190 pairs remain at metadata/adapter evidence |
-| Protocols capped by weak evidence | 177 pairs capped at the 45-point adapter ceiling; 0 at the 20-point metadata ceiling |
-| Prior-art searches incomplete | 17 of 20 final candidates. `NO_PUBLIC_MATCH_FOUND` is never emitted, so no novelty is claimed anywhere in this run. |
+| Unresolved deployment mappings | 1 adapter(s) unresolved; 4357 pairs remain at metadata/adapter evidence |
+| Protocols capped by weak evidence | 4143 pairs capped at the 45-point adapter ceiling; 0 at the 20-point metadata ceiling |
+| Prior-art searches incomplete | 38 of 40 final candidates. `NO_PUBLIC_MATCH_FOUND` is never emitted, so no novelty is claimed anywhere in this run. |
 | Commands reproducible | `commands.sh` replays every retrieval and transformation step in execution order |
 | Manifest checker result | see `results/manifest_check.txt` |
 

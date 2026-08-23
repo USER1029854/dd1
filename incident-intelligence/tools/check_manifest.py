@@ -66,8 +66,25 @@ chk("18.3 adapter read or explicitly marked missing for every candidate",
     all(s in AD for s in {d['protocol_slug'] for d in D}),
     f"{len(unread)} marked missing (explicitly recorded): {unread[:5]}")
 el=json.load(open(f'{B}/protocols/eligibility.json'))
-chk("18.3 sub-threshold high-fit protocols preserved",
-    sum(1 for r in el if r['_queue']=='HIGH_FIT_SUBTHRESHOLD')>0)
+# Operator directive supersedes §10.2: a hard $50,000 floor applies. The requirement is then
+# that sub-floor authority-bearing protocols are still identified and recorded, not silently dropped.
+_sf=json.load(open(f'{B}/protocols/subfloor_authority_deferred.json')) if os.path.exists(f'{B}/protocols/subfloor_authority_deferred.json') else []
+chk("18.3 sub-floor authority-bearing protocols identified and recorded (hard $50k floor in force)",
+    len(_sf)>0 and all(r.get('authority_flags') for r in _sf),
+    f"{len(_sf)} recorded in protocols/subfloor_authority_deferred.json, none screened")
+chk("18.3 hard TVL floor actually enforced in the screen",
+    min([d['tvl'] for d in D] or [0])>=50000,
+    f"lowest screened TVL ${min([d['tvl'] for d in D] or [0]):,.0f}")
+chk("18.3 condition layer recorded per protocol",
+    os.path.exists(f'{B}/protocols/conditions.json') and os.path.getsize(f'{B}/protocols/conditions.json')>1000)
+_pr=json.load(open(f'{B}/protocols/onchain_probes.json'))
+chk("18.4 deployed-source sweep evidence recorded",
+    sum(1 for v in _pr.values() if v.get('source_sweep',{}).get('indicators'))>50,
+    f"{sum(1 for v in _pr.values() if v.get('source_sweep',{}).get('indicators'))} protocols with analysed source")
+chk("18.4 precision controls applied and published",
+    any(d.get('demoted_indicators') is not None for d in D) and
+    any('RELEVANCE GATE' in ' '.join(d.get('notes',[])) for d in D),
+    "prevalence demotion and relevance gate both present in scored pairs")
 chk("18.3 TVL, chains, category and deployment evidence recorded",
     all(('tvl' in d and d.get('chains') is not None and d.get('category') is not None) for d in D))
 

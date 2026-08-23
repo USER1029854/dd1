@@ -75,15 +75,42 @@ python3 tools/fetch_adapters2.py
 python3 tools/parse_registries.py
 #   -> protocols/adapters_index.json, registry_configs.json, registry_slug_map.json
 
+# ---------------------- 6b. EXPANSION PASS (hard $50k floor + condition layer)
+# Rebuild the universe at a hard $50,000 floor and compute the observable condition layer:
+# fork-of-an-in-window-victim, dead adapter with residual TVL, version-sibling legacy,
+# declared fallback oracle, RWA pricing surface, co-curated vaults, architecture tags.
+python3 tools/build_universe2.py
+#   -> protocols/{defillama_universe,eligibility,conditions,victim_map,
+#                 subfloor_authority_deferred}.json
+python3 tools/gen_pairs2.py          # conditions can create a pair, not just re-rank one
+python3 tools/fetch_adapters3.py     # adapters for the expanded worklist
+python3 tools/parse_registries.py    # compound.js + aave.js + curators.js + deadAdapters.json
+
 # --------------------------------- 7. Phase H.3 (L2/L3): read-only chain probes
 # eth_call / eth_getStorageAt / eth_getCode + explorer getsourcecode only.
-python3 tools/deep_screen.py 60
+python3 tools/deep_screen.py 60        # first pass, sequential
+python3 tools/deep_screen2.py          # registry-aware probes
+python3 tools/deep_screen3.py          # corrected slug->registry mapping, multi-chain
+python3 tools/resolve_impl.py          # follow delegator/beacon proxies to implementations
+python3 tools/deep_screen4.py 700      # batched JSON-RPC probe over the expanded worklist
 #   -> protocols/onchain_probes.json
 
+# ------------------- 7b. Phase H.3 (L4): deployed-source static-indicator sweep
+# Fetches verified source for the contracts actually found on-chain, follows proxies to their
+# implementations, and evaluates each family's documented static_indicators. Source is cached
+# under sources/deployments/, so re-analysis after an indicator change is free:
+#   python3 tools/source_sweep.py 400 --reanalyze
+python3 tools/source_sweep.py 400
+
 # ------------------------------------- 8. Phase H/13: gate, scoring, rankings
-python3 tools/score.py
+# score2 applies the precision controls: relevance gate, prevalence demotion (>25% of the
+# swept population), metadata-cannot-prove-code, and UNKNOWN exposure for approval-dependent
+# families.
+python3 tools/score2.py
 #   -> protocols/deep_screened.jsonl
 python3 tools/write_results.py
+python3 tools/write_summary.py
+python3 tools/write_quality.py
 #   -> results/candidates_all.csv, candidates_by_match.md, candidates_by_prevention.md,
 #      audit_variables.txt, excluded_protocols.md, run_summary.md
 #   -> families/near_miss_library.jsonl

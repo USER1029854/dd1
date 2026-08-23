@@ -75,10 +75,13 @@ def block(o,rank,which):
     L.append(f"- **Current TVL:** ${o['tvl']:,.0f}")
     L.append(f"- **Chains:** {', '.join(o['chains'][:8])}{' …' if len(o['chains'])>8 else ''}")
     L.append(f"- **Category:** {o['category']}")
-    L.append(f"- **Matched family IDs:** `{o['family_id']}`"+
-             (f" (other pairs generated for this protocol: "+", ".join(sorted({x['family_id'] for x in live
-               if x['protocol_slug']==o['protocol_slug'] and x['family_id']!=o['family_id']}))+")" if any(
-               x['protocol_slug']==o['protocol_slug'] and x['family_id']!=o['family_id'] for x in live) else ""))
+    others=sorted([x for x in live if x['protocol_slug']==o['protocol_slug'] and x['family_id']!=o['family_id']],
+                  key=lambda x:-x['MATCH_SCORE'])
+    L.append("- **Matched family IDs:** `%s`" % o['family_id'])
+    if others:
+        top5=", ".join("`%s` (%s)" % (x['family_id'], x['MATCH_SCORE']) for x in others[:5])
+        L.append("    - Next-strongest families for this protocol: %s%s" %
+                 (top5, ("; plus %d further pairs, all in results/candidates_all.csv" % (len(others)-5)) if len(others)>5 else ""))
     L.append("- **Ranking:**")
     L.append(f"    - MATCH_SCORE: **{o['MATCH_SCORE']}** / 100")
     L.append(f"    - EVIDENCE_CONFIDENCE: **{o['EVIDENCE_CONFIDENCE']}** / 100 "
@@ -92,6 +95,27 @@ def block(o,rank,which):
              f"× RECENCY {o['FAMILY_RECENCY_FACTOR']} × RECURRENCE {o['RECURRENCE_MULTIPLIER']}")
     L.append(f"- **Evidence level:** `{o['evidence_level']}`")
     L.append(f"- **Why the family applies:** {f['broken_invariant']}")
+    if o.get('pair_origin') and o['pair_origin']!='CATEGORY':
+        L.append("    - Pair origin: `%s` - this pair exists because an observed condition or a deployed-source "
+                 "indicator supplied the applicability evidence, not because of the category label." % o['pair_origin'])
+    if o.get('conditions'):
+        L.append("    - Conditions observed: "+", ".join("`%s`" % c for c in o['conditions']))
+    ss=PR.get(o['protocol_slug'],{}).get('source_sweep',{})
+    sig=(ss.get('family_signals') or {}).get(o['family_id']) or {}
+    if sig:
+        pre=[k for k,h in sig.items() if h['match'] and h['role']=='PRE']
+        gd=[k for k,h in sig.items() if h['match'] and h['role']=='GUARD']
+        ver=[c for c in ss.get('contracts',[]) if c.get('status')=='VERIFIED']
+        where=", ".join("`%s` @ %s(%s)" % (c.get('name'), c['address'][:10]+'\u2026', c['chain']) for c in ver[:2]) \
+              or "no verified contract"
+        detail=("prerequisites matched: "+", ".join(pre)) if pre else "no prerequisite indicator matched"
+        if gd: detail += "; guards found: "+", ".join(gd)
+        else:  detail += "; no guard indicator matched"
+        L.append("    - Deployed-source indicators (read from %s): %s" % (where, detail))
+        unv=[c for c in ss.get('contracts',[]) if c.get('status')=='IMPLEMENTATION_NOT_VERIFIED']
+        if unv:
+            L.append("    - %d implementation(s) behind a proxy are unverified on the explorer: implementation "
+                     "identity unresolved, which caps this pair at 60." % len(unv))
     L.append(f"    - Screening evidence: {'; '.join(o['priority_evidence'][:5])}")
     if o.get('notes'): L.append(f"    - Deep-screen observations: {'; '.join(o['notes'])}")
     L.append(f"- **Mandatory preconditions PRESENT:** {', '.join(pres) if pres else 'none confirmed'}")

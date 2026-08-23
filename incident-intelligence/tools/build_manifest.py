@@ -55,6 +55,10 @@ M={
   ent("protocols/dead_adapters.json","adapter evidence","DefiLlama registries/deadAdapters.json: 591 dead deployments with deadFrom"),
   ent("protocols/onchain_probes.json","live state","Read-only eth_call/eth_getStorageAt/getsourcecode results"),
   ent("protocols/prior_art.json","prior art","Researched prior-art status and documented decisive guards"),
+  ent("protocols/conditions.json","screen","Creative observable conditions per protocol: fork-of-victim, dead adapter with residual TVL, version-sibling legacy, declared fallback oracle, RWA pricing surface, co-curated vaults, tag-driven architecture and more"),
+  ent("protocols/victim_map.json","screen","In-window incident victims mapped to live DefiLlama slugs, with the families they carry"),
+  ent("protocols/subfloor_authority_deferred.json","screen","Authority-bearing protocols below the $50,000 floor: identified, recorded, and deliberately not screened"),
+  ent("protocols/registry_configs.json","adapter evidence","Per-protocol configs parsed from registries/compound.js, aave.js and curators.js"),
   ent("protocols/deep_screened.jsonl","scoring","Per-pair precondition gate, guards, MATCH/CONFIDENCE/PREVENTION with components"),
   ent("results/candidates_all.csv","results","Every surviving pair with both ranks and full score components"),
   ent("results/candidates_by_match.md","results","Ranking A - mechanism match"),
@@ -79,6 +83,9 @@ M={
   "score components and caps":"protocols/deep_screened.jsonl + results/candidates_all.csv",
   "prior-art status per final pair":"protocols/prior_art.json + results/candidates_by_*.md",
   "near misses":"families/near_miss_library.jsonl",
+  "creative condition layer":"protocols/conditions.json (definitions in tools/conditions.py)",
+  "deployed-source static indicators":"protocols/onchain_probes.json#<slug>.source_sweep + cached source under sources/deployments/",
+  "hard $50k floor and what it excluded":"protocols/eligibility.json + protocols/subfloor_authority_deferred.json",
  }}
 json.dump(M,open(f'{B}/manifest.json','w'),indent=1)
 missing=[a['path'] for a in M['artifacts'] if not a['exists'] or a['bytes']==0]
