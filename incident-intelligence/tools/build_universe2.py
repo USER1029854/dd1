@@ -74,7 +74,8 @@ for r in P:
     rows.append(o)
 json.dump(rows,open(f'{B}/protocols/defillama_universe.json','w'))
 json.dump([{k:v for k,v in r.items() if k.startswith('_') or k in
-            ('id','name','slug','category','chains','tvl','description','methodology','url')} for r in rows],
+            ('id','name','slug','category','chains','tvl','description','methodology','url',
+             'change_1d','change_7d','change_1h','mcap','listedAt','address','audits','symbol')} for r in rows],
           open(f'{B}/protocols/eligibility.json','w'))
 defer=[{"slug":r['slug'],"name":r['name'],"tvl":r['_tvl'],"category":r['_cat'],
         "authority_flags":r['_authority_flags'],"conditions":r['_conditions'],

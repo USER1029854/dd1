@@ -1,6 +1,6 @@
 {
  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
- "generated_utc": "2026-08-23T22:01:34Z",
+ "generated_utc": "2026-08-23T23:33:25Z",
  "safety_attestation": {
   "production_transactions_submitted": 0,
   "production_transactions_constructed": 0,
@@ -189,8 +189,8 @@
   {
    "path": "commands.sh",
    "exists": true,
-   "bytes": 6530,
-   "sha256": "1783027bc72670a5ff69e53816cb289ce7e949e257566ac504a6e57576f7d5a9",
+   "bytes": 7567,
+   "sha256": "88567f57ac1e2d479c8ba959817cc34f479ce914d11b74ba3c4feb0383ea94cf",
    "role": "reproduction",
    "supports_claim": "Every retrieval and transformation step in execution order"
   },
@@ -261,8 +261,8 @@
   {
    "path": "families/near_miss_library.jsonl",
    "exists": true,
-   "bytes": 176639,
-   "sha256": "6f2fe13439b4b87619f5943335c3d78d93a54c7c87ae79c89169763e1a07c4df",
+   "bytes": 325358,
+   "sha256": "c6481df4fb6067fdc6dbee11b03612b838263653e0d86d1e27c1fbf73ac43113",
    "role": "guard library",
    "supports_claim": "Pairs killed by a precondition or a decisive guard, with residual uncertainty"
   },
@@ -301,32 +301,32 @@
   {
    "path": "protocols/eligibility.json",
    "exists": true,
-   "bytes": 12059149,
-   "sha256": "928e94d42cfb2cd77c6090cda2cfa822012d6797e62d705993dfebadbb81916e",
+   "bytes": 13613007,
+   "sha256": "3370f937865130ea3993a76181f4c5e159b382233ba44111403df6689ba55d01",
    "role": "screen",
    "supports_claim": "Eligibility decision and sub-threshold high-fit queue per protocol"
   },
   {
    "path": "protocols/pairs_l0.json",
    "exists": true,
-   "bytes": 18196055,
-   "sha256": "c4fbbea18280ae5f6cb7948bf4fa11ced8e91abf645a76e59aad497dc0107e76",
+   "bytes": 16314118,
+   "sha256": "e86d1f8ffb5ad6d619e23100b355821486543947ea2bb17be6efd97f4854ce65",
    "role": "screen",
    "supports_claim": "All generated protocol-family pairs at L0"
   },
   {
    "path": "protocols/deep_screen_worklist.json",
    "exists": true,
-   "bytes": 6150841,
-   "sha256": "bd3ca6bf3c241689f84fe0c171e4b8b30a5323c0a1a1120598991e69aeb559e9",
+   "bytes": 16458265,
+   "sha256": "65a760651e8a00624eb563470a565f03731a84a2bf71d558671ccc7a64d1ae4c",
    "role": "screen",
    "supports_claim": "Stratified deep-screen worklist across families and exposure tiers"
   },
   {
    "path": "protocols/adapters_index.json",
    "exists": true,
-   "bytes": 1344612,
-   "sha256": "fc5d70872de45ca6572399cf164ce4e2e6c7f21ae2da2c792aba6cc3577db2ef",
+   "bytes": 2477622,
+   "sha256": "435fb168da89c1785786d836d909337c36d6c7082ff9a2b82a3cc44c77c196ea",
    "role": "adapter evidence",
    "supports_claim": "Per-protocol adapter read, hashes, addresses, dynamic sources"
   },
@@ -349,8 +349,8 @@
   {
    "path": "protocols/onchain_probes.json",
    "exists": true,
-   "bytes": 2214626,
-   "sha256": "5f99c8961ee2daab2b8ee2da207d98266fc24bd7fd6a01c8d6dd3614eb86b2b9",
+   "bytes": 4557133,
+   "sha256": "f0def473326564fceb463c0943fd2890c5e660d02dd41c0570ea8fdc9295dad9",
    "role": "live state",
    "supports_claim": "Read-only eth_call/eth_getStorageAt/getsourcecode results"
   },
@@ -397,40 +397,56 @@
   {
    "path": "protocols/deep_screened.jsonl",
    "exists": true,
-   "bytes": 12874355,
-   "sha256": "42f0253f761ecb91e429d669ce4204867acddf67730e56df8006a70a5bfaaf41",
+   "bytes": 30012599,
+   "sha256": "b19b25779c419ce20bd3e955d38595659aab2ef8cec9ed9029a6c353b061cd14",
    "role": "scoring",
    "supports_claim": "Per-pair precondition gate, guards, MATCH/CONFIDENCE/PREVENTION with components"
   },
   {
    "path": "results/candidates_all.csv",
    "exists": true,
-   "bytes": 1617050,
-   "sha256": "351ca1fed267470210369a026d6dd5ddfa5acfa82c14f72fc968cc76f5f61781",
+   "bytes": 3296994,
+   "sha256": "5e7ea16434b736c705afd6eaa78aeae6bcea628a0804c1b416979aea732fde66",
    "role": "results",
    "supports_claim": "Every surviving pair with both ranks and full score components"
   },
   {
    "path": "results/candidates_by_match.md",
    "exists": true,
-   "bytes": 152357,
-   "sha256": "c62b8cd5cd1573a39f5328ff900bfc64b335767049dd01b42f28b647c64eda79",
+   "bytes": 130321,
+   "sha256": "f1cbdbf7f847821ea0077eda1852f4172b9fbb4a3c5f039741dd597ecebf0fc1",
    "role": "results",
    "supports_claim": "Ranking A - mechanism match"
   },
   {
-   "path": "results/candidates_by_prevention.md",
+   "path": "results/candidates_by_likelihood.md",
    "exists": true,
-   "bytes": 153880,
-   "sha256": "6b55fee2b2253b86cf17aca9a1c15d66dbc75e3673726ecabda71ed90ef42bef",
+   "bytes": 138059,
+   "sha256": "4efe5c1cf1ec032963c6617793ec5bb1229b6bc3a67fb49e6b70d70819eab963",
    "role": "results",
-   "supports_claim": "Ranking B - expected loss prevention"
+   "supports_claim": "Ranking B - likelihood of being attacked, the primary list for an independent reviewer"
+  },
+  {
+   "path": "protocols/band_screen.json",
+   "exists": true,
+   "bytes": 1545129,
+   "sha256": "91f3d46af83e91fbd640ad59a1e1fe0ef9ed2e80e239ab5d402422435c23bd2d",
+   "role": "screen",
+   "supports_claim": "Per-protocol band status, empirical hazard, attention deficit and attacker economics"
+  },
+  {
+   "path": "protocols/above_band_dropped.json",
+   "exists": true,
+   "bytes": 94556,
+   "sha256": "b3ab287fb9a37560dd19305bee0e778de600ebab405cd5f51bf30a1a69eb8a19",
+   "role": "screen",
+   "supports_claim": "Protocols above the $30M band that were dropped, with the reason"
   },
   {
    "path": "results/audit_variables.txt",
    "exists": true,
-   "bytes": 52691,
-   "sha256": "efafe5bd01b422a1c1fdf034b2e93909d98e07fb7c52313cc542c7c21bc9ee1d",
+   "bytes": 39688,
+   "sha256": "254bf0ef22b2f287fb8212149b3acf35ba81b7efbf039d9626939c643f578c44",
    "role": "handoff",
    "supports_claim": "One self-contained line per final candidate for the downstream audit prompt"
   },
@@ -445,16 +461,16 @@
   {
    "path": "results/run_summary.md",
    "exists": true,
-   "bytes": 6560,
-   "sha256": "213f0a9bc94bce40c909596f3f5abfb389af8c36626697c69eb29b955067329c",
+   "bytes": 4858,
+   "sha256": "cf8fa2ef81765ac43ed6c67d75c65aa3b0196831cba0ca727e18b9403160a1c0",
    "role": "results",
    "supports_claim": "Required summary statistics"
   },
   {
    "path": "quality_report.md",
    "exists": true,
-   "bytes": 13244,
-   "sha256": "f2309b325abbcc76963a2fd218f26dac17ff50e3d8852b51bc94064fb74cc989",
+   "bytes": 7112,
+   "sha256": "30fa41fd2d4ce9e608b0af99785fa7b35194ae30ed0941f37b2d6ed1c1d9f750",
    "role": "quality",
    "supports_claim": "Mechanical quality gates and known limitations"
   }
@@ -474,6 +490,8 @@
   "score components and caps": "protocols/deep_screened.jsonl + results/candidates_all.csv",
   "prior-art status per final pair": "protocols/prior_art.json + results/candidates_by_*.md",
   "near misses": "families/near_miss_library.jsonl",
+  "empirical victim profile and hazard ratios": "tools/hazard.py, derived from incidents/included.jsonl + provisional.jsonl",
+  "band decisions and why each protocol was kept or dropped": "protocols/band_screen.json + protocols/above_band_dropped.json",
   "creative condition layer": "protocols/conditions.json (definitions in tools/conditions.py)",
   "deployed-source static indicators": "protocols/onchain_probes.json#<slug>.source_sweep + cached source under sources/deployments/",
   "hard $50k floor and what it excluded": "protocols/eligibility.json + protocols/subfloor_authority_deferred.json"

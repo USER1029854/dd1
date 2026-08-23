@@ -102,15 +102,27 @@ python3 tools/deep_screen4.py 700      # batched JSON-RPC probe over the expande
 #   python3 tools/source_sweep.py 400 --reanalyze
 python3 tools/source_sweep.py 400
 
+# ------------ 7c. BAND PASS: likelihood-first screen for an independent reviewer
+# Derive the empirical victim profile from this run's own corpus (loss distribution,
+# chain and category hazard ratios), apply the $50k-$30M band with an explicit-danger
+# override above it, and order by hazard x attention deficit.
+#   tools/hazard.py holds the measured hazard tables.
+python3 tools/gen_pairs3.py 700       # -> protocols/band_screen.json + a band-targeted worklist
+python3 tools/fetch_adapters3.py      # adapters for the band worklist
+python3 tools/deep_screen4.py 800 --force   # batched probe incl. the owner-is-EOA second hop
+python3 tools/source_sweep.py 700     # deployed-source indicators (view helpers excluded)
+
 # ------------------------------------- 8. Phase H/13: gate, scoring, rankings
 # score2 applies the precision controls: relevance gate, prevalence demotion (>25% of the
 # swept population), metadata-cannot-prove-code, and UNKNOWN exposure for approval-dependent
 # families.
-python3 tools/score2.py
+python3 tools/score2.py               # gate + MATCH_SCORE + precision controls
+python3 tools/score3.py               # + HACK_LIKELIHOOD (hazard x neglect x economics)
 #   -> protocols/deep_screened.jsonl
-python3 tools/write_results.py
-python3 tools/write_summary.py
-python3 tools/write_quality.py
+python3 tools/write_results3.py 45    # -> candidates_by_likelihood.md, candidates_by_match.md,
+                                      #    candidates_all.csv, audit_variables.txt, near_miss_library
+python3 tools/write_summary3.py
+python3 tools/write_quality3.py
 #   -> results/candidates_all.csv, candidates_by_match.md, candidates_by_prevention.md,
 #      audit_variables.txt, excluded_protocols.md, run_summary.md
 #   -> families/near_miss_library.jsonl

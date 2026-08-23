@@ -21,6 +21,17 @@ def fnbody(src,namepat):
     """Return the ~1800 chars following each matching function signature."""
     return [src[m.start():m.start()+1800] for m in re.finditer(r'function\s+'+namepat+r'\s*\(',src,re.I)]
 
+VIEW_HELPER=re.compile(r'(lens|reader|viewer|dataprovider|helper|quoter|resolver|multicall|utils?|'
+                       r'oracleview|statereader|aggregatorview|periphery.?view)$',re.I)
+def is_view_helper(name,src):
+    """A read-only helper cannot move value, so a shape found inside one is not a prerequisite."""
+    if name and VIEW_HELPER.search(str(name)): return True
+    if src:
+        movers=len(re.findall(r'\b(transfer|transferFrom|safeTransfer|_mint|_burn|call\{value)',src))
+        views=len(re.findall(r'\bview\b|\bpure\b',src))
+        if movers==0 and views>20: return True
+    return False
+
 def indicators(src):
     I={}
     # ---------------- signature / proof ----------------
@@ -198,10 +209,14 @@ def main():
                 res["contracts"].append({"address":t,"chain":ch,"proxy_of":orig if isp else None,
                                          "status":"IMPLEMENTATION_NOT_VERIFIED","name":s.get('name')}); continue
             ind=indicators(s['source'])
+            vh=is_view_helper(s.get('name'),s['source'])
             res["contracts"].append({"address":t,"chain":ch,"proxy_of":orig if isp else None,"status":"VERIFIED",
-                "name":s.get('name'),"source_chars":len(s['source']),
+                "name":s.get('name'),"source_chars":len(s['source']),"view_helper":vh,
                 "indicators_true":sorted(k for k,v in ind.items() if v),"from_cache":s['cached']})
-            for k,v in ind.items(): agg[k].append(v)
+            if vh:
+                res.setdefault("view_helpers_skipped",[]).append(s.get('name'))
+            else:
+                for k,v in ind.items(): agg[k].append(v)
             if not s['cached']: time.sleep(0.12)
         if agg:
             res["indicators"]={k:any(v) for k,v in agg.items()}

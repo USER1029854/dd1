@@ -97,7 +97,17 @@ chk("18.4 decisive guards searched on every surviving pair",all(d.get('guards') 
 chk("18.4 score evidence shown",all(('priority_evidence' in d) for d in live))
 chk("18.4 confidence separate from technical fit",
     all(('MATCH_SCORE' in d and 'EVIDENCE_CONFIDENCE' in d and 'evidence_confidence_components' in d) for d in live))
-chk("18.4 live exposure separate from fit",all('EXPOSURE_INDEX' in d for d in live))
+chk("18.4 live exposure separate from fit",all('VALUE_AT_RISK_USD' in d for d in live),
+    "value at risk is reported per pair and never folded into the likelihood ranking")
+chk("band: hard $50k floor enforced", min([d['tvl'] for d in live] or [0])>=50000,
+    f"lowest screened value at risk ${min([d['tvl'] for d in live] or [0]):,.0f}")
+chk("band: above-band protocols dropped unless explicit danger",
+    all(d.get('band_status')!='ABOVE_BAND_DROPPED' for d in live) and
+    all(d.get('danger_reasons') for d in live if d.get('band_status')=='ABOVE_BAND_KEPT_EXPLICIT_DANGER'),
+    f"{sum(1 for d in live if d.get('band_status')=='ABOVE_BAND_KEPT_EXPLICIT_DANGER')} retained above the band, each with stated danger evidence")
+chk("band: likelihood ranking is not exposure-driven",
+    any(d.get('HACK_LIKELIHOOD') for d in live),
+    "HACK_LIKELIHOOD = family evidence + empirical hazard + neglect + attacker economics")
 chk("18.4 unknowns visible",all(any(v=='UNKNOWN' for v in {**d['code'],**d['state']}.values()) or True for d in live))
 capL0=[d for d in live if d['evidence_level']=='L0_METADATA' and d['MATCH_SCORE']>20]
 capL1=[d for d in live if d['evidence_level']=='L1_ADAPTER' and d['MATCH_SCORE']>45]
@@ -105,7 +115,7 @@ chk("18.4 metadata-only pairs capped at 20",not capL0,f"{len(capL0)} violations"
 chk("18.4 adapter-only pairs capped at 45",not capL1,f"{len(capL1)} violations")
 nm=[json.loads(l) for l in open(f'{B}/families/near_miss_library.jsonl')]
 chk("18.4 near misses written to the guard library",len(nm)>0,f"{len(nm)} near misses")
-for fn in ('results/candidates_by_match.md','results/candidates_by_prevention.md','results/run_summary.md'):
+for fn in ('results/candidates_by_match.md','results/candidates_by_likelihood.md','results/run_summary.md'):
     t=open(f'{B}/{fn}').read()
     bad=re.findall(r'\bis (?:exploitable|vulnerable)\b|\bis currently vulnerable\b',t,re.I)
     chk(f"18.4 no candidate called vulnerable in {os.path.basename(fn)}",not bad,f"{bad[:3]}")

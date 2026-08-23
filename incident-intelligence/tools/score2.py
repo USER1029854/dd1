@@ -300,16 +300,18 @@ def score(pair):
             "demoted_indicators":sorted(DEMOTED & set(
                 (PR.get(slug,{}).get('source_sweep',{}).get('family_signals') or {}).get(fid,{}).keys()))}
 
-out=[{**w,**score(w)} for w in W]
-with open(f'{B}/protocols/deep_screened.jsonl','w') as fh:
-    for o in out: fh.write(json.dumps(o,ensure_ascii=False)+"\n")
-live=[o for o in out if not o['killed']]
-print(json.dumps({"pairs":len(out),"killed":len(out)-len(live),
- "killed_by_precondition":sum(1 for o in out if o.get('kill_reason')=='MANDATORY_PRECONDITION_PROVEN_ABSENT'),
- "killed_by_guard":sum(1 for o in out if o.get('kill_reason')=='DECISIVE_GUARD_FOUND'),
- "killed_sanctions":sum(1 for o in out if o.get('kill_reason')=='SANCTIONS_DESIGNATED_NO_LAWFUL_ENGAGEMENT'),
- "surviving":len(live),"by_level":dict(collections.Counter(o['evidence_level'] for o in live)),
- "top_match":[(o['protocol_slug'],o['family_id'],o['MATCH_SCORE'],o['EVIDENCE_CONFIDENCE'],o['evidence_level'])
-              for o in sorted(live,key=lambda x:-x['MATCH_SCORE'])[:12]],
- "top_prevention":[(o['protocol_slug'],o['family_id'],o['PREVENTION_SCORE'],f"${o['tvl']:,.0f}")
-              for o in sorted(live,key=lambda x:-x['PREVENTION_SCORE'])[:12]]},indent=2))
+if __name__=='__main__':
+    out=[{**w,**score(w)} for w in W]
+    with open(f'{B}/protocols/deep_screened.jsonl','w') as fh:
+        for o in out: fh.write(json.dumps(o,ensure_ascii=False)+"\n")
+    live=[o for o in out if not o['killed']]
+    print(json.dumps({"pairs":len(out),"killed":len(out)-len(live),
+     "killed_by_precondition":sum(1 for o in out if o.get('kill_reason')=='MANDATORY_PRECONDITION_PROVEN_ABSENT'),
+     "killed_by_guard":sum(1 for o in out if o.get('kill_reason')=='DECISIVE_GUARD_FOUND'),
+     "killed_sanctions":sum(1 for o in out if o.get('kill_reason')=='SANCTIONS_DESIGNATED_NO_LAWFUL_ENGAGEMENT'),
+     "surviving":len(live),"by_level":dict(collections.Counter(o['evidence_level'] for o in live)),
+     "top_match":[(o['protocol_slug'],o['family_id'],o['MATCH_SCORE'],o['EVIDENCE_CONFIDENCE'],o['evidence_level'])
+                  for o in sorted(live,key=lambda x:-x['MATCH_SCORE'])[:12]],
+     "top_prevention":[(o['protocol_slug'],o['family_id'],o['PREVENTION_SCORE'],f"${o['tvl']:,.0f}")
+                  for o in sorted(live,key=lambda x:-x['PREVENTION_SCORE'])[:12]]},indent=2))
+    

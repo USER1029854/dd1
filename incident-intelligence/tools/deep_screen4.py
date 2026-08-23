@@ -13,7 +13,7 @@ E={r['slug']:r for r in json.load(open(f'{B}/protocols/eligibility.json'))}
 PR=json.load(open(f'{B}/protocols/onchain_probes.json')) if os.path.exists(f'{B}/protocols/onchain_probes.json') else {}
 ALIAS={'binance':'bsc','avax':'avalanche','xdai':'gnosis','bnb':'bsc'}
 Z40="0x"+"0"*40; Z64="0x"+"0"*64
-BUDGET=int(sys.argv[1]) if len(sys.argv)>1 else 650
+BUDGET=int(sys.argv[1]) if len(sys.argv)>1 and sys.argv[1].isdigit() else 800
 
 def chains_for(slug):
     out=[]
@@ -77,12 +77,28 @@ def probe(slug):
               "totalAssets":(C.dec_uint(ta) if isinstance(ta,str) and len(ta)>=3 and ta!='0x' else None),
               "priceOracle":(C.dec_addr(orc) if isinstance(orc,str) and len(orc)>=66 and C.dec_addr(orc)!=Z40 else None)}
         if found: break
+    # Second hop: does each privileged owner() itself have code? No code means an EOA holds the role.
+    if found:
+        ch_used=next(iter(found.values()))['chain']
+        owners=sorted({v['owner'] for v in found.values() if v.get('owner')})
+        if owners:
+            sizes=CB.calls(ch_used,[('code',o) for o in owners])
+            omap={o:(sz if isinstance(sz,int) else None) for o,sz in zip(owners,sizes)}
+            for v in found.values():
+                o=v.get('owner')
+                if o:
+                    cs=omap.get(o)
+                    v['owner_code_size']=cs
+                    v['owner_is_eoa']=(cs==0) if cs is not None else None
+                    v['owner_is_contract']=(cs>0) if isinstance(cs,int) else None
     out["addresses_probed"]=list(found.values())
     out["status"]="PROBED" if found else "NO_LIVE_CODE_AT_KNOWN_ADDRESSES"
     return out
 
 order=list(dict.fromkeys(w['protocol_slug'] for w in W))[:BUDGET]
-todo=[s for s in order if (PR.get(s,{}).get('deployment',{}).get('status') not in ('PROBED',))]
+FORCE='--force' in sys.argv
+todo=[s for s in order if FORCE or (PR.get(s,{}).get('deployment',{}).get('status') not in ('PROBED',))
+      or not any('owner_is_eoa' in a for a in PR.get(s,{}).get('deployment',{}).get('addresses_probed',[]))]
 print(f"worklist {len(order)} | already probed {len(order)-len(todo)} | to probe {len(todo)}",flush=True)
 t0=time.time()
 for i,slug in enumerate(todo):

@@ -1,0 +1,2459 @@
+[
+ {
+  "slug": "lido",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 23256609669.2211,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ssv-network",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 12259863236.628887,
+  "danger_reasons": []
+ },
+ {
+  "slug": "morpho-blue",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 9388226378.992933,
+  "danger_reasons": []
+ },
+ {
+  "slug": "binance-staked-eth",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 9027504069.394514,
+  "danger_reasons": []
+ },
+ {
+  "slug": "wbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 8813162629.620632,
+  "danger_reasons": []
+ },
+ {
+  "slug": "coinbase-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 7543184703.598725,
+  "danger_reasons": []
+ },
+ {
+  "slug": "layerzero-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 6966756164.317168,
+  "danger_reasons": []
+ },
+ {
+  "slug": "hyperliquid-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 6520649126.990584,
+  "danger_reasons": []
+ },
+ {
+  "slug": "eigencloud",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 6431586046.814258,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sky-lending",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 5708410431.164784,
+  "danger_reasons": []
+ },
+ {
+  "slug": "uniswap-v4",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 5690882664.063993,
+  "danger_reasons": []
+ },
+ {
+  "slug": "binance-bitcoin",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 5248996365.945732,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ether.fi-stake",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 4253826998.8641853,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ethena-usde",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 4091030384.6238055,
+  "danger_reasons": []
+ },
+ {
+  "slug": "justlend-v1",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 3682184945.786652,
+  "danger_reasons": []
+ },
+ {
+  "slug": "blackrock-buidl",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 3393919415.6304483,
+  "danger_reasons": []
+ },
+ {
+  "slug": "usdt0",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 3322944439.3791456,
+  "danger_reasons": []
+ },
+ {
+  "slug": "arbitrum-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 3299204436.15254,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tether-gold",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 3267416616.874013,
+  "danger_reasons": []
+ },
+ {
+  "slug": "babylon-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 3010500536.5232263,
+  "danger_reasons": []
+ },
+ {
+  "slug": "maple",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 2962898421.549679,
+  "danger_reasons": []
+ },
+ {
+  "slug": "base-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 2790942273.39604,
+  "danger_reasons": []
+ },
+ {
+  "slug": "justcryptos",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 2537480975.42,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ondo-yield-assets",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 2514811915.7727885,
+  "danger_reasons": []
+ },
+ {
+  "slug": "spiko",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 2512135842.9113917,
+  "danger_reasons": []
+ },
+ {
+  "slug": "grove-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 2387522579.166212,
+  "danger_reasons": []
+ },
+ {
+  "slug": "paxos-gold",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1976915429.0948422,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pancakeswap-amm",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1922851841.0559423,
+  "danger_reasons": []
+ },
+ {
+  "slug": "spark-liquidity-layer",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1871972797.3545942,
+  "danger_reasons": []
+ },
+ {
+  "slug": "figure-markets-exchange",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1836446161.9859457,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ccip",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1825003066.7401626,
+  "danger_reasons": []
+ },
+ {
+  "slug": "veda",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1660329884.0413938,
+  "danger_reasons": []
+ },
+ {
+  "slug": "portal",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1567985834.34555,
+  "danger_reasons": []
+ },
+ {
+  "slug": "uniswap-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1503835891.0186067,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sanctum-validator-lsts",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1408145281.3148005,
+  "danger_reasons": []
+ },
+ {
+  "slug": "compound-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1379088328.4085698,
+  "danger_reasons": []
+ },
+ {
+  "slug": "rocket-pool",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1278533982.6947901,
+  "danger_reasons": []
+ },
+ {
+  "slug": "venus-core-pool",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1252650313.8515236,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kamino-lend",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1196744391.3256824,
+  "danger_reasons": []
+ },
+ {
+  "slug": "falcon-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1174050814.7634034,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pendle",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1169202137.6752713,
+  "danger_reasons": []
+ },
+ {
+  "slug": "concrete",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1159549483.9345841,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kinetiq-khype",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1149737258.7094023,
+  "danger_reasons": []
+ },
+ {
+  "slug": "spark-savings",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1140613416.4050086,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kelp",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1100894440.400889,
+  "danger_reasons": []
+ },
+ {
+  "slug": "jupiter-lend",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1063111683.877674,
+  "danger_reasons": []
+ },
+ {
+  "slug": "raydium-amm",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 1056329581.9271176,
+  "danger_reasons": []
+ },
+ {
+  "slug": "binance-staked-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 970313000.585818,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ondo-global-markets",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 968336518.0561289,
+  "danger_reasons": []
+ },
+ {
+  "slug": "jito-liquid-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 964110018.8033494,
+  "danger_reasons": []
+ },
+ {
+  "slug": "blockchain-capital",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 956829913.6419001,
+  "danger_reasons": []
+ },
+ {
+  "slug": "uniswap-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 912700838.3131899,
+  "danger_reasons": []
+ },
+ {
+  "slug": "stakewise-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 906498396.9640602,
+  "danger_reasons": []
+ },
+ {
+  "slug": "wisdomtree",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 779454554.8177623,
+  "danger_reasons": []
+ },
+ {
+  "slug": "liquid-collective",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 776238686.3970828,
+  "danger_reasons": []
+ },
+ {
+  "slug": "jupiter-perpetual-exchange",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 747551654.3722439,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tornado-cash",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 727410025.8294799,
+  "danger_reasons": []
+ },
+ {
+  "slug": "fluid-lending",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 724240098.4027472,
+  "danger_reasons": []
+ },
+ {
+  "slug": "unit",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 695356663.0816165,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lombard-lbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 691694831.0106869,
+  "danger_reasons": []
+ },
+ {
+  "slug": "function-fbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 661623314.3188773,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lista-liquid-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 645853423.4491687,
+  "danger_reasons": []
+ },
+ {
+  "slug": "invesco-ustb",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 639375568.2463428,
+  "danger_reasons": []
+ },
+ {
+  "slug": "obol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 610177249.1361532,
+  "danger_reasons": []
+ },
+ {
+  "slug": "hastra",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 603821142.6752322,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kraken-bitcoin",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 588219989.534618,
+  "danger_reasons": []
+ },
+ {
+  "slug": "optimism-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 574260768.9969214,
+  "danger_reasons": []
+ },
+ {
+  "slug": "meth-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 573842624.030374,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lighter-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 530440530.3584238,
+  "danger_reasons": []
+ },
+ {
+  "slug": "solvbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 499549301.3890303,
+  "danger_reasons": []
+ },
+ {
+  "slug": "jupiter-staked-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 497015545.5412986,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lorenzo-enzobtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 473388978.8832075,
+  "danger_reasons": []
+ },
+ {
+  "slug": "coinbase-wrapped-staked-eth",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 466155720.97843677,
+  "danger_reasons": []
+ },
+ {
+  "slug": "aster-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 454385559.95825064,
+  "danger_reasons": []
+ },
+ {
+  "slug": "symbiotic",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 422002211.27111775,
+  "danger_reasons": []
+ },
+ {
+  "slug": "xstocks",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 420000612.90451306,
+  "danger_reasons": []
+ },
+ {
+  "slug": "robinhood-chain-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 419556675.6079139,
+  "danger_reasons": []
+ },
+ {
+  "slug": "merlins-seal",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 419424432.1168128,
+  "danger_reasons": []
+ },
+ {
+  "slug": "solstice",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 404411579.7373702,
+  "danger_reasons": []
+ },
+ {
+  "slug": "upshift",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 382474094.22869587,
+  "danger_reasons": []
+ },
+ {
+  "slug": "world-chain",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 376419407.57323146,
+  "danger_reasons": []
+ },
+ {
+  "slug": "polymarket-international",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 352864333.6852881,
+  "danger_reasons": []
+ },
+ {
+  "slug": "neopin-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 348594610.9859304,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bedrock-unibtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 346956771.5515574,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 345446716.28781456,
+  "danger_reasons": []
+ },
+ {
+  "slug": "marinade-native",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 327178455.91307276,
+  "danger_reasons": []
+ },
+ {
+  "slug": "cap",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 325392227.74260217,
+  "danger_reasons": []
+ },
+ {
+  "slug": "dolomite",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 324295526.4221508,
+  "danger_reasons": []
+ },
+ {
+  "slug": "aave-v4",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 323271438.47448516,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pumpswap",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 316045494.513401,
+  "danger_reasons": []
+ },
+ {
+  "slug": "re",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 309759196.52502,
+  "danger_reasons": []
+ },
+ {
+  "slug": "linea-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 306803042.39505917,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pancakeswap-amm-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 304747188.75631464,
+  "danger_reasons": []
+ },
+ {
+  "slug": "defi-saver-asset-management",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 302931534.1463593,
+  "danger_reasons": []
+ },
+ {
+  "slug": "fluid-dex",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 302895553.21731967,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lightning-network",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 296814988.26500064,
+  "danger_reasons": []
+ },
+ {
+  "slug": "cian-yield-layer",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 293833608.37911963,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ethena-usdtb",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 287779393.43232286,
+  "danger_reasons": []
+ },
+ {
+  "slug": "xdai-stake-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 283903202.3840823,
+  "danger_reasons": []
+ },
+ {
+  "slug": "onre",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 273506983.73998106,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bouncebit-cedefi-yield",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 271695805.185415,
+  "danger_reasons": []
+ },
+ {
+  "slug": "gtbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 267371276.1071977,
+  "danger_reasons": []
+ },
+ {
+  "slug": "drift-staked-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 264377975.7379465,
+  "danger_reasons": []
+ },
+ {
+  "slug": "hyperithm",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 264317338.6952711,
+  "danger_reasons": []
+ },
+ {
+  "slug": "opentrade",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 263246702.40850735,
+  "danger_reasons": []
+ },
+ {
+  "slug": "unirouter",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 257804073.35404226,
+  "danger_reasons": []
+ },
+ {
+  "slug": "aave-horizon-rwa",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 257675042.92003065,
+  "danger_reasons": []
+ },
+ {
+  "slug": "orca-dex",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 256364495.34748915,
+  "danger_reasons": []
+ },
+ {
+  "slug": "figure-markets-democratized-prime",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 255817306.5660113,
+  "danger_reasons": []
+ },
+ {
+  "slug": "stader",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 252698058.64538318,
+  "danger_reasons": []
+ },
+ {
+  "slug": "etherfi-borrowing-market",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 251813533.17622778,
+  "danger_reasons": []
+ },
+ {
+  "slug": "mellow-core",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 251304510.78999856,
+  "danger_reasons": []
+ },
+ {
+  "slug": "b14g",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 250808219.9246125,
+  "danger_reasons": []
+ },
+ {
+  "slug": "buzz-farming",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 248687880.4108974,
+  "danger_reasons": []
+ },
+ {
+  "slug": "fassets",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 233766307.2560406,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sthype",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 231305772.43449682,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bitfi-basis",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 231209225.30267394,
+  "danger_reasons": []
+ },
+ {
+  "slug": "marinade-liquid-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 229712746.24705616,
+  "danger_reasons": []
+ },
+ {
+  "slug": "afi-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 225361398.82861036,
+  "danger_reasons": []
+ },
+ {
+  "slug": "b2-buzz",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 222002050.51524857,
+  "danger_reasons": []
+ },
+ {
+  "slug": "huma-finance-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 220796629.8265212,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sunswap-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 219521597.90283507,
+  "danger_reasons": []
+ },
+ {
+  "slug": "meteora-dlmm",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 214910887.58305502,
+  "danger_reasons": []
+ },
+ {
+  "slug": "clearstar",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 206091387.17639095,
+  "danger_reasons": []
+ },
+ {
+  "slug": "gmx-v2-perps",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 202937295.0345934,
+  "danger_reasons": []
+ },
+ {
+  "slug": "etherfi-cash-liquid",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 199533124.06448182,
+  "danger_reasons": []
+ },
+ {
+  "slug": "rockawayx",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 193301703.36594176,
+  "danger_reasons": []
+ },
+ {
+  "slug": "exsat-staking-btc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 191312239.40951794,
+  "danger_reasons": []
+ },
+ {
+  "slug": "rocketswap-anubis",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 190915199.12799367,
+  "danger_reasons": []
+ },
+ {
+  "slug": "solv-basis-trading",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 190796475.8398293,
+  "danger_reasons": []
+ },
+ {
+  "slug": "stacks-sbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 188376613.45054576,
+  "danger_reasons": []
+ },
+ {
+  "slug": "hyperliquid-hlp",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 188082344.7199111,
+  "danger_reasons": []
+ },
+ {
+  "slug": "m0",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 187872760.54292783,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sanctum-infinity",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 186949401.0658786,
+  "danger_reasons": []
+ },
+ {
+  "slug": "yearn-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 186365986.9980245,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tonstakers-lsd",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 183036423.4812256,
+  "danger_reasons": []
+ },
+ {
+  "slug": "marinade-select",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 178464150.75289702,
+  "danger_reasons": []
+ },
+ {
+  "slug": "liquity-v1",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 178330742.14028707,
+  "danger_reasons": []
+ },
+ {
+  "slug": "quickswap-dex",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 176442596.27596974,
+  "danger_reasons": []
+ },
+ {
+  "slug": "fluid-lite",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 174373303.9500131,
+  "danger_reasons": []
+ },
+ {
+  "slug": "nexus-btc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 173169156.79457352,
+  "danger_reasons": []
+ },
+ {
+  "slug": "benqi-staked-avax",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 170659171.73380327,
+  "danger_reasons": []
+ },
+ {
+  "slug": "starknet-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 168890967.70608374,
+  "danger_reasons": []
+ },
+ {
+  "slug": "digift",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 167501625.20940876,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pinksale",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 161474384.04388264,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lombard-btc.b",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 161277953.84908152,
+  "danger_reasons": []
+ },
+ {
+  "slug": "phantom-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 160429248.31171313,
+  "danger_reasons": []
+ },
+ {
+  "slug": "yield-basis",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 156332797.071798,
+  "danger_reasons": []
+ },
+ {
+  "slug": "realt-tokens",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 155093246.9344919,
+  "danger_reasons": []
+ },
+ {
+  "slug": "derive-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 153944355.66874817,
+  "danger_reasons": []
+ },
+ {
+  "slug": "midas-rwa",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 152751002.19,
+  "danger_reasons": []
+ },
+ {
+  "slug": "axelar",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 143058632.99872625,
+  "danger_reasons": []
+ },
+ {
+  "slug": "mantle-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 139672161.87745854,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lagoon",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 138456080.7907281,
+  "danger_reasons": []
+ },
+ {
+  "slug": "navi-lending",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 137875798.1558698,
+  "danger_reasons": []
+ },
+ {
+  "slug": "hyperliquid-spot-orderbook",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 136866139.53769466,
+  "danger_reasons": []
+ },
+ {
+  "slug": "curvance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 135881683.65593097,
+  "danger_reasons": []
+ },
+ {
+  "slug": "uncx-network-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 135471737.89512506,
+  "danger_reasons": []
+ },
+ {
+  "slug": "doppler-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 134724351.04963714,
+  "danger_reasons": []
+ },
+ {
+  "slug": "zksync-era-txbridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 133825841.33849768,
+  "danger_reasons": []
+ },
+ {
+  "slug": "telos-consilium",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 132325190.72159138,
+  "danger_reasons": []
+ },
+ {
+  "slug": "jpool",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 131960247.69149534,
+  "danger_reasons": []
+ },
+ {
+  "slug": "avant-avusd",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 131935170.54887848,
+  "danger_reasons": []
+ },
+ {
+  "slug": "r25",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 131570913.9916649,
+  "danger_reasons": []
+ },
+ {
+  "slug": "the-vault-liquid-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 128821250.55462956,
+  "danger_reasons": []
+ },
+ {
+  "slug": "avalanche-core-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 128404175.88975936,
+  "danger_reasons": []
+ },
+ {
+  "slug": "aerodrome-slipstream",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 127496141.9488539,
+  "danger_reasons": []
+ },
+ {
+  "slug": "beefy",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 125802673.22713442,
+  "danger_reasons": []
+ },
+ {
+  "slug": "frax-ether",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 123091289.59202781,
+  "danger_reasons": []
+ },
+ {
+  "slug": "suilend",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 122471933.60799944,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tectonic",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 121668693.1056791,
+  "danger_reasons": []
+ },
+ {
+  "slug": "extended-perps",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 121536392.59448381,
+  "danger_reasons": []
+ },
+ {
+  "slug": "raac",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 121501526.288615,
+  "danger_reasons": []
+ },
+ {
+  "slug": "mantle-index-four-fund",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 119972627.35861295,
+  "danger_reasons": []
+ },
+ {
+  "slug": "exponent-yield-exchange",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 118977510.9091924,
+  "danger_reasons": []
+ },
+ {
+  "slug": "fx-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 118302796.16057707,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sky-money",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 118175585.13941242,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bybit-staked-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 117019865.90120018,
+  "danger_reasons": []
+ },
+ {
+  "slug": "armitage-by-wintermute",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 114846000.62509906,
+  "danger_reasons": []
+ },
+ {
+  "slug": "renzo",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 114537278.94868402,
+  "danger_reasons": []
+ },
+ {
+  "slug": "aster-usdf",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 114209335.46487303,
+  "danger_reasons": []
+ },
+ {
+  "slug": "frax-usd",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 113546459.56576866,
+  "danger_reasons": []
+ },
+ {
+  "slug": "valos",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 110310471.30852431,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ember-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 108872630.11852765,
+  "danger_reasons": []
+ },
+ {
+  "slug": "nest-credit",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 107794729.03346217,
+  "danger_reasons": []
+ },
+ {
+  "slug": "near-intents",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 107437193.30474469,
+  "danger_reasons": []
+ },
+ {
+  "slug": "nexus-mutual",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 106498742.57875519,
+  "danger_reasons": []
+ },
+ {
+  "slug": "rsk-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 104233119.63236733,
+  "danger_reasons": []
+ },
+ {
+  "slug": "securitize-tokenized-aaa-clo-fund",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 103157298.24361953,
+  "danger_reasons": []
+ },
+ {
+  "slug": "vvs-standard",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 101956096.29715191,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lofty",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 100171213.33851379,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sosovalue-indexes",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 99722800.44422908,
+  "danger_reasons": []
+ },
+ {
+  "slug": "avalon-cedefi",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 99120567.45936844,
+  "danger_reasons": []
+ },
+ {
+  "slug": "river-omni-cdp",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 96582150.46574986,
+  "danger_reasons": []
+ },
+ {
+  "slug": "benqi-lending",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 95583336.9650295,
+  "danger_reasons": []
+ },
+ {
+  "slug": "apollo-diversified-credit-securitize-fund",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 95475297.32609071,
+  "danger_reasons": []
+ },
+ {
+  "slug": "dfdv-staked-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 95460162.83505891,
+  "danger_reasons": []
+ },
+ {
+  "slug": "loopscale",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 95452364.77596983,
+  "danger_reasons": []
+ },
+ {
+  "slug": "usual-usd0",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 92668026.1718596,
+  "danger_reasons": []
+ },
+ {
+  "slug": "echo-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 91920184.65325078,
+  "danger_reasons": []
+ },
+ {
+  "slug": "hyperlane",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 90253093.42789929,
+  "danger_reasons": []
+ },
+ {
+  "slug": "enzyme-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 89838216.85447426,
+  "danger_reasons": []
+ },
+ {
+  "slug": "blazestake",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 89473694.88449411,
+  "danger_reasons": []
+ },
+ {
+  "slug": "helius-staked-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 88755367.10220896,
+  "danger_reasons": []
+ },
+ {
+  "slug": "crvusd",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 87732455.51183282,
+  "danger_reasons": []
+ },
+ {
+  "slug": "railgun",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 87276545.05819209,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kamino-liquidity",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 86920286.43681937,
+  "danger_reasons": []
+ },
+ {
+  "slug": "liquity-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 86709251.93078566,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bitget-bgbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 86504330.42579156,
+  "danger_reasons": []
+ },
+ {
+  "slug": "stake.link-liquid",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 85816078.21322517,
+  "danger_reasons": []
+ },
+ {
+  "slug": "firelight",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 85670329.98777705,
+  "danger_reasons": []
+ },
+ {
+  "slug": "re7-labs",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 84792448.77469629,
+  "danger_reasons": []
+ },
+ {
+  "slug": "yuzu-money",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 83048229.72405362,
+  "danger_reasons": []
+ },
+ {
+  "slug": "save",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 82040454.92717937,
+  "danger_reasons": []
+ },
+ {
+  "slug": "rhea-lend",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 81602565.911165,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lorenzo-susd1+",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 80704790.82700606,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bitway-earn",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 80687704.93514699,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ailayer-farm",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 80386460.2058185,
+  "danger_reasons": []
+ },
+ {
+  "slug": "frankencoin",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 80034276.05088408,
+  "danger_reasons": []
+ },
+ {
+  "slug": "saturn",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 78720512.01711714,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bitfi-btc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 78407799.44894531,
+  "danger_reasons": []
+ },
+ {
+  "slug": "swell-l2-farm",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 77247423.25459027,
+  "danger_reasons": []
+ },
+ {
+  "slug": "felix-vaults",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 76544809.26099086,
+  "danger_reasons": []
+ },
+ {
+  "slug": "strata-markets",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 75304788.42829534,
+  "danger_reasons": []
+ },
+ {
+  "slug": "edgex-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 75166794.46116331,
+  "danger_reasons": []
+ },
+ {
+  "slug": "solvbtc-lsts",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 75012668.42035906,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sky-rwa",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 73807887.4821406,
+  "danger_reasons": []
+ },
+ {
+  "slug": "galaxy-curation",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 73552409.81808221,
+  "danger_reasons": []
+ },
+ {
+  "slug": "apx-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 73496263.63715433,
+  "danger_reasons": []
+ },
+ {
+  "slug": "jagpool-staked-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 73271660.67901325,
+  "danger_reasons": []
+ },
+ {
+  "slug": "okx-xbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 73056053.36649525,
+  "danger_reasons": []
+ },
+ {
+  "slug": "dydx-v4",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 72956640.10301214,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bitwise-uscc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 72692620.90993607,
+  "danger_reasons": []
+ },
+ {
+  "slug": "concentrator",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 71789424.58501987,
+  "danger_reasons": []
+ },
+ {
+  "slug": "stargate-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 71211215.17450985,
+  "danger_reasons": []
+ },
+ {
+  "slug": "zest-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 71157713.202833,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pulsechain-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 69678397.70622288,
+  "danger_reasons": []
+ },
+ {
+  "slug": "matrixdock-xaum",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 69669431.96777731,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pancakeswap-infinity",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 69363674.71336527,
+  "danger_reasons": []
+ },
+ {
+  "slug": "treehouse-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 69255271.11729065,
+  "danger_reasons": []
+ },
+ {
+  "slug": "wise-token",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 69109752.98651451,
+  "danger_reasons": []
+ },
+ {
+  "slug": "doublezero-staked-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 68923661.9405037,
+  "danger_reasons": []
+ },
+ {
+  "slug": "reti-pooling",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 67718491.15027547,
+  "danger_reasons": []
+ },
+ {
+  "slug": "axis",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 67555738.17968497,
+  "danger_reasons": []
+ },
+ {
+  "slug": "solv-strategies",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 66778044.833148666,
+  "danger_reasons": []
+ },
+ {
+  "slug": "vishwa",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 66457099.75741753,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pulsex-v1",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 66213098.23228188,
+  "danger_reasons": []
+ },
+ {
+  "slug": "arrakis-modular",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 65238302.46855099,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sodex-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 65000567.81739098,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tori-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 64851587.639930725,
+  "danger_reasons": []
+ },
+ {
+  "slug": "mezo-earn",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 64308687.67420711,
+  "danger_reasons": []
+ },
+ {
+  "slug": "circle-gateway",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 63996578.18674824,
+  "danger_reasons": []
+ },
+ {
+  "slug": "usdcx",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 63526541.81485211,
+  "danger_reasons": []
+ },
+ {
+  "slug": "polygon-zkevm-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 63357222.76571556,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tydro",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 62852365.0256304,
+  "danger_reasons": []
+ },
+ {
+  "slug": "stusdt",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 62841795.08242828,
+  "danger_reasons": []
+ },
+ {
+  "slug": "gate-sol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 61945685.897980645,
+  "danger_reasons": []
+ },
+ {
+  "slug": "thorchain-dex",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 61903895.829495534,
+  "danger_reasons": []
+ },
+ {
+  "slug": "origin-ether",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 61708899.07550623,
+  "danger_reasons": []
+ },
+ {
+  "slug": "project-0",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 60493288.9790785,
+  "danger_reasons": []
+ },
+ {
+  "slug": "blast-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 60254126.72444897,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sanctum-reserve",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 59702375.439155236,
+  "danger_reasons": []
+ },
+ {
+  "slug": "valdora-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 59664069.85783067,
+  "danger_reasons": []
+ },
+ {
+  "slug": "stkesol-by-sol-strategies",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 59474631.51674659,
+  "danger_reasons": []
+ },
+ {
+  "slug": "zama",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 58708925.22510837,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sunswap-v1",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 58468806.464837015,
+  "danger_reasons": []
+ },
+ {
+  "slug": "puffer-stake",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 58429193.52045686,
+  "danger_reasons": []
+ },
+ {
+  "slug": "zircuit-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 58352603.54866384,
+  "danger_reasons": []
+ },
+ {
+  "slug": "vaneck-treasury-fund",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 57831029.439655,
+  "danger_reasons": []
+ },
+ {
+  "slug": "rysk-v12",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 57572585.98715012,
+  "danger_reasons": []
+ },
+ {
+  "slug": "fusion-by-ipor",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 57478003.63981159,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tzbtc",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 57407745.23410383,
+  "danger_reasons": []
+ },
+ {
+  "slug": "zerobase-cedefi",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 57284410.80472384,
+  "danger_reasons": []
+ },
+ {
+  "slug": "springsui",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 57041582.06746764,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kinetiq-earn",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 56674723.758766435,
+  "danger_reasons": []
+ },
+ {
+  "slug": "vault-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 55929791.975323536,
+  "danger_reasons": []
+ },
+ {
+  "slug": "alphafi-lending",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 55739635.839420095,
+  "danger_reasons": []
+ },
+ {
+  "slug": "gami-labs",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 55236702.365804076,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sdai",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 54986074.66329003,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ultrayield-curator",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 54381027.14947806,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lulo",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 53598613.09739805,
+  "danger_reasons": []
+ },
+ {
+  "slug": "unitas-usdu",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 52221838.80430485,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ao-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 51986706.48438407,
+  "danger_reasons": []
+ },
+ {
+  "slug": "azverse-perps",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 51687400.718240775,
+  "danger_reasons": []
+ },
+ {
+  "slug": "aquarius-stellar",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 51364861.68386166,
+  "danger_reasons": []
+ },
+ {
+  "slug": "origyn",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 51290743.76723804,
+  "danger_reasons": []
+ },
+ {
+  "slug": "linear-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 50249126.85244137,
+  "danger_reasons": []
+ },
+ {
+  "slug": "nado-spot",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 50146335.919825844,
+  "danger_reasons": []
+ },
+ {
+  "slug": "origami-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 49394647.61653557,
+  "danger_reasons": []
+ },
+ {
+  "slug": "meta-pool-near",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 48697319.05755217,
+  "danger_reasons": []
+ },
+ {
+  "slug": "meteora-vaults",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 48553844.4802077,
+  "danger_reasons": []
+ },
+ {
+  "slug": "jupusd",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 48468018.283481725,
+  "danger_reasons": []
+ },
+ {
+  "slug": "infinifi",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 48308985.965346165,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kinetiq-kmhype",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 47794761.54937092,
+  "danger_reasons": []
+ },
+ {
+  "slug": "starknet-btc-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 47560131.738495275,
+  "danger_reasons": []
+ },
+ {
+  "slug": "resupply",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 47436894.757279165,
+  "danger_reasons": []
+ },
+ {
+  "slug": "chutes",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 46879859.24196977,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sierra-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 46464945.69364731,
+  "danger_reasons": []
+ },
+ {
+  "slug": "frax",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 46342257.75654008,
+  "danger_reasons": []
+ },
+ {
+  "slug": "yearn-curating",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 46318402.81692195,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sushiswap-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 45758619.162344314,
+  "danger_reasons": []
+ },
+ {
+  "slug": "team-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 45710188.50650269,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ring-few",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 45495392.99056104,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tulipa-capital",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 44238985.86312089,
+  "danger_reasons": []
+ },
+ {
+  "slug": "meteora-damm-v1",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 43474717.42403531,
+  "danger_reasons": []
+ },
+ {
+  "slug": "hemi-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 42886209.54368365,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sonic-gateway",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 42722081.40269179,
+  "danger_reasons": []
+ },
+ {
+  "slug": "tangible-rwa",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 42701792.82949608,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kinetic",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 42308353.0126556,
+  "danger_reasons": []
+ },
+ {
+  "slug": "mantle-restaking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 41797080.060495056,
+  "danger_reasons": []
+ },
+ {
+  "slug": "aera-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 41657387.074801154,
+  "danger_reasons": []
+ },
+ {
+  "slug": "kaio",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 41282216.19858696,
+  "danger_reasons": []
+ },
+ {
+  "slug": "xrpl-dex",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 40239179.583490595,
+  "danger_reasons": []
+ },
+ {
+  "slug": "scroll-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 39723074.250700876,
+  "danger_reasons": []
+ },
+ {
+  "slug": "sushiswap",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 39285081.96152734,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lista-dex",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 39003138.37444901,
+  "danger_reasons": []
+ },
+ {
+  "slug": "dydx-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 38722797.8986609,
+  "danger_reasons": []
+ },
+ {
+  "slug": "idex-v1",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 38631940.59117223,
+  "danger_reasons": []
+ },
+ {
+  "slug": "noon",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 38412501.6647807,
+  "danger_reasons": []
+ },
+ {
+  "slug": "yo-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 38334545.94005801,
+  "danger_reasons": []
+ },
+ {
+  "slug": "spectra-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 38253194.2554615,
+  "danger_reasons": []
+ },
+ {
+  "slug": "metalx-lending",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 37676720.66259817,
+  "danger_reasons": []
+ },
+ {
+  "slug": "alchemix-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 36537940.6121789,
+  "danger_reasons": []
+ },
+ {
+  "slug": "felix-cdp",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 36525269.65399151,
+  "danger_reasons": []
+ },
+ {
+  "slug": "current",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 35201711.39230077,
+  "danger_reasons": []
+ },
+ {
+  "slug": "veno-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 34951330.18951255,
+  "danger_reasons": []
+ },
+ {
+  "slug": "aegis-yusd",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 34841297.66759969,
+  "danger_reasons": []
+ },
+ {
+  "slug": "nodedao",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 34769665.61677438,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lombard-vaults",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 33865826.11462016,
+  "danger_reasons": []
+ },
+ {
+  "slug": "alpaca-leveraged-yield-farming",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 33576560.72683495,
+  "danger_reasons": []
+ },
+ {
+  "slug": "lighter-robinhood-perps",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 33387317.94340966,
+  "danger_reasons": []
+ },
+ {
+  "slug": "suibridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 33263696.356647428,
+  "danger_reasons": []
+ },
+ {
+  "slug": "grvt-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 32986393.35460134,
+  "danger_reasons": []
+ },
+ {
+  "slug": "ink-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 32705768.457622837,
+  "danger_reasons": []
+ },
+ {
+  "slug": "y10k-capital",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 32654178.223663807,
+  "danger_reasons": []
+ },
+ {
+  "slug": "plasma-saving-vaults",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 32654106.186072335,
+  "danger_reasons": []
+ },
+ {
+  "slug": "altura",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 32438382.17957797,
+  "danger_reasons": []
+ },
+ {
+  "slug": "standx-bridge",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 32193247.400587685,
+  "danger_reasons": []
+ },
+ {
+  "slug": "gain",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 32054680.901391514,
+  "danger_reasons": []
+ },
+ {
+  "slug": "marginfi-lending",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 32016008.68404009,
+  "danger_reasons": []
+ },
+ {
+  "slug": "d2-finance",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 31898924.583109654,
+  "danger_reasons": []
+ },
+ {
+  "slug": "gmtrade",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 31621511.921508864,
+  "danger_reasons": []
+ },
+ {
+  "slug": "swell-liquid-staking",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 31514224.886511523,
+  "danger_reasons": []
+ },
+ {
+  "slug": "pulsex-v2",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 31127732.878908873,
+  "danger_reasons": []
+ },
+ {
+  "slug": "bitlayer-ybtc-family",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 30953261.527427845,
+  "danger_reasons": []
+ },
+ {
+  "slug": "termmax",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 30948024.945966356,
+  "danger_reasons": []
+ },
+ {
+  "slug": "avalon-superearn",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 30778799.878730115,
+  "danger_reasons": []
+ },
+ {
+  "slug": "goplus-locker-v3",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 30759860.167646494,
+  "danger_reasons": []
+ },
+ {
+  "slug": "avant-aveth",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 30636912.496198785,
+  "danger_reasons": []
+ },
+ {
+  "slug": "apex-omni",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 30397606.649624377,
+  "danger_reasons": []
+ },
+ {
+  "slug": "haedal-protocol",
+  "band_status": "ABOVE_BAND_DROPPED",
+  "reason": "above the band and dropped: no explicit danger, and protocols this size are assumed to carry dedicated professional audit coverage",
+  "tvl": 30197505.63310514,
+  "danger_reasons": []
+ }
+]
