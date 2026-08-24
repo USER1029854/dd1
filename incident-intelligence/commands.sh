@@ -112,17 +112,29 @@ python3 tools/fetch_adapters3.py      # adapters for the band worklist
 python3 tools/deep_screen4.py 800 --force   # batched probe incl. the owner-is-EOA second hop
 python3 tools/source_sweep.py 700     # deployed-source indicators (view helpers excluded)
 
+# ---------------------------- 7b. v4: validate the model instead of asserting it
+# Read-only authority walk: ERC-1967 admin slot + owner(), up to 3 hops, terminal
+# authority fingerprinted by the functions it answers. Selectors are DERIVED by
+# tools/keccak.py, which self-checks against two publicly known ones at import.
+python3 tools/admin_audit.py 9999 --force   # -> protocols/admin_posture.json
+python3 tools/feature_lift.py --uncensored  # -> protocols/feature_lift_uncensored.json
+python3 tools/ablation.py                   # -> protocols/ablation.json (which features earn their place)
+python3 tools/learn_weights.py              # -> protocols/learned_weights.json (fit 2022-24, test 2025-26)
+python3 tools/backtest.py --all --no-prior  # -> protocols/backtest.json (leakage controlled)
+python3 tools/write_authority_report.py     # -> results/upgrade_authority_exposure.md
+
 # ------------------------------------- 8. Phase H/13: gate, scoring, rankings
 # score2 applies the precision controls: relevance gate, prevalence demotion (>25% of the
 # swept population), metadata-cannot-prove-code, and UNKNOWN exposure for approval-dependent
 # families.
 python3 tools/score2.py               # gate + MATCH_SCORE + precision controls
-python3 tools/score3.py               # + HACK_LIKELIHOOD (hazard x neglect x economics)
+python3 tools/gen_pairs4.py 1200      # band screen + worklist, ordered by the LEARNED surface
+python3 tools/score4.py               # LIKELIHOOD (family evidence + learned surface), ACTIONABILITY, PRIORITY
 #   -> protocols/deep_screened.jsonl
-python3 tools/write_results3.py 45    # -> candidates_by_likelihood.md, candidates_by_match.md,
+python3 tools/write_results4.py 60    # -> candidates_by_priority.md, _by_likelihood.md, _by_match.md,
                                       #    candidates_all.csv, audit_variables.txt, near_miss_library
-python3 tools/write_summary3.py
-python3 tools/write_quality3.py
+python3 tools/write_summary4.py
+python3 tools/write_quality4.py
 #   -> results/candidates_all.csv, candidates_by_match.md, candidates_by_prevention.md,
 #      audit_variables.txt, excluded_protocols.md, run_summary.md
 #   -> families/near_miss_library.jsonl

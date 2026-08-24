@@ -1,6 +1,6 @@
 {
  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
- "generated_utc": "2026-08-23T23:33:25Z",
+ "generated_utc": "2026-08-24T00:20:55Z",
  "safety_attestation": {
   "production_transactions_submitted": 0,
   "production_transactions_constructed": 0,
@@ -189,8 +189,8 @@
   {
    "path": "commands.sh",
    "exists": true,
-   "bytes": 7567,
-   "sha256": "88567f57ac1e2d479c8ba959817cc34f479ce914d11b74ba3c4feb0383ea94cf",
+   "bytes": 8579,
+   "sha256": "bb811b6f7d5d27518682bf54e28336c9aee1b4d12dc722517dc560f9e19a41b3",
    "role": "reproduction",
    "supports_claim": "Every retrieval and transformation step in execution order"
   },
@@ -261,8 +261,8 @@
   {
    "path": "families/near_miss_library.jsonl",
    "exists": true,
-   "bytes": 325358,
-   "sha256": "c6481df4fb6067fdc6dbee11b03612b838263653e0d86d1e27c1fbf73ac43113",
+   "bytes": 482078,
+   "sha256": "8b856b75a6da3e26fa740acc9f0690cbc7c391917ed2ba258ac60435b3d02e3f",
    "role": "guard library",
    "supports_claim": "Pairs killed by a precondition or a decisive guard, with residual uncertainty"
   },
@@ -317,16 +317,16 @@
   {
    "path": "protocols/deep_screen_worklist.json",
    "exists": true,
-   "bytes": 16458265,
-   "sha256": "65a760651e8a00624eb563470a565f03731a84a2bf71d558671ccc7a64d1ae4c",
+   "bytes": 43728610,
+   "sha256": "8afdf80741d7ddd5e11b8607ed5b911db445e06225e7a56accbe45bc08166e36",
    "role": "screen",
    "supports_claim": "Stratified deep-screen worklist across families and exposure tiers"
   },
   {
    "path": "protocols/adapters_index.json",
    "exists": true,
-   "bytes": 2477622,
-   "sha256": "435fb168da89c1785786d836d909337c36d6c7082ff9a2b82a3cc44c77c196ea",
+   "bytes": 3270345,
+   "sha256": "8f3f450b8c6e9fe47f02178abca0da4a5bc8bae8d42ad0333be902dd6ec5368f",
    "role": "adapter evidence",
    "supports_claim": "Per-protocol adapter read, hashes, addresses, dynamic sources"
   },
@@ -349,8 +349,8 @@
   {
    "path": "protocols/onchain_probes.json",
    "exists": true,
-   "bytes": 4557133,
-   "sha256": "f0def473326564fceb463c0943fd2890c5e660d02dd41c0570ea8fdc9295dad9",
+   "bytes": 7580652,
+   "sha256": "fe5755fb9df1d1300d9a2e4007866575f2a7f8675e2a641adf505b4129dbc722",
    "role": "live state",
    "supports_claim": "Read-only eth_call/eth_getStorageAt/getsourcecode results"
   },
@@ -397,40 +397,128 @@
   {
    "path": "protocols/deep_screened.jsonl",
    "exists": true,
-   "bytes": 30012599,
-   "sha256": "b19b25779c419ce20bd3e955d38595659aab2ef8cec9ed9029a6c353b061cd14",
+   "bytes": 77896349,
+   "sha256": "aba6804047a13a4974945ea22df4a9cf58a6b306f809d2e929fa4fa2a87e0bcc",
    "role": "scoring",
    "supports_claim": "Per-pair precondition gate, guards, MATCH/CONFIDENCE/PREVENTION with components"
   },
   {
    "path": "results/candidates_all.csv",
    "exists": true,
-   "bytes": 3296994,
-   "sha256": "5e7ea16434b736c705afd6eaa78aeae6bcea628a0804c1b416979aea732fde66",
+   "bytes": 7774112,
+   "sha256": "073e25291de0ff25a4ccc6c89fc4a8b200d8b36c0f4c015d17c0d914480c40c0",
    "role": "results",
    "supports_claim": "Every surviving pair with both ranks and full score components"
   },
   {
-   "path": "results/candidates_by_match.md",
+   "path": "results/candidates_by_priority.md",
    "exists": true,
-   "bytes": 130321,
-   "sha256": "f1cbdbf7f847821ea0077eda1852f4172b9fbb4a3c5f039741dd597ecebf0fc1",
+   "bytes": 194723,
+   "sha256": "a7711bb4a0a36e1cc31c83583b1ccbbb5dfe1f5762ab54cbba0295aa362135b0",
    "role": "results",
-   "supports_claim": "Ranking A - mechanism match"
+   "supports_claim": "Ranking A - PRIORITY = likelihood x actionability; the queue to actually work"
   },
   {
    "path": "results/candidates_by_likelihood.md",
    "exists": true,
-   "bytes": 138059,
-   "sha256": "4efe5c1cf1ec032963c6617793ec5bb1229b6bc3a67fb49e6b70d70819eab963",
+   "bytes": 191014,
+   "sha256": "946cecd30fa2eef86cf76db40905265e9511c7ecbcc8e50d23a6c49baef06a2b",
    "role": "results",
-   "supports_claim": "Ranking B - likelihood of being attacked, the primary list for an independent reviewer"
+   "supports_claim": "Ranking B - likelihood alone, ignoring whether an independent reviewer can act"
+  },
+  {
+   "path": "results/candidates_by_match.md",
+   "exists": true,
+   "bytes": 178203,
+   "sha256": "111264dc247db858ba263d62c5eb72478f8ed967b9be6272a3bd8b5bf0c9d4a0",
+   "role": "results",
+   "supports_claim": "Ranking C - mechanism match only, no learned component"
+  },
+  {
+   "path": "results/upgrade_authority_exposure.md",
+   "exists": true,
+   "bytes": 13758,
+   "sha256": "2369a4e4745d3ee0eecef9b740e1484fc6fbea343e81f570ec624008ef41a7dc",
+   "role": "results",
+   "supports_claim": "Custody exposure: terminal upgrade authority per protocol, scored separately from likelihood on the ablation's evidence"
+  },
+  {
+   "path": "sources/defillama/hacks.json",
+   "exists": true,
+   "bytes": 333699,
+   "sha256": "90ab8c5593a91b4a57f620e529bf6a1998b624ed0bc264e38218897ebd472955",
+   "role": "incident evidence",
+   "supports_claim": "DefiLlama's structured hacks dataset: 1227 incidents with defillamaId, technique and classification"
+  },
+  {
+   "path": "protocols/hazard_tables_v2.json",
+   "exists": true,
+   "bytes": 54598,
+   "sha256": "6652346ef2b9465786384b86f4a5ff5ac5cb0182020652555c0212dead41d30c",
+   "role": "screen",
+   "supports_claim": "Empirical chain and category hazard ratios, blended across the SlowMist window corpus and DefiLlama's dataset"
+  },
+  {
+   "path": "protocols/feature_lift_uncensored.json",
+   "exists": true,
+   "bytes": 7830,
+   "sha256": "d697298b0747e642a204f6b2b4e531f5331614013c111513da74563b274fb8d8",
+   "role": "validation",
+   "supports_claim": "Per-signal measured lift over the full listed universe, correcting the survivorship censoring"
+  },
+  {
+   "path": "protocols/survivorship_check.json",
+   "exists": true,
+   "bytes": 430,
+   "sha256": "5815a60405bdf82af45717c8dd3e753097d5c243fc85166c8b9553e42f31cf73",
+   "role": "validation",
+   "supports_claim": "The censoring test itself: audit rates among victims that fell below the floor versus those still listed"
+  },
+  {
+   "path": "protocols/learned_weights.json",
+   "exists": true,
+   "bytes": 4304,
+   "sha256": "ca468dc1042783b084c429c1327fabbe41b684e627d7e4f4c4067b6881965d44",
+   "role": "validation",
+   "supports_claim": "Weights fitted on 2022-24 incidents and validated against 2025-26 incidents, with the temporal split recorded"
+  },
+  {
+   "path": "protocols/ablation.json",
+   "exists": true,
+   "bytes": 900,
+   "sha256": "6d73c9dc846eb115d5d293704199c2dadb199ce96ae29b63fcffeefd0db80500",
+   "role": "validation",
+   "supports_claim": "Feature-group ablation: which v4 additions actually improved out-of-sample prediction, and which were dropped for failing to"
+  },
+  {
+   "path": "protocols/backtest.json",
+   "exists": true,
+   "bytes": 9633,
+   "sha256": "92bac5f002193985ff3069cef5bca907ed32e3387c580931f32e769fd9cd7322",
+   "role": "validation",
+   "supports_claim": "Leakage-controlled backtest of the production score against known victims"
+  },
+  {
+   "path": "protocols/admin_posture.json",
+   "exists": true,
+   "bytes": 223866,
+   "sha256": "ebb10598d0edd029bfaf2a5db20ea432e04af282f6d830a30f7a94c24dd8f3dc",
+   "role": "live state",
+   "supports_claim": "Terminal upgrade/privileged authority per protocol, resolved by walking ERC-1967 admin and owner() chains up to three hops"
+  },
+  {
+   "path": "protocols/authority_exposure.json",
+   "exists": true,
+   "bytes": 159878,
+   "sha256": "6a7f8d11b0f4332c729f9b0b2e46abb6d200ae15f1bbd57e9cb486236a48b203",
+   "role": "live state",
+   "supports_claim": "Custody exposure rows behind results/upgrade_authority_exposure.md"
   },
   {
    "path": "protocols/band_screen.json",
    "exists": true,
-   "bytes": 1545129,
-   "sha256": "91f3d46af83e91fbd640ad59a1e1fe0ef9ed2e80e239ab5d402422435c23bd2d",
+   "bytes": 3157570,
+   "sha256": "d47db20eae277c8891e8aed168c4043f95cb5112d2afd51d1643993e3db2a523",
    "role": "screen",
    "supports_claim": "Per-protocol band status, empirical hazard, attention deficit and attacker economics"
   },
@@ -445,8 +533,8 @@
   {
    "path": "results/audit_variables.txt",
    "exists": true,
-   "bytes": 39688,
-   "sha256": "254bf0ef22b2f287fb8212149b3acf35ba81b7efbf039d9626939c643f578c44",
+   "bytes": 49166,
+   "sha256": "28e6a5927f2d08d84df94e4fdb87249d04e6d832c23369121a23a0f4235389f5",
    "role": "handoff",
    "supports_claim": "One self-contained line per final candidate for the downstream audit prompt"
   },
@@ -461,16 +549,16 @@
   {
    "path": "results/run_summary.md",
    "exists": true,
-   "bytes": 4858,
-   "sha256": "cf8fa2ef81765ac43ed6c67d75c65aa3b0196831cba0ca727e18b9403160a1c0",
+   "bytes": 7454,
+   "sha256": "171830515e718b53061f765cb400e6005d66ae08bc93bab8f72253c4949e1ef4",
    "role": "results",
    "supports_claim": "Required summary statistics"
   },
   {
    "path": "quality_report.md",
    "exists": true,
-   "bytes": 7112,
-   "sha256": "30fa41fd2d4ce9e608b0af99785fa7b35194ae30ed0941f37b2d6ed1c1d9f750",
+   "bytes": 12639,
+   "sha256": "3338bc0a66951a87e3370f5ca1f5566829823d689f905360ee2cd0c7fba42a72",
    "role": "quality",
    "supports_claim": "Mechanical quality gates and known limitations"
   }
@@ -489,6 +577,12 @@
   "live-state evidence": "protocols/onchain_probes.json",
   "score components and caps": "protocols/deep_screened.jsonl + results/candidates_all.csv",
   "prior-art status per final pair": "protocols/prior_art.json + results/candidates_by_*.md",
+  "out-of-sample validation of the scoring model": "protocols/learned_weights.json (fit 2022-24, tested 2025-26 on 95 unseen protocols)",
+  "which features earned their place and which were dropped": "protocols/ablation.json (refit and revalidated per feature group)",
+  "survivorship censoring and its correction": "protocols/survivorship_check.json + protocols/feature_lift_uncensored.json",
+  "leakage control in the backtest": "protocols/backtest.json (tools/backtest.py --no-prior)",
+  "custody exposure measured but kept out of the likelihood score": "protocols/admin_posture.json + results/upgrade_authority_exposure.md + protocols/ablation.json",
+  "function selectors used for on-chain fingerprinting": "tools/keccak.py (derived, self-checked against two known selectors at import)",
   "near misses": "families/near_miss_library.jsonl",
   "empirical victim profile and hazard ratios": "tools/hazard.py, derived from incidents/included.jsonl + provisional.jsonl",
   "band decisions and why each protocol was kept or dropped": "protocols/band_screen.json + protocols/above_band_dropped.json",

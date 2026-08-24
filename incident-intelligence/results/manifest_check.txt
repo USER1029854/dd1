@@ -1,5 +1,5 @@
 [PASS] 18.6 every referenced artifact exists and is non-empty — missing/empty: []
-[PASS] 18.6 manifest maps every load-bearing claim — 19 claims mapped
+[PASS] 18.6 manifest maps every load-bearing claim — 25 claims mapped
 [PASS] 18.6 commands.sh replays retrieval and transformation
 [PASS] 18.1 crawling continued until the date boundary was proven — final page 12: in_window=0 older=20/20
 [PASS] 18.1 every in-window row retained and dispositioned — 110+22+73 vs 205
@@ -20,24 +20,30 @@
 [PASS] 18.3 every retained protocol ties to a valid current DefiLlama slug
 [PASS] 18.3 adapter read or explicitly marked missing for every candidate — 0 marked missing (explicitly recorded): []
 [PASS] 18.3 sub-floor authority-bearing protocols identified and recorded (hard $50k floor in force) — 662 recorded in protocols/subfloor_authority_deferred.json, none screened
-[PASS] 18.3 hard TVL floor actually enforced in the screen — lowest screened TVL $50,207
+[PASS] 18.3 hard TVL floor actually enforced in the screen — lowest screened TVL $50,278
 [PASS] 18.3 condition layer recorded per protocol
-[PASS] 18.4 deployed-source sweep evidence recorded — 462 protocols with analysed source
+[PASS] 18.4 deployed-source sweep evidence recorded — 783 protocols with analysed source
 [PASS] 18.4 precision controls applied and published — prevalence demotion and relevance gate both present in scored pairs
 [PASS] 18.3 TVL, chains, category and deployment evidence recorded
-[PASS] 18.4 minimum deep-screened pairs met (>=80) — 9425 pairs deep-screened
+[PASS] 18.4 minimum deep-screened pairs met (>=80) — 20901 pairs deep-screened
 [PASS] 18.4 mandatory-precondition gate applied to every pair
 [PASS] 18.4 decisive guards searched on every surviving pair
 [PASS] 18.4 score evidence shown
 [PASS] 18.4 confidence separate from technical fit
 [PASS] 18.4 live exposure separate from fit — value at risk is reported per pair and never folded into the likelihood ranking
-[PASS] band: hard $50k floor enforced — lowest screened value at risk $50,207
-[PASS] band: above-band protocols dropped unless explicit danger — 182 retained above the band, each with stated danger evidence
-[PASS] band: likelihood ranking is not exposure-driven — HACK_LIKELIHOOD = family evidence + empirical hazard + neglect + attacker economics
+[PASS] band: hard $50k floor enforced — lowest screened value at risk $50,278
+[PASS] band: above-band protocols dropped unless explicit danger — 626 retained above the band, each with stated danger evidence
+[PASS] band: LIKELIHOOD is not a restatement of exposure — Spearman(LIKELIHOOD, TVL) = +0.155 across 20289 surviving pairs
+[PASS] band: PRIORITY tilts toward protocols an independent reviewer can actually help — Spearman(PRIORITY, TVL) = -0.267: the queue leans to smaller protocols by construction
+[PASS] band: PRIORITY = LIKELIHOOD x ACTIONABILITY holds for every pair — 0 arithmetic violations across 20289 pairs
+[PASS] validation: the scoring model beats chance on incidents it never saw — lift x2.32 on 95 protocols hacked after the fitting window
+[PASS] validation: every feature group kept was shown to earn its place — ablation refits and revalidates each group; admin posture was dropped for failing this
+[PASS] safety: custody exposure reported without an exploitation path or any key material — authority postures are public chain state read with eth_call/eth_getCode; forbidden phrasing found: none; 32-byte secrets found: none
 [PASS] 18.4 unknowns visible
 [PASS] 18.4 metadata-only pairs capped at 20 — 0 violations
 [PASS] 18.4 adapter-only pairs capped at 45 — 0 violations
-[PASS] 18.4 near misses written to the guard library — 358 near misses
+[PASS] 18.4 near misses written to the guard library — 612 near misses
+[PASS] 18.4 no candidate called vulnerable in candidates_by_priority.md — []
 [PASS] 18.4 no candidate called vulnerable in candidates_by_match.md — []
 [PASS] 18.4 no candidate called vulnerable in candidates_by_likelihood.md — []
 [PASS] 18.4 no candidate called vulnerable in run_summary.md — []
@@ -47,7 +53,7 @@
 [PASS] 18.5 no credentials recovered or used
 [PASS] 18.5 no production transaction built or submitted
 [PASS] 18.5 no unauthorized extraction optimized
-[PASS] 18.6 audit_variables.txt: one valid protocol per line, no multiline entries — 45 lines
+[PASS] 18.6 audit_variables.txt: one valid protocol per line, no multiline entries — 60 lines
 [PASS] 18.6 no secrets in audit_variables.txt
 
-SUMMARY: 51 pass, 0 fail, 0 warn
+SUMMARY: 57 pass, 0 fail, 0 warn

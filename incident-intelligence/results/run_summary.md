@@ -53,6 +53,49 @@ Risk Curators (×0.50) and RWA (×0.46) are *under*-represented among victims. A
 | Unique root causes | 107 |
 | Mechanism families | 43 (8 single-event) |
 
+## Does the ranking actually predict anything?
+
+The model is fitted on incidents from **2022-2024** and then scored against incidents from **2025-2026** that it never saw. That is the only number in this run worth trusting about predictive power.
+
+| | |
+|---|---:|
+| Protocols hacked after the fitting window, unseen while fitting | 95 |
+| Median future victim lands at | 78.6th percentile |
+| Future victims in the model's top quartile | 58% |
+| Lift over chance | **x2.32** |
+
+### Which additions earned their place
+
+Each variant is refitted from scratch and revalidated, so a gain is attributed rather than assumed.
+
+| Variant | Signals | Median percentile | Top quartile | Lift |
+|---|---:|---:|---:|---:|
+| baseline (v3 feature set) | 18 | 77.7th | 55% | x2.19 |
+| + exposure age | 20 | 78.6th | 58% | x2.32 |
+| + admin posture | 22 | 76.8th | 54% | x2.15 |
+| + public-repo flag | 18 | 77.7th | 55% | x2.19 |
+| + all v4 additions | 24 | 77.7th | 58% | x2.32 |
+
+**Exposure age was the only addition that paid.** It also points the opposite way from the obvious intuition: a protocol under a year old carries lift **x1.866**, one over three years old **x0.327**. It is not the abandoned deployments that get hit. That single fact explains why several 'neglect' signals measure as protective here — they are markers of age, and age is protective.
+
+**Custody posture was measured, ablated, and then dropped from the score.** Adding it moved out-of-sample lift x2.19 -> x2.15, and over the full window it measures x0.982 — a single-key upgrade authority does *not* predict a code defect. That is the expected answer, because an off-chain key compromise is an excluded root cause under the inclusion gate. It is reported on its own instead; see below.
+
+## Custody exposure, reported separately
+
+Walking ERC-1967 admin slots and `owner()` chains up to three hops, then fingerprinting the terminal authority by the functions it answers.
+
+| Terminal authority | Protocols |
+|---|---:|
+| `EOA_SINGLE_KEY` | 160 |
+| `UNKNOWN_CONTRACT` | 120 |
+| `SAFE_M_OF_N` | 69 |
+| `TIMELOCK` | 11 |
+| `SAFE_1_OF_N` | 4 |
+| `GOVERNOR` | 1 |
+
+**23 protocols holding $56,405,869 have an ERC-1967 upgrade authority that terminates in a single key or a single signature.** No code fix removes that exposure, and moving it behind a threshold-2 multisig with a non-zero delay is a configuration change. Full list in `results/upgrade_authority_exposure.md`.
+
+
 ## Band screen
 
 | Metric | Value |
@@ -60,36 +103,37 @@ Risk Curators (×0.50) and RWA (×0.46) are *under*-represented among victims. A
 | Protocols fetched | 8103 |
 | Above the $50,000 floor | 2662 |
 | Inside the $50k-$30M band | 2268 |
-| Above the band, dropped (assumed professionally covered) | 351 |
-| Above the band, kept on explicit danger | 43 |
+| Above the band, dropped (assumed professionally covered) | 363 |
+| Above the band, kept on explicit danger | 31 |
 | Below the floor, recorded but not screened | 662 |
-| Protocols deep-screened | 700 |
-| Protocol-family pairs screened | 9425 |
-| Pairs killed at the gate | 358 |
-| Adapters read | 1151 |
-| Protocols with live chain evidence | 550 |
-| Addresses read on-chain | 1610 |
-| Privileged owner() resolving to an EOA | 96 protocols |
-| Verified contracts analysed | 749 |
-| Final candidates | 45 |
-| Median value at risk across finals | $290,609 |
+| Protocols deep-screened | 1200 |
+| Protocol-family pairs screened | 20901 |
+| Pairs killed at the gate | 612 |
+| Adapters read | 1721 |
+| Protocols with live chain evidence | 859 |
+| Addresses read on-chain | 2467 |
+| Privileged owner() resolving to an EOA | 143 protocols |
+| Authority chains walked and fingerprinted | 394 protocols |
+| Verified contracts analysed | 1270 |
+| Final candidates | 60 |
+| Median value at risk across finals | $237,912 |
 
-### Most common attention-deficit signals across final candidates
+### Most common measured signals across final candidates
 
-| Signal | Candidates |
-|---|---:|
-| `no_audit_listed` | 26 |
-| `dead_front_end` | 24 |
-| `no_timelock_in_source` | 22 |
-| `single_audit_only` | 18 |
-| `version_sibling_legacy` | 12 |
-| `misrepresented_tokens` | 9 |
-| `unverified_implementation` | 5 |
-| `rebranded` | 4 |
-| `warning_banner` | 2 |
-| `fork_of_window_victim` | 2 |
-| `is_window_victim` | 2 |
-| `deprecated_flag` | 2 |
+| Signal | Candidates | Measured lift |
+|---|---:|---:|
+| `on_ethereum` | 49 | x2.121 |
+| `chain_hazard_ge2` | 49 | x2.134 |
+| `single_audit_only` | 46 | x1.53 |
+| `multichain_gt3` | 37 | x1.77 |
+| `on_bsc` | 37 | x1.047 |
+| `is_proxy` | 29 | x1.858 |
+| `owner_is_contract` | 27 | x2.578 |
+| `has_oracle_declared` | 25 | x2.127 |
+| `authority_addrs_beyond_tvl` | 25 | x1.174 |
+| `owner_is_eoa` | 21 | x0.865 |
+| `has_governance` | 15 | x2.968 |
+| `has_2plus_audits` | 12 | x1.975 |
 
 ## Quality
 
@@ -97,8 +141,8 @@ Risk Curators (×0.50) and RWA (×0.46) are *under*-represented among victims. A
 |---|---|
 | Unresolved source contradictions | 1 — `INC-2026-04-01-DRI` (Drift, ~$285M): attack-method label says *Social Engineering* while the description describes a vault exploit with no mechanism. Graded D, excluded from pattern derivation. |
 | Corpus completeness gap | At least one in-window on-chain incident documented elsewhere (STO token, 2026-02-23) is absent from the index. Counts are lower bounds. |
-| Pairs still at metadata or adapter evidence | 7732 of 9067 |
-| Prior-art searches incomplete | 44 of 45 finals. `NO_PUBLIC_MATCH_FOUND` is never emitted. |
+| Pairs still at metadata or adapter evidence | 17320 of 20289 |
+| Prior-art searches incomplete | 50 of 60 finals. `NO_PUBLIC_MATCH_FOUND` is never emitted. |
 | Commands reproducible | `commands.sh` replays every retrieval and transformation step |
 | Manifest checker | see `results/manifest_check.txt` |
 

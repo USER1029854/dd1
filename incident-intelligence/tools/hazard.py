@@ -10,6 +10,18 @@ under $2M.
 
 # Hazard ratio = (share of in-window incidents) / (share of eligible protocols).
 # >1 means the segment is over-represented among real victims.
+import json as _json, os as _os
+_V2=_os.path.join(_os.path.dirname(__file__),'..','protocols','hazard_tables_v2.json')
+_T=_json.load(open(_V2)) if _os.path.exists(_V2) else {}
+# Blended tables: geometric mean of the six-month SlowMist corpus (which captures small
+# token/farm/BSC incidents) and DefiLlama's 2022+ hacks dataset (far better n for DeFi
+# protocols, four-year window). Neither source alone is representative.
+CHAIN_HAZARD_BLENDED=_T.get('chain_hazard_blended') or {}
+CATEGORY_HAZARD_BLENDED=_T.get('category_hazard_blended') or {}
+REPEAT_VICTIMS=_T.get('repeat_victims') or {}
+PRIOR_HACKS=_T.get('prior_hacks_by_slug') or {}
+CHAIN_ALIASES={'BSC':'Binance','Binance':'BSC','NEAR':'Near','Near':'NEAR'}
+
 CHAIN_HAZARD={'Supra':6.42,'Near':4.08,'NEAR':4.08,'Binance':3.61,'BSC':3.61,'Ethereum':2.54,
  'Sui':1.93,'Arbitrum':1.29,'Solana':1.11,'Base':0.96,'Polygon':0.56,'Avalanche':0.37}
 CHAIN_DEFAULT=0.80
@@ -26,9 +38,15 @@ CATEGORY_DEFAULT=0.70
 LOSS_P50=252_000; LOSS_P75=1_140_000; LOSS_P90=3_700_000
 BAND_LO=50_000; BAND_HI=30_000_000
 
+def _ch1(c):
+    for k in (c, CHAIN_ALIASES.get(c)):
+        if k and k in CHAIN_HAZARD_BLENDED: return CHAIN_HAZARD_BLENDED[k]
+        if k and k in CHAIN_HAZARD: return CHAIN_HAZARD[k]
+    return CHAIN_DEFAULT
 def chain_hazard(chains):
-    return max([CHAIN_HAZARD.get(c,CHAIN_DEFAULT) for c in (chains or [])] or [CHAIN_DEFAULT])
+    return max([_ch1(c) for c in (chains or [])] or [CHAIN_DEFAULT])
 def category_hazard(cat):
+    if cat in CATEGORY_HAZARD_BLENDED: return CATEGORY_HAZARD_BLENDED[cat]
     return CATEGORY_HAZARD.get(cat,CATEGORY_DEFAULT)
 
 def hazard_profile(p):
@@ -57,9 +75,60 @@ NEGLECT_SIGNALS={
  'sharp_inflow_unaudited':   (5,"TVL rose sharply over the last week with no audit listed: fresh money on unproven code"),
  'warning_banner':           (3,"DefiLlama displays a warning banner"),
  'misrepresented_tokens':    (3,"DefiLlama cannot reconcile this protocol's reported token holdings"),
+ 'repeat_victim':            (8,"already hacked more than once and still holding value: the strongest single "
+                                "predictor in the data, since whatever let it happen twice is still there"),
+ 'prior_onchain_hack_live':  (5,"hacked by an on-chain defect before and still listed, per DefiLlama's own "
+                                "hacks dataset"),
+ 'prior_technique_matches_family':(6,"the technique that hit this protocol before maps to the family being "
+                                     "tested now, so the same class of defect may still be reachable"),
 }
 
-def neglect(p, probe=None, sweep=None):
+# DefiLlama hack techniques mapped onto this library's families.
+TECHNIQUE_FAMILY={
+ 'Improper Access Control':{'AUTH-MISSING-ON-VALUE-MOVING-PATH','AUTH-ZERO-ADDRESS-ACCEPTED',
+                            'AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY','AUTH-IDENTITY-SATISFIABLE-BY-ATTACKER-CONTRACT'},
+ 'Spot Price Manipulation':{'ORACLE-SPOT-THIN-LIQUIDITY','LIQUIDATION-ON-MANIPULABLE-VALUATION'},
+ 'Oracle Manipulation':{'ORACLE-SPOT-THIN-LIQUIDITY','ORACLE-STALE-OR-SILENT-FALLBACK',
+                        'ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE'},
+ 'Oracle Misconfiguration':{'ORACLE-STALE-OR-SILENT-FALLBACK'},
+ 'Reentrancy':{'CALLBACK-STATE-LOCK-INCOMPLETE'},
+ 'Incorrect Share Accounting':{'ACC-NAV-SHAREPRICE-MANIPULABLE','ACC-ZERO-SUPPLY-INFLATION',
+                               'ACC-DONATION-UNACCOUNTED-BALANCE'},
+ 'Donation Attack':{'ACC-DONATION-UNACCOUNTED-BALANCE'},
+ 'Infinite Mint':{'BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE','AUTH-MISSING-ON-VALUE-MOVING-PATH'},
+ 'Arbitrary External Call':{'CALLDATA-CALLER-CONTROLLED-TARGET'},
+ 'Token Approval Abuse':{'CALLDATA-CALLER-CONTROLLED-TARGET','CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS',
+                         'APPROVALS-TO-UPGRADEABLE-SPENDER'},
+ 'Reward Logic Flaw':{'ACC-REWARD-INDEX-INIT-AND-ORDERING','ACC-CREDIT-NOT-RECEIVED'},
+ 'Arithmetic Error':{'ACC-SIGN-OR-BOUND-CHECK-MISSING','ACC-SPLIT-NONINVARIANT'},
+ 'Missing Input Validation':{'ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED','QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET'},
+ 'Forged Proof':{'PROOF-VERIFICATION-BYPASSED','BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE'},
+ 'Withdrawal Logic Flaw':{'ACC-SPLIT-NONINVARIANT','AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY'},
+ 'Swap Logic Flaw':{'QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET','AMM-POOL-RATIO-SKEW-EXTRACTION'},
+ 'Signature Replay':{'SIG-REPLAY-CROSS-POSITION','SIG-DIGEST-AMBIGUOUS-OR-UNBOUND'},
+ 'Cross-Chain Message Spoofing':{'BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE'},
+}
+
+PRIOR_SIGNALS_ENABLED=True
+def prior_hack_signals(slug, family_id=None, before_date=None):
+    """Signals drawn from DefiLlama's own hacks dataset for this exact protocol.
+    `before_date` restricts to hacks strictly earlier than that ISO date, which is what a
+    leakage-free backtest needs: you cannot use an incident to predict itself."""
+    if not PRIOR_SIGNALS_ENABLED: return []
+    """Signals drawn from DefiLlama's own hacks dataset for this exact protocol."""
+    out=[]
+    hs=PRIOR_HACKS.get(slug) or []
+    if before_date: hs=[h for h in hs if (h.get('date') or '9999') < before_date]
+    n=REPEAT_VICTIMS.get(slug) if not before_date else len(hs)
+    if n and n>1: out.append('repeat_victim')
+    if hs: out.append('prior_onchain_hack_live')
+    if family_id:
+        for h in hs:
+            if family_id in TECHNIQUE_FAMILY.get(h.get('technique') or '', set()):
+                out.append('prior_technique_matches_family'); break
+    return out
+
+def neglect(p, probe=None, sweep=None, family_id=None, before_date=None):
     """0-25 plus the itemised reasons. Neglect is the attention deficit an attacker exploits."""
     hits=[]; conds=set(p.get('_conditions') or [])
     if not p.get('_audit_links'): hits.append('no_audit_listed')
@@ -87,6 +156,7 @@ def neglect(p, probe=None, sweep=None):
             hits.append('unverified_implementation')
         ind=sweep.get('indicators') or {}
         if ind and ind.get('timelock_present') is False: hits.append('no_timelock_in_source')
+    hits += [h for h in prior_hack_signals(p.get('slug'), family_id, before_date) if h not in hits]
     score=sum(NEGLECT_SIGNALS[h][0] for h in hits)
     return round(min(25.0,score),2), [{"signal":h,"weight":NEGLECT_SIGNALS[h][0],
                                        "meaning":NEGLECT_SIGNALS[h][1]} for h in hits]

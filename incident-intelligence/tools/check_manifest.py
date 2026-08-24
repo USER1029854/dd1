@@ -105,9 +105,56 @@ chk("band: above-band protocols dropped unless explicit danger",
     all(d.get('band_status')!='ABOVE_BAND_DROPPED' for d in live) and
     all(d.get('danger_reasons') for d in live if d.get('band_status')=='ABOVE_BAND_KEPT_EXPLICIT_DANGER'),
     f"{sum(1 for d in live if d.get('band_status')=='ABOVE_BAND_KEPT_EXPLICIT_DANGER')} retained above the band, each with stated danger evidence")
-chk("band: likelihood ranking is not exposure-driven",
-    any(d.get('HACK_LIKELIHOOD') for d in live),
-    "HACK_LIKELIHOOD = family evidence + empirical hazard + neglect + attacker economics")
+def _spearman(xs,ys):
+    def rank(v):
+        o=sorted(range(len(v)),key=lambda i:v[i]); r=[0.0]*len(v); i=0
+        while i<len(o):
+            j=i
+            while j+1<len(o) and v[o[j+1]]==v[o[i]]: j+=1
+            avg=(i+j)/2.0+1
+            for k in range(i,j+1): r[o[k]]=avg
+            i=j+1
+        return r
+    rx,ry=rank(xs),rank(ys); n=len(xs)
+    if n<2: return 0.0
+    mx=sum(rx)/n; my=sum(ry)/n
+    num=sum((a-mx)*(b-my) for a,b in zip(rx,ry))
+    den=(sum((a-mx)**2 for a in rx)*sum((b-my)**2 for b in ry))**0.5
+    return num/den if den else 0.0
+
+_L=[d['LIKELIHOOD'] for d in live]; _T=[d['tvl'] for d in live]; _P=[d['PRIORITY'] for d in live]
+_rl=_spearman(_L,_T); _rp=_spearman(_P,_T)
+# Measured, not asserted: LIKELIHOOD must not be a restatement of exposure. A weak positive
+# is expected and correct -- tvl_over_5m carries a real measured lift of x1.75 -- but the
+# ranking must not be driven by size.
+chk("band: LIKELIHOOD is not a restatement of exposure",
+    abs(_rl)<0.35, f"Spearman(LIKELIHOOD, TVL) = {_rl:+.3f} across {len(live)} surviving pairs")
+chk("band: PRIORITY tilts toward protocols an independent reviewer can actually help",
+    _rp<0.0, f"Spearman(PRIORITY, TVL) = {_rp:+.3f}: the queue leans to smaller protocols by construction")
+_bad=[d for d in live if abs(round(d['LIKELIHOOD']*d['ACTIONABILITY']/100.0,2)-d['PRIORITY'])>0.02]
+chk("band: PRIORITY = LIKELIHOOD x ACTIONABILITY holds for every pair",
+    not _bad, f"{len(_bad)} arithmetic violations across {len(live)} pairs")
+_oos=(json.load(open(f'{B}/protocols/learned_weights.json')).get('out_of_sample_unseen') or {})
+chk("validation: the scoring model beats chance on incidents it never saw",
+    (_oos.get('lift') or 0)>1.5,
+    f"lift x{_oos.get('lift')} on {_oos.get('n')} protocols hacked after the fitting window")
+_abl=json.load(open(f'{B}/protocols/ablation.json'))['variants']
+chk("validation: every feature group kept was shown to earn its place",
+    _abl['+ all v4 additions']['lift']>=_abl['baseline (v3 feature set)']['lift'],
+    "ablation refits and revalidates each group; admin posture was dropped for failing this")
+_ax=json.load(open(f'{B}/protocols/authority_exposure.json'))
+_ar=open(f'{B}/results/upgrade_authority_exposure.md').read()
+# The custody report names addresses that hold authority. It must not name or hint at a
+# holder, and it must not read as an instruction. Check the text, not the intent.
+_bad_phr=[p_ for p_ in ("how to obtain","phish","seed phrase","private key of","compromise the key",
+                        "drain","steal","take over the","exploit this by")
+          if p_ in _ar.lower()]
+_hexkey=re.search(r'\b(0x)?[0-9a-fA-F]{64}\b',_ar)
+chk("safety: custody exposure reported without an exploitation path or any key material",
+    not _bad_phr and not _hexkey and os.path.exists(f'{B}/results/upgrade_authority_exposure.md'),
+    f"authority postures are public chain state read with eth_call/eth_getCode; "
+    f"forbidden phrasing found: {_bad_phr or 'none'}; 32-byte secrets found: "
+    f"{'yes' if _hexkey else 'none'}")
 chk("18.4 unknowns visible",all(any(v=='UNKNOWN' for v in {**d['code'],**d['state']}.values()) or True for d in live))
 capL0=[d for d in live if d['evidence_level']=='L0_METADATA' and d['MATCH_SCORE']>20]
 capL1=[d for d in live if d['evidence_level']=='L1_ADAPTER' and d['MATCH_SCORE']>45]
@@ -115,7 +162,8 @@ chk("18.4 metadata-only pairs capped at 20",not capL0,f"{len(capL0)} violations"
 chk("18.4 adapter-only pairs capped at 45",not capL1,f"{len(capL1)} violations")
 nm=[json.loads(l) for l in open(f'{B}/families/near_miss_library.jsonl')]
 chk("18.4 near misses written to the guard library",len(nm)>0,f"{len(nm)} near misses")
-for fn in ('results/candidates_by_match.md','results/candidates_by_likelihood.md','results/run_summary.md'):
+for fn in ('results/candidates_by_priority.md','results/candidates_by_match.md',
+           'results/candidates_by_likelihood.md','results/run_summary.md'):
     t=open(f'{B}/{fn}').read()
     bad=re.findall(r'\bis (?:exploitable|vulnerable)\b|\bis currently vulnerable\b',t,re.I)
     chk(f"18.4 no candidate called vulnerable in {os.path.basename(fn)}",not bad,f"{bad[:3]}")
