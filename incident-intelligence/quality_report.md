@@ -109,7 +109,7 @@ Market cap and TVL trajectory were refused for a different reason: both are read
 
 7. **Exposure is understated for approval-bearing families.** Live allowances and delegations were not enumerated, so TVL is a floor for those pairs, not a ceiling.
 
-8. **Prior art is not established for most finals.** 50 of 60 carry `PRIOR_ART_SEARCH_INCOMPLETE`. Several of these protocols may already have a public disclosure or a deployed fix. Check before spending time.
+8. **Prior art is not established for most finals.** 52 of 60 carry `PRIOR_ART_SEARCH_INCOMPLETE`. Several of these protocols may already have a public disclosure or a deployed fix. Check before spending time.
 
 9. **Small protocols can be small for a reason.** Some candidates are abandoned rather than merely neglected. A dead protocol with $80,000 left is a low-value save even when the finding is real; the value-at-risk column is there so you can make that call before starting.
 

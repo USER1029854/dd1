@@ -142,6 +142,28 @@ _abl=json.load(open(f'{B}/protocols/ablation.json'))['variants']
 chk("validation: every feature group kept was shown to earn its place",
     _abl['+ all v4 additions']['lift']>=_abl['baseline (v3 feature set)']['lift'],
     "ablation refits and revalidates each group; admin posture was dropped for failing this")
+# --- no-repetition gates: a run must hand over work that has not been handed over before ---
+_led=json.load(open(f'{B}/protocols/delivered_ledger.json'))
+_LEDS=set(_led['ledger'])
+_final_slugs=set()
+_av=open(f'{B}/results/audit_variables.txt').read()
+for _m in re.finditer(r'TARGET=https://defillama\.com/protocol/([^\s|]+)',_av): _final_slugs.add(_m.group(1))
+_rep=sorted(_final_slugs & _LEDS)
+chk("delivery: no candidate repeats a protocol handed over in a previous run",
+    not _rep, f"{len(_final_slugs)} finals against a ledger of {len(_LEDS)} previously delivered; "
+              f"repeats: {_rep[:5] or 'none'}")
+_md=open(f'{B}/results/candidates_by_priority.md').read()
+_mds={m.group(1) for m in re.finditer(r'\*\*DefiLlama:\*\* https://defillama\.com/protocol/([^\s]+)',_md)}
+chk("delivery: the written ranking matches the handover list, with no delivered protocol reintroduced",
+    not (_mds & _LEDS), f"{len(_mds)} write-ups, {len(_mds & _LEDS)} previously delivered")
+chk("delivery: withheld protocols are disclosed rather than silently dropped",
+    "previously_delivered" in open(f'{B}/results/candidates_all.csv').readline() and
+    "withheld" in _md.lower(),
+    "candidates_all.csv carries previously_delivered + first_delivered_in; the ranking states the count")
+chk("delivery: the ledger is reconstructed from git history, not from run-to-run memory",
+    _led.get('generated_from','').startswith('git history') and len(_led.get('runs',[]))>=1,
+    f"{len(_led.get('runs',[]))} previous deliveries found, {len(_LEDS)} protocols")
+
 # --- non-EVM extension gates ---
 _sv=json.load(open(f'{B}/incidents/source_verification.json'))['incidents']
 _may=_sv.get('INC-2026-08-18-MAY',{})

@@ -32,6 +32,15 @@ collapse=sum(len(l['incident_ids'])-l['unique_root_causes'] for l in dup['clone_
 L=[]
 L.append("# Run summary\n")
 L.append(f"**Run:** `{cfg['run_id']}` · **Window:** {cfg['window_start']} to {cfg['window_end']} (inclusive, incident date) · **Run date (UTC):** {cfg['run_date_utc']}\n")
+_led=json.load(open(f'{B}/protocols/delivered_ledger.json'))
+L.append("## Every candidate here is one you have not been given before\n")
+L.append("A candidate list is a queue of work, not a leaderboard. Earlier runs of this screen handed over "
+         "**%d protocols** across **%d deliveries**, and re-ranking the same set would hand over nothing new. "
+         "Those protocols are withheld from this run's candidates. They are not resolved and not ruled out; "
+         "they were already given. The ledger is `protocols/delivered_ledger.json`, reconstructed from git "
+         "history rather than from anything carried between runs, and every withheld protocol still appears "
+         "in `candidates_all.csv` with `previously_delivered=YES` and the run that delivered it.\n"
+         % (_led['protocols_delivered'],len(_led['runs'])))
 L.append("## What this run optimises for\n")
 L.append("An independent reviewer preventing real losses, not a fund allocating audit retainers. Two consequences "
          "drive everything downstream:\n")

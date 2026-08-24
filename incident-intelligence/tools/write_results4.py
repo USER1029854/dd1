@@ -19,7 +19,16 @@ AUTHDESC={'EOA_SINGLE_KEY':'one externally-owned account','SAFE_1_OF_N':'a Safe 
           'UNKNOWN_CONTRACT':'a contract not fingerprinted by this run',
           'NONE_FOUND':'no authority slot or owner() exposed'}
 BT=json.load(open(f'{B}/protocols/learned_weights.json')) if os.path.exists(f'{B}/protocols/learned_weights.json') else {}
-live=[o for o in D if not o['killed']]; killed=[o for o in D if o['killed']]
+# A candidate list is work to be done, not a leaderboard. Anything handed over in a
+# previous run is withheld here, so every run delivers protocols the operator has not
+# already been given. The ledger is reconstructed from git history by
+# tools/build_ledger.py and is cumulative across runs.
+_LED=json.load(open(f'{B}/protocols/delivered_ledger.json')) if os.path.exists(f'{B}/protocols/delivered_ledger.json') else {"ledger":{},"runs":[]}
+DELIVERED=set(_LED.get('ledger',{}))
+PAST_RUNS=_LED.get('runs',[])
+live_all=[o for o in D if not o['killed']]; killed=[o for o in D if o['killed']]
+live=[o for o in live_all if o['protocol_slug'] not in DELIVERED]
+WITHHELD=sorted({o['protocol_slug'] for o in live_all if o['protocol_slug'] in DELIVERED})
 N=int(sys.argv[1]) if len(sys.argv)>1 else 60
 
 def _by_date_desc(hs):
@@ -178,7 +187,27 @@ for key,fn,title in (('PRIORITY','candidates_by_priority.md','Ranking A — prio
         out.append("| Median value at risk | $%s |" % f"{sorted(o['tvl'] for o in chosen)[len(chosen)//2]:,.0f}")
         out.append("| Total value at risk | $%s |" % f"{sum(o['tvl'] for o in chosen):,.0f}")
         out.append("| At L4 guard review | %d |" % sum(1 for o in chosen if o['evidence_level']=='L4_GUARD_REVIEW'))
+        out.append("| Previously delivered (withheld from this list) | %d |" % len(WITHHELD))
         out.append("")
+        out.append("### Every protocol here is one you have not been given before\n")
+        out.append("A candidate list is a queue of work, not a leaderboard. **%d protocols that survive "
+                   "screening were withheld from this run because earlier runs already handed them over** "
+                   "across %d previous deliveries. They are not resolved and not ruled out — they were "
+                   "already given to you, so repeating them would hand you no new work.\n"
+                   % (len(WITHHELD),len(PAST_RUNS)))
+        if PAST_RUNS:
+            out.append("| Previous delivery | Protocols handed over |"); out.append("|---|---:|")
+            for r in PAST_RUNS:
+                out.append("| `%s` — %s | %d |" % (r['commit'],r['subject'][:64],r['protocols']))
+            out.append("")
+        out.append("The full ledger is `protocols/delivered_ledger.json`, reconstructed from git history "
+                   "rather than from anything remembered between runs. Every withheld protocol still "
+                   "appears in `candidates_all.csv` with `previously_delivered=YES` and the run that "
+                   "delivered it, so nothing is hidden — it is only kept out of the queue.\n")
+        if WITHHELD:
+            out.append("<details><summary>The %d withheld protocols</summary>\n" % len(WITHHELD))
+            out.append(", ".join("`%s`" % w for w in WITHHELD))
+            out.append("\n</details>\n")
         if rv:
             out.append("### Repeat victims in this list\n")
             out.append("Whatever allowed a second incident has not necessarily been removed. These are the "
@@ -231,10 +260,12 @@ with open(f'{B}/results/candidates_all.csv','w',newline='') as fh:
                 "value_at_risk_usd","band_status","family_id","PRIORITY","LIKELIHOOD","ACTIONABILITY",
                 "family_evidence","learned_attack_surface","MATCH_SCORE","EVIDENCE_CONFIDENCE","evidence_level",
                 "repeat_victim_count","prior_hack_dates","surface_signals","conditions",
-                "preconditions_present","guards_found","prior_art_status","in_final"])
-    order=sorted(live,key=lambda x:-x.get('PRIORITY',0))
+                "preconditions_present","guards_found","prior_art_status","in_final",
+                "previously_delivered","first_delivered_in"])
+    order=sorted(live_all,key=lambda x:-x.get('PRIORITY',0))
     seen=set(); finals=set()
-    for o in order:
+    _fin_order=[o for o in order if o['protocol_slug'] not in DELIVERED]
+    for o in _fin_order:
         if o['protocol_slug'] in seen: continue
         seen.add(o['protocol_slug']); finals.add((o['protocol_slug'],o['family_id']))
         if len(finals)>=N: break
@@ -250,7 +281,9 @@ with open(f'{B}/results/candidates_all.csv','w',newline='') as fh:
           "|".join(o.get('conditions') or []),
           "|".join(k2 for k2,v2 in cs.items() if v2=='PRESENT'),
           "|".join(k2 for k2,v2 in o.get('guards',{}).items() if v2=='FOUND'),
-          prior_art(o)['status'],"YES" if k in finals else "NO"])
+          prior_art(o)['status'],"YES" if k in finals else "NO",
+          "YES" if o['protocol_slug'] in DELIVERED else "NO",
+          (_LED.get('ledger',{}).get(o['protocol_slug'],{}) or {}).get('first_delivered_in','')])
 
 def one(s): return " ".join(str(s).replace("|"," / ").replace("\n"," ").split())
 seen=set(); finals=[]

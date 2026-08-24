@@ -1,6 +1,6 @@
 {
  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
- "generated_utc": "2026-08-24T04:00:42Z",
+ "generated_utc": "2026-08-24T04:10:45Z",
  "safety_attestation": {
   "production_transactions_submitted": 0,
   "production_transactions_constructed": 0,
@@ -189,8 +189,8 @@
   {
    "path": "commands.sh",
    "exists": true,
-   "bytes": 8187,
-   "sha256": "353c2dbc218bcedfeb4067cd1c9accd5d339140cbfb38769f956d75f8a68da1a",
+   "bytes": 10149,
+   "sha256": "b532e831009c310be1965e2ef1ae582c6106988157cde4faad223a6d16059322",
    "role": "reproduction",
    "supports_claim": "Every retrieval and transformation step in execution order"
   },
@@ -405,32 +405,32 @@
   {
    "path": "results/candidates_all.csv",
    "exists": true,
-   "bytes": 5433537,
-   "sha256": "5d737fe114b8220045eb1ac14ec0697d0c945e98f36bde025f85cd0f5d84990b",
+   "bytes": 5508597,
+   "sha256": "b78d0352ae2ffe4fdbb58fad1e07ec2b9baafb67de3d68b41911b2ece072196e",
    "role": "results",
    "supports_claim": "Every surviving pair with both ranks and full score components"
   },
   {
    "path": "results/candidates_by_priority.md",
    "exists": true,
-   "bytes": 198408,
-   "sha256": "07254dd58124fab1d68ffde5c2c41616b8af4a6110edd00a926ecfb19ff0cc2e",
+   "bytes": 195818,
+   "sha256": "928e09d1a49ba4eee4d07e19aec12084f0bf8697a2b9380a59d35d066c99c22f",
    "role": "results",
    "supports_claim": "Ranking A - PRIORITY = likelihood x actionability; the queue to actually work"
   },
   {
    "path": "results/candidates_by_likelihood.md",
    "exists": true,
-   "bytes": 114867,
-   "sha256": "795a2524a89a305c0efe9713641c3d62785e6f657a39322ba86979607b91e1ae",
+   "bytes": 135019,
+   "sha256": "5794f6e59e6e5a4f9364b9bdce9cd8216ad21b1ff6ca8f3499e1f915af7dbf5d",
    "role": "results",
    "supports_claim": "Ranking B - likelihood alone, ignoring whether an independent reviewer can act"
   },
   {
    "path": "results/candidates_by_match.md",
    "exists": true,
-   "bytes": 56429,
-   "sha256": "6bb57f31f3d53a7af2414a94b1d7eb65a558eb9bdb39dd0c1e2ee4714a29152a",
+   "bytes": 91300,
+   "sha256": "929cd112296c0bb8cb9a48912e510bc1160601e6f96f83cccf70789feb046eff",
    "role": "results",
    "supports_claim": "Ranking C - mechanism match only, no learned component"
   },
@@ -539,6 +539,14 @@
    "supports_claim": "Public-source probe of reachable app-chains using app/app.go module discovery"
   },
   {
+   "path": "protocols/delivered_ledger.json",
+   "exists": true,
+   "bytes": 53220,
+   "sha256": "a2582bee599ebd2be4f40396cb063cc0cf3fe16d802104cf912d91a25dd3f53e",
+   "role": "delivery",
+   "supports_claim": "Cumulative ledger of every protocol handed over in a previous run, reconstructed from git history; excluded from this run's candidates"
+  },
+  {
    "path": "results/nonevm_cohort.md",
    "exists": true,
    "bytes": 12730,
@@ -565,8 +573,8 @@
   {
    "path": "results/audit_variables.txt",
    "exists": true,
-   "bytes": 51379,
-   "sha256": "77731e26687479773052cf7b263091e2bb0ead0645399a0a6e9458dfca0eb6fc",
+   "bytes": 54158,
+   "sha256": "357e0e65b919d05a95522d5bb0a67c048aa3176c6c8acdf2568066e2b8811c5e",
    "role": "handoff",
    "supports_claim": "One self-contained line per final candidate for the downstream audit prompt"
   },
@@ -581,8 +589,8 @@
   {
    "path": "results/run_summary.md",
    "exists": true,
-   "bytes": 7455,
-   "sha256": "043ea3bbc1ec50c47def6deeda36969f0fa13f3ed9a1ec62fb6d6bc24d43f695",
+   "bytes": 8104,
+   "sha256": "f85af5a8140ac6483d33a2e57a57bc51ace858b924b2633530685877f12a2489",
    "role": "results",
    "supports_claim": "Required summary statistics"
   },
@@ -590,7 +598,7 @@
    "path": "quality_report.md",
    "exists": true,
    "bytes": 12671,
-   "sha256": "bcb9195428d29177924939f6151ce6e4e29a6c7aaa512e6bbe8c7f8ad9e16b3a",
+   "sha256": "c6f620741baa90a62b2d8ef4ff6f2bea7850c2e948d82c4e07edf55b8325cfac",
    "role": "quality",
    "supports_claim": "Mechanical quality gates and known limitations"
   }
@@ -617,6 +625,7 @@
   "function selectors used for on-chain fingerprinting": "tools/keccak.py (derived, self-checked against two known selectors at import)",
   "Maya Protocol defect claims verified against live public source": "incidents/source_verification.json (5 of 6 confirmed at exact file and line)",
   "THORChain lineage lead killed on evidence": "incidents/source_verification.json#upstream_check",
+  "every candidate is one not handed over before": "protocols/delivered_ledger.json + results/candidates_all.csv#previously_delivered",
   "non-EVM coverage and its limit": "protocols/nonevm_cohort.json + results/nonevm_cohort.md + protocols/appchain_probe.json",
   "runtime families are not applied to runtimes that roll back": "tools/nonevm_cohort.py RUNTIME_FAMILIES + tools/matcher.py RUNTIME_ONLY",
   "near misses": "families/near_miss_library.jsonl",

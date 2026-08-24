@@ -148,6 +148,11 @@ python3 tools/fetch_adapters3.py      # adapters for the protocols the widened w
 # families. score4 imports it; it is not run standalone.
 python3 tools/score4.py               # LIKELIHOOD (family evidence + learned surface), ACTIONABILITY, PRIORITY
 #   -> protocols/deep_screened.jsonl
+# A candidate list is a queue of work. Rebuild the cumulative ledger of everything
+# handed over in previous runs FIRST, so this run's candidates exclude all of it and
+# the operator is never given the same protocol twice. Reconstructed from git history,
+# not from anything remembered between runs.
+python3 tools/build_ledger.py         # -> protocols/delivered_ledger.json
 python3 tools/write_results4.py 60
 #   -> results/candidates_by_{priority,likelihood,match}.md, candidates_all.csv,
 #      audit_variables.txt, families/near_miss_library.jsonl

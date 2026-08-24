@@ -2,6 +2,10 @@
 
 **Run:** `RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION` · **Window:** 2026-02-22 to 2026-08-22 (inclusive, incident date) · **Run date (UTC):** 2026-08-23
 
+## Every candidate here is one you have not been given before
+
+A candidate list is a queue of work, not a leaderboard. Earlier runs of this screen handed over **219 protocols** across **5 deliveries**, and re-ranking the same set would hand over nothing new. Those protocols are withheld from this run's candidates. They are not resolved and not ruled out; they were already given. The ledger is `protocols/delivered_ledger.json`, reconstructed from git history rather than from anything carried between runs, and every withheld protocol still appears in `candidates_all.csv` with `previously_delivered=YES` and the run that delivered it.
+
 ## What this run optimises for
 
 An independent reviewer preventing real losses, not a fund allocating audit retainers. Two consequences drive everything downstream:
@@ -116,24 +120,24 @@ Walking ERC-1967 admin slots and `owner()` chains up to three hops, then fingerp
 | Authority chains walked and fingerprinted | 394 protocols |
 | Verified contracts analysed | 1312 |
 | Final candidates | 60 |
-| Median value at risk across finals | $224,044 |
+| Median value at risk across finals | $203,354 |
 
 ### Most common measured signals across final candidates
 
 | Signal | Candidates | Measured lift |
 |---|---:|---:|
-| `on_ethereum` | 51 | x2.121 |
-| `chain_hazard_ge2` | 51 | x2.134 |
-| `single_audit_only` | 45 | x1.53 |
-| `multichain_gt3` | 40 | x1.77 |
-| `on_bsc` | 39 | x1.047 |
-| `is_proxy` | 30 | x1.858 |
-| `authority_addrs_beyond_tvl` | 27 | x1.174 |
-| `owner_is_contract` | 23 | x2.578 |
-| `has_oracle_declared` | 22 | x2.127 |
-| `owner_is_eoa` | 20 | x0.865 |
-| `has_governance` | 15 | x2.968 |
-| `has_2plus_audits` | 12 | x1.975 |
+| `on_ethereum` | 50 | x2.121 |
+| `chain_hazard_ge2` | 50 | x2.134 |
+| `single_audit_only` | 39 | x1.53 |
+| `multichain_gt3` | 34 | x1.77 |
+| `on_bsc` | 28 | x1.047 |
+| `is_proxy` | 19 | x1.858 |
+| `owner_is_contract` | 18 | x2.578 |
+| `authority_addrs_beyond_tvl` | 17 | x1.174 |
+| `unverified_implementation` | 15 | x1.547 |
+| `has_oracle_declared` | 15 | x2.127 |
+| `single_chain` | 13 | x0.71 |
+| `no_audit_listed` | 12 | x0.582 |
 
 ## Quality
 
@@ -142,7 +146,7 @@ Walking ERC-1967 admin slots and `owner()` chains up to three hops, then fingerp
 | Unresolved source contradictions | 1 — `INC-2026-04-01-DRI` (Drift, ~$285M): attack-method label says *Social Engineering* while the description describes a vault exploit with no mechanism. Graded D, excluded from pattern derivation. |
 | Corpus completeness gap | At least one in-window on-chain incident documented elsewhere (STO token, 2026-02-23) is absent from the index. Counts are lower bounds. |
 | Pairs still at metadata or adapter evidence | 11349 of 14367 |
-| Prior-art searches incomplete | 50 of 60 finals. `NO_PUBLIC_MATCH_FOUND` is never emitted. |
+| Prior-art searches incomplete | 52 of 60 finals. `NO_PUBLIC_MATCH_FOUND` is never emitted. |
 | Commands reproducible | `commands.sh` replays every retrieval and transformation step |
 | Manifest checker | see `results/manifest_check.txt` |
 

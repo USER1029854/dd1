@@ -1,5 +1,5 @@
 [PASS] 18.6 every referenced artifact exists and is non-empty — missing/empty: []
-[PASS] 18.6 manifest maps every load-bearing claim — 29 claims mapped
+[PASS] 18.6 manifest maps every load-bearing claim — 30 claims mapped
 [PASS] 18.6 commands.sh replays retrieval and transformation
 [PASS] 18.1 crawling continued until the date boundary was proven — final page 12: in_window=0 older=20/20
 [PASS] 18.1 every in-window row retained and dispositioned — 110+22+73 vs 205
@@ -38,6 +38,10 @@
 [PASS] band: PRIORITY = LIKELIHOOD x ACTIONABILITY holds for every pair — 0 arithmetic violations across 14367 pairs
 [PASS] validation: the scoring model beats chance on incidents it never saw — lift x2.32 on 95 protocols hacked after the fitting window
 [PASS] validation: every feature group kept was shown to earn its place — ablation refits and revalidates each group; admin posture was dropped for failing this
+[PASS] delivery: no candidate repeats a protocol handed over in a previous run — 60 finals against a ledger of 219 previously delivered; repeats: none
+[PASS] delivery: the written ranking matches the handover list, with no delivered protocol reintroduced — 60 write-ups, 0 previously delivered
+[PASS] delivery: withheld protocols are disclosed rather than silently dropped — candidates_all.csv carries previously_delivered + first_delivered_in; the ranking states the count
+[PASS] delivery: the ledger is reconstructed from git history, not from run-to-run memory — 5 previous deliveries found, 219 protocols
 [PASS] evidence: grade-A-by-source claims are individually recorded with file and line — 5 of 6 claims CONFIRMED against live public source
 [PASS] evidence: the lineage lead was checked and its result recorded either way — THORChain upstream check -> NO_MATCH_ON_ANY_VERIFIED_DEFECT
 [PASS] precision: rollback families are not applied to runtimes that roll back — 0 misapplied (Solana, Move, Cairo and EVM all discard state on error)
@@ -61,4 +65,4 @@
 [PASS] 18.6 audit_variables.txt: one valid protocol per line, no multiline entries — 60 lines
 [PASS] 18.6 no secrets in audit_variables.txt
 
-SUMMARY: 62 pass, 0 fail, 0 warn
+SUMMARY: 66 pass, 0 fail, 0 warn

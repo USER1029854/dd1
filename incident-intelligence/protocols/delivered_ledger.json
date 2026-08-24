@@ -1,0 +1,2141 @@
+{
+ "generated_from": "git history of results/candidates_*",
+ "head_at_generation": "7e319ee",
+ "head_excluded": true,
+ "runs": [
+  {
+   "commit": "7d49c12",
+   "subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "protocols": 24
+  },
+  {
+   "commit": "ccb5273",
+   "subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "protocols": 49
+  },
+  {
+   "commit": "3bc30a7",
+   "subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "protocols": 72
+  },
+  {
+   "commit": "2ce88d1",
+   "subject": "Validate the ranking model and measure custody exposure separately",
+   "protocols": 111
+  },
+  {
+   "commit": "5a3468f",
+   "subject": "Remove leftovers from earlier iterations of this run",
+   "protocols": 111
+  }
+ ],
+ "protocols_delivered": 219,
+ "ledger": {
+  "sumer.money": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "flux-finance": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "saddle-finance": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "morpho-optimizer-aavev2": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "grove-finance": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "abstradex": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "granary-finance": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "base-bridge": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "stability": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "agave": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "sentora": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "extended-perps": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "tulipa-capital": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "cooler-loans": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "curve-llamalend": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "rockawayx": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "gami-labs": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "guru-network-classic": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "3bc30a7"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "lido": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "lighter-bridge": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "stake-dao": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "yield-basis": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "ether.fi-liquid": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273",
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "uniswap-v2": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "euler-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "thruster-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "capyfi": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "sturdy-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "venombridge": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "lista-lending": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "steakhouse-financial": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "circle-usyc": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "usdd": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "gauntlet": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "centrifuge-protocol": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "lista-cdp": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "openeden-tbill": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "pareto-credit": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "kpk": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "anemoy-capital": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "convex-finance": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "aster-asbnb": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "k3-capital": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "usd-ai": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "reserve-protocol": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "brickken": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "compound-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "uncx-network-v3": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "vesper": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "gearbox": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "csigma-finance": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "autofinance": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "gaib": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "balancer-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "multichain": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "balancer-v3": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "anzen-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "across": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "aerodrome-ignition": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "synapse-cross-chain-bridge": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "aura": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "morpho-blue": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "wise-token": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "venus-core-pool": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "uniswap-v4": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "aave-v3": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "ordernchaos": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "cub-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "arbinyan": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "aperocket": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "percent-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "velvet-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "cega-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "zero-network": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "caviar-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "shimmerbridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "dtrinity-dlend": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ORACLE-STALE-OR-SILENT-FALLBACK"
+   ]
+  },
+  "lixir-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "uwu-lend": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "charm-finance-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "arcade.xyz": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "fungify": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY",
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "dopple-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "finext-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "debridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "ajna-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "burgerswap": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "blackwing": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "listapie": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "stargate-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "valuedefi": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "contango-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "olive-network": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "lybra-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "premia-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "crosschain-bridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "wavesbridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "goplus-locker-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ACC-CREDIT-NOT-RECEIVED"
+   ]
+  },
+  "terminal-finance-pre-deposits": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "dooar-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "frax-fpi": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "enosys-bridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "privacy-pools": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "maverick-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "twindex": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "finnexus": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY",
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "cook-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "oreoswap": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "tarot": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "landx-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "trevee-earn": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "impermax-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "bunni-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "silo-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "strata-season-0": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "midas-capital": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "spectra-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "boringdao": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "bond-protocol": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "aloe": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "set-protocol": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "sato": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "segment-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "yield-millionaire": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "liveart": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "monolith-market": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "lockon": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "loop": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "accumulated-finance-liquid-staking": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "joe-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "picwe": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "hundred-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "sperax-usd": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "radiant-v2": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "revest-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "iron-bank": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "cytonic-airdrop-campaign": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "gravita-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "bridge-mutual": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "tetu-earn": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "vaultcraft": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "wepiggy": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "likwid": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "openleverage": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "kine-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "ezmoney": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "pell-network": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "xwin-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "pepeteam-bridge": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "singularitydao": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "aavegotchi": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "kokonut-swap": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "insurace": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "88mph": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "bifi": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "izumi-liquidbox": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "fuji-v1": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "bunny": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "grizzlyfi-hives": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "satlayer": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "cream-lending": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "wombex-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "radioshack": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "stabull-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "yieldwolf": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "infinite-trading-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "cakepie": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "shift-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "goldsand-by-inshallah": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "pooltogether-v4": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "horizon-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "synfutures-v1": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "dforce-lending": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "stonedefi": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "ante-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "rubicon": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "conic-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "yaxis": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "impossible": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "prismalst": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "zunami-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "single-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "idle": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "sofa.org": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "badger-dao": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "curve-dex": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "abracadabra-spell": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "qidao": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "piku-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "nftx": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "morpheusai": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "accountable": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "rari-capital": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "xgld": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "gro": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "the-idols": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "angle": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "pooltogether-v3": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "defil": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "planet-farm": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "kyberswap-classic": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "tranchess-yield": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "flying-tulip-lend": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "bancor-v2.1": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "yala": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "iziswap": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "wompie": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "termfinance-vaults": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "ideamarket": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "wasabix": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "ddex": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "preon-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "magic-eden": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "velvet-v3": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "mochifi": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "yieldflow-yield-farming": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "theoriq-alphavault-eth": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "sir": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "pstake-lsd": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  }
+ }
+}
