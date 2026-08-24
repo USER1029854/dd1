@@ -26,7 +26,11 @@ EXC = {
 # ---- 205 in-window rows --------------------------------------------------
 T = {
 # --- August 2026 ---
-"INC-2026-08-18-MAY": ("INCLUDE","B",None,["ACC-MULTI-PATH-CREDIT-DRIFT"],["THORChain-fork L1","Arbitrum"],["cross-chain liquidity network","AMM","epoch settlement"]),
+"INC-2026-08-18-MAY": ("INCLUDE","A",None,["ACC-MULTI-PATH-CREDIT-DRIFT",
+   "RUNTIME-BATCHED-MESSAGE-SHARED-KEY-CLOBBER","RECONCILIATION-STRIDE-SKIPS-TRUE-VALUE",
+   "RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER","RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+   "ACC-ZERO-SUPPLY-INFLATION"],["THORChain-fork L1","Arbitrum"],
+   ["cross-chain liquidity network","AMM","epoch settlement","Cosmos SDK app-chain"]),
 "INC-2026-08-15-FOX": ("INCLUDE","B",None,["ORACLE-SPOT-THIN-LIQUIDITY"],["BSC"],["bonding/staking","reward distributor","AMM-priced mint"]),
 "INC-2026-08-11-HAR": ("PROVISIONAL","C",None,["ACC-SIGN-OR-BOUND-CHECK-MISSING"],["Harmony"],["L1 chain"]),
 "INC-2026-08-10-USM": ("INCLUDE","A",None,["ACC-SPLIT-NONINVARIANT"],["Ethereum"],["stablecoin issuer","structured product"]),

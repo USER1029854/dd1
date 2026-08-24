@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Phase C/D builder: normalized incident records, family library, guard library."""
-import json, sys, collections
+import json,os, sys, collections
 sys.path.insert(0,'/home/user/dd1/incident-intelligence/tools')
 import classification as C
 from incident_specifics import S
 from families_a import FAM_A
 from families_b import FAM_B
 from families_c import FAM_C
-FAM = {**FAM_A, **FAM_B, **FAM_C}
+from families_d import FAM_D
+FAM = {**FAM_A, **FAM_B, **FAM_C, **FAM_D}
 B = '/home/user/dd1/incident-intelligence'
 
 raw = {json.loads(l)['incident_id']: json.loads(l) for l in open(f'{B}/incidents/all_raw.jsonl')}
@@ -20,6 +21,11 @@ CORROB = {"INC-2026-07-06-LAZ","INC-2026-03-15-VEN","INC-2026-05-05-EKU","INC-20
           "INC-2026-02-22-BLE","INC-2026-03-02-CUR","INC-2026-04-16-RHE","INC-2026-04-27-SIN",
           "INC-2026-05-18-VER","INC-2026-07-23-VER","INC-2026-06-19-JBX","INC-2026-04-28-JUD",
           "INC-2026-07-28-LUL","INC-2026-03-12-AMU","INC-2026-03-10-MTW"}
+# Incidents whose grade rests on deployed-code evidence: the exact files and lines were
+# read from the project's live public repository and the claimed defect confirmed there.
+# The per-claim record is incidents/source_verification.json.
+SRCVERIFY=json.load(open(f'{B}/incidents/source_verification.json'))['incidents'] \
+          if os.path.exists(f'{B}/incidents/source_verification.json') else {}
 
 def rec(iid):
     d, r = C.T[iid], raw[iid]
@@ -35,9 +41,11 @@ def rec(iid):
       "date_status": r['date_status'],
       "source_claims": [{"source":"SlowMist Hacked index","claim":r['description_raw'],
                          "url":r['slowmist_page_url'],"role":"index/lead (§2.1)"}],
-      "corroboration": ("INDEPENDENT_TECHNICAL_SOURCE_RETRIEVED" if iid in CORROB
+      "corroboration": ("DEPLOYED_SOURCE_VERIFIED" if iid in SRCVERIFY
+                        else "INDEPENDENT_TECHNICAL_SOURCE_RETRIEVED" if iid in CORROB
                         else ("REFERENCE_RETRIEVED" if any(x['status']=='RETRIEVED' for x in refs_by_inc[iid])
                               else "SLOWMIST_MECHANISM_RECORD_ONLY")),
+      **({"source_verification": SRCVERIFY[iid]} if iid in SRCVERIFY else {}),
       "affected_contracts": [], "affected_functions": spec[0],
       "broken_invariant": spec[1],
       "root_cause": r['description_raw'],
@@ -154,6 +162,7 @@ for fid, f in FAM.items():
          "six_month_loss_usd":round(loss,2) if loss else None,
          "most_recent_event":max([raw[i]['event_date'] for i in ids], default=None),
          "evidence_strength":f['evidence_strength'],
+         **({"derivation":f['derivation']} if f.get('derivation') else {}),
          "propagation_notes":f['propagation_notes']}
     if len(ids) == 1: o["single_event_family"] = "SINGLE_EVENT_FAMILY"
     fam_out.append(o)

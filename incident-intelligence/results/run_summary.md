@@ -47,11 +47,11 @@ Risk Curators (×0.50) and RWA (×0.46) are *under*-represented among victims. A
 |---|---:|
 | SlowMist pages fetched | 12 (boundary `BOUNDARY_PROVEN`) |
 | Raw rows / inside window | 240 / 205 |
-| Included grade A / B | 58 / 52 |
+| Included grade A / B | 59 / 51 |
 | Provisional (C) / Excluded | 22 / 73 |
 | Total included reported loss | $139,297,649 |
 | Unique root causes | 107 |
-| Mechanism families | 43 (8 single-event) |
+| Mechanism families | 48 (12 single-event) |
 
 ## Does the ranking actually predict anything?
 
@@ -107,31 +107,31 @@ Walking ERC-1967 admin slots and `owner()` chains up to three hops, then fingerp
 | Above the band, kept on explicit danger | 31 |
 | Below the floor, recorded but not screened | 662 |
 | Protocols deep-screened | 1200 |
-| Protocol-family pairs screened | 20901 |
-| Pairs killed at the gate | 612 |
-| Adapters read | 1721 |
+| Protocol-family pairs screened | 14981 |
+| Pairs killed at the gate | 614 |
+| Adapters read | 1784 |
 | Protocols with live chain evidence | 859 |
 | Addresses read on-chain | 2467 |
 | Privileged owner() resolving to an EOA | 143 protocols |
 | Authority chains walked and fingerprinted | 394 protocols |
-| Verified contracts analysed | 1270 |
+| Verified contracts analysed | 1312 |
 | Final candidates | 60 |
-| Median value at risk across finals | $237,912 |
+| Median value at risk across finals | $224,044 |
 
 ### Most common measured signals across final candidates
 
 | Signal | Candidates | Measured lift |
 |---|---:|---:|
-| `on_ethereum` | 49 | x2.121 |
-| `chain_hazard_ge2` | 49 | x2.134 |
-| `single_audit_only` | 46 | x1.53 |
-| `multichain_gt3` | 37 | x1.77 |
-| `on_bsc` | 37 | x1.047 |
-| `is_proxy` | 29 | x1.858 |
-| `owner_is_contract` | 27 | x2.578 |
-| `has_oracle_declared` | 25 | x2.127 |
-| `authority_addrs_beyond_tvl` | 25 | x1.174 |
-| `owner_is_eoa` | 21 | x0.865 |
+| `on_ethereum` | 51 | x2.121 |
+| `chain_hazard_ge2` | 51 | x2.134 |
+| `single_audit_only` | 45 | x1.53 |
+| `multichain_gt3` | 40 | x1.77 |
+| `on_bsc` | 39 | x1.047 |
+| `is_proxy` | 30 | x1.858 |
+| `authority_addrs_beyond_tvl` | 27 | x1.174 |
+| `owner_is_contract` | 23 | x2.578 |
+| `has_oracle_declared` | 22 | x2.127 |
+| `owner_is_eoa` | 20 | x0.865 |
 | `has_governance` | 15 | x2.968 |
 | `has_2plus_audits` | 12 | x1.975 |
 
@@ -141,7 +141,7 @@ Walking ERC-1967 admin slots and `owner()` chains up to three hops, then fingerp
 |---|---|
 | Unresolved source contradictions | 1 — `INC-2026-04-01-DRI` (Drift, ~$285M): attack-method label says *Social Engineering* while the description describes a vault exploit with no mechanism. Graded D, excluded from pattern derivation. |
 | Corpus completeness gap | At least one in-window on-chain incident documented elsewhere (STO token, 2026-02-23) is absent from the index. Counts are lower bounds. |
-| Pairs still at metadata or adapter evidence | 17320 of 20289 |
+| Pairs still at metadata or adapter evidence | 11349 of 14367 |
 | Prior-art searches incomplete | 50 of 60 finals. `NO_PUBLIC_MATCH_FOUND` is never emitted. |
 | Commands reproducible | `commands.sh` replays every retrieval and transformation step |
 | Manifest checker | see `results/manifest_check.txt` |

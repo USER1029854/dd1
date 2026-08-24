@@ -100,8 +100,31 @@ python3 tools/resolve_impl.py                # follow delegator/beacon proxies t
 # Fetches verified source for the contracts actually found on-chain, follows proxies to
 # their implementations, and evaluates each family's documented static_indicators. Source
 # is cached under sources/deployments/, so re-analysis after an indicator change is free:
-#   python3 tools/source_sweep.py 1300 --reanalyze
+#   python3 tools/source_sweep.py 1300
+# Re-analysis after an indicator change is free (source is cached):
+#   python3 tools/source_sweep.py 1300 --reanalyze --reanalyze
 python3 tools/source_sweep.py 1300
+# Re-analysis after an indicator change is free (source is cached):
+#   python3 tools/source_sweep.py 1300 --reanalyze
+
+# ------------- 7c. Non-EVM: the cohort the eth_call instrument cannot see
+# The main screen is an EVM instrument, so 717 protocols above the floor were never
+# looked at. Classify them by execution runtime, because that decides which families
+# may legitimately be applied: Solana, Move and the EVM all discard state when a call
+# fails, so the two rollback families do NOT apply there; Cosmos SDK and Substrate
+# handlers can leave a write behind, so they do.
+python3 tools/nonevm_cohort.py          # -> protocols/nonevm_cohort.json
+# app/app.go names every module a Cosmos chain wires in, so one fetch yields the real
+# module list without guessing paths. Requires protocols/appchain_targets.json.
+python3 tools/appchain_probe.py         # -> protocols/appchain_probe.json
+python3 tools/write_nonevm_report.py    # -> results/nonevm_cohort.md
+#
+# NOT RUNNABLE IN THIS SESSION: tools/repo_sweep.py sweeps the whole non-EVM cohort's
+# public source. It is written and validated against ground truth (it fires on Maya's
+# confirmed defects and finds THORChain's CacheContext guard), but this session's
+# network policy binds the GitHub API to the session's own repository and blocks
+# github.com HTML and codeload tarballs, so a repository file tree cannot be
+# enumerated. Left in place because it is a network-scope limit, not a missing method.
 
 # ------------------------- 8. Validate the model instead of asserting it
 # Read-only authority walk: ERC-1967 admin slot + owner(), up to 3 hops, terminal

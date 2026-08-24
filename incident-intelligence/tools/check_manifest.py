@@ -142,6 +142,32 @@ _abl=json.load(open(f'{B}/protocols/ablation.json'))['variants']
 chk("validation: every feature group kept was shown to earn its place",
     _abl['+ all v4 additions']['lift']>=_abl['baseline (v3 feature set)']['lift'],
     "ablation refits and revalidates each group; admin posture was dropped for failing this")
+# --- non-EVM extension gates ---
+_sv=json.load(open(f'{B}/incidents/source_verification.json'))['incidents']
+_may=_sv.get('INC-2026-08-18-MAY',{})
+chk("evidence: grade-A-by-source claims are individually recorded with file and line",
+    all(c.get('file') and c.get('verdict') for c in _may.get('claims_verified',[])),
+    f"{_may.get('verified_count')} of {_may.get('claimed_count')} claims CONFIRMED against live public source")
+chk("evidence: the lineage lead was checked and its result recorded either way",
+    bool(_may.get('upstream_check',{}).get('result')) and bool(_may['upstream_check'].get('evidence')),
+    f"THORChain upstream check -> {_may.get('upstream_check',{}).get('result')}")
+_ne=json.load(open(f'{B}/protocols/nonevm_cohort.json'))
+_ROLLBACK={'RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER','RUNTIME-HANDLER-ERROR-NO-ROLLBACK'}
+_bad_rt=[r['slug'] for r in _ne if (set(r['screenable_families']) & _ROLLBACK)
+         and r['runtime'] not in ('COSMOS_SDK_GO','SUBSTRATE_RUST')]
+chk("precision: rollback families are not applied to runtimes that roll back",
+    not _bad_rt, f"{len(_bad_rt)} misapplied (Solana, Move, Cairo and EVM all discard state on error)")
+_evmfam={f['family_id'] for f in json.load(open(f'{B}/families/families.json'))}
+_runtime_pairs=[d for d in D if d['family_id'].startswith('RUNTIME-')]
+chk("precision: no EVM pair was generated for a handler-runtime family",
+    not _runtime_pairs, f"{len(_runtime_pairs)} EVM pairs on families that require non-EVM semantics")
+_srcfam='ACC-QUOTE-STALE-ACROSS-OWN-SWAP'
+_q=[d for d in D if d['family_id']==_srcfam]
+_qpre=sum(1 for v in _pr.values()
+          if any(h.get('match') and h.get('role')=='PRE'
+                 for h in ((v.get('source_sweep',{}).get('family_signals') or {}).get(_srcfam) or {}).values()))
+chk("precision: a source-derived pair requires a MATCHED precondition, not merely an evaluated family",
+    len(_q)<=_qpre, f"{len(_q)} pairs against {_qpre} protocols carrying a matched precondition")
 _ax=json.load(open(f'{B}/protocols/authority_exposure.json'))
 _ar=open(f'{B}/results/upgrade_authority_exposure.md').read()
 # The custody report names addresses that hold authority. It must not name or hint at a

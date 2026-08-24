@@ -804,6 +804,78 @@
     "propagation_notes": "Distinct from the borrow-side oracle families because the guards differ: liquidation-side needs grace periods, size caps and circuit breakers, not just a better price. Two of the five did not steal protocol funds at all; the loss fell on borrowers, which loss-only rankings miss."
   },
   {
+    "family_id": "ACC-ZERO-SUPPLY-INFLATION",
+    "title": "Share math has an unguarded zero-supply or near-zero-supply branch",
+    "broken_invariant": "The first depositor must not be able to set an arbitrary asset-per-share ratio, and no operation may drive supply low enough to restore that branch.",
+    "mechanism": "With totalSupply == 0 and totalAssets == 0, a 1-wei deposit mints 1 share; a direct transfer of a large amount then makes each share worth that amount, so later depositors round to zero shares and the attacker redeems the pool. The same branch is reachable later if supply can be burned to near zero (Thetanuts' legacy vault reduced supply to near zero, then drained via redemption math). dTRINITY's dLEND took this on a live Ethereum deployment, leaving ~$257K of bad debt.",
+    "mandatory_preconditions": [
+      "Share minting formula divides by totalSupply or totalAssets with a zero branch",
+      "An unprivileged party can be the first depositor, or can drive supply to near zero",
+      "Assets can be transferred in without minting shares",
+      "A later depositor's funds are exposed to the manipulated ratio"
+    ],
+    "optional_amplifiers": [
+      "Permissionless market/vault creation",
+      "Newly deployed vaults with no seed",
+      "Flash liquidity"
+    ],
+    "applicable_protocol_archetypes": [
+      "vault/share token (ERC-4626)",
+      "lending market creation",
+      "options vault",
+      "yield aggregator"
+    ],
+    "static_indicators": [
+      "shares = assets * totalSupply / totalAssets with no virtual offset",
+      "no minimum initial deposit or dead-shares mint",
+      "permissionless createVault/createMarket"
+    ],
+    "adapter_indicators": [
+      "adapter enumerates factory-created vaults/markets",
+      "adapter includes very recently created vaults with tiny TVL"
+    ],
+    "runtime_state_indicators": [
+      "live vaults/markets with totalSupply == 0 or dust supply",
+      "factory able to create new markets permissionlessly",
+      "no dead-shares balance at address(0) or address(1)"
+    ],
+    "cross_contract_indicators": [
+      "factory deploys vaults without seeding them",
+      "router auto-lists new markets"
+    ],
+    "decisive_guards": [
+      "Virtual shares/assets offset (OZ ERC-4626 v5)",
+      "Non-zero minimum initial shares burned to a dead address at creation",
+      "Factory seeds every market at deploy time",
+      "Minimum deposit floor"
+    ],
+    "false_positive_killers": [
+      "Dead shares minted at creation (kills the pair)",
+      "Vault creation is permissioned and every vault is seeded",
+      "Virtual offset present in the deployed bytecode"
+    ],
+    "local_defensive_property": "On a fork, for every vault with dust or zero supply, attempt the 1-wei-plus-donation sequence and assert a later depositor's shares are proportional.",
+    "recommended_audit_questions": [
+      "Is every mandatory precondition present in the live deployment?",
+      "Is any decisive guard present in the deployed bytecode, not just the repository?",
+      "What live value, authority or approval is reachable through this path?",
+      "What single observation would falsify the hypothesis?"
+    ],
+    "incident_ids": [
+      "INC-2026-08-18-MAY",
+      "INC-2026-06-15-THE",
+      "INC-2026-04-20-THE",
+      "INC-2026-03-17-DTR"
+    ],
+    "provisional_incident_ids": [],
+    "unique_root_cause_count": 4,
+    "incident_count": 4,
+    "six_month_loss_usd": 2112000.0,
+    "most_recent_event": "2026-08-18",
+    "evidence_strength": "HIGH",
+    "propagation_notes": "Still occurring on brand-new deployments in 2026 despite being a decade-old pattern, because factory-created markets are seeded by users rather than by the factory. Screen every factory's most recently created, least-funded children."
+  },
+  {
     "family_id": "AUTH-MISSING-ON-VALUE-MOVING-PATH",
     "title": "A value-moving or configuration-setting function has no access control, or lost it in a refactor",
     "broken_invariant": "Every function that moves value or rebinds a privileged address must require a role the caller cannot obtain.",
@@ -1460,77 +1532,6 @@
     "most_recent_event": "2026-06-28",
     "evidence_strength": "HIGH",
     "propagation_notes": "Sibling of the deferred-burn family: same archetype, different broken step (conservation inside the transfer rather than out-of-band mutation of the pair)."
-  },
-  {
-    "family_id": "ACC-ZERO-SUPPLY-INFLATION",
-    "title": "Share math has an unguarded zero-supply or near-zero-supply branch",
-    "broken_invariant": "The first depositor must not be able to set an arbitrary asset-per-share ratio, and no operation may drive supply low enough to restore that branch.",
-    "mechanism": "With totalSupply == 0 and totalAssets == 0, a 1-wei deposit mints 1 share; a direct transfer of a large amount then makes each share worth that amount, so later depositors round to zero shares and the attacker redeems the pool. The same branch is reachable later if supply can be burned to near zero (Thetanuts' legacy vault reduced supply to near zero, then drained via redemption math). dTRINITY's dLEND took this on a live Ethereum deployment, leaving ~$257K of bad debt.",
-    "mandatory_preconditions": [
-      "Share minting formula divides by totalSupply or totalAssets with a zero branch",
-      "An unprivileged party can be the first depositor, or can drive supply to near zero",
-      "Assets can be transferred in without minting shares",
-      "A later depositor's funds are exposed to the manipulated ratio"
-    ],
-    "optional_amplifiers": [
-      "Permissionless market/vault creation",
-      "Newly deployed vaults with no seed",
-      "Flash liquidity"
-    ],
-    "applicable_protocol_archetypes": [
-      "vault/share token (ERC-4626)",
-      "lending market creation",
-      "options vault",
-      "yield aggregator"
-    ],
-    "static_indicators": [
-      "shares = assets * totalSupply / totalAssets with no virtual offset",
-      "no minimum initial deposit or dead-shares mint",
-      "permissionless createVault/createMarket"
-    ],
-    "adapter_indicators": [
-      "adapter enumerates factory-created vaults/markets",
-      "adapter includes very recently created vaults with tiny TVL"
-    ],
-    "runtime_state_indicators": [
-      "live vaults/markets with totalSupply == 0 or dust supply",
-      "factory able to create new markets permissionlessly",
-      "no dead-shares balance at address(0) or address(1)"
-    ],
-    "cross_contract_indicators": [
-      "factory deploys vaults without seeding them",
-      "router auto-lists new markets"
-    ],
-    "decisive_guards": [
-      "Virtual shares/assets offset (OZ ERC-4626 v5)",
-      "Non-zero minimum initial shares burned to a dead address at creation",
-      "Factory seeds every market at deploy time",
-      "Minimum deposit floor"
-    ],
-    "false_positive_killers": [
-      "Dead shares minted at creation (kills the pair)",
-      "Vault creation is permissioned and every vault is seeded",
-      "Virtual offset present in the deployed bytecode"
-    ],
-    "local_defensive_property": "On a fork, for every vault with dust or zero supply, attempt the 1-wei-plus-donation sequence and assert a later depositor's shares are proportional.",
-    "recommended_audit_questions": [
-      "Is every mandatory precondition present in the live deployment?",
-      "Is any decisive guard present in the deployed bytecode, not just the repository?",
-      "What live value, authority or approval is reachable through this path?",
-      "What single observation would falsify the hypothesis?"
-    ],
-    "incident_ids": [
-      "INC-2026-06-15-THE",
-      "INC-2026-04-20-THE",
-      "INC-2026-03-17-DTR"
-    ],
-    "provisional_incident_ids": [],
-    "unique_root_cause_count": 3,
-    "incident_count": 3,
-    "six_month_loss_usd": 412000.0,
-    "most_recent_event": "2026-06-15",
-    "evidence_strength": "HIGH",
-    "propagation_notes": "Still occurring on brand-new deployments in 2026 despite being a decade-old pattern, because factory-created markets are seeded by users rather than by the factory. Screen every factory's most recently created, least-funded children."
   },
   {
     "family_id": "AUTH-IDENTITY-SATISFIABLE-BY-ATTACKER-CONTRACT",
@@ -2557,6 +2558,282 @@
     "propagation_notes": "Cheap to screen: find every external function taking an array of IDs and check for in-loop consumption."
   },
   {
+    "family_id": "RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER",
+    "title": "A credit is written and persisted before the transfer meant to fund it, and the transfer can fail without undoing the credit",
+    "broken_invariant": "A balance may not be credited until the value backing it has actually moved. Where a runtime lets a handler persist state and then fail, the write and the funding transfer must be one atomic unit, or the write must come strictly after the transfer succeeds.",
+    "mechanism": "Maya Protocol's slash-subsidy path added the subsidy to the pool's native balance and called SetPool() -- committing it -- and only then attempted SendFromModuleToModule(Reserve -> Asgard) to actually fund it. The Reserve held ~168k CACAO against a ~49.45M CACAO subsidy, so the send failed and returned an error, but the inflated pool balance was already in state. On the EVM the failing send would have reverted the whole call; on a Cosmos SDK handler it does not.",
+    "mandatory_preconditions": [
+      "A runtime where a handler can persist state and then return an error without the runtime discarding the write",
+      "A credit or balance increase written through a setter (SetX / store.Set / borrow_global_mut) before the transfer that funds it",
+      "The funding transfer can fail on a condition an external caller can reach (insufficient module balance, paused, rate limit)",
+      "The credited balance is spendable by a subsequent transaction"
+    ],
+    "optional_amplifiers": [
+      "A module account whose balance is normally far below the largest possible credit",
+      "Subsidy, rebate, slash or insurance logic that sizes a credit from a ratio",
+      "No closing invariant assert over module totals"
+    ],
+    "applicable_protocol_archetypes": [
+      "Cosmos SDK app-chain",
+      "cross-chain liquidity network",
+      "Substrate/Polkadot parachain",
+      "Move (Sui/Aptos) module",
+      "Solana program with CPI",
+      "any handler-based L1"
+    ],
+    "static_indicators": [
+      "SetPool/SetX/store.Set called before SendFromModuleToModule or bank.SendCoins in the same function",
+      "a keeper setter followed later by a transfer whose error is returned rather than panicked",
+      "balance mutation followed by a transfer guarded only by if err != nil { return err }",
+      "no cosmos CacheContext()/Snapshot()/write() wrapper around a multi-step balance change"
+    ],
+    "adapter_indicators": [
+      "adapter reads a module or vault balance the protocol itself credits",
+      "adapter treats a subsidy/reserve module as part of TVL"
+    ],
+    "runtime_state_indicators": [
+      "a module account balance materially smaller than the largest credit its own code can compute",
+      "pool or vault balances that do not reconcile against the sum of module holdings"
+    ],
+    "cross_contract_indicators": [
+      "credit written in one module, funding sourced from another module's account"
+    ],
+    "decisive_guards": [
+      "The whole credit-and-fund sequence runs inside a cached context that is only written on success (CacheContext + write())",
+      "The transfer is executed first and the credit is derived from the amount actually received",
+      "A closing assert that total credited equals total transferred, panicking on mismatch"
+    ],
+    "false_positive_killers": [
+      "The sequence is wrapped in a cache context committed only on success (kills the pair)",
+      "The setter runs strictly after the transfer returns nil",
+      "The handler panics rather than returning an error, so the runtime discards the write"
+    ],
+    "local_defensive_property": "On a local devnet, drive the funding transfer to fail (drain or cap the funding module) and re-read the credited balance; it must be unchanged.",
+    "recommended_audit_questions": [
+      "Is every mandatory precondition present in the live deployment?",
+      "Is any decisive guard present in the deployed bytecode, not just the repository?",
+      "What live value, authority or approval is reachable through this path?",
+      "What single observation would falsify the hypothesis?"
+    ],
+    "incident_ids": [
+      "INC-2026-08-18-MAY"
+    ],
+    "provisional_incident_ids": [],
+    "unique_root_cause_count": 1,
+    "incident_count": 1,
+    "six_month_loss_usd": 1700000.0,
+    "most_recent_event": "2026-08-18",
+    "evidence_strength": "HIGH",
+    "derivation": "WINDOW_CORPUS: INC-2026-08-18-MAY, verified against live public source",
+    "propagation_notes": "Structurally impossible on the EVM. Applies to every Cosmos SDK chain that mutates balances outside a cache context, which is the common case in hand-written keeper code.",
+    "single_event_family": "SINGLE_EVENT_FAMILY"
+  },
+  {
+    "family_id": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+    "title": "A handler's error is logged and execution continues in the same context, so whatever it already wrote survives",
+    "broken_invariant": "A failed operation must leave no trace. When a dispatcher calls a handler that can write state, an error from that handler must discard the writes, not merely be recorded.",
+    "mechanism": "Maya's observed-outbound dispatcher called each message handler and, on error, logged 'handler failed', slashed, marked the voter done and executed `continue` -- in the same cosmos context, with no rollback. The partially applied subsidy from the failed inner handler stayed in state, and the loop moved to the next message. The inner code even carried a comment noting it mirrored upstream behaviour.",
+    "mandatory_preconditions": [
+      "A dispatcher loop that invokes handlers able to write state",
+      "The error branch logs, records or slashes but does not discard the context",
+      "Execution continues (continue / next / ignore) rather than aborting the transaction",
+      "At least one reachable handler writes value-bearing state before it can fail"
+    ],
+    "optional_amplifiers": [
+      "Batched messages so one failure does not stop the rest",
+      "A voter/consensus object marked done on the error path, preventing re-processing",
+      "Metrics or slashing on the error path that make the failure look handled"
+    ],
+    "applicable_protocol_archetypes": [
+      "Cosmos SDK app-chain",
+      "bridge or observer network with vote aggregation",
+      "Substrate parachain",
+      "any runtime with a message dispatcher"
+    ],
+    "static_indicators": [
+      "ctx.Logger().Error(...) immediately followed by continue inside a range over messages",
+      "handler(ctx, m) whose returned error is logged but not propagated",
+      "SetDone()/MarkProcessed() called on the error branch",
+      "err != nil branches that neither return nor panic inside a dispatcher loop"
+    ],
+    "adapter_indicators": [
+      "adapter depends on an observer/voter module's accounting"
+    ],
+    "runtime_state_indicators": [
+      "voters or observation records marked done whose corresponding effect never completed",
+      "error-path counters non-zero on a chain whose balances still reconcile only approximately"
+    ],
+    "cross_contract_indicators": [
+      "dispatcher and the handlers it calls live in different modules with separate state"
+    ],
+    "decisive_guards": [
+      "Each handler invocation runs in its own cache context, written only on nil error",
+      "The dispatcher aborts the transaction on handler error",
+      "A post-loop invariant check over module balances that panics on drift"
+    ],
+    "false_positive_killers": [
+      "Handlers are invoked through a cache context discarded on error (kills the pair)",
+      "The dispatcher returns the error and the runtime aborts",
+      "Handlers on that path are proven side-effect-free before the failure point"
+    ],
+    "local_defensive_property": "On a devnet, force one handler in a batch to fail after it writes, then assert that no state it touched changed and that no completion marker was set.",
+    "recommended_audit_questions": [
+      "Is every mandatory precondition present in the live deployment?",
+      "Is any decisive guard present in the deployed bytecode, not just the repository?",
+      "What live value, authority or approval is reachable through this path?",
+      "What single observation would falsify the hypothesis?"
+    ],
+    "incident_ids": [
+      "INC-2026-08-18-MAY"
+    ],
+    "provisional_incident_ids": [],
+    "unique_root_cause_count": 1,
+    "incident_count": 1,
+    "six_month_loss_usd": 1700000.0,
+    "most_recent_event": "2026-08-18",
+    "evidence_strength": "HIGH",
+    "derivation": "WINDOW_CORPUS: INC-2026-08-18-MAY, verified against live public source",
+    "propagation_notes": "Pairs with RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER: the first creates the orphaned write, this one keeps it. Either alone is usually survivable.",
+    "single_event_family": "SINGLE_EVENT_FAMILY"
+  },
+  {
+    "family_id": "RUNTIME-BATCHED-MESSAGE-SHARED-KEY-CLOBBER",
+    "title": "Several messages in one transaction key state by a value they all share, so the last one silently overwrites the rest",
+    "broken_invariant": "Distinct logical operations must not share a mutable state key. Where a batch is keyed by transaction identity rather than by message identity, each message must occupy its own slot.",
+    "mechanism": "Maya's deposit handler built a fresh ObservedTxVoter keyed on the native transaction ID and stored it with SetObservedTxInVoter() for every message in the batch. A single MsgDeposit carrying 23 messages therefore wrote the same key 23 times; the final DONATE message's voter overwrote all twenty-two trade-withdrawal voters, resetting OutboundHeight to 0 and marking the transaction done. The withdrawals became invisible to the outbound matcher.",
+    "mandatory_preconditions": [
+      "A transaction may carry several messages that the runtime processes in one pass",
+      "Per-message state is keyed by something all the messages share (tx hash, sender, block height)",
+      "The write is an unconditional overwrite rather than an append or a keyed insert",
+      "A later message can therefore erase an earlier message's record"
+    ],
+    "optional_amplifiers": [
+      "No cap on messages per transaction",
+      "A message type that resets a height, nonce or done-flag",
+      "Downstream logic that treats a missing record as evidence of loss"
+    ],
+    "applicable_protocol_archetypes": [
+      "Cosmos SDK app-chain",
+      "bridge with observation voters",
+      "Solana program processing instruction batches",
+      "any protocol accepting multi-message transactions"
+    ],
+    "static_indicators": [
+      "NewXVoter(tx.ID, ...) / New*(txHash) constructed inside a per-message loop",
+      "SetX(ctx, obj) with a key derived from tx hash inside a range over msgs",
+      "state keyed by GetTxID()/hash without a message index or sequence suffix",
+      "a struct rebuilt from scratch per message rather than fetched-then-appended"
+    ],
+    "adapter_indicators": [
+      "adapter relies on observation or voter records to establish balances"
+    ],
+    "runtime_state_indicators": [
+      "voter/observation records whose message count is lower than the transaction's message count",
+      "records whose height fields are zero where a height was expected"
+    ],
+    "cross_contract_indicators": [
+      "the overwritten record is consumed by a different module than the one that writes it"
+    ],
+    "decisive_guards": [
+      "State keyed by (tx id, message index) or by a per-message hash",
+      "Fetch-then-append semantics, with an assert that no existing record is dropped",
+      "An explicit per-transaction message-count limit combined with a uniqueness check"
+    ],
+    "false_positive_killers": [
+      "The voter is fetched and appended to rather than reconstructed (kills the pair)",
+      "The key includes a message index or per-message nonce",
+      "The runtime rejects transactions carrying more than one such message"
+    ],
+    "local_defensive_property": "On a devnet, submit one transaction carrying two operations of the same type and assert both records survive with their own heights.",
+    "recommended_audit_questions": [
+      "Is every mandatory precondition present in the live deployment?",
+      "Is any decisive guard present in the deployed bytecode, not just the repository?",
+      "What live value, authority or approval is reachable through this path?",
+      "What single observation would falsify the hypothesis?"
+    ],
+    "incident_ids": [
+      "INC-2026-08-18-MAY"
+    ],
+    "provisional_incident_ids": [],
+    "unique_root_cause_count": 1,
+    "incident_count": 1,
+    "six_month_loss_usd": 1700000.0,
+    "most_recent_event": "2026-08-18",
+    "evidence_strength": "HIGH",
+    "derivation": "WINDOW_CORPUS: INC-2026-08-18-MAY, verified against live public source",
+    "propagation_notes": "The entry point of the Maya chain. Harmless alone; dangerous because downstream code reads a missing record as proof that funds were stolen.",
+    "single_event_family": "SINGLE_EVENT_FAMILY"
+  },
+  {
+    "family_id": "RECONCILIATION-STRIDE-SKIPS-TRUE-VALUE",
+    "title": "A reconciliation scan steps by a fixed stride, so the true value can fall between steps and read as missing",
+    "broken_invariant": "A search for a record that exists must find it. A reconciliation loop must enumerate the actual candidate set, not sample it at an interval, and a miss must never by itself be treated as proof of loss.",
+    "mechanism": "Maya's outbound matcher read voter.OutboundHeight -- zeroed by the voter clobber -- fell back to FinalisedHeight, then looped `for height := outHeight; height <= now; height += signingTransPeriod`. The LINK outbounds had landed at FinalisedHeight+1, one block into a 300-block stride, so the loop never examined that height. The outbounds were declared missing and the slash-for-theft path fired against assets that had in fact been sent.",
+    "mandatory_preconditions": [
+      "A loop that scans for a record by stepping a counter by a fixed interval",
+      "The origin of the scan is derived from state an external caller can influence or reset",
+      "The true location can lie strictly between two steps",
+      "A miss triggers a compensating, punitive or minting path rather than a retry or an abort"
+    ],
+    "optional_amplifiers": [
+      "The stride is a governance constant far larger than one block",
+      "The fallback origin is a different quantity than the one the stride was designed around",
+      "The compensating path sizes a payout from a ratio rather than a fixed amount"
+    ],
+    "applicable_protocol_archetypes": [
+      "cross-chain liquidity network",
+      "bridge",
+      "observer/oracle network",
+      "epoch settlement system",
+      "any protocol with slash-for-theft or insurance logic"
+    ],
+    "static_indicators": [
+      "for height := start; height <= end; height += period  with period a constant, not 1",
+      "a scan origin taken from a field that can be zero, with a fallback to a different field",
+      "a not-found branch that slashes, subsidises, mints or compensates",
+      "range steps derived from SigningTransactionPeriod / epoch length used as a search stride"
+    ],
+    "adapter_indicators": [
+      "adapter models a bridge or settlement network with outbound queues"
+    ],
+    "runtime_state_indicators": [
+      "outbound or settlement records whose recorded height differs from where the effect landed",
+      "slash or compensation events with no corresponding confirmed loss"
+    ],
+    "cross_contract_indicators": [
+      "the scanned records are written by a different module than the scanner"
+    ],
+    "decisive_guards": [
+      "The scan enumerates the real index (by tx id or by a stored pointer) instead of walking heights",
+      "Stride of one, or an inclusive range check rather than equality at sampled points",
+      "A miss requires independent confirmation of loss before any compensating path runs"
+    ],
+    "false_positive_killers": [
+      "Lookup is by identifier against an index, not by walking a counter (kills the pair)",
+      "The not-found branch only retries or aborts and cannot move value",
+      "The compensating amount is capped by an independently measured balance"
+    ],
+    "local_defensive_property": "On a devnet, place the record one unit past the scan origin and confirm the reconciler finds it and that no compensating path fires.",
+    "recommended_audit_questions": [
+      "Is every mandatory precondition present in the live deployment?",
+      "Is any decisive guard present in the deployed bytecode, not just the repository?",
+      "What live value, authority or approval is reachable through this path?",
+      "What single observation would falsify the hypothesis?"
+    ],
+    "incident_ids": [
+      "INC-2026-08-18-MAY"
+    ],
+    "provisional_incident_ids": [],
+    "unique_root_cause_count": 1,
+    "incident_count": 1,
+    "six_month_loss_usd": 1700000.0,
+    "most_recent_event": "2026-08-18",
+    "evidence_strength": "HIGH",
+    "derivation": "WINDOW_CORPUS: INC-2026-08-18-MAY, verified against live public source",
+    "propagation_notes": "Not runtime-specific -- the same shape appears in EVM epoch-settlement and claim-window code. Listed here because the Maya instance is the corroborated one.",
+    "single_event_family": "SINGLE_EVENT_FAMILY"
+  },
+  {
     "family_id": "AMM-POOL-RATIO-SKEW-EXTRACTION",
     "title": "A pool's own pricing curve can be skewed by flash-funded swaps to extract more than the fee compensates",
     "broken_invariant": "A pool's invariant and fee schedule must ensure that any round trip through it costs the trader at least the fees, for every reachable ratio, including extreme imbalance.",
@@ -3090,5 +3367,76 @@
     "evidence_strength": "MEDIUM",
     "propagation_notes": "SINGLE_EVENT_FAMILY. Directly checkable by diffing the require-sets of mint and burn in deployed source.",
     "single_event_family": "SINGLE_EVENT_FAMILY"
+  },
+  {
+    "family_id": "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
+    "title": "An accounting value is fixed from a spot quote taken before the protocol's own swap moves the very reserves it quoted",
+    "broken_invariant": "A value used for minting, crediting or reward must be derived from what the protocol actually received, not from a quote taken before the protocol itself moved the market. Where the protocol's own action changes the price it just read, the value must be recomputed after the fact.",
+    "mechanism": "A staking entrypoint computed a stake amount from a spot quote on an AMM pair, then executed its own large swap into that same pair, then added liquidity at the drastically skewed post-swap ratio. The stake amount was never recomputed from the assets actually deposited or from the fair value of the LP tokens received. Treasury logic trusted the stale figure, minted against it, and paid an inviter reward to an attacker-controlled referral address in the same transaction; the newly minted tokens were sold straight back into the pair. Flash liquidity set the scale, but the defect is that the protocol priced itself before moving the price.",
+    "mandatory_preconditions": [
+      "A quote or price read taken from a venue the protocol is about to trade against",
+      "The protocol's own swap or deposit materially moves that venue's reserves in the same transaction",
+      "The accounting value is not recomputed from assets actually received or LP tokens actually minted",
+      "Something of value is minted, credited or paid out against the stale figure"
+    ],
+    "optional_amplifiers": [
+      "Flash-loan liquidity to size the swap",
+      "A referral or inviter reward paid in the same transaction",
+      "Minted tokens immediately sellable into the same pair",
+      "No slippage bound on the protocol's own swap"
+    ],
+    "applicable_protocol_archetypes": [
+      "bonding/staking with LP deposit",
+      "treasury-backed token issuer",
+      "launchpad",
+      "liquidity bond protocol",
+      "reward distributor sized from a quote"
+    ],
+    "static_indicators": [
+      "getAmountsOut/getAmountOut/quote called before a swap in the same function",
+      "an amount captured into a local variable before addLiquidity and used after it",
+      "mint or reward sized from a pre-swap quote rather than from the LP balance delta",
+      "addLiquidity called without recomputing value from the returned amountA/amountB/liquidity",
+      "referral or inviter transfer in the same function as a mint"
+    ],
+    "adapter_indicators": [
+      "adapter values a bond or staking position from a pair quote",
+      "protocol methodology describes LP bonds or treasury-backed issuance"
+    ],
+    "runtime_state_indicators": [
+      "a bonding entrypoint reachable permissionlessly with no per-transaction size cap",
+      "pair reserves small relative to the maximum accepted deposit"
+    ],
+    "cross_contract_indicators": [
+      "the quoting venue and the venue the protocol trades against are the same pair",
+      "treasury mints against a figure computed in a separate staking contract"
+    ],
+    "decisive_guards": [
+      "Value recomputed from the LP token balance delta actually received",
+      "A manipulation-resistant price (TWAP or an independent feed) used for accounting, with a deviation bound against spot",
+      "An assert that minted value does not exceed backing actually added to the treasury",
+      "Reward settlement deferred past the transaction that created the position"
+    ],
+    "false_positive_killers": [
+      "The minted amount is derived from the LP balance delta or from a TWAP (kills the pair)",
+      "The protocol's swap is bounded so it cannot move reserves materially",
+      "Rewards settle in a later block against re-measured backing"
+    ],
+    "local_defensive_property": "On a fork, run the bonding path with a flash-funded swap sized to skew the pair, then assert that the minted or credited amount tracks the LP tokens actually received rather than the pre-swap quote.",
+    "recommended_audit_questions": [
+      "Is every mandatory precondition present in the live deployment?",
+      "Is any decisive guard present in the deployed bytecode, not just the repository?",
+      "What live value, authority or approval is reachable through this path?",
+      "What single observation would falsify the hypothesis?"
+    ],
+    "incident_ids": [],
+    "provisional_incident_ids": [],
+    "unique_root_cause_count": 0,
+    "incident_count": 0,
+    "six_month_loss_usd": null,
+    "most_recent_event": null,
+    "evidence_strength": "MEDIUM",
+    "derivation": "REFERENCE_PRIOR_ART: operator-supplied root cause for a protocol not in this run's window corpus and not listed on DefiLlama. Contributes zero incidents and zero loss to every window statistic in this run.",
+    "propagation_notes": "Carried because the shape is screenable across the EVM universe this run already covers, and because 'quote, then move the price yourself, then never re-measure' is a distinct defect from ordinary oracle manipulation: no external attacker input is needed to move the price, the protocol does it to itself."
   }
 ]

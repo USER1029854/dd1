@@ -6,113 +6,83 @@
 
 ### The ranking
 
-Full write-ups below for the 32 entries that `candidates_by_priority.md` does not already cover; the other 28 are listed here and written up in full there, under the same `protocol — family` heading.
+Full write-ups below for the 33 entries that `candidates_by_priority.md` does not already cover; the other 27 are listed here and written up in full there, under the same `protocol — family` heading.
 
 | # | Protocol | Family | LIKELIHOOD | At risk | Write-up |
 |---:|---|---|---:|---:|---|
-| 1 | [Kine Finance](https://defillama.com/protocol/kine-finance) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 65.93 | $1,120,759 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 1 | [Fuji V1](https://defillama.com/protocol/fuji-v1) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 65.62 | $197,607 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
 | 2 | [BiFi](https://defillama.com/protocol/bifi) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 64.42 | $4,905,718 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
 | 3 | [Bunny](https://defillama.com/protocol/bunny) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 63.95 | $3,597,277 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 4 | [Gearbox](https://defillama.com/protocol/gearbox) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 61.87 | $21,850,472 | below |
-| 5 | [dForce Lending](https://defillama.com/protocol/dforce-lending) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 61.77 | $1,027,387 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 6 | [Hundred Finance](https://defillama.com/protocol/hundred-finance) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 61.18 | $73,585 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 7 | [Sperax USD](https://defillama.com/protocol/sperax-usd) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 61.08 | $520,189 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 8 | [Idle](https://defillama.com/protocol/idle) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 60.73 | $1,567,483 | below |
-| 9 | [SOFA.org](https://defillama.com/protocol/sofa.org) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 60.67 | $1,046,794 | below |
+| 4 | [dForce Lending](https://defillama.com/protocol/dforce-lending) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 61.77 | $1,027,387 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 5 | [Hundred Finance](https://defillama.com/protocol/hundred-finance) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 61.18 | $73,585 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 6 | [Sperax USD](https://defillama.com/protocol/sperax-usd) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 61.08 | $520,189 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 7 | [Idle](https://defillama.com/protocol/idle) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 60.73 | $1,567,483 | below |
+| 8 | [SOFA.org](https://defillama.com/protocol/sofa.org) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 60.67 | $1,046,794 | below |
+| 9 | [Multichain](https://defillama.com/protocol/multichain) | `SIG-VERIFIER-DEFEATABLE` | 60.35 | $37,621,575 | below |
 | 10 | [Badger DAO](https://defillama.com/protocol/badger-dao) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 60.23 | $12,627,627 | below |
 | 11 | [Cook Finance](https://defillama.com/protocol/cook-finance) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 60.13 | $51,767 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
 | 12 | [Curve DEX](https://defillama.com/protocol/curve-dex) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 59.77 | $1,327,174,451 | below |
-| 13 | [Radiant V2](https://defillama.com/protocol/radiant-v2) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 59.7 | $693,778 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 13 | [Radiant V2](https://defillama.com/protocol/radiant-v2) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 59.7 | $693,778 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
 | 14 | [Abracadabra Spell](https://defillama.com/protocol/abracadabra-spell) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 59.68 | $4,667,807 | below |
 | 15 | [Revest Finance](https://defillama.com/protocol/revest-finance) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 59.45 | $107,916 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
 | 16 | [Iron Bank](https://defillama.com/protocol/iron-bank) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 59.18 | $216,657 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 17 | [BoringDAO](https://defillama.com/protocol/boringdao) | `ACC-DUPLICATE-ID-ACCUMULATION` | 59.17 | $337,559 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 18 | [Cytonic Airdrop Campaign](https://defillama.com/protocol/cytonic-airdrop-campaign) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 59.0 | $169,482 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 19 | [cSigma Finance](https://defillama.com/protocol/csigma-finance) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 58.82 | $21,601,384 | below |
-| 20 | [Gravita Protocol](https://defillama.com/protocol/gravita-protocol) | `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` | 58.67 | $395,368 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 21 | [QiDao](https://defillama.com/protocol/qidao) | `ORACLE-STALE-OR-SILENT-FALLBACK` | 58.35 | $2,708,451 | below |
-| 22 | [Piku Finance](https://defillama.com/protocol/piku-finance) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 58.32 | $29,352,222 | below |
-| 23 | [NFTX](https://defillama.com/protocol/nftx) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 58.3 | $1,967,102 | below |
-| 24 | [MorpheusAI](https://defillama.com/protocol/morpheusai) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 58.07 | $20,854,791 | below |
-| 25 | [Bridge Mutual](https://defillama.com/protocol/bridge-mutual) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 58.05 | $56,267 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 26 | [Tetu Earn](https://defillama.com/protocol/tetu-earn) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 58.03 | $482,134 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 27 | [Accountable](https://defillama.com/protocol/accountable) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 57.97 | $2,313,689 | below |
-| 28 | [VaultCraft](https://defillama.com/protocol/vaultcraft) | `SIG-VERIFIER-DEFEATABLE` | 57.73 | $557,157 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 29 | [Rari Capital](https://defillama.com/protocol/rari-capital) | `SIG-VERIFIER-DEFEATABLE` | 57.63 | $1,374,781 | below |
-| 30 | [XGLD](https://defillama.com/protocol/xgld) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 57.55 | $11,365,300 | below |
-| 31 | [WePiggy](https://defillama.com/protocol/wepiggy) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 57.47 | $802,765 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 32 | [Gro](https://defillama.com/protocol/gro) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 57.47 | $1,783,882 | below |
-| 33 | [Likwid](https://defillama.com/protocol/likwid) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 57.4 | $62,648 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 34 | [Arcade.xyz](https://defillama.com/protocol/arcade.xyz) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 57.25 | $210,561 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 35 | [OpenLeverage](https://defillama.com/protocol/openleverage) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 57.17 | $99,823 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 36 | [The Idols](https://defillama.com/protocol/the-idols) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 56.92 | $6,571,389 | below |
-| 37 | [Angle](https://defillama.com/protocol/angle) | `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` | 56.83 | $2,008,559 | below |
-| 38 | [Maverick V1](https://defillama.com/protocol/maverick-v1) | `ACC-DUPLICATE-ID-ACCUMULATION` | 56.7 | $1,064,242 | below |
-| 39 | [PoolTogether V3](https://defillama.com/protocol/pooltogether-v3) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 56.65 | $4,554,288 | below |
-| 40 | [DeFIL](https://defillama.com/protocol/defil) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 56.55 | $1,759,083 | below |
-| 41 | [Planet Farm](https://defillama.com/protocol/planet-farm) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 56.5 | $1,657,781 | below |
-| 42 | [Across](https://defillama.com/protocol/across) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 56.28 | $20,247,263 | below |
-| 43 | [KyberSwap Classic](https://defillama.com/protocol/kyberswap-classic) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 55.8 | $1,041,666 | below |
-| 44 | [Tarot](https://defillama.com/protocol/tarot) | `ORACLE-SPOT-THIN-LIQUIDITY` | 55.77 | $583,969 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 45 | [EZMoney](https://defillama.com/protocol/ezmoney) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 55.77 | $64,000 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 46 | [Tranchess Yield](https://defillama.com/protocol/tranchess-yield) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.73 | $4,871,755 | below |
-| 47 | [Flying Tulip Lend](https://defillama.com/protocol/flying-tulip-lend) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.72 | $11,948,017 | below |
-| 48 | [Pell Network](https://defillama.com/protocol/pell-network) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 55.7 | $224,044 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 49 | [Bancor V2.1](https://defillama.com/protocol/bancor-v2.1) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.67 | $9,827,540 | below |
-| 50 | [Yala](https://defillama.com/protocol/yala) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 55.58 | $2,237,940 | below |
-| 51 | [iZiSwap](https://defillama.com/protocol/iziswap) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 55.58 | $1,662,324 | below |
-| 52 | [xWin Finance](https://defillama.com/protocol/xwin-finance) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.57 | $205,238 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 53 | [deBridge](https://defillama.com/protocol/debridge) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.57 | $1,907,281 | below |
-| 54 | [Wompie](https://defillama.com/protocol/wompie) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.57 | $1,023,525 | below |
-| 55 | [PepeTeam Bridge](https://defillama.com/protocol/pepeteam-bridge) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 55.33 | $745,485 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 56 | [Sentora](https://defillama.com/protocol/sentora) | `ACC-DUPLICATE-ID-ACCUMULATION` | 55.33 | $2,417,461,031 | below |
-| 57 | [TermFinance Vaults](https://defillama.com/protocol/termfinance-vaults) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 55.32 | $12,450,703 | below |
-| 58 | [SingularityDAO](https://defillama.com/protocol/singularitydao) | `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` | 55.3 | $436,691 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 59 | [Aavegotchi](https://defillama.com/protocol/aavegotchi) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.18 | $207,363 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 60 | [Kokonut Swap](https://defillama.com/protocol/kokonut-swap) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 55.15 | $610,365 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 17 | [Cytonic Airdrop Campaign](https://defillama.com/protocol/cytonic-airdrop-campaign) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 59.0 | $169,482 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 18 | [SMARDEX AMM](https://defillama.com/protocol/smardex-amm) | `ACC-QUOTE-STALE-ACROSS-OWN-SWAP` | 58.88 | $153,633 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 19 | [RadioShack](https://defillama.com/protocol/radioshack) | `ACC-QUOTE-STALE-ACROSS-OWN-SWAP` | 58.88 | $453,693 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 20 | [cSigma Finance](https://defillama.com/protocol/csigma-finance) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 58.82 | $21,601,384 | below |
+| 21 | [Gravita Protocol](https://defillama.com/protocol/gravita-protocol) | `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` | 58.67 | $395,368 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 22 | [QiDao](https://defillama.com/protocol/qidao) | `ORACLE-STALE-OR-SILENT-FALLBACK` | 58.35 | $2,708,451 | below |
+| 23 | [Piku Finance](https://defillama.com/protocol/piku-finance) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 58.32 | $29,352,222 | below |
+| 24 | [NFTX](https://defillama.com/protocol/nftx) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 58.3 | $1,967,102 | below |
+| 25 | [MorpheusAI](https://defillama.com/protocol/morpheusai) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 58.07 | $20,854,791 | below |
+| 26 | [Bridge Mutual](https://defillama.com/protocol/bridge-mutual) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 58.05 | $56,267 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 27 | [Tetu Earn](https://defillama.com/protocol/tetu-earn) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 58.03 | $482,134 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 28 | [Accountable](https://defillama.com/protocol/accountable) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 57.97 | $2,313,689 | below |
+| 29 | [VaultCraft](https://defillama.com/protocol/vaultcraft) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 57.73 | $557,157 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 30 | [Rari Capital](https://defillama.com/protocol/rari-capital) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 57.63 | $1,374,781 | below |
+| 31 | [XGLD](https://defillama.com/protocol/xgld) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 57.55 | $11,365,300 | below |
+| 32 | [WePiggy](https://defillama.com/protocol/wepiggy) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 57.47 | $802,765 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 33 | [Gro](https://defillama.com/protocol/gro) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 57.47 | $1,783,882 | below |
+| 34 | [Likwid](https://defillama.com/protocol/likwid) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 57.4 | $62,648 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 35 | [Arcade.xyz](https://defillama.com/protocol/arcade.xyz) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 57.25 | $210,561 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 36 | [KyberSwap Elastic](https://defillama.com/protocol/kyberswap-elastic) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 57.23 | $127,719 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 37 | [OpenLeverage](https://defillama.com/protocol/openleverage) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 57.17 | $99,823 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 38 | [Zunami Protocol](https://defillama.com/protocol/zunami-protocol) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 56.93 | $548,289 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 39 | [The Idols](https://defillama.com/protocol/the-idols) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 56.92 | $6,571,389 | below |
+| 40 | [Gearbox](https://defillama.com/protocol/gearbox) | `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` | 56.87 | $21,850,472 | below |
+| 41 | [Angle](https://defillama.com/protocol/angle) | `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY` | 56.83 | $2,008,559 | below |
+| 42 | [Maverick V1](https://defillama.com/protocol/maverick-v1) | `ACC-DUPLICATE-ID-ACCUMULATION` | 56.7 | $1,064,242 | below |
+| 43 | [PoolTogether V3](https://defillama.com/protocol/pooltogether-v3) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 56.65 | $4,554,288 | below |
+| 44 | [DeFIL](https://defillama.com/protocol/defil) | `ORACLE-SPOT-THIN-LIQUIDITY` | 56.55 | $1,759,083 | below |
+| 45 | [Planet Farm](https://defillama.com/protocol/planet-farm) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 56.5 | $1,657,781 | below |
+| 46 | [KyberSwap Classic](https://defillama.com/protocol/kyberswap-classic) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 55.8 | $1,041,666 | below |
+| 47 | [Kine Finance](https://defillama.com/protocol/kine-finance) | `ACC-DUPLICATE-ID-ACCUMULATION` | 55.8 | $1,120,759 | below |
+| 48 | [Tarot](https://defillama.com/protocol/tarot) | `ORACLE-SPOT-THIN-LIQUIDITY` | 55.77 | $583,969 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 49 | [EZMoney](https://defillama.com/protocol/ezmoney) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 55.77 | $64,000 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 50 | [Tranchess Yield](https://defillama.com/protocol/tranchess-yield) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.73 | $4,871,755 | below |
+| 51 | [Flying Tulip Lend](https://defillama.com/protocol/flying-tulip-lend) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.72 | $11,948,017 | below |
+| 52 | [Pell Network](https://defillama.com/protocol/pell-network) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 55.7 | $224,044 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 53 | [Bancor V2.1](https://defillama.com/protocol/bancor-v2.1) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.67 | $9,827,540 | below |
+| 54 | [iZiSwap](https://defillama.com/protocol/iziswap) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 55.58 | $1,662,324 | below |
+| 55 | [Yala](https://defillama.com/protocol/yala) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 55.58 | $2,237,940 | below |
+| 56 | [xWin Finance](https://defillama.com/protocol/xwin-finance) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.57 | $205,238 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 57 | [Wompie](https://defillama.com/protocol/wompie) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.57 | $1,023,525 | below |
+| 58 | [deBridge](https://defillama.com/protocol/debridge) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 55.57 | $1,907,281 | below |
+| 59 | [Sentora](https://defillama.com/protocol/sentora) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 55.33 | $2,417,461,031 | below |
+| 60 | [TermFinance Vaults](https://defillama.com/protocol/termfinance-vaults) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 55.32 | $12,450,703 | below |
 
 ---
 
-### 4. Gearbox  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+### 7. Idle  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 4
-- **Protocol:** Gearbox (`gearbox`) · Lending · Ethereum, Etherlink, Monad, Plasma, Hemi, Arbitrum …
-- **DefiLlama:** https://defillama.com/protocol/gearbox
-- **PRIORITY 37.12**  =  LIKELIHOOD 61.87 × ACTIONABILITY 60.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 24.97/50
-    - actionability: upper band: may already retain reviewers
-- **Value at risk:** $21,850,472 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_governance` — raises likelihood, measured lift ×5.045 (weight +1.62)
-    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
-    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
-    - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`MarketConfiguratorLegacy` @ 0x354fe9f4…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for MarketConfiguratorLegacy@0x354fe9f4…(ethereum); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#gearbox|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#gearbox`
-- **Disclosure:** https://gearbox.finance/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.gearbox.finance/risk-and-security/audits-bug-bounty
-
-### 8. Idle  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking B — likelihood, ignoring actionability):** 8
+- **Rank (Ranking B — likelihood, ignoring actionability):** 7
 - **Protocol:** Idle (`idle`) · Yield Aggregator · Ethereum, Polygon, Optimism, Polygon zkEVM, Arbitrum
 - **DefiLlama:** https://defillama.com/protocol/idle
 - **PRIORITY 51.62**  =  LIKELIHOOD 60.73 × ACTIONABILITY 85.0%
     - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 23.83/50
     - actionability: mid-band: a team of this size will usually take an outside report
 - **Value at risk:** $1,567,483 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
 - **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
     - `owner_is_contract` — raises likelihood, measured lift ×4.297 (weight +1.46)
     - `is_proxy` — raises likelihood, measured lift ×2.601 (weight +0.96)
@@ -121,28 +91,28 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
     - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
     - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
     - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`IdleTokenV3` @ 0x12B98C62…(ethereum), `IdleCDOEpochVariant` @ 0xdd596250…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for IdleTokenV3@0x12B98C62…(ethereum), IdleCDOEpochVariant@0xdd596250…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
+- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Deployed source (`IdleTokenV3` @ 0x12B98C62…(ethereum), `IdleCDOEpochVariant` @ 0xdd596250…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
+    - deployed source read for IdleTokenV3@0x12B98C62…(ethereum), IdleCDOEpochVariant@0xdd596250…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** safecast_used / none in the reviewed path
 - **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** the ERC-1967 upgrade authority terminates in **a contract not fingerprinted by this run** (`UNKNOWN_CONTRACT`)
 - **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#idle|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#idle`
+- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+- **Evidence:** `protocols/deep_screened.jsonl#idle|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#idle`
 - **Disclosure:** https://idle.finance · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.idle.finance/developers/security/audits
 
-### 9. SOFA.org  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 8. SOFA.org  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 9
+- **Rank (Ranking B — likelihood, ignoring actionability):** 8
 - **Protocol:** SOFA.org (`sofa.org`) · Options · Ethereum, Arbitrum, Binance, Polygon
 - **DefiLlama:** https://defillama.com/protocol/sofa.org
 - **PRIORITY 51.57**  =  LIKELIHOOD 60.67 × ACTIONABILITY 85.0%
     - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 23.77/50
     - actionability: mid-band: a team of this size will usually take an outside report
 - **Value at risk:** $1,046,794 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
 - **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
     - `is_proxy` — raises likelihood, measured lift ×2.601 (weight +0.96)
     - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
@@ -152,17 +122,48 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
     - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
     - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
     - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`SmartTrendVault` @ 0x1d2faad4…(ethereum), `StRCH` @ 0x2B9aeA12…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for SmartTrendVault@0x1d2faad4…(ethereum), StRCH@0x2B9aeA12…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
+- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Deployed source (`SmartTrendVault` @ 0x1d2faad4…(ethereum), `StRCH` @ 0x2B9aeA12…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
+    - deployed source read for SmartTrendVault@0x1d2faad4…(ethereum), StRCH@0x2B9aeA12…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** safecast_used / none in the reviewed path
 - **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** the ERC-1967 upgrade authority terminates in **one externally-owned account** (`EOA_SINGLE_KEY`) — a code fix here does not remove that exposure, and it is the cheaper thing to raise first
 - **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#sofa.org|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#sofa.org`
+- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+- **Evidence:** `protocols/deep_screened.jsonl#sofa.org|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#sofa.org`
 - **Disclosure:** https://www.sofa.org · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Sofa-v1.0.pdf, https://code4rena.com/reports/2024-05-sofa-pro-league
+
+### 9. Multichain  —  `SIG-VERIFIER-DEFEATABLE`
+
+- **Rank (Ranking B — likelihood, ignoring actionability):** 9
+- **Protocol:** Multichain (`multichain`) · Bridge · Binance, Ethereum, Polygon, Arbitrum, Optimism, Avalanche …
+- **DefiLlama:** https://defillama.com/protocol/multichain
+- **PRIORITY 12.07**  =  LIKELIHOOD 60.35 × ACTIONABILITY 20.0%
+    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 23.45/50
+    - actionability: above the band: assume dedicated professional coverage
+- **Value at risk:** $37,621,575 · **Band:** `ABOVE_BAND_KEPT_EXPLICIT_DANGER`
+- **REPEAT VICTIM — 4 recorded hacks.** 2023-02-15 $130,000 [Signature Verification Flaw]; 2022-01-18 $1,400,000 [Missing Input Validation]
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
+- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
+    - `owner_is_contract` — raises likelihood, measured lift ×4.297 (weight +1.46)
+    - `has_2plus_audits` — raises likelihood, measured lift ×2.084 (weight +0.73)
+    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
+    - `owner_is_eoa` — raises likelihood, measured lift ×2.019 (weight +0.70)
+    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
+    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
+    - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
+- **Broken invariant tested:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
+    - Deployed source (`BGeoToken` @ 0xc3427744…(bsc), `AnyswapV5ERC20` @ 0x9Fb9a339…(bsc)): prerequisites matched: ecrecover_without_zero_check; no guard found
+    - deployed source read for BGeoToken@0xc3427744…(bsc), AnyswapV5ERC20@0x9Fb9a339…(bsc); indicators matched: ecrecover_without_zero_check
+- **Preconditions PRESENT / UNKNOWN:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** uses_oz_ecdsa / none in the reviewed path
+- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `EOA_SINGLE_KEY`; no ERC-1967 admin chain was proven
+- **Prior art:** `UNREMEDIATED_KNOWN_ISSUE` — DefiLlama's hacks dataset records 2 prior on-chain incident(s) on this protocol, most recently 2023-02-15 for $130,000 [Signature Verification Flaw]. Whether the deployment in scope carries the fix is not established by read-only evidence.
+- **Falsified by:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
+- **Where to start:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
+- **Evidence:** `protocols/deep_screened.jsonl#multichain|SIG-VERIFIER-DEFEATABLE`, `protocols/onchain_probes.json#multichain`
+- **Disclosure:** not listed · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/anyswap/Anyswap-Audit/blob/master/TrailOfBits/Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final%20Report.pdf, https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/AnySwap%20CrossChain-Bridge%20Security%20Audit%20Report.pdf
 
 ### 10. Badger DAO  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
@@ -215,8 +216,8 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
     - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
     - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
 - **Broken invariant tested:** Renouncing ownership must permanently remove the capability. A check of the form caller == owner must never pass when owner is the zero address, and no default-zero role may be satisfiable.
-    - Deployed source (`frxETH` @ 0x5e842234…(ethereum)): prerequisites matched: owner_compare_without_nonzero; no guard found
-    - deployed source read for frxETH@0x5e842234…(ethereum); indicators matched: owner_compare_without_nonzero
+    - Deployed source (`Vyper_contract` @ 0x0145fd99…(ethereum)): prerequisites matched: owner_compare_without_nonzero; no guard found
+    - deployed source read for Vyper_contract@0x0145fd99…(ethereum); indicators matched: owner_compare_without_nonzero
     - 1 implementation(s) behind a proxy are NOT verified on the explorer: implementation identity unresolved, score capped at 60
 - **Preconditions PRESENT / UNKNOWN:** src::owner_compare_without_nonzero, live_value_present, deployment_reachable_on_chain / none
 - **Guards searched / found:** none / none in the reviewed path
@@ -258,9 +259,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#abracadabra-spell|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#abracadabra-spell`
 - **Disclosure:** https://abracadabra.money/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://abracadabramoney.gitbook.io/learn/our-ecosystem/our-contracts
 
-### 19. cSigma Finance  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+### 20. cSigma Finance  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 19
+- **Rank (Ranking B — likelihood, ignoring actionability):** 20
 - **Protocol:** cSigma Finance (`csigma-finance`) · RWA Lending · Arbitrum, Ethereum, Hedera, Base
 - **DefiLlama:** https://defillama.com/protocol/csigma-finance
 - **PRIORITY 35.29**  =  LIKELIHOOD 58.82 × ACTIONABILITY 60.0%
@@ -289,9 +290,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#csigma-finance|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#csigma-finance`
 - **Disclosure:** https://csigma.finance · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/csigma-labs/audit-reports/blob/main/cSigma%20Edge%20Audit%20Report%20-%20QuillAudits.pdf, https://github.com/csigma-labs/audit-reports/blob/main/cSigma%20Institutional%20Audit%20Report%20-%20Immunebytes.pdf
 
-### 21. QiDao  —  `ORACLE-STALE-OR-SILENT-FALLBACK`
+### 22. QiDao  —  `ORACLE-STALE-OR-SILENT-FALLBACK`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 21
+- **Rank (Ranking B — likelihood, ignoring actionability):** 22
 - **Protocol:** QiDao (`qidao`) · CDP · Polygon, Base, Ethereum, Avalanche, Optimism, Fantom …
 - **DefiLlama:** https://defillama.com/protocol/qidao
 - **PRIORITY 49.6**  =  LIKELIHOOD 58.35 × ACTIONABILITY 85.0%
@@ -323,9 +324,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#qidao|ORACLE-STALE-OR-SILENT-FALLBACK`, `protocols/onchain_probes.json#qidao`
 - **Disclosure:** https://app.mai.finance · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.mai.finance/risks/security#has-the-project-been-audited
 
-### 22. Piku Finance  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+### 23. Piku Finance  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 22
+- **Rank (Ranking B — likelihood, ignoring actionability):** 23
 - **Protocol:** Piku Finance (`piku-finance`) · Basis Trading · Ethereum
 - **DefiLlama:** https://defillama.com/protocol/piku-finance
 - **PRIORITY 34.99**  =  LIKELIHOOD 58.32 × ACTIONABILITY 60.0%
@@ -354,9 +355,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#piku-finance|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#piku-finance`
 - **Disclosure:** https://piku.co/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.piku.co/piku/piku/security-and-risks/audits
 
-### 23. NFTX  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 24. NFTX  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 23
+- **Rank (Ranking B — likelihood, ignoring actionability):** 24
 - **Protocol:** NFTX (`nftx`) · NFT Marketplace · Ethereum, Arbitrum
 - **DefiLlama:** https://defillama.com/protocol/nftx
 - **PRIORITY 49.55**  =  LIKELIHOOD 58.3 × ACTIONABILITY 85.0%
@@ -383,9 +384,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#nftx|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#nftx`
 - **Disclosure:** https://nftx.io · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/NFTX-project/audit-level-k/blob/master/NFTX-final.pdf
 
-### 24. MorpheusAI  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 25. MorpheusAI  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 24
+- **Rank (Ranking B — likelihood, ignoring actionability):** 25
 - **Protocol:** MorpheusAI (`morpheusai`) · AI Agents · Ethereum, Arbitrum, Base
 - **DefiLlama:** https://defillama.com/protocol/morpheusai
 - **PRIORITY 34.84**  =  LIKELIHOOD 58.07 × ACTIONABILITY 60.0%
@@ -414,16 +415,16 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#morpheusai|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#morpheusai`
 - **Disclosure:** https://mor.org · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/MorpheusAIs/Docs/tree/main/Security%20Audit%20Reports
 
-### 27. Accountable  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 28. Accountable  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 27
+- **Rank (Ranking B — likelihood, ignoring actionability):** 28
 - **Protocol:** Accountable (`accountable`) · Uncollateralized Lending · Robinhood Chain, Monad, Arbitrum, Ethereum, Citrea
 - **DefiLlama:** https://defillama.com/protocol/accountable
 - **PRIORITY 49.27**  =  LIKELIHOOD 57.97 × ACTIONABILITY 85.0%
     - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 21.07/50
     - actionability: mid-band: a team of this size will usually take an outside report
 - **Value at risk:** $2,313,689 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
 - **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
     - `owner_is_contract` — raises likelihood, measured lift ×4.297 (weight +1.46)
     - `age_under_1y` — raises likelihood, measured lift ×2.256 (weight +0.81)
@@ -431,21 +432,21 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
     - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
     - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
     - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`FixedTermFactory` @ 0x2A7F22f8…(arbitrum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for FixedTermFactory@0x2A7F22f8…(arbitrum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
+- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Deployed source (`FixedTermFactory` @ 0x2A7F22f8…(arbitrum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
+    - deployed source read for FixedTermFactory@0x2A7F22f8…(arbitrum); indicators matched: unsafe_cross_sign_cast
+- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** safecast_used / none in the reviewed path
 - **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `SAFE_M_OF_N`; no ERC-1967 admin chain was proven
 - **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#accountable|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#accountable`
+- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+- **Evidence:** `protocols/deep_screened.jsonl#accountable|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#accountable`
 - **Disclosure:** https://accountable.capital/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.accountable.capital/accountable-documentation/readme/audits
 
-### 29. Rari Capital  —  `SIG-VERIFIER-DEFEATABLE`
+### 30. Rari Capital  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 29
+- **Rank (Ranking B — likelihood, ignoring actionability):** 30
 - **Protocol:** Rari Capital (`rari-capital`) · Yield Aggregator · Ethereum, Arbitrum
 - **DefiLlama:** https://defillama.com/protocol/rari-capital
 - **PRIORITY 48.99**  =  LIKELIHOOD 57.63 × ACTIONABILITY 85.0%
@@ -461,21 +462,21 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
     - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
     - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
     - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
-    - Deployed source (`UniswapV2Pair` @ 0x18a797c7…(ethereum), `RariFundProxy` @ 0x35DDEFa2…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard found
-    - deployed source read for UniswapV2Pair@0x18a797c7…(ethereum), RariFundProxy@0x35DDEFa2…(ethereum); indicators matched: ecrecover_without_zero_check
-- **Preconditions PRESENT / UNKNOWN:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** uses_oz_ecdsa / none in the reviewed path
+- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Deployed source (`UniswapV2Pair` @ 0x18a797c7…(ethereum), `RariFundProxy` @ 0x35DDEFa2…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
+    - deployed source read for UniswapV2Pair@0x18a797c7…(ethereum), RariFundProxy@0x35DDEFa2…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** safecast_used / none in the reviewed path
 - **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `SAFE_M_OF_N`; no ERC-1967 admin chain was proven
 - **Prior art:** `UNREMEDIATED_KNOWN_ISSUE` — DefiLlama's hacks dataset records 2 prior on-chain incident(s) on this protocol, most recently 2025-12-18 for $2,000,000 [Uninitialized Proxy]. Whether the deployment in scope carries the fix is not established by read-only evidence.
-- **Falsified by:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
-- **Where to start:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
-- **Evidence:** `protocols/deep_screened.jsonl#rari-capital|SIG-VERIFIER-DEFEATABLE`, `protocols/onchain_probes.json#rari-capital`
+- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+- **Evidence:** `protocols/deep_screened.jsonl#rari-capital|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#rari-capital`
 - **Disclosure:** not listed · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://www.notion.so/Rari-Capital-Audit-Quantstamp-December-2020-24a1d1df94894d6881ee190686f47bc7
 
-### 30. XGLD  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+### 31. XGLD  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 30
+- **Rank (Ranking B — likelihood, ignoring actionability):** 31
 - **Protocol:** XGLD (`xgld`) · Stablecoin Wrapper · Binance, Base, Ethereum
 - **DefiLlama:** https://defillama.com/protocol/xgld
 - **PRIORITY 34.53**  =  LIKELIHOOD 57.55 × ACTIONABILITY 60.0%
@@ -502,16 +503,16 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#xgld|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#xgld`
 - **Disclosure:** https://evm.unitas.so/xgld · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/UnipayFI/Audit
 
-### 32. Gro  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 33. Gro  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 32
+- **Rank (Ranking B — likelihood, ignoring actionability):** 33
 - **Protocol:** Gro (`gro`) · Yield · Ethereum, Avalanche
 - **DefiLlama:** https://defillama.com/protocol/gro
 - **PRIORITY 48.85**  =  LIKELIHOOD 57.47 × ACTIONABILITY 85.0%
     - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 20.57/50
     - actionability: mid-band: a team of this size will usually take an outside report
 - **Value at risk:** $1,783,882 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
 - **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
     - `has_governance` — raises likelihood, measured lift ×5.045 (weight +1.62)
     - `owner_is_eoa` — raises likelihood, measured lift ×2.019 (weight +0.70)
@@ -519,21 +520,21 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
     - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
     - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
     - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`LPTokenStaker` @ 0x001C249c…(ethereum), `UniswapV2Pair` @ 0x21C5918C…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for LPTokenStaker@0x001C249c…(ethereum), UniswapV2Pair@0x21C5918C…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
+- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Deployed source (`LPTokenStaker` @ 0x001C249c…(ethereum), `UniswapV2Pair` @ 0x21C5918C…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
+    - deployed source read for LPTokenStaker@0x001C249c…(ethereum), UniswapV2Pair@0x21C5918C…(ethereum); indicators matched: unsafe_cross_sign_cast
+- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** safecast_used / none in the reviewed path
 - **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `EOA_SINGLE_KEY`; no ERC-1967 admin chain was proven
 - **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#gro|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#gro`
+- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+- **Evidence:** `protocols/deep_screened.jsonl#gro|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#gro`
 - **Disclosure:** not listed · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.gro.xyz/gro-docs/security/audits
 
-### 36. The Idols  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+### 39. The Idols  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 36
+- **Rank (Ranking B — likelihood, ignoring actionability):** 39
 - **Protocol:** The Idols (`the-idols`) · Reserve Currency · Ethereum
 - **DefiLlama:** https://defillama.com/protocol/the-idols
 - **PRIORITY 48.38**  =  LIKELIHOOD 56.92 × ACTIONABILITY 85.0%
@@ -561,9 +562,40 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#the-idols|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#the-idols`
 - **Disclosure:** https://www.theidols.io · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.theidols.io/resources/audit
 
-### 37. Angle  —  `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
+### 40. Gearbox  —  `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 37
+- **Rank (Ranking B — likelihood, ignoring actionability):** 40
+- **Protocol:** Gearbox (`gearbox`) · Lending · Ethereum, Etherlink, Monad, Plasma, Hemi, Arbitrum …
+- **DefiLlama:** https://defillama.com/protocol/gearbox
+- **PRIORITY 34.12**  =  LIKELIHOOD 56.87 × ACTIONABILITY 60.0%
+    - likelihood = family evidence 31.9/50 (MATCH 63.8 × evidence weight 1.0) + learned attack surface 24.97/50
+    - actionability: upper band: may already retain reviewers
+- **Value at risk:** $21,850,472 · **Band:** `IN_BAND`
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 63.8 · CONFIDENCE 90.4
+- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
+    - `has_governance` — raises likelihood, measured lift ×5.045 (weight +1.62)
+    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
+    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
+    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
+    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
+    - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
+    - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
+    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
+- **Broken invariant tested:** A vault share rate is an accounting quantity of another protocol, not a market price. Using it as a feed imports every way that vault's rate can be moved, including donation inflation and same-transaction redemption effects.
+    - Deployed source (`MarketConfiguratorLegacy` @ 0x354fe9f4…(ethereum), `CreditManager` @ 0x4C6309fe…(ethereum)): prerequisites matched: rate_used_as_price; no guard found
+    - deployed source read for MarketConfiguratorLegacy@0x354fe9f4…(ethereum), CreditManager@0x4C6309fe…(ethereum); indicators matched: rate_used_as_price
+    - declared oracles: RedStone, Chainlink, eOracle (types: Primary)
+- **Preconditions PRESENT / UNKNOWN:** src::rate_used_as_price, value_decision_reads_configured_feed, live_positions_exposed / feed_selection_is_configuration
+- **Guards searched / found:** deviation_bound_vs_independent_source / none in the reviewed path
+- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
+- **Falsified by:** Growth-capped rate adapter in the deployed oracle (kills the pair); Wrapper's own rate is monotonic and rate-limited; Collateral priced by an independent market feed instead
+- **Where to start:** On a fork, donate to and cycle the underlying vault; assert the lending market's reported collateral price moves no more than the configured cap.
+- **Evidence:** `protocols/deep_screened.jsonl#gearbox|ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE`, `protocols/onchain_probes.json#gearbox`
+- **Disclosure:** https://gearbox.finance/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.gearbox.finance/risk-and-security/audits-bug-bounty
+
+### 41. Angle  —  `UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`
+
+- **Rank (Ranking B — likelihood, ignoring actionability):** 41
 - **Protocol:** Angle (`angle`) · CDP · Ethereum, Arbitrum, Polygon, Optimism, Avalanche, Binance …
 - **DefiLlama:** https://defillama.com/protocol/angle
 - **PRIORITY 48.31**  =  LIKELIHOOD 56.83 × ACTIONABILITY 85.0%
@@ -593,9 +625,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#angle|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY`, `protocols/onchain_probes.json#angle`
 - **Disclosure:** https://app.angle.money · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/AngleProtocol/angle-core/tree/main/audits
 
-### 38. Maverick V1  —  `ACC-DUPLICATE-ID-ACCUMULATION`
+### 42. Maverick V1  —  `ACC-DUPLICATE-ID-ACCUMULATION`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 38
+- **Rank (Ranking B — likelihood, ignoring actionability):** 42
 - **Protocol:** Maverick V1 (`maverick-v1`) · Dexs · zkSync Era, Ethereum, Binance, Base
 - **DefiLlama:** https://defillama.com/protocol/maverick-v1
 - **PRIORITY 48.2**  =  LIKELIHOOD 56.7 × ACTIONABILITY 85.0%
@@ -625,9 +657,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#maverick-v1|ACC-DUPLICATE-ID-ACCUMULATION`, `protocols/onchain_probes.json#maverick-v1`
 - **Disclosure:** https://www.mav.xyz · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/maverickprotocol/audits
 
-### 39. PoolTogether V3  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 43. PoolTogether V3  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 39
+- **Rank (Ranking B — likelihood, ignoring actionability):** 43
 - **Protocol:** PoolTogether V3 (`pooltogether-v3`) · Yield Lottery · Ethereum, Polygon, Celo, Binance
 - **DefiLlama:** https://defillama.com/protocol/pooltogether-v3
 - **PRIORITY 48.15**  =  LIKELIHOOD 56.65 × ACTIONABILITY 85.0%
@@ -654,16 +686,16 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#pooltogether-v3|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#pooltogether-v3`
 - **Disclosure:** https://pooltogether.com/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.pooltogether.com/security/audits
 
-### 40. DeFIL  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 44. DeFIL  —  `ORACLE-SPOT-THIN-LIQUIDITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 40
+- **Rank (Ranking B — likelihood, ignoring actionability):** 44
 - **Protocol:** DeFIL (`defil`) · Lending · Ethereum, Binance
 - **DefiLlama:** https://defillama.com/protocol/defil
 - **PRIORITY 48.07**  =  LIKELIHOOD 56.55 × ACTIONABILITY 85.0%
     - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 19.65/50
     - actionability: mid-band: a team of this size will usually take an outside report
 - **Value at risk:** $1,759,083 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
 - **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
     - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
     - `owner_is_eoa` — raises likelihood, measured lift ×2.019 (weight +0.70)
@@ -672,21 +704,24 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
     - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
     - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
     - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`Staking` @ 0x01aabbad…(ethereum), `DFL` @ 0x09ce2b74…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for Staking@0x01aabbad…(ethereum), DFL@0x09ce2b74…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
+- **Broken invariant tested:** Borrowing capacity, mint size, reward size or collateral value must not be derived from a price that a single actor can move within the manipulation window, and the value unlocked must never exceed the cost of moving that price.
+    - Conditions: `SINGLE_PRIMARY_ORACLE_NO_CROSSCHECK`
+    - Deployed source (`Staking` @ 0x272257bb…(bsc), `PancakePair` @ 0x3558C47C…(bsc)): prerequisites matched: spot_without_twap; no guard found
+    - deployed source read for Staking@0x272257bb…(bsc), PancakePair@0x3558C47C…(bsc); indicators matched: spot_without_twap
+    - condition SINGLE_PRIMARY_ORACLE_NO_CROSSCHECK (PRIORITY): Exactly one declared oracle and no declared secondary, so no cross-source deviation bound is declared.
+    - only one oracle (or none) is declared in DefiLlama metadata; this is a prioritisation signal about disclosure, not evidence that no cross-source deviation bound exists in code
+- **Preconditions PRESENT / UNKNOWN:** src::spot_without_twap, value_decision_reads_configured_feed, live_positions_exposed / feed_selection_is_configuration
+- **Guards searched / found:** twap_present, supply_cap_present, deviation_bound_vs_independent_source / none in the reviewed path
 - **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `EOA_SINGLE_KEY`; no ERC-1967 admin chain was proven
 - **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#defil|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#defil`
+- **Falsified by:** All collateral priced by a deep aggregated feed with a deviation cap (kills the pair); Caps are set from measured venue depth and enforced on-chain; The action is sized from realised transfer amounts, so price is never an input
+- **Where to start:** On a fork, execute a max-size flash-funded swap against every venue in the pricing path and assert that no value-bearing entrypoint changes its output beyond the configured deviation bound.
+- **Evidence:** `protocols/deep_screened.jsonl#defil|ORACLE-SPOT-THIN-LIQUIDITY`, `protocols/onchain_probes.json#defil`
 - **Disclosure:** not listed · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://www.slowmist.com/security-audit-certificate.html?id=e84a975074cb9aef9299f9dec92311fd1458d0bbb4163adfadac8e16e0da3c61
 
-### 41. Planet Farm  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 45. Planet Farm  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 41
+- **Rank (Ranking B — likelihood, ignoring actionability):** 45
 - **Protocol:** Planet Farm (`planet-farm`) · Yield · Binance
 - **DefiLlama:** https://defillama.com/protocol/planet-farm
 - **PRIORITY 48.02**  =  LIKELIHOOD 56.5 × ACTIONABILITY 85.0%
@@ -714,39 +749,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#planet-farm|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#planet-farm`
 - **Disclosure:** https://app.planet.finance/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Planet_Finance_Smart_Contract_Security_Audit_Halborn_v1_1.pdf
 
-### 42. Across  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 46. KyberSwap Classic  —  `UPGRADE-INITIALIZER-REACHABLE-LIVE`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 42
-- **Protocol:** Across (`across`) · Cross Chain Bridge · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/across
-- **PRIORITY 33.77**  =  LIKELIHOOD 56.28 × ACTIONABILITY 60.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 19.38/50
-    - actionability: upper band: may already retain reviewers
-- **Value at risk:** $20,247,263 · **Band:** `IN_BAND`
-- **Previously hacked:** 2026-07-17 for $4,500,000 [Spoofed Event Log]
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_governance` — raises likelihood, measured lift ×5.045 (weight +1.62)
-    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`MiniMeToken` @ 0x3472A5A7…(ethereum), `BOBA` @ 0x42bBFa2e…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for MiniMeToken@0x3472A5A7…(ethereum), BOBA@0x42bBFa2e…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `KNOWN_ISSUE_DEPLOYMENT_STATUS_UNKNOWN` — DefiLlama's hacks dataset records 1 prior on-chain incident(s) on this protocol, most recently 2026-07-17 for $4,500,000 [Spoofed Event Log]. Whether the deployment in scope carries the fix is not established by read-only evidence.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#across|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#across`
-- **Disclosure:** https://across.to · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://blog.openzeppelin.com/uma-audit-l2-bridges/
-
-### 43. KyberSwap Classic  —  `UPGRADE-INITIALIZER-REACHABLE-LIVE`
-
-- **Rank (Ranking B — likelihood, ignoring actionability):** 43
+- **Rank (Ranking B — likelihood, ignoring actionability):** 46
 - **Protocol:** KyberSwap Classic (`kyberswap-classic`) · Dexs · Ethereum, Polygon, Avalanche, Binance, Optimism, zkSync Era …
 - **DefiLlama:** https://defillama.com/protocol/kyberswap-classic
 - **PRIORITY 47.43**  =  LIKELIHOOD 55.8 × ACTIONABILITY 85.0%
@@ -777,9 +782,41 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#kyberswap-classic|UPGRADE-INITIALIZER-REACHABLE-LIVE`, `protocols/onchain_probes.json#kyberswap-classic`
 - **Disclosure:** https://kyberswap.com/#/swap · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://chainsecurity.com/security-audit/kyber-network-dynamic-market-maker-dmm/
 
-### 46. Tranchess Yield  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 47. Kine Finance  —  `ACC-DUPLICATE-ID-ACCUMULATION`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 46
+- **Rank (Ranking B — likelihood, ignoring actionability):** 47
+- **Protocol:** Kine Finance (`kine-finance`) · Yield · Ethereum, Binance, Polygon, Avalanche
+- **DefiLlama:** https://defillama.com/protocol/kine-finance
+- **PRIORITY 47.43**  =  LIKELIHOOD 55.8 × ACTIONABILITY 85.0%
+    - likelihood = family evidence 30.0/50 (MATCH 60 × evidence weight 1.0) + learned attack surface 25.8/50
+    - actionability: mid-band: a team of this size will usually take an outside report
+- **Value at risk:** $1,120,759 · **Band:** `IN_BAND`
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 60 · CONFIDENCE 85.4
+- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
+    - `owner_is_contract` — raises likelihood, measured lift ×4.297 (weight +1.46)
+    - `is_proxy` — raises likelihood, measured lift ×2.601 (weight +0.96)
+    - `unverified_implementation` — raises likelihood, measured lift ×2.062 (weight +0.72)
+    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
+    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
+    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
+    - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
+    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
+- **Broken invariant tested:** An entitlement attached to an identifier may be counted at most once per period. A caller-supplied ID list must be deduplicated, or each ID's claim state consumed before the next read.
+    - Deployed source (`KineBox` @ 0x0544be66…(bsc)): prerequisites matched: id_array_loop_without_dedup; no guard found
+    - deployed source read for KineBox@0x0544be66…(bsc); indicators matched: id_array_loop_without_dedup
+    - 1 implementation(s) behind a proxy are NOT verified on the explorer: implementation identity unresolved, score capped at 60
+- **Preconditions PRESENT / UNKNOWN:** src::id_array_loop_without_dedup, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** none / none in the reviewed path
+- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `UNKNOWN_CONTRACT`; no ERC-1967 admin chain was proven
+- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
+- **Falsified by:** Consumed marker written inside the loop (kills the pair); IDs required strictly increasing
+- **Where to start:** On a fork, call the batch function with one ID repeated k times; payout must equal the single-ID payout.
+- **Evidence:** `protocols/deep_screened.jsonl#kine-finance|ACC-DUPLICATE-ID-ACCUMULATION`, `protocols/onchain_probes.json#kine-finance`
+- **Disclosure:** not listed · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.kine.io/audit/peckshield
+
+### 50. Tranchess Yield  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+
+- **Rank (Ranking B — likelihood, ignoring actionability):** 50
 - **Protocol:** Tranchess Yield (`tranchess-yield`) · Yield · Binance, Scroll, Ethereum
 - **DefiLlama:** https://defillama.com/protocol/tranchess-yield
 - **PRIORITY 47.37**  =  LIKELIHOOD 55.73 × ACTIONABILITY 85.0%
@@ -805,9 +842,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#tranchess-yield|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#tranchess-yield`
 - **Disclosure:** https://tranchess.com · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Tranchess-v1.0.pdf, https://www.certik.org/projects/tranchess
 
-### 47. Flying Tulip Lend  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 51. Flying Tulip Lend  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 47
+- **Rank (Ranking B — likelihood, ignoring actionability):** 51
 - **Protocol:** Flying Tulip Lend (`flying-tulip-lend`) · Lending · Ethereum, Sonic
 - **DefiLlama:** https://defillama.com/protocol/flying-tulip-lend
 - **PRIORITY 33.43**  =  LIKELIHOOD 55.72 × ACTIONABILITY 60.0%
@@ -834,9 +871,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#flying-tulip-lend|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#flying-tulip-lend`
 - **Disclosure:** https://flyingtulip.com/lend/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.flyingtulip.com/risks/
 
-### 49. Bancor V2.1  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 53. Bancor V2.1  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 49
+- **Rank (Ranking B — likelihood, ignoring actionability):** 53
 - **Protocol:** Bancor V2.1 (`bancor-v2.1`) · Dexs · Ethereum
 - **DefiLlama:** https://defillama.com/protocol/bancor-v2.1
 - **PRIORITY 47.32**  =  LIKELIHOOD 55.67 × ACTIONABILITY 85.0%
@@ -864,9 +901,38 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#bancor-v2.1|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#bancor-v2.1`
 - **Disclosure:** https://app.bancor.network/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://bancor-network.gitbook.io/v2.1/ethereum-contracts/security
 
-### 50. Yala  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+### 54. iZiSwap  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 50
+- **Rank (Ranking B — likelihood, ignoring actionability):** 54
+- **Protocol:** iZiSwap (`iziswap`) · Dexs · zkSync Era, Scroll, ZetaChain, Manta, Binance, Linea …
+- **DefiLlama:** https://defillama.com/protocol/iziswap
+- **PRIORITY 47.24**  =  LIKELIHOOD 55.58 × ACTIONABILITY 85.0%
+    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 18.68/50
+    - actionability: mid-band: a team of this size will usually take an outside report
+- **Value at risk:** $1,662,324 · **Band:** `IN_BAND`
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
+- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
+    - `has_2plus_audits` — raises likelihood, measured lift ×2.084 (weight +0.73)
+    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
+    - `owner_is_eoa` — raises likelihood, measured lift ×2.019 (weight +0.70)
+    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
+    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
+    - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
+- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
+    - Deployed source (`FlashModule` @ 0x110dE362…(bsc), `iZiSwapFactory` @ 0x1502d025…(bsc)): prerequisites matched: unsafe_cross_sign_cast; no guard found
+    - deployed source read for FlashModule@0x110dE362…(bsc), iZiSwapFactory@0x1502d025…(bsc); indicators matched: unsafe_cross_sign_cast
+- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** safecast_used / none in the reviewed path
+- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `EOA_SINGLE_KEY`; no ERC-1967 admin chain was proven
+- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
+- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
+- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
+- **Evidence:** `protocols/deep_screened.jsonl#iziswap|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#iziswap`
+- **Disclosure:** https://izumi.finance/trade/swap · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docsend.com/view/ura947u6ck3urpqb, https://docsend.com/view/2bif3vfinpv657mh
+
+### 55. Yala  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+
+- **Rank (Ranking B — likelihood, ignoring actionability):** 55
 - **Protocol:** Yala (`yala`) · CDP · Bitcoin, Ethereum
 - **DefiLlama:** https://defillama.com/protocol/yala
 - **PRIORITY 47.24**  =  LIKELIHOOD 55.58 × ACTIONABILITY 85.0%
@@ -894,38 +960,37 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#yala|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#yala`
 - **Disclosure:** https://www.yala.org · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docs.yala.org/security-audits
 
-### 51. iZiSwap  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
+### 57. Wompie  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 51
-- **Protocol:** iZiSwap (`iziswap`) · Dexs · zkSync Era, Scroll, ZetaChain, Manta, Binance, Linea …
-- **DefiLlama:** https://defillama.com/protocol/iziswap
-- **PRIORITY 47.24**  =  LIKELIHOOD 55.58 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 18.68/50
+- **Rank (Ranking B — likelihood, ignoring actionability):** 57
+- **Protocol:** Wompie (`wompie`) · Yield · Binance, Arbitrum
+- **DefiLlama:** https://defillama.com/protocol/wompie
+- **PRIORITY 47.23**  =  LIKELIHOOD 55.57 × ACTIONABILITY 85.0%
+    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 18.67/50
     - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $1,662,324 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
+- **Value at risk:** $1,023,525 · **Band:** `IN_BAND`
+- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
 - **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_2plus_audits` — raises likelihood, measured lift ×2.084 (weight +0.73)
-    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
-    - `owner_is_eoa` — raises likelihood, measured lift ×2.019 (weight +0.70)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
+    - `owner_is_contract` — raises likelihood, measured lift ×4.297 (weight +1.46)
+    - `is_proxy` — raises likelihood, measured lift ×2.601 (weight +0.96)
     - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`FlashModule` @ 0x110dE362…(bsc), `iZiSwapFactory` @ 0x1502d025…(bsc)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for FlashModule@0x110dE362…(bsc), iZiSwapFactory@0x1502d025…(bsc); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `EOA_SINGLE_KEY`; no ERC-1967 admin chain was proven
+    - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
+    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
+- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
+    - Deployed source (`mWOM` @ 0xfc3a0ca6…(bsc), `mWomSV` @ 0xaa037b4b…(bsc)): prerequisites matched: claim_without_eligibility_map; no guard found
+    - deployed source read for mWOM@0xfc3a0ca6…(bsc), mWomSV@0xaa037b4b…(bsc); indicators matched: claim_without_eligibility_map
+- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
+- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
+- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** the ERC-1967 upgrade authority terminates in **a contract not fingerprinted by this run** (`UNKNOWN_CONTRACT`)
 - **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#iziswap|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#iziswap`
-- **Disclosure:** https://izumi.finance/trade/swap · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://docsend.com/view/ura947u6ck3urpqb, https://docsend.com/view/2bif3vfinpv657mh
+- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
+- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
+- **Evidence:** `protocols/deep_screened.jsonl#wompie|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#wompie`
+- **Disclosure:** https://www.magpiexyz.io · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Magpie-v1.1.pdf
 
-### 53. deBridge  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 58. deBridge  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 53
+- **Rank (Ranking B — likelihood, ignoring actionability):** 58
 - **Protocol:** deBridge (`debridge`) · Bridge · Ethereum, Binance, Arbitrum, Polygon, Heco, Sei
 - **DefiLlama:** https://defillama.com/protocol/debridge
 - **PRIORITY 47.23**  =  LIKELIHOOD 55.57 × ACTIONABILITY 85.0%
@@ -952,37 +1017,9 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
 - **Evidence:** `protocols/deep_screened.jsonl#debridge|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#debridge`
 - **Disclosure:** https://app.debridge.com · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/debridge-finance/debridge-security
 
-### 54. Wompie  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
+### 59. Sentora  —  `AUTH-ZERO-ADDRESS-ACCEPTED`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 54
-- **Protocol:** Wompie (`wompie`) · Yield · Binance, Arbitrum
-- **DefiLlama:** https://defillama.com/protocol/wompie
-- **PRIORITY 47.23**  =  LIKELIHOOD 55.57 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 18.67/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $1,023,525 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `owner_is_contract` — raises likelihood, measured lift ×4.297 (weight +1.46)
-    - `is_proxy` — raises likelihood, measured lift ×2.601 (weight +0.96)
-    - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
-    - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`mWOM` @ 0xfc3a0ca6…(bsc), `mWomSV` @ 0xaa037b4b…(bsc)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for mWOM@0xfc3a0ca6…(bsc), mWomSV@0xaa037b4b…(bsc); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** the ERC-1967 upgrade authority terminates in **a contract not fingerprinted by this run** (`UNKNOWN_CONTRACT`)
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#wompie|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#wompie`
-- **Disclosure:** https://www.magpiexyz.io · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Magpie-v1.1.pdf
-
-### 56. Sentora  —  `ACC-DUPLICATE-ID-ACCUMULATION`
-
-- **Rank (Ranking B — likelihood, ignoring actionability):** 56
+- **Rank (Ranking B — likelihood, ignoring actionability):** 59
 - **Protocol:** Sentora (`sentora`) · Risk Curators · Ethereum, Ink, Solana, Tempo
 - **DefiLlama:** https://defillama.com/protocol/sentora
 - **PRIORITY 2.77**  =  LIKELIHOOD 55.33 × ACTIONABILITY 5.0%
@@ -999,22 +1036,22 @@ Full write-ups below for the 32 entries that `candidates_by_priority.md` does no
     - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
     - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
     - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-- **Broken invariant tested:** An entitlement attached to an identifier may be counted at most once per period. A caller-supplied ID list must be deduplicated, or each ID's claim state consumed before the next read.
-    - Deployed source (`BoringVault` @ 0x13cc1b39…(ethereum)): prerequisites matched: id_array_loop_without_dedup; no guard found
-    - deployed source read for BoringVault@0x13cc1b39…(ethereum); indicators matched: id_array_loop_without_dedup
+- **Broken invariant tested:** Renouncing ownership must permanently remove the capability. A check of the form caller == owner must never pass when owner is the zero address, and no default-zero role may be satisfiable.
+    - Deployed source (`BoringVault` @ 0x13cc1b39…(ethereum)): prerequisites matched: owner_compare_without_nonzero; no guard found
+    - deployed source read for BoringVault@0x13cc1b39…(ethereum); indicators matched: owner_compare_without_nonzero
     - 1 implementation(s) behind a proxy are NOT verified on the explorer: implementation identity unresolved, score capped at 60
-- **Preconditions PRESENT / UNKNOWN:** src::id_array_loop_without_dedup, live_value_present, deployment_reachable_on_chain / none
+- **Preconditions PRESENT / UNKNOWN:** src::owner_compare_without_nonzero, live_value_present, deployment_reachable_on_chain / none
 - **Guards searched / found:** none / none in the reviewed path
 - **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** the ERC-1967 upgrade authority terminates in **a contract not fingerprinted by this run** (`UNKNOWN_CONTRACT`)
 - **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Consumed marker written inside the loop (kills the pair); IDs required strictly increasing
-- **Where to start:** On a fork, call the batch function with one ID repeated k times; payout must equal the single-ID payout.
-- **Evidence:** `protocols/deep_screened.jsonl#sentora|ACC-DUPLICATE-ID-ACCUMULATION`, `protocols/onchain_probes.json#sentora`
+- **Falsified by:** Modifier asserts non-zero owner (kills the pair); Renounce removes the functions' effect, not just the address
+- **Where to start:** Read owner/admin on every live contract; where zero, simulate every privileged selector from an arbitrary address and require a revert.
+- **Evidence:** `protocols/deep_screened.jsonl#sentora|AUTH-ZERO-ADDRESS-ACCEPTED`, `protocols/onchain_probes.json#sentora`
 - **Disclosure:** https://sentora.com/ · no audit link listed
 
-### 57. TermFinance Vaults  —  `UPGRADE-INITIALIZER-REACHABLE-LIVE`
+### 60. TermFinance Vaults  —  `UPGRADE-INITIALIZER-REACHABLE-LIVE`
 
-- **Rank (Ranking B — likelihood, ignoring actionability):** 57
+- **Rank (Ranking B — likelihood, ignoring actionability):** 60
 - **Protocol:** TermFinance Vaults (`termfinance-vaults`) · Yield · Ethereum, Binance, Avalanche, Plasma, Arbitrum, Base
 - **DefiLlama:** https://defillama.com/protocol/termfinance-vaults
 - **PRIORITY 33.19**  =  LIKELIHOOD 55.32 × ACTIONABILITY 60.0%

@@ -2165,7 +2165,8 @@
   "band_reason": "above the band but retained: explicit specific danger evidence",
   "tvl": 1508509955.509695,
   "danger_reasons": [
-   "condition HALLMARK_PRIOR_INCIDENT"
+   "condition HALLMARK_PRIOR_INCIDENT",
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
   "attack_surface": 7.29,
   "surface_signals": [
@@ -4353,7 +4354,8 @@
   "band_reason": "above the band but retained: explicit specific danger evidence",
   "tvl": 561472962.6000882,
   "danger_reasons": [
-   "condition HALLMARK_PRIOR_INCIDENT"
+   "condition HALLMARK_PRIOR_INCIDENT",
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
   "attack_surface": 9.19,
   "surface_signals": [
@@ -6147,7 +6149,8 @@
   "band_reason": "above the band but retained: explicit specific danger evidence",
   "tvl": 276144936.1707824,
   "danger_reasons": [
-   "condition HALLMARK_PRIOR_INCIDENT"
+   "condition HALLMARK_PRIOR_INCIDENT",
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
   "attack_surface": 9.01,
   "surface_signals": [
@@ -8129,6 +8132,7 @@
   "band_reason": "above the band but retained: explicit specific danger evidence",
   "tvl": 186365986.9980245,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 3 recorded hacks"
   ],
   "attack_surface": 8.19,
@@ -18701,6 +18705,7 @@
   "band_reason": "above the band but retained: explicit specific danger evidence",
   "tvl": 37621575.21462167,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 4 recorded hacks"
   ],
   "attack_surface": 14.07,
@@ -19603,6 +19608,7 @@
   "band_reason": "above the band but retained: explicit specific danger evidence",
   "tvl": 32632264.336950462,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 3 recorded hacks"
   ],
   "attack_surface": 9.23,
@@ -20862,7 +20868,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 29352221.837958448,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.85,
   "surface_signals": [
    {
@@ -20936,7 +20944,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.71
+  "screen_priority": 13.71
  },
  {
   "slug": "3f",
@@ -23042,7 +23050,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 23833613.387215905,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.54,
   "surface_signals": [
    {
@@ -23105,7 +23115,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.72
+  "screen_priority": 11.72
  },
  {
   "slug": "goldfinger",
@@ -23801,7 +23811,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 21601384.4243852,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 13.15,
   "surface_signals": [
    {
@@ -23869,7 +23881,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.89
+  "screen_priority": 13.89
  },
  {
   "slug": "bulk",
@@ -23975,7 +23987,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 20854791.279946007,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.7,
   "surface_signals": [
    {
@@ -24044,7 +24058,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.62
+  "screen_priority": 13.62
  },
  {
   "slug": "zoo-finance",
@@ -24384,7 +24398,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 20086886.52101466,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.9,
   "surface_signals": [
    {
@@ -24441,14 +24457,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.94
+  "screen_priority": 11.94
  },
  {
   "slug": "cronos-zkevm-bridge",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 20070907.039794967,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.5,
   "surface_signals": [
    {
@@ -24504,7 +24522,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.1
+  "screen_priority": 11.1
  },
  {
   "slug": "infrared-finance",
@@ -26795,7 +26813,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 15558533.718424039,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.19,
   "surface_signals": [
    {
@@ -26858,7 +26878,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.31
+  "screen_priority": 10.31
  },
  {
   "slug": "pharaoh-v3",
@@ -28479,6 +28499,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 12627626.8757307,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 2 recorded hacks"
   ],
   "attack_surface": 14.0,
@@ -28650,7 +28671,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 12450702.821594812,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 85.0 at L4 guard review"
+  ],
   "attack_surface": 7.69,
   "surface_signals": [
    {
@@ -28714,7 +28737,7 @@
     "classification": "Governance"
    }
   ],
-  "screen_priority": 4.61
+  "screen_priority": 10.61
  },
  {
   "slug": "fulcrom-perps",
@@ -29304,7 +29327,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 11948017.005767724,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.29,
   "surface_signals": [
    {
@@ -29360,7 +29385,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.77
+  "screen_priority": 12.77
  },
  {
   "slug": "kava-mint",
@@ -29518,9 +29543,7 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 11793009.500953492,
-  "danger_reasons": [
-   "a deployed-source pair already scores 73.8 at L4 guard review"
-  ],
+  "danger_reasons": [],
   "attack_surface": 8.11,
   "surface_signals": [
    {
@@ -29569,7 +29592,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.87
+  "screen_priority": 4.87
  },
  {
   "slug": "merchant-moe-liquidity-book",
@@ -30031,7 +30054,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 11365299.561572947,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.39,
   "surface_signals": [
    {
@@ -30090,7 +30115,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.43
+  "screen_priority": 13.43
  },
  {
   "slug": "yieldfi",
@@ -30924,7 +30949,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 10396247.42405272,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.12,
   "surface_signals": [
    {
@@ -30969,7 +30996,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.27
+  "screen_priority": 10.27
  },
  {
   "slug": "zyfai",
@@ -31666,7 +31693,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 9827539.87922932,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.26,
   "surface_signals": [
    {
@@ -31729,7 +31758,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.57
+  "screen_priority": 15.57
  },
  {
   "slug": "endurance-bridge",
@@ -31903,7 +31932,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 9674729.84042462,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.18,
   "surface_signals": [
    {
@@ -31946,7 +31977,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.4
+  "screen_priority": 10.4
  },
  {
   "slug": "astroport",
@@ -32021,7 +32052,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 9610101.741112264,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.87,
   "surface_signals": [
    {
@@ -32060,7 +32093,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.69
+  "screen_priority": 12.69
  },
  {
   "slug": "spectra-metavaults",
@@ -32592,7 +32625,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 9158938.180295004,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.29,
   "surface_signals": [
    {
@@ -32650,7 +32685,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.2
+  "screen_priority": 12.2
  },
  {
   "slug": "hydro-lst",
@@ -33390,7 +33425,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 8297367.120135261,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.6,
   "surface_signals": [
    {
@@ -33441,7 +33478,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.31
+  "screen_priority": 13.31
  },
  {
   "slug": "granite",
@@ -34243,7 +34280,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 7651606.234775617,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.5,
   "surface_signals": [
    {
@@ -34299,7 +34338,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.22
+  "screen_priority": 13.22
  },
  {
   "slug": "revert-lend",
@@ -34595,9 +34634,17 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 7346973.2531615235,
-  "danger_reasons": [],
-  "attack_surface": 6.89,
+  "danger_reasons": [
+   "an implementation behind a live proxy is unverified on the explorer"
+  ],
+  "attack_surface": 8.31,
   "surface_signals": [
+   {
+    "signal": "unverified_implementation",
+    "weight": 0.724,
+    "measured_lift": 2.062,
+    "direction": "raises likelihood"
+   },
    {
     "signal": "multichain_gt3",
     "weight": 0.712,
@@ -34640,7 +34687,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.86
+  "screen_priority": 13.06
  },
  {
   "slug": "sparkdex-v3.1",
@@ -35025,7 +35072,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 7126828.136484409,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.27,
   "surface_signals": [
    {
@@ -35083,7 +35132,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.18
+  "screen_priority": 12.18
  },
  {
   "slug": "scrub-invest",
@@ -35124,7 +35173,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 7049095.873049522,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.83,
   "surface_signals": [
    {
@@ -35169,7 +35220,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.36
+  "screen_priority": 14.36
  },
  {
   "slug": "pac-finance",
@@ -35231,7 +35282,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 6997094.600508794,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.93,
   "surface_signals": [
    {
@@ -35263,7 +35316,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.04
+  "screen_priority": 11.04
  },
  {
   "slug": "hypurrfi-pooled",
@@ -35585,13 +35638,21 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 6641112.962225581,
-  "danger_reasons": [],
-  "attack_surface": 6.18,
+  "danger_reasons": [
+   "an implementation behind a live proxy is unverified on the explorer"
+  ],
+  "attack_surface": 7.6,
   "surface_signals": [
    {
     "signal": "is_proxy",
     "weight": 0.956,
     "measured_lift": 2.601,
+    "direction": "raises likelihood"
+   },
+   {
+    "signal": "unverified_implementation",
+    "weight": 0.724,
+    "measured_lift": 2.062,
     "direction": "raises likelihood"
    },
    {
@@ -35641,7 +35702,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.25
+  "screen_priority": 12.46
  },
  {
   "slug": "endur",
@@ -35748,7 +35809,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 6571388.65203143,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.01,
   "surface_signals": [
    {
@@ -35814,7 +35877,7 @@
     "classification": "Protocol Logic"
    }
   ],
-  "screen_priority": 10.21
+  "screen_priority": 16.21
  },
  {
   "slug": "venomstake",
@@ -38036,7 +38099,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 5567620.704465005,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.37,
   "surface_signals": [
    {
@@ -38087,7 +38152,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.11
+  "screen_priority": 13.11
  },
  {
   "slug": "fragmetric",
@@ -39014,7 +39079,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 5231086.80142506,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.89,
   "surface_signals": [
    {
@@ -39064,7 +39131,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.86
+  "screen_priority": 11.86
  },
  {
   "slug": "dinero-(pxeth)",
@@ -39123,7 +39190,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 5193794.50911377,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.21,
   "surface_signals": [
    {
@@ -39175,7 +39244,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.28
+  "screen_priority": 11.28
  },
  {
   "slug": "wing-finance",
@@ -39266,6 +39335,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 5172000.438215795,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 2 recorded hacks"
   ],
   "attack_surface": 3.77,
@@ -39972,7 +40042,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 4905717.876518767,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 16.51,
   "surface_signals": [
    {
@@ -40041,14 +40113,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 14.03
+  "screen_priority": 20.03
  },
  {
   "slug": "tranchess-yield",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 4871754.619200846,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.3,
   "surface_signals": [
    {
@@ -40100,7 +40174,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.61
+  "screen_priority": 15.61
  },
  {
   "slug": "stakingverse",
@@ -40764,6 +40838,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 4667807.27631079,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 3 recorded hacks"
   ],
   "attack_surface": 13.67,
@@ -41188,7 +41263,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 4554288.175397093,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.85,
   "surface_signals": [
    {
@@ -41245,7 +41322,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.07
+  "screen_priority": 16.07
  },
  {
   "slug": "inverse-finance-frontier",
@@ -41377,7 +41454,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 4504700.104826954,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.23,
   "surface_signals": [
    {
@@ -41433,7 +41512,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.15
+  "screen_priority": 12.15
  },
  {
   "slug": "penpie",
@@ -41764,7 +41843,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 4386185.492006255,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.21,
   "surface_signals": [
    {
@@ -41809,7 +41890,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.13
+  "screen_priority": 12.13
  },
  {
   "slug": "backedfi",
@@ -44369,6 +44450,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 3597277.1150971693,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 2 recorded hacks"
   ],
   "attack_surface": 16.23,
@@ -44702,7 +44784,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 3562036.0851239604,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.6,
   "surface_signals": [
    {
@@ -44758,7 +44842,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.31
+  "screen_priority": 13.31
  },
  {
   "slug": "stakestone-berachain-vault",
@@ -48533,7 +48617,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 2604526.0984208533,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 4.73,
   "surface_signals": [
    {
@@ -48584,7 +48670,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.02
+  "screen_priority": 10.02
  },
  {
   "slug": "bitflow",
@@ -49883,7 +49969,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 2313688.6203132495,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.64,
   "surface_signals": [
    {
@@ -49942,7 +50030,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.74
+  "screen_priority": 16.74
  },
  {
   "slug": "sophon-farm",
@@ -50248,6 +50336,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 2258778.4130716743,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 2 recorded hacks"
   ],
   "attack_surface": 5.98,
@@ -50388,7 +50477,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 2237939.8074620836,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.21,
   "surface_signals": [
    {
@@ -50451,7 +50542,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.53
+  "screen_priority": 15.53
  },
  {
   "slug": "sunpump",
@@ -50606,7 +50697,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 2203636.6962252175,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.49,
   "surface_signals": [
    {
@@ -50646,7 +50739,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.67
+  "screen_priority": 10.67
  },
  {
   "slug": "thruster-v2",
@@ -51110,7 +51203,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 2154452.7380301086,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.17,
   "surface_signals": [
    {
@@ -51149,7 +51244,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.24
+  "screen_priority": 11.24
  },
  {
   "slug": "balanced-exchange",
@@ -51387,7 +51482,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 2079499.6048667345,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.73,
   "surface_signals": [
    {
@@ -51432,7 +51529,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.27
+  "screen_priority": 14.27
  },
  {
   "slug": "revault",
@@ -51551,7 +51648,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 2071397.2901058944,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.35,
   "surface_signals": [
    {
@@ -51615,7 +51714,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.4
+  "screen_priority": 11.4
  },
  {
   "slug": "ionic-protocol",
@@ -52401,7 +52500,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1967102.182563387,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.84,
   "surface_signals": [
    {
@@ -52457,7 +52558,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.91
+  "screen_priority": 16.91
  },
  {
   "slug": "bemo-v1",
@@ -52711,9 +52812,17 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1937508.423508314,
-  "danger_reasons": [],
-  "attack_surface": 6.89,
+  "danger_reasons": [
+   "an implementation behind a live proxy is unverified on the explorer"
+  ],
+  "attack_surface": 8.31,
   "surface_signals": [
+   {
+    "signal": "unverified_implementation",
+    "weight": 0.724,
+    "measured_lift": 2.062,
+    "direction": "raises likelihood"
+   },
    {
     "signal": "multichain_gt3",
     "weight": 0.712,
@@ -52756,7 +52865,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.86
+  "screen_priority": 13.06
  },
  {
   "slug": "tradegpt",
@@ -54309,7 +54418,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1783882.020170349,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.34,
   "surface_signals": [
    {
@@ -54365,7 +54476,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.49
+  "screen_priority": 16.49
  },
  {
   "slug": "hyperbeat-usd",
@@ -54424,7 +54535,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1759082.9543222664,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.79,
   "surface_signals": [
    {
@@ -54486,7 +54599,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.02
+  "screen_priority": 16.02
  },
  {
   "slug": "extra-finance-xlend",
@@ -54996,7 +55109,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1662323.9412557483,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.21,
   "surface_signals": [
    {
@@ -55052,7 +55167,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.53
+  "screen_priority": 15.53
  },
  {
   "slug": "magma",
@@ -55099,7 +55214,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1657780.880629734,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.76,
   "surface_signals": [
    {
@@ -55161,7 +55278,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.0
+  "screen_priority": 16.0
  },
  {
   "slug": "creth2",
@@ -56175,7 +56292,8 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1567482.7963453364,
   "danger_reasons": [
-   "condition HALLMARK_PRIOR_INCIDENT"
+   "condition HALLMARK_PRIOR_INCIDENT",
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
   "attack_surface": 14.3,
   "surface_signals": [
@@ -56245,7 +56363,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1554175.5667022562,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.71,
   "surface_signals": [
    {
@@ -56296,7 +56416,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.85
+  "screen_priority": 10.85
  },
  {
   "slug": "elfi-protocol",
@@ -56791,7 +56911,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1507529.6644028754,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.98,
   "surface_signals": [
    {
@@ -56830,7 +56952,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.08
+  "screen_priority": 11.08
  },
  {
   "slug": "nerve",
@@ -57364,8 +57486,10 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1453111.0393770412,
-  "danger_reasons": [],
-  "attack_surface": 11.21,
+  "danger_reasons": [
+   "an implementation behind a live proxy is unverified on the explorer"
+  ],
+  "attack_surface": 12.63,
   "surface_signals": [
    {
     "signal": "has_oracle_declared",
@@ -57377,6 +57501,12 @@
     "signal": "has_2plus_audits",
     "weight": 0.735,
     "measured_lift": 2.084,
+    "direction": "raises likelihood"
+   },
+   {
+    "signal": "unverified_implementation",
+    "weight": 0.724,
+    "measured_lift": 2.062,
     "direction": "raises likelihood"
    },
    {
@@ -57421,7 +57551,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.53
+  "screen_priority": 16.74
  },
  {
   "slug": "interest-protocol",
@@ -58181,7 +58311,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1402690.2515467429,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.76,
   "surface_signals": [
    {
@@ -58232,7 +58364,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.45
+  "screen_priority": 13.45
  },
  {
   "slug": "rosen-bridge",
@@ -58690,6 +58822,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1374780.6301502262,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 3 recorded hacks"
   ],
   "attack_surface": 12.44,
@@ -58769,7 +58902,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1364610.315397083,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.51,
   "surface_signals": [
    {
@@ -58821,7 +58956,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.23
+  "screen_priority": 13.23
  },
  {
   "slug": "phux",
@@ -59968,7 +60103,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1246899.438902638,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.26,
   "surface_signals": [
    {
@@ -60032,7 +60169,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.17
+  "screen_priority": 12.17
  },
  {
   "slug": "unchain-x",
@@ -60181,7 +60318,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1222366.4916765818,
   "danger_reasons": [
-   "a deployed-source pair already scores 77.5 at L4 guard review"
+   "a deployed-source pair already scores 75.0 at L4 guard review"
   ],
   "attack_surface": 9.51,
   "surface_signals": [
@@ -60538,7 +60675,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1202759.6973717865,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.36,
   "surface_signals": [
    {
@@ -60584,7 +60723,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.56
+  "screen_priority": 10.56
  },
  {
   "slug": "bounce.tech",
@@ -61891,8 +62030,10 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1120759.3084905,
-  "danger_reasons": [],
-  "attack_surface": 14.06,
+  "danger_reasons": [
+   "an implementation behind a live proxy is unverified on the explorer"
+  ],
+  "attack_surface": 15.48,
   "surface_signals": [
    {
     "signal": "owner_is_contract",
@@ -61904,6 +62045,12 @@
     "signal": "is_proxy",
     "weight": 0.956,
     "measured_lift": 2.601,
+    "direction": "raises likelihood"
+   },
+   {
+    "signal": "unverified_implementation",
+    "weight": 0.724,
+    "measured_lift": 2.062,
     "direction": "raises likelihood"
    },
    {
@@ -61953,7 +62100,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 11.95
+  "screen_priority": 19.16
  },
  {
   "slug": "kaskad",
@@ -63235,7 +63382,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1046794.1870858357,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 14.26,
   "surface_signals": [
    {
@@ -63313,7 +63462,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 12.12
+  "screen_priority": 18.12
  },
  {
   "slug": "ouroboros-capital",
@@ -63372,21 +63521,13 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1044111.689380362,
-  "danger_reasons": [
-   "an implementation behind a live proxy is unverified on the explorer"
-  ],
-  "attack_surface": 13.63,
+  "danger_reasons": [],
+  "attack_surface": 12.21,
   "surface_signals": [
    {
     "signal": "has_2plus_audits",
     "weight": 0.735,
     "measured_lift": 2.084,
-    "direction": "raises likelihood"
-   },
-   {
-    "signal": "unverified_implementation",
-    "weight": 0.724,
-    "measured_lift": 2.062,
     "direction": "raises likelihood"
    },
    {
@@ -63442,7 +63583,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 17.59
+  "screen_priority": 10.38
  },
  {
   "slug": "ribbon-earn",
@@ -63883,7 +64024,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 1023525.3782775126,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.2,
   "surface_signals": [
    {
@@ -63933,7 +64076,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.52
+  "screen_priority": 15.52
  },
  {
   "slug": "eklipse-finance",
@@ -64457,7 +64600,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 990526.7954351236,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.05,
   "surface_signals": [
    {
@@ -64497,7 +64642,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.05
+  "screen_priority": 12.05
  },
  {
   "slug": "hyward",
@@ -64708,9 +64853,7 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 973621.0734578163,
-  "danger_reasons": [
-   "a deployed-source pair already scores 73.8 at L4 guard review"
-  ],
+  "danger_reasons": [],
   "attack_surface": 3.28,
   "surface_signals": [
    {
@@ -64749,7 +64892,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.28
+  "screen_priority": 3.28
  },
  {
   "slug": "gmd-protocol",
@@ -67174,7 +67317,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 834205.3992507586,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.42,
   "surface_signals": [
    {
@@ -67219,7 +67364,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.42
+  "screen_priority": 15.42
  },
  {
   "slug": "gold-dao",
@@ -67490,7 +67635,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 819567.835684996,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.25,
   "surface_signals": [
    {
@@ -67535,7 +67682,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.25
+  "screen_priority": 11.25
  },
  {
   "slug": "artemis-finance",
@@ -68568,7 +68715,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 769895.2490105173,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.81,
   "surface_signals": [
    {
@@ -68620,14 +68769,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.81
+  "screen_priority": 11.81
  },
  {
   "slug": "apostro",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 768351.1363625727,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.9,
   "surface_signals": [
    {
@@ -68678,7 +68829,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.9
+  "screen_priority": 11.9
  },
  {
   "slug": "optim-finance",
@@ -69294,7 +69445,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 738116.2672536841,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.41,
   "surface_signals": [
    {
@@ -69351,7 +69504,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.41
+  "screen_priority": 15.41
  },
  {
   "slug": "dinosaur-eggs",
@@ -69661,17 +69814,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 719813.488806673,
-  "danger_reasons": [
-   "an implementation behind a live proxy is unverified on the explorer"
-  ],
-  "attack_surface": 7.23,
+  "danger_reasons": [],
+  "attack_surface": 5.81,
   "surface_signals": [
-   {
-    "signal": "unverified_implementation",
-    "weight": 0.724,
-    "measured_lift": 2.062,
-    "direction": "raises likelihood"
-   },
    {
     "signal": "multichain_gt3",
     "weight": 0.712,
@@ -69720,7 +69865,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 13.23
+  "screen_priority": 5.81
  },
  {
   "slug": "cian-automation",
@@ -70060,6 +70205,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 693777.8138104784,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 2 recorded hacks"
   ],
   "attack_surface": 13.68,
@@ -72480,7 +72626,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 622677.3789570851,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 10.05,
   "surface_signals": [
    {
@@ -72548,14 +72696,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.05
+  "screen_priority": 16.05
  },
  {
   "slug": "landshare",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 621293.24,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.69,
   "surface_signals": [
    {
@@ -72617,14 +72767,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.69
+  "screen_priority": 14.69
  },
  {
   "slug": "babydoge-bridge",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 620408.1388295658,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.25,
   "surface_signals": [
    {
@@ -72663,7 +72815,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.25
+  "screen_priority": 12.25
  },
  {
   "slug": "parallel-protocol-v2",
@@ -73127,7 +73279,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 610365.0957083593,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 85.0 at L4 guard review"
+  ],
   "attack_surface": 7.59,
   "surface_signals": [
    {
@@ -73166,7 +73320,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.59
+  "screen_priority": 13.59
  },
  {
   "slug": "magicsea-amm",
@@ -73611,7 +73765,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 596993.5534958887,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 4.32,
   "surface_signals": [
    {
@@ -73655,7 +73811,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.32
+  "screen_priority": 10.32
  },
  {
   "slug": "impermax-v2",
@@ -74517,7 +74673,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 576061.6634300734,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.0,
   "surface_signals": [
    {
@@ -74571,7 +74729,7 @@
     "classification": "Protocol Logic"
    }
   ],
-  "screen_priority": 6.0
+  "screen_priority": 12.0
  },
  {
   "slug": "openeden-prism",
@@ -74970,9 +75128,7 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 563158.3433689807,
-  "danger_reasons": [
-   "a deployed-source pair already scores 73.8 at L4 guard review"
-  ],
+  "danger_reasons": [],
   "attack_surface": 3.77,
   "surface_signals": [
    {
@@ -75012,7 +75168,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.77
+  "screen_priority": 3.77
  },
  {
   "slug": "angles-stake",
@@ -75342,7 +75498,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 557156.9430055448,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.5,
   "surface_signals": [
    {
@@ -75393,7 +75551,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 12.5
+  "screen_priority": 18.5
  },
  {
   "slug": "knightswap-finance",
@@ -75682,7 +75840,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 550021.708207759,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.0,
   "surface_signals": [
    {
@@ -75722,7 +75882,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.0
+  "screen_priority": 12.0
  },
  {
   "slug": "zunami-protocol",
@@ -75730,6 +75890,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 548288.9845798907,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 2 recorded hacks"
   ],
   "attack_surface": 12.02,
@@ -76558,7 +76719,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 528140.8598136822,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.91,
   "surface_signals": [
    {
@@ -76615,7 +76778,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.91
+  "screen_priority": 14.91
  },
  {
   "slug": "harvest-flow",
@@ -76662,7 +76825,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 524049.8545738129,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.15,
   "surface_signals": [
    {
@@ -76712,14 +76877,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.15
+  "screen_priority": 15.15
  },
  {
   "slug": "ufarm-digital",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 523061.51142475766,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.97,
   "surface_signals": [
    {
@@ -76764,14 +76931,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.97
+  "screen_priority": 12.97
  },
  {
   "slug": "grizzlyfi-hives",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 522589.995104022,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 10.39,
   "surface_signals": [
    {
@@ -76829,7 +76998,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.39
+  "screen_priority": 16.39
  },
  {
   "slug": "lens-chain",
@@ -77063,7 +77232,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 520188.6732555989,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 14.51,
   "surface_signals": [
    {
@@ -77132,7 +77303,7 @@
     "classification": "Token & Share Accounting"
    }
   ],
-  "screen_priority": 14.51
+  "screen_priority": 20.51
  },
  {
   "slug": "armada",
@@ -77323,7 +77494,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 515965.11901678424,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.87,
   "surface_signals": [
    {
@@ -77373,7 +77546,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.87
+  "screen_priority": 12.87
  },
  {
   "slug": "shido-dex-v3",
@@ -77420,7 +77593,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 509095.2948318249,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.98,
   "surface_signals": [
    {
@@ -77467,7 +77642,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.98
+  "screen_priority": 11.98
  },
  {
   "slug": "capricorn",
@@ -78214,7 +78389,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 492714.2951389442,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.33,
   "surface_signals": [
    {
@@ -78260,7 +78437,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.33
+  "screen_priority": 15.33
  },
  {
   "slug": "ajna-v1",
@@ -78684,7 +78861,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 482133.8748382718,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.68,
   "surface_signals": [
    {
@@ -78741,14 +78920,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 12.68
+  "screen_priority": 18.68
  },
  {
   "slug": "wombex-finance",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 479093.81711541564,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 10.2,
   "surface_signals": [
    {
@@ -78794,7 +78975,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.2
+  "screen_priority": 16.2
  },
  {
   "slug": "wcc",
@@ -79799,7 +79980,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 462186.6915017322,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.98,
   "surface_signals": [
    {
@@ -79826,7 +80009,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.98
+  "screen_priority": 11.98
  },
  {
   "slug": "obsidian",
@@ -80307,7 +80490,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 453693.1029581321,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 13.19,
   "surface_signals": [
    {
@@ -80371,7 +80556,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 13.19
+  "screen_priority": 19.19
  },
  {
   "slug": "arca-labs-arcoin",
@@ -81301,7 +81486,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 431252.453823833,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.71,
   "surface_signals": [
    {
@@ -81352,7 +81539,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.71
+  "screen_priority": 11.71
  },
  {
   "slug": "ezmanager",
@@ -81847,7 +82034,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 419405.65844666725,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.85,
   "surface_signals": [
    {
@@ -81905,7 +82094,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.85
+  "screen_priority": 12.85
  },
  {
   "slug": "up-v2",
@@ -82038,7 +82227,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 414424.8572788713,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.49,
   "surface_signals": [
    {
@@ -82089,7 +82280,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.49
+  "screen_priority": 14.49
  },
  {
   "slug": "apy-finance",
@@ -82725,7 +82916,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 403728.21622257837,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 4.68,
   "surface_signals": [
    {
@@ -82770,7 +82963,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.68
+  "screen_priority": 10.68
  },
  {
   "slug": "usdfc",
@@ -83422,7 +83615,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 395132.38369169156,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.98,
   "surface_signals": [
    {
@@ -83468,7 +83663,7 @@
     "classification": "Bridge & Cross-Chain"
    }
   ],
-  "screen_priority": 5.98
+  "screen_priority": 11.98
  },
  {
   "slug": "blasterswap-v2",
@@ -85119,7 +85314,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 362549.13039734797,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.12,
   "surface_signals": [
    {
@@ -85169,7 +85366,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.12
+  "screen_priority": 11.12
  },
  {
   "slug": "tradoor-ton",
@@ -85918,9 +86115,7 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 347499.6176423172,
-  "danger_reasons": [
-   "a deployed-source pair already scores 73.8 at L4 guard review"
-  ],
+  "danger_reasons": [],
   "attack_surface": 8.5,
   "surface_signals": [
    {
@@ -85972,7 +86167,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 14.5
+  "screen_priority": 8.5
  },
  {
   "slug": "nostra-pools",
@@ -86513,7 +86708,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 337795.62740954023,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.41,
   "surface_signals": [
    {
@@ -86578,7 +86775,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.41
+  "screen_priority": 15.41
  },
  {
   "slug": "boringdao",
@@ -86707,7 +86904,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 335996.46945276996,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.83,
   "surface_signals": [
    {
@@ -86746,7 +86945,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.83
+  "screen_priority": 13.83
  },
  {
   "slug": "spiritswap-amm",
@@ -86788,7 +86987,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 331656.3019646857,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.07,
   "surface_signals": [
    {
@@ -86858,7 +87059,7 @@
     "classification": "Input Validation"
    }
   ],
-  "screen_priority": 9.07
+  "screen_priority": 15.07
  },
  {
   "slug": "quipuswap-v1",
@@ -87396,7 +87597,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 318885.2691532549,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.84,
   "surface_signals": [
    {
@@ -87447,7 +87650,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.84
+  "screen_priority": 14.84
  },
  {
   "slug": "mobius-money",
@@ -88225,7 +88428,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 308235.2563122522,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.1,
   "surface_signals": [
    {
@@ -88270,7 +88475,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.32
+  "screen_priority": 11.32
  },
  {
   "slug": "colorpool",
@@ -89141,9 +89346,7 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 290609.3153435462,
-  "danger_reasons": [
-   "a deployed-source pair already scores 73.8 at L4 guard review"
-  ],
+  "danger_reasons": [],
   "attack_surface": 8.52,
   "surface_signals": [
    {
@@ -89195,7 +89398,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 14.52
+  "screen_priority": 8.52
  },
  {
   "slug": "bluewhale",
@@ -89711,7 +89914,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 283971.1767241613,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.51,
   "surface_signals": [
    {
@@ -89762,7 +89967,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.51
+  "screen_priority": 14.51
  },
  {
   "slug": "atoma",
@@ -90676,7 +90881,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 266989.2797168308,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.87,
   "surface_signals": [
    {
@@ -90728,7 +90935,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.87
+  "screen_priority": 14.87
  },
  {
   "slug": "core-markets",
@@ -91576,7 +91783,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 260112.99818536933,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.35,
   "surface_signals": [
    {
@@ -91626,7 +91835,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.35
+  "screen_priority": 14.35
  },
  {
   "slug": "unipower",
@@ -92196,7 +92405,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 253917.41637553813,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.95,
   "surface_signals": [
    {
@@ -92252,7 +92463,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.95
+  "screen_priority": 14.95
  },
  {
   "slug": "0x0.ai",
@@ -92857,7 +93068,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 247340.97508994662,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.19,
   "surface_signals": [
    {
@@ -92902,7 +93115,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.19
+  "screen_priority": 15.19
  },
  {
   "slug": "wemix-liquid-staking",
@@ -93148,7 +93361,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 244781.91540308011,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.39,
   "surface_signals": [
    {
@@ -93199,14 +93414,16 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.39
+  "screen_priority": 12.39
  },
  {
   "slug": "preon-finance",
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 244290.52099986156,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.62,
   "surface_signals": [
    {
@@ -93251,7 +93468,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.62
+  "screen_priority": 14.62
  },
  {
   "slug": "pureswap",
@@ -93650,7 +93867,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 237912.00926614783,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.59,
   "surface_signals": [
    {
@@ -93712,7 +93931,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.59
+  "screen_priority": 15.59
  },
  {
   "slug": "amply-finance",
@@ -95330,7 +95549,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 224044.2497197252,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.28,
   "surface_signals": [
    {
@@ -95398,7 +95619,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 11.28
+  "screen_priority": 17.28
  },
  {
   "slug": "inswap",
@@ -96755,13 +96976,21 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 215633.6165048849,
-  "danger_reasons": [],
-  "attack_surface": 11.87,
+  "danger_reasons": [
+   "an implementation behind a live proxy is unverified on the explorer"
+  ],
+  "attack_surface": 13.29,
   "surface_signals": [
    {
     "signal": "has_2plus_audits",
     "weight": 0.735,
     "measured_lift": 2.084,
+    "direction": "raises likelihood"
+   },
+   {
+    "signal": "unverified_implementation",
+    "weight": 0.724,
+    "measured_lift": 2.062,
     "direction": "raises likelihood"
    },
    {
@@ -96812,7 +97041,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 11.87
+  "screen_priority": 19.29
  },
  {
   "slug": "solid-yield",
@@ -97082,7 +97311,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 210764.64640164882,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.93,
   "surface_signals": [
    {
@@ -97128,7 +97359,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.93
+  "screen_priority": 14.93
  },
  {
   "slug": "arcade.xyz",
@@ -97448,7 +97679,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 207363.3880689984,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 10.97,
   "surface_signals": [
    {
@@ -97491,7 +97724,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.97
+  "screen_priority": 16.97
  },
  {
   "slug": "cat-in-a-box",
@@ -97667,7 +97900,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 205238.01883935268,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.2,
   "surface_signals": [
    {
@@ -97723,7 +97958,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 11.2
+  "screen_priority": 17.2
  },
  {
   "slug": "lien",
@@ -97974,7 +98209,8 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 203353.89686824664,
   "danger_reasons": [
-   "condition HALLMARK_PRIOR_INCIDENT"
+   "condition HALLMARK_PRIOR_INCIDENT",
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
   "attack_surface": 7.83,
   "surface_signals": [
@@ -98289,7 +98525,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 201442.21051171995,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.26,
   "surface_signals": [
    {
@@ -98353,7 +98591,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.26
+  "screen_priority": 14.26
  },
  {
   "slug": "picnic",
@@ -98609,7 +98847,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 197607.05663248213,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 75.0 at L4 guard review"
+  ],
   "attack_surface": 16.87,
   "surface_signals": [
    {
@@ -98684,7 +98924,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 16.87
+  "screen_priority": 22.87
  },
  {
   "slug": "klaybank",
@@ -99202,7 +99442,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 192828.20198747976,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.85,
   "surface_signals": [
    {
@@ -99241,7 +99483,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.85
+  "screen_priority": 13.85
  },
  {
   "slug": "orchai-lst",
@@ -101269,7 +101511,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 177748.61744471465,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.0,
   "surface_signals": [
    {
@@ -101309,7 +101553,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.0
+  "screen_priority": 12.0
  },
  {
   "slug": "adamant-finance",
@@ -102021,7 +102265,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 169481.8752226583,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 13.26,
   "surface_signals": [
    {
@@ -102091,7 +102337,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 13.26
+  "screen_priority": 19.26
  },
  {
   "slug": "granary-finance",
@@ -102876,7 +103122,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 163257.42675144607,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 75.0 at L4 guard review"
+  ],
   "attack_surface": 6.42,
   "surface_signals": [
    {
@@ -102920,7 +103168,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.42
+  "screen_priority": 12.42
  },
  {
   "slug": "dopple-finance",
@@ -103311,7 +103559,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 160743.3246315089,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.33,
   "surface_signals": [
    {
@@ -103356,7 +103606,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.33
+  "screen_priority": 15.33
  },
  {
   "slug": "enosys-amm-v2",
@@ -103664,7 +103914,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 158342.2805495833,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.59,
   "surface_signals": [
    {
@@ -103703,7 +103955,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.59
+  "screen_priority": 12.59
  },
  {
   "slug": "hourglass",
@@ -103814,7 +104066,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 157388.6416108785,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.04,
   "surface_signals": [
    {
@@ -103858,7 +104112,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.04
+  "screen_priority": 12.04
  },
  {
   "slug": "inertia",
@@ -104408,7 +104662,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 153633.10340702953,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 13.19,
   "surface_signals": [
    {
@@ -104468,7 +104724,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 13.19
+  "screen_priority": 19.19
  },
  {
   "slug": "nested",
@@ -104990,17 +105246,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 150151.82807209573,
-  "danger_reasons": [
-   "an implementation behind a live proxy is unverified on the explorer"
-  ],
-  "attack_surface": 10.44,
+  "danger_reasons": [],
+  "attack_surface": 9.02,
   "surface_signals": [
-   {
-    "signal": "unverified_implementation",
-    "weight": 0.724,
-    "measured_lift": 2.062,
-    "direction": "raises likelihood"
-   },
    {
     "signal": "multichain_gt3",
     "weight": 0.712,
@@ -105053,7 +105301,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 16.44
+  "screen_priority": 9.02
  },
  {
   "slug": "green-planet",
@@ -106162,7 +106410,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 139095.77265208328,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.57,
   "surface_signals": [
    {
@@ -106211,7 +106461,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.57
+  "screen_priority": 14.57
  },
  {
   "slug": "scrubvault",
@@ -106557,7 +106807,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 135782.75998833746,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 10.15,
   "surface_signals": [
    {
@@ -106614,7 +106866,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.15
+  "screen_priority": 16.15
  },
  {
   "slug": "equalizer-exchange",
@@ -107004,7 +107256,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 132935.90957647492,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 4.76,
   "surface_signals": [
    {
@@ -107049,7 +107303,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.76
+  "screen_priority": 10.76
  },
  {
   "slug": "ultraswap",
@@ -107177,7 +107431,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 132237.09567671618,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.49,
   "surface_signals": [
    {
@@ -107216,7 +107472,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.49
+  "screen_priority": 11.49
  },
  {
   "slug": "hermes-v1",
@@ -107264,7 +107520,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 131455.5432547683,
   "danger_reasons": [
-   "a deployed-source pair already scores 85.0 at L4 guard review"
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
   "attack_surface": 9.01,
   "surface_signals": [
@@ -107660,7 +107916,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 129805.75767306903,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.98,
   "surface_signals": [
    {
@@ -107699,7 +107957,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.98
+  "screen_priority": 11.98
  },
  {
   "slug": "spice-finance",
@@ -108006,7 +108264,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 127718.883305259,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.2,
   "surface_signals": [
    {
@@ -108075,7 +108335,7 @@
     "classification": "Token & Share Accounting"
    }
   ],
-  "screen_priority": 12.2
+  "screen_priority": 18.2
  },
  {
   "slug": "melegaswap",
@@ -108943,17 +109203,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 122284.97231530471,
-  "danger_reasons": [
-   "an implementation behind a live proxy is unverified on the explorer"
-  ],
-  "attack_surface": 7.23,
+  "danger_reasons": [],
+  "attack_surface": 5.81,
   "surface_signals": [
-   {
-    "signal": "unverified_implementation",
-    "weight": 0.724,
-    "measured_lift": 2.062,
-    "direction": "raises likelihood"
-   },
    {
     "signal": "multichain_gt3",
     "weight": 0.712,
@@ -109002,7 +109254,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 13.23
+  "screen_priority": 5.81
  },
  {
   "slug": "babylon-finance",
@@ -109587,7 +109839,8 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 119539.02709688978,
   "danger_reasons": [
-   "condition FORK_OF_WINDOW_VICTIM"
+   "condition FORK_OF_WINDOW_VICTIM",
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
   "attack_surface": 6.8,
   "surface_signals": [
@@ -110046,7 +110299,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 117775.25298572099,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 10.54,
   "surface_signals": [
    {
@@ -110114,7 +110369,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.54
+  "screen_priority": 16.54
  },
  {
   "slug": "kestrel",
@@ -110808,17 +111063,10 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 114525.89371395342,
   "danger_reasons": [
-   "condition IS_WINDOW_VICTIM_STILL_LIVE",
-   "an implementation behind a live proxy is unverified on the explorer"
+   "condition IS_WINDOW_VICTIM_STILL_LIVE"
   ],
-  "attack_surface": 4.45,
+  "attack_surface": 3.03,
   "surface_signals": [
-   {
-    "signal": "unverified_implementation",
-    "weight": 0.724,
-    "measured_lift": 2.062,
-    "direction": "raises likelihood"
-   },
    {
     "signal": "age_1_3y",
     "weight": -0.665,
@@ -110850,7 +111098,7 @@
     "classification": "Access Control"
    }
   ],
-  "screen_priority": 10.45
+  "screen_priority": 9.03
  },
  {
   "slug": "hope-swap",
@@ -111602,7 +111850,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 111461.34349998181,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.3,
   "surface_signals": [
    {
@@ -111652,7 +111902,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 6.3
+  "screen_priority": 12.3
  },
  {
   "slug": "crodex",
@@ -111925,7 +112175,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 109709.95889832344,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 6.06,
   "surface_signals": [
    {
@@ -111964,7 +112216,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.54
+  "screen_priority": 10.54
  },
  {
   "slug": "fractional-art",
@@ -112017,7 +112269,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 107916.24318129041,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 13.53,
   "surface_signals": [
    {
@@ -112088,7 +112342,7 @@
     "classification": "Reentrancy"
    }
   ],
-  "screen_priority": 13.53
+  "screen_priority": 19.53
  },
  {
   "slug": "photonswap-finance",
@@ -112204,7 +112458,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 106823.01426800192,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.9,
   "surface_signals": [
    {
@@ -112267,7 +112523,7 @@
     "classification": "Access Control"
    }
   ],
-  "screen_priority": 7.9
+  "screen_priority": 13.9
  },
  {
   "slug": "anoncoin",
@@ -112969,8 +113225,10 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 103028.93778448875,
-  "danger_reasons": [],
-  "attack_surface": 11.96,
+  "danger_reasons": [
+   "an implementation behind a live proxy is unverified on the explorer"
+  ],
+  "attack_surface": 13.38,
   "surface_signals": [
    {
     "signal": "is_proxy",
@@ -112982,6 +113240,12 @@
     "signal": "age_under_1y",
     "weight": 0.813,
     "measured_lift": 2.256,
+    "direction": "raises likelihood"
+   },
+   {
+    "signal": "unverified_implementation",
+    "weight": 0.724,
+    "measured_lift": 2.062,
     "direction": "raises likelihood"
    },
    {
@@ -113037,7 +113301,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 11.96
+  "screen_priority": 19.38
  },
  {
   "slug": "flowx-v3",
@@ -113194,7 +113458,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 102522.10260136393,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.98,
   "surface_signals": [
    {
@@ -113234,7 +113500,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.98
+  "screen_priority": 11.98
  },
  {
   "slug": "crow-finance",
@@ -113323,7 +113589,8 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 102442.88019419045,
   "danger_reasons": [
-   "condition HALLMARK_PRIOR_INCIDENT"
+   "condition HALLMARK_PRIOR_INCIDENT",
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
   "attack_surface": 7.35,
   "surface_signals": [
@@ -114904,7 +115171,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 95240.4159461828,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 4.35,
   "surface_signals": [
    {
@@ -114949,7 +115218,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.35
+  "screen_priority": 10.35
  },
  {
   "slug": "lixir-finance",
@@ -116234,7 +116503,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 87946.86361831964,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.98,
   "surface_signals": [
    {
@@ -116273,7 +116544,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.98
+  "screen_priority": 11.98
  },
  {
   "slug": "infusion",
@@ -117238,9 +117509,17 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 84226.12867961684,
-  "danger_reasons": [],
-  "attack_surface": 7.83,
+  "danger_reasons": [
+   "an implementation behind a live proxy is unverified on the explorer"
+  ],
+  "attack_surface": 9.25,
   "surface_signals": [
+   {
+    "signal": "unverified_implementation",
+    "weight": 0.724,
+    "measured_lift": 2.062,
+    "direction": "raises likelihood"
+   },
    {
     "signal": "on_ethereum",
     "weight": 0.637,
@@ -117289,7 +117568,7 @@
     "classification": "Reentrancy"
    }
   ],
-  "screen_priority": 7.83
+  "screen_priority": 15.25
  },
  {
   "slug": "taffy-finance",
@@ -118167,7 +118446,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 81623.02314412029,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.3,
   "surface_signals": [
    {
@@ -118201,7 +118482,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.3
+  "screen_priority": 13.3
  },
  {
   "slug": "mooncake",
@@ -119494,7 +119775,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 76961.87824530281,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 10.93,
   "surface_signals": [
    {
@@ -119563,7 +119846,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 10.93
+  "screen_priority": 16.93
  },
  {
   "slug": "kizzy",
@@ -119992,7 +120275,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 75185.93173373413,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.33,
   "surface_signals": [
    {
@@ -120037,7 +120322,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.33
+  "screen_priority": 15.33
  },
  {
   "slug": "pippi",
@@ -121354,7 +121639,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 71560.03085393397,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.37,
   "surface_signals": [
    {
@@ -121405,7 +121692,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.37
+  "screen_priority": 14.37
  },
  {
   "slug": "claimswap-v1",
@@ -121552,7 +121839,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 71297.85109042452,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 8.51,
   "surface_signals": [
    {
@@ -121602,7 +121891,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.51
+  "screen_priority": 14.51
  },
  {
   "slug": "yield-millionaire",
@@ -121898,7 +122187,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 70308.49914054186,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 4.99,
   "surface_signals": [
    {
@@ -121956,7 +122247,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.99
+  "screen_priority": 10.99
  },
  {
   "slug": "fren-pets",
@@ -123111,9 +123402,7 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 66959.5117909594,
-  "danger_reasons": [
-   "a deployed-source pair already scores 75.0 at L4 guard review"
-  ],
+  "danger_reasons": [],
   "attack_surface": 2.3,
   "surface_signals": [
    {
@@ -123147,7 +123436,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 8.3
+  "screen_priority": 2.3
  },
  {
   "slug": "starkdefi",
@@ -123658,7 +123947,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 64000.25672072804,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 11.32,
   "surface_signals": [
    {
@@ -123709,7 +124000,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 11.32
+  "screen_priority": 17.32
  },
  {
   "slug": "daytona-finance",
@@ -123877,6 +124168,7 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 63067.99764947428,
   "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review",
    "repeat victim: 2 recorded hacks"
   ],
   "attack_surface": 9.15,
@@ -124134,7 +124426,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 62845.6545356868,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.73,
   "surface_signals": [
    {
@@ -124178,7 +124472,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.73
+  "screen_priority": 15.73
  },
  {
   "slug": "governor-dao",
@@ -124942,7 +125236,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 60757.10141593259,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 7.83,
   "surface_signals": [
    {
@@ -124981,7 +125277,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 7.83
+  "screen_priority": 13.83
  },
  {
   "slug": "ordernchaos",
@@ -125513,20 +125809,14 @@
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 59576.438726446075,
   "danger_reasons": [
-   "an implementation behind a live proxy is unverified on the explorer"
+   "a deployed-source pair already scores 73.8 at L4 guard review"
   ],
-  "attack_surface": 10.13,
+  "attack_surface": 8.71,
   "surface_signals": [
    {
     "signal": "age_under_1y",
     "weight": 0.813,
     "measured_lift": 2.256,
-    "direction": "raises likelihood"
-   },
-   {
-    "signal": "unverified_implementation",
-    "weight": 0.724,
-    "measured_lift": 2.062,
     "direction": "raises likelihood"
    },
    {
@@ -125572,7 +125862,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 16.13
+  "screen_priority": 14.71
  },
  {
   "slug": "autopilot",
@@ -125619,7 +125909,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 59378.39421863814,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 5.87,
   "surface_signals": [
    {
@@ -125676,7 +125968,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 5.87
+  "screen_priority": 11.87
  },
  {
   "slug": "stabl.fi-v1",
@@ -126063,7 +126355,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 58207.67753437779,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 9.87,
   "surface_signals": [
    {
@@ -126106,7 +126400,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 9.87
+  "screen_priority": 15.87
  },
  {
   "slug": "bitstable-finance",
@@ -126863,7 +127157,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 56267.06619596311,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 12.69,
   "surface_signals": [
    {
@@ -126923,7 +127219,7 @@
   "operational_flags": [],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 12.69
+  "screen_priority": 18.69
  },
  {
   "slug": "crosscurve",
@@ -129195,7 +129491,9 @@
   "band_status": "IN_BAND",
   "band_reason": "inside the $50,000-$30,000,000 reviewable band",
   "tvl": 51864.448814039606,
-  "danger_reasons": [],
+  "danger_reasons": [
+   "a deployed-source pair already scores 73.8 at L4 guard review"
+  ],
   "attack_surface": 4.33,
   "surface_signals": [
    {
@@ -129222,7 +129520,7 @@
   ],
   "repeat_victim_count": 0,
   "prior_hacks": [],
-  "screen_priority": 4.33
+  "screen_priority": 10.33
  },
  {
   "slug": "baryon-network",

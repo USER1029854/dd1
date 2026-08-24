@@ -70,7 +70,15 @@ for slug in targets:
         if fid not in FAM: continue
         a=APPLIC.get(fid)
         cat_ok = a is not None and (a.get('cats') is None or p['_cat'] in a['cats'])
-        conds=cf.get(fid,[]); src=bool(((PR.get(slug,{}).get('source_sweep',{}).get('family_signals') or {}).get(fid)))
+        conds=cf.get(fid,[])
+        # A pair may be created from deployed source only when a PRECONDITION actually
+        # MATCHED. The sweep writes an entry for every family it evaluated, matched or
+        # not, so testing for the entry's existence created a pair for every swept
+        # protocol: 608 pairs on ACC-QUOTE-STALE-ACROSS-OWN-SWAP where 32 protocols
+        # carried the indicator. The unmatched 576 scored ~zero and never reached the
+        # finals, but they inflated every pair count in this run's reporting.
+        _sig=((PR.get(slug,{}).get('source_sweep',{}).get('family_signals') or {}).get(fid)) or {}
+        src=any(h.get('match') and h.get('role')=='PRE' for h in _sig.values())
         if not (cat_ok or conds or (src and fid in APPLIC_SOURCE)): continue
         if a is not None and a.get('requires_governance') and not p['_governance']: continue
         ev=[]; lin=0.0

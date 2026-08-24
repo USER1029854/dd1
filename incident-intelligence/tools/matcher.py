@@ -113,4 +113,16 @@ APPLIC_SOURCE = {
  "METATX-SENDER-IDENTITY-CONFUSION","ACC-DUPLICATE-ID-ACCUMULATION","ACC-SIGN-OR-BOUND-CHECK-MISSING",
  "ACC-HARDCODED-PEG-REDEMPTION","AUTH-IDENTITY-SATISFIABLE-BY-ATTACKER-CONTRACT",
  "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY","ACC-CREDIT-NOT-RECEIVED","HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL",
+ # Reference-derived (see families_d.py). Screened only from deployed source, because the
+ # defect is an ORDERING inside one function body -- category metadata cannot see it.
+ "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
+}
+
+# The four handler-runtime families are deliberately NOT here. They describe defects that
+# cannot occur under EVM revert semantics, so generating EVM pairs for them would be a
+# category error. They are screened against the non-EVM cohort instead
+# (tools/nonevm_cohort.py, tools/appchain_probe.py).
+RUNTIME_ONLY = {
+ "RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER","RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+ "RUNTIME-BATCHED-MESSAGE-SHARED-KEY-CLOBBER",
 }

@@ -46,6 +46,25 @@ def indicators(src):
     _th=[m.group(0) for m in re.finditer(r'TYPEHASH\s*=\s*keccak256\s*\([\s\S]{0,600}?\)\s*;',src)]
     I['typehash_without_id_or_nonce']= bool(_th) and not any(
         re.search(r'\b(nonce|deadline|tokenId|positionId|salt|chainId|expiry)\b',t,re.I) for t in _th)
+    # ---------------- quote taken before the protocol's own swap moves that same pair ----------------
+    # The defect is ordering, so a bare "getAmountsOut exists" is worthless. Require the quote and
+    # the protocol's own liquidity-moving call inside ONE function body, quote first.
+    _bodies=[m.group(0) for m in re.finditer(r'function\s+\w+[\s\S]{0,6000}?\n\s*\}',src)]
+    def _q_before(pat_after):
+        for b in _bodies:
+            q=re.search(r'\b(getAmountsOut|getAmountOut|quote|consult|getReserves)\s*\(',b)
+            if not q: continue
+            a=re.search(pat_after,b[q.end():])
+            if a: return True
+        return False
+    I['quote_then_own_swap']=_q_before(r'\b(swapExactTokensForTokens|swapTokensForExactTokens|swapExactETHForTokens|swap)\s*\(')
+    I['quote_then_addliquidity']=_q_before(r'\baddLiquidity(?:ETH)?\s*\(')
+    # the fix: value recomputed from what addLiquidity actually returned, or from an LP balance delta
+    I['lp_delta_measured']=bool(re.search(r'\(\s*(?:uint\d*\s+)?\w+\s*,\s*(?:uint\d*\s+)?\w+\s*,\s*(?:uint\d*\s+)?(\w*liquidity\w*)\s*\)\s*=\s*\w*[Rr]outer\w*\.addLiquidity',src,re.I)) or \
+        bool(re.search(r'balanceOf\s*\(\s*address\s*\(\s*this\s*\)\s*\)[\s\S]{0,300}?addLiquidity[\s\S]{0,300}?balanceOf\s*\(\s*address\s*\(\s*this',src))
+    I['twap_or_feed_for_accounting']=bool(re.search(r'consult\s*\(|TWAP|latestRoundData|getTimeWeighted',src))
+    # a referral / inviter payout in the same contract as a mint is the amplifier that made it pay
+    I['referral_reward_with_mint']=bool(re.search(r'\b(inviter|referr?er|referral)\w*',src,re.I)) and bool(re.search(r'\b_?mint\s*\(',src))
     # ---------------- auth ----------------
     I['owner_compare_without_nonzero']= bool(re.search(r'(msg\.sender|_msgSender\(\))\s*==\s*(owner|_owner|admin|_admin)\b',src)) and \
         not near(src,r'(msg\.sender|_msgSender\(\))\s*==\s*(owner|_owner|admin|_admin)\b',r'!=\s*address\s*\(\s*0')
@@ -133,6 +152,9 @@ def indicators(src):
 FAMILY_SIGNALS={
  "SIG-VERIFIER-DEFEATABLE":[("ecrecover_without_zero_check",True,"PRE"),("uses_oz_ecdsa",True,"GUARD")],
  "AUTH-ZERO-ADDRESS-ACCEPTED":[("owner_compare_without_nonzero",True,"PRE")],
+ "ACC-QUOTE-STALE-ACROSS-OWN-SWAP":[("quote_then_own_swap",True,"PRE"),("quote_then_addliquidity",True,"PRE"),
+                                    ("lp_delta_measured",True,"GUARD"),("twap_or_feed_for_accounting",True,"GUARD"),
+                                    ("referral_reward_with_mint",True,"WEAK")],
  "SECRET-EMBEDDED-IN-PUBLIC-CODE-AS-AUTH":[("constant_secret_like",True,"PRE"),("hardcoded_signer_address",True,"PRE")],
  "CALLDATA-CALLER-CONTROLLED-TARGET":[("arbitrary_target_and_calldata_param",True,"PRE"),
                                       ("no_target_allowlist",True,"PRE"),("delegatecall_on_param",True,"WEAK")],
