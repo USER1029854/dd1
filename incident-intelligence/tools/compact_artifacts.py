@@ -59,7 +59,7 @@ if os.path.exists(pp):
         if (p['protocol_slug'],p['family_id']) in W: out.append(p)
         else:
             r={k:p.get(k) for k in KEEP}
-            r['_compact']="not selected for deep screening; full evidence recomputable via tools/gen_pairs3.py"
+            r['_compact']="not selected for deep screening; full evidence recomputable via tools/gen_pairs4.py"
             out.append(r)
     json.dump(out,open(pp,'w'))
 else: out=[]

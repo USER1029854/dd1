@@ -5,8 +5,14 @@
 # No transaction is constructed, signed, simulated against live user state as a
 # broadcast, or submitted. No credential is recovered or used.
 #
-# Commands appear in execution order. Secrets are referenced by environment
-# variable only; none are embedded here.
+# Commands appear in execution order and each stage appears ONCE. Secrets are
+# referenced by environment variable only; none are embedded here.
+#
+# On the two-pass structure in sections 4-6: it is a genuine bootstrap, not a
+# repeated stage. parse_registries.py needs a worklist to know which adapters to
+# parse, and build_universe2.py needs parse_registries' output to compute the
+# dead-adapter and registry-lineage conditions. So a coarse universe and worklist
+# are built first, used to fetch adapters, and then discarded and rebuilt.
 set -euo pipefail
 ROOT="${ROOT:-$(cd "$(dirname "$0")" && pwd)}"
 cd "$ROOT"
@@ -55,64 +61,49 @@ python3 tools/build_incidents.py
 python3 tools/write_families_md.py
 #   -> families/families.md
 
-# --------------------------------------- 4. Phase F: DefiLlama protocol universe
-TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+# ------------------ 4. Phase F: DefiLlama universe, bootstrap pass (see header)
 curl -sS -m 120 -o sources/defillama/protocols.json "https://api.llama.fi/protocols"
 sha256sum sources/defillama/protocols.json > sources/defillama/protocols.sha256
+curl -sS -m 120 -o sources/defillama/hacks.json "https://api.llama.fi/hacks"
+sha256sum sources/defillama/hacks.json > sources/defillama/hacks.sha256
 python3 tools/build_universe.py
-#   -> protocols/defillama_universe.json, protocols/eligibility.json
-
-# ------------------------------- 5. Phase G/H.1: features + protocol-family pairs
+#   -> a coarse protocols/defillama_universe.json + eligibility.json
 python3 tools/gen_pairs.py
-#   -> protocols/pairs_l0.json, protocols/deep_screen_worklist.json,
-#      protocols/families_not_screenable_in_universe.json
+#   -> protocols/pairs_l0.json, deep_screen_worklist.json,
+#      families_not_screenable_in_universe.json
 
-# ------------------------------------------ 6. Phase F.3 (L1): adapter evidence
-# Primary path: projects/<module>. Fallback: the authoritative tvlCodePath, which
-# resolves the shared registry adapters (registries/compound.js, curators.js).
-python3 tools/fetch_adapters.py
-python3 tools/fetch_adapters2.py
+# ------------------------------------------ 5. Phase F.3 (L1): adapter evidence
+# One fetcher, two strategies in order: projects/<module>, then the authoritative
+# tvlCodePath, which is what resolves the shared registry adapters.
+python3 tools/fetch_adapters3.py
 python3 tools/parse_registries.py
-#   -> protocols/adapters_index.json, registry_configs.json, registry_slug_map.json
+#   -> protocols/adapters_index.json, registry_configs.json, registry_slug_map.json,
+#      dead_adapters.json, dead_adapter_slug_map.json
 
-# ---------------------- 6b. EXPANSION PASS (hard $50k floor + condition layer)
-# Rebuild the universe at a hard $50,000 floor and compute the observable condition layer:
+# ------------- 6. Phase F rebuild: hard $50k floor + the observable condition layer
+# Now that registry lineage and dead-adapter state are known, rebuild the universe:
 # fork-of-an-in-window-victim, dead adapter with residual TVL, version-sibling legacy,
 # declared fallback oracle, RWA pricing surface, co-curated vaults, architecture tags.
 python3 tools/build_universe2.py
 #   -> protocols/{defillama_universe,eligibility,conditions,victim_map,
 #                 subfloor_authority_deferred}.json
-python3 tools/gen_pairs2.py          # conditions can create a pair, not just re-rank one
-python3 tools/fetch_adapters3.py     # adapters for the expanded worklist
-python3 tools/parse_registries.py    # compound.js + aave.js + curators.js + deadAdapters.json
 
 # --------------------------------- 7. Phase H.3 (L2/L3): read-only chain probes
 # eth_call / eth_getStorageAt / eth_getCode + explorer getsourcecode only.
-python3 tools/deep_screen.py 60        # first pass, sequential
-python3 tools/deep_screen2.py          # registry-aware probes
-python3 tools/deep_screen3.py          # corrected slug->registry mapping, multi-chain
-python3 tools/resolve_impl.py          # follow delegator/beacon proxies to implementations
-python3 tools/deep_screen4.py 700      # batched JSON-RPC probe over the expanded worklist
+# gen_pairs4 needs admin_posture.json and learned_weights.json, which need probe
+# output, so the first probe pass runs against the bootstrap worklist.
+python3 tools/deep_screen4.py 1300 --force   # batched JSON-RPC probe
+python3 tools/resolve_impl.py                # follow delegator/beacon proxies to implementations
 #   -> protocols/onchain_probes.json
 
 # ------------------- 7b. Phase H.3 (L4): deployed-source static-indicator sweep
-# Fetches verified source for the contracts actually found on-chain, follows proxies to their
-# implementations, and evaluates each family's documented static_indicators. Source is cached
-# under sources/deployments/, so re-analysis after an indicator change is free:
-#   python3 tools/source_sweep.py 400 --reanalyze
-python3 tools/source_sweep.py 400
+# Fetches verified source for the contracts actually found on-chain, follows proxies to
+# their implementations, and evaluates each family's documented static_indicators. Source
+# is cached under sources/deployments/, so re-analysis after an indicator change is free:
+#   python3 tools/source_sweep.py 1300 --reanalyze
+python3 tools/source_sweep.py 1300
 
-# ------------ 7c. BAND PASS: likelihood-first screen for an independent reviewer
-# Derive the empirical victim profile from this run's own corpus (loss distribution,
-# chain and category hazard ratios), apply the $50k-$30M band with an explicit-danger
-# override above it, and order by hazard x attention deficit.
-#   tools/hazard.py holds the measured hazard tables.
-python3 tools/gen_pairs3.py 700       # -> protocols/band_screen.json + a band-targeted worklist
-python3 tools/fetch_adapters3.py      # adapters for the band worklist
-python3 tools/deep_screen4.py 800 --force   # batched probe incl. the owner-is-EOA second hop
-python3 tools/source_sweep.py 700     # deployed-source indicators (view helpers excluded)
-
-# ---------------------------- 7b. v4: validate the model instead of asserting it
+# ------------------------- 8. Validate the model instead of asserting it
 # Read-only authority walk: ERC-1967 admin slot + owner(), up to 3 hops, terminal
 # authority fingerprinted by the functions it answers. Selectors are DERIVED by
 # tools/keccak.py, which self-checks against two publicly known ones at import.
@@ -123,22 +114,24 @@ python3 tools/learn_weights.py              # -> protocols/learned_weights.json 
 python3 tools/backtest.py --all --no-prior  # -> protocols/backtest.json (leakage controlled)
 python3 tools/write_authority_report.py     # -> results/upgrade_authority_exposure.md
 
-# ------------------------------------- 8. Phase H/13: gate, scoring, rankings
-# score2 applies the precision controls: relevance gate, prevalence demotion (>25% of the
+# ------------------------------------- 9. Phase H/13: gate, scoring, rankings
+# The band screen and final worklist are ordered by the LEARNED surface, so they are
+# rebuilt here rather than at section 4. Adapters are refetched for the protocols the
+# widened worklist adds; both stages are incremental and skip what is already cached.
+python3 tools/gen_pairs4.py 1200      # -> protocols/band_screen.json + the final worklist
+python3 tools/fetch_adapters3.py      # adapters for the protocols the widened worklist adds
+# score2 holds the precision controls: relevance gate, prevalence demotion (>25% of the
 # swept population), metadata-cannot-prove-code, and UNKNOWN exposure for approval-dependent
-# families.
-python3 tools/score2.py               # gate + MATCH_SCORE + precision controls
-python3 tools/gen_pairs4.py 1200      # band screen + worklist, ordered by the LEARNED surface
+# families. score4 imports it; it is not run standalone.
 python3 tools/score4.py               # LIKELIHOOD (family evidence + learned surface), ACTIONABILITY, PRIORITY
 #   -> protocols/deep_screened.jsonl
-python3 tools/write_results4.py 60    # -> candidates_by_priority.md, _by_likelihood.md, _by_match.md,
-                                      #    candidates_all.csv, audit_variables.txt, near_miss_library
-python3 tools/write_summary4.py
-python3 tools/write_quality4.py
-#   -> results/candidates_all.csv, candidates_by_match.md, candidates_by_prevention.md,
-#      audit_variables.txt, excluded_protocols.md, run_summary.md
-#   -> families/near_miss_library.jsonl
+python3 tools/write_results4.py 60
+#   -> results/candidates_by_{priority,likelihood,match}.md, candidates_all.csv,
+#      audit_variables.txt, families/near_miss_library.jsonl
+python3 tools/write_summary4.py       # -> results/run_summary.md
+python3 tools/write_quality4.py       # -> quality_report.md
 
-# --------------------------------------------- 9. Manifest + mechanical checks
+# --------------------------------------------- 10. Manifest + mechanical checks
+python3 tools/compact_artifacts.py  # content-safe dedup of adapter snapshots
 python3 tools/build_manifest.py     # -> manifest.json
 python3 tools/check_manifest.py     # -> results/manifest_check.txt (must pass)

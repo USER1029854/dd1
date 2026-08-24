@@ -1,6 +1,6 @@
 {
  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
- "generated_utc": "2026-08-24T00:20:55Z",
+ "generated_utc": "2026-08-24T00:38:36Z",
  "safety_attestation": {
   "production_transactions_submitted": 0,
   "production_transactions_constructed": 0,
@@ -189,8 +189,8 @@
   {
    "path": "commands.sh",
    "exists": true,
-   "bytes": 8579,
-   "sha256": "bb811b6f7d5d27518682bf54e28336c9aee1b4d12dc722517dc560f9e19a41b3",
+   "bytes": 8187,
+   "sha256": "353c2dbc218bcedfeb4067cd1c9accd5d339140cbfb38769f956d75f8a68da1a",
    "role": "reproduction",
    "supports_claim": "Every retrieval and transformation step in execution order"
   },
@@ -309,8 +309,8 @@
   {
    "path": "protocols/pairs_l0.json",
    "exists": true,
-   "bytes": 16314118,
-   "sha256": "e86d1f8ffb5ad6d619e23100b355821486543947ea2bb17be6efd97f4854ce65",
+   "bytes": 16014064,
+   "sha256": "a064cc9539ebe129641781076d264d37452809f7a114520a57f6e20cb56c0229",
    "role": "screen",
    "supports_claim": "All generated protocol-family pairs at L0"
   },
@@ -325,8 +325,8 @@
   {
    "path": "protocols/adapters_index.json",
    "exists": true,
-   "bytes": 3270345,
-   "sha256": "8f3f450b8c6e9fe47f02178abca0da4a5bc8bae8d42ad0333be902dd6ec5368f",
+   "bytes": 3566448,
+   "sha256": "1af9dded64c7849c35b6feb30e5e0efc8d1ab651f8fe455631f8269888743b4c",
    "role": "adapter evidence",
    "supports_claim": "Per-protocol adapter read, hashes, addresses, dynamic sources"
   },
@@ -421,16 +421,16 @@
   {
    "path": "results/candidates_by_likelihood.md",
    "exists": true,
-   "bytes": 191014,
-   "sha256": "946cecd30fa2eef86cf76db40905265e9511c7ecbcc8e50d23a6c49baef06a2b",
+   "bytes": 109670,
+   "sha256": "635799752896b144981b5a996cec839352b21101ca3321d82fa8e80997cf58a5",
    "role": "results",
    "supports_claim": "Ranking B - likelihood alone, ignoring whether an independent reviewer can act"
   },
   {
    "path": "results/candidates_by_match.md",
    "exists": true,
-   "bytes": 178203,
-   "sha256": "111264dc247db858ba263d62c5eb72478f8ed967b9be6272a3bd8b5bf0c9d4a0",
+   "bytes": 64470,
+   "sha256": "6f1bde40caeb51e5fb7298561a939215777d73ca8c6569bea741fdb840fcb621",
    "role": "results",
    "supports_claim": "Ranking C - mechanism match only, no learned component"
   },

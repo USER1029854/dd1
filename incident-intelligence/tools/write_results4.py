@@ -147,11 +147,22 @@ CTX=("**Scoring is now validated, not asserted.** Attack-surface weights were fi
      "population was censored by the very outcome being predicted. Weights are now fitted against the full listed "
      "universe.\n" % (v.get('n',0),v.get('median_percentile','?'),(v.get('top_quartile_share') or 0)*100,v.get('lift','?')))
 
+# Ranking A carries the full write-up for every protocol it lists. B and C are
+# genuinely different orderings over a heavily overlapping set, so re-rendering the
+# same block three times added ~69 duplicate write-ups and no information. They now
+# show the complete ranking as a table, a full block for each protocol A does not
+# already cover, and a one-line pointer for the rest.
+_full_written=set()
 for key,fn,title in (('PRIORITY','candidates_by_priority.md','Ranking A — priority (likelihood × actionability)'),
                      ('LIKELIHOOD','candidates_by_likelihood.md','Ranking B — likelihood, ignoring actionability'),
                      ('MATCH_SCORE','candidates_by_match.md','Ranking C — mechanism match only')):
     order=sorted(live,key=lambda x:(-x.get(key,0),-x.get('PRIORITY',0)))
-    seen=set(); out=["# Candidates — %s\n" % title,HDR,CTX]; n=0; chosen=[]
+    # HDR is a safety notice and belongs on every file. CTX is the methodology, and
+    # it is written once, in Ranking A, which the other two link to.
+    _ctx=CTX if key=='PRIORITY' else ("**How these are scored** is set out once, at the top of "
+         "[`candidates_by_priority.md`](candidates_by_priority.md): the out-of-sample validation, why "
+         "likelihood and actionability are kept apart, and why custody exposure is reported separately.\n")
+    seen=set(); out=["# Candidates — %s\n" % title,HDR,_ctx]; n=0; chosen=[]
     for o in order:
         if o['protocol_slug'] in seen: continue
         seen.add(o['protocol_slug']); n+=1; chosen.append(o)
@@ -194,7 +205,24 @@ for key,fn,title in (('PRIORITY','candidates_by_priority.md','Ranking A — prio
             out.append("| %d | [%s](%s) | `%s` | %s | %s | $%s | `%s` |" % (i,o['protocol_name'],o['defillama_url'],
                        o['family_id'],o['PRIORITY'],o['LIKELIHOOD'],f"{o['tvl']:,.0f}",o['evidence_level']))
         out.append("\n---\n")
-    for i,o in enumerate(chosen,1): out.append(block(o,i,title))
+    if key!='PRIORITY':
+        dup=[o for o in chosen if o['protocol_slug'] in _full_written]
+        out.append("### The ranking\n")
+        out.append("Full write-ups below for the %d entries that `candidates_by_priority.md` does not already "
+                   "cover; the other %d are listed here and written up in full there, under the same "
+                   "`protocol — family` heading.\n" % (len(chosen)-len(dup),len(dup)))
+        out.append("| # | Protocol | Family | %s | At risk | Write-up |" % key)
+        out.append("|---:|---|---|---:|---:|---|")
+        for i,o in enumerate(chosen,1):
+            where=("[in `candidates_by_priority.md`](candidates_by_priority.md)"
+                   if o['protocol_slug'] in _full_written else "below")
+            out.append("| %d | [%s](%s) | `%s` | %s | $%s | %s |" % (i,o['protocol_name'],o['defillama_url'],
+                       o['family_id'],o.get(key),f"{o['tvl']:,.0f}",where))
+        out.append("\n---\n")
+    for i,o in enumerate(chosen,1):
+        if key!='PRIORITY' and o['protocol_slug'] in _full_written: continue
+        out.append(block(o,i,title))
+    _full_written.update(o['protocol_slug'] for o in chosen)
     open(f'{B}/results/{fn}','w').write("\n".join(out))
 
 with open(f'{B}/results/candidates_all.csv','w',newline='') as fh:
