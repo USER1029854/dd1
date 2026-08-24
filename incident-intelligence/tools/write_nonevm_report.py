@@ -3,6 +3,7 @@
 import json,collections,sys
 B='/home/user/dd1/incident-intelligence'
 C=json.load(open(f'{B}/protocols/nonevm_cohort.json'))
+HZ=json.load(open(f'{B}/protocols/chain_hazard_measured.json'))
 AP=json.load(open(f'{B}/protocols/appchain_probe.json'))
 SV=json.load(open(f'{B}/incidents/source_verification.json'))['incidents']['INC-2026-08-18-MAY']
 FAM={f['family_id']:f for f in json.load(open(f'{B}/families/families.json'))}
@@ -27,6 +28,44 @@ L=["# The non-EVM cohort\n",
 "at. Solana alone accounts for %d.\n" % (len(C),len(band),
        sum(1 for r in C if r['runtime']=='SOLANA_RUST')),
 "The last incident inside this run's window, four days before it closed, was on one of them.\n",
+"## The correction that reshaped this cohort\n",
+"The first version of this cohort was sized by **how many protocols each chain has**. That is a "
+"popularity measure, not a risk measure, and it produced a cohort that was 40% Solana. Measured "
+"against incidents that ordering is backwards.\n",
+"`hazard = incident share / protocol share`, over DefiLlama's on-chain incidents using the same "
+"root-cause exclusions as this run's inclusion gate. Above 1 means over-represented among actual "
+"victims relative to how much of the universe the chain is.\n",
+"| Chain | Hazard | Incidents | Protocols | Family | Was given |","|---|---:|---:|---:|---|---|"]
+_fam={'Terra':'Cosmos','Secret':'Cosmos','Osmosis':'Cosmos','Acala':'Substrate','EOS':'other',
+      'Solana':'other','Sui':'other','TON':'other','NEAR':'other','Stacks':'other','Hedera':'other'}
+_was={'EOS':'**never considered**','Acala':'10 slots (Substrate)','Terra':'40 slots (Cosmos)',
+      'Secret':'40 slots (Cosmos)','Osmosis':'40 slots (Cosmos)','Solana':'**169 slots — the largest share**',
+      'Sui':'102 slots (Move)','TON':'—','NEAR':'—','Stacks':'—','Hedera':'—'}
+_rows=[(v['hazard'],k,v) for k,v in HZ['chains'].items()
+       if v['status']=='MEASURED' and k in _fam]
+_rows.sort(reverse=True)
+L2=[]
+for h,k,v in _rows:
+    L2.append("| %s | **×%.2f** | %d | %d | %s | %s |" % (k,h,v['incidents'],v['protocols'],
+              _fam.get(k,''),_was.get(k,'—')))
+L+=L2
+L+=["",
+"Aggregated, the Cosmos family measures **×2.25** and everything else non-EVM **×0.74**. This run's own "
+"in-window corpus agrees independently: 6 Solana incidents against roughly 7 across Cosmos-family chains "
+"(Coreum, Quicksilver, Secret, Axelar, Osmosis, a THORChain fork, Dango), from a Solana protocol base an "
+"order of magnitude larger.\n",
+"The cohort is now ordered by measured hazard. A chain below the support floor — fewer than 3 protocols "
+"or 2 incidents — is marked `UNMEASURED` and never promoted on a guess, because a ratio built on one "
+"incident is noise, not evidence.\n",
+"**Frequency and severity disagree, and both are kept.** Bridges are the clearest case: by frequency the "
+"`Bridge` category is *under*-represented at ×0.80 (12 incidents across 108 protocols), yet it carries "
+"**$1.22bn** — the largest loss of any category — at roughly $102M per incident. For an operator working "
+"a $50k–$30M band that severity is out of reach by construction, and the band filter removes those "
+"protocols before scoring. So the ranking uses frequency and severity is reported beside it rather than "
+"folded in.\n",
+"**Only %d of the %d in-band non-EVM protocols sit on a chain measuring hazard ≥ 1.** That, not 621, is "
+"the set worth attention.\n" % (sum(1 for r in C if r['in_band'] and (r['measured_chain_hazard'] or 0)>=1.0),
+                                 sum(1 for r in C if r['in_band'])),
 "## What Maya Protocol added to the library\n",
 "`INC-2026-08-18-MAY` was already in the corpus, graded B on a one-line index record. Given a detailed "
 "technical account, this pass went and checked it: **%d of %d claimed defects were confirmed at the exact "
@@ -94,11 +133,15 @@ L+=["","Osmosis read clean on the modules examined. That is a statement about 16
 "candidates, because a metadata-level pair and a guard-reviewed deployed-source pair are not comparable "
 "evidence and folding them into one list would imply they are. Full rows in "
 "`protocols/nonevm_cohort.json`.\n",
-"| # | Protocol | Chain | Runtime | Value at risk | Public repo |","|---:|---|---|---|---:|---|"]
-for i,r in enumerate(sorted(band,key=lambda x:-x['tvl'])[:40],1):
-    L.append("| %d | [%s](%s) | %s | `%s` | $%s | %s |" % (i,r['name'],r['defillama_url'],
-             (r['chains'] or ['?'])[0],r['runtime'],f"{r['tvl']:,.0f}",
-             "yes" if r['github'] else "—"))
+"Ordered by measured chain hazard, then exposure.\n",
+"| # | Protocol | Chain | Hazard | Runtime | Value at risk | Public repo |",
+"|---:|---|---|---:|---|---:|---|"]
+_ord=sorted(band,key=lambda x:(-(x['measured_chain_hazard'] or 0),-x['tvl']))
+for i,r in enumerate(_ord[:40],1):
+    h=r['measured_chain_hazard']
+    L.append("| %d | [%s](%s) | %s | %s | `%s` | $%s | %s |" % (i,r['name'],r['defillama_url'],
+             (r['chains'] or ['?'])[0],("×%.2f"%h) if h else "unmeasured",r['runtime'],
+             f"{r['tvl']:,.0f}", "yes" if r['github'] else "—"))
 L+=["","## What would move this forward\n",
 "One capability, not more analysis: the ability to enumerate a public repository's file tree. With it, the "
 "%d in-band non-EVM protocols that publish source could be swept with the same indicator set that was "

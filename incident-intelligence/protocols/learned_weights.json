@@ -65,11 +65,11 @@
    "population_with": 989
   },
   "is_proxy": {
-   "lift": 2.601,
-   "weight": 0.956,
-   "victims_with": 14,
+   "lift": 2.475,
+   "weight": 0.906,
+   "victims_with": 15,
    "victims_total": 140,
-   "population_with": 222
+   "population_with": 250
   },
   "multichain_gt3": {
    "lift": 2.038,
@@ -100,18 +100,18 @@
    "population_with": 1614
   },
   "owner_is_contract": {
-   "lift": 4.297,
-   "weight": 1.458,
-   "victims_with": 15,
+   "lift": 3.73,
+   "weight": 1.316,
+   "victims_with": 17,
    "victims_total": 140,
-   "population_with": 144
+   "population_with": 188
   },
   "owner_is_eoa": {
-   "lift": 2.019,
-   "weight": 0.703,
+   "lift": 1.729,
+   "weight": 0.548,
    "victims_with": 7,
    "victims_total": 140,
-   "population_with": 143
+   "population_with": 167
   },
   "pricing_surface_undeclared": {
    "lift": 1.691,
@@ -135,11 +135,11 @@
    "population_with": 4125
   },
   "unverified_implementation": {
-   "lift": 2.062,
-   "weight": 0.724,
-   "victims_with": 8,
+   "lift": 2.007,
+   "weight": 0.697,
+   "victims_with": 9,
    "victims_total": 140,
-   "population_with": 160
+   "population_with": 185
   },
   "version_sibling_legacy": {
    "lift": 1.699,
@@ -151,21 +151,21 @@
  },
  "in_sample": {
   "n": 140,
-  "median_percentile": 85.3,
+  "median_percentile": 87.0,
   "top_quartile_share": 0.664,
   "lift": 2.66
  },
  "out_of_sample": {
   "n": 103,
-  "median_percentile": 81.9,
-  "top_quartile_share": 0.602,
-  "lift": 2.41
+  "median_percentile": 82.3,
+  "top_quartile_share": 0.612,
+  "lift": 2.45
  },
  "out_of_sample_unseen": {
   "n": 95,
-  "median_percentile": 78.6,
-  "top_quartile_share": 0.579,
-  "lift": 2.32
+  "median_percentile": 78.7,
+  "top_quartile_share": 0.589,
+  "lift": 2.36
  },
  "population": 5775,
  "method": "weights = ln(lift) measured on TRAIN victims against the full listed universe; signals needing >=40 population support, >=4 train victims, and lift outside 0.70-1.35",

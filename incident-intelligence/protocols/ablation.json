@@ -3,33 +3,33 @@
  "variants": {
   "baseline (v3 feature set)": {
    "signals": 18,
-   "median_pct": 77.7,
+   "median_pct": 77.4,
    "top_quartile_share": 0.547,
    "lift": 2.19
   },
   "+ exposure age": {
    "signals": 20,
-   "median_pct": 78.6,
-   "top_quartile_share": 0.579,
-   "lift": 2.32
+   "median_pct": 78.7,
+   "top_quartile_share": 0.589,
+   "lift": 2.36
   },
   "+ admin posture": {
    "signals": 22,
-   "median_pct": 76.8,
-   "top_quartile_share": 0.537,
-   "lift": 2.15
+   "median_pct": 78.1,
+   "top_quartile_share": 0.547,
+   "lift": 2.19
   },
   "+ public-repo flag": {
    "signals": 18,
-   "median_pct": 77.7,
+   "median_pct": 77.4,
    "top_quartile_share": 0.547,
    "lift": 2.19
   },
   "+ all v4 additions": {
    "signals": 24,
-   "median_pct": 77.7,
-   "top_quartile_share": 0.579,
-   "lift": 2.32
+   "median_pct": 80.5,
+   "top_quartile_share": 0.589,
+   "lift": 2.36
   }
  },
  "note": "Each variant is refitted from scratch on 2022-24 incidents and scored against 2025-26 incidents on protocols unseen during fitting. Lift is the share of future victims landing in the model's top quartile, divided by the 25% expected by chance."

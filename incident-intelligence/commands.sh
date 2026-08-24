@@ -113,7 +113,11 @@ python3 tools/source_sweep.py 1300
 # may legitimately be applied: Solana, Move and the EVM all discard state when a call
 # fails, so the two rollback families do NOT apply there; Cosmos SDK and Substrate
 # handlers can leave a write behind, so they do.
-python3 tools/nonevm_cohort.py          # -> protocols/nonevm_cohort.json
+# Chain priority is MEASURED, not assumed: hazard = incident share / protocol share.
+# Sizing the cohort by protocol count made it 40% Solana, which the data contradicts
+# (Solana x0.63 across 293 protocols; Cosmos family x2.25 across 30; EOS x7.02).
+python3 tools/nonevm_hazard.py          # -> protocols/chain_hazard_measured.json
+python3 tools/nonevm_cohort.py          # -> protocols/nonevm_cohort.json (hazard-ordered)
 # app/app.go names every module a Cosmos chain wires in, so one fetch yields the real
 # module list without guessing paths. Requires protocols/appchain_targets.json.
 python3 tools/appchain_probe.py         # -> protocols/appchain_probe.json

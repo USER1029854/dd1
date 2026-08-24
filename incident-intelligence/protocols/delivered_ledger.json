@@ -1,7 +1,7 @@
 {
  "generated_from": "git history of results/candidates_*",
- "head_at_generation": "7e319ee",
- "head_excluded": true,
+ "head_at_generation": "1ad898f",
+ "head_excluded": false,
  "runs": [
   {
    "commit": "7d49c12",
@@ -27,9 +27,19 @@
    "commit": "5a3468f",
    "subject": "Remove leftovers from earlier iterations of this run",
    "protocols": 111
+  },
+  {
+   "commit": "7e319ee",
+   "subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "protocols": 108
+  },
+  {
+   "commit": "1ad898f",
+   "subject": "Never hand over the same protocol twice",
+   "protocols": 130
   }
  ],
- "protocols_delivered": 219,
+ "protocols_delivered": 349,
  "ledger": {
   "sumer.money": {
    "first_delivered_in": "7d49c12",
@@ -38,7 +48,8 @@
     "7d49c12",
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ACC-DONATION-UNACCOUNTED-BALANCE"
@@ -130,7 +141,8 @@
     "7d49c12",
     "ccb5273",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -280,7 +292,8 @@
    "runs": [
     "ccb5273",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -458,7 +471,8 @@
    "runs": [
     "ccb5273",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -468,7 +482,8 @@
    "runs": [
     "ccb5273",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -500,7 +515,8 @@
    "first_delivered_in": "ccb5273",
    "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
    "runs": [
-    "ccb5273"
+    "ccb5273",
+    "7e319ee"
    ],
    "families": []
   },
@@ -745,7 +761,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-INITIALIZER-REACHABLE-LIVE"
@@ -757,7 +774,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY",
@@ -790,7 +808,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -854,7 +873,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-INITIALIZER-REACHABLE-LIVE"
@@ -896,9 +916,11 @@
    "first_delivered_in": "3bc30a7",
    "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
    "runs": [
-    "3bc30a7"
+    "3bc30a7",
+    "7e319ee"
    ],
    "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION",
     "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
    ]
   },
@@ -988,7 +1010,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ACC-DUPLICATE-ID-ACCUMULATION"
@@ -1023,7 +1046,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-INITIALIZER-REACHABLE-LIVE"
@@ -1043,7 +1067,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ORACLE-SPOT-THIN-LIQUIDITY"
@@ -1071,7 +1096,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ORACLE-SPOT-THIN-LIQUIDITY"
@@ -1083,7 +1109,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1127,10 +1154,12 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
-    "ACC-DUPLICATE-ID-ACCUMULATION"
+    "ACC-DUPLICATE-ID-ACCUMULATION",
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
    ]
   },
   "bond-protocol": {
@@ -1211,9 +1240,12 @@
    "first_delivered_in": "3bc30a7",
    "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
    "runs": [
-    "3bc30a7"
+    "3bc30a7",
+    "7e319ee"
    ],
-   "families": []
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
   },
   "accumulated-finance-liquid-staking": {
    "first_delivered_in": "3bc30a7",
@@ -1221,7 +1253,8 @@
    "runs": [
     "3bc30a7",
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "SIG-VERIFIER-DEFEATABLE"
@@ -1248,7 +1281,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-ZERO-ADDRESS-ACCEPTED"
@@ -1259,7 +1293,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ACC-SIGN-OR-BOUND-CHECK-MISSING"
@@ -1270,9 +1305,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING",
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
    ]
   },
@@ -1281,7 +1318,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1292,7 +1330,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-INITIALIZER-REACHABLE-LIVE"
@@ -1303,7 +1342,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1314,7 +1354,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
@@ -1325,7 +1366,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1336,7 +1378,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1347,9 +1390,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING",
     "SIG-VERIFIER-DEFEATABLE"
    ]
   },
@@ -1358,7 +1403,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-INITIALIZER-REACHABLE-LIVE"
@@ -1369,7 +1415,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-ZERO-ADDRESS-ACCEPTED"
@@ -1380,7 +1427,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-INITIALIZER-REACHABLE-LIVE"
@@ -1391,7 +1439,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-INITIALIZER-REACHABLE-LIVE"
@@ -1402,7 +1451,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ACC-SIGN-OR-BOUND-CHECK-MISSING"
@@ -1413,7 +1463,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ACC-SIGN-OR-BOUND-CHECK-MISSING"
@@ -1424,7 +1475,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1446,7 +1498,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
@@ -1457,7 +1510,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1468,7 +1522,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-INITIALIZER-REACHABLE-LIVE"
@@ -1479,7 +1534,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
@@ -1490,7 +1546,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-ZERO-ADDRESS-ACCEPTED"
@@ -1501,7 +1558,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1512,9 +1570,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED",
     "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
    ]
   },
@@ -1523,9 +1583,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE",
     "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
    ]
   },
@@ -1534,7 +1596,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1545,9 +1608,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
    ]
   },
@@ -1556,7 +1621,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
@@ -1567,9 +1633,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED",
     "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
    ]
   },
@@ -1578,7 +1646,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1589,9 +1658,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
     "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
    ]
   },
@@ -1600,7 +1671,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ACC-SIGN-OR-BOUND-CHECK-MISSING"
@@ -1611,9 +1683,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
    ]
   },
@@ -1622,7 +1696,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-ZERO-ADDRESS-ACCEPTED"
@@ -1633,7 +1708,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1644,9 +1720,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING",
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
    ]
   },
@@ -1655,7 +1733,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ACC-SIGN-OR-BOUND-CHECK-MISSING"
@@ -1666,7 +1745,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1677,7 +1757,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-ZERO-ADDRESS-ACCEPTED"
@@ -1688,7 +1769,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
@@ -1699,7 +1781,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-ZERO-ADDRESS-ACCEPTED"
@@ -1710,9 +1793,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
     "SIG-VERIFIER-DEFEATABLE"
    ]
   },
@@ -1721,7 +1806,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1732,7 +1818,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "ACC-SIGN-OR-BOUND-CHECK-MISSING"
@@ -1743,9 +1830,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING",
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
    ]
   },
@@ -1754,7 +1843,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1776,7 +1866,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
     "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
@@ -1787,9 +1878,11 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY",
     "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
    ]
   },
@@ -1809,7 +1902,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1818,7 +1912,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1827,7 +1922,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1836,7 +1932,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1845,7 +1942,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1854,7 +1952,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1863,7 +1962,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1872,7 +1972,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1881,7 +1982,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1890,7 +1992,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1899,7 +2002,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1908,7 +2012,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1917,7 +2022,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1926,7 +2032,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1935,7 +2042,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1944,7 +2052,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1953,7 +2062,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1962,7 +2072,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1971,7 +2082,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1980,7 +2092,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1989,7 +2102,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -1998,7 +2112,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2007,7 +2122,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2016,7 +2132,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2025,7 +2142,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2034,7 +2152,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2043,7 +2162,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2052,7 +2172,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2061,7 +2182,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2070,7 +2192,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2079,7 +2202,8 @@
    "first_subject": "Validate the ranking model and measure custody exposure separately",
    "runs": [
     "2ce88d1",
-    "5a3468f"
+    "5a3468f",
+    "7e319ee"
    ],
    "families": []
   },
@@ -2134,6 +2258,1176 @@
    "runs": [
     "2ce88d1",
     "5a3468f"
+   ],
+   "families": []
+  },
+  "smardex-amm": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "kyberswap-elastic": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "moneyfi": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "varen": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "elk": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "sectorone-dlmm": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "hunny-finance": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "basedbid": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "landshare": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "treedefi": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "de1": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "smartcredit": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "krystal-community-vault": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "xtoken": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "clipper": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "antfarm-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "astaria-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "swapr-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "yield-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "mim-swap": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "derive-v1": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "myx-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "bitstable-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "deri-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "saffron-vaults": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "openeden-prism": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "padswap": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "prdt": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "nested": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "geyser": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "orion-pools": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "domani-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "unsheth": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "resonate-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "printr": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "ufarm-digital": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "meter-passport": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "gammaswap-open-interest": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "arch": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "everything": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "wasabi-perps": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "solo-top": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "clearpool-lending": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "mellow-yield": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "gyroscope-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "base-dollar": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "hashflow": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "juicebox-v3": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "ajna-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "cache.gold": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "sablier-legacy": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "mesher": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "niob-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "ipor-derivatives": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "babydoge-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "snowswap": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "opium": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "bella-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "cover-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "ammalgam-dlex": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "silo-v3": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "equilibria": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "moonwell-lending": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "privacy-cash": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "mcdex": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "swaap-maker-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "singular-farm": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "yieldnest": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "ankr": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "hop-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "sunx-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "harvest-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "vault-street-primeusd": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "overtime": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "orbit-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "gnosis-protocol-v1": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "sparklend": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "reservoir-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "makina": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "b.protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "wing-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "mountain-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "steer-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "lendflare": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "unitus": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "ichi": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "tau-labs": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "spectra-metavaults-outside-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "nomiswap": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "aave-v1": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "cronos-zkevm-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "asseto-cash+": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "pooltogether-v5": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "peapods-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "yearn-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "kromatika": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "unslashed": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "joe-dex": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "stafi": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "orderly-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "mortgagefi": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "jetfuel-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "savvy": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "otsea": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "swell-earn": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "mero": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "muffin": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "defibox": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "unagii": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "nomad": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "itrust-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "apostro": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "asymmetry-usdaf": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "lucidly-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "international-meme-fund-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "8lends": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "tidaldex": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "b.protocol-curator": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "dsf.finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "hydt-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "steakhut-liquidity": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "bearnfi": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "bima-cdp": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "axelar-cross-chain": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "sigma-money": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "adi-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "credit-coop": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "nucleus": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "threshold-thusd": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "thedeep": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
    ],
    "families": []
   }

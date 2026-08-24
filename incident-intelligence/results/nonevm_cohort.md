@@ -8,6 +8,34 @@ Every probe in the main screen is `eth_call`, `eth_getStorageAt`, `eth_getCode` 
 
 The last incident inside this run's window, four days before it closed, was on one of them.
 
+## The correction that reshaped this cohort
+
+The first version of this cohort was sized by **how many protocols each chain has**. That is a popularity measure, not a risk measure, and it produced a cohort that was 40% Solana. Measured against incidents that ordering is backwards.
+
+`hazard = incident share / protocol share`, over DefiLlama's on-chain incidents using the same root-cause exclusions as this run's inclusion gate. Above 1 means over-represented among actual victims relative to how much of the universe the chain is.
+
+| Chain | Hazard | Incidents | Protocols | Family | Was given |
+|---|---:|---:|---:|---|---|
+| EOS | **×7.02** | 15 | 18 | other | **never considered** |
+| Acala | **×5.05** | 3 | 5 | Substrate | 10 slots (Substrate) |
+| Terra | **×3.37** | 4 | 10 | Cosmos | 40 slots (Cosmos) |
+| Secret | **×2.10** | 2 | 8 | Cosmos | 40 slots (Cosmos) |
+| Osmosis | **×1.40** | 2 | 12 | Cosmos | 40 slots (Cosmos) |
+| Stacks | **×1.12** | 2 | 15 | other | — |
+| Hedera | **×1.10** | 3 | 23 | other | — |
+| NEAR | **×1.09** | 4 | 31 | other | — |
+| Solana | **×0.63** | 22 | 293 | other | **169 slots — the largest share** |
+| Sui | **×0.59** | 6 | 86 | other | 102 slots (Move) |
+| TON | **×0.34** | 2 | 50 | other | — |
+
+Aggregated, the Cosmos family measures **×2.25** and everything else non-EVM **×0.74**. This run's own in-window corpus agrees independently: 6 Solana incidents against roughly 7 across Cosmos-family chains (Coreum, Quicksilver, Secret, Axelar, Osmosis, a THORChain fork, Dango), from a Solana protocol base an order of magnitude larger.
+
+The cohort is now ordered by measured hazard. A chain below the support floor — fewer than 3 protocols or 2 incidents — is marked `UNMEASURED` and never promoted on a guess, because a ratio built on one incident is noise, not evidence.
+
+**Frequency and severity disagree, and both are kept.** Bridges are the clearest case: by frequency the `Bridge` category is *under*-represented at ×0.80 (12 incidents across 108 protocols), yet it carries **$1.22bn** — the largest loss of any category — at roughly $102M per incident. For an operator working a $50k–$30M band that severity is out of reach by construction, and the band filter removes those protocols before scoring. So the ranking uses frequency and severity is reported beside it rather than folded in.
+
+**Only 56 of the 621 in-band non-EVM protocols sit on a chain measuring hazard ≥ 1.** That, not 621, is the set worth attention.
+
 ## What Maya Protocol added to the library
 
 `INC-2026-08-18-MAY` was already in the corpus, graded B on a one-line index record. Given a detailed technical account, this pass went and checked it: **5 of 6 claimed defects were confirmed at the exact file and line, against the project's live public source.** Under this run's grading rule that is deployed-code evidence, so the record moves to grade **A**. The per-claim record is `incidents/source_verification.json`.
@@ -75,48 +103,50 @@ Osmosis read clean on the modules examined. That is a statement about 16 files i
 
 The remainder is delivered at what can honestly be claimed for it: DefiLlama metadata plus a runtime classification and the families that structurally apply. These are **not** ranked alongside the EVM candidates, because a metadata-level pair and a guard-reviewed deployed-source pair are not comparable evidence and folding them into one list would imply they are. Full rows in `protocols/nonevm_cohort.json`.
 
-| # | Protocol | Chain | Runtime | Value at risk | Public repo |
-|---:|---|---|---|---:|---|
-| 1 | [Decibel](https://defillama.com/protocol/decibel) | Aptos | `MOVE` | $29,817,175 | — |
-| 2 | [Vaulta REX](https://defillama.com/protocol/vaulta-rex) | EOS | `OTHER_VM` | $29,505,988 | — |
-| 3 | [Hydration Lending](https://defillama.com/protocol/hydration-lending) | HydraDX | `SUBSTRATE_RUST` | $29,416,512 | — |
-| 4 | [Rhea Dex](https://defillama.com/protocol/rhea-dex) | Near | `OTHER_VM` | $28,466,339 | — |
-| 5 | [Hydration DEX](https://defillama.com/protocol/hydration-dex) | HydraDX | `SUBSTRATE_RUST` | $27,425,114 | yes |
-| 6 | [Pacifica Perps](https://defillama.com/protocol/pacifica-perps) | Solana | `SOLANA_RUST` | $26,681,528 | — |
-| 7 | [STON.fi](https://defillama.com/protocol/ston.fi) | TON | `OTHER_VM` | $26,379,222 | — |
-| 8 | [Stakee](https://defillama.com/protocol/stakee) | TON | `OTHER_VM` | $26,112,521 | — |
-| 9 | [xALGO Liquid Staking](https://defillama.com/protocol/xalgo-liquid-staking) | Algorand | `OTHER_VM` | $25,798,016 | — |
-| 10 | [wTAO](https://defillama.com/protocol/wtao) | Bittensor | `UNKNOWN_RUNTIME` | $25,426,400 | — |
-| 11 | [Adrastea Validator](https://defillama.com/protocol/adrastea-validator) | Solana | `SOLANA_RUST` | $24,913,258 | — |
-| 12 | [Cetus CLMM](https://defillama.com/protocol/cetus-clmm) | Sui | `MOVE` | $24,733,471 | — |
-| 13 | [Hylo Protocol](https://defillama.com/protocol/hylo-protocol) | Solana | `SOLANA_RUST` | $24,463,053 | — |
-| 14 | [Meteora DAMM V2](https://defillama.com/protocol/meteora-damm-v2) | Solana | `SOLANA_RUST` | $23,436,419 | — |
-| 15 | [ObeliskBTC](https://defillama.com/protocol/obeliskbtc) | Bitcoin | `OTHER_VM` | $23,142,064 | — |
-| 16 | [XION Finance](https://defillama.com/protocol/xion-finance) | XION | `UNKNOWN_RUNTIME` | $22,905,270 | — |
-| 17 | [Folks Finance Lending](https://defillama.com/protocol/folks-finance-lending) | Algorand | `OTHER_VM` | $22,752,418 | — |
-| 18 | [BULK](https://defillama.com/protocol/bulk) | Solana | `SOLANA_RUST` | $21,575,707 | — |
-| 19 | [Vesta Equity](https://defillama.com/protocol/vesta-equity) | Algorand | `OTHER_VM` | $20,634,337 | — |
-| 20 | [DeFindex](https://defillama.com/protocol/defindex) | Stellar | `OTHER_VM` | $19,520,573 | yes |
-| 21 | [Volo LST](https://defillama.com/protocol/volo-lst) | Sui | `MOVE` | $19,367,619 | — |
-| 22 | [Bluefin Spot](https://defillama.com/protocol/bluefin-spot) | Sui | `MOVE` | $19,013,777 | — |
-| 23 | [Hylo LSTs](https://defillama.com/protocol/hylo-lsts) | Solana | `SOLANA_RUST` | $18,800,105 | — |
-| 24 | [RHEA LST](https://defillama.com/protocol/rhea-lst) | Near | `OTHER_VM` | $18,027,614 | — |
-| 25 | [CatFee Staking Vault](https://defillama.com/protocol/catfee-staking-vault) | Tron | `OTHER_VM` | $17,863,267 | — |
-| 26 | [Manifest Trade](https://defillama.com/protocol/manifest-trade) | Solana | `SOLANA_RUST` | $17,774,671 | — |
-| 27 | [AlphaFi Agg](https://defillama.com/protocol/alphafi-agg) | Sui | `MOVE` | $17,747,390 | — |
-| 28 | [Realms](https://defillama.com/protocol/realms) | Solana | `SOLANA_RUST` | $17,610,438 | — |
-| 29 | [Jito Restaking](https://defillama.com/protocol/jito-restaking) | Solana | `SOLANA_RUST` | $17,504,346 | — |
-| 30 | [STRATO](https://defillama.com/protocol/strato) | Strato | `UNKNOWN_RUNTIME` | $17,418,780 | — |
-| 31 | [Sceptre Liquid](https://defillama.com/protocol/sceptre-liquid) | Flare | `OTHER_VM` | $16,970,333 | — |
-| 32 | [Bitget SOL](https://defillama.com/protocol/bitget-sol) | Solana | `SOLANA_RUST` | $16,569,126 | — |
-| 33 | [Youves](https://defillama.com/protocol/youves) | Tezos | `OTHER_VM` | $16,467,964 | yes |
-| 34 | [RISEx](https://defillama.com/protocol/risex) | RISE | `UNKNOWN_RUNTIME` | $16,163,762 | — |
-| 35 | [Serum](https://defillama.com/protocol/serum) | Solana | `SOLANA_RUST` | $16,054,662 | yes |
-| 36 | [Stellar DEX](https://defillama.com/protocol/stellar-dex) | Stellar | `OTHER_VM` | $15,827,041 | — |
-| 37 | [SparkDEX V4](https://defillama.com/protocol/sparkdex-v4) | Flare | `OTHER_VM` | $15,566,559 | — |
-| 38 | [Minswap DEX](https://defillama.com/protocol/minswap-dex) | Cardano | `OTHER_VM` | $15,256,659 | — |
-| 39 | [Hubra Staked SOL](https://defillama.com/protocol/hubra-staked-sol) | Solana | `SOLANA_RUST` | $15,098,544 | — |
-| 40 | [Qearn](https://defillama.com/protocol/qearn) | Qubic | `UNKNOWN_RUNTIME` | $14,801,351 | — |
+Ordered by measured chain hazard, then exposure.
+
+| # | Protocol | Chain | Hazard | Runtime | Value at risk | Public repo |
+|---:|---|---|---:|---|---:|---|
+| 1 | [Vaulta REX](https://defillama.com/protocol/vaulta-rex) | EOS | ×7.02 | `OTHER_VM` | $29,505,988 | — |
+| 2 | [WhaleEx](https://defillama.com/protocol/whaleex) | EOS | ×7.02 | `OTHER_VM` | $3,569,528 | — |
+| 3 | [Vaulta RAM](https://defillama.com/protocol/vaulta-ram) | EOS | ×7.02 | `OTHER_VM` | $1,805,436 | — |
+| 4 | [Alcor Exchange](https://defillama.com/protocol/alcor-exchange) | Wax | ×7.02 | `OTHER_VM` | $171,936 | — |
+| 5 | [DMD Finance](https://defillama.com/protocol/dmd-finance) | EOS | ×7.02 | `OTHER_VM` | $138,719 | — |
+| 6 | [PayCash](https://defillama.com/protocol/paycash) | EOS | ×7.02 | `OTHER_VM` | $112,093 | — |
+| 7 | [Vigor](https://defillama.com/protocol/vigor) | EOS | ×7.02 | `OTHER_VM` | $110,209 | — |
+| 8 | [DFS Network](https://defillama.com/protocol/dfs-network) | EOS | ×7.02 | `OTHER_VM` | $96,033 | yes |
+| 9 | [Acala LCDOT](https://defillama.com/protocol/acala-lcdot) | Acala | ×5.05 | `SUBSTRATE_RUST` | $2,181,137 | — |
+| 10 | [Acala Liquid Staking](https://defillama.com/protocol/acala-liquid-staking) | Acala | ×5.05 | `SUBSTRATE_RUST` | $1,911,243 | — |
+| 11 | [Acala Euphrates](https://defillama.com/protocol/acala-euphrates) | Acala | ×5.05 | `SUBSTRATE_RUST` | $235,755 | — |
+| 12 | [Taiga Acala](https://defillama.com/protocol/taiga-acala) | Acala | ×5.05 | `SUBSTRATE_RUST` | $69,168 | — |
+| 13 | [Terraswap](https://defillama.com/protocol/terraswap) | Terra | ×3.37 | `COSMOS_SDK_GO` | $346,102 | — |
+| 14 | [GarudaDefi](https://defillama.com/protocol/garudadefi) | Terra | ×3.37 | `COSMOS_SDK_GO` | $215,751 | — |
+| 15 | [Terraport](https://defillama.com/protocol/terraport) | Terra | ×3.37 | `COSMOS_SDK_GO` | $113,858 | — |
+| 16 | [ShadeLend](https://defillama.com/protocol/shadelend) | Secret | ×2.10 | `COSMOS_SDK_GO` | $253,105 | — |
+| 17 | [SecretSwap](https://defillama.com/protocol/secretswap) | Secret | ×2.10 | `COSMOS_SDK_GO` | $239,103 | — |
+| 18 | [BtnGroup](https://defillama.com/protocol/btngroup) | Secret | ×2.10 | `COSMOS_SDK_GO` | $164,613 | — |
+| 19 | [ShadeSwap](https://defillama.com/protocol/shadeswap) | Secret | ×2.10 | `COSMOS_SDK_GO` | $159,953 | — |
+| 20 | [SiennaSwap](https://defillama.com/protocol/siennaswap) | Secret | ×2.10 | `COSMOS_SDK_GO` | $141,963 | — |
+| 21 | [SiennaLend](https://defillama.com/protocol/siennalend) | Secret | ×2.10 | `COSMOS_SDK_GO` | $113,461 | — |
+| 22 | [stkd-SCRT](https://defillama.com/protocol/stkd-scrt) | Secret | ×2.10 | `COSMOS_SDK_GO` | $91,670 | — |
+| 23 | [Osmosis DEX](https://defillama.com/protocol/osmosis-dex) | Osmosis | ×1.40 | `COSMOS_SDK_GO` | $13,244,904 | yes |
+| 24 | [MilkyWay Liquid Staking](https://defillama.com/protocol/milkyway-liquid-staking) | Milkyway | ×1.40 | `COSMOS_SDK_GO` | $2,456,649 | — |
+| 25 | [Nolus Protocol](https://defillama.com/protocol/nolus-protocol) | Osmosis | ×1.40 | `COSMOS_SDK_GO` | $299,018 | yes |
+| 26 | [Margined Protocol](https://defillama.com/protocol/margined-protocol) | Osmosis | ×1.40 | `COSMOS_SDK_GO` | $265,205 | yes |
+| 27 | [BackBone Labs](https://defillama.com/protocol/backbone-labs) | Terra2 | ×1.40 | `COSMOS_SDK_GO` | $187,944 | yes |
+| 28 | [Granite](https://defillama.com/protocol/granite) | Stacks | ×1.12 | `OTHER_VM` | $8,270,726 | — |
+| 29 | [Hermetica hBTC](https://defillama.com/protocol/hermetica-hbtc) | Stacks | ×1.12 | `OTHER_VM` | $3,626,165 | — |
+| 30 | [Bitflow](https://defillama.com/protocol/bitflow) | Stacks | ×1.12 | `OTHER_VM` | $2,600,728 | yes |
+| 31 | [Hermetica USDh](https://defillama.com/protocol/hermetica-usdh) | Stacks | ×1.12 | `OTHER_VM` | $1,999,515 | — |
+| 32 | [Zest V1](https://defillama.com/protocol/zest-v1) | Stacks | ×1.12 | `OTHER_VM` | $1,610,451 | — |
+| 33 | [CityCoins](https://defillama.com/protocol/citycoins) | Stacks | ×1.12 | `OTHER_VM` | $905,006 | yes |
+| 34 | [ALEX](https://defillama.com/protocol/alex) | Stacks | ×1.12 | `OTHER_VM` | $700,136 | yes |
+| 35 | [Arkadiko](https://defillama.com/protocol/arkadiko) | Stacks | ×1.12 | `OTHER_VM` | $459,209 | yes |
+| 36 | [LISA](https://defillama.com/protocol/lisa) | Stacks | ×1.12 | `OTHER_VM` | $311,543 | — |
+| 37 | [Velar AMM](https://defillama.com/protocol/velar-amm) | Stacks | ×1.12 | `OTHER_VM` | $276,423 | — |
+| 38 | [StackingDAO](https://defillama.com/protocol/stackingdao) | Stacks | ×1.12 | `OTHER_VM` | $157,877 | yes |
+| 39 | [StackSwap](https://defillama.com/protocol/stackswap) | Stacks | ×1.12 | `OTHER_VM` | $70,466 | yes |
+| 40 | [SaucerSwap V1](https://defillama.com/protocol/saucerswap-v1) | Hedera | ×1.10 | `OTHER_VM` | $9,163,287 | — |
 
 ## What would move this forward
 

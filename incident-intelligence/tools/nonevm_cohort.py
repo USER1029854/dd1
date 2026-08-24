@@ -1,5 +1,31 @@
 #!/usr/bin/env python3
-"""Build the non-EVM cohort and classify each protocol's execution runtime.
+"""Build the non-EVM cohort, ordered by MEASURED hazard rather than by protocol count.
+
+The correction that produced this file
+--------------------------------------
+The first version sized the cohort by how many protocols each chain has, so Solana
+took the largest share at 169 slots. Measured against actual incidents that is
+backwards. hazard = incident share / protocol share, from DefiLlama's on-chain
+incidents (tools/nonevm_hazard.py):
+
+    EOS         x7.02    15 incidents /  18 protocols  -- highest non-EVM, never previously considered
+    Acala       x5.05     3 /   5   (Substrate)
+    Terra       x3.37     4 /  10   (Cosmos)
+    Secret      x2.10     2 /   8   (Cosmos)
+    Osmosis     x1.40     2 /  12   (Cosmos)
+    Solana      x0.63    22 / 293   -- UNDER-represented; had the largest share
+    Sui         x0.59     6 /  86
+    TON         x0.34     2 /  50
+
+Aggregated: Cosmos family x2.25, other non-EVM x0.74. The run's own in-window corpus
+agrees -- Solana 6 incidents against roughly 7 across Cosmos-family chains, from a
+Solana protocol base an order of magnitude larger.
+
+So the cohort is now ranked by measured hazard, and a chain below the support floor
+(fewer than 3 protocols or 2 incidents) is marked UNMEASURED and never promoted on a
+guess rather than being given a default.
+
+It also classifies each protocol's execution runtime.
 
 Why the runtime matters, and why this is not a blanket sweep
 -----------------------------------------------------------
@@ -23,7 +49,9 @@ them everywhere would manufacture false candidates:
 Everything here is DefiLlama metadata plus a public repository URL. No code has
 been read at this stage.
 """
-import json,sys,collections
+import json,sys,collections,os
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+import nonevm_hazard as NH
 B='/home/user/dd1/incident-intelligence'
 
 EVM={'Ethereum','Arbitrum','Optimism','Base','Polygon','Binance','Avalanche','Fantom','Gnosis','xDai',
@@ -84,6 +112,8 @@ def runtime(chains):
 
 def main():
     U=json.load(open(f'{B}/protocols/defillama_universe.json'))
+    HZ=NH.compute()
+    json.dump(HZ,open(f'{B}/protocols/chain_hazard_measured.json','w'),indent=1)
     rows=[]
     for u in U:
         t=u.get('_tvl') or 0
@@ -98,10 +128,14 @@ def main():
           "in_band":50_000<=t<=30_000_000,
           "screenable_families":sorted(f for f,rs in RUNTIME_FAMILIES.items() if rt in rs),
           "source_extensions":EXT[rt],
+          "measured_chain_hazard":NH.hazard_of(ch,HZ),
+          "hazard_status":("MEASURED" if NH.hazard_of(ch,HZ) is not None else "UNMEASURED"),
           "conditions":u.get('_conditions') or [],
           "audit_links":u.get('_audit_links') or [],"deprecated":bool(u.get('_deprecated')),
           "listedAt":u.get('listedAt')})
-    rows.sort(key=lambda r:(-r['tvl']))
+    # Order by measured hazard first, then exposure. A protocol on a chain with no
+    # measurable incident history sorts last: not safe, just unevidenced.
+    rows.sort(key=lambda r:(-(r['measured_chain_hazard'] or 0), -r['tvl']))
     json.dump(rows,open(f'{B}/protocols/nonevm_cohort.json','w'),indent=1)
     band=[r for r in rows if r['in_band']]
     gh=[r for r in band if r['github']]
@@ -111,6 +145,10 @@ def main():
       "in_band_with_public_repo":len(gh),
       "by_runtime_all":dict(collections.Counter(r['runtime'] for r in rows)),
       "by_runtime_screenable":dict(collections.Counter(r['runtime'] for r in gh)),
-      "tvl_in_band_with_repo":round(sum(r['tvl'] for r in gh),2)},indent=2))
+      "tvl_in_band_with_repo":round(sum(r['tvl'] for r in gh),2),
+      "in_band_on_a_measured_chain":sum(1 for r in band if r['hazard_status']=='MEASURED'),
+      "in_band_hazard_ge_1":sum(1 for r in band if (r['measured_chain_hazard'] or 0)>=1.0),
+      "top_by_measured_hazard":[(r['slug'],r['chains'][:1],r['measured_chain_hazard'],
+                                 round(r['tvl'])) for r in band[:12]]},indent=2))
 
 if __name__=='__main__': main()

@@ -1,6 +1,6 @@
 {
  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
- "generated_utc": "2026-08-24T04:10:45Z",
+ "generated_utc": "2026-08-24T07:37:45Z",
  "safety_attestation": {
   "production_transactions_submitted": 0,
   "production_transactions_constructed": 0,
@@ -189,8 +189,8 @@
   {
    "path": "commands.sh",
    "exists": true,
-   "bytes": 10149,
-   "sha256": "b532e831009c310be1965e2ef1ae582c6106988157cde4faad223a6d16059322",
+   "bytes": 10499,
+   "sha256": "84c3dfe6e0dff98d806fbfb15fa6ee8bddb76106346cb9348046ad917a3627fc",
    "role": "reproduction",
    "supports_claim": "Every retrieval and transformation step in execution order"
   },
@@ -261,8 +261,8 @@
   {
    "path": "families/near_miss_library.jsonl",
    "exists": true,
-   "bytes": 487843,
-   "sha256": "7b638bc204a482864181f4dc80d1c37f5f08f0e6e62a05342108bf9bce082f6d",
+   "bytes": 518899,
+   "sha256": "6e33c8e48fba5fa67ccebb655f1ce066ea905e08d388b7061258a32757597b3b",
    "role": "guard library",
    "supports_claim": "Pairs killed by a precondition or a decisive guard, with residual uncertainty"
   },
@@ -317,16 +317,16 @@
   {
    "path": "protocols/deep_screen_worklist.json",
    "exists": true,
-   "bytes": 31284721,
-   "sha256": "5efb569890e3720fe0fcbb4f5aeb4c28dabdea8cf7d7badc99714ed1c59e80fb",
+   "bytes": 53309142,
+   "sha256": "9eeea607fbea73cbe715e0f49203a001346c6954638e4d89f77bd44197b650cc",
    "role": "screen",
    "supports_claim": "Stratified deep-screen worklist across families and exposure tiers"
   },
   {
    "path": "protocols/adapters_index.json",
    "exists": true,
-   "bytes": 3566448,
-   "sha256": "1af9dded64c7849c35b6feb30e5e0efc8d1ab651f8fe455631f8269888743b4c",
+   "bytes": 4465782,
+   "sha256": "69bc876635d937b02da22bbd494450ea134ce5a5bd7e373ad90d054113f9eca5",
    "role": "adapter evidence",
    "supports_claim": "Per-protocol adapter read, hashes, addresses, dynamic sources"
   },
@@ -349,8 +349,8 @@
   {
    "path": "protocols/onchain_probes.json",
    "exists": true,
-   "bytes": 8149711,
-   "sha256": "b296f02b5f07844a92b8c812758ea5ef629a8e18a1c8e351b2831b0b34bdb5f4",
+   "bytes": 9260841,
+   "sha256": "37b3b5418bb57a6691ce325ec68158c8a6565fe47cb3278ac56f3bf1c4cbb6fa",
    "role": "live state",
    "supports_claim": "Read-only eth_call/eth_getStorageAt/getsourcecode results"
   },
@@ -397,48 +397,48 @@
   {
    "path": "protocols/deep_screened.jsonl",
    "exists": true,
-   "bytes": 54765628,
-   "sha256": "6dea2a13b4aa3235a580a2b2c582497079debc4226eb09ce65f990fc147f6a23",
+   "bytes": 95575918,
+   "sha256": "89ebc7d14020e460eaa17e5943ff7313a27d703fb201709b2fce4edd0d7e94f3",
    "role": "scoring",
    "supports_claim": "Per-pair precondition gate, guards, MATCH/CONFIDENCE/PREVENTION with components"
   },
   {
    "path": "results/candidates_all.csv",
    "exists": true,
-   "bytes": 5508597,
-   "sha256": "b78d0352ae2ffe4fdbb58fad1e07ec2b9baafb67de3d68b41911b2ece072196e",
+   "bytes": 9570015,
+   "sha256": "f792c24f0c31078268d9944ce6e7f539367fd376c08771909bec35ffd6bc28a4",
    "role": "results",
    "supports_claim": "Every surviving pair with both ranks and full score components"
   },
   {
    "path": "results/candidates_by_priority.md",
    "exists": true,
-   "bytes": 195818,
-   "sha256": "928e09d1a49ba4eee4d07e19aec12084f0bf8697a2b9380a59d35d066c99c22f",
+   "bytes": 189243,
+   "sha256": "c11f61f41fac14ebbc49a21964fc6a6354cf9ca3548ea52ff286cef0943eceb2",
    "role": "results",
    "supports_claim": "Ranking A - PRIORITY = likelihood x actionability; the queue to actually work"
   },
   {
    "path": "results/candidates_by_likelihood.md",
    "exists": true,
-   "bytes": 135019,
-   "sha256": "5794f6e59e6e5a4f9364b9bdce9cd8216ad21b1ff6ca8f3499e1f915af7dbf5d",
+   "bytes": 100561,
+   "sha256": "3fb5a5ca6595d28f856e69812a33991a965c641ad79dd646366331f437699e5e",
    "role": "results",
    "supports_claim": "Ranking B - likelihood alone, ignoring whether an independent reviewer can act"
   },
   {
    "path": "results/candidates_by_match.md",
    "exists": true,
-   "bytes": 91300,
-   "sha256": "929cd112296c0bb8cb9a48912e510bc1160601e6f96f83cccf70789feb046eff",
+   "bytes": 78879,
+   "sha256": "cc98fb94386789e3d59191f8e5ee71ca09a7f81a65cc0a2550587913540aad76",
    "role": "results",
    "supports_claim": "Ranking C - mechanism match only, no learned component"
   },
   {
    "path": "results/upgrade_authority_exposure.md",
    "exists": true,
-   "bytes": 13758,
-   "sha256": "2369a4e4745d3ee0eecef9b740e1484fc6fbea343e81f570ec624008ef41a7dc",
+   "bytes": 12535,
+   "sha256": "84b38744854b4dda7177ba90b9d4518e40bee4b0d9294174f0f5d0b034992828",
    "role": "results",
    "supports_claim": "Custody exposure: terminal upgrade authority per protocol, scored separately from likelihood on the ablation's evidence"
   },
@@ -461,8 +461,8 @@
   {
    "path": "protocols/feature_lift_uncensored.json",
    "exists": true,
-   "bytes": 7830,
-   "sha256": "d697298b0747e642a204f6b2b4e531f5331614013c111513da74563b274fb8d8",
+   "bytes": 8009,
+   "sha256": "28b13ac7550bf9900dedba4738c262682b83e40ee61f8afb169dc0a6c2921307",
    "role": "validation",
    "supports_claim": "Per-signal measured lift over the full listed universe, correcting the survivorship censoring"
   },
@@ -477,8 +477,8 @@
   {
    "path": "protocols/learned_weights.json",
    "exists": true,
-   "bytes": 4304,
-   "sha256": "ca468dc1042783b084c429c1327fabbe41b684e627d7e4f4c4067b6881965d44",
+   "bytes": 4303,
+   "sha256": "1e724635ab385ae2a35bc27412c444c7887e4ac72153610da7080d663460eab7",
    "role": "validation",
    "supports_claim": "Weights fitted on 2022-24 incidents and validated against 2025-26 incidents, with the temporal split recorded"
   },
@@ -486,7 +486,7 @@
    "path": "protocols/ablation.json",
    "exists": true,
    "bytes": 900,
-   "sha256": "6d73c9dc846eb115d5d293704199c2dadb199ce96ae29b63fcffeefd0db80500",
+   "sha256": "4dfd7e6f8666ace630ed603af0f142bd84c64413ddfa3173901ccb67d5aaba49",
    "role": "validation",
    "supports_claim": "Feature-group ablation: which v4 additions actually improved out-of-sample prediction, and which were dropped for failing to"
   },
@@ -501,16 +501,16 @@
   {
    "path": "protocols/admin_posture.json",
    "exists": true,
-   "bytes": 223866,
-   "sha256": "ebb10598d0edd029bfaf2a5db20ea432e04af282f6d830a30f7a94c24dd8f3dc",
+   "bytes": 288395,
+   "sha256": "fa4a46fcd64efc45feb214dc0583b195d37ea4113c8238d87eb51e581f4fdd99",
    "role": "live state",
    "supports_claim": "Terminal upgrade/privileged authority per protocol, resolved by walking ERC-1967 admin and owner() chains up to three hops"
   },
   {
    "path": "protocols/authority_exposure.json",
    "exists": true,
-   "bytes": 159878,
-   "sha256": "6a7f8d11b0f4332c729f9b0b2e46abb6d200ae15f1bbd57e9cb486236a48b203",
+   "bytes": 211875,
+   "sha256": "febe683d4f876055551f5677e38106467af95cb86261b91455458eb0a2085413",
    "role": "live state",
    "supports_claim": "Custody exposure rows behind results/upgrade_authority_exposure.md"
   },
@@ -523,10 +523,18 @@
    "supports_claim": "Per-claim verification of INC-2026-08-18-MAY against the project's live public source, plus the THORChain upstream check"
   },
   {
+   "path": "protocols/chain_hazard_measured.json",
+   "exists": true,
+   "bytes": 62539,
+   "sha256": "5244c4771a612eca7c80b0c195a78507aa0f10c7788c8700638d160e64e1c0ca",
+   "role": "screen",
+   "supports_claim": "Per-chain hazard measured as incident share over protocol share, with a support floor below which a chain is left UNMEASURED rather than defaulted"
+  },
+  {
    "path": "protocols/nonevm_cohort.json",
    "exists": true,
-   "bytes": 444360,
-   "sha256": "40e6378b114dc3da1c29cb96879f21e30fe70c78e746e4e54d7364552061b8c4",
+   "bytes": 491290,
+   "sha256": "1e06ce3864596f5393e4733f44333ea5e90c06cf0553a14dbdb8bad2b3963d19",
    "role": "screen",
    "supports_claim": "Non-EVM protocols above the floor, classified by execution runtime, with the families that structurally apply to each"
   },
@@ -541,24 +549,24 @@
   {
    "path": "protocols/delivered_ledger.json",
    "exists": true,
-   "bytes": 53220,
-   "sha256": "a2582bee599ebd2be4f40396cb063cc0cf3fe16d802104cf912d91a25dd3f53e",
+   "bytes": 81293,
+   "sha256": "89322dc413d3074205cfd9e2842a9dab74c0b0e64e09141efaab29036f98e091",
    "role": "delivery",
    "supports_claim": "Cumulative ledger of every protocol handed over in a previous run, reconstructed from git history; excluded from this run's candidates"
   },
   {
    "path": "results/nonevm_cohort.md",
    "exists": true,
-   "bytes": 12730,
-   "sha256": "c14165dada1dd2d5349c1f10ea6f4355888fe7d79c6a103ecc5e29df5287ee49",
+   "bytes": 15570,
+   "sha256": "acfb2e9435b984933c9ac595d039fab8d325253b9061751e2057a7be0c0af6c5",
    "role": "results",
    "supports_claim": "The non-EVM cohort: what the EVM instrument could not see, the Maya verification, the THORChain kill, and an explicit coverage limit"
   },
   {
    "path": "protocols/band_screen.json",
    "exists": true,
-   "bytes": 3168568,
-   "sha256": "12bcb2ad2c30d936752ed3c262004b43d0ffdf1711f4a0bf2a9cdf9172cfc1e5",
+   "bytes": 3203172,
+   "sha256": "af7dec90c9a8afc0d4918c6e6e92e1d93aa7c5a265039c089659495b4c1c37ee",
    "role": "screen",
    "supports_claim": "Per-protocol band status, empirical hazard, attention deficit and attacker economics"
   },
@@ -573,8 +581,8 @@
   {
    "path": "results/audit_variables.txt",
    "exists": true,
-   "bytes": 54158,
-   "sha256": "357e0e65b919d05a95522d5bb0a67c048aa3176c6c8acdf2568066e2b8811c5e",
+   "bytes": 51887,
+   "sha256": "d936937c08466e042c1c87841c55c8c986a1670ae74d5ae470b21d05c7e0eeeb",
    "role": "handoff",
    "supports_claim": "One self-contained line per final candidate for the downstream audit prompt"
   },
@@ -589,8 +597,8 @@
   {
    "path": "results/run_summary.md",
    "exists": true,
-   "bytes": 8104,
-   "sha256": "f85af5a8140ac6483d33a2e57a57bc51ace858b924b2633530685877f12a2489",
+   "bytes": 8091,
+   "sha256": "51e19a1219b386a5fbb7eb72dc9c547fda218e8586d49a72cff3ca037c0d383e",
    "role": "results",
    "supports_claim": "Required summary statistics"
   },
@@ -598,7 +606,7 @@
    "path": "quality_report.md",
    "exists": true,
    "bytes": 12671,
-   "sha256": "c6f620741baa90a62b2d8ef4ff6f2bea7850c2e948d82c4e07edf55b8325cfac",
+   "sha256": "bd846d996380b14da5ea3a7bdef6a812c2e852cc439a36de4a40fdc0fef92ab8",
    "role": "quality",
    "supports_claim": "Mechanical quality gates and known limitations"
   }
@@ -626,6 +634,7 @@
   "Maya Protocol defect claims verified against live public source": "incidents/source_verification.json (5 of 6 confirmed at exact file and line)",
   "THORChain lineage lead killed on evidence": "incidents/source_verification.json#upstream_check",
   "every candidate is one not handed over before": "protocols/delivered_ledger.json + results/candidates_all.csv#previously_delivered",
+  "chain priority measured rather than assumed": "protocols/chain_hazard_measured.json (tools/nonevm_hazard.py)",
   "non-EVM coverage and its limit": "protocols/nonevm_cohort.json + results/nonevm_cohort.md + protocols/appchain_probe.json",
   "runtime families are not applied to runtimes that roll back": "tools/nonevm_cohort.py RUNTIME_FAMILIES + tools/matcher.py RUNTIME_ONLY",
   "near misses": "families/near_miss_library.jsonl",

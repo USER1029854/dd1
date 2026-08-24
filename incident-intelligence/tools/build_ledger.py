@@ -57,7 +57,14 @@ def delivered_in(commit):
 
 def main():
     head=git(["rev-parse","--short","HEAD"]).strip()
-    exclude_head='--include-head' not in sys.argv
+    # HEAD is a COMMITTED run, which means its candidates were already handed over.
+    # An earlier revision excluded it on the theory that HEAD was "the run being produced
+    # now" -- but the run being produced now is uncommitted and cannot be in git at all.
+    # That mistake let 5 protocols from the previous delivery be served a second time
+    # (smardex-amm, kyberswap-elastic, moneyfi, varen, elk). Every commit in history
+    # counts as delivered; --exclude-head is kept only for inspecting the ledger as it
+    # stood before the last delivery.
+    exclude_head='--exclude-head' in sys.argv
     led={}
     runs=[]
     for h,ts,subj in commits():

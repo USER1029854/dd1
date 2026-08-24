@@ -55,17 +55,17 @@ Every earlier version of this run assigned weights by judgement. This one measur
 
 - **Weights are `ln(lift)`**, where lift is P(signal | victim) / P(signal | population), fitted on 20 signals that clear >=40 population support, >=4 train victims and a lift outside the uninformative 0.70-1.35 band.
 
-- **Fitted on 2022-2024 incidents, tested on 2025-2026 incidents.** On 95 protocols never seen while fitting, the median future victim lands at the **78.6th percentile** and **58%** fall in the model's top quartile — a **x2.32 lift** over chance.
+- **Fitted on 2022-2024 incidents, tested on 2025-2026 incidents.** On 95 protocols never seen while fitting, the median future victim lands at the **78.7th percentile** and **59%** fall in the model's top quartile — a **x2.36 lift** over chance.
 
 - **Feature groups are ablated, not assumed.** Each variant below is refitted from scratch and revalidated on the same held-out incidents:
 
 | Variant | Out-of-sample lift | Verdict |
 |---|---:|---|
 | baseline (v3 feature set) | x2.19 | reference |
-| + exposure age | x2.32 | **kept** — the only addition that paid |
-| + admin posture | x2.15 | **dropped** — made prediction worse |
+| + exposure age | x2.36 | **kept** — the only addition that paid |
+| + admin posture | x2.19 | **dropped** — made prediction worse |
 | + public-repo flag | x2.19 | no effect; filtered out on its own lift |
-| + all v4 additions | x2.32 | shipped set |
+| + all v4 additions | x2.36 | shipped set |
 
 ### Three measurements that changed the model's mind
 
@@ -77,17 +77,17 @@ Every earlier version of this run assigned weights by judgement. This one measur
 
 ## 5b. What was measured and then deliberately left out of the score
 
-Authority chains were walked for 365 in-band protocols: ERC-1967 admin slot and `owner()`, up to three hops, terminal authority fingerprinted by the functions it answers (`getThreshold()`+`getOwners()` for a Safe, `getMinDelay()` or `delay()`+`GRACE_PERIOD()` for a timelock, `votingDelay()` for a governor, zero code size for an externally-owned account).
+Authority chains were walked for 483 in-band protocols: ERC-1967 admin slot and `owner()`, up to three hops, terminal authority fingerprinted by the functions it answers (`getThreshold()`+`getOwners()` for a Safe, `getMinDelay()` or `delay()`+`GRACE_PERIOD()` for a timelock, `votingDelay()` for a governor, zero code size for an externally-owned account).
 
-**23 protocols holding $56,405,869 have an upgrade authority that terminates in a single key or single signature.** It is a real and cheaply fixable exposure, and it is reported in `results/upgrade_authority_exposure.md`.
+**13 protocols holding $32,344,207 have an upgrade authority that terminates in a single key or single signature.** It is a real and cheaply fixable exposure, and it is reported in `results/upgrade_authority_exposure.md`.
 
-It is **not** in the likelihood score, and the reason is a measurement rather than a preference. Over the full window `admin_terminal_eoa` measures x0.982 and `admin_single_signature` x0.959 — no association with code-defect incidents at all — and the ablation shows adding the group *degrades* out-of-sample prediction (x2.19 -> x2.15). This is the answer the inclusion gate predicts: an off-chain key compromise is an excluded root cause here, so custody exposure should not move a code-defect likelihood. Mixing them would have made both numbers worse.
+It is **not** in the likelihood score, and the reason is a measurement rather than a preference. Over the full window `admin_terminal_eoa` measures x0.846 and `admin_single_signature` x0.829 — no association with code-defect incidents at all — and the ablation shows adding the group *degrades* out-of-sample prediction (x2.19 -> x2.15). This is the answer the inclusion gate predicts: an off-chain key compromise is an excluded root cause here, so custody exposure should not move a code-defect likelihood. Mixing them would have made both numbers worse.
 
 Market cap and TVL trajectory were refused for a different reason: both are read today, and for a victim they partly measure the hack's own aftermath. `mcap_below_tvl` looks informative at x2.258 and is almost certainly measuring post-incident token collapse. They are carried as ordering-only operational flags and never fitted.
 
 ## 6. New evidence in this pass
 
-- **Owner-is-EOA probe.** For every privileged `owner()` found, a second hop reads whether that address has code. 143 protocols have a privileged owner that is an externally owned account; 144 have one that is a contract (multisig or timelock). That is a direct, cheap read of who can move value, and it is one of the strongest attention-deficit signals in the model.
+- **Owner-is-EOA probe.** For every privileged `owner()` found, a second hop reads whether that address has code. 167 protocols have a privileged owner that is an externally owned account; 188 have one that is a contract (multisig or timelock). That is a direct, cheap read of who can move value, and it is one of the strongest attention-deficit signals in the model.
 
 - **Empirical hazard tables** in `tools/hazard.py`, derived from this run's own corpus rather than assumed.
 
@@ -95,7 +95,7 @@ Market cap and TVL trajectory were refused for a different reason: both are read
 
 1. **Static indicators are regexes, not analysis.** A match means *this shape is present in this file* — a reason to look, never a finding. They cannot follow control flow or resolve inheritance.
 
-2. **11349 of 14367 surviving pairs are still at metadata or adapter evidence**, because their adapters are dynamic or hold no addresses. Only the 45 finals reach L3 or L4.
+2. **23786 of 27043 surviving pairs are still at metadata or adapter evidence**, because their adapters are dynamic or hold no addresses. Only the 45 finals reach L3 or L4.
 
 2b. **Several learned weights are proxies for size and integration, not causes.** `has_2plus_audits` (x1.975) and `has_governance` (x2.968) are positive because protocols large enough to commission audits and run governance are large enough to be worth attacking. `owner_is_eoa` and `owner_is_contract` are *both* positive because what they really encode is that a live owner was readable at all. They order a queue usefully; none of them is a mechanism, and none should be quoted as a cause.
 
@@ -109,7 +109,7 @@ Market cap and TVL trajectory were refused for a different reason: both are read
 
 7. **Exposure is understated for approval-bearing families.** Live allowances and delegations were not enumerated, so TVL is a floor for those pairs, not a ceiling.
 
-8. **Prior art is not established for most finals.** 52 of 60 carry `PRIOR_ART_SEARCH_INCOMPLETE`. Several of these protocols may already have a public disclosure or a deployed fix. Check before spending time.
+8. **Prior art is not established for most finals.** 57 of 60 carry `PRIOR_ART_SEARCH_INCOMPLETE`. Several of these protocols may already have a public disclosure or a deployed fix. Check before spending time.
 
 9. **Small protocols can be small for a reason.** Some candidates are abandoned rather than merely neglected. A dead protocol with $80,000 left is a low-value save even when the finding is real; the value-at-risk column is there so you can make that call before starting.
 

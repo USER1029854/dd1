@@ -173,7 +173,20 @@ chk("evidence: grade-A-by-source claims are individually recorded with file and 
 chk("evidence: the lineage lead was checked and its result recorded either way",
     bool(_may.get('upstream_check',{}).get('result')) and bool(_may['upstream_check'].get('evidence')),
     f"THORChain upstream check -> {_may.get('upstream_check',{}).get('result')}")
+_hz=json.load(open(f'{B}/protocols/chain_hazard_measured.json'))
+_meas={k:v for k,v in _hz['chains'].items() if v['status']=='MEASURED'}
+chk("precision: chain priority is measured from incidents, not from protocol counts",
+    len(_meas)>=20 and all('hazard' in v and v['protocols']>=_hz['min_protocols']
+                           and v['incidents']>=_hz['min_incidents'] for v in _meas.values()),
+    f"{len(_meas)} chains measured; support floor {_hz['min_protocols']} protocols / {_hz['min_incidents']} incidents")
+chk("precision: a chain below the support floor is never given a hazard value",
+    all('hazard' not in v for v in _hz['chains'].values() if v['status']=='UNMEASURED'),
+    f"{sum(1 for v in _hz['chains'].values() if v['status']=='UNMEASURED')} chains left UNMEASURED rather than defaulted")
 _ne=json.load(open(f'{B}/protocols/nonevm_cohort.json'))
+_hzs=[(r['measured_chain_hazard'] or 0) for r in _ne]
+chk("precision: the non-EVM cohort is ordered by measured hazard, not by exposure alone",
+    all(_hzs[i]>=_hzs[i+1] for i in range(len(_hzs)-1)),
+    f"lead chains: {[r['chains'][0] for r in _ne[:3] if r['chains']]}")
 _ROLLBACK={'RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER','RUNTIME-HANDLER-ERROR-NO-ROLLBACK'}
 _bad_rt=[r['slug'] for r in _ne if (set(r['screenable_families']) & _ROLLBACK)
          and r['runtime'] not in ('COSMOS_SDK_GO','SUBSTRATE_RUST')]
