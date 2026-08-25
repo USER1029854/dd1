@@ -1,0 +1,5455 @@
+{
+ "generated": "2026-08-24",
+ "advisories": [
+  {
+   "id": "ASA-2026-002 / GHSA-54gx-3cgr-7mfm / GO-2026-4677",
+   "component": "ICS20 precompile",
+   "affected": "github.com/cosmos/evm < v0.6.0",
+   "patched": "v0.6.0",
+   "severity": "Critical",
+   "mechanism": "state updates during recursive calls not reflected in the outer execution context; the same token balance can be used repeatedly within one transaction",
+   "confirmed_exploitation": "Saga EVM, 2026-01-21, ~$7M (OUTSIDE this run's window)"
+  },
+  {
+   "id": "GHSA-mjfq-3qr2-6g84",
+   "component": "any precompile",
+   "affected": "evmOS / Cosmos EVM using precompiles",
+   "patched": "per-precompile atomic wrapper reverting partial state",
+   "severity": "High",
+   "mechanism": "a lower EVM call gas limit lets a caller partially execute a precompile and error at a chosen point without reverting already-written state; also a liveness vector",
+   "confirmed_exploitation": "none published"
+  },
+  {
+   "id": "GHSA-8pfh-j44r-f654",
+   "component": "static and dynamic precompiles",
+   "affected": "< v0.3.1 / v0.4.2 / v0.5.0",
+   "patched": "v0.3.1, v0.4.2, v0.5.0",
+   "severity": "Critical",
+   "mechanism": "withheld at disclosure; the advisory states no workaround exists for chains using precompiles, so upgrading was the only remediation path",
+   "confirmed_exploitation": "none published"
+  }
+ ],
+ "scope_basis": "chain membership in a Cosmos EVM stack per the vendor scope statement",
+ "explicitly_not": "a list of networks believed to be unpatched",
+ "assessability": {
+  "A_vendored_fork": "NOT_ASSESSABLE_HERE",
+  "B_disabled_not_upgraded": "NOT_ASSESSABLE_HERE",
+  "C_participation_only": "ASSESSABLE",
+  "D_migrated_off_evmos": "NOT_ASSESSABLE_HERE",
+  "E_governance_reachable": "NOT_ASSESSABLE_HERE",
+  "F_non_ics20_precompiles": "PARTIALLY_ASSESSABLE"
+ },
+ "protocols_on_cosmos_evm_chains": 222,
+ "in_band": 170,
+ "rows": [
+  {
+   "slug": "yieldfi",
+   "name": "YieldFi",
+   "tvl": 11338537.791099964,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/yieldfi",
+   "cosmos_evm_chains": [
+    "Saga",
+    "TAC"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Ethereum",
+    "Katana",
+    "Linea",
+    "Optimism"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": [
+    "Saga"
+   ],
+   "aggravating_prior_incident_12mo": [
+    "2026-01-21",
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "carbon-defi",
+   "name": "Carbon Defi",
+   "tvl": 1479128.8801471796,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/carbon-defi",
+   "cosmos_evm_chains": [
+    "Sei",
+    "TAC"
+   ],
+   "all_chains": [
+    "Celo",
+    "Coti",
+    "Ethereum",
+    "Sei",
+    "TAC"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12",
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "steer-protocol",
+   "name": "Steer Protocol",
+   "tvl": 20439703.826989923,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/steer-protocol",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Evmos",
+    "Kava",
+    "Nibiru",
+    "Saga",
+    "Sei",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "ApeChain",
+    "Arbitrum",
+    "Astar",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Bittensor EVM"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": [
+    "Saga"
+   ],
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12",
+    "2026-01-21"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "satlayer",
+   "name": "SatLayer",
+   "tvl": 184744.28521104535,
+   "category": "Anchor BTC",
+   "defillama_url": "https://defillama.com/protocol/satlayer",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "TAC"
+   ],
+   "all_chains": [
+    "BOB",
+    "Babylon Genesis",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Bitlayer",
+    "Ethereum",
+    "Sui"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "orderly-bridge",
+   "name": "Orderly Bridge",
+   "tvl": 28007293.143568326,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/orderly-bridge",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Sei"
+   ],
+   "all_chains": [
+    "ADI",
+    "Abstract",
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "pumpbtc",
+   "name": "PumpBTC",
+   "tvl": 26551029.020907223,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/pumpbtc",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "BOB",
+    "Base",
+    "Binance",
+    "Bitcoin",
+    "Ethereum",
+    "Mantle",
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "zoo-finance",
+   "name": "Zoo Finance",
+   "tvl": 20836513.522426214,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/zoo-finance",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Sei",
+    "Story"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "feather",
+   "name": "Feather",
+   "tvl": 13652853.854242917,
+   "category": "Risk Curators",
+   "defillama_url": "https://defillama.com/protocol/feather",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Celo",
+    "Ethereum",
+    "Klaytn",
+    "MegaETH",
+    "Polygon",
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "astroport",
+   "name": "Astroport",
+   "tvl": 9656968.218426907,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/astroport",
+   "cosmos_evm_chains": [
+    "Injective",
+    "Sei"
+   ],
+   "all_chains": [
+    "Injective",
+    "Neutron",
+    "Osmosis",
+    "Sei",
+    "Terra2"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "saphyre-v3",
+   "name": "Saphyre V3",
+   "tvl": 9526912.999680093,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/saphyre-v3",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "symbiosis",
+   "name": "Symbiosis",
+   "tvl": 8735933.306312926,
+   "category": "Cross Chain Bridge",
+   "defillama_url": "https://defillama.com/protocol/symbiosis",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Cronos",
+    "Kava",
+    "Sei",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Abstract",
+    "ApeChain",
+    "Arbitrum",
+    "Arbitrum Nova",
+    "Aurora",
+    "Avalanche",
+    "BSquared",
+    "Bahamut"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "folks-finance-xchain",
+   "name": "Folks Finance xChain",
+   "tvl": 5427696.631392593,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/folks-finance-xchain",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Ethereum",
+    "Monad",
+    "Polygon",
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "splashing-stake",
+   "name": "Splashing Stake",
+   "tvl": 4638164.166274467,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/splashing-stake",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "yeilend",
+   "name": "YeiLend",
+   "tvl": 4311510.929375017,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/yeilend",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "sablier-lockup",
+   "name": "Sablier Lockup",
+   "tvl": 3001331.4234751575,
+   "category": "Payments",
+   "defillama_url": "https://defillama.com/protocol/sablier-lockup",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Sei"
+   ],
+   "all_chains": [
+    "Abstract",
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Blast",
+    "CORE"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "eris-protocol",
+   "name": "Eris Protocol",
+   "tvl": 2180836.435437171,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/eris-protocol",
+   "cosmos_evm_chains": [
+    "Injective",
+    "Nibiru",
+    "Sei"
+   ],
+   "all_chains": [
+    "Archway",
+    "Chihuahua",
+    "Injective",
+    "Juno",
+    "Kujira",
+    "Migaloo",
+    "Neutron",
+    "Nibiru"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "debridge",
+   "name": "deBridge",
+   "tvl": 1907280.5357799218,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/debridge",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Binance",
+    "Ethereum",
+    "Heco",
+    "Polygon",
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "takara-lend",
+   "name": "Takara Lend",
+   "tvl": 1631688.9346086853,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/takara-lend",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "avalon-finance",
+   "name": "Avalon Finance",
+   "tvl": 1326615.4585512548,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/avalon-finance",
+   "cosmos_evm_chains": [
+    "Sei",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "BOB",
+    "BSquared",
+    "Base",
+    "Binance",
+    "Bitlayer",
+    "CORE",
+    "Corn"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "sablier-flow",
+   "name": "Sablier Flow",
+   "tvl": 660310.7940908998,
+   "category": "Payments",
+   "defillama_url": "https://defillama.com/protocol/sablier-flow",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Sei"
+   ],
+   "all_chains": [
+    "Abstract",
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Blast",
+    "CORE"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "accumulated-finance-liquid-staking",
+   "name": "Accumulated Finance Liquid Staking",
+   "tvl": 622677.3789570851,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/accumulated-finance-liquid-staking",
+   "cosmos_evm_chains": [
+    "Sei",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Artela",
+    "Binance",
+    "Bitkub",
+    "Coti",
+    "Ethereum",
+    "Manta",
+    "Sapphire"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "white-whale-dex",
+   "name": "White Whale Dex",
+   "tvl": 463707.8809432202,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/white-whale-dex",
+   "cosmos_evm_chains": [
+    "Injective",
+    "Sei"
+   ],
+   "all_chains": [
+    "Chihuahua",
+    "Comdex",
+    "Injective",
+    "Juno",
+    "Migaloo",
+    "Osmosis",
+    "Sei",
+    "Terra2"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "gyroscope-protocol",
+   "name": "Gyroscope Protocol",
+   "tvl": 426045.5877236538,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/gyroscope-protocol",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Ethereum",
+    "Optimism",
+    "Polygon",
+    "Polygon zkEVM",
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "saphyre-v2",
+   "name": "Saphyre V2",
+   "tvl": 373625.2948226486,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/saphyre-v2",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "teahouse-managed",
+   "name": "Teahouse Managed",
+   "tvl": 320549.73855090945,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/teahouse-managed",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Binance",
+    "Ethereum",
+    "Optimism",
+    "Polygon",
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "sturdy-v2",
+   "name": "Sturdy V2",
+   "tvl": 266989.2797168308,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/sturdy-v2",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Ethereum",
+    "Flow",
+    "Linea",
+    "Mode",
+    "Optimism",
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "clovis",
+   "name": "Clovis",
+   "tvl": 234245.33261346063,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/clovis",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Optimism",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "lynx",
+   "name": "Lynx",
+   "tvl": 192607.8684704847,
+   "category": "Derivatives",
+   "defillama_url": "https://defillama.com/protocol/lynx",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Binance",
+    "Boba",
+    "Celo",
+    "Ethereum",
+    "Fantom",
+    "Flare"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "silostake",
+   "name": "SiloStake",
+   "tvl": 112095.193414563,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/silostake",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Sei"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "avalon-usdalend",
+   "name": "Avalon USDaLend",
+   "tvl": 65512.4266950093,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/avalon-usdalend",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Corn",
+    "IoTeX",
+    "Sei",
+    "Sonic",
+    "Taiko",
+    "Zircuit"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "connext",
+   "name": "Connext",
+   "tvl": 29891549.591792967,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/connext",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Evmos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Boba",
+    "Cronos",
+    "Ethereum",
+    "Evmos"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "crypto.com-liquid-staking",
+   "name": "Crypto.com Liquid Staking",
+   "tvl": 29469355.794817783,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/crypto.com-liquid-staking",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos",
+    "Solana"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "reservoir-protocol",
+   "name": "Reservoir Protocol",
+   "tvl": 26793977.401330635,
+   "category": "CDP",
+   "defillama_url": "https://defillama.com/protocol/reservoir-protocol",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Katana",
+    "Mantle"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "lair-finance",
+   "name": "Lair Finance",
+   "tvl": 25588576.9655814,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/lair-finance",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain",
+    "Klaytn",
+    "Somnia"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "extra-finance-leverage-farming",
+   "name": "Extra Finance Leverage Farming",
+   "tvl": 24987645.729560684,
+   "category": "Leveraged Farming",
+   "defillama_url": "https://defillama.com/protocol/extra-finance-leverage-farming",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Base",
+    "Berachain",
+    "Optimism"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kodiak-islands",
+   "name": "Kodiak Islands",
+   "tvl": 23335299.469571576,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/kodiak-islands",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "infrared-finance",
+   "name": "Infrared Finance",
+   "tvl": 19967992.15358411,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/infrared-finance",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "moonlander",
+   "name": "Moonlander",
+   "tvl": 19143257.755951323,
+   "category": "Derivatives",
+   "defillama_url": "https://defillama.com/protocol/moonlander",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos",
+    "Cronos zkEVM"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "dxsale",
+   "name": "DxSale",
+   "tvl": 15934950.081806427,
+   "category": "Launchpad",
+   "defillama_url": "https://defillama.com/protocol/dxsale",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "CORE",
+    "Celo",
+    "Cronos",
+    "Dexit"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "osl",
+   "name": "OSL",
+   "tvl": 15333084.949745229,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/osl",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "Binance",
+    "Bitcoin",
+    "Doge",
+    "Ethereum",
+    "Injective",
+    "Litecoin",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kodiak-v3",
+   "name": "Kodiak V3",
+   "tvl": 14895025.348172303,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/kodiak-v3",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "fulcrom-perps",
+   "name": "Fulcrom Perps",
+   "tvl": 12431717.147505088,
+   "category": "Derivatives",
+   "defillama_url": "https://defillama.com/protocol/fulcrom-perps",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos",
+    "Cronos zkEVM",
+    "zkSync Era"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "mev-capital",
+   "name": "MEV Capital",
+   "tvl": 11952318.894561918,
+   "category": "Risk Curators",
+   "defillama_url": "https://defillama.com/protocol/mev-capital",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Plume"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kava-mint",
+   "name": "Kava Mint",
+   "tvl": 11925830.074724128,
+   "category": "CDP",
+   "defillama_url": "https://defillama.com/protocol/kava-mint",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "synapse-cross-chain-bridge",
+   "name": "Synapse Cross Chain Bridge",
+   "tvl": 11793009.500953492,
+   "category": "Cross Chain Bridge",
+   "defillama_url": "https://defillama.com/protocol/synapse-cross-chain-bridge",
+   "cosmos_evm_chains": [
+    "Canto",
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Blast",
+    "Boba",
+    "Canto"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "flokifi-locker",
+   "name": "FlokiFi Locker",
+   "tvl": 11753115.165213827,
+   "category": "Token Locker",
+   "defillama_url": "https://defillama.com/protocol/flokifi-locker",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Evmos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Blast",
+    "Cronos",
+    "Dogechain",
+    "Ethereum"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "equilibria",
+   "name": "Equilibria",
+   "tvl": 11256298.53120837,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/equilibria",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Mantle",
+    "Optimism"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "stargate-v1",
+   "name": "Stargate V1",
+   "tvl": 10725482.5668401,
+   "category": "Cross Chain Bridge",
+   "defillama_url": "https://defillama.com/protocol/stargate-v1",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Ethereum",
+    "Fantom",
+    "Goerli",
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "acryptos",
+   "name": "ACryptoS",
+   "tvl": 10538192.05593582,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/acryptos",
+   "cosmos_evm_chains": [
+    "Canto",
+    "Cronos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Astar",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Canto",
+    "Cronos",
+    "Ethereum"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "bend",
+   "name": "BEND",
+   "tvl": 9834501.017334707,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/bend",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "hydro-lst",
+   "name": "Hydro LST",
+   "tvl": 8982819.71825934,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/hydro-lst",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "ichi",
+   "name": "ICHI",
+   "tvl": 7949092.877335575,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/ichi",
+   "cosmos_evm_chains": [
+    "Evmos",
+    "Kava",
+    "Nibiru"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Binance",
+    "Blast",
+    "Celo",
+    "Ethereum",
+    "Evmos",
+    "Fantom"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "autofarm",
+   "name": "Autofarm",
+   "tvl": 7773487.272498357,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/autofarm",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Evmos"
+   ],
+   "all_chains": [
+    "Aurora",
+    "Avalanche",
+    "Binance",
+    "Boba",
+    "Celo",
+    "Cronos",
+    "Evmos",
+    "Fantom"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "scrub-invest",
+   "name": "Scrub Invest",
+   "tvl": 7113682.706658806,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/scrub-invest",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kava-lend",
+   "name": "Kava Lend",
+   "tvl": 6512656.194556156,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/kava-lend",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "stride",
+   "name": "Stride",
+   "tvl": 5366519.351645314,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/stride",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Dymension",
+    "Evmos",
+    "Injective"
+   ],
+   "all_chains": [
+    "BandChain",
+    "Berachain",
+    "Celestia",
+    "Comdex",
+    "Cosmos",
+    "Dymension",
+    "Evmos",
+    "HAQQ"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "quickswap-v4",
+   "name": "Quickswap V4",
+   "tvl": 5365451.185802139,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/quickswap-v4",
+   "cosmos_evm_chains": [
+    "Mantra"
+   ],
+   "all_chains": [
+    "Base",
+    "Mantra",
+    "Polygon",
+    "Somnia",
+    "Soneium",
+    "X Layer"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": [
+    "Mantra"
+   ],
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "ferro",
+   "name": "Ferro",
+   "tvl": 4848506.400149964,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/ferro",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "pickle",
+   "name": "Pickle",
+   "tvl": 4790936.113360375,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/pickle",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "Cronos",
+    "Ethereum",
+    "Harmony",
+    "Kava",
+    "Metis",
+    "Moonbeam"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "abracadabra-spell",
+   "name": "Abracadabra Spell",
+   "tvl": 4667807.27631079,
+   "category": "CDP",
+   "defillama_url": "https://defillama.com/protocol/abracadabra-spell",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Binance",
+    "Blast",
+    "Ethereum",
+    "Fantom",
+    "Kava",
+    "Optimism"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "hydro-lending",
+   "name": "Hydro Lending",
+   "tvl": 4522399.262236383,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/hydro-lending",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "penpie",
+   "name": "Penpie",
+   "tvl": 4503553.380778712,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/penpie",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Optimism",
+    "Plasma"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "trustake",
+   "name": "TruStake",
+   "tvl": 4342809.92688259,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/trustake",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Aptos",
+    "Ethereum",
+    "Injective",
+    "Near",
+    "Solana"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "blueshift",
+   "name": "Blueshift",
+   "tvl": 4318547.0076261675,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/blueshift",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "BOB",
+    "Kava",
+    "Milkomeda",
+    "Milkomeda A1",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "gamma",
+   "name": "Gamma",
+   "tvl": 3105706.1609403086,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/gamma",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Kava"
+   ],
+   "all_chains": [
+    "ApeChain",
+    "Arbitrum",
+    "Avalanche",
+    "BOB",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Blast"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "symmio",
+   "name": "SYMMIO",
+   "tvl": 2740670.6533692773,
+   "category": "Derivatives",
+   "defillama_url": "https://defillama.com/protocol/symmio",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Coti",
+    "IOTA EVM",
+    "Mantle",
+    "Mode"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "hiyield",
+   "name": "HiYield",
+   "tvl": 2739954.019121193,
+   "category": "RWA",
+   "defillama_url": "https://defillama.com/protocol/hiyield",
+   "cosmos_evm_chains": [
+    "Canto"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "Canto"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "empiredex",
+   "name": "EmpireDEX",
+   "tvl": 2676866.660131574,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/empiredex",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "Binance",
+    "Cronos",
+    "Empire",
+    "Ethereum",
+    "Fantom",
+    "Kava",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "layerbank",
+   "name": "LayerBank",
+   "tvl": 2643255.3462065626,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/layerbank",
+   "cosmos_evm_chains": [
+    "Nibiru"
+   ],
+   "all_chains": [
+    "BOB",
+    "BSquared",
+    "Binance",
+    "Bitlayer",
+    "Hemi",
+    "Linea",
+    "Manta",
+    "Mint"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "vvs-flawless",
+   "name": "VVS Flawless",
+   "tvl": 2562008.340243959,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/vvs-flawless",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "dyorswap-amm",
+   "name": "DyorSwap AMM",
+   "tvl": 2488619.754531912,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/dyorswap-amm",
+   "cosmos_evm_chains": [
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "BOB",
+    "Blast",
+    "Degen",
+    "Ink",
+    "Merlin",
+    "Mode",
+    "Plasma",
+    "Soneium"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "woofi-swap",
+   "name": "WOOFi Swap",
+   "tvl": 2388568.269584059,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/woofi-swap",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Fantom",
+    "Hyperliquid L1"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "neptune-finance",
+   "name": "Neptune Finance",
+   "tvl": 2339302.838713601,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/neptune-finance",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "ambient",
+   "name": "Ambient",
+   "tvl": 2258778.4130716743,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/ambient",
+   "cosmos_evm_chains": [
+    "Canto"
+   ],
+   "all_chains": [
+    "Blast",
+    "Canto",
+    "Ethereum",
+    "Plume",
+    "Plume Mainnet",
+    "Scroll",
+    "Swellchain"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "balanced-exchange",
+   "name": "Balanced Exchange",
+   "tvl": 2142230.708348724,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/balanced-exchange",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Archway",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Icon",
+    "Injective",
+    "Optimism"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "peapods-finance",
+   "name": "Peapods Finance",
+   "tvl": 2030458.811008635,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/peapods-finance",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Ethereum",
+    "Mode",
+    "Sonic"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "cabal",
+   "name": "Cabal",
+   "tvl": 2028726.4578306016,
+   "category": "Governance Incentives",
+   "defillama_url": "https://defillama.com/protocol/cabal",
+   "cosmos_evm_chains": [
+    "Initia"
+   ],
+   "all_chains": [
+    "Cabal",
+    "Initia"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "initiadex",
+   "name": "InitiaDEX",
+   "tvl": 1962832.5724918274,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/initiadex",
+   "cosmos_evm_chains": [
+    "Initia"
+   ],
+   "all_chains": [
+    "Initia"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "charm-finance-v2",
+   "name": "Charm Finance V2",
+   "tvl": 1937508.423508314,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/charm-finance-v2",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Blast",
+    "Boba",
+    "Ethereum",
+    "Katana",
+    "Linea"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "zerolend-vaults",
+   "name": "ZeroLend Vaults",
+   "tvl": 1807091.6872471941,
+   "category": "Risk Curators",
+   "defillama_url": "https://defillama.com/protocol/zerolend-vaults",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain",
+    "Ethereum",
+    "Linea",
+    "Sonic"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "llamapay",
+   "name": "LlamaPay",
+   "tvl": 1697824.7646950423,
+   "category": "Payments",
+   "defillama_url": "https://defillama.com/protocol/llamapay",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Blast",
+    "Cronos",
+    "Ethereum"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "iziswap",
+   "name": "iZiSwap",
+   "tvl": 1662323.9412557483,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/iziswap",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Kava",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "BOB",
+    "Base",
+    "Binance",
+    "Blast",
+    "CORE",
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "royco-v1",
+   "name": "Royco V1",
+   "tvl": 1554175.5667022562,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/royco-v1",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Corn",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Plume Mainnet",
+    "Sonic"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "canto-lending",
+   "name": "Canto Lending",
+   "tvl": 1444734.5301428717,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/canto-lending",
+   "cosmos_evm_chains": [
+    "Canto"
+   ],
+   "all_chains": [
+    "Canto"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "mm-finance-cronos",
+   "name": "MM Finance Cronos",
+   "tvl": 1300757.535873071,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/mm-finance-cronos",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "pumex",
+   "name": "Pumex",
+   "tvl": 1279006.693221903,
+   "category": "DEX Aggregator",
+   "defillama_url": "https://defillama.com/protocol/pumex",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "sumer.money",
+   "name": "Sumer.money",
+   "tvl": 1222366.4916765818,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/sumer.money",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "BSquared",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Bitlayer",
+    "CORE",
+    "Ethereum"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "hashport",
+   "name": "Hashport",
+   "tvl": 1205756.4339249285,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/hashport",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Cronos",
+    "Ethereum",
+    "Fantom"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "cgo-finance",
+   "name": "CGO Finance",
+   "tvl": 1147777.2128479574,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/cgo-finance",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kyberswap-classic",
+   "name": "KyberSwap Classic",
+   "tvl": 1041665.791103335,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/kyberswap-classic",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "Binance",
+    "Bittorrent",
+    "Cronos",
+    "Ethereum",
+    "Fantom"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "dforce-lending",
+   "name": "dForce Lending",
+   "tvl": 1027387.4123357962,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/dforce-lending",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Binance",
+    "Conflux",
+    "Ethereum",
+    "Kava",
+    "Optimism",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "saddle-finance",
+   "name": "Saddle Finance",
+   "tvl": 945996.7841345891,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/saddle-finance",
+   "cosmos_evm_chains": [
+    "Evmos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "Ethereum",
+    "Evmos",
+    "Fantom",
+    "Kava",
+    "Optimism"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kava-earn",
+   "name": "Kava Earn",
+   "tvl": 927392.6012317368,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/kava-earn",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kava-liquid",
+   "name": "Kava Liquid",
+   "tvl": 907897.7264096637,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/kava-liquid",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "bex",
+   "name": "BEX",
+   "tvl": 796756.9705676351,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/bex",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "smilee-finance-gbera",
+   "name": "Smilee Finance gBERA",
+   "tvl": 789892.7704255696,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/smilee-finance-gbera",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "wasabi-perps",
+   "name": "Wasabi Perps",
+   "tvl": 739831.8235803456,
+   "category": "Derivatives",
+   "defillama_url": "https://defillama.com/protocol/wasabi-perps",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Base",
+    "Berachain",
+    "Blast",
+    "Ethereum",
+    "Solana"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "helix-spot",
+   "name": "Helix Spot",
+   "tvl": 707042.7287660651,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/helix-spot",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "sudoswap-v2",
+   "name": "Sudoswap V2",
+   "tvl": 684225.4336901143,
+   "category": "NFT Marketplace",
+   "defillama_url": "https://defillama.com/protocol/sudoswap-v2",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Ethereum"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "vendor-v2",
+   "name": "Vendor V2",
+   "tvl": 678705.1425203449,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/vendor-v2",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Superposition"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "wagmi",
+   "name": "WAGMI",
+   "tvl": 677965.0113318285,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/wagmi",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Base",
+    "Ethereum",
+    "Fantom",
+    "IOTA EVM",
+    "Kava",
+    "Metis",
+    "Sonic",
+    "zkLink"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "nervebridge",
+   "name": "NerveBridge",
+   "tvl": 612133.7112806129,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/nervebridge",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Kava",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Bitcoin",
+    "Bitgert",
+    "Blast",
+    "Celo"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "impermax-v2",
+   "name": "Impermax V2",
+   "tvl": 596795.9895332907,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/impermax-v2",
+   "cosmos_evm_chains": [
+    "Canto"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Blast",
+    "Canto",
+    "Ethereum",
+    "Fantom",
+    "Linea"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "meson",
+   "name": "Meson",
+   "tvl": 586151.5178489579,
+   "category": "Cross Chain Bridge",
+   "defillama_url": "https://defillama.com/protocol/meson",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Kava",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Ancient8",
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "BEVM",
+    "BSquared",
+    "Base",
+    "Binance"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "tarot",
+   "name": "Tarot",
+   "tvl": 583968.5958650564,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/tarot",
+   "cosmos_evm_chains": [
+    "Canto",
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Canto",
+    "Ethereum",
+    "Fantom",
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "goldilocks",
+   "name": "Goldilocks",
+   "tvl": 544818.9545780151,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/goldilocks",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "shido-dex-v3",
+   "name": "Shido Dex V3",
+   "tvl": 512898.9857990712,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/shido-dex-v3",
+   "cosmos_evm_chains": [
+    "Shido"
+   ],
+   "all_chains": [
+    "Shido"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "prdt",
+   "name": "PRDT",
+   "tvl": 505782.721733626,
+   "category": "Prediction Market",
+   "defillama_url": "https://defillama.com/protocol/prdt",
+   "cosmos_evm_chains": [
+    "Nibiru"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Binance",
+    "Ethereum",
+    "Nibiru",
+    "Polygon",
+    "Solana"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "ebisus-bay",
+   "name": "Ebisus Bay",
+   "tvl": 484628.88935717585,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/ebisus-bay",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos",
+    "Cronos zkEVM"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "beradrome",
+   "name": "Beradrome",
+   "tvl": 467152.80565428373,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/beradrome",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "counterstake",
+   "name": "Counterstake",
+   "tvl": 465661.3271421014,
+   "category": "Cross Chain Bridge",
+   "defillama_url": "https://defillama.com/protocol/counterstake",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Binance",
+    "Ethereum",
+    "Kava",
+    "Obyte",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "obsidian",
+   "name": "Obsidian",
+   "tvl": 460258.1094329418,
+   "category": "DEX Aggregator",
+   "defillama_url": "https://defillama.com/protocol/obsidian",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos",
+    "Cronos zkEVM"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "radioshack",
+   "name": "RadioShack",
+   "tvl": 453693.1029581321,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/radioshack",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "Binance",
+    "Cronos",
+    "Dogechain",
+    "Ethereum",
+    "Fantom",
+    "Optimism",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "mito-finance",
+   "name": "Mito Finance",
+   "tvl": 420105.9429593242,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/mito-finance",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kodiak-v2",
+   "name": "Kodiak V2",
+   "tvl": 411072.9932474405,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/kodiak-v2",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "cronaswap",
+   "name": "CronaSwap",
+   "tvl": 406820.4209366412,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/cronaswap",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "nomad",
+   "name": "Nomad",
+   "tvl": 395132.38369169156,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/nomad",
+   "cosmos_evm_chains": [
+    "Evmos"
+   ],
+   "all_chains": [
+    "Ethereum",
+    "Evmos",
+    "Milkomeda",
+    "Moonbeam"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "shido-dex-v2",
+   "name": "Shido Dex V2",
+   "tvl": 392760.6365472296,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/shido-dex-v2",
+   "cosmos_evm_chains": [
+    "Shido"
+   ],
+   "all_chains": [
+    "Shido"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "abstradex",
+   "name": "AbstraDEX",
+   "tvl": 384221.43818830646,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/abstradex",
+   "cosmos_evm_chains": [
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Blast",
+    "Cronos zkEVM",
+    "Cyber",
+    "Morph",
+    "X Layer",
+    "ZetaChain",
+    "Zkfair"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "knit-finance",
+   "name": "Knit Finance",
+   "tvl": 383875.6141403846,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/knit-finance",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "Binance",
+    "Bitgert",
+    "Ethereum",
+    "Fantom",
+    "Harmony",
+    "Heco",
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "dojoswap-amm",
+   "name": "Dojoswap AMM",
+   "tvl": 380712.57257539895,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/dojoswap-amm",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "shoebill-v2",
+   "name": "Shoebill V2",
+   "tvl": 377873.68571525736,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/shoebill-v2",
+   "cosmos_evm_chains": [
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "BOB",
+    "BSquared",
+    "Fuse",
+    "Klaytn",
+    "Kroma",
+    "Manta",
+    "Metis",
+    "Mode"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "black-panther",
+   "name": "Black Panther",
+   "tvl": 366115.773908326,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/black-panther",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "beraborrow",
+   "name": "Beraborrow",
+   "tvl": 285729.64969049545,
+   "category": "CDP",
+   "defillama_url": "https://defillama.com/protocol/beraborrow",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "dyson",
+   "name": "Dyson",
+   "tvl": 265697.0993101954,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/dyson",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Kava",
+    "Optimism",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "argo-finance",
+   "name": "Argo Finance",
+   "tvl": 235009.07431162306,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/argo-finance",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "choice-exchange",
+   "name": "Choice Exchange",
+   "tvl": 224061.09155747612,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/choice-exchange",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "pell-network",
+   "name": "Pell Network",
+   "tvl": 224044.2497197252,
+   "category": "Restaking",
+   "defillama_url": "https://defillama.com/protocol/pell-network",
+   "cosmos_evm_chains": [
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "AILayer",
+    "Arbitrum",
+    "BEVM",
+    "BOB",
+    "BSquared",
+    "Base",
+    "Binance",
+    "Bitlayer"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "fortunafi",
+   "name": "Fortunafi",
+   "tvl": 221821.20394590544,
+   "category": "RWA",
+   "defillama_url": "https://defillama.com/protocol/fortunafi",
+   "cosmos_evm_chains": [
+    "Canto"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Blast",
+    "Canto",
+    "Ethereum"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "crystl-finance",
+   "name": "Crystl Finance",
+   "tvl": 203855.27195648785,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/crystl-finance",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Binance",
+    "Cronos",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "canto-dex",
+   "name": "Canto Dex",
+   "tvl": 202218.27476187074,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/canto-dex",
+   "cosmos_evm_chains": [
+    "Canto"
+   ],
+   "all_chains": [
+    "Canto"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "inertia-bridge",
+   "name": "Inertia Bridge",
+   "tvl": 198334.30660999444,
+   "category": "Canonical Bridge",
+   "defillama_url": "https://defillama.com/protocol/inertia-bridge",
+   "cosmos_evm_chains": [
+    "Initia"
+   ],
+   "all_chains": [
+    "Initia"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "sai",
+   "name": "Sai",
+   "tvl": 191586.73604896766,
+   "category": "Derivatives",
+   "defillama_url": "https://defillama.com/protocol/sai",
+   "cosmos_evm_chains": [
+    "Nibiru"
+   ],
+   "all_chains": [
+    "Nibiru"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "brownfi-v3",
+   "name": "BrownFi V3",
+   "tvl": 191343.05248385837,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/brownfi-v3",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Berachain",
+    "Hyperliquid L1",
+    "Linea",
+    "Robinhood Chain"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "backbone-labs",
+   "name": "BackBone Labs",
+   "tvl": 187943.9979075508,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/backbone-labs",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Archway",
+    "Chihuahua",
+    "Injective",
+    "Juno",
+    "Kujira",
+    "Migaloo",
+    "Osmosis",
+    "Terra2"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "adamant-finance",
+   "name": "Adamant Finance",
+   "tvl": 177277.5254073573,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/adamant-finance",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Cronos",
+    "Fraxtal",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "leetswap",
+   "name": "LeetSwap",
+   "tvl": 168493.78019167786,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/leetswap",
+   "cosmos_evm_chains": [
+    "Canto"
+   ],
+   "all_chains": [
+    "Base",
+    "Canto",
+    "Linea",
+    "Manta",
+    "Op_Bnb",
+    "Polygon zkEVM",
+    "Scroll",
+    "Shibarium"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kava-swap",
+   "name": "Kava Swap",
+   "tvl": 167630.4656578038,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/kava-swap",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "hard-swap",
+   "name": "HARD Swap",
+   "tvl": 166600.43144049915,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/hard-swap",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kogefarm",
+   "name": "Kogefarm",
+   "tvl": 165634.33110990655,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/kogefarm",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Fantom",
+    "Kava",
+    "Moonriver",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "elk",
+   "name": "Elk",
+   "tvl": 160743.3246315089,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/elk",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Astar",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Bitgert",
+    "Bittorrent",
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "accumulated-finance-lending",
+   "name": "Accumulated Finance Lending",
+   "tvl": 154376.66339957528,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/accumulated-finance-lending",
+   "cosmos_evm_chains": [
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Bitkub",
+    "Coti",
+    "Sapphire",
+    "Velas",
+    "ZetaChain"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "echelon-initia-bridge",
+   "name": "Echelon Initia Bridge",
+   "tvl": 145223.39956538755,
+   "category": "Canonical Bridge",
+   "defillama_url": "https://defillama.com/protocol/echelon-initia-bridge",
+   "cosmos_evm_chains": [
+    "Initia"
+   ],
+   "all_chains": [
+    "Initia"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "scrubvault",
+   "name": "ScrubVault",
+   "tvl": 138958.1493777986,
+   "category": "Basis Trading",
+   "defillama_url": "https://defillama.com/protocol/scrubvault",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "impossible",
+   "name": "IMPOSSIBLE",
+   "tvl": 133416.93185682612,
+   "category": "Launchpad",
+   "defillama_url": "https://defillama.com/protocol/impossible",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Aurora",
+    "Avalanche",
+    "Binance",
+    "Boba",
+    "Kava",
+    "Moonbeam",
+    "OKExChain"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "de1",
+   "name": "De1",
+   "tvl": 130274.89839240964,
+   "category": "DEX Aggregator",
+   "defillama_url": "https://defillama.com/protocol/de1",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Binance",
+    "Ethereum",
+    "Kava",
+    "Manta",
+    "Polygon",
+    "RSK"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kinetix-amm-v3",
+   "name": "Kinetix AMM V3",
+   "tvl": 128888.71282895791,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/kinetix-amm-v3",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Base",
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kyberswap-elastic",
+   "name": "KyberSwap Elastic",
+   "tvl": 127718.883305259,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/kyberswap-elastic",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Cronos",
+    "Ethereum",
+    "Fantom",
+    "Linea"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "dymension-dex",
+   "name": "Dymension DEX",
+   "tvl": 124433.99119938779,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/dymension-dex",
+   "cosmos_evm_chains": [
+    "Dymension"
+   ],
+   "all_chains": [
+    "Dymension"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "astrovault",
+   "name": "Astrovault",
+   "tvl": 123761.36538358967,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/astrovault",
+   "cosmos_evm_chains": [
+    "Nibiru"
+   ],
+   "all_chains": [
+    "Archway",
+    "Neutron",
+    "Nibiru"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "mim-swap",
+   "name": "MIM Swap",
+   "tvl": 123611.83049547294,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/mim-swap",
+   "cosmos_evm_chains": [
+    "Kava",
+    "Nibiru"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Blast",
+    "Ethereum",
+    "Kava",
+    "Nibiru"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "izumi-liquidbox",
+   "name": "iZUMi LiquidBox",
+   "tvl": 121511.69454125939,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/izumi-liquidbox",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "Binance",
+    "Cronos",
+    "Ethereum",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "jiko",
+   "name": "Jiko",
+   "tvl": 120388.47991096156,
+   "category": "Gaming",
+   "defillama_url": "https://defillama.com/protocol/jiko",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "skate-fi",
+   "name": "Skate Fi",
+   "tvl": 118981.586339953,
+   "category": "Liquidity Manager",
+   "defillama_url": "https://defillama.com/protocol/skate-fi",
+   "cosmos_evm_chains": [
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Binance",
+    "Blast",
+    "Ethereum",
+    "Manta",
+    "Mantle",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "crodex",
+   "name": "Crodex",
+   "tvl": 111199.7345444561,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/crodex",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "photonswap-finance",
+   "name": "PhotonSwap Finance",
+   "tvl": 107695.04020991716,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/photonswap-finance",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Evmos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Cronos",
+    "Evmos",
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "crow-finance",
+   "name": "Crow Finance",
+   "tvl": 102488.72539309716,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/crow-finance",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "dojoswap-lsd",
+   "name": "Dojoswap LSD",
+   "tvl": 86494.80935129603,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/dojoswap-lsd",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Injective"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "nabla-finance",
+   "name": "Nabla Finance",
+   "tvl": 74668.60417196814,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/nabla-finance",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Hyperliquid L1",
+    "Monad"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "equilibre",
+   "name": "Equilibre",
+   "tvl": 71662.09028523322,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/equilibre",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Kava"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "eddyfinance-amm",
+   "name": "EddyFinance AMM",
+   "tvl": 71213.61614172786,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/eddyfinance-amm",
+   "cosmos_evm_chains": [
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "ZetaChain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "single-finance",
+   "name": "Single Finance",
+   "tvl": 69848.77415018536,
+   "category": "Leveraged Farming",
+   "defillama_url": "https://defillama.com/protocol/single-finance",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Cronos",
+    "Fantom"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "noxa-dex-v2",
+   "name": "NOXA DEX V2",
+   "tvl": 69480.25159726838,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/noxa-dex-v2",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "0G",
+    "Abstract",
+    "Berachain",
+    "Hyperliquid L1",
+    "Katana",
+    "MegaETH",
+    "Monad",
+    "Plasma"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "yieldwolf",
+   "name": "YieldWolf",
+   "tvl": 62845.6545356868,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/yieldwolf",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "Binance",
+    "Celo",
+    "Cronos",
+    "Fantom",
+    "Harmony",
+    "Polygon"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "ordernchaos",
+   "name": "OrderNChaos",
+   "tvl": 60546.83631034492,
+   "category": "Algo-Stables",
+   "defillama_url": "https://defillama.com/protocol/ordernchaos",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Binance",
+    "Kava",
+    "zkSync Era"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "winnieswap",
+   "name": "WinnieSwap",
+   "tvl": 57581.64131285866,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/winnieswap",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "crosscurve",
+   "name": "CrossCurve",
+   "tvl": 56152.6856734668,
+   "category": "Cross Chain Bridge",
+   "defillama_url": "https://defillama.com/protocol/crosscurve",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Blast",
+    "Celo",
+    "Ethereum",
+    "Fantom"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "milkyway-rollup-bridge",
+   "name": "Milkyway Rollup Bridge",
+   "tvl": 53078.33498802733,
+   "category": "Canonical Bridge",
+   "defillama_url": "https://defillama.com/protocol/milkyway-rollup-bridge",
+   "cosmos_evm_chains": [
+    "Initia"
+   ],
+   "all_chains": [
+    "Initia"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "berapaw",
+   "name": "BeraPaw",
+   "tvl": 51196.44373044487,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/berapaw",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain"
+   ],
+   "in_band": true,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "zearn-protocol",
+   "name": "Zearn Protocol",
+   "tvl": 51127.572351387105,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/zearn-protocol",
+   "cosmos_evm_chains": [
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Bitlayer",
+    "ZetaChain"
+   ],
+   "in_band": true,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "morpho-blue",
+   "name": "Morpho Blue",
+   "tvl": 9388226378.992933,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/morpho-blue",
+   "cosmos_evm_chains": [
+    "Sei",
+    "TAC"
+   ],
+   "all_chains": [
+    "0G",
+    "Abstract",
+    "Arbitrum",
+    "Base",
+    "Binance",
+    "Bitlayer",
+    "Botanix",
+    "Celo"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12",
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "layerzero-v2",
+   "name": "LayerZero V2",
+   "tvl": 6966756164.317168,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/layerzero-v2",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Canto",
+    "Kava",
+    "Nibiru",
+    "Sei",
+    "TAC"
+   ],
+   "all_chains": [
+    "Abstract",
+    "Arbitrum",
+    "Astar",
+    "Avalanche",
+    "BOB",
+    "Base",
+    "Berachain",
+    "Binance"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12",
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "midas-rwa",
+   "name": "Midas RWA",
+   "tvl": 152751002.19,
+   "category": "RWA",
+   "defillama_url": "https://defillama.com/protocol/midas-rwa",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Sei",
+    "TAC"
+   ],
+   "all_chains": [
+    "0G",
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Bitcoin",
+    "Celo"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12",
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "gate",
+   "name": "Gate",
+   "tvl": 6405407944.788466,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/gate",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Dymension",
+    "Evmos",
+    "Injective",
+    "Kava",
+    "Mantra",
+    "Saga",
+    "Sei",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "0G",
+    "Abstract",
+    "Agoric",
+    "AirDAO",
+    "Akash",
+    "Aleo",
+    "Alephium",
+    "Algorand"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": [
+    "Mantra",
+    "Saga"
+   ],
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12",
+    "2026-01-21"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "uniswap-v3",
+   "name": "Uniswap V3",
+   "tvl": 1503835891.0186067,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/uniswap-v3",
+   "cosmos_evm_chains": [
+    "Nibiru",
+    "Saga",
+    "Sei"
+   ],
+   "all_chains": [
+    "0G",
+    "Arbitrum",
+    "Avalanche",
+    "BOB",
+    "Base",
+    "Binance",
+    "Blast",
+    "Boba"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": [
+    "Saga"
+   ],
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12",
+    "2026-01-21"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "curve-dex",
+   "name": "Curve DEX",
+   "tvl": 1327174451.1633103,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/curve-dex",
+   "cosmos_evm_chains": [
+    "Kava",
+    "TAC"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Celo",
+    "Corn",
+    "Ethereum"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "euler-v2",
+   "name": "Euler V2",
+   "tvl": 364282309.1600549,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/euler-v2",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "TAC"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "BOB",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "bedrock-unibtc",
+   "name": "Bedrock uniBTC",
+   "tvl": 346956771.5515574,
+   "category": "Anchor BTC",
+   "defillama_url": "https://defillama.com/protocol/bedrock-unibtc",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "TAC",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "BOB",
+    "BSquared",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Bitcoin",
+    "Bitlayer"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "lagoon",
+   "name": "Lagoon",
+   "tvl": 138456080.7907281,
+   "category": "Onchain Capital Allocator",
+   "defillama_url": "https://defillama.com/protocol/lagoon",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "TAC"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Katana",
+    "Linea"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "beefy",
+   "name": "Beefy",
+   "tvl": 125802673.22713442,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/beefy",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Canto",
+    "Cronos",
+    "Kava",
+    "Saga",
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Canto",
+    "Celo"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": [
+    "Saga"
+   ],
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12",
+    "2026-01-21"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "re7-labs",
+   "name": "Re7 Labs",
+   "tvl": 84792448.77469629,
+   "category": "Risk Curators",
+   "defillama_url": "https://defillama.com/protocol/re7-labs",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "TAC"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "BOB",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Linea",
+    "Plasma"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "fusion-by-ipor",
+   "name": "Fusion by IPOR",
+   "tvl": 57478003.63981159,
+   "category": "Yield Aggregator",
+   "defillama_url": "https://defillama.com/protocol/fusion-by-ipor",
+   "cosmos_evm_chains": [
+    "TAC"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Ink",
+    "Katana",
+    "Plasma"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "ultrayield-curator",
+   "name": "UltraYield Curator",
+   "tvl": 54381027.14947806,
+   "category": "Risk Curators",
+   "defillama_url": "https://defillama.com/protocol/ultrayield-curator",
+   "cosmos_evm_chains": [
+    "TAC"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Ethereum",
+    "Etherlink",
+    "Hyperliquid L1",
+    "Linea",
+    "Monad",
+    "Optimism"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "tulipa-capital",
+   "name": "Tulipa Capital",
+   "tvl": 44238985.86312089,
+   "category": "Risk Curators",
+   "defillama_url": "https://defillama.com/protocol/tulipa-capital",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "TAC"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "BOB",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Monad",
+    "TAC"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "noon",
+   "name": "Noon",
+   "tvl": 38412501.6647807,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/noon",
+   "cosmos_evm_chains": [
+    "TAC"
+   ],
+   "all_chains": [
+    "Ethereum",
+    "Sophon",
+    "TAC",
+    "zkSync Era"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2026-05-11",
+    "2026-08-22"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "ondo-yield-assets",
+   "name": "Ondo Yield Assets",
+   "tvl": 2514811915.7727885,
+   "category": "RWA",
+   "defillama_url": "https://defillama.com/protocol/ondo-yield-assets",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Aptos",
+    "Arbitrum",
+    "Ethereum",
+    "Mantle",
+    "Noble",
+    "Plume Mainnet",
+    "Polygon",
+    "Ripple"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "swissborg",
+   "name": "SwissBorg",
+   "tvl": 994500566.0177969,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/swissborg",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Injective",
+    "Sei"
+   ],
+   "all_chains": [
+    "Algorand",
+    "Arbitrum",
+    "Avalanche",
+    "Berachain",
+    "Binance",
+    "Bitcoin",
+    "Bittensor",
+    "Cardano"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "osl-hk",
+   "name": "OSL HK",
+   "tvl": 719217388.1867232,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/osl-hk",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "Binance",
+    "Bitcoin",
+    "Doge",
+    "Ethereum",
+    "Litecoin",
+    "Polygon",
+    "Ripple"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "backpack",
+   "name": "Backpack",
+   "tvl": 422558054.762841,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/backpack",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Aptos",
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Bitcoin",
+    "Doge",
+    "Eclipse"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "rockawayx",
+   "name": "RockawayX",
+   "tvl": 193301703.36594176,
+   "category": "Risk Curators",
+   "defillama_url": "https://defillama.com/protocol/rockawayx",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Base",
+    "Binance",
+    "Ethereum",
+    "Etherlink",
+    "Pharos",
+    "Plume Mainnet",
+    "Sei",
+    "Solana"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "axelar",
+   "name": "Axelar",
+   "tvl": 143058632.99872625,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/axelar",
+   "cosmos_evm_chains": [
+    "Dymension",
+    "Evmos",
+    "Injective",
+    "Kava",
+    "Sei"
+   ],
+   "all_chains": [
+    "Agoric",
+    "Arbitrum",
+    "Archway",
+    "Aurora",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Blast"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "renzo",
+   "name": "Renzo",
+   "tvl": 114537278.94868402,
+   "category": "Liquid Restaking",
+   "defillama_url": "https://defillama.com/protocol/renzo",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Binance",
+    "Blast",
+    "Ethereum",
+    "Fraxtal",
+    "Linea",
+    "Mode"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "apollo-diversified-credit-securitize-fund",
+   "name": "Apollo Diversified Credit Securitize Fund",
+   "tvl": 95475297.32609071,
+   "category": "RWA",
+   "defillama_url": "https://defillama.com/protocol/apollo-diversified-credit-securitize-fund",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Aptos",
+    "Avalanche",
+    "Ethereum",
+    "Ink",
+    "Polygon",
+    "Sei",
+    "Solana"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "hyperlane",
+   "name": "Hyperlane",
+   "tvl": 90253093.42789929,
+   "category": "Cross Chain Bridge",
+   "defillama_url": "https://defillama.com/protocol/hyperlane",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "BSquared",
+    "Base",
+    "Binance",
+    "Blast",
+    "Celo",
+    "Ethereum"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "stargate-v2",
+   "name": "Stargate V2",
+   "tvl": 71211215.17450985,
+   "category": "Cross Chain Bridge",
+   "defillama_url": "https://defillama.com/protocol/stargate-v2",
+   "cosmos_evm_chains": [
+    "Kava",
+    "Sei"
+   ],
+   "all_chains": [
+    "Abstract",
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Ethereum",
+    "Hemi"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "gate-us",
+   "name": "Gate US",
+   "tvl": 52852703.12673189,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/gate-us",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Injective",
+    "Sei",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Algorand",
+    "ApeChain",
+    "Aptos",
+    "Arbitrum",
+    "Base",
+    "Binance",
+    "Bitcoin",
+    "Bitlayer"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kaio",
+   "name": "KAIO",
+   "tvl": 41282216.19858696,
+   "category": "RWA",
+   "defillama_url": "https://defillama.com/protocol/kaio",
+   "cosmos_evm_chains": [
+    "Injective",
+    "Mantra",
+    "Sei"
+   ],
+   "all_chains": [
+    "Aptos",
+    "Avalanche",
+    "Cardano",
+    "Ethereum",
+    "Hedera",
+    "Immutable zkEVM",
+    "Injective",
+    "Mantra"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": [
+    "Mantra"
+   ],
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "y10k-capital",
+   "name": "Y10K Capital",
+   "tvl": 32654178.223663807,
+   "category": "Risk Curators",
+   "defillama_url": "https://defillama.com/protocol/y10k-capital",
+   "cosmos_evm_chains": [
+    "Sei"
+   ],
+   "all_chains": [
+    "Ethereum",
+    "Sei"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": [
+    "2025-09-12"
+   ],
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "bybit",
+   "name": "Bybit",
+   "tvl": 15413713427.07429,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/bybit",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Aptos",
+    "Arbitrum",
+    "Arbitrum Nova",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Bitcoin",
+    "Cardano"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "bitget",
+   "name": "Bitget",
+   "tvl": 5808835704.970471,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/bitget",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Bitcoin",
+    "Cardano",
+    "Cronos",
+    "Doge"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "kucoin",
+   "name": "KuCoin",
+   "tvl": 3252413674.4072537,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/kucoin",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Algorand",
+    "Aptos",
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Bitcoin",
+    "Cardano"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "veda",
+   "name": "Veda",
+   "tvl": 1660329884.0413938,
+   "category": "Onchain Capital Allocator",
+   "defillama_url": "https://defillama.com/protocol/veda",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "BOB",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Ink"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "portal",
+   "name": "Portal",
+   "tvl": 1567985834.34555,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/portal",
+   "cosmos_evm_chains": [
+    "Injective"
+   ],
+   "all_chains": [
+    "Acala",
+    "Algorand",
+    "Aptos",
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "Base",
+    "Binance"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "pendle",
+   "name": "Pendle",
+   "tvl": 1169202137.6752713,
+   "category": "Yield",
+   "defillama_url": "https://defillama.com/protocol/pendle",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Mantle"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "concrete",
+   "name": "Concrete",
+   "tvl": 1159549483.9345841,
+   "category": "Onchain Capital Allocator",
+   "defillama_url": "https://defillama.com/protocol/concrete",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Berachain",
+    "Ethereum",
+    "Katana",
+    "Stable"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "dolomite",
+   "name": "Dolomite",
+   "tvl": 324295526.4221508,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/dolomite",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Berachain",
+    "Botanix",
+    "Ethereum",
+    "Mantle",
+    "Polygon zkEVM",
+    "X Layer"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "pinksale",
+   "name": "PinkSale",
+   "tvl": 161474384.04388264,
+   "category": "Launchpad",
+   "defillama_url": "https://defillama.com/protocol/pinksale",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "Binance",
+    "Cronos",
+    "Ethereum",
+    "Fantom",
+    "Polygon"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "tectonic",
+   "name": "Tectonic",
+   "tvl": 121668693.1056791,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/tectonic",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": false,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "near-intents",
+   "name": "NEAR Intents",
+   "tvl": 107437193.30474469,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/near-intents",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "ADI",
+    "Aptos",
+    "Arbitrum",
+    "Aurora",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "vvs-standard",
+   "name": "VVS Standard",
+   "tvl": 101956096.29715191,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/vvs-standard",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos"
+   ],
+   "in_band": false,
+   "multichain": false,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "blofin",
+   "name": "BloFin",
+   "tvl": 99566758.42632881,
+   "category": "CEX",
+   "defillama_url": "https://defillama.com/protocol/blofin",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Algorand",
+    "Aptos",
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Bitcoin"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "solv-strategies",
+   "name": "Solv Strategies",
+   "tvl": 66778044.833148666,
+   "category": "Onchain Capital Allocator",
+   "defillama_url": "https://defillama.com/protocol/solv-strategies",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Avalanche",
+    "BOB",
+    "Berachain",
+    "Binance",
+    "Ethereum"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "azverse-perps",
+   "name": "AZverse Perps",
+   "tvl": 51687400.718240775,
+   "category": "Derivatives",
+   "defillama_url": "https://defillama.com/protocol/azverse-perps",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Berachain",
+    "Binance",
+    "Bitcoin",
+    "Ethereum"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "origami-finance",
+   "name": "Origami Finance",
+   "tvl": 49394647.61653557,
+   "category": "Leveraged Farming",
+   "defillama_url": "https://defillama.com/protocol/origami-finance",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Berachain",
+    "Ethereum",
+    "Plasma"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "sushiswap-v3",
+   "name": "SushiSwap V3",
+   "tvl": 45758619.162344314,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/sushiswap-v3",
+   "cosmos_evm_chains": [
+    "Kava",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Arbitrum Nova",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Bittorrent",
+    "Blast",
+    "CORE"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "team-finance",
+   "name": "Team Finance",
+   "tvl": 45710188.50650269,
+   "category": "Token Locker",
+   "defillama_url": "https://defillama.com/protocol/team-finance",
+   "cosmos_evm_chains": [
+    "Berachain",
+    "Cronos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Avalanche",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Blast",
+    "Cronos",
+    "Ethereum"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "poly-network",
+   "name": "Poly Network",
+   "tvl": 44728247.74000001,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/poly-network",
+   "cosmos_evm_chains": [
+    "Kava"
+   ],
+   "all_chains": [
+    "Aptos",
+    "Arbitrum",
+    "Astar",
+    "Avalanche",
+    "Binance",
+    "Bitgert",
+    "Boba",
+    "Bytomsidechain"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "sushiswap",
+   "name": "SushiSwap",
+   "tvl": 39285081.96152734,
+   "category": "Dexs",
+   "defillama_url": "https://defillama.com/protocol/sushiswap",
+   "cosmos_evm_chains": [
+    "Kava",
+    "ZetaChain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Arbitrum Nova",
+    "Avalanche",
+    "Base",
+    "Binance",
+    "Bittorrent",
+    "Blast",
+    "Boba"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "multichain",
+   "name": "Multichain",
+   "tvl": 37621575.21462167,
+   "category": "Bridge",
+   "defillama_url": "https://defillama.com/protocol/multichain",
+   "cosmos_evm_chains": [
+    "Cronos",
+    "Evmos",
+    "Kava"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Arbitrum Nova",
+    "Astar",
+    "Aurora",
+    "Avalanche",
+    "Binance",
+    "Bitgert",
+    "Bittorrent"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "veno-finance",
+   "name": "Veno Finance",
+   "tvl": 34951330.18951255,
+   "category": "Liquid Staking",
+   "defillama_url": "https://defillama.com/protocol/veno-finance",
+   "cosmos_evm_chains": [
+    "Cronos"
+   ],
+   "all_chains": [
+    "Cronos",
+    "Cronos zkEVM",
+    "Ethereum",
+    "zkSync Era"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "d2-finance",
+   "name": "D2 Finance",
+   "tvl": 31898924.583109654,
+   "category": "Onchain Capital Allocator",
+   "defillama_url": "https://defillama.com/protocol/d2-finance",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "Base",
+    "Berachain",
+    "Ethereum",
+    "Hyperliquid L1"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  },
+  {
+   "slug": "termmax",
+   "name": "TermMax",
+   "tvl": 30948024.945966356,
+   "category": "Lending",
+   "defillama_url": "https://defillama.com/protocol/termmax",
+   "cosmos_evm_chains": [
+    "Berachain"
+   ],
+   "all_chains": [
+    "Arbitrum",
+    "BSquared",
+    "Base",
+    "Berachain",
+    "Binance",
+    "Ethereum",
+    "Hyperliquid L1",
+    "Robinhood Chain"
+   ],
+   "in_band": false,
+   "multichain": true,
+   "archetype_C_named_participant_chain": null,
+   "aggravating_prior_incident_12mo": null,
+   "patch_status": "NOT_DETERMINED",
+   "patch_status_reason": "patch state is unverifiable from outside without active probing of live module parameters and the running binary; no such probe was run and none is asserted"
+  }
+ ]
+}

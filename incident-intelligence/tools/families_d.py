@@ -208,4 +208,57 @@ FAM_D = {
  derivation="REFERENCE_PRIOR_ART: operator-supplied root cause for a protocol not in this run's window corpus and not listed on DefiLlama. Contributes zero incidents and zero loss to every window statistic in this run.",
  propagation_notes="Carried because the shape is screenable across the EVM universe this run already covers, and because 'quote, then move the price yourself, then never re-measure' is a distinct defect from ordinary oracle manipulation: no external attacker input is needed to move the price, the protocol does it to itself."),
 
+"PRECOMPILE-NESTED-CALL-STATE-NOT-PROPAGATED": F(
+ title="State written inside a nested or partially-executed precompile call is not propagated to, or reverted with, the outer execution context",
+ broken_invariant="State written during EVM execution must be committed or discarded atomically with the execution that produced it. A precompile bridging the EVM into host-chain state must propagate its writes to the outer context on success and leave nothing behind on failure. Where the two state models disagree, the same balance becomes spendable twice.",
+ mechanism="Cosmos EVM's ICS20 precompile (ASA-2026-002 / GHSA-54gx-3cgr-7mfm / GO-2026-4677) did not correctly reflect state updates performed during recursive calls in the outer execution context, so under certain execution conditions the same token balance could be used repeatedly within a single transaction -- an unbacked-supply primitive. A sibling advisory (GHSA-mjfq-3qr2-6g84) reaches the same outcome from the other direction: setting a lower EVM call gas limit lets a caller partially execute a precompile and error at a chosen point WITHOUT reverting the partially written state, which on the distribution precompile transfers funds without resetting claimable rewards, and can also induce non-deterministic execution and halt validators. The vulnerable code lived upstream from July 2024 and was found by exploitation in January 2026, not by audit.",
+ mandatory_preconditions=[
+   "An execution environment that calls out to host-chain state through precompiles or an equivalent bridge",
+   "State written inside that call is staged separately from the outer context, or committed separately from it",
+   "A caller can cause the inner call to nest, or to terminate early at a point of their choosing (for example by bounding gas)",
+   "A balance, reward or supply figure is read or written on both sides of that boundary"],
+ optional_amplifiers=["The precompile moves value directly (ICS20 transfer, distribution rewards)",
+   "The native asset is used as collateral elsewhere, turning unbacked supply into cross-protocol contagion",
+   "Bridged or wrapped representations of the native asset exist on other chains, so reconciliation must span chains",
+   "A small validator set that can ship an emergency upgrade without full review"],
+ applicable_protocol_archetypes=["Cosmos SDK app-chain with an EVM execution layer","evmOS / Evmos-derived chain",
+   "any runtime exposing host-state precompiles to a general-purpose VM","chain-level module, not a deployed contract"],
+ static_indicators=[
+   "a precompile Run/Execute path that writes host state without a snapshot/revert wrapper",
+   "stateDB.Snapshot()/RevertToSnapshot absent around a precompile that mutates keeper state",
+   "precompile state committed via a keeper call rather than through the EVM journal",
+   "a precompile invoked recursively, or reachable from within another precompile's execution",
+   "go.mod requiring github.com/cosmos/evm below v0.6.0, or a vendored x/evm tree with no module requirement"],
+ adapter_indicators=["adapter values assets native to a Cosmos SDK chain with an EVM layer"],
+ runtime_state_indicators=["total supply of the native asset not reconciling against the sanctioned minting path",
+   "module-account and IBC-escrow balances not conserving across a block",
+   "the enabled static-precompile set differing before and after a chain restart"],
+ cross_contract_indicators=["the defect lives in a shared upstream module, so it is simultaneously live across every chain that vendors or requires it, each with independent upgrade authority"],
+ decisive_guards=[
+   "Every precompile execution wrapped in an atomic function that reverts partially committed state on error",
+   "Precompile state changes journaled through the EVM state object so the outer context reverts them",
+   "A per-block supply-conservation invariant that halts on any delta outside the sanctioned minting path",
+   "Upgrade to a release where the advisory is fixed, rather than disabling the feature by configuration"],
+ false_positive_killers=[
+   "The precompile stages writes in a snapshot the outer context commits or reverts (kills the pair)",
+   "The chain is on a release at or above the patched version AND the enabled precompile set is verified on-chain",
+   "The feature is not compiled into the running binary at all, not merely disabled by parameter"],
+ local_defensive_property="On a local devnet, call the precompile from inside another call and bound the gas so it errors partway; then assert that no host-chain balance changed and that total supply is unchanged.",
+ evidence_strength="MEDIUM",
+ derivation=("OPERATOR_SUPPLIED_THREAT_INTELLIGENCE + VENDOR ADVISORIES. The confirmed exploitation "
+   "(Saga EVM, 2026-01-21, ~$7M) falls OUTSIDE this run's window and contributes nothing to any window "
+   "statistic. The two in-window events carrying this family (MANTRA 2026-08-20, TAC chain 2026-08-22) are "
+   "PROVISIONAL grade C: the subsystem is named, the mechanism is not, no loss is published, and attribution "
+   "is explicitly unresolved by both the chain teams and the vendor."),
+ propagation_notes=("Converges with two families this run derived independently from INC-2026-08-18-MAY. "
+   "GHSA-mjfq-3qr2-6g84 -- partial precompile execution that errors at a chosen point without reverting "
+   "already-written state -- is the same broken invariant as RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER "
+   "and RUNTIME-HANDLER-ERROR-NO-ROLLBACK, reached through a different mechanism on a different chain. Two "
+   "independent derivations landing on one invariant is the strongest evidence this run has that the "
+   "EVM-semantics / SDK-state-commitment boundary is a durable defect class rather than a set of one-off bugs. "
+   "The distribution shape is the distinguishing feature: this is a shared upstream module live across "
+   "sovereign networks with independent upgrade authority and no patch-compliance mechanism, so remediation "
+   "lag is measured in quarters and a fix shipping upstream says nothing about any given downstream chain."),
+),
+
 }

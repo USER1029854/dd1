@@ -8,348 +8,28 @@
  "min_protocols": 3,
  "min_incidents": 2,
  "chains": {
-  "dYdX": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Flow": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 14,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "XION": {
+  "Dungeon": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "BounceBit": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Merlin": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 17,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "NEO": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Klaytn": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 52,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ThunderCore": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "SXnetwork": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ENULS": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "PulseChain": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Provenance": {
+  "HAQQ": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 3,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Kujira": {
+  "Proton": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 4,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Harmony": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 25,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Zkfair": {
+  "Shibarium": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "PGN": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Stacks": {
-   "status": "MEASURED",
-   "incidents": 2,
-   "protocols": 15,
-   "hazard": 1.123,
-   "loss_usd": 9373000.0,
-   "mean_loss_usd": 4686500.0
-  },
-  "Stellar": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 33,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Katana": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 29,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Axiome": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Story": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Acala": {
-   "status": "MEASURED",
-   "incidents": 3,
-   "protocols": 5,
-   "hazard": 5.052,
-   "loss_usd": 3700000.0,
-   "mean_loss_usd": 1233333.33
-  },
-  "RENEC": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Omax": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Songbird": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bytomsidechain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Botanix": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Evmos": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 12,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Kaspa": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ripple": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 56,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "X Layer": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 40,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Akash": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Equilibrium": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Union": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Monero": {
-   "status": "UNMEASURED",
-   "incidents": 2,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "EnergyWeb": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Hedera": {
-   "status": "MEASURED",
-   "incidents": 3,
-   "protocols": 23,
-   "hazard": 1.098,
-   "loss_usd": 11650000.0,
-   "mean_loss_usd": 3883333.33
-  },
-  "Chihuahua": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Zora": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "AFX L1": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Cardano": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 57,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Elastos": {
-   "status": "UNMEASURED",
-   "incidents": 2,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Sommelier": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Degen": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ApeChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 12,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Solana": {
-   "status": "MEASURED",
-   "incidents": 22,
-   "protocols": 293,
-   "hazard": 0.632,
-   "loss_usd": 857564000.0,
-   "mean_loss_usd": 38980181.82
-  },
-  "Ultra": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Hemi": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 33,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Mint": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Oasys": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Form Network": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Astar": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 21,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "WINR": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Shape": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ZetaChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 20,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Saakuru": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
+   "protocols": 7,
    "note": "below the support floor; never promoted on a guess"
   },
   "Carbon": {
@@ -358,60 +38,88 @@
    "protocols": 4,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Asset Chain": {
+  "Step": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Nahmii": {
+  "Endurance": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Nibiru": {
+  "Fusion": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 10,
+   "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Ethereum Classic": {
-   "status": "UNMEASURED",
-   "incidents": 2,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Polygon": {
-   "status": "MEASURED",
-   "incidents": 36,
-   "protocols": 364,
-   "hazard": 0.833,
-   "loss_usd": 275364487.33,
-   "mean_loss_usd": 7649013.54
-  },
-  "Goat": {
+  "Rollux": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 10,
+   "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Namada": {
+  "Hemi": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 33,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "zkLink": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 13,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Thorchain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Meta": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Dymension": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Celo": {
    "status": "UNMEASURED",
    "incidents": 1,
-   "protocols": 0,
+   "protocols": 60,
    "note": "below the support floor; never promoted on a guess"
   },
-  "AirDAO": {
+  "Shape": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "exSat": {
+  "Bifrost": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 1,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Milkomeda A1": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Heco": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 24,
    "note": "below the support floor; never promoted on a guess"
   },
   "BEVM": {
@@ -420,10 +128,100 @@
    "protocols": 4,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Arbitrum Nova": {
+  "Aleo": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "AFX L1": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "OntologyEVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Pego": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "WEMIX": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 7,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Shiden": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "LightLink": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Peaq": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Immutable zkEVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Redstone": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "BandChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Corn": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Moonbeam": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 40,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Cronos zkEVM": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 9,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Lisk": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Cosmos": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 13,
    "note": "below the support floor; never promoted on a guess"
   },
   "Optimism": {
@@ -434,194 +232,42 @@
    "loss_usd": 89562230.67,
    "mean_loss_usd": 4264868.13
   },
-  "Bittorrent": {
+  "Mezo": {
    "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 11,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "CORE": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 29,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "XRPL EVM": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Tezos": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 9,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Pi Network": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Beam": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bitcoin": {
-   "status": "MEASURED",
-   "incidents": 4,
-   "protocols": 137,
-   "hazard": 0.246,
-   "loss_usd": 9973000.0,
-   "mean_loss_usd": 2493250.0
-  },
-  "Shido": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ethereal": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Initia": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Secret": {
-   "status": "MEASURED",
-   "incidents": 2,
+   "incidents": 1,
    "protocols": 8,
-   "hazard": 2.105,
-   "loss_usd": 7005000.0,
-   "mean_loss_usd": 3502500.0
-  },
-  "Elrond": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 12,
    "note": "below the support floor; never promoted on a guess"
   },
-  "inEVM": {
+  "Degen": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "CookieChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Flare": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 37,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Zero Network": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "OKExChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 25,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Lens": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Abstract": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 18,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Oraichain": {
+  "XRPL": {
    "status": "UNMEASURED",
    "incidents": 1,
    "protocols": 0,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Wanchain": {
+  "Cronos": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 47,
+   "hazard": 0.358,
+   "loss_usd": 250000.0,
+   "mean_loss_usd": 125000.0
+  },
+  "Ergo": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 7,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Electroneum": {
+  "Manta": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "HeLa": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Nolus": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "CSC": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Superseed": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Goerli": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "W Chain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Energi": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Monad": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 98,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "smartBCH": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
+   "protocols": 41,
    "note": "below the support floor; never promoted on a guess"
   },
   "Interlay": {
@@ -630,140 +276,114 @@
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "AurumCoin": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Swellchain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 10,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Mixin": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Fraxtal": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 31,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Dymension": {
+  "dYdX": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 4,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Horizen EON": {
+  "DFS Network": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "EnergyWeb": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Bitrock": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Manta Atlantic": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Thorchain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Huobi Eco Chain": {
+  "Quicksilver": {
    "status": "UNMEASURED",
    "incidents": 1,
-   "protocols": 0,
+   "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Gala": {
+  "Pi Network": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "BSquared": {
+  "Mantle": {
    "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 21,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Fantom": {
-   "status": "MEASURED",
-   "incidents": 8,
-   "protocols": 122,
-   "hazard": 0.552,
-   "loss_usd": 63075097.0,
-   "mean_loss_usd": 7884387.12
-  },
-  "Fusion": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Intuition": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Morph": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 15,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Venom": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Mantra": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Tron": {
-   "status": "MEASURED",
-   "incidents": 6,
+   "incidents": 1,
    "protocols": 84,
-   "hazard": 0.601,
-   "loss_usd": 3856500.0,
-   "mean_loss_usd": 642750.0
+   "note": "below the support floor; never promoted on a guess"
   },
-  "Inertia": {
+  "Bitgert": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Nibiru": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Verus": {
+   "status": "UNMEASURED",
+   "incidents": 2,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "GateLayer": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "XPLA": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Strato": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Umee": {
+  "Tezos": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 3,
+   "protocols": 9,
    "note": "below the support floor; never promoted on a guess"
   },
-  "OntologyEVM": {
+  "Hedera": {
+   "status": "MEASURED",
+   "incidents": 3,
+   "protocols": 23,
+   "hazard": 1.098,
+   "loss_usd": 11650000.0,
+   "mean_loss_usd": 3883333.33
+  },
+  "Ripple": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 3,
+   "protocols": 56,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "RSK": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 28,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Boba": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 19,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "CORE": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 29,
    "note": "below the support floor; never promoted on a guess"
   },
   "DeFiChain EVM": {
@@ -772,35 +392,61 @@
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Sei": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 47,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Reya Network": {
+  "Katana": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 3,
+   "protocols": 29,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Doma": {
+  "Milkomeda": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 8,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Aura Network": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Zero Network": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Bifrost Network": {
+  "Artela": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 4,
+   "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Kava": {
+  "EthereumClassic": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 52,
+   "protocols": 7,
    "note": "below the support floor; never promoted on a guess"
+  },
+  "Pepu": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Provenance": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Starknet": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 38,
+   "hazard": 0.443,
+   "loss_usd": 9855000.0,
+   "mean_loss_usd": 4927500.0
   },
   "Fuel": {
    "status": "UNMEASURED",
@@ -808,82 +454,28 @@
    "protocols": 7,
    "note": "below the support floor; never promoted on a guess"
   },
-  "TAC": {
+  "ZetaChain": {
    "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 15,
+   "incidents": 0,
+   "protocols": 20,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Migaloo": {
+  "Orai": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Movement": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 4,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Anubis": {
+  "BSquared": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "XDC": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 22,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Comdex": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Crescent": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Filecoin": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 19,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ICP": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 13,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Gnosis": {
-   "status": "UNMEASURED",
-   "incidents": 3,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Dexit": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Archway": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "VeChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ancient8": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
+   "protocols": 21,
    "note": "below the support floor; never promoted on a guess"
   },
   "Dexalot": {
@@ -892,13 +484,159 @@
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Polynomial": {
+  "EDU Chain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Vite": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Voi Network": {
+  "Cyber": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Eventum": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "XION": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Akash": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bytomsidechain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Gala": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Pulse": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 19,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bitcoincash": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Arbitrum": {
+   "status": "MEASURED",
+   "incidents": 74,
+   "protocols": 527,
+   "hazard": 1.182,
+   "loss_usd": 369873247.17,
+   "mean_loss_usd": 4998287.12
+  },
+  "Intuition": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kava": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 52,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "smartBCH": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Eclipse": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Allora": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Casper": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "W Chain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Newton": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Evmos": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 12,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Citrea": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Europa": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Sophon": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Xai": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Axiome": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "SatoshiVM": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
@@ -912,1210 +650,10 @@
    "loss_usd": 4200000.0,
    "mean_loss_usd": 2100000.0
   },
-  "Cosmos": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 13,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Supra": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 8,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "MemeCore": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Proton": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Map": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Vite": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Matchain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Sonic": {
-   "status": "MEASURED",
-   "incidents": 4,
-   "protocols": 110,
-   "hazard": 0.306,
-   "loss_usd": 22292333.33,
-   "mean_loss_usd": 5573083.33
-  },
-  "Hibachi": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Stride": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Vertcoin": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Arbitrum": {
-   "status": "MEASURED",
-   "incidents": 74,
-   "protocols": 527,
-   "hazard": 1.182,
-   "loss_usd": 369873247.17,
-   "mean_loss_usd": 4998287.12
-  },
-  "IoTeX": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 18,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Astar zkEVM": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ravencoin": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bahamut": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Swan": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "XPLA": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ronin": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 10,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "MultiVAC": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Milkomeda": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 8,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "MonaCoin": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Xai": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Stratis": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Theta": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Mayachain": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Milkomeda A1": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Metis": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 39,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Verus": {
-   "status": "UNMEASURED",
-   "incidents": 2,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Shiden": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Neo3": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "DeFiVerse": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Dango": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Sophon": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Allora": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ultron": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Algorand": {
-   "status": "MEASURED",
-   "incidents": 2,
-   "protocols": 33,
-   "hazard": 0.51,
-   "loss_usd": 3030000.0,
-   "mean_loss_usd": 1515000.0
-  },
-  "FunctionX": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "WEMIX3.0": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "XRPL": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "re.al": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Redbelly": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Terra": {
-   "status": "MEASURED",
-   "incidents": 4,
-   "protocols": 10,
-   "hazard": 3.368,
-   "loss_usd": 96800000.0,
-   "mean_loss_usd": 24200000.0
-  },
-  "MegaETH": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 23,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Polkadot": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 15,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Pego": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "DFK": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Moonriver": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 29,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "World Chain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 12,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Constellation": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Aurora": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 34,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Stargaze": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "EOS": {
-   "status": "MEASURED",
-   "incidents": 15,
-   "protocols": 18,
-   "hazard": 7.017,
-   "loss_usd": 21158092.0,
-   "mean_loss_usd": 1410539.47
-  },
-  "Zircuit": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 12,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Canto": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 12,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "XO": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Endurance": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Rari": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "RISE": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Unichain": {
-   "status": "MEASURED",
-   "incidents": 2,
-   "protocols": 43,
-   "hazard": 0.392,
-   "loss_usd": 4200000.0,
-   "mean_loss_usd": 2100000.0
-  },
-  "Base": {
-   "status": "MEASURED",
-   "incidents": 43,
-   "protocols": 446,
-   "hazard": 0.812,
-   "loss_usd": 54552592.0,
-   "mean_loss_usd": 1268664.93
-  },
-  "Coti": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bitkub": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 9,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Dogechain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 7,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Naka": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "zkSync Era": {
-   "status": "MEASURED",
-   "incidents": 6,
-   "protocols": 69,
-   "hazard": 0.732,
-   "loss_usd": 11158233.33,
-   "mean_loss_usd": 1859705.56
-  },
-  "Corn": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 10,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bitcoin Gold": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Orai": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Peaq": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Doge": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 29,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Juno": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Zcash": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "HAQQ": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "AILayer": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Boba_Bnb": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "IOTA": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "SX Rollup": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Kardia": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Aleo": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "SatoshiVM": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ShimmerEVM": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Neutron": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 9,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Hyperliquid L1": {
-   "status": "MEASURED",
-   "incidents": 4,
-   "protocols": 140,
-   "hazard": 0.241,
-   "loss_usd": 2140500.0,
-   "mean_loss_usd": 535125.0
-  },
-  "Bitgert": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Kucoin": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 15,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Haven": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "BCHyper": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "JBC": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ADI": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Mantle": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 84,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Robinhood Chain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 52,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Cube": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Celestia": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Scroll": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 79,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Qubic": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Chia": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ink": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 24,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Empire": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Karura": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "BSC": {
-   "status": "MEASURED",
-   "incidents": 256,
-   "protocols": 537,
-   "hazard": 4.014,
-   "loss_usd": 1358552352.5,
-   "mean_loss_usd": 5306845.13
-  },
-  "Ethereum": {
-   "status": "MEASURED",
-   "incidents": 337,
-   "protocols": 1108,
-   "hazard": 2.561,
-   "loss_usd": 2636683877.33,
-   "mean_loss_usd": 7823987.77
-  },
-  "Starcoin": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "edgeX L1": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Starknet": {
-   "status": "MEASURED",
-   "incidents": 2,
-   "protocols": 38,
-   "hazard": 0.443,
-   "loss_usd": 9855000.0,
-   "mean_loss_usd": 4927500.0
-  },
-  "Eventum": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "CLV": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Palm": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Pulse": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 19,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Persistence": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Casper": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Eclipse": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Dash": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Noble": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Nervos": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "GravityBridge": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "IOTA EVM": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "MilkyWay Rollup": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Cyber": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "RSK": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 28,
-   "note": "below the support floor; never promoted on a guess"
-  },
   "Vana": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "K2": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Chiliz": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 10,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "0G": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 9,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Igra": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Redstone": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Echelon": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bitcoincash": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Berachain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 63,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "GRX Chain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Shibarium": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 7,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "NEAR": {
-   "status": "MEASURED",
-   "incidents": 4,
-   "protocols": 31,
-   "hazard": 1.086,
-   "loss_usd": 28103000.0,
-   "mean_loss_usd": 7025750.0
-  },
-  "Coreum": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "PolyNetwork": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Regen": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Aura Network": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Conflux": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 14,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Echelon Chain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "DefiChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "EthereumClassic": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 7,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bittensor": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "zkLink": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 13,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "LightLink": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Heco": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 24,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "WEMIX": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 7,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ZIGChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Fogo": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 5,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "LUKSO": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Cabal": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ontology": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Newton": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Cronos": {
-   "status": "MEASURED",
-   "incidents": 2,
-   "protocols": 47,
-   "hazard": 0.358,
-   "loss_usd": 250000.0,
-   "mean_loss_usd": 125000.0
-  },
-  "TomoChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "DFS Network": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Zilliqa": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Syscoin": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Waves": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 9,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bifrost": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Aptos": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 58,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Moonbeam": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 40,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Rootstock": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Mode": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 47,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Meta": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Milkyway": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Stable": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 12,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Taraxa": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Pepu": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Plasma": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 61,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "UNIT0": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Stafi": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "REI Network": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Mezo": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 8,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Op_Bnb": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 25,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Immutable zkEVM": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "DuckChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Osmosis": {
-   "status": "MEASURED",
-   "incidents": 2,
-   "protocols": 12,
-   "hazard": 1.403,
-   "loss_usd": 6100000.0,
-   "mean_loss_usd": 3050000.0
-  },
-  "Tempo": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 10,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Plume Mainnet": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 36,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Chainflip": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Agoric": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Icon": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Celo": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 60,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Nuls": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Meter": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 8,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "BSV Blockchain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Ergo": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 7,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Terra2": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 11,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Superposition": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "aelf": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Everscale": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "GateLayer": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Quai": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Kroma": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Movement": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Velas": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 7,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Europa": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
    "note": "below the support floor; never promoted on a guess"
   },
   "EOS EVM": {
@@ -2124,22 +662,22 @@
    "protocols": 3,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Cronos zkEVM": {
+  "re.al": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 9,
+   "protocols": 3,
    "note": "below the support floor; never promoted on a guess"
   },
-  "HydraDX": {
+  "Namada": {
    "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
+   "incidents": 1,
+   "protocols": 0,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Lisk": {
+  "Theta": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 10,
+   "protocols": 5,
    "note": "below the support floor; never promoted on a guess"
   },
   "Sui": {
@@ -2150,72 +688,10 @@
    "loss_usd": 230841000.0,
    "mean_loss_usd": 38473500.0
   },
-  "EDU Chain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Bitlayer": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 17,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Silicon zkEVM": {
+  "FunctionX": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Rollux": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Arweave": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "BESC Hyperchain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Polygon zkEVM": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 38,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Plume": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Radix": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 10,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Avalanche": {
-   "status": "MEASURED",
-   "incidents": 18,
-   "protocols": 284,
-   "hazard": 0.534,
-   "loss_usd": 62996974.67,
-   "mean_loss_usd": 3499831.93
-  },
-  "Gravity": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
    "note": "below the support floor; never promoted on a guess"
   },
   "Prom": {
@@ -2230,10 +706,90 @@
    "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Etherlink": {
+  "Coti": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Elrond": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 12,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "VeChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kusama": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kadena": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Matchain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "CSC": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Stride": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Aptos": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 58,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "edgeX L1": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Zircuit": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 12,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "AirDAO": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Polygon": {
+   "status": "MEASURED",
+   "incidents": 36,
+   "protocols": 364,
+   "hazard": 0.833,
+   "loss_usd": 275364487.33,
+   "mean_loss_usd": 7649013.54
+  },
+  "Rootstock": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
    "note": "below the support floor; never promoted on a guess"
   },
   "Injective": {
@@ -2242,16 +798,790 @@
    "protocols": 24,
    "note": "below the support floor; never promoted on a guess"
   },
+  "Hibachi": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Plume Mainnet": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 36,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "XRPL EVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Avalanche": {
+   "status": "MEASURED",
+   "incidents": 18,
+   "protocols": 284,
+   "hazard": 0.534,
+   "loss_usd": 62996974.67,
+   "mean_loss_usd": 3499831.93
+  },
+  "Hyperliquid L1": {
+   "status": "MEASURED",
+   "incidents": 4,
+   "protocols": 140,
+   "hazard": 0.241,
+   "loss_usd": 2140500.0,
+   "mean_loss_usd": 535125.0
+  },
+  "Stacks": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 15,
+   "hazard": 1.123,
+   "loss_usd": 9373000.0,
+   "mean_loss_usd": 4686500.0
+  },
+  "Chromia": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Cabal": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kasplex": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "OKExChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 25,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Oraichain": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Anubis": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Somnia": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 9,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Etherlink": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 12,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "xDai": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 69,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Electroneum": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Velas": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 7,
+   "note": "below the support floor; never promoted on a guess"
+  },
   "Sapphire": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 4,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Obyte": {
+  "0G": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 9,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Polkadex": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Empire": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ink": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 24,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Stratis": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "TON": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 50,
+   "hazard": 0.337,
+   "loss_usd": 1534843.0,
+   "mean_loss_usd": 767421.5
+  },
+  "Story": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Elastos": {
+   "status": "UNMEASURED",
+   "incidents": 2,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Nuls": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Tempo": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Agoric": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "HashKey Chain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 7,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Meter": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 8,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kaspa": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "LaChain Network": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "EOS": {
+   "status": "MEASURED",
+   "incidents": 15,
+   "protocols": 18,
+   "hazard": 7.017,
+   "loss_usd": 21158092.0,
+   "mean_loss_usd": 1410539.47
+  },
+  "Arbitrum Nova": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 9,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Fluence": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bittensor": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Wax": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Metis": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 39,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "RISE": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Merlin": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 17,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Qubic": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ethereal": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Flow": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 14,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "JBC": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Morph": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 15,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "HydraDX": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "ZIGChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Crescent": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ultron": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Base": {
+   "status": "MEASURED",
+   "incidents": 43,
+   "protocols": 446,
+   "hazard": 0.812,
+   "loss_usd": 54552592.0,
+   "mean_loss_usd": 1268664.93
+  },
+  "Bitkub": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 9,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "BSC": {
+   "status": "MEASURED",
+   "incidents": 256,
+   "protocols": 537,
+   "hazard": 4.014,
+   "loss_usd": 1358552352.5,
+   "mean_loss_usd": 5306845.13
+  },
+  "MemeCore": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Solana": {
+   "status": "MEASURED",
+   "incidents": 22,
+   "protocols": 293,
+   "hazard": 0.632,
+   "loss_usd": 857564000.0,
+   "mean_loss_usd": 38980181.82
+  },
+  "Sei": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 47,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "BounceBit": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "EthereumPoW": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Regen": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Mayachain": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Fraxtal": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 31,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Nervos": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bitrock": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Doge": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 29,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Litecoin": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 29,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "TAC": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 15,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Lens": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Taraxa": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Chia": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Astar": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 21,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Nolus": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Zilliqa": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Scroll": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 79,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "X Layer": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 40,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Palm": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Fantom": {
+   "status": "MEASURED",
+   "incidents": 8,
+   "protocols": 122,
+   "hazard": 0.552,
+   "loss_usd": 63075097.0,
+   "mean_loss_usd": 7884387.12
+  },
+  "Asset Chain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Energi": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Doma": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Canto": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 12,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Coreum": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bifrost Network": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "RENEC": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Mint": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "inEVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "ENULS": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Fuse": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 16,
+   "hazard": 1.053,
+   "loss_usd": 4992113.0,
+   "mean_loss_usd": 2496056.5
+  },
+  "Neon": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Zkfair": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Odyssey": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "DuckChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "REI": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Arweave": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Mode": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 47,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "AILayer": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "BOB": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 26,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Stargaze": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Haven": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ultra": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Oasys": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Stellar": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 33,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Babylon Genesis": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bittensor EVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Sommelier": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ethereum Classic": {
+   "status": "UNMEASURED",
+   "incidents": 2,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Initia": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Yominet": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "HeLa": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "SX Rollup": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Chiliz": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "MegaETH": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 23,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ethereum": {
+   "status": "MEASURED",
+   "incidents": 337,
+   "protocols": 1108,
+   "hazard": 2.561,
+   "loss_usd": 2636683877.33,
+   "mean_loss_usd": 7823987.77
+  },
+  "Polkadot": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 15,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Unichain": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 43,
+   "hazard": 0.392,
+   "loss_usd": 4200000.0,
+   "mean_loss_usd": 2100000.0
+  },
+  "TomoChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Everscale": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Oasis": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "DefiChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ancient8": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Polygon zkEVM": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 38,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kujira": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Plume": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "IoTeX": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 18,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "World Chain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 12,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Milkyway": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Echelon": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "UNIT0": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
    "note": "below the support floor; never promoted on a guess"
   },
   "GodwokenV1": {
@@ -2260,19 +1590,543 @@
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
+  "Osmosis": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 12,
+   "hazard": 1.403,
+   "loss_usd": 6100000.0,
+   "mean_loss_usd": 3050000.0
+  },
+  "Moonriver": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 29,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "PGN": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Starcoin": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bitcoin": {
+   "status": "MEASURED",
+   "incidents": 4,
+   "protocols": 137,
+   "hazard": 0.246,
+   "loss_usd": 9973000.0,
+   "mean_loss_usd": 2493250.0
+  },
+  "Syscoin": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Aurora": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 34,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Flare": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 37,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Igra": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Celestia": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Terra2": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 11,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Echelon Chain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bitcoin Gold": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "GRX Chain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Mixin": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "BCHyper": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Saakuru": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kroma": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Inertia": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Pharos": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Fluent": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ontology": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
   "Reef": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Step": {
+  "Nahmii": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Babylon Genesis": {
+  "Robinhood Chain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 52,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Manta Atlantic": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Tron": {
+   "status": "MEASURED",
+   "incidents": 6,
+   "protocols": 84,
+   "hazard": 0.601,
+   "loss_usd": 3856500.0,
+   "mean_loss_usd": 642750.0
+  },
+  "Comdex": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Secret": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 8,
+   "hazard": 2.105,
+   "loss_usd": 7005000.0,
+   "mean_loss_usd": 3502500.0
+  },
+  "Alephium": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Huobi Eco Chain": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Zora": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "ZenCash": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Silicon zkEVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "ICP": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 13,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Ravencoin": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "zkSync Era": {
+   "status": "MEASURED",
+   "incidents": 6,
+   "protocols": 69,
+   "hazard": 0.732,
+   "loss_usd": 11158233.33,
+   "mean_loss_usd": 1859705.56
+  },
+  "XDC": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 22,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Hoo": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Superseed": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "DeFiVerse": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "K2": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Redbelly": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "CookieChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Conflux": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 14,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Boba_Bnb": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Cardano": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 57,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Filecoin": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 19,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Venom": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Fogo": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Astar zkEVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Canton": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Voi Network": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "MonaCoin": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "IOTA EVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Equilibrium": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Juno": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Monad": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 98,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Botanix": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Chihuahua": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Rari": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Neo3": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Dexit": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Omax": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Stafi": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Gnosis": {
+   "status": "UNMEASURED",
+   "incidents": 3,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Boba_Avax": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kardia": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Zcash": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Migaloo": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Telos": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 16,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Polynomial": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Form Network": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Reya Network": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "ApeChain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 12,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Terra": {
+   "status": "MEASURED",
+   "incidents": 4,
+   "protocols": 10,
+   "hazard": 3.368,
+   "loss_usd": 96800000.0,
+   "mean_loss_usd": 24200000.0
+  },
+  "ADI": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Kucoin": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 15,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "exSat": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Constellation": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "ThunderCore": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 6,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "NEAR": {
+   "status": "MEASURED",
+   "incidents": 4,
+   "protocols": 31,
+   "hazard": 1.086,
+   "loss_usd": 28103000.0,
+   "mean_loss_usd": 7025750.0
+  },
+  "Waves": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 9,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "aelf": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Superposition": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "ShimmerEVM": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Stable": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 12,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Noble": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 4,
@@ -2286,108 +2140,276 @@
    "loss_usd": 69952900.0,
    "mean_loss_usd": 11658816.67
   },
-  "EthereumPoW": {
+  "Chainflip": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Quai": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "LUKSO": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 3,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Kadena": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Litecoin": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 29,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "BandChain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "REI": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Kusama": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Fluent": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 4,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Boba_Avax": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "LaChain Network": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "HashKey Chain": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 7,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "TON": {
-   "status": "MEASURED",
-   "incidents": 2,
-   "protocols": 50,
-   "hazard": 0.337,
-   "loss_usd": 1534843.0,
-   "mean_loss_usd": 767421.5
-  },
-  "Wax": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 2,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Strato": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Boba": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 19,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Pharos": {
+  "Ronin": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 10,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Odyssey": {
+  "Verge": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Swellchain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Supra": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 8,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "PolyNetwork": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "AurumCoin": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Dogechain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 7,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Monero": {
+   "status": "UNMEASURED",
+   "incidents": 2,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "NEO": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Gravity": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Map": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 3,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Bittensor EVM": {
+  "Shido": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Vertcoin": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "WINR": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "IOTA": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Obyte": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "XO": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Bitlayer": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 17,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Songbird": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Beam": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Horizen EON": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Abstract": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 18,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Neutron": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 9,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Algorand": {
+   "status": "MEASURED",
+   "incidents": 2,
+   "protocols": 33,
+   "hazard": 0.51,
+   "loss_usd": 3030000.0,
+   "mean_loss_usd": 1515000.0
+  },
+  "Saga": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "MilkyWay Rollup": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Umee": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Archway": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 5,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Goerli": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Naka": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Icon": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 4,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "PulseChain": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Union": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Klaytn": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 52,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Swan": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "SXnetwork": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Wanchain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 7,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "BSV Blockchain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 1,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "CLV": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 3,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Goat": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "WEMIX3.0": {
+   "status": "UNMEASURED",
+   "incidents": 1,
+   "protocols": 0,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Soneium": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 21,
    "note": "below the support floor; never promoted on a guess"
   },
   "Linea": {
@@ -2398,82 +2420,22 @@
    "loss_usd": 7381951.33,
    "mean_loss_usd": 1845487.83
   },
-  "Oasis": {
+  "Bahamut": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 10,
+   "protocols": 3,
    "note": "below the support floor; never promoted on a guess"
   },
-  "BOB": {
-   "status": "UNMEASURED",
-   "incidents": 1,
-   "protocols": 26,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Polkadex": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Manta": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 41,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "xDai": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 69,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "ENI": {
+  "Dash": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "ZenCash": {
+  "Harmony": {
    "status": "UNMEASURED",
    "incidents": 1,
-   "protocols": 0,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Fluence": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Canton": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Chromia": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Soneium": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 21,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Hoo": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Kasplex": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 3,
+   "protocols": 25,
    "note": "below the support floor; never promoted on a guess"
   },
   "NULS": {
@@ -2482,78 +2444,116 @@
    "protocols": 0,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Quicksilver": {
+  "MultiVAC": {
    "status": "UNMEASURED",
-   "incidents": 1,
+   "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Verge": {
+  "REI Network": {
    "status": "UNMEASURED",
    "incidents": 1,
    "protocols": 0,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Alephium": {
+  "GravityBridge": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 4,
+   "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Citrea": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 6,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Artela": {
+  "Persistence": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 2,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Saga": {
+  "Dango": {
    "status": "UNMEASURED",
    "incidents": 1,
-   "protocols": 5,
+   "protocols": 0,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Telos": {
+  "Bittorrent": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 16,
+   "protocols": 11,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Fuse": {
-   "status": "MEASURED",
-   "incidents": 2,
-   "protocols": 16,
-   "hazard": 1.053,
-   "loss_usd": 4992113.0,
-   "mean_loss_usd": 2496056.5
-  },
-  "Yominet": {
+  "BESC Hyperchain": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 1,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Neon": {
+  "Sonic": {
+   "status": "MEASURED",
+   "incidents": 4,
+   "protocols": 110,
+   "hazard": 0.306,
+   "loss_usd": 22292333.33,
+   "mean_loss_usd": 5573083.33
+  },
+  "Berachain": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 63,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Cube": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Acala": {
+   "status": "MEASURED",
+   "incidents": 3,
+   "protocols": 5,
+   "hazard": 5.052,
+   "loss_usd": 3700000.0,
+   "mean_loss_usd": 1233333.33
+  },
+  "Radix": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 10,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "DFK": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Karura": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Op_Bnb": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 25,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "ENI": {
+   "status": "UNMEASURED",
+   "incidents": 0,
+   "protocols": 2,
+   "note": "below the support floor; never promoted on a guess"
+  },
+  "Mantra": {
    "status": "UNMEASURED",
    "incidents": 0,
    "protocols": 3,
    "note": "below the support floor; never promoted on a guess"
   },
-  "Dungeon": {
+  "Plasma": {
    "status": "UNMEASURED",
    "incidents": 0,
-   "protocols": 1,
-   "note": "below the support floor; never promoted on a guess"
-  },
-  "Somnia": {
-   "status": "UNMEASURED",
-   "incidents": 0,
-   "protocols": 9,
+   "protocols": 61,
    "note": "below the support floor; never promoted on a guess"
   }
  }

@@ -116,6 +116,11 @@ python3 tools/source_sweep.py 1300
 # Chain priority is MEASURED, not assumed: hazard = incident share / protocol share.
 # Sizing the cohort by protocol count made it 40% Solana, which the data contradicts
 # (Solana x0.63 across 293 protocols; Cosmos family x2.25 across 30; EOS x7.02).
+# Criteria-based triage of the Cosmos EVM precompile cluster. Chain membership is the
+# vendor's own scope criterion; NO row asserts a patch state, because patch state is not
+# verifiable from outside without active probing of live module parameters.
+python3 tools/cosmos_evm_triage.py      # -> protocols/cosmos_evm_triage.json
+python3 tools/write_cosmos_evm_report.py# -> results/cosmos_evm_exposure.md
 python3 tools/nonevm_hazard.py          # -> protocols/chain_hazard_measured.json
 python3 tools/nonevm_cohort.py          # -> protocols/nonevm_cohort.json (hazard-ordered)
 # app/app.go names every module a Cosmos chain wires in, so one fetch yields the real

@@ -1,8 +1,8 @@
 [PASS] 18.6 every referenced artifact exists and is non-empty — missing/empty: []
-[PASS] 18.6 manifest maps every load-bearing claim — 31 claims mapped
+[PASS] 18.6 manifest maps every load-bearing claim — 33 claims mapped
 [PASS] 18.6 commands.sh replays retrieval and transformation
 [PASS] 18.1 crawling continued until the date boundary was proven — final page 12: in_window=0 older=20/20
-[PASS] 18.1 every in-window row retained and dispositioned — 111+22+72 vs 205
+[PASS] 18.1 every in-window row retained and dispositioned — 111+24+72 vs 207
 [PASS] 18.1 actual incident date used, not publication date
 [PASS] 18.1 every exclusion has a concrete reason
 [PASS] 18.1 only A/B evidence entered the family library
@@ -22,10 +22,10 @@
 [PASS] 18.3 sub-floor authority-bearing protocols identified and recorded (hard $50k floor in force) — 662 recorded in protocols/subfloor_authority_deferred.json, none screened
 [PASS] 18.3 hard TVL floor actually enforced in the screen — lowest screened TVL $50,207
 [PASS] 18.3 condition layer recorded per protocol
-[PASS] 18.4 deployed-source sweep evidence recorded — 900 protocols with analysed source
+[PASS] 18.4 deployed-source sweep evidence recorded — 962 protocols with analysed source
 [PASS] 18.4 precision controls applied and published — prevalence demotion and relevance gate both present in scored pairs
 [PASS] 18.3 TVL, chains, category and deployment evidence recorded
-[PASS] 18.4 minimum deep-screened pairs met (>=80) — 27863 pairs deep-screened
+[PASS] 18.4 minimum deep-screened pairs met (>=80) — 27876 pairs deep-screened
 [PASS] 18.4 mandatory-precondition gate applied to every pair
 [PASS] 18.4 decisive guards searched on every surviving pair
 [PASS] 18.4 score evidence shown
@@ -33,17 +33,22 @@
 [PASS] 18.4 live exposure separate from fit — value at risk is reported per pair and never folded into the likelihood ranking
 [PASS] band: hard $50k floor enforced — lowest screened value at risk $50,207
 [PASS] band: above-band protocols dropped unless explicit danger — 452 retained above the band, each with stated danger evidence
-[PASS] band: LIKELIHOOD is not a restatement of exposure — Spearman(LIKELIHOOD, TVL) = +0.086 across 27188 surviving pairs
-[PASS] band: PRIORITY tilts toward protocols an independent reviewer can actually help — Spearman(PRIORITY, TVL) = -0.197: the queue leans to smaller protocols by construction
-[PASS] band: PRIORITY = LIKELIHOOD x ACTIONABILITY holds for every pair — 0 arithmetic violations across 27188 pairs
+[PASS] band: LIKELIHOOD is not a restatement of exposure — Spearman(LIKELIHOOD, TVL) = +0.081 across 27175 surviving pairs
+[PASS] band: PRIORITY tilts toward protocols an independent reviewer can actually help — Spearman(PRIORITY, TVL) = -0.199: the queue leans to smaller protocols by construction
+[PASS] band: PRIORITY = LIKELIHOOD x ACTIONABILITY holds for every pair — 0 arithmetic violations across 27175 pairs
 [PASS] validation: the scoring model beats chance on incidents it never saw — lift x2.36 on 95 protocols hacked after the fitting window
 [PASS] validation: every feature group kept was shown to earn its place — ablation refits and revalidates each group; admin posture was dropped for failing this
-[PASS] delivery: every candidate was read to the declared evidence depth — 163 selected pairs at {'L4_GUARD_REVIEW': 163}; declared floor L4_GUARD_REVIEW
+[PASS] delivery: every candidate was read to the declared evidence depth — 53 selected pairs at {'L4_GUARD_REVIEW': 53}; declared floor L4_GUARD_REVIEW
 [PASS] delivery: the four highest-loss families in the window can now reach guard review — these had no source indicators and were stuck at L1_ADAPTER before this pass
-[PASS] delivery: no candidate repeats a protocol handed over in a previous run — 163 finals against a ledger of 466 previously delivered; repeats: none
-[PASS] delivery: the written ranking matches the handover list, with no delivered protocol reintroduced — 163 write-ups, 0 previously delivered
+[PASS] delivery: no candidate repeats a protocol handed over in a previous run — 53 finals against a ledger of 629 previously delivered; repeats: none
+[PASS] delivery: the written ranking matches the handover list, with no delivered protocol reintroduced — 53 write-ups, 0 previously delivered
 [PASS] delivery: withheld protocols are disclosed rather than silently dropped — candidates_all.csv carries previously_delivered + first_delivered_in; the ranking states the count
-[PASS] delivery: the ledger is reconstructed from git history, not from run-to-run memory — 8 previous deliveries found, 466 protocols
+[PASS] delivery: the ledger is reconstructed from git history, not from run-to-run memory — 9 previous deliveries found, 629 protocols
+[PASS] disclosure: the Cosmos EVM triage never asserts a patch state it cannot verify — 222 rows, all NOT_DETERMINED; patch state is unverifiable without active probing
+[PASS] disclosure: risk archetypes needing unreachable evidence are marked unassessable, not guessed — assessability: {'A_vendored_fork': 'NOT_ASSESSABLE_HERE', 'B_disabled_not_upgraded': 'NOT_ASSESSABLE_HERE', 'C_participation_only': 'ASSESSABLE', 'D_migrated_off_evmos': 'NOT_ASSESSABLE_HERE', 'E_governance_reachable': 'NOT_ASSESSABLE_HERE', 'F_non_ics20_precompiles': 'PARTIALLY_ASSESSABLE'}
+[PASS] disclosure: the exposure report states plainly that it is not a roster of unpatched networks — adopts the source report's reasoning that a public list is a target list
+[PASS] evidence: unresolved-attribution incidents are provisional, not folded in as confirmed — MANTRA and the TAC chain halt: subsystem named, mechanism not, loss undisclosed, attribution unconfirmed
+[PASS] evidence: a family carrying only provisional incidents claims no window loss — provisional-only ids: ['INC-2026-08-22-TCH', 'INC-2026-08-20-MAN']; the confirmed exploitation (Saga, 2026-01-21) is outside the window
 [PASS] evidence: grade-A-by-source claims are individually recorded with file and line — 5 of 6 claims CONFIRMED against live public source
 [PASS] evidence: the lineage lead was checked and its result recorded either way — THORChain upstream check -> NO_MATCH_ON_ANY_VERIFIED_DEFECT
 [PASS] precision: chain priority is measured from incidents, not from protocol counts — 32 chains measured; support floor 3 protocols / 2 incidents
@@ -51,12 +56,12 @@
 [PASS] precision: the non-EVM cohort is ordered by measured hazard, not by exposure alone — lead chains: ['EOS', 'EOS', 'EOS']
 [PASS] precision: rollback families are not applied to runtimes that roll back — 0 misapplied (Solana, Move, Cairo and EVM all discard state on error)
 [PASS] precision: no EVM pair was generated for a handler-runtime family — 0 EVM pairs on families that require non-EVM semantics
-[PASS] precision: a source-derived pair requires a MATCHED precondition, not merely an evaluated family — 29 pairs against 35 protocols carrying a matched precondition
+[PASS] precision: a source-derived pair requires a MATCHED precondition, not merely an evaluated family — 30 pairs against 36 protocols carrying a matched precondition
 [PASS] safety: custody exposure reported without an exploitation path or any key material — authority postures are public chain state read with eth_call/eth_getCode; forbidden phrasing found: none; 32-byte secrets found: none
 [PASS] 18.4 unknowns visible
 [PASS] 18.4 metadata-only pairs capped at 20 — 0 violations
 [PASS] 18.4 adapter-only pairs capped at 45 — 0 violations
-[PASS] 18.4 near misses written to the guard library — 675 near misses
+[PASS] 18.4 near misses written to the guard library — 701 near misses
 [PASS] 18.4 no candidate called vulnerable in candidates_by_priority.md — []
 [PASS] 18.4 no candidate called vulnerable in candidates_by_match.md — []
 [PASS] 18.4 no candidate called vulnerable in candidates_by_likelihood.md — []
@@ -67,7 +72,7 @@
 [PASS] 18.5 no credentials recovered or used
 [PASS] 18.5 no production transaction built or submitted
 [PASS] 18.5 no unauthorized extraction optimized
-[PASS] 18.6 audit_variables.txt: one valid protocol per line, no multiline entries — 163 lines
+[PASS] 18.6 audit_variables.txt: one valid protocol per line, no multiline entries — 53 lines
 [PASS] 18.6 no secrets in audit_variables.txt
 
-SUMMARY: 71 pass, 0 fail, 0 warn
+SUMMARY: 76 pass, 0 fail, 0 warn

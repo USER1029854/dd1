@@ -180,6 +180,31 @@ chk("delivery: the ledger is reconstructed from git history, not from run-to-run
     _led.get('generated_from','').startswith('git history') and len(_led.get('runs',[]))>=1,
     f"{len(_led.get('runs',[]))} previous deliveries found, {len(_LEDS)} protocols")
 
+# --- Cosmos EVM triage gates: this is a criteria-based triage, never a target list ---
+_ct=json.load(open(f'{B}/protocols/cosmos_evm_triage.json'))
+chk("disclosure: the Cosmos EVM triage never asserts a patch state it cannot verify",
+    all(r.get('patch_status')=='NOT_DETERMINED' for r in _ct['rows']),
+    f"{len(_ct['rows'])} rows, all NOT_DETERMINED; patch state is unverifiable without active probing")
+chk("disclosure: risk archetypes needing unreachable evidence are marked unassessable, not guessed",
+    sum(1 for v in _ct['assessability'].values() if v=='NOT_ASSESSABLE_HERE')>=4
+    and not any(r.get('archetype_A_vendored') or r.get('archetype_B_disabled')
+                or r.get('archetype_D_migrated') or r.get('archetype_E_governance') for r in _ct['rows']),
+    f"assessability: {_ct['assessability']}")
+_cer=open(f'{B}/results/cosmos_evm_exposure.md').read()
+chk("disclosure: the exposure report states plainly that it is not a roster of unpatched networks",
+    'not a list of unpatched networks' in _cer.lower() and 'NOT_DETERMINED' in _cer,
+    "adopts the source report's reasoning that a public list is a target list")
+# the two August events must stay provisional while attribution is unresolved
+_provids={json.loads(l)['incident_id'] for l in open(f'{B}/incidents/provisional.jsonl')}
+chk("evidence: unresolved-attribution incidents are provisional, not folded in as confirmed",
+    {'INC-2026-08-20-MAN','INC-2026-08-22-TCH'} <= _provids,
+    "MANTRA and the TAC chain halt: subsystem named, mechanism not, loss undisclosed, attribution unconfirmed")
+_famP=[f for f in F if f['family_id']=='PRECOMPILE-NESTED-CALL-STATE-NOT-PROPAGATED']
+chk("evidence: a family carrying only provisional incidents claims no window loss",
+    bool(_famP) and _famP[0]['incident_count']==0 and not _famP[0]['six_month_loss_usd'],
+    f"provisional-only ids: {_famP[0]['provisional_incident_ids'] if _famP else None}; "
+    "the confirmed exploitation (Saga, 2026-01-21) is outside the window")
+
 # --- non-EVM extension gates ---
 _sv=json.load(open(f'{B}/incidents/source_verification.json'))['incidents']
 _may=_sv.get('INC-2026-08-18-MAY',{})

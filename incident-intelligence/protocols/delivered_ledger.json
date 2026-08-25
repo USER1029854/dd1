@@ -1,6 +1,6 @@
 {
  "generated_from": "git history of results/candidates_*",
- "head_at_generation": "6e7df7a",
+ "head_at_generation": "693e2ed",
  "head_excluded": false,
  "runs": [
   {
@@ -42,9 +42,14 @@
    "commit": "6e7df7a",
    "subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
    "protocols": 117
+  },
+  {
+   "commit": "693e2ed",
+   "subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "protocols": 163
   }
  ],
- "protocols_delivered": 466,
+ "protocols_delivered": 629,
  "ledger": {
   "sumer.money": {
    "first_delivered_in": "7d49c12",
@@ -4491,6 +4496,1636 @@
     "6e7df7a"
    ],
    "families": []
+  },
+  "secured-finance-lending": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "alvara": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "airpuff": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "volmex": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "sera": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "legion": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "alcum": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "more-vaults": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "apy-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "metronome-v1": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "wrap-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "unipower": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "bridgers": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "halodao": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "origin-dollar": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "hidden-hand": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "PROOF-VERIFICATION-BYPASSED"
+   ]
+  },
+  "vest-markets": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "octus-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "level": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "zkcandy-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "tymio": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "flexa": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "felix-usdhl": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "nocturne": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "demeter": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "the-tokenized-bitcoin": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "gmd-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "synthetix-v4": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "lynx": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "PROOF-VERIFICATION-BYPASSED"
+   ]
+  },
+  "injective-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "bunicorn": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "etherfuse": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "dango-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "pepu-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "hats.v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "xave-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "alchemist": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "rollx": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "aarna-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS"
+   ]
+  },
+  "hyperdrive": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "shardingdao": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "apeswap-lending": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "rosen-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "almanak": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "maxapy": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "gudchain": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "apex-pro": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "bundles": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "opyn-convexity": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "subfrost": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "swerve": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "creamswap": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "tanx.fi": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "cvault-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "cyclone": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "basis-cash": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "yfii": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "impermax-v3": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "fyde-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+   ]
+  },
+  "raindex": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "rysk-v1": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "charm-finance-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "factor-leverage-vault": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "swinghook": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "rise-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "zebradao": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "ea-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "yamato-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "bob-fusion": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "9inch-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "tprotocol-v1": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "alphix": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "gremlix": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "bondlink-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "universe-xyz": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "uncx-network-v4": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "maverick-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+   ]
+  },
+  "mycelium-perpetual-pools": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "btcd": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "zircuit-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "parallel-protocol-v3": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "dexfi-aggregator": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "outcome-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-HARDCODED-PEG-REDEMPTION"
+   ]
+  },
+  "sorare-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "snowbl-capital": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "mars-poolin": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "rainbow-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "latch": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "panoptic-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "untangled-vault": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "arca-labs-arcoin": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "flat-money-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "eth-strategy": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "inverse-finance-frontier": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "apechain-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "pay-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "ratex-dex": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "mars-ecosystem": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "gondi-v3": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "ztln-p": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "elysium-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "antarctic": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "nuva": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "morpho-midnight": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "peridot": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "cat-in-a-box": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "radpie": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "ample": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "spot-cash": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "citrea-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "PROOF-VERIFICATION-BYPASSED"
+   ]
+  },
+  "ribbon-earn": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "baseline-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "sovryn-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "stakestone-berachain-vault": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "decentralized-euro": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "governor-dao": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "angstrom": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "hlp0": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "usual-eth0": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "rho-x": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "limitless-exchange": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "reya-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "gravity-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "superfund": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "3f-mutual": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "defi-franc": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "boba-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "xsigma": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "orion-liquidity-nodes": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "lybra-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "fraxlend": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "aegis-markets": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "bob-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "nsure": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "cbridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "ekubo": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "mento-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "juicebox-v1": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "origin-arm": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "pyreswap": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "native-credit-pool": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "extra-finance-vaults": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "kasu": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "solv-rwa": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "block-analitica": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "matrixdock-stbt": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "switcheo-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "megaeth-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "goose": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "fuel-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "jaypeggers": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "syntetika": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "blur-bids": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "sx-rollup-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "arbitrum-nova-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "powh3d": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "wrapped": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "belt-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "taiko-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "tokenstore": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "etherflip": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "paradex-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "moonwell-vaults": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+   ]
   }
  }
 }

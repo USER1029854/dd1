@@ -26,6 +26,16 @@ EXC = {
 # ---- 205 in-window rows --------------------------------------------------
 T = {
 # --- August 2026 ---
+# Both August Cosmos EVM events are PROVISIONAL by the run's own grading rule. The
+# subsystem is named (Cosmos EVM module / Cosmos-based EVM side) but no mechanism is,
+# no loss figure is published, and the running stack version is undisclosed. Attribution
+# to ASA-2026-002 is asserted by some reporting and explicitly unconfirmed by both MANTRA
+# and Cosmos Labs, so treating it as confirmed would exceed the evidence. Grade C keeps
+# them out of the family library while retaining them as provisional_incident_ids.
+"INC-2026-08-20-MAN": ("PROVISIONAL","C",None,["PRECOMPILE-NESTED-CALL-STATE-NOT-PROPAGATED"],
+   ["MANTRA"],["Cosmos SDK app-chain","Cosmos EVM execution layer","RWA"]),
+"INC-2026-08-22-TCH": ("PROVISIONAL","C",None,["PRECOMPILE-NESTED-CALL-STATE-NOT-PROPAGATED"],
+   ["TAC"],["Cosmos SDK app-chain","Cosmos EVM execution layer"]),
 "INC-2026-08-18-MAY": ("INCLUDE","A",None,["ACC-MULTI-PATH-CREDIT-DRIFT",
    "RUNTIME-BATCHED-MESSAGE-SHARED-KEY-CLOBBER","RECONCILIATION-STRIDE-SKIPS-TRUE-VALUE",
    "RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER","RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
