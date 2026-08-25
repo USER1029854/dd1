@@ -151,7 +151,19 @@ T = {
 "INC-2026-05-12-SQP": ("INCLUDE","B",None,["SECRET-EMBEDDED-IN-PUBLIC-CODE-AS-AUTH"],["BSC"],["staking pool"]),
 "INC-2026-05-11-HUM": ("PROVISIONAL","C",None,["UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"],["Polygon"],["RWA lending"]),
 "INC-2026-05-11-INK": ("INCLUDE","B",None,["AUTH-IDENTITY-SATISFIABLE-BY-ATTACKER-CONTRACT"],["Polygon"],["DAO treasury"]),
-"INC-2026-05-11-TAC": ("EXCLUDE",None,"EXC_CAUSE_UNKNOWN",[],["TON","Ethereum"],["bridge"]),
+# Reclassified. At crawl time no root cause was public, so this was excluded as
+# EXC_CAUSE_UNKNOWN. The project has since published a post-mortem naming the exact
+# missing check, and it was retrieved and read: the sequencer set credited inbound
+# bridge messages without verifying the sending TON jetton wallet was the CANONICAL
+# wallet for the claimed asset -- neither the wallet code hash against the standard
+# jetton-wallet code, nor the minter in the wallet data against the expected jetton
+# master. A counterfeit wallet with an attacker-controlled minter therefore minted
+# unbacked assets on the destination side. Same broken invariant as the other seven
+# incidents in BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE: the destination credited on a
+# message whose source identity was never proven.
+"INC-2026-05-11-TAC": ("INCLUDE","A",None,["BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE",
+   "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"],["TON","Ethereum"],
+   ["cross-chain bridge","canonical bridge","message-passing sequencer"]),
 "INC-2026-05-11-ROA": ("EXCLUDE",None,"EXC_CREDENTIAL_COMPROMISE",[],["Solana"],["n/a"]),
 "INC-2026-05-10-REN": ("INCLUDE","A",None,["UPGRADE-INITIALIZER-REACHABLE-LIVE","UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"],["Arbitrum"],["dark pool","governance-controlled proxy"]),
 "INC-2026-05-07-TRU": ("PROVISIONAL","C",None,["CALLDATA-CALLER-CONTROLLED-TARGET"],["Ethereum"],["RFQ market maker"]),

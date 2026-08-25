@@ -20,7 +20,8 @@ for r in refidx: refs_by_inc[r['incident_id']].append(r)
 CORROB = {"INC-2026-07-06-LAZ","INC-2026-03-15-VEN","INC-2026-05-05-EKU","INC-2026-06-10-SEC",
           "INC-2026-02-22-BLE","INC-2026-03-02-CUR","INC-2026-04-16-RHE","INC-2026-04-27-SIN",
           "INC-2026-05-18-VER","INC-2026-07-23-VER","INC-2026-06-19-JBX","INC-2026-04-28-JUD",
-          "INC-2026-07-28-LUL","INC-2026-03-12-AMU","INC-2026-03-10-MTW"}
+          "INC-2026-07-28-LUL","INC-2026-03-12-AMU","INC-2026-03-10-MTW",
+          "INC-2026-05-11-TAC"}   # project post-mortem retrieved: tac.build/blog/post-mortem-report-tac-bridge
 # Incidents whose grade rests on deployed-code evidence: the exact files and lines were
 # read from the project's live public repository and the claimed defect confirmed there.
 # The per-claim record is incidents/source_verification.json.

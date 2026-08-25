@@ -4,7 +4,7 @@
 
 ## Every candidate here is one you have not been given before
 
-A candidate list is a queue of work, not a leaderboard. Earlier runs of this screen handed over **349 protocols** across **7 deliveries**, and re-ranking the same set would hand over nothing new. Those protocols are withheld from this run's candidates. They are not resolved and not ruled out; they were already given. The ledger is `protocols/delivered_ledger.json`, reconstructed from git history rather than from anything carried between runs, and every withheld protocol still appears in `candidates_all.csv` with `previously_delivered=YES` and the run that delivered it.
+A candidate list is a queue of work, not a leaderboard. Earlier runs of this screen handed over **466 protocols** across **8 deliveries**, and re-ranking the same set would hand over nothing new. Those protocols are withheld from this run's candidates. They are not resolved and not ruled out; they were already given. The ledger is `protocols/delivered_ledger.json`, reconstructed from git history rather than from anything carried between runs, and every withheld protocol still appears in `candidates_all.csv` with `previously_delivered=YES` and the run that delivered it.
 
 ## What this run optimises for
 
@@ -21,7 +21,7 @@ An independent reviewer preventing real losses, not a fund allocating audit reta
 | under $100k | 35 | 27% |
 | $100k-$500k | 42 | 33% |
 | $500k-$2M | 31 | 24% |
-| $2M-$10M | 14 | 11% |
+| $2M-$10M | 15 | 12% |
 | over $10M | 6 | 5% |
 
 Median **$254,000**, p75 **$1,140,000**, p90 **$3,700,000**.
@@ -51,10 +51,10 @@ Risk Curators (×0.50) and RWA (×0.46) are *under*-represented among victims. A
 |---|---:|
 | SlowMist pages fetched | 12 (boundary `BOUNDARY_PROVEN`) |
 | Raw rows / inside window | 240 / 205 |
-| Included grade A / B | 59 / 51 |
-| Provisional (C) / Excluded | 22 / 73 |
-| Total included reported loss | $139,297,649 |
-| Unique root causes | 107 |
+| Included grade A / B | 60 / 51 |
+| Provisional (C) / Excluded | 22 / 72 |
+| Total included reported loss | $142,151,649 |
+| Unique root causes | 108 |
 | Mechanism families | 48 (12 single-event) |
 
 ## Does the ranking actually predict anything?
@@ -111,33 +111,33 @@ Walking ERC-1967 admin slots and `owner()` chains up to three hops, then fingerp
 | Above the band, kept on explicit danger | 31 |
 | Below the floor, recorded but not screened | 662 |
 | Protocols deep-screened | 2299 |
-| Protocol-family pairs screened | 27696 |
-| Pairs killed at the gate | 653 |
+| Protocol-family pairs screened | 27863 |
+| Pairs killed at the gate | 675 |
 | Adapters read | 2459 |
 | Protocols with live chain evidence | 834 |
 | Addresses read on-chain | 2580 |
 | Privileged owner() resolving to an EOA | 167 protocols |
 | Authority chains walked and fingerprinted | 512 protocols |
-| Verified contracts analysed | 1477 |
-| Final candidates | 60 |
-| Median value at risk across finals | $345,413 |
+| Verified contracts analysed | 1474 |
+| Final candidates | 163 |
+| Median value at risk across finals | $822,973 |
 
 ### Most common measured signals across final candidates
 
 | Signal | Candidates | Measured lift |
 |---|---:|---:|
-| `on_ethereum` | 52 | x2.121 |
-| `chain_hazard_ge2` | 52 | x2.134 |
-| `single_audit_only` | 37 | x1.53 |
-| `is_proxy` | 26 | x1.65 |
-| `multichain_gt3` | 23 | x1.77 |
-| `single_chain` | 22 | x0.71 |
-| `owner_is_contract` | 21 | x2.414 |
-| `authority_addrs_beyond_tvl` | 19 | x1.174 |
-| `on_bsc` | 19 | x1.047 |
-| `has_oracle_declared` | 16 | x2.127 |
-| `has_2plus_audits` | 12 | x1.975 |
-| `age_under_1y` | 12 | x1.866 |
+| `on_ethereum` | 128 | x2.121 |
+| `chain_hazard_ge2` | 128 | x2.134 |
+| `no_audit_listed` | 93 | x0.582 |
+| `single_chain` | 89 | x0.71 |
+| `age_1_3y` | 69 | x0.902 |
+| `single_audit_only` | 65 | x1.53 |
+| `is_proxy` | 59 | x1.65 |
+| `owner_is_contract` | 33 | x2.414 |
+| `age_under_1y` | 32 | x1.866 |
+| `multichain_gt3` | 31 | x1.77 |
+| `on_bsc` | 31 | x1.047 |
+| `pricing_surface_undeclared` | 28 | x1.91 |
 
 ## Quality
 
@@ -145,8 +145,8 @@ Walking ERC-1967 admin slots and `owner()` chains up to three hops, then fingerp
 |---|---|
 | Unresolved source contradictions | 1 — `INC-2026-04-01-DRI` (Drift, ~$285M): attack-method label says *Social Engineering* while the description describes a vault exploit with no mechanism. Graded D, excluded from pattern derivation. |
 | Corpus completeness gap | At least one in-window on-chain incident documented elsewhere (STO token, 2026-02-23) is absent from the index. Counts are lower bounds. |
-| Pairs still at metadata or adapter evidence | 23786 of 27043 |
-| Prior-art searches incomplete | 57 of 60 finals. `NO_PUBLIC_MATCH_FOUND` is never emitted. |
+| Pairs still at metadata or adapter evidence | 23722 of 27188 |
+| Prior-art searches incomplete | 155 of 163 finals. `NO_PUBLIC_MATCH_FOUND` is never emitted. |
 | Commands reproducible | `commands.sh` replays every retrieval and transformation step |
 | Manifest checker | see `results/manifest_check.txt` |
 

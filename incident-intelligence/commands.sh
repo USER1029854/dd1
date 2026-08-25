@@ -157,7 +157,10 @@ python3 tools/score4.py               # LIKELIHOOD (family evidence + learned su
 # the operator is never given the same protocol twice. Reconstructed from git history,
 # not from anything remembered between runs.
 python3 tools/build_ledger.py         # -> protocols/delivered_ledger.json
-python3 tools/write_results4.py 60
+# Size the list by EVIDENCE, not by a round number: every fresh protocol that reaches
+# the floor is delivered, however many that is. A count is an arbitrary cut through a
+# ranking; a level states how deeply each entry was actually read.
+python3 tools/write_results4.py --min-level=L4_GUARD_REVIEW
 #   -> results/candidates_by_{priority,likelihood,match}.md, candidates_all.csv,
 #      audit_variables.txt, families/near_miss_library.jsonl
 python3 tools/write_summary4.py       # -> results/run_summary.md

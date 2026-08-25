@@ -29,7 +29,22 @@ PAST_RUNS=_LED.get('runs',[])
 live_all=[o for o in D if not o['killed']]; killed=[o for o in D if o['killed']]
 live=[o for o in live_all if o['protocol_slug'] not in DELIVERED]
 WITHHELD=sorted({o['protocol_slug'] for o in live_all if o['protocol_slug'] in DELIVERED})
-N=int(sys.argv[1]) if len(sys.argv)>1 else 60
+N=int(sys.argv[1]) if len(sys.argv)>1 and sys.argv[1].isdigit() else 60
+# --min-level sizes the list by EVIDENCE instead of by a round number: every fresh
+# protocol that reaches the given level is delivered, however many that is. A count
+# like 60 is an arbitrary truncation of a ranking; a level is a statement about how
+# deeply each entry was actually read.
+MINLEVEL=None
+for _a in sys.argv[1:]:
+    if _a.startswith('--min-level='): MINLEVEL=_a.split('=',1)[1]
+_LEVELRANK={'L0_METADATA':0,'L1_ADAPTER':1,'L2_DEPLOYMENT':2,'L3_STATE':3,'L4_GUARD_REVIEW':4}
+if MINLEVEL:
+    _floor=_LEVELRANK[MINLEVEL]
+    live=[o for o in live if _LEVELRANK.get(o['evidence_level'],0)>=_floor]
+    N=len({o['protocol_slug'] for o in live})
+    EVIDENCE_FLOOR=MINLEVEL
+else:
+    EVIDENCE_FLOOR=None
 
 def _by_date_desc(hs):
     """DefiLlama lists incidents oldest-first; every 'most recent' claim needs this."""
@@ -187,8 +202,18 @@ for key,fn,title in (('PRIORITY','candidates_by_priority.md','Ranking A — prio
         out.append("| Median value at risk | $%s |" % f"{sorted(o['tvl'] for o in chosen)[len(chosen)//2]:,.0f}")
         out.append("| Total value at risk | $%s |" % f"{sum(o['tvl'] for o in chosen):,.0f}")
         out.append("| At L4 guard review | %d |" % sum(1 for o in chosen if o['evidence_level']=='L4_GUARD_REVIEW'))
+        out.append("| Distinct mechanism families | %d |" % len({o['family_id'] for o in chosen}))
         out.append("| Previously delivered (withheld from this list) | %d |" % len(WITHHELD))
         out.append("")
+        if EVIDENCE_FLOOR:
+            out.append("### The size of this list is set by evidence, not by a round number\n")
+            out.append("Every fresh protocol reaching **`%s`** is here — %d of them — rather than the "
+                       "ranking being truncated at some count. A count is an arbitrary cut through a "
+                       "ranking; an evidence level is a statement about how deeply each entry was "
+                       "actually read. At this level the protocol's deployed source was fetched, "
+                       "proxies were followed to their implementations, the family's documented "
+                       "preconditions were evaluated against that source, and its decisive guards were "
+                       "searched for and not found in the reviewed path.\n" % (EVIDENCE_FLOOR,len(chosen)))
         out.append("### Every protocol here is one you have not been given before\n")
         out.append("A candidate list is a queue of work, not a leaderboard. **%d protocols that survive "
                    "screening were withheld from this run because earlier runs already handed them over** "
@@ -264,7 +289,11 @@ with open(f'{B}/results/candidates_all.csv','w',newline='') as fh:
                 "previously_delivered","first_delivered_in"])
     order=sorted(live_all,key=lambda x:-x.get('PRIORITY',0))
     seen=set(); finals=set()
-    _fin_order=[o for o in order if o['protocol_slug'] not in DELIVERED]
+    # `live` already carries both the ledger exclusion AND the evidence floor. Selecting
+    # from live_all here instead meant the CSV's in_final flags marked a different 163
+    # than the markdown ranking wrote up: 88 L4, 74 L3 and one L1 against a declared floor
+    # of L4. Select from the same list the ranking uses.
+    _fin_order=[o for o in sorted(live,key=lambda x:-x.get('PRIORITY',0))]
     for o in _fin_order:
         if o['protocol_slug'] in seen: continue
         seen.add(o['protocol_slug']); finals.add((o['protocol_slug'],o['family_id']))

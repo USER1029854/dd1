@@ -28,12 +28,12 @@ Above-band retention requires named evidence, not category fit: an in-window vic
 
 | Grade | Rule | Count |
 |---|---|---:|
-| **A** | Mechanism-level index record plus an independent technical source retrieved, or deployed-code evidence gathered here | 59 |
+| **A** | Mechanism-level index record plus an independent technical source retrieved, or deployed-code evidence gathered here | 60 |
 | **B** | Mechanism-level record naming a specific contract, function or parameter, no contradiction found, no second source retrieved | 51 |
 | **C** | Plausible but a material link unverified, or unresolved mixed attribution. Provisional; excluded from all statistics and ranking weight | 22 |
 | **D** | Vague, contradictory or unsupported. Excluded from pattern derivation | see excluded.jsonl |
 
-Corroboration across included incidents: `SLOWMIST_MECHANISM_RECORD_ONLY` = 77, `REFERENCE_RETRIEVED` = 17, `INDEPENDENT_TECHNICAL_SOURCE_RETRIEVED` = 15, `DEPLOYED_SOURCE_VERIFIED` = 1.
+Corroboration across included incidents: `SLOWMIST_MECHANISM_RECORD_ONLY` = 77, `REFERENCE_RETRIEVED` = 17, `INDEPENDENT_TECHNICAL_SOURCE_RETRIEVED` = 16, `DEPLOYED_SOURCE_VERIFIED` = 1.
 
 ## 4. Precision controls
 
@@ -95,7 +95,7 @@ Market cap and TVL trajectory were refused for a different reason: both are read
 
 1. **Static indicators are regexes, not analysis.** A match means *this shape is present in this file* — a reason to look, never a finding. They cannot follow control flow or resolve inheritance.
 
-2. **23786 of 27043 surviving pairs are still at metadata or adapter evidence**, because their adapters are dynamic or hold no addresses. Only the 45 finals reach L3 or L4.
+2. **23722 of 27188 surviving pairs are still at metadata or adapter evidence**, because their adapters are dynamic or hold no addresses. Only the 45 finals reach L3 or L4.
 
 2b. **Several learned weights are proxies for size and integration, not causes.** `has_2plus_audits` (x1.975) and `has_governance` (x2.968) are positive because protocols large enough to commission audits and run governance are large enough to be worth attacking. `owner_is_eoa` and `owner_is_contract` are *both* positive because what they really encode is that a live owner was readable at all. They order a queue usefully; none of them is a mechanism, and none should be quoted as a cause.
 
@@ -109,7 +109,7 @@ Market cap and TVL trajectory were refused for a different reason: both are read
 
 7. **Exposure is understated for approval-bearing families.** Live allowances and delegations were not enumerated, so TVL is a floor for those pairs, not a ceiling.
 
-8. **Prior art is not established for most finals.** 57 of 60 carry `PRIOR_ART_SEARCH_INCOMPLETE`. Several of these protocols may already have a public disclosure or a deployed fix. Check before spending time.
+8. **Prior art is not established for most finals.** 155 of 163 carry `PRIOR_ART_SEARCH_INCOMPLETE`. Several of these protocols may already have a public disclosure or a deployed fix. Check before spending time.
 
 9. **Small protocols can be small for a reason.** Some candidates are abandoned rather than merely neglected. A dead protocol with $80,000 left is a low-value save even when the finding is real; the value-at-risk column is there so you can make that call before starting.
 

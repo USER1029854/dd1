@@ -6,784 +6,172 @@
 
 ### The ranking
 
-Full write-ups below for the 27 entries that `candidates_by_priority.md` does not already cover; the other 33 are listed here and written up in full there, under the same `protocol — family` heading.
+Full write-ups below for the 0 entries that `candidates_by_priority.md` does not already cover; the other 163 are listed here and written up in full there, under the same `protocol — family` heading.
 
 | # | Protocol | Family | MATCH_SCORE | At risk | Write-up |
 |---:|---|---|---:|---:|---|
-| 1 | [Yam Finance](https://defillama.com/protocol/yam-finance) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 85.0 | $237,414 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 2 | [Keep3r Network](https://defillama.com/protocol/keep3r-network) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 85.0 | $3,186,925 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 3 | [Cozy V1](https://defillama.com/protocol/cozy-v1) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 85.0 | $72,293 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 4 | [Venus Isolated Pools](https://defillama.com/protocol/venus-isolated-pools) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 85.0 | $1,122,520 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 5 | [Penpie](https://defillama.com/protocol/penpie) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 85.0 | $4,503,553 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 6 | [Mummy Finance](https://defillama.com/protocol/mummy-finance) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 75.0 | $54,685 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 7 | [Extra Finance Leverage Farming](https://defillama.com/protocol/extra-finance-leverage-farming) | `ACC-QUOTE-STALE-ACROSS-OWN-SWAP` | 75.0 | $24,987,646 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 8 | [Sommelier](https://defillama.com/protocol/sommelier) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $906,670 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 9 | [Tokenlon AMM](https://defillama.com/protocol/tokenlon-amm) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $588,461 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 10 | [Theoriq Gold Vault](https://defillama.com/protocol/theoriq-gold-vault) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $131,019 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 11 | [CANA Holdings California Carbon Credits](https://defillama.com/protocol/cana-holdings-california-carbon-credits) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $893,977 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 12 | [Umami Finance](https://defillama.com/protocol/umami-finance) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $387,748 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 13 | [Tanken Capital](https://defillama.com/protocol/tanken-capital) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $85,381 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 14 | [Swellchain Bridge](https://defillama.com/protocol/swellchain-bridge) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $368,677 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 15 | [Fira](https://defillama.com/protocol/fira) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $9,852,774 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 16 | [DELV Yield](https://defillama.com/protocol/delv-yield) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $741,190 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 17 | [Union Protocol](https://defillama.com/protocol/union-protocol) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $266,411 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 18 | [Yay!](https://defillama.com/protocol/yay!) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $735,231 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 19 | [Amphor](https://defillama.com/protocol/amphor) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $62,416 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 20 | [Cove Boosties](https://defillama.com/protocol/cove-boosties) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $318,274 | below |
-| 21 | [Exactly](https://defillama.com/protocol/exactly) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $8,067,579 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 22 | [DegenPrime](https://defillama.com/protocol/degenprime) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $89,308 | below |
-| 23 | [Sushi BentoBox](https://defillama.com/protocol/sushi-bentobox) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $2,477,441 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 24 | [King Protocol](https://defillama.com/protocol/king-protocol) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $1,323,385 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 25 | [Muscadine](https://defillama.com/protocol/muscadine) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $520,773 | below |
-| 26 | [Nerona](https://defillama.com/protocol/nerona) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $2,154,453 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 27 | [Conduit Bridge](https://defillama.com/protocol/conduit-bridge) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $1,202,760 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 28 | [Balancer V1](https://defillama.com/protocol/balancer-v1) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $7,271,376 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 29 | [Puffer UniFi](https://defillama.com/protocol/puffer-unifi) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $763,083 | below |
-| 30 | [Autopilot](https://defillama.com/protocol/autopilot) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $59,459 | below |
-| 31 | [DeltaPrime](https://defillama.com/protocol/deltaprime) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $3,648,228 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 32 | [Snuggle](https://defillama.com/protocol/snuggle) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $6,997,095 | below |
-| 33 | [Royco V1](https://defillama.com/protocol/royco-v1) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $1,554,176 | below |
-| 34 | [Premia V3](https://defillama.com/protocol/premia-v3) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $532,696 | below |
-| 35 | [Rumpel Labs](https://defillama.com/protocol/rumpel-labs) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $2,203,637 | below |
-| 36 | [Anvil](https://defillama.com/protocol/anvil) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $9,674,730 | below |
-| 37 | [dTRINITY dUSD](https://defillama.com/protocol/dtrinity-dusd) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $1,392,626 | below |
-| 38 | [ELFi Protocol](https://defillama.com/protocol/elfi-protocol) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $1,540,734 | below |
-| 39 | [Arcadia V2](https://defillama.com/protocol/arcadia-v2) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $5,470,140 | below |
-| 40 | [Rank Trading](https://defillama.com/protocol/rank-trading) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $2,604,526 | below |
-| 41 | [Ronin Bridge](https://defillama.com/protocol/ronin-bridge) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $5,172,000 | below |
-| 42 | [Shape Bridge](https://defillama.com/protocol/shape-bridge) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $1,105,453 | below |
-| 43 | [Cega V2](https://defillama.com/protocol/cega-v2) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $109,710 | below |
-| 44 | [Basalt Vault](https://defillama.com/protocol/basalt-vault) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $120,265 | below |
-| 45 | [Quickswap V4](https://defillama.com/protocol/quickswap-v4) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $5,365,451 | below |
-| 46 | [BakerFi](https://defillama.com/protocol/bakerfi) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $74,614 | below |
-| 47 | [Fractional Art](https://defillama.com/protocol/fractional-art) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $108,976 | below |
-| 48 | [Liquid Finance](https://defillama.com/protocol/liquid-finance) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $61,507 | below |
-| 49 | [Inverse Finance FiRM](https://defillama.com/protocol/inverse-finance-firm) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $28,336,326 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 50 | [UltraYield Vaults](https://defillama.com/protocol/ultrayield-vaults) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $13,527,105 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 51 | [Frax Swap](https://defillama.com/protocol/frax-swap) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $10,396,247 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 52 | [Morph Bridge](https://defillama.com/protocol/morph-bridge) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $15,558,534 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 53 | [Mezo Bridge](https://defillama.com/protocol/mezo-bridge) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $16,273,434 | below |
-| 54 | [Zoo Finance](https://defillama.com/protocol/zoo-finance) | `ACC-QUOTE-STALE-ACROSS-OWN-SWAP` | 73.8 | $20,836,514 | below |
-| 55 | [SingularX](https://defillama.com/protocol/singularx) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $2,075,382 | below |
-| 56 | [Anthias Labs](https://defillama.com/protocol/anthias-labs) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $18,279,033 | below |
-| 57 | [Katana Pre-Launch](https://defillama.com/protocol/katana-pre-launch) | `SIG-VERIFIER-DEFEATABLE` | 73.8 | $18,624,949 | below |
-| 58 | [Tangent Finance](https://defillama.com/protocol/tangent-finance) | `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` | 66.0 | $4,474,120 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 59 | [JPEG'd](https://defillama.com/protocol/jpegd) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $564,479 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
-| 60 | [OnX Finance](https://defillama.com/protocol/onx-finance) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $305,022 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 1 | [Secured Finance Lending](https://defillama.com/protocol/secured-finance-lending) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $255,358 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 2 | [Alvara](https://defillama.com/protocol/alvara) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $52,244 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 3 | [AirPuff](https://defillama.com/protocol/airpuff) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $663,289 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 4 | [Volmex](https://defillama.com/protocol/volmex) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $132,456 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 5 | [Sera](https://defillama.com/protocol/sera) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $152,113 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 6 | [Legion](https://defillama.com/protocol/legion) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $618,220 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 7 | [MORE Vaults](https://defillama.com/protocol/more-vaults) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $822,973 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 8 | [APY Finance](https://defillama.com/protocol/apy-finance) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $413,977 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 9 | [Origin Dollar](https://defillama.com/protocol/origin-dollar) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $5,688,238 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 10 | [ZKcandy Bridge](https://defillama.com/protocol/zkcandy-bridge) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $683,034 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 11 | [TYMIO](https://defillama.com/protocol/tymio) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $278,738 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 12 | [Nocturne](https://defillama.com/protocol/nocturne) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $78,408 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 13 | [Rysk V1](https://defillama.com/protocol/rysk-v1) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $193,788 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 14 | [Charm Finance V2](https://defillama.com/protocol/charm-finance-v2) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 73.8 | $1,937,508 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 15 | [Latch](https://defillama.com/protocol/latch) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $1,631,769 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 16 | [Pay Protocol](https://defillama.com/protocol/pay-protocol) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 73.8 | $1,114,356 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 17 | [ZTLN-P](https://defillama.com/protocol/ztln-p) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $2,199,757 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 18 | [Morpho Midnight](https://defillama.com/protocol/morpho-midnight) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $4,311,379 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 19 | [Angstrom](https://defillama.com/protocol/angstrom) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $5,726,056 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 20 | [Fraxlend](https://defillama.com/protocol/fraxlend) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $23,124,638 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 21 | [Ekubo](https://defillama.com/protocol/ekubo) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $25,947,903 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 22 | [Origin ARM](https://defillama.com/protocol/origin-arm) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $13,233,505 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 23 | [MatrixDock STBT](https://defillama.com/protocol/matrixdock-stbt) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 73.8 | $23,862,626 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 24 | [Alcum](https://defillama.com/protocol/alcum) | `ACC-NAV-SHAREPRICE-MANIPULABLE` | 63.8 | $231,089 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 25 | [Metronome V1](https://defillama.com/protocol/metronome-v1) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $226,136 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 26 | [Wrap Protocol](https://defillama.com/protocol/wrap-protocol) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $540,062 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 27 | [UniPower](https://defillama.com/protocol/unipower) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $259,279 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 28 | [Bridgers](https://defillama.com/protocol/bridgers) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $677,138 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 29 | [HaloDAO](https://defillama.com/protocol/halodao) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $61,790 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 30 | [Hidden Hand](https://defillama.com/protocol/hidden-hand) | `PROOF-VERIFICATION-BYPASSED` | 63.8 | $67,215 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 31 | [Vest Markets](https://defillama.com/protocol/vest-markets) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $221,342 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 32 | [Octus Bridge](https://defillama.com/protocol/octus-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $396,274 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 33 | [Level](https://defillama.com/protocol/level) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $460,166 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 34 | [Flexa](https://defillama.com/protocol/flexa) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $702,640 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 35 | [Felix USDhl](https://defillama.com/protocol/felix-usdhl) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $449,345 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 36 | [Demeter](https://defillama.com/protocol/demeter) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $284,331 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 37 | [The Tokenized Bitcoin](https://defillama.com/protocol/the-tokenized-bitcoin) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,744,996 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 38 | [GMD Protocol](https://defillama.com/protocol/gmd-protocol) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $971,646 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 39 | [Synthetix V4](https://defillama.com/protocol/synthetix-v4) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $938,544 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 40 | [Lynx](https://defillama.com/protocol/lynx) | `PROOF-VERIFICATION-BYPASSED` | 63.8 | $192,608 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 41 | [Injective Bridge](https://defillama.com/protocol/injective-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $5,431,209 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 42 | [Bunicorn](https://defillama.com/protocol/bunicorn) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $128,459 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 43 | [Dango Bridge](https://defillama.com/protocol/dango-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $121,764 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 44 | [Pepu Bridge](https://defillama.com/protocol/pepu-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $313,690 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 45 | [Hats.V2](https://defillama.com/protocol/hats.v2) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $161,281 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 46 | [Xave Finance](https://defillama.com/protocol/xave-finance) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $149,205 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 47 | [Alchemist](https://defillama.com/protocol/alchemist) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $271,800 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 48 | [RollX](https://defillama.com/protocol/rollx) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $444,294 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 49 | [Aarna Protocol](https://defillama.com/protocol/aarna-protocol) | `CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS` | 63.8 | $392,025 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 50 | [Hyperdrive](https://defillama.com/protocol/hyperdrive) | `ACC-DUPLICATE-ID-ACCUMULATION` | 63.8 | $71,676 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 51 | [ShardingDAO](https://defillama.com/protocol/shardingdao) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $56,662 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 52 | [ApeSwap Lending](https://defillama.com/protocol/apeswap-lending) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $219,009 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 53 | [Rosen Bridge](https://defillama.com/protocol/rosen-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,401,432 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 54 | [Almanak](https://defillama.com/protocol/almanak) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $460,254 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 55 | [maxAPY](https://defillama.com/protocol/maxapy) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $61,721 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 56 | [Gudchain](https://defillama.com/protocol/gudchain) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $85,541 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 57 | [ApeX Pro](https://defillama.com/protocol/apex-pro) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,430,085 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 58 | [Bundles](https://defillama.com/protocol/bundles) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $535,560 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 59 | [Opyn Convexity](https://defillama.com/protocol/opyn-convexity) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $569,982 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 60 | [SUBFROST](https://defillama.com/protocol/subfrost) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $8,631,381 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 61 | [Swerve](https://defillama.com/protocol/swerve) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $305,359 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 62 | [CreamSwap](https://defillama.com/protocol/creamswap) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $75,107 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 63 | [TanX.fi](https://defillama.com/protocol/tanx.fi) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $284,190 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 64 | [cVault Finance](https://defillama.com/protocol/cvault-finance) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $6,015,301 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 65 | [Cyclone](https://defillama.com/protocol/cyclone) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,381,617 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 66 | [Basis Cash](https://defillama.com/protocol/basis-cash) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $205,731 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 67 | [YFII](https://defillama.com/protocol/yfii) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $442,371 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 68 | [Impermax V3](https://defillama.com/protocol/impermax-v3) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $98,183 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 69 | [Raindex](https://defillama.com/protocol/raindex) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $122,285 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 70 | [Factor Leverage Vault](https://defillama.com/protocol/factor-leverage-vault) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $70,198 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 71 | [SwingHook](https://defillama.com/protocol/swinghook) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $104,136 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 72 | [RISE Bridge](https://defillama.com/protocol/rise-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $179,612 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 73 | [EA Finance](https://defillama.com/protocol/ea-finance) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $310,606 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 74 | [Yamato Protocol](https://defillama.com/protocol/yamato-protocol) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,639,592 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 75 | [BOB Fusion](https://defillama.com/protocol/bob-fusion) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $396,252 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 76 | [9inch V2](https://defillama.com/protocol/9inch-v2) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $1,049,596 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 77 | [TProtocol V1](https://defillama.com/protocol/tprotocol-v1) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $71,322 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 78 | [Alphix](https://defillama.com/protocol/alphix) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $225,700 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 79 | [Gremlix](https://defillama.com/protocol/gremlix) | `ACC-NAV-SHAREPRICE-MANIPULABLE` | 63.8 | $118,352 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 80 | [Bondlink Finance](https://defillama.com/protocol/bondlink-finance) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $151,992 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 81 | [Universe XYZ](https://defillama.com/protocol/universe-xyz) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $2,361,013 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 82 | [UNCX Network V4](https://defillama.com/protocol/uncx-network-v4) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $2,998,160 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 83 | [Mycelium Perpetual Pools](https://defillama.com/protocol/mycelium-perpetual-pools) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $179,980 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 84 | [BTCD](https://defillama.com/protocol/btcd) | `ACC-NAV-SHAREPRICE-MANIPULABLE` | 63.8 | $1,808,482 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 85 | [Zircuit Finance](https://defillama.com/protocol/zircuit-finance) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $1,203,606 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 86 | [Parallel Protocol V3](https://defillama.com/protocol/parallel-protocol-v3) | `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` | 63.8 | $2,131,744 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 87 | [Outcome Finance](https://defillama.com/protocol/outcome-finance) | `ACC-HARDCODED-PEG-REDEMPTION` | 63.8 | $1,342,626 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 88 | [Sorare Bridge](https://defillama.com/protocol/sorare-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $4,348,374 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 89 | [Snowbl Capital](https://defillama.com/protocol/snowbl-capital) | `ACC-DONATION-UNACCOUNTED-BALANCE` | 63.8 | $90,437 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 90 | [Mars Poolin](https://defillama.com/protocol/mars-poolin) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $134,910 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 91 | [Rainbow Bridge](https://defillama.com/protocol/rainbow-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $2,413,425 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 92 | [Panoptic V2](https://defillama.com/protocol/panoptic-v2) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $1,047,153 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 93 | [Untangled Vault](https://defillama.com/protocol/untangled-vault) | `ACC-NAV-SHAREPRICE-MANIPULABLE` | 63.8 | $151,334 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 94 | [Arca Labs ArCoin](https://defillama.com/protocol/arca-labs-arcoin) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $452,036 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 95 | [Flat Money V2](https://defillama.com/protocol/flat-money-v2) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $1,125,593 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 96 | [ETH Strategy](https://defillama.com/protocol/eth-strategy) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $3,879,175 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 97 | [Inverse Finance Frontier](https://defillama.com/protocol/inverse-finance-frontier) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $4,540,643 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 98 | [ApeChain Bridge](https://defillama.com/protocol/apechain-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $465,926 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 99 | [Gondi V3](https://defillama.com/protocol/gondi-v3) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $3,121,447 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 100 | [Elysium Bridge](https://defillama.com/protocol/elysium-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $58,637 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 101 | [Cat in a Box](https://defillama.com/protocol/cat-in-a-box) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $206,747 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 102 | [Radpie](https://defillama.com/protocol/radpie) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $6,831,163 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 103 | [Ample](https://defillama.com/protocol/ample) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $4,585,344 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 104 | [SPOT Cash](https://defillama.com/protocol/spot-cash) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $245,572 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 105 | [Citrea Bridge](https://defillama.com/protocol/citrea-bridge) | `PROOF-VERIFICATION-BYPASSED` | 63.8 | $5,967,379 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 106 | [Ribbon Earn](https://defillama.com/protocol/ribbon-earn) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $1,042,196 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 107 | [Sovryn Bridge](https://defillama.com/protocol/sovryn-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $3,104,665 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 108 | [StakeStone Berachain Vault](https://defillama.com/protocol/stakestone-berachain-vault) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $3,521,410 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 109 | [Decentralized Euro](https://defillama.com/protocol/decentralized-euro) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $1,380,340 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 110 | [Governor DAO](https://defillama.com/protocol/governor-dao) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $62,828 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 111 | [HLP0](https://defillama.com/protocol/hlp0) | `ACC-NAV-SHAREPRICE-MANIPULABLE` | 63.8 | $387,861 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 112 | [Usual ETH0](https://defillama.com/protocol/usual-eth0) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $2,272,053 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 113 | [Rho X](https://defillama.com/protocol/rho-x) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,037,690 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 114 | [Limitless Exchange](https://defillama.com/protocol/limitless-exchange) | `ACC-DUPLICATE-ID-ACCUMULATION` | 63.8 | $395,169 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 115 | [Reya Bridge](https://defillama.com/protocol/reya-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $5,024,919 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 116 | [Gravity Bridge](https://defillama.com/protocol/gravity-bridge) | `AUTH-ZERO-ADDRESS-ACCEPTED` | 63.8 | $5,126,360 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 117 | [Superfund](https://defillama.com/protocol/superfund) | `ACC-DONATION-UNACCOUNTED-BALANCE` | 63.8 | $71,832 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 118 | [3F Mutual](https://defillama.com/protocol/3f-mutual) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $4,654,547 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 119 | [DeFi Franc](https://defillama.com/protocol/defi-franc) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $261,896 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 120 | [Boba Bridge](https://defillama.com/protocol/boba-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $2,861,464 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 121 | [xSigma](https://defillama.com/protocol/xsigma) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $317,096 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 122 | [Orion Liquidity Nodes](https://defillama.com/protocol/orion-liquidity-nodes) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $96,999 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 123 | [Lybra V2](https://defillama.com/protocol/lybra-v2) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $51,036 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 124 | [BOB Bridge](https://defillama.com/protocol/bob-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $3,024,926 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 125 | [Nsure](https://defillama.com/protocol/nsure) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $247,689 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 126 | [cBridge](https://defillama.com/protocol/cbridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $14,619,877 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 127 | [Mento V2](https://defillama.com/protocol/mento-v2) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $11,919,606 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 128 | [Juicebox V1](https://defillama.com/protocol/juicebox-v1) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $12,464,696 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 129 | [Extra Finance Vaults](https://defillama.com/protocol/extra-finance-vaults) | `ACC-DONATION-UNACCOUNTED-BALANCE` | 63.8 | $1,007,761 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 130 | [Kasu](https://defillama.com/protocol/kasu) | `ACC-DUPLICATE-ID-ACCUMULATION` | 63.8 | $11,276,942 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 131 | [Block Analitica](https://defillama.com/protocol/block-analitica) | `ACC-NAV-SHAREPRICE-MANIPULABLE` | 63.8 | $19,175,855 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 132 | [Switcheo Finance](https://defillama.com/protocol/switcheo-finance) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,323,041 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 133 | [MegaETH Bridge](https://defillama.com/protocol/megaeth-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $10,276,318 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 134 | [Goose](https://defillama.com/protocol/goose) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 63.8 | $12,809,163 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 135 | [Fuel Bridge](https://defillama.com/protocol/fuel-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $10,584,746 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 136 | [Jaypeggers](https://defillama.com/protocol/jaypeggers) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $189,209 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 137 | [Syntetika](https://defillama.com/protocol/syntetika) | `ACC-NAV-SHAREPRICE-MANIPULABLE` | 63.8 | $11,308,675 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 138 | [Blur Bids](https://defillama.com/protocol/blur-bids) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $17,476,884 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 139 | [SX Rollup Bridge](https://defillama.com/protocol/sx-rollup-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $11,196,433 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 140 | [Arbitrum Nova Bridge](https://defillama.com/protocol/arbitrum-nova-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $14,823,067 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 141 | [PoWH3D](https://defillama.com/protocol/powh3d) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $5,022,089 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 142 | [Wrapped](https://defillama.com/protocol/wrapped) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $26,935,883 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 143 | [Taiko Bridge](https://defillama.com/protocol/taiko-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $11,647,101 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 144 | [TokenStore](https://defillama.com/protocol/tokenstore) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,536,041 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 145 | [EtherFlip](https://defillama.com/protocol/etherflip) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $1,827,849 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 146 | [Paradex Bridge](https://defillama.com/protocol/paradex-bridge) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 63.8 | $17,867,715 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 147 | [Etherfuse](https://defillama.com/protocol/etherfuse) | `HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL` | 60 | $977,586 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 148 | [ZebraDAO](https://defillama.com/protocol/zebradao) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 60 | $124,184 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 149 | [Maverick V2](https://defillama.com/protocol/maverick-v2) | `BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE` | 60.0 | $1,142,652 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 150 | [DexFi Aggregator](https://defillama.com/protocol/dexfi-aggregator) | `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY` | 60 | $2,216,753 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 151 | [RateX DEX](https://defillama.com/protocol/ratex-dex) | `ACC-SIGN-OR-BOUND-CHECK-MISSING` | 60 | $2,899,456 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 152 | [Antarctic](https://defillama.com/protocol/antarctic) | `ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED` | 60 | $9,494,061 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 153 | [Baseline Protocol](https://defillama.com/protocol/baseline-protocol) | `SIG-VERIFIER-DEFEATABLE` | 60 | $1,980,770 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 154 | [Native Credit Pool](https://defillama.com/protocol/native-credit-pool) | `QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET` | 60 | $24,574,977 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 155 | [Fyde Protocol](https://defillama.com/protocol/fyde-protocol) | `BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE` | 52.5 | $376,264 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 156 | [Mars Ecosystem](https://defillama.com/protocol/mars-ecosystem) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 52.5 | $234,866 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 157 | [NUVA](https://defillama.com/protocol/nuva) | `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` | 52.5 | $5,572,761 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 158 | [Peridot](https://defillama.com/protocol/peridot) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 52.5 | $53,524 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 159 | [Aegis Markets](https://defillama.com/protocol/aegis-markets) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 52.5 | $1,862,507 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 160 | [PyreSwap](https://defillama.com/protocol/pyreswap) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 52.5 | $52,682 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 161 | [Solv RWA](https://defillama.com/protocol/solv-rwa) | `UPGRADE-INITIALIZER-REACHABLE-LIVE` | 52.5 | $8,864,405 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 162 | [Belt Finance](https://defillama.com/protocol/belt-finance) | `ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE` | 52.5 | $13,098,699 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
+| 163 | [Moonwell Vaults](https://defillama.com/protocol/moonwell-vaults) | `BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE` | 52.5 | $18,198,287 | [in `candidates_by_priority.md`](candidates_by_priority.md) |
 
 ---
-
-### 20. Cove Boosties  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
-
-- **Rank (Ranking C — mechanism match only):** 20
-- **Protocol:** Cove Boosties (`cove-boosties`) · Yield Aggregator · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/cove-boosties
-- **PRIORITY 44.88**  =  LIKELIHOOD 44.88 × ACTIONABILITY 100.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 7.98/50
-    - actionability: small enough to be unwatched, large enough to matter
-- **Value at risk:** $318,274 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`YearnStakingDelegate` @ 0x05dcdBF0…(ethereum), `CoveYearnGaugeFactory` @ 0x842b22Eb…(ethereum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for YearnStakingDelegate@0x05dcdBF0…(ethereum), CoveYearnGaugeFactory@0x842b22Eb…(ethereum); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#cove-boosties|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#cove-boosties`
-- **Disclosure:** https://www.cove.finance · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/Storm-Labs-Inc/cove-audits
-
-### 22. DegenPrime  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
-
-- **Rank (Ranking C — mechanism match only):** 22
-- **Protocol:** DegenPrime (`degenprime`) · Leveraged Farming · Base
-- **DefiLlama:** https://defillama.com/protocol/degenprime
-- **PRIORITY 44.07**  =  LIKELIHOOD 44.07 × ACTIONABILITY 100.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 7.17/50
-    - actionability: small enough to be unwatched, large enough to matter
-- **Value at risk:** $89,308 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
-    - `has_2plus_audits` — raises likelihood, measured lift ×2.084 (weight +0.73)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`PoolTUP` @ 0x056076e7…(base), `OptimismMintableERC20` @ 0x0b3e3284…(base)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for PoolTUP@0x056076e7…(base), OptimismMintableERC20@0x0b3e3284…(base); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#degenprime|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#degenprime`
-- **Disclosure:** https://www.degenprime.io · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/DeltaPrimeLabs/deltaprime-primeloans/tree/dev/main/audits, https://drive.google.com/file/d/1ysFrJhsnwFu5QmngrcQIHefG9Kx3rj5J/view
-
-### 25. Muscadine  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 25
-- **Protocol:** Muscadine (`muscadine`) · Risk Curators · Base
-- **DefiLlama:** https://defillama.com/protocol/muscadine
-- **PRIORITY 43.62**  =  LIKELIHOOD 43.62 × ACTIONABILITY 100.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 6.72/50
-    - actionability: small enough to be unwatched, large enough to matter
-- **Value at risk:** $520,773 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_under_1y` — raises likelihood, measured lift ×2.256 (weight +0.81)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `pricing_surface_undeclared` — raises likelihood, measured lift ×1.691 (weight +0.53)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`PlasmaVault` @ 0x01a6ff6e…(base)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for PlasmaVault@0x01a6ff6e…(base); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#muscadine|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#muscadine`
-- **Disclosure:** https://muscadine.io · no audit link listed
-
-### 29. Puffer UniFi  —  `SIG-VERIFIER-DEFEATABLE`
-
-- **Rank (Ranking C — mechanism match only):** 29
-- **Protocol:** Puffer UniFi (`puffer-unifi`) · Yield · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/puffer-unifi
-- **PRIORITY 41.1**  =  LIKELIHOOD 41.1 × ACTIONABILITY 100.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 4.2/50
-    - actionability: small enough to be unwatched, large enough to matter
-- **Value at risk:** $763,083 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
-    - Deployed source (`BoringVault` @ 0x196ead47…(ethereum), `ERC1967Proxy` @ 0xD9A44285…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard found
-    - deployed source read for BoringVault@0x196ead47…(ethereum), ERC1967Proxy@0xD9A44285…(ethereum); indicators matched: ecrecover_without_zero_check
-- **Preconditions PRESENT / UNKNOWN:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** uses_oz_ecdsa / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
-- **Where to start:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
-- **Evidence:** `protocols/deep_screened.jsonl#puffer-unifi|SIG-VERIFIER-DEFEATABLE`, `protocols/onchain_probes.json#puffer-unifi`
-- **Disclosure:** https://www.puffer.fi/unifi · no audit link listed
-
-### 30. Autopilot  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
-
-- **Rank (Ranking C — mechanism match only):** 30
-- **Protocol:** Autopilot (`autopilot`) · Yield Aggregator · Base
-- **DefiLlama:** https://defillama.com/protocol/autopilot
-- **PRIORITY 40.68**  =  LIKELIHOOD 40.68 × ACTIONABILITY 100.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 3.78/50
-    - actionability: small enough to be unwatched, large enough to matter
-- **Value at risk:** $59,459 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`Aero` @ 0x940181a9…(base), `PermanentLocksPoolV1` @ 0xA7c68a96…(base)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for Aero@0x940181a9…(base), PermanentLocksPoolV1@0xA7c68a96…(base); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#autopilot|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#autopilot`
-- **Disclosure:** https://theautopilot.xyz/app · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://autopilot-5.gitbook.io/autopilot/protocol/audit-and-security
-
-### 32. Snuggle  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 32
-- **Protocol:** Snuggle (`snuggle`) · Liquidity Manager · Base, Robinhood Chain, Arbitrum
-- **DefiLlama:** https://defillama.com/protocol/snuggle
-- **PRIORITY 39.98**  =  LIKELIHOOD 47.03 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 10.13/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $6,997,095 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_under_1y` — raises likelihood, measured lift ×2.256 (weight +0.81)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`SnuggleVault` @ 0x19ec46eb…(base), `ViewHelper` @ 0x28649062…(base)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for SnuggleVault@0x19ec46eb…(base), ViewHelper@0x28649062…(base); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `UNKNOWN_CONTRACT`; no ERC-1967 admin chain was proven
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#snuggle|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#snuggle`
-- **Disclosure:** https://snuggle.fi/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://d3cny4im7ppv5.cloudfront.net/Abyss.pdf
-
-### 33. Royco V1  —  `SIG-VERIFIER-DEFEATABLE`
-
-- **Rank (Ranking C — mechanism match only):** 33
-- **Protocol:** Royco V1 (`royco-v1`) · Yield · Arbitrum, Ethereum, Sonic, Base, Plume Mainnet, Berachain …
-- **DefiLlama:** https://defillama.com/protocol/royco-v1
-- **PRIORITY 39.65**  =  LIKELIHOOD 46.65 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 9.75/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $1,554,176 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `version_sibling_legacy` — raises likelihood, measured lift ×1.699 (weight +0.53)
-- **Broken invariant tested:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
-    - Deployed source (`LayerZeroTeller` @ 0x60EBb5d1…(ethereum), `BoringVault` @ 0x74D1fAfa…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard found
-    - deployed source read for LayerZeroTeller@0x60EBb5d1…(ethereum), BoringVault@0x74D1fAfa…(ethereum); indicators matched: ecrecover_without_zero_check
-- **Preconditions PRESENT / UNKNOWN:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** uses_oz_ecdsa / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
-- **Where to start:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
-- **Evidence:** `protocols/deep_screened.jsonl#royco-v1|SIG-VERIFIER-DEFEATABLE`, `protocols/onchain_probes.json#royco-v1`
-- **Disclosure:** https://www.royco.org · no audit link listed
-
-### 34. Premia V3  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
-
-- **Rank (Ranking C — mechanism match only):** 34
-- **Protocol:** Premia V3 (`premia-v3`) · Options · Arbitrum
-- **DefiLlama:** https://defillama.com/protocol/premia-v3
-- **PRIORITY 39.43**  =  LIKELIHOOD 39.43 × ACTIONABILITY 100.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 2.53/50
-    - actionability: small enough to be unwatched, large enough to matter
-- **Value at risk:** $532,696 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`PoolFactoryProxy` @ 0xae4fb662…(arbitrum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for PoolFactoryProxy@0xae4fb662…(arbitrum); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#premia-v3|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#premia-v3`
-- **Disclosure:** https://premia.finance · no audit link listed
-
-### 35. Rumpel Labs  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 35
-- **Protocol:** Rumpel Labs (`rumpel-labs`) · Synthetics · Ethereum, Hyperliquid L1
-- **DefiLlama:** https://defillama.com/protocol/rumpel-labs
-- **PRIORITY 39.34**  =  LIKELIHOOD 46.28 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 9.38/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $2,203,637 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`PendleYieldToken` @ 0x0310A860…(ethereum), `TransparentUpgradeableProxy` @ 0x08F39b3d…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for PendleYieldToken@0x0310A860…(ethereum), TransparentUpgradeableProxy@0x08F39b3d…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#rumpel-labs|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#rumpel-labs`
-- **Disclosure:** not listed · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/sense-finance/point-tokenization-vault/blob/main/audits/2024.04.25%20FPS%20Points%20Tokenization.pdf
-
-### 36. Anvil  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 36
-- **Protocol:** Anvil (`anvil`) · Collateral Management · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/anvil
-- **PRIORITY 38.89**  =  LIKELIHOOD 45.75 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 8.85/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $9,674,730 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_2plus_audits` — raises likelihood, measured lift ×2.084 (weight +0.73)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`CollateralVault` @ 0x5d2725fd…(ethereum), `Anvil` @ 0xAEEAa594…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for CollateralVault@0x5d2725fd…(ethereum), Anvil@0xAEEAa594…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#anvil|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#anvil`
-- **Disclosure:** https://anvil.xyz/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://blog.openzeppelin.com/anvil-audit, https://blog.openzeppelin.com/anvil-protocol-audit
-
-### 37. dTRINITY dUSD  —  `SIG-VERIFIER-DEFEATABLE`
-
-- **Rank (Ranking C — mechanism match only):** 37
-- **Protocol:** dTRINITY dUSD (`dtrinity-dusd`) · Partially Algorithmic Stablecoin · Ethereum, Sonic, Katana, Fraxtal
-- **DefiLlama:** https://defillama.com/protocol/dtrinity-dusd
-- **PRIORITY 38.15**  =  LIKELIHOOD 44.88 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 7.98/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $1,392,626 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-- **Broken invariant tested:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
-    - Deployed source (`CurveStableSwapNG` @ 0x2C2A7007…(ethereum), `SafeProxy` @ 0x38262EFF…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard found
-    - deployed source read for CurveStableSwapNG@0x2C2A7007…(ethereum), SafeProxy@0x38262EFF…(ethereum); indicators matched: ecrecover_without_zero_check
-- **Preconditions PRESENT / UNKNOWN:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** uses_oz_ecdsa / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
-- **Where to start:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
-- **Evidence:** `protocols/deep_screened.jsonl#dtrinity-dusd|SIG-VERIFIER-DEFEATABLE`, `protocols/onchain_probes.json#dtrinity-dusd`
-- **Disclosure:** https://app.dtrinity.org/mint/dusd/ · no audit link listed
-
-### 38. ELFi Protocol  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
-
-- **Rank (Ranking C — mechanism match only):** 38
-- **Protocol:** ELFi Protocol (`elfi-protocol`) · Derivatives · Base, Arbitrum
-- **DefiLlama:** https://defillama.com/protocol/elfi-protocol
-- **PRIORITY 37.91**  =  LIKELIHOOD 44.6 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 7.7/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $1,540,734 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`Diamond` @ 0x153c613D…(arbitrum), `LpVault` @ 0xbC268D61…(arbitrum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for Diamond@0x153c613D…(arbitrum), LpVault@0xbC268D61…(arbitrum); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#elfi-protocol|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#elfi-protocol`
-- **Disclosure:** https://www.elfi.xyz · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://www.elfi.xyz/Sherlock_Elfi_Audit_Report.pdf
-
-### 39. Arcadia V2  —  `SIG-VERIFIER-DEFEATABLE`
-
-- **Rank (Ranking C — mechanism match only):** 39
-- **Protocol:** Arcadia V2 (`arcadia-v2`) · Liquidity Manager · Base, Optimism, Unichain
-- **DefiLlama:** https://defillama.com/protocol/arcadia-v2
-- **PRIORITY 37.91**  =  LIKELIHOOD 44.6 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 7.7/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $5,470,140 · **Band:** `IN_BAND`
-- **Previously hacked:** 2025-07-15 for $2,500,000 [Reentrancy]
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-- **Broken invariant tested:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
-    - Deployed source (`NonfungiblePositionManager` @ 0x03a520b3…(base), `WrappedStakedSlipstream` @ 0x147a2ccb…(base)): prerequisites matched: ecrecover_without_zero_check; no guard found
-    - deployed source read for NonfungiblePositionManager@0x03a520b3…(base), WrappedStakedSlipstream@0x147a2ccb…(base); indicators matched: ecrecover_without_zero_check
-- **Preconditions PRESENT / UNKNOWN:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** uses_oz_ecdsa / none in the reviewed path
-- **Prior art:** `KNOWN_ISSUE_DEPLOYMENT_STATUS_UNKNOWN` — DefiLlama's hacks dataset records 1 prior on-chain incident(s) on this protocol, most recently 2025-07-15 for $2,500,000 [Reentrancy]. Whether the deployment in scope carries the fix is not established by read-only evidence.
-- **Falsified by:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
-- **Where to start:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
-- **Evidence:** `protocols/deep_screened.jsonl#arcadia-v2|SIG-VERIFIER-DEFEATABLE`, `protocols/onchain_probes.json#arcadia-v2`
-- **Disclosure:** https://arcadia.finance · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://github.com/arcadia-finance/arcadia-finance-audits/tree/main/audits-v2
-
-### 40. Rank Trading  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 40
-- **Protocol:** Rank Trading (`rank-trading`) · Yield · Binance
-- **DefiLlama:** https://defillama.com/protocol/rank-trading
-- **PRIORITY 37.8**  =  LIKELIHOOD 44.47 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 7.57/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $2,604,526 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
-    - `owner_is_eoa` — raises likelihood, measured lift ×1.729 (weight +0.55)
-    - `single_audit_only` — raises likelihood, measured lift ×1.613 (weight +0.48)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`RankFactory` @ 0x1563c983…(bsc), `RankFactory` @ 0x185f8bc8…(bsc)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for RankFactory@0x1563c983…(bsc), RankFactory@0x185f8bc8…(bsc); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `EOA_SINGLE_KEY`; no ERC-1967 admin chain was proven
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#rank-trading|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#rank-trading`
-- **Disclosure:** https://rank.trading/ · audit links **as listed by DefiLlama** (not verified to cover this deployment; for fork lineages they sometimes point at a sibling protocol): https://hashlock.com/audits/rank-trading
-
-### 41. Ronin Bridge  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 41
-- **Protocol:** Ronin Bridge (`ronin-bridge`) · Canonical Bridge · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/ronin-bridge
-- **PRIORITY 36.83**  =  LIKELIHOOD 43.33 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 6.43/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $5,172,000 · **Band:** `IN_BAND`
-- **REPEAT VICTIM — 2 recorded hacks.** 2024-08-06 $12,000,000 [Uninitialized Proxy]
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`zCurve` @ 0x00000000…(ethereum), `ERC1967Proxy` @ 0x00000000…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for zCurve@0x00000000…(ethereum), ERC1967Proxy@0x00000000…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `UNREMEDIATED_KNOWN_ISSUE` — DefiLlama's hacks dataset records 1 prior on-chain incident(s) on this protocol, most recently 2024-08-06 for $12,000,000 [Uninitialized Proxy]. Whether the deployment in scope carries the fix is not established by read-only evidence.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#ronin-bridge|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#ronin-bridge`
-- **Disclosure:** https://app.roninchain.com/bridge · no audit link listed
-
-### 42. Shape Bridge  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 42
-- **Protocol:** Shape Bridge (`shape-bridge`) · Canonical Bridge · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/shape-bridge
-- **PRIORITY 36.83**  =  LIKELIHOOD 43.33 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 6.43/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $1,105,453 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`zCurve` @ 0x00000000…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for zCurve@0x00000000…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#shape-bridge|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#shape-bridge`
-- **Disclosure:** https://shape.network/bridge · no audit link listed
-
-### 43. Cega V2  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 43
-- **Protocol:** Cega V2 (`cega-v2`) · Options · Arbitrum, Ethereum
-- **DefiLlama:** https://defillama.com/protocol/cega-v2
-- **PRIORITY 35.44**  =  LIKELIHOOD 47.25 × ACTIONABILITY 75.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 10.35/50
-    - actionability: small enough to be unwatched, large enough to matter; no public disclosure channel listed
-- **Value at risk:** $109,710 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`zCurve` @ 0x00000000…(ethereum), `ERC1967Proxy` @ 0x00000000…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for zCurve@0x00000000…(ethereum), ERC1967Proxy@0x00000000…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#cega-v2|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#cega-v2`
-- **Disclosure:** not listed · no audit link listed
-
-### 44. Basalt Vault  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 44
-- **Protocol:** Basalt Vault (`basalt-vault`) · Yield · Arbitrum
-- **DefiLlama:** https://defillama.com/protocol/basalt-vault
-- **PRIORITY 34.69**  =  LIKELIHOOD 46.25 × ACTIONABILITY 75.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 9.35/50
-    - actionability: small enough to be unwatched, large enough to matter; no public disclosure channel listed
-- **Value at risk:** $120,265 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `owner_is_contract` — raises likelihood, measured lift ×3.73 (weight +1.32)
-    - `age_under_1y` — raises likelihood, measured lift ×2.256 (weight +0.81)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`VaultCoreNftFactory` @ 0x08e466fb…(arbitrum), `MarketToken` @ 0x47c03123…(arbitrum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for VaultCoreNftFactory@0x08e466fb…(arbitrum), MarketToken@0x47c03123…(arbitrum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#basalt-vault|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#basalt-vault`
-- **Disclosure:** not listed · no audit link listed
-
-### 45. Quickswap V4  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
-
-- **Rank (Ranking C — mechanism match only):** 45
-- **Protocol:** Quickswap V4 (`quickswap-v4`) · Dexs · Base, Soneium, Mantra, Polygon, Somnia, X Layer
-- **DefiLlama:** https://defillama.com/protocol/quickswap-v4
-- **PRIORITY 34.58**  =  LIKELIHOOD 40.68 × ACTIONABILITY 85.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 3.78/50
-    - actionability: mid-band: a team of this size will usually take an outside report
-- **Value at risk:** $5,365,451 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`ConverterV3` @ 0x0ccff3D0…(base), `AlgebraFactory` @ 0xC5396866…(base)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for ConverterV3@0x0ccff3D0…(base), AlgebraFactory@0xC5396866…(base); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#quickswap-v4|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#quickswap-v4`
-- **Disclosure:** https://dapp.quickswap.exchange/ · no audit link listed
-
-### 46. BakerFi  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
-
-- **Rank (Ranking C — mechanism match only):** 46
-- **Protocol:** BakerFi (`bakerfi`) · Liquid Staking · Base, Arbitrum, Ethereum
-- **DefiLlama:** https://defillama.com/protocol/bakerfi
-- **PRIORITY 33.77**  =  LIKELIHOOD 45.03 × ACTIONABILITY 75.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 8.13/50
-    - actionability: small enough to be unwatched, large enough to matter; no public disclosure channel listed
-- **Value at risk:** $74,614 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `has_oracle_declared` — raises likelihood, measured lift ×2.127 (weight +0.76)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`PythOracle` @ 0x01280b36…(base), `Vault` @ 0xb5f6dc49…(base)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for PythOracle@0x01280b36…(base), Vault@0xb5f6dc49…(base); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#bakerfi|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#bakerfi`
-- **Disclosure:** not listed · no audit link listed
-
-### 47. Fractional Art  —  `SIG-VERIFIER-DEFEATABLE`
-
-- **Rank (Ranking C — mechanism match only):** 47
-- **Protocol:** Fractional Art (`fractional-art`) · Indexes · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/fractional-art
-- **PRIORITY 32.5**  =  LIKELIHOOD 43.33 × ACTIONABILITY 75.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 6.43/50
-    - actionability: small enough to be unwatched, large enough to matter; no public disclosure channel listed
-- **Value at risk:** $108,976 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
-    - Deployed source (`LPDA` @ 0x32e8ab1e…(ethereum), `BaseRegistrarImplementation` @ 0x57f1887a…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard found
-    - deployed source read for LPDA@0x32e8ab1e…(ethereum), BaseRegistrarImplementation@0x57f1887a…(ethereum); indicators matched: ecrecover_without_zero_check
-- **Preconditions PRESENT / UNKNOWN:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** uses_oz_ecdsa / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
-- **Where to start:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
-- **Evidence:** `protocols/deep_screened.jsonl#fractional-art|SIG-VERIFIER-DEFEATABLE`, `protocols/onchain_probes.json#fractional-art`
-- **Disclosure:** not listed · no audit link listed
-
-### 48. Liquid Finance  —  `ACC-SIGN-OR-BOUND-CHECK-MISSING`
-
-- **Rank (Ranking C — mechanism match only):** 48
-- **Protocol:** Liquid Finance (`liquid-finance`) · Yield · Arbitrum
-- **DefiLlama:** https://defillama.com/protocol/liquid-finance
-- **PRIORITY 32.0**  =  LIKELIHOOD 42.67 × ACTIONABILITY 75.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 5.77/50
-    - actionability: small enough to be unwatched, large enough to matter; no public disclosure channel listed
-- **Value at risk:** $61,507 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `owner_is_eoa` — raises likelihood, measured lift ×1.729 (weight +0.55)
-    - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A quantity that must be non-negative and bounded must be checked at the boundary. Casts between signed and unsigned types must be range-checked.
-    - Deployed source (`FASTChef` @ 0x2582fFEa…(arbitrum), `UniswapV2Pair` @ 0x5dcf4748…(arbitrum)): prerequisites matched: unsafe_cross_sign_cast; no guard found
-    - deployed source read for FASTChef@0x2582fFEa…(arbitrum), UniswapV2Pair@0x5dcf4748…(arbitrum); indicators matched: unsafe_cross_sign_cast
-- **Preconditions PRESENT / UNKNOWN:** src::unsafe_cross_sign_cast, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** safecast_used / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** SafeCast used throughout and fees clamped at the setter (kills the pair); No signed arithmetic in the value path
-- **Where to start:** Fuzz every external numeric parameter across type boundaries and assert no entrypoint produces a transfer to the caller exceeding their entitlement.
-- **Evidence:** `protocols/deep_screened.jsonl#liquid-finance|ACC-SIGN-OR-BOUND-CHECK-MISSING`, `protocols/onchain_probes.json#liquid-finance`
-- **Disclosure:** not listed · no audit link listed
-
-### 53. Mezo Bridge  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 53
-- **Protocol:** Mezo Bridge (`mezo-bridge`) · Bridge · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/mezo-bridge
-- **PRIORITY 27.31**  =  LIKELIHOOD 45.52 × ACTIONABILITY 60.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 8.62/50
-    - actionability: upper band: may already retain reviewers
-- **Value at risk:** $16,273,434 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `owner_is_contract` — raises likelihood, measured lift ×3.73 (weight +1.32)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`ZAMM` @ 0x00000000…(ethereum), `zCurve` @ 0x00000000…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for ZAMM@0x00000000…(ethereum), zCurve@0x00000000…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Custody posture (scored separately, see `results/upgrade_authority_exposure.md`):** weakest privileged role reads as `UNKNOWN_CONTRACT`; no ERC-1967 admin chain was proven
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#mezo-bridge|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#mezo-bridge`
-- **Disclosure:** https://mezo.org · no audit link listed
-
-### 54. Zoo Finance  —  `ACC-QUOTE-STALE-ACROSS-OWN-SWAP`
-
-- **Rank (Ranking C — mechanism match only):** 54
-- **Protocol:** Zoo Finance (`zoo-finance`) · Yield · Binance, Sei, Arbitrum, Base, Berachain, Story
-- **DefiLlama:** https://defillama.com/protocol/zoo-finance
-- **PRIORITY 26.6**  =  LIKELIHOOD 44.33 × ACTIONABILITY 60.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 7.43/50
-    - actionability: upper band: may already retain reviewers
-- **Value at risk:** $20,836,514 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `multichain_gt3` — raises likelihood, measured lift ×2.038 (weight +0.71)
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_bsc` — raises likelihood, measured lift ×1.788 (weight +0.58)
-    - `authority_addrs_beyond_tvl` — raises likelihood, measured lift ×1.664 (weight +0.51)
-- **Broken invariant tested:** A value used for minting, crediting or reward must be derived from what the protocol actually received, not from a quote taken before the protocol itself moved the market. Where the protocol's own action changes the price it just read, the value must be recomputed after the fact.
-    - Deployed source (`UniswapV2Router02` @ 0x4752ba5d…(arbitrum)): prerequisites matched: quote_then_own_swap; no guard found
-    - weak/ambiguous source indicators (ordering only, never scored): referral_reward_with_mint=no
-    - deployed source read for UniswapV2Router02@0x4752ba5d…(arbitrum); indicators matched: quote_then_own_swap
-- **Preconditions PRESENT / UNKNOWN:** src::quote_then_own_swap, live_value_present, deployment_reachable_on_chain / src::quote_then_addliquidity
-- **Guards searched / found:** lp_delta_measured, twap_or_feed_for_accounting / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** The minted amount is derived from the LP balance delta or from a TWAP (kills the pair); The protocol's swap is bounded so it cannot move reserves materially; Rewards settle in a later block against re-measured backing
-- **Where to start:** On a fork, run the bonding path with a flash-funded swap sized to skew the pair, then assert that the minted or credited amount tracks the LP tokens actually received rather than the pre-swap quote.
-- **Evidence:** `protocols/deep_screened.jsonl#zoo-finance|ACC-QUOTE-STALE-ACROSS-OWN-SWAP`, `protocols/onchain_probes.json#zoo-finance`
-- **Disclosure:** https://zoofi.io · no audit link listed
-
-### 55. SingularX  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 55
-- **Protocol:** SingularX (`singularx`) · Dexs · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/singularx
-- **PRIORITY 26.22**  =  LIKELIHOOD 41.1 × ACTIONABILITY 63.8%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 4.2/50
-    - actionability: mid-band: a team of this size will usually take an outside report; no public disclosure channel listed
-- **Value at risk:** $2,075,382 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`TrueGBP` @ 0x00000000…(ethereum)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for TrueGBP@0x00000000…(ethereum); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#singularx|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#singularx`
-- **Disclosure:** not listed · no audit link listed
-
-### 56. Anthias Labs  —  `AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`
-
-- **Rank (Ranking C — mechanism match only):** 56
-- **Protocol:** Anthias Labs (`anthias-labs`) · Risk Curators · Base
-- **DefiLlama:** https://defillama.com/protocol/anthias-labs
-- **PRIORITY 26.17**  =  LIKELIHOOD 43.62 × ACTIONABILITY 60.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 6.72/50
-    - actionability: upper band: may already retain reviewers
-- **Value at risk:** $18,279,033 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 85.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_under_1y` — raises likelihood, measured lift ×2.256 (weight +0.81)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `pricing_surface_undeclared` — raises likelihood, measured lift ×1.691 (weight +0.53)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A claim must be bound to a caller-specific entitlement that is checked and consumed exactly once.
-    - Deployed source (`GnosisSafeProxy` @ 0x0000aeB7…(base), `PlasmaVault` @ 0x01a6ff6e…(base)): prerequisites matched: claim_without_eligibility_map; no guard found
-    - deployed source read for GnosisSafeProxy@0x0000aeB7…(base), PlasmaVault@0x01a6ff6e…(base); indicators matched: claim_without_eligibility_map
-- **Preconditions PRESENT / UNKNOWN:** src::claim_without_eligibility_map, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** merkle_proof_gate / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** Claim requires a proof or a populated entitlement mapping (kills the pair); Reserve holds zero balance
-- **Where to start:** On a fork, call the claim path from a fresh address with no prior interaction; it must transfer nothing.
-- **Evidence:** `protocols/deep_screened.jsonl#anthias-labs|AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY`, `protocols/onchain_probes.json#anthias-labs`
-- **Disclosure:** https://anthias.xyz · no audit link listed
-
-### 57. Katana Pre-Launch  —  `SIG-VERIFIER-DEFEATABLE`
-
-- **Rank (Ranking C — mechanism match only):** 57
-- **Protocol:** Katana Pre-Launch (`katana-pre-launch`) · Farm · Ethereum
-- **DefiLlama:** https://defillama.com/protocol/katana-pre-launch
-- **PRIORITY 24.66**  =  LIKELIHOOD 41.1 × ACTIONABILITY 60.0%
-    - likelihood = family evidence 36.9/50 (MATCH 73.8 × evidence weight 1.0) + learned attack surface 4.2/50
-    - actionability: upper band: may already retain reviewers
-- **Value at risk:** $18,624,949 · **Band:** `IN_BAND`
-- **Evidence level:** `L4_GUARD_REVIEW` · MATCH 73.8 · CONFIDENCE 90.4
-- **Measured attack-surface signals** (weights learned from 2022-24 hacks, validated out of sample):
-    - `age_1_3y` — lowers likelihood, measured lift ×0.514 (weight -0.67)
-    - `no_audit_listed` — lowers likelihood, measured lift ×0.521 (weight -0.65)
-    - `on_ethereum` — raises likelihood, measured lift ×1.891 (weight +0.64)
-    - `chain_hazard_ge2` — raises likelihood, measured lift ×1.858 (weight +0.62)
-    - `single_chain` — lowers likelihood, measured lift ×0.66 (weight -0.42)
-- **Broken invariant tested:** A verification routine must reject malformed, empty or zero-recovered signatures, and must never treat address(0) as a match.
-    - Deployed source (`BoringVault` @ 0x69d210d3…(ethereum), `BoringVault` @ 0x75231079…(ethereum)): prerequisites matched: ecrecover_without_zero_check; no guard found
-    - deployed source read for BoringVault@0x69d210d3…(ethereum), BoringVault@0x75231079…(ethereum); indicators matched: ecrecover_without_zero_check
-- **Preconditions PRESENT / UNKNOWN:** src::ecrecover_without_zero_check, live_value_present, deployment_reachable_on_chain / none
-- **Guards searched / found:** uses_oz_ecdsa / none in the reviewed path
-- **Prior art:** `PRIOR_ART_SEARCH_INCOMPLETE` — No per-deployment search of published audits, competitions, advisories and postmortems was performed. Novelty is therefore NOT claimed.
-- **Falsified by:** OZ ECDSA library in the deployed bytecode (kills the ecrecover-zero shape); Signer address immutable and non-zero
-- **Where to start:** On a fork, submit r=0,s=0,v=27 and an empty signature to every signature-gated entrypoint; all must revert.
-- **Evidence:** `protocols/deep_screened.jsonl#katana-pre-launch|SIG-VERIFIER-DEFEATABLE`, `protocols/onchain_probes.json#katana-pre-launch`
-- **Disclosure:** https://app.katana.network/ · no audit link listed

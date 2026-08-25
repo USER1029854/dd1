@@ -65,6 +65,96 @@ def indicators(src):
     I['twap_or_feed_for_accounting']=bool(re.search(r'consult\s*\(|TWAP|latestRoundData|getTimeWeighted',src))
     # a referral / inviter payout in the same contract as a mint is the amplifier that made it pay
     I['referral_reward_with_mint']=bool(re.search(r'\b(inviter|referr?er|referral)\w*',src,re.I)) and bool(re.search(r'\b_?mint\s*\(',src))
+    # ======== cross-domain message binding, asset identity, proof =========
+    # These four families caused the most loss in this run's window
+    # (BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE alone: 8 incidents, ~$29.5M) and had NO
+    # source indicators at all, so every pair on them was stuck at L1_ADAPTER. The
+    # candidate lists were therefore shaped by which families had regexes written,
+    # not by where value was actually lost. Added after the TAC bridge post-mortem
+    # (2026-05-11, TON->TAC, $2.85M): the sequencer credited deposits from any
+    # well-formed sender without verifying the sender was the CANONICAL jetton wallet
+    # -- neither the wallet code hash nor the minter in its data was checked.
+    #
+    # The EVM form of "sender is not proven canonical for the asset" is a token-receive
+    # hook that credits state without checking msg.sender is the registered token.
+    _recv=fnbody(src,r'(?:onTokenTransfer|tokensReceived|onERC1155Received|onERC1155BatchReceived|onERC721Received)')
+    I['token_hook_credits_without_sender_check']=any(
+        re.search(r'\b(balances?|deposits?|credit|shares?|minted|totalDeposited)\s*\[',b)
+        and not re.search(r'require\s*\(\s*(?:msg\.sender|_msgSender\(\))\s*==|'
+                          r'if\s*\(\s*(?:msg\.sender|_msgSender\(\))\s*!=|onlyToken|'
+                          r'isSupported\w*\[\s*msg\.sender|supportedTokens?\s*\[\s*msg\.sender',b)
+        for b in _recv)
+    # cross-domain receive entrypoints, in the shape the major messaging stacks use
+    _xr=fnbody(src,r'(?:lzReceive|_lzReceive|_nonblockingLzReceive|ccipReceive|_ccipReceive|'
+                   r'receiveMessage|handleMessage|onMessageReceived|handle|receiveWormholeMessages|'
+                   r'executeMessage|processMessage|receivePayload)')
+    I['xdomain_entrypoint_present']=bool(_xr)
+    # the caller must be the protocol's own endpoint/router/gateway, not any address
+    I['xdomain_no_endpoint_check']= bool(_xr) and any(
+        not re.search(r'require\s*\(\s*(?:msg\.sender|_msgSender\(\))\s*==|'
+                      r'if\s*\(\s*(?:msg\.sender|_msgSender\(\))\s*!=|'
+                      r'onlyEndpoint|onlyRouter|onlyGateway|onlyMailbox|onlyBridge|'
+                      r'_checkCaller|\bendpoint\b\s*==|\brouter\b\s*==',b,re.I) for b in _xr)
+    # the message names a source domain/route; is that value actually constrained?
+    I['xdomain_source_named']= bool(re.search(
+        r'\b(srcChainId|sourceChain|originChain|srcEid|originDomain|sourceDomain|srcAddress|'
+        r'sourceChainSelector|emitterChainId|srcPoolId|remoteChainId)\b',src))
+    I['xdomain_source_not_bound']= I['xdomain_source_named'] and not bool(re.search(
+        r'trustedRemote\w*\s*\[|remoteLookup\s*\[|peers?\s*\[|allowlistedSource\w*\s*\[|'
+        r'isTrusted\w*\s*\[|registeredChain\w*\s*\[|supportedChain\w*\s*\[|'
+        r'require\s*\([^;]{0,120}?(?:srcChainId|sourceChain|originDomain|srcEid|sourceChainSelector)',src,re.I))
+    # a nonce or message id that is read but never consumed is not replay protection
+    _nonceref=re.findall(r'\b(\w*(?:nonce|messageId|msgId|packetId|sequence)\w*)\b',src,re.I)
+    I['xdomain_nonce_named']=bool(_nonceref) and bool(_xr)
+    I['xdomain_nonce_not_consumed']= I['xdomain_nonce_named'] and not bool(re.search(
+        r'\b(processed|consumed|executed|used|seen|delivered|filled)\w*\s*\[[^\]]{0,60}\]\s*=\s*true|'
+        r'\b(processed|consumed|executed|used|seen)\w*\[[^\]]{0,60}\]\s*=\s*1',src,re.I))
+    # --- asset / market identity resolved from a registry, or taken on trust ---
+    # A deposit function taking `address token` is near-universal and says nothing on its
+    # own -- it matched 303 of 905 swept protocols, a third of the population. The defect
+    # is narrower: the caller-supplied identifier is USED to move value in that same
+    # function body, and nothing in that body resolves it against a protocol registry.
+    _idfns=[(m.group(1),m.group(2),src[m.start():m.start()+2200])
+            for m in re.finditer(r'function\s+(\w*(?:deposit|withdraw|redeem|borrow|repay|release|claim|'
+                                 r'addLiquidity|stake|unstake)\w*)\s*\(([^)]*)\)',src,re.I)]
+    def _idparam(args):
+        m=re.search(r'\baddress\s+(\w*(?:token|asset|pool|market|vault|collateral)\w*)\b',args,re.I) \
+          or re.search(r'\b(?:uint\d*|bytes32)\s+(\w*(?:poolId|marketId|assetId|pid)\w*)\b',args,re.I)
+        return m.group(1) if m else None
+    _hits=[]
+    for _n,_a,_b in _idfns:
+        pn=_idparam(_a)
+        if not pn: continue
+        # the parameter must actually drive a value movement inside this function
+        used=re.search(re.escape(pn)+r'\s*\)?\s*\.\s*(?:transfer|transferFrom|safeTransfer|balanceOf)|'
+                       r'(?:IERC20|IToken)\s*\(\s*'+re.escape(pn)+r'\s*\)|'
+                       r'safeTransfer\w*\s*\(\s*'+re.escape(pn)+r'|'
+                       r'\[\s*'+re.escape(pn)+r'\s*\]',_b)
+        if not used: continue
+        guarded=re.search(r'(?:isSupported|supported|whitelisted|allowed|registered|isListed|listed|'
+                          r'approvedTokens?|tokenInfo|marketInfo|poolInfo|markets|pools|assets|reserves)'
+                          r'\w*\s*\[\s*'+re.escape(pn)+r'\s*\]|'
+                          r'require\s*\([^;]{0,160}?'+re.escape(pn)+r'[^;]{0,80}?\)|'
+                          r'onlySupported|_checkAsset|_validateToken',_b,re.I)
+        _hits.append((_n,pn,bool(guarded)))
+    I['value_fn_moves_caller_named_asset']=bool(_hits)
+    I['caller_named_asset_no_registry_check']=any(not g for _n,_p,g in _hits)
+    I['asset_registry_check_present']=any(g for _n,_p,g in _hits)
+    # --- proof verification actually enforced? ---
+    I['proof_verify_called']=bool(re.search(r'\b(verifyProof|verify|_verify|checkProof|validateProof|'
+                                            r'processProof|verifyMerkleProof)\s*\(',src))
+    I['proof_result_unchecked']= I['proof_verify_called'] and not bool(re.search(
+        r'require\s*\(\s*\w*(?:verify|checkProof|validateProof|processProof)\w*\s*\(|'
+        r'if\s*\(\s*!\s*\w*(?:verify|checkProof|validateProof)\w*\s*\(|'
+        r'revert\w*\s*\(\s*\)\s*;?\s*\}?\s*(?:else)?[\s\S]{0,40}?verify',src,re.I))
+    I['verifier_address_mutable']=bool(re.search(
+        r'function\s+set\w*[Vv]erifier\w*\s*\(|verifier\s*=\s*_?\w*verifier',src))
+    # --- route/quote output bound to the asset the caller will be credited in ---
+    _routefns=fnbody(src,r'\w*(?:swap|route|execute|fill|settle)\w*')
+    I['route_output_not_bound']=any(
+        re.search(r'\bpath\s*\[|\broute\b|\btokenOut\b',b) and
+        not re.search(r'require\s*\([^;]{0,140}?(?:tokenOut|path\s*\[\s*path\.length\s*-\s*1\s*\])'
+                      r'[\s\S]{0,60}?==|amountOutMin\s*[,)]',b) for b in _routefns)
     # ---------------- auth ----------------
     I['owner_compare_without_nonzero']= bool(re.search(r'(msg\.sender|_msgSender\(\))\s*==\s*(owner|_owner|admin|_admin)\b',src)) and \
         not near(src,r'(msg\.sender|_msgSender\(\))\s*==\s*(owner|_owner|admin|_admin)\b',r'!=\s*address\s*\(\s*0')
@@ -152,6 +242,18 @@ def indicators(src):
 FAMILY_SIGNALS={
  "SIG-VERIFIER-DEFEATABLE":[("ecrecover_without_zero_check",True,"PRE"),("uses_oz_ecdsa",True,"GUARD")],
  "AUTH-ZERO-ADDRESS-ACCEPTED":[("owner_compare_without_nonzero",True,"PRE")],
+ "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE":[("xdomain_entrypoint_present",True,"PRE"),
+                                       ("xdomain_no_endpoint_check",True,"PRE"),
+                                       ("xdomain_source_not_bound",True,"PRE"),
+                                       ("xdomain_nonce_not_consumed",True,"WEAK"),
+                                       ("token_hook_credits_without_sender_check",True,"PRE")],
+ "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED":[("caller_named_asset_no_registry_check",True,"PRE"),
+                                           ("token_hook_credits_without_sender_check",True,"PRE"),
+                                           ("value_fn_moves_caller_named_asset",True,"WEAK"),
+                                           ("asset_registry_check_present",True,"GUARD")],
+ "PROOF-VERIFICATION-BYPASSED":[("proof_result_unchecked",True,"PRE"),
+                                ("verifier_address_mutable",True,"WEAK")],
+ "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET":[("route_output_not_bound",True,"PRE")],
  "ACC-QUOTE-STALE-ACROSS-OWN-SWAP":[("quote_then_own_swap",True,"PRE"),("quote_then_addliquidity",True,"PRE"),
                                     ("lp_delta_measured",True,"GUARD"),("twap_or_feed_for_accounting",True,"GUARD"),
                                     ("referral_reward_with_mint",True,"WEAK")],

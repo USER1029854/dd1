@@ -158,6 +158,7 @@
       "INC-2026-07-17-ACR",
       "INC-2026-06-10-SEC",
       "INC-2026-05-18-VER",
+      "INC-2026-05-11-TAC",
       "INC-2026-04-13-HYP",
       "INC-2026-03-12-STA"
     ],
@@ -167,9 +168,9 @@
       "INC-2026-06-08-SYS",
       "INC-2026-05-15-ADS"
     ],
-    "unique_root_cause_count": 6,
-    "incident_count": 7,
-    "six_month_loss_usd": 26666000.0,
+    "unique_root_cause_count": 7,
+    "incident_count": 8,
+    "six_month_loss_usd": 29520000.0,
     "most_recent_event": "2026-08-09",
     "evidence_strength": "HIGH",
     "propagation_notes": "Verus is a repeat of one unremediated root cause (May and July 2026 are the same defect, not two mechanisms) and counts once toward unique root causes. Secret Network's defect existed in the repo from its first commit in 2023 and ran live for three years, which is the general shape: bridge validation gaps are long-lived and only surface when reserves grow."
@@ -416,6 +417,78 @@
     "propagation_notes": "Two of the seven were deprecated Aztec deployments, which is why this family overlaps heavily with UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY: proof systems are hardest to fix once immutable."
   },
   {
+    "family_id": "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED",
+    "title": "A caller-supplied token, pool, mint or market is accepted without registry validation",
+    "broken_invariant": "Every asset, pool or market a value-bearing operation touches must be resolved from a protocol-controlled registry. An identifier supplied by the caller is a request, not a fact.",
+    "mechanism": "Raydium's deprecated AMM V3 program insufficiently validated LP mint addresses, so a fake LP token bypassed proportion checks and drained ~$1.34M from five inactive pools. Juicebox V3's REVLoans borrowFrom accepted a caller-supplied REVLoanSource struct (.terminal, .token), forging the accounting context so the oracle was skipped and attacker-controlled decimals/balances set the share price. Rhea Finance's attacker pre-created fake token pools on Ref Finance to construct a malicious swap route for its margin engine.",
+    "mandatory_preconditions": [
+      "A value-bearing function accepts a token, pool, market or mint identifier from the caller",
+      "No check that the identifier is registered/derived by the protocol",
+      "The identifier determines pricing, proportion or destination",
+      "Protocol-held value is reachable through it"
+    ],
+    "optional_amplifiers": [
+      "Permissionless pool creation on the venue",
+      "Deprecated program with weaker validation",
+      "Multi-hop routing across arbitrary pools"
+    ],
+    "applicable_protocol_archetypes": [
+      "DEX/AMM",
+      "DEX aggregator/router",
+      "lending with leverage",
+      "token launch platform",
+      "cross-chain aggregator"
+    ],
+    "static_indicators": [
+      "pool/mint/terminal addresses taken as parameters without a registry lookup",
+      "PDA/seed derivation not asserted (Solana)",
+      "struct parameters carrying accounting context",
+      "no allowlist of routable venues"
+    ],
+    "adapter_indicators": [
+      "adapter enumerates pools from a factory but the protocol accepts arbitrary pools",
+      "adapter routes through third-party venues"
+    ],
+    "runtime_state_indicators": [
+      "registry/whitelist empty or permissive",
+      "recently created pools reachable by the router",
+      "deprecated programs still callable"
+    ],
+    "cross_contract_indicators": [
+      "routing venue permits permissionless pool creation while the consumer trusts any pool"
+    ],
+    "decisive_guards": [
+      "Registry/factory-derivation check on every identifier (assert factory.getPool(a,b,fee) == suppliedPool, or PDA derivation)",
+      "Allowlist of routable venues and assets",
+      "Per-hop economic validation, not just endpoint validation"
+    ],
+    "false_positive_killers": [
+      "Every identifier derived or verified against the factory/registry (kills the pair)",
+      "Routing restricted to an immutable venue allowlist"
+    ],
+    "local_defensive_property": "On a fork, create a fake pool/mint and pass it to every identifier-accepting entrypoint; all must revert.",
+    "recommended_audit_questions": [
+      "Is every mandatory precondition present in the live deployment?",
+      "Is any decisive guard present in the deployed bytecode, not just the repository?",
+      "What live value, authority or approval is reachable through this path?",
+      "What single observation would falsify the hypothesis?"
+    ],
+    "incident_ids": [
+      "INC-2026-06-10-RAY",
+      "INC-2026-05-11-TAC",
+      "INC-2026-04-22-KIP",
+      "INC-2026-04-20-JUI",
+      "INC-2026-04-16-RHE"
+    ],
+    "provisional_incident_ids": [],
+    "unique_root_cause_count": 5,
+    "incident_count": 5,
+    "six_month_loss_usd": 22718350.0,
+    "most_recent_event": "2026-06-10",
+    "evidence_strength": "HIGH",
+    "propagation_notes": "The general prerequisite is composability with permissionless venues: any protocol that routes through, or prices from, a venue where anyone can create a market inherits it."
+  },
+  {
     "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
     "title": "Price feed identity, freshness or failure mode is wrong, and the failure is silent",
     "broken_invariant": "A valuation used to size borrowing, minting, redemption or liquidation must come from a feed proven to describe that exact asset, be within a bounded age, and fail closed. A feed that returns a wrong asset's price, a stale price, a capped price, or zero must revert rather than be used.",
@@ -575,77 +648,6 @@
     "most_recent_event": "2026-07-15",
     "evidence_strength": "HIGH",
     "propagation_notes": "Ranking must use value controlled through approvals and roles, not just treasury size: BarnBridge's treasury was not the target, users' pre-existing approvals were."
-  },
-  {
-    "family_id": "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED",
-    "title": "A caller-supplied token, pool, mint or market is accepted without registry validation",
-    "broken_invariant": "Every asset, pool or market a value-bearing operation touches must be resolved from a protocol-controlled registry. An identifier supplied by the caller is a request, not a fact.",
-    "mechanism": "Raydium's deprecated AMM V3 program insufficiently validated LP mint addresses, so a fake LP token bypassed proportion checks and drained ~$1.34M from five inactive pools. Juicebox V3's REVLoans borrowFrom accepted a caller-supplied REVLoanSource struct (.terminal, .token), forging the accounting context so the oracle was skipped and attacker-controlled decimals/balances set the share price. Rhea Finance's attacker pre-created fake token pools on Ref Finance to construct a malicious swap route for its margin engine.",
-    "mandatory_preconditions": [
-      "A value-bearing function accepts a token, pool, market or mint identifier from the caller",
-      "No check that the identifier is registered/derived by the protocol",
-      "The identifier determines pricing, proportion or destination",
-      "Protocol-held value is reachable through it"
-    ],
-    "optional_amplifiers": [
-      "Permissionless pool creation on the venue",
-      "Deprecated program with weaker validation",
-      "Multi-hop routing across arbitrary pools"
-    ],
-    "applicable_protocol_archetypes": [
-      "DEX/AMM",
-      "DEX aggregator/router",
-      "lending with leverage",
-      "token launch platform",
-      "cross-chain aggregator"
-    ],
-    "static_indicators": [
-      "pool/mint/terminal addresses taken as parameters without a registry lookup",
-      "PDA/seed derivation not asserted (Solana)",
-      "struct parameters carrying accounting context",
-      "no allowlist of routable venues"
-    ],
-    "adapter_indicators": [
-      "adapter enumerates pools from a factory but the protocol accepts arbitrary pools",
-      "adapter routes through third-party venues"
-    ],
-    "runtime_state_indicators": [
-      "registry/whitelist empty or permissive",
-      "recently created pools reachable by the router",
-      "deprecated programs still callable"
-    ],
-    "cross_contract_indicators": [
-      "routing venue permits permissionless pool creation while the consumer trusts any pool"
-    ],
-    "decisive_guards": [
-      "Registry/factory-derivation check on every identifier (assert factory.getPool(a,b,fee) == suppliedPool, or PDA derivation)",
-      "Allowlist of routable venues and assets",
-      "Per-hop economic validation, not just endpoint validation"
-    ],
-    "false_positive_killers": [
-      "Every identifier derived or verified against the factory/registry (kills the pair)",
-      "Routing restricted to an immutable venue allowlist"
-    ],
-    "local_defensive_property": "On a fork, create a fake pool/mint and pass it to every identifier-accepting entrypoint; all must revert.",
-    "recommended_audit_questions": [
-      "Is every mandatory precondition present in the live deployment?",
-      "Is any decisive guard present in the deployed bytecode, not just the repository?",
-      "What live value, authority or approval is reachable through this path?",
-      "What single observation would falsify the hypothesis?"
-    ],
-    "incident_ids": [
-      "INC-2026-06-10-RAY",
-      "INC-2026-04-22-KIP",
-      "INC-2026-04-20-JUI",
-      "INC-2026-04-16-RHE"
-    ],
-    "provisional_incident_ids": [],
-    "unique_root_cause_count": 4,
-    "incident_count": 4,
-    "six_month_loss_usd": 19864350.0,
-    "most_recent_event": "2026-06-10",
-    "evidence_strength": "HIGH",
-    "propagation_notes": "The general prerequisite is composability with permissionless venues: any protocol that routes through, or prices from, a venue where anyone can create a market inherits it."
   },
   {
     "family_id": "CALLDATA-CALLER-CONTROLLED-TARGET",

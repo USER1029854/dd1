@@ -116,6 +116,12 @@ APPLIC_SOURCE = {
  # Reference-derived (see families_d.py). Screened only from deployed source, because the
  # defect is an ORDERING inside one function body -- category metadata cannot see it.
  "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
+ # The four highest-loss families in this run's window had no source indicators at all,
+ # so every pair on them sat at L1_ADAPTER and none could ever reach guard review. The
+ # candidate lists were shaped by which families had regexes written rather than by where
+ # value was lost. Indicators added in tools/source_sweep.py; now screened from source.
+ "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE","ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED",
+ "PROOF-VERIFICATION-BYPASSED","QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET",
 }
 
 # The four handler-runtime families are deliberately NOT here. They describe defects that

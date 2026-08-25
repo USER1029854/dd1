@@ -1,6 +1,6 @@
 {
  "generated_from": "git history of results/candidates_*",
- "head_at_generation": "1ad898f",
+ "head_at_generation": "6e7df7a",
  "head_excluded": false,
  "runs": [
   {
@@ -37,9 +37,14 @@
    "commit": "1ad898f",
    "subject": "Never hand over the same protocol twice",
    "protocols": 130
+  },
+  {
+   "commit": "6e7df7a",
+   "subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "protocols": 117
   }
  ],
- "protocols_delivered": 349,
+ "protocols_delivered": 466,
  "ledger": {
   "sumer.money": {
    "first_delivered_in": "7d49c12",
@@ -3428,6 +3433,1062 @@
    "first_subject": "Never hand over the same protocol twice",
    "runs": [
     "1ad898f"
+   ],
+   "families": []
+  },
+  "yam-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "mummy-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "keep3r-network": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "cozy-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "sommelier": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "venus-isolated-pools": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "clovis": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "thesauros": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "tokenlon-amm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "jpegd": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "onx-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "theoriq-gold-vault": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "penpie": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "cryptex-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "sudoswap-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "peakdefi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "cana-holdings-california-carbon-credits": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "umami-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "tanken-capital": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "swellchain-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "maxshot": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "alongside": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-CREDIT-NOT-RECEIVED"
+   ]
+  },
+  "revert-compoundor": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "fira": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "insuredao": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "SECRET-EMBEDDED-IN-PUBLIC-CODE-AS-AUTH"
+   ]
+  },
+  "ezmanager": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "mayan-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "rezerve-money": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "mint-club-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "unifarm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "mitosis": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "delv-yield": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "union-protocol": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "dyson": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "electra": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "indexed-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "yay!": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "moremarkets.xyz": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "cvi-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "superreturn": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "plutusdao": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "altitude.fi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "derivadex": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "voltz": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "immutablex": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "amphor": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "skate-fi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "dfx-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "yellow": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "flying-tulip-ftusd": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "b-lucky": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "fortunafi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "sector-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "chainport": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "hyperjump": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "biswap-v3": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "keep-network": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "jones-dao": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "sherlock": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "usdfi-lending": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "exactly": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "zerolend-lending": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "easedefi.org": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "sushi-bentobox": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "inverse-finance-firm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "king-protocol": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "dodo-amm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "alphax": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "ultrayield-vaults": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "nerona": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "bancor-v3": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "sushiswap": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "conduit-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "frax-swap": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "byzanlink-rwa-markets": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "balancer-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "interest-protocol": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "morph-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "tangent-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "joe-v2.1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "dydx-v3": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "apeswap-amm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "revault": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "silo-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "royco-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "deltaprime": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "reflexer": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "chamber-vaults": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "kinza-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "extra-finance-leverage-farming": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "cove-boosties": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "degenprime": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "muscadine": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "puffer-unifi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "autopilot": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "snuggle": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "royco-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "premia-v3": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "rumpel-labs": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "anvil": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "dtrinity-dusd": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "elfi-protocol": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "arcadia-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "rank-trading": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "ronin-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "shape-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "cega-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "basalt-vault": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "quickswap-v4": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "bakerfi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "fractional-art": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "liquid-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "mezo-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "zoo-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "singularx": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "anthias-labs": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "katana-pre-launch": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
    ],
    "families": []
   }

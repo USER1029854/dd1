@@ -148,6 +148,22 @@ _LEDS=set(_led['ledger'])
 _final_slugs=set()
 _av=open(f'{B}/results/audit_variables.txt').read()
 for _m in re.finditer(r'TARGET=https://defillama\.com/protocol/([^\s|]+)',_av): _final_slugs.add(_m.group(1))
+# Read the level of the pair ACTUALLY SELECTED, from candidates_all.csv. A protocol can
+# carry pairs at several levels, so re-deriving it from an arbitrary pair per slug is wrong.
+_selrows=[r for r in csv.DictReader(open(f'{B}/results/candidates_all.csv')) if r.get('in_final')=='YES']
+_lv=collections.Counter(r['evidence_level'] for r in _selrows)
+_declared=open(f'{B}/results/candidates_by_priority.md').read()
+_floorclaim=re.search(r'reaching \*\*`(L\d_[A-Z_]+)`\*\*',_declared)
+chk("delivery: every candidate was read to the declared evidence depth",
+    (not _floorclaim) or set(_lv)=={_floorclaim.group(1)},
+    f"{len(_selrows)} selected pairs at {dict(_lv)}"
+    + (f"; declared floor {_floorclaim.group(1)}" if _floorclaim else "; no floor declared"))
+chk("delivery: the four highest-loss families in the window can now reach guard review",
+    all(any(d['evidence_level'] in ('L3_STATE','L4_GUARD_REVIEW') and d['family_id']==f
+            for d in D if not d['killed'])
+        for f in ('BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE','ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED',
+                  'PROOF-VERIFICATION-BYPASSED','QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET')),
+    "these had no source indicators and were stuck at L1_ADAPTER before this pass")
 _rep=sorted(_final_slugs & _LEDS)
 chk("delivery: no candidate repeats a protocol handed over in a previous run",
     not _rep, f"{len(_final_slugs)} finals against a ledger of {len(_LEDS)} previously delivered; "
