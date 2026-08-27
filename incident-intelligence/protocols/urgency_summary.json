@@ -1,10 +1,10 @@
 {
  "fresh_by_tier": {
   "T1": 2,
-  "T2": 115,
-  "T4": 58,
-  "T5": 1425
+  "T2": 14,
+  "T4": 27,
+  "T5": 1407
  },
- "delivered_now_hot": 45,
- "selected": 175
+ "delivered_now_hot": 4,
+ "selected": 43
 }

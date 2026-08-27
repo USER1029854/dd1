@@ -1,6 +1,6 @@
 {
  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
- "generated_utc": "2026-08-27T10:11:50Z",
+ "generated_utc": "2026-08-27T23:59:05Z",
  "safety_attestation": {
   "production_transactions_submitted": 0,
   "production_transactions_constructed": 0,
@@ -189,8 +189,8 @@
   {
    "path": "commands.sh",
    "exists": true,
-   "bytes": 11697,
-   "sha256": "eeb15bff8d637155c3895afd7bb0a7e6f897da451aef982f712ef02066bfd263",
+   "bytes": 12319,
+   "sha256": "5565dfb30078f6a9cc3238e973287f2b4acefdbf6ef5f6aa850691dc8281c23d",
    "role": "reproduction",
    "supports_claim": "Every retrieval and transformation step in execution order"
   },
@@ -525,8 +525,8 @@
   {
    "path": "results/candidates_by_urgency.md",
    "exists": true,
-   "bytes": 400130,
-   "sha256": "80bfaf80a71535c330e8dcf9edcec5c69f8842d8289100b7f0002e95798e9d72",
+   "bytes": 110945,
+   "sha256": "a1bfef1be300fdb007c94d97e8d578ded6f57d577842eac1519434d1fe8b1cf7",
    "role": "results",
    "supports_claim": "Urgency-first candidate list: ranked by time-to-exploitation with remediation status as the primary driver, Tier 1-2 first, with CORE.md handoff lines"
   },
@@ -557,8 +557,8 @@
   {
    "path": "protocols/urgency_pairs.json",
    "exists": true,
-   "bytes": 34744854,
-   "sha256": "987bd3e77118e8499e0253905b0037cc40e082dcb342c017052a572e7bc6d80a",
+   "bytes": 33446077,
+   "sha256": "c06f1d42741e74723cfe2a8a08a7681139235ba84a9b4cde273071d374fb2c42",
    "role": "scoring",
    "supports_claim": "Per-pair tier assignment and URGENCY components (40 remediation gap / 20 recency+propagation / 25 reachable value / 15 precondition match)"
   },

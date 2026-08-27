@@ -206,6 +206,18 @@ chk("urgency: no dollar term appears anywhere in the score",
             or 'size' in k.lower() or 'magnitude' in k.lower()),
     "components are remediation gap / recency+propagation / reachability / precondition match only; "
     "magnitude is the gate and the tiebreak, never a point")
+_dem=json.load(open(f'{B}/protocols/demoted_well_resourced.json'))
+_demslugs={d['slug'] for d in _dem}
+_delivered={r['protocol_slug'] for r in _ur}
+chk("urgency: well-resourced families are demoted, and the demotion is disclosed",
+    not (_demslugs & _delivered) and 'Demoted: well-resourced families' in open(f'{B}/results/candidates_by_urgency.md').read(),
+    f"{len(_dem)} protocols removed because their family holds over $100M; named in the report, "
+    "not silently dropped")
+_urm2=open(f'{B}/results/candidates_by_urgency.md').read()
+chk("urgency: a chain-level defect is one candidate per chain, not one per protocol on it",
+    'chain-level' in _urm2 and _urm2.count('(chain-level)')>=5,
+    "the Cosmos EVM precompile advisory is a defect in the chain's stack; listing it per-protocol "
+    "produced 110 rows for 14 real findings")
 # RULE 3 + the operator's question: Tier 4 must be visible, not crowded out
 _md=open(f'{B}/results/candidates_by_urgency.md').read()
 import re as _re

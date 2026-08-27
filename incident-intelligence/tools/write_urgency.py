@@ -30,6 +30,47 @@ def best_per_protocol(rows):
         seen[r['protocol_slug']]=r
     return list(seen.values())
 
+CT={r['slug']:r for r in json.load(open(f'{B}/protocols/cosmos_evm_triage.json'))['rows']}
+
+# The Cosmos EVM precompile advisory is a CHAIN-level defect: the chain runs cosmos/evm,
+# not the DEX deployed on it. Emitting one candidate per protocol turned 14 chain findings
+# into 110 rows, inflating the list eightfold and misdirecting the work -- the decisive
+# check (pin the running version, query live precompile params) is performed once per
+# chain, and disclosure goes to the chain team, not to 37 separate protocol teams. The
+# protocols are the EXPOSURE, not separate candidates.
+def collapse_cosmos(rows):
+    keep=[]; bychain=collections.defaultdict(dict)
+    for r in rows:
+        s=r['protocol_slug']
+        if r['tier']==2 and s in CT:
+            for c in (CT[s].get('cosmos_evm_chains') or []):
+                prev=bychain[c].get(s)
+                if not prev or r['URGENCY']>prev['URGENCY']: bychain[c][s]=r
+        else:
+            keep.append(r)
+    chain_rows=[]
+    for c,members in bychain.items():
+        best=max(members.values(),key=lambda x:x['URGENCY'])
+        exposure=sum(m['live_value_usd'] for m in members.values())
+        chain_rows.append({**best,
+          "protocol_slug":"chain:"+c,"protocol_name":"%s (chain-level)" % c,
+          "is_chain_level":True,"chain_name":c,
+          "affected_protocols":sorted(members,key=lambda k:-members[k]['live_value_usd']),
+          "affected_count":len(members),"live_value_usd":exposure,
+          "defillama_url":"https://defillama.com/chain/"+c,
+          "why_clock_is_hot":[
+            "%s runs a Cosmos EVM stack covered by the ASA-2026-002 / GHSA-mjfq-3qr2-6g84 "
+            "precompile advisories; patch state NOT_DETERMINED. The defect is in the chain's "
+            "own stack, not in any one protocol deployed on it." % c,
+            "%d protocols above the floor sit on this chain, holding $%s between them. They are "
+            "the exposure, not %d separate candidates -- one chain fix closes all of them."
+            % (len(members),f"{exposure:,.0f}",len(members))],
+          "decisive_check":("Pin %s's running github.com/cosmos/evm version AND query live module "
+            "params for the enabled static precompile set. Do not infer either from release notes; "
+            "a vendored x/evm tree will not appear in a dependency scan." % c)})
+    return keep+chain_rows
+
+R=collapse_cosmos(R)
 fresh=[r for r in R if r['protocol_slug'] not in DELIVERED]
 held =[r for r in R if r['protocol_slug'] in DELIVERED and r['tier']<=2]
 FB=sorted(best_per_protocol(fresh),key=lambda x:(x['tier'],-x['URGENCY']))
@@ -47,8 +88,14 @@ def block(r,rank):
     cs={}
     L=[]
     L.append("### %d. %s — Tier %d — URGENCY %s\n" % (rank,r['protocol_name'],r['tier'],r['URGENCY']))
-    L.append("- **Protocol:** `%s` · %s · %s" % (r['protocol_slug'],r.get('category') or '?',
-             ", ".join((r.get('chains') or [])[:5])))
+    if r.get('is_chain_level'):
+        L.append("- **Chain-level candidate:** `%s` — the defect is in the chain's own stack. "
+                 "**%d protocols** above the floor are exposed; one chain fix closes all of them."
+                 % (r['chain_name'],r['affected_count']))
+        L.append("    - most exposed: %s" % ", ".join("`%s`" % x for x in r['affected_protocols'][:8]))
+    else:
+        L.append("- **Protocol:** `%s` · %s · %s" % (r['protocol_slug'],r.get('category') or '?',
+                 ", ".join((r.get('chains') or [])[:5])))
     L.append("- **DefiLlama:** %s" % r.get('defillama_url'))
     L.append("- **Live value, read at head %s (beside the score, never inside it):** $%s"
              % (READAT,f"{r['live_value_usd']:,.0f}"))
@@ -108,6 +155,8 @@ L=["# Urgency-first candidates — ranked by the clock, not by likelihood\n",
 "one. No dollar term appears anywhere in the 100 points — putting size back into the score would "
 "re-create the $3bn-tops-the-list failure.\n"
 "3. **Tiebreak on magnitude.** Among equals on the same code, prefer the fuller sibling.\n" % READAT,
+"Ordering is **tier first, then urgency** — a hotter tier outranks a higher score, so a Tier-1 row at "
+"40.75 sits above a Tier-2 row at 84.07 by design.\n",
 "### The one exception: the restore window\n",
 "A protocol restarted, refunded or whitehat-restored **without the fix in the deployed artifact** is "
 "holding real money again on the same open door, and the first hours after it resumes are the "
@@ -129,6 +178,11 @@ L=["# Urgency-first candidates — ranked by the clock, not by likelihood\n",
 "This list delivers **every fresh candidate in the hot tiers (1–4): %d protocols**, not a round number. "
 "Tier 5 — novel high-fit, where the clock has not started — is excluded by construction; it is the old "
 "likelihood-first list and it belongs below everything here.\n" % len(chosen),
+"**Tier 2 is collapsed to chain rows.** The Cosmos EVM precompile advisory is a defect in the "
+"*chain's* stack, not in each protocol deployed on it. Listing it per-protocol produced 110 rows for "
+"14 real findings — eightfold inflation, and it pointed the work at 37 DEX teams when the decisive "
+"check runs once per chain and the disclosure goes to the chain team. The protocols are named as "
+"exposure inside each chain row.\n",
 "**Where Tier 4 is:** it is the biggest hot tier in this run at **%d fresh protocols**, and under this "
 "framing it is the point. A Tier-4 row is an un-hit version sibling of a protocol that was exploited — "
 "the sibling supplies the technique, this deployment still holds the money. The previous list buried "
@@ -143,6 +197,24 @@ L.append("```\n")
 L.append("## Candidates\n")
 for i,r in enumerate(chosen,1): L.append(block(r,i))
 
+try: DEM=json.load(open(f'{B}/protocols/demoted_well_resourced.json'))
+except Exception: DEM=[]
+if DEM:
+    L.append("---\n")
+    L.append("## Demoted: well-resourced families\n")
+    L.append("**%d protocols** were removed from the hot tiers because the family they belong to holds "
+             "more than $100M across its deployments. A team at that scale retains security staff and "
+             "patches a public issue fast, so it is usually not the save — the edge is the small, "
+             "neglected, or forgotten deployment on the same unpatched version.\n" % len(DEM))
+    L.append("This is measured, not a name list: across hot-tier candidates the median family holds "
+             "**$5.8M** and the 90th percentile **$168M**, while the Aave family holds **$18.1bn**. "
+             "They are named here rather than silently dropped.\n")
+    L.append("| Protocol | Own live value | Family holds | Family |")
+    L.append("|---|---:|---:|---|")
+    for d in DEM[:25]:
+        L.append("| `%s` | $%s | $%s | %s |" % (d['slug'],f"{d['own_live_tvl']:,.0f}",
+                 f"{d['family_live_tvl']:,.0f}",d['family_parent']))
+    L.append("")
 if HB:
     L.append("---\n")
     L.append("## Withheld by the no-repetition ledger — but now classified Tier 1–2\n")

@@ -28,6 +28,13 @@ sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import hazard as HZ, urgency as URG
 B=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..')
 FLOOR=50_000; CEIL=30_000_000
+# A protocol whose FAMILY (its parentProtocol group) holds this much retains security
+# staff and will patch a public issue fast -- the spec's own point that a well-resourced
+# team is usually not your save. Measured rather than name-listed: across hot-tier
+# candidates the median family holds $5.8M and the 90th percentile $168M, while the Aave
+# family holds $18.1bn. $100M sits an order of magnitude above the typical candidate and
+# cleanly separates the watched codebases from the small deployments that are the edge.
+WELL_RESOURCED_FAMILY=100_000_000
 
 def main():
     U={u['slug']:u for u in json.load(open(f'{B}/protocols/defillama_universe.json'))}
@@ -42,8 +49,15 @@ def main():
     POP={fid:f['incident_count'] for fid,f in FAM.items()}
     RECENT={fid:f.get('most_recent_event') for fid,f in FAM.items()}
     victims=set(HZ.PRIOR_HACKS)
+    FAMTVL=collections.defaultdict(float)
+    for s_,u_ in U.items():
+        par=(u_.get('_parent') or '').strip()
+        if par: FAMTVL[par]+=HEAD.get(s_,0)
+    def family_tvl(sl):
+        par=((U.get(sl) or {}).get('_parent') or '').strip()
+        return FAMTVL.get(par,0.0),par
 
-    gate_log=collections.Counter()
+    gate_log=collections.Counter(); demoted=[]
     rows=[]
     for pair in D:
         if pair.get('killed'): continue
@@ -58,12 +72,28 @@ def main():
         if is_victim and vstate!='RESTORED':
             gate_log['EXCLUDED_VICTIM_NOT_IN_RESTORE_WINDOW']+=1; continue
 
+        # A sibling that was NEVER materially hit is weak evidence: a small incident on a
+        # giant does not prove an open door on its sibling. Only a sibling that was actually
+        # drained proves the technique emptied a vault.
         rel=REL.get(slug)
+        rel_material = bool(rel) and any(l.get('victim_state')=='DRAINED_OR_DEAD' for l in rel['links'])
         hot_dep = slug in CT or (POP.get(pair['family_id'],0)>=10 and
                    pair['family_id'] in ('TOKEN-DEFERRED-BURN-LP-RESERVE-DESYNC',
                                          'TOKEN-TRANSFER-INTENT-HEURISTIC-FORGEABLE'))
-        if live>CEIL and not (rel or hot_dep or vstate=='RESTORED'):
+        # Above the ceiling, "has a relative" is not explicit danger. Require either the
+        # restore window or a sibling PROVEN drained. Without this, aave-v2 at $110.9M
+        # re-entered the list on a sibling that was never materially hit.
+        if live>CEIL and not (rel_material or vstate=='RESTORED'):
             gate_log['EXCLUDED_ABOVE_BAND_NO_EXPLICIT_DANGER']+=1; continue
+        ftvl,fpar=family_tvl(slug)
+        if ftvl>WELL_RESOURCED_FAMILY and vstate!='RESTORED':
+            gate_log['DEMOTED_WELL_RESOURCED_FAMILY']+=1
+            demoted.append({"slug":slug,"family_parent":fpar,"family_live_tvl":ftvl,
+                            "own_live_tvl":live,"family_id":pair['family_id'],
+                            "reason":"family holds $%s across its deployments; a team at that scale "
+                                     "patches a public issue fast, so this is usually not the save"
+                                     % f"{ftvl:,.0f}"})
+            continue
 
         fid=pair['family_id']
         tier=5; rem=URG.NO_PUBLIC_MATCH; why=[]; decisive=None
@@ -119,7 +149,7 @@ def main():
                           "fabricate? Then check sync()/skim() reachability.")
 
         # ---------- T4: version sibling of a recent-window victim ----------
-        if tier>4 and rel:
+        if tier>4 and rel and rel_material:
             L=rel['links'][0]
             vh=sorted(L['victim_hacks'],key=lambda x:x.get('date') or '',reverse=True)
             tier=4; rem=URG.KNOWN_ISSUE_STATUS_UNKNOWN
@@ -159,10 +189,17 @@ def main():
     # RULE 3: magnitude is the TIEBREAK only -- among equals, prefer the fuller sibling
     rows.sort(key=lambda r:(r['tier'],-r['URGENCY'],-r['live_value_usd']))
     json.dump(rows,open(f'{B}/protocols/urgency_pairs.json','w'))
+    seen_d={}
+    for d in demoted: seen_d.setdefault(d['slug'],d)
+    json.dump(sorted(seen_d.values(),key=lambda x:-x['family_live_tvl']),
+              open(f'{B}/protocols/demoted_well_resourced.json','w'),indent=1)
     prot=collections.defaultdict(set)
     for r in rows: prot[r['tier']].add(r['protocol_slug'])
     print(json.dumps({"live_read_at":READAT,"pairs_after_gate":len(rows),
       "gate_exclusions":dict(gate_log),
+      "demoted_well_resourced_protocols":len(seen_d),
+      "demoted_examples":[(d['slug'],f"${d['own_live_tvl']:,.0f}",f"family ${d['family_live_tvl']:,.0f}")
+                          for d in sorted(seen_d.values(),key=lambda x:-x['family_live_tvl'])[:6]],
       "protocols_by_tier":{f"T{k}":len(v) for k,v in sorted(prot.items())},
       "restore_window_protocols":sorted({r['protocol_slug'] for r in rows if r['is_restored_victim']}),
       "top":[(r['protocol_slug'],f"T{r['tier']}",r['URGENCY'],f"${r['live_value_usd']:,.0f}",
