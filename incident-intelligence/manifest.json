@@ -1,6 +1,6 @@
 {
  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
- "generated_utc": "2026-08-25T00:37:50Z",
+ "generated_utc": "2026-08-27T09:20:01Z",
  "safety_attestation": {
   "production_transactions_submitted": 0,
   "production_transactions_constructed": 0,
@@ -189,8 +189,8 @@
   {
    "path": "commands.sh",
    "exists": true,
-   "bytes": 10763,
-   "sha256": "1a223325df257497cb464e1b0c7fd53d1668b775c8232fe1864f1f2fce4c5797",
+   "bytes": 11168,
+   "sha256": "0dbc3e349611a11d6ee56d496c066bd8b38b93951235e6bfa2355fbe39507ce2",
    "role": "reproduction",
    "supports_claim": "Every retrieval and transformation step in execution order"
   },
@@ -523,6 +523,30 @@
    "supports_claim": "Per-claim verification of INC-2026-08-18-MAY against the project's live public source, plus the THORChain upstream check"
   },
   {
+   "path": "results/candidates_by_urgency.md",
+   "exists": true,
+   "bytes": 163695,
+   "sha256": "4bca4441bfd847cff801dbeec01269a5b9c62e394290840208960dd76a601b77",
+   "role": "results",
+   "supports_claim": "Urgency-first candidate list: ranked by time-to-exploitation with remediation status as the primary driver, Tier 1-2 first, with CORE.md handoff lines"
+  },
+  {
+   "path": "protocols/urgency_pairs.json",
+   "exists": true,
+   "bytes": 36602248,
+   "sha256": "8e521c1f0b9af65ecf6136af4bd67d980cc0699a5df115ee2eed6091ae72ed0d",
+   "role": "scoring",
+   "supports_claim": "Per-pair tier assignment and URGENCY components (40 remediation gap / 20 recency+propagation / 25 reachable value / 15 precondition match)"
+  },
+  {
+   "path": "protocols/operator_leads.json",
+   "exists": true,
+   "bytes": 3899,
+   "sha256": "eb73919b33057ab600adc88d1b971444a87e0ecac0962592684b0d3f12d1d9e3",
+   "role": "incident evidence",
+   "supports_claim": "Operator-named leads resolved against this run, with window status and what each changes"
+  },
+  {
    "path": "protocols/cosmos_evm_triage.json",
    "exists": true,
    "bytes": 157501,
@@ -652,6 +676,8 @@
   "every candidate is one not handed over before": "protocols/delivered_ledger.json + results/candidates_all.csv#previously_delivered",
   "two in-window incidents the index missed": "incidents/all_raw.jsonl#INC-2026-08-20-MAN, #INC-2026-08-22-TCH (source: OPERATOR_SUPPLIED_THREAT_INTELLIGENCE_REPORT)",
   "Cosmos EVM exposure triaged without asserting patch state": "protocols/cosmos_evm_triage.json + results/cosmos_evm_exposure.md",
+  "candidates ranked by time-to-exploitation, not likelihood": "protocols/urgency_pairs.json + results/candidates_by_urgency.md",
+  "no remediation gap claimed without an artifact-level check": "protocols/urgency_pairs.json (all rows KNOWN_ISSUE_STATUS_UNKNOWN, 28 of 40)",
   "chain priority measured rather than assumed": "protocols/chain_hazard_measured.json (tools/nonevm_hazard.py)",
   "non-EVM coverage and its limit": "protocols/nonevm_cohort.json + results/nonevm_cohort.md + protocols/appchain_probe.json",
   "runtime families are not applied to runtimes that roll back": "tools/nonevm_cohort.py RUNTIME_FAMILIES + tools/matcher.py RUNTIME_ONLY",

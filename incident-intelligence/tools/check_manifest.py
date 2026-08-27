@@ -180,6 +180,39 @@ chk("delivery: the ledger is reconstructed from git history, not from run-to-run
     _led.get('generated_from','').startswith('git history') and len(_led.get('runs',[]))>=1,
     f"{len(_led.get('runs',[]))} previous deliveries found, {len(_LEDS)} protocols")
 
+# --- urgency-first triage gates ---
+_ur=json.load(open(f'{B}/protocols/urgency_pairs.json'))
+_urm=open(f'{B}/results/candidates_by_urgency.md').read()
+# The full 40-point remediation band requires proving the fix ABSENT in the deployed
+# artifact. No such per-protocol check ran, so no row may claim UNREMEDIATED_KNOWN.
+chk("urgency: no candidate claims a proven remediation gap without an artifact-level check",
+    not any(r['remediation']=='UNREMEDIATED_KNOWN' for r in _ur),
+    f"{sum(1 for r in _ur if r['remediation']=='KNOWN_ISSUE_STATUS_UNKNOWN')} rows at "
+    "KNOWN_ISSUE_STATUS_UNKNOWN (28 of 40); the decisive check is named per row")
+chk("urgency: every candidate names the single decisive confirm/kill check",
+    all(r.get('decisive_check') for r in _ur),
+    "a triage row without a decisive check is not actionable")
+_maxpts={1:40,2:20,3:25,4:15}
+chk("urgency: no scoring component exceeds its cap and unknowns score zero",
+    all(r['components']['remediation_gap']<=40 and r['components']['technique_recency_propagation']<=20
+        and r['components']['reachable_live_value']<=25 and r['components']['precondition_match']<=15
+        for r in _ur),
+    "40 remediation / 20 recency+propagation / 25 reachable value / 15 precondition")
+chk("urgency: evidence depth caps the score (metadata 20, adapter 45, deployment 60)",
+    all(r['URGENCY']<=r['evidence_cap'] for r in _ur),
+    f"{sum(1 for r in _ur if r['capped'])} rows capped by evidence depth")
+chk("urgency: value at risk is reported beside the score, never inside it",
+    'beside the score, not in it' in _urm and
+    all('tvl' in r and 'URGENCY' in r for r in _ur),
+    "a real finding on dust is a low-value save and must be visible as such")
+chk("urgency: previously delivered protocols that now classify hot are disclosed, not dropped",
+    'now classified Tier 1' in _urm,
+    "the ranking axis changed underneath them; withholding a Tier-1 item silently would be wrong")
+_ld=json.load(open(f'{B}/protocols/operator_leads.json'))
+chk("urgency: operator leads are resolved with their window status stated",
+    all(('in_window' in l and l.get('maps_to_families') and l.get('decisive_check')) for l in _ld['leads']),
+    f"{len(_ld['leads'])} leads; out-of-window leads contribute zero to window statistics")
+
 # --- Cosmos EVM triage gates: this is a criteria-based triage, never a target list ---
 _ct=json.load(open(f'{B}/protocols/cosmos_evm_triage.json'))
 chk("disclosure: the Cosmos EVM triage never asserts a patch state it cannot verify",

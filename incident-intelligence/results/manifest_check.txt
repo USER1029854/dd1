@@ -1,5 +1,5 @@
 [PASS] 18.6 every referenced artifact exists and is non-empty — missing/empty: []
-[PASS] 18.6 manifest maps every load-bearing claim — 33 claims mapped
+[PASS] 18.6 manifest maps every load-bearing claim — 35 claims mapped
 [PASS] 18.6 commands.sh replays retrieval and transformation
 [PASS] 18.1 crawling continued until the date boundary was proven — final page 12: in_window=0 older=20/20
 [PASS] 18.1 every in-window row retained and dispositioned — 111+24+72 vs 207
@@ -44,6 +44,13 @@
 [PASS] delivery: the written ranking matches the handover list, with no delivered protocol reintroduced — 53 write-ups, 0 previously delivered
 [PASS] delivery: withheld protocols are disclosed rather than silently dropped — candidates_all.csv carries previously_delivered + first_delivered_in; the ranking states the count
 [PASS] delivery: the ledger is reconstructed from git history, not from run-to-run memory — 9 previous deliveries found, 629 protocols
+[PASS] urgency: no candidate claims a proven remediation gap without an artifact-level check — 4037 rows at KNOWN_ISSUE_STATUS_UNKNOWN (28 of 40); the decisive check is named per row
+[PASS] urgency: every candidate names the single decisive confirm/kill check — a triage row without a decisive check is not actionable
+[PASS] urgency: no scoring component exceeds its cap and unknowns score zero — 40 remediation / 20 recency+propagation / 25 reachable value / 15 precondition
+[PASS] urgency: evidence depth caps the score (metadata 20, adapter 45, deployment 60) — 2245 rows capped by evidence depth
+[PASS] urgency: value at risk is reported beside the score, never inside it — a real finding on dust is a low-value save and must be visible as such
+[PASS] urgency: previously delivered protocols that now classify hot are disclosed, not dropped — the ranking axis changed underneath them; withholding a Tier-1 item silently would be wrong
+[PASS] urgency: operator leads are resolved with their window status stated — 2 leads; out-of-window leads contribute zero to window statistics
 [PASS] disclosure: the Cosmos EVM triage never asserts a patch state it cannot verify — 222 rows, all NOT_DETERMINED; patch state is unverifiable without active probing
 [PASS] disclosure: risk archetypes needing unreachable evidence are marked unassessable, not guessed — assessability: {'A_vendored_fork': 'NOT_ASSESSABLE_HERE', 'B_disabled_not_upgraded': 'NOT_ASSESSABLE_HERE', 'C_participation_only': 'ASSESSABLE', 'D_migrated_off_evmos': 'NOT_ASSESSABLE_HERE', 'E_governance_reachable': 'NOT_ASSESSABLE_HERE', 'F_non_ics20_precompiles': 'PARTIALLY_ASSESSABLE'}
 [PASS] disclosure: the exposure report states plainly that it is not a roster of unpatched networks — adopts the source report's reasoning that a public list is a target list
@@ -75,4 +82,4 @@
 [PASS] 18.6 audit_variables.txt: one valid protocol per line, no multiline entries — 53 lines
 [PASS] 18.6 no secrets in audit_variables.txt
 
-SUMMARY: 76 pass, 0 fail, 0 warn
+SUMMARY: 83 pass, 0 fail, 0 warn

@@ -168,6 +168,12 @@ python3 tools/build_ledger.py         # -> protocols/delivered_ledger.json
 python3 tools/write_results4.py --min-level=L4_GUARD_REVIEW
 #   -> results/candidates_by_{priority,likelihood,match}.md, candidates_all.csv,
 #      audit_variables.txt, families/near_miss_library.jsonl
+# ---- urgency-first triage: rank by the clock, not by likelihood in the abstract ----
+# Remediation status becomes the PRIMARY ranking driver (40 of 100), not a footnote.
+# The full 40 needs an L4 read proving the fix absent from the deployed artifact; this
+# run has not done that per-protocol, so rows cap at 28 and name the decisive check.
+python3 tools/tiers.py                # -> protocols/urgency_pairs.json (Tier 1-5 + URGENCY)
+python3 tools/write_urgency.py 70     # -> results/candidates_by_urgency.md + handoff lines
 python3 tools/write_summary4.py       # -> results/run_summary.md
 python3 tools/write_quality4.py       # -> quality_report.md
 
