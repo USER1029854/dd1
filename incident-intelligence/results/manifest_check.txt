@@ -44,11 +44,16 @@
 [PASS] delivery: the written ranking matches the handover list, with no delivered protocol reintroduced — 53 write-ups, 0 previously delivered
 [PASS] delivery: withheld protocols are disclosed rather than silently dropped — candidates_all.csv carries previously_delivered + first_delivered_in; the ranking states the count
 [PASS] delivery: the ledger is reconstructed from git history, not from run-to-run memory — 9 previous deliveries found, 629 protocols
-[PASS] urgency: no candidate claims a proven remediation gap without an artifact-level check — 4037 rows at KNOWN_ISSUE_STATUS_UNKNOWN (28 of 40); the decisive check is named per row
+[PASS] urgency: every candidate holds live value read at head, above the floor — 24979 pairs, all >= $50,000 read at 2026-08-27T09:59:26Z; historical TVL and past incident amounts are never used
+[PASS] urgency: a drained victim is never a candidate, however fresh its incident — 155 victims hold less than the floor and are excluded as evidence-only; leaks: none
+[PASS] urgency: restore-window victims are identified from a TVL series, not a snapshot — 6 in the restore window, each with the drop and the recovery measured
+[PASS] urgency: no dollar term appears anywhere in the score — components are remediation gap / recency+propagation / reachability / precondition match only; magnitude is the gate and the tiebreak, never a point
+[PASS] urgency: the un-hit relatives (Tier 4) are delivered, not crowded out by Tier 2 — delivered tier spread: {'1': 2, '2': 115, '4': 58}
+[PASS] urgency: no candidate claims a proven remediation gap without an artifact-level check — 2993 rows at KNOWN_ISSUE_STATUS_UNKNOWN (28 of 40); the decisive check is named per row
 [PASS] urgency: every candidate names the single decisive confirm/kill check — a triage row without a decisive check is not actionable
 [PASS] urgency: no scoring component exceeds its cap and unknowns score zero — 40 remediation / 20 recency+propagation / 25 reachable value / 15 precondition
-[PASS] urgency: evidence depth caps the score (metadata 20, adapter 45, deployment 60) — 2245 rows capped by evidence depth
-[PASS] urgency: value at risk is reported beside the score, never inside it — a real finding on dust is a low-value save and must be visible as such
+[PASS] urgency: evidence depth caps the score (metadata 20, adapter 45, deployment 60) — 1865 rows capped by evidence depth
+[PASS] urgency: value at risk is reported beside the score, never inside it — live value read at head sits beside every score; a real finding on dust is a low-value save and must be visible as such
 [PASS] urgency: previously delivered protocols that now classify hot are disclosed, not dropped — the ranking axis changed underneath them; withholding a Tier-1 item silently would be wrong
 [PASS] urgency: operator leads are resolved with their window status stated — 2 leads; out-of-window leads contribute zero to window statistics
 [PASS] disclosure: the Cosmos EVM triage never asserts a patch state it cannot verify — 222 rows, all NOT_DETERMINED; patch state is unverifiable without active probing
@@ -82,4 +87,4 @@
 [PASS] 18.6 audit_variables.txt: one valid protocol per line, no multiline entries — 53 lines
 [PASS] 18.6 no secrets in audit_variables.txt
 
-SUMMARY: 83 pass, 0 fail, 0 warn
+SUMMARY: 88 pass, 0 fail, 0 warn

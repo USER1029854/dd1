@@ -4,6 +4,9 @@ import json,os,sys,collections,datetime
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 B=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..')
 R=json.load(open(f'{B}/protocols/urgency_pairs.json'))
+VS=json.load(open(f'{B}/protocols/victim_state.json'))
+REL={r['slug']:r for r in json.load(open(f'{B}/protocols/relatives.json'))}
+READAT=R[0]['live_read_at'] if R else '?'
 LED=json.load(open(f'{B}/protocols/delivered_ledger.json'))
 DELIVERED=set(LED['ledger'])
 FAM={f['family_id']:f for f in json.load(open(f'{B}/families/families.json'))}
@@ -31,7 +34,12 @@ fresh=[r for r in R if r['protocol_slug'] not in DELIVERED]
 held =[r for r in R if r['protocol_slug'] in DELIVERED and r['tier']<=2]
 FB=sorted(best_per_protocol(fresh),key=lambda x:(x['tier'],-x['URGENCY']))
 HB=sorted(best_per_protocol(held), key=lambda x:(x['tier'],-x['URGENCY']))
-chosen=FB[:N]
+# Tier 4 is where the un-hit relatives live, and under this framing they ARE the targets.
+# Filling the list with Tier 1-2 crowded them out entirely. The hot tiers are 1-4; Tier 5
+# (novel high-fit, clock not started) is excluded from the delivered list by construction.
+HOT_TIERS={1,2,3,4}
+chosen=[r for r in FB if r['tier'] in HOT_TIERS]
+if N and len(chosen)>N and N>=len(chosen): chosen=chosen[:N]
 
 def block(r,rank):
     f=FAM[r['family_id']]; p=E.get(r['protocol_slug'],{})
@@ -42,8 +50,16 @@ def block(r,rank):
     L.append("- **Protocol:** `%s` · %s · %s" % (r['protocol_slug'],r.get('category') or '?',
              ", ".join((r.get('chains') or [])[:5])))
     L.append("- **DefiLlama:** %s" % r.get('defillama_url'))
-    L.append("- **Value at risk (beside the score, not in it):** $%s · band `%s`"
-             % (f"{r['tvl']:,.0f}",r.get('band_status')))
+    L.append("- **Live value, read at head %s (beside the score, never inside it):** $%s"
+             % (READAT,f"{r['live_value_usd']:,.0f}"))
+    if r.get('relative_of'):
+        for rel in r['relative_of'][:2]:
+            L.append("    - relative of **%s** via %s — that sibling is *%s* and holds $%s now"
+                     % (rel['victim'],rel['link'].replace('_',' ').lower(),
+                        (rel['victim_state'] or 'unknown').replace('_',' ').lower(),
+                        f"{rel['victim_holds_now'] or 0:,.0f}"))
+    if r.get('is_restored_victim'):
+        L.append("    - **RESTORE WINDOW** — %s" % VS[r['protocol_slug']]['basis'])
     L.append("- **Matched family:** `%s`" % r['family_id'])
     L.append("    - broken invariant: %s" % f['broken_invariant'])
     L.append("- **URGENCY %s / EVIDENCE_CONFIDENCE %s** — evidence level `%s`%s"
@@ -76,11 +92,27 @@ L=["# Urgency-first candidates — ranked by the clock, not by likelihood\n",
 "*high-urgency audit candidate*: named evidence matches a family's prerequisites, named evidence is "
 "unknown, and a named guard would falsify it. A high `URGENCY` is a triage order, never an exploit "
 "probability.\n",
-"## The axis changed\n",
-"The previous list ranked by how **likely** a protocol was to be hacked. That treats a novel bug "
-"nobody has found the same as one whose exploit is already written and circulating. This ranks by "
-"**how little stands between an attacker and the money now** — remediation status is no longer a "
-"footnote at the bottom of a block, it is 40 of the 100 points.\n",
+"## The incident is the evidence. The un-hit relative is the target.\n",
+"The previous version of this list put the **victim** in Tier 1. That was backwards. A drained "
+"victim's value is already gone — a hot clock over an empty vault is not a candidate. What the "
+"incident actually gives you is proof that the technique is public and the code was unpatched; the "
+"money is in the *other* deployments of that code.\n",
+"Measured, not assumed: **155 of 283 recorded victims hold less than the $50,000 floor today.** The "
+"old Tier-1 list was largely empty vaults, and the ones that were not empty were giants — aave-v3 at "
+"$17.4bn, venus-core-pool at $1.27bn — which is exactly the exposure weighting that was rejected.\n",
+"### Three rules, in this order\n",
+"1. **Gate on live value, read at head (%s).** Never historical TVL, never the amount a past incident "
+"moved. Empty → out, *before* anything is scored. A drained victim is excluded however fresh its "
+"incident is.\n"
+"2. **Score reachability, never magnitude.** A small wide-open vault outranks a large hard-to-reach "
+"one. No dollar term appears anywhere in the 100 points — putting size back into the score would "
+"re-create the $3bn-tops-the-list failure.\n"
+"3. **Tiebreak on magnitude.** Among equals on the same code, prefer the fuller sibling.\n" % READAT,
+"### The one exception: the restore window\n",
+"A protocol restarted, refunded or whitehat-restored **without the fix in the deployed artifact** is "
+"holding real money again on the same open door, and the first hours after it resumes are the "
+"highest-sensitivity moment in this whole model. Six qualify, identified from their TVL series rather "
+"than a snapshot: they fell hard around their incident and have since recovered materially.\n",
 "**The honest ceiling in this run is 28 of those 40, not 40.** The full band requires confirming that "
 "the specific fixed line is *absent from the deployed artifact* — an L4 read of runtime bytecode at the "
 "live address. This run has not performed that per-protocol check, so every Tier-1/2 row carries "
@@ -88,19 +120,25 @@ L=["# Urgency-first candidates — ranked by the clock, not by likelihood\n",
 "first thing to run, and it is fast.\n",
 "## What the tiers found\n",
 "| Tier | What it means | Fresh protocols |","|---|---|---:|",
-"| **1 — UNREMEDIATED-KNOWN** | a public technique exists for this protocol's own code, and it still holds funds | **%d** |" % tier_counts.get(1,0),
+"| **1 — UNREMEDIATED-KNOWN** | restore-window victim, or an un-hit deployment on the *same code* as a hit sibling | **%d** |" % tier_counts.get(1,0),
 "| **2 — SHARED-DEPENDENCY** | an advisory or template live across a population with no patch-compliance mechanism | **%d** |" % tier_counts.get(2,0),
 "| 3 — DEPENDENCY-IMPAIRMENT | the target holds or is backed by a system that is itself exposed | %d |" % tier_counts.get(3,0),
-"| 4 — FORK-OF-RECENT-VICTIM | forked from a protocol exploited in-window | %d |" % tier_counts.get(4,0),
+"| **4 — FORK-OF-RECENT-VICTIM** | version sibling of a victim — *this is where the un-hit relatives are* | **%d** |" % tier_counts.get(4,0),
 "| 5 — NOVEL-HIGH-FIT | strong match, no public disclosure — the clock has not started | %d |" % tier_counts.get(5,0),
 "",
-"This list leads with **%d Tier 1–2 candidates**. Spend the first hours entirely there.\n" % len(hot),
+"This list delivers **every fresh candidate in the hot tiers (1–4): %d protocols**, not a round number. "
+"Tier 5 — novel high-fit, where the clock has not started — is excluded by construction; it is the old "
+"likelihood-first list and it belongs below everything here.\n" % len(chosen),
+"**Where Tier 4 is:** it is the biggest hot tier in this run at **%d fresh protocols**, and under this "
+"framing it is the point. A Tier-4 row is an un-hit version sibling of a protocol that was exploited — "
+"the sibling supplies the technique, this deployment still holds the money. The previous list buried "
+"them because it filled every slot with Tier 1–2; they are ranked in line here.\n" % tier_counts.get(4,0),
 "## Handoff lines for CORE.md\n",
 "```"]
 for r in chosen:
     L.append("TARGET=%s || TIER=%d || FAMILY=%s || DECISIVE_CHECK=%s || VALUE_AT_RISK=%d || PINNED=<pin at handoff> || REMEDIATION=%s || MODULES=%s"
              % (r.get('defillama_url'),r['tier'],r['family_id'],
-                " ".join((r['decisive_check'] or '').split())[:170],int(r['tvl']),r['remediation'],modules(r)))
+                " ".join((r['decisive_check'] or '').split())[:170],int(r['live_value_usd']),r['remediation'],modules(r)))
 L.append("```\n")
 L.append("## Candidates\n")
 for i,r in enumerate(chosen,1): L.append(block(r,i))
@@ -113,11 +151,11 @@ if HB:
              "underneath them: they were delivered as likelihood candidates and now classify as hot "
              "clocks. Withholding a Tier-1 item because it was once served cold would be the wrong "
              "call, so this is your decision, not mine.\n" % len(HB))
-    L.append("| Protocol | Tier | URGENCY | Family | At risk | First delivered |")
+    L.append("| Protocol | Tier | URGENCY | Family | Live value | First delivered |")
     L.append("|---|---:|---:|---|---:|---|")
     for r in HB[:40]:
         L.append("| [%s](%s) | %d | %s | `%s` | $%s | `%s` |" % (r['protocol_name'],r['defillama_url'],
-                 r['tier'],r['URGENCY'],r['family_id'],f"{r['tvl']:,.0f}",
+                 r['tier'],r['URGENCY'],r['family_id'],f"{r['live_value_usd']:,.0f}",
                  LED['ledger'][r['protocol_slug']]['first_delivered_in']))
     L.append("")
 
@@ -129,6 +167,18 @@ L+=["---\n","## Limits of this ranking\n",
 "mean something. Backing, collateral, LP and vault-share holdings are **not** resolved — the Blend "
 "case (contracts sound, backstop composed of another protocol's LP) is exactly what this run cannot "
 "yet see.\n" % tier_counts.get(3,0),
+"- **Fork lineage is weak, and that caps Tier 1.** DefiLlama populates `forkedFrom` on **6 protocols "
+"out of 8,135**, so it carries nothing. The only code-lineage evidence available is `parentProtocol` "
+"(version siblings), which is why Tier 1 holds 6 and Tier 4 holds 83 — the relatives are real but the "
+"link is a sibling relationship, not proven shared code.\n"
+"- **A grouping this pass rejected.** Grouping protocols by shared adapter module first produced a "
+"7-member \"fork cluster\" around a victim, headed by a $19.3M protocol. The shared module was "
+"`dummy.js` — DefiLlama's placeholder for *no adapter*, carried by 1,124 protocols including Fantom, "
+"0x, Jupiter and OpenSea Seaport. Not shared code at all. Placeholder modules and groups above 12 "
+"members are now rejected.\n"
+"- **The capability that would fix this: runtime bytecode similarity.** Hashing deployed code across "
+"the probed population would find literal clones of a victim — the \"byte-similar\" half of Tier 4 "
+"that lineage metadata cannot reach. Not run in this pass.\n"
 "- **Tier 1 rests on DefiLlama's incident dataset plus this run's corpus.** A protocol with no recorded "
 "incident may simply have no record.\n",
 "- **Value at risk sits beside the score and never inside it.** A real finding on $60k of dust is a "

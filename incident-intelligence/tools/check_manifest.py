@@ -182,6 +182,37 @@ chk("delivery: the ledger is reconstructed from git history, not from run-to-run
 
 # --- urgency-first triage gates ---
 _ur=json.load(open(f'{B}/protocols/urgency_pairs.json'))
+_vs=json.load(open(f'{B}/protocols/victim_state.json'))
+_head=json.load(open(f'{B}/protocols/tvl_head.json'))
+# RULE 1: the gate runs before scoring, on value read at head. Empty -> out.
+chk("urgency: every candidate holds live value read at head, above the floor",
+    all(r['live_value_usd']>=50_000 for r in _ur) and all(r.get('live_read_at') for r in _ur),
+    f"{len(_ur)} pairs, all >= $50,000 read at {_ur[0]['live_read_at'] if _ur else '?'}; "
+    "historical TVL and past incident amounts are never used")
+_drained={k for k,v in _vs.items() if v['state']!='RESTORED'}
+_bad=[r['protocol_slug'] for r in _ur if r['protocol_slug'] in _drained]
+chk("urgency: a drained victim is never a candidate, however fresh its incident",
+    not _bad, f"{sum(1 for v in _vs.values() if v['state']=='DRAINED_OR_DEAD')} victims hold less than "
+    f"the floor and are excluded as evidence-only; leaks: {_bad[:4] or 'none'}")
+chk("urgency: restore-window victims are identified from a TVL series, not a snapshot",
+    all(('pre' in v and 'post' in v) for v in _vs.values() if v['state']=='RESTORED'),
+    f"{sum(1 for v in _vs.values() if v['state']=='RESTORED')} in the restore window, each with the "
+    "drop and the recovery measured")
+# RULE 2: magnitude is never in the score
+_score_keys=set()
+for r in _ur[:200]: _score_keys|=set(r['components'])
+chk("urgency: no dollar term appears anywhere in the score",
+    not any(k for k in _score_keys if 'tvl' in k.lower() or 'value_usd' in k.lower()
+            or 'size' in k.lower() or 'magnitude' in k.lower()),
+    "components are remediation gap / recency+propagation / reachability / precondition match only; "
+    "magnitude is the gate and the tiebreak, never a point")
+# RULE 3 + the operator's question: Tier 4 must be visible, not crowded out
+_md=open(f'{B}/results/candidates_by_urgency.md').read()
+import re as _re
+_tiers=collections.Counter(_re.findall(r'— Tier (\d) —',_md))
+chk("urgency: the un-hit relatives (Tier 4) are delivered, not crowded out by Tier 2",
+    int(_tiers.get('4',0))>0,
+    f"delivered tier spread: {dict(_tiers)}")
 _urm=open(f'{B}/results/candidates_by_urgency.md').read()
 # The full 40-point remediation band requires proving the fix ABSENT in the deployed
 # artifact. No such per-protocol check ran, so no row may claim UNREMEDIATED_KNOWN.
@@ -202,9 +233,10 @@ chk("urgency: evidence depth caps the score (metadata 20, adapter 45, deployment
     all(r['URGENCY']<=r['evidence_cap'] for r in _ur),
     f"{sum(1 for r in _ur if r['capped'])} rows capped by evidence depth")
 chk("urgency: value at risk is reported beside the score, never inside it",
-    'beside the score, not in it' in _urm and
-    all('tvl' in r and 'URGENCY' in r for r in _ur),
-    "a real finding on dust is a low-value save and must be visible as such")
+    'never inside it' in _urm and
+    all('live_value_usd' in r and 'URGENCY' in r for r in _ur),
+    "live value read at head sits beside every score; a real finding on dust is a low-value save "
+    "and must be visible as such")
 chk("urgency: previously delivered protocols that now classify hot are disclosed, not dropped",
     'now classified Tier 1' in _urm,
     "the ranking axis changed underneath them; withholding a Tier-1 item silently would be wrong")

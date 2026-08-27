@@ -172,8 +172,15 @@ python3 tools/write_results4.py --min-level=L4_GUARD_REVIEW
 # Remediation status becomes the PRIMARY ranking driver (40 of 100), not a footnote.
 # The full 40 needs an L4 read proving the fix absent from the deployed artifact; this
 # run has not done that per-protocol, so rows cap at 28 and name the decisive check.
-python3 tools/tiers.py                # -> protocols/urgency_pairs.json (Tier 1-5 + URGENCY)
-python3 tools/write_urgency.py 70     # -> results/candidates_by_urgency.md + handoff lines
+# The incident is EVIDENCE; the un-hit relative is the TARGET. A drained victim's value is
+# gone, so it is excluded however fresh its incident -- 155 of 283 recorded victims hold
+# less than the floor today. Gate on live value read at head BEFORE scoring; score
+# reachability, never magnitude; tiebreak on magnitude only.
+curl -sS -m 120 -o sources/defillama/protocols_head.json "https://api.llama.fi/protocols"
+python3 tools/victim_state.py         # -> protocols/victim_state.json (drained / restored / never hit)
+python3 tools/relatives.py            # -> protocols/relatives.json (the un-hit siblings)
+python3 tools/tiers2.py               # -> protocols/urgency_pairs.json (gate, then tiers, then score)
+python3 tools/write_urgency.py 0      # -> results/candidates_by_urgency.md (all hot tiers 1-4)
 python3 tools/write_summary4.py       # -> results/run_summary.md
 python3 tools/write_quality4.py       # -> quality_report.md
 

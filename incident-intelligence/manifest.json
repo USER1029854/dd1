@@ -1,6 +1,6 @@
 {
  "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
- "generated_utc": "2026-08-27T09:20:01Z",
+ "generated_utc": "2026-08-27T10:11:50Z",
  "safety_attestation": {
   "production_transactions_submitted": 0,
   "production_transactions_constructed": 0,
@@ -189,8 +189,8 @@
   {
    "path": "commands.sh",
    "exists": true,
-   "bytes": 11168,
-   "sha256": "0dbc3e349611a11d6ee56d496c066bd8b38b93951235e6bfa2355fbe39507ce2",
+   "bytes": 11697,
+   "sha256": "eeb15bff8d637155c3895afd7bb0a7e6f897da451aef982f712ef02066bfd263",
    "role": "reproduction",
    "supports_claim": "Every retrieval and transformation step in execution order"
   },
@@ -525,16 +525,40 @@
   {
    "path": "results/candidates_by_urgency.md",
    "exists": true,
-   "bytes": 163695,
-   "sha256": "4bca4441bfd847cff801dbeec01269a5b9c62e394290840208960dd76a601b77",
+   "bytes": 400130,
+   "sha256": "80bfaf80a71535c330e8dcf9edcec5c69f8842d8289100b7f0002e95798e9d72",
    "role": "results",
    "supports_claim": "Urgency-first candidate list: ranked by time-to-exploitation with remediation status as the primary driver, Tier 1-2 first, with CORE.md handoff lines"
   },
   {
+   "path": "protocols/victim_state.json",
+   "exists": true,
+   "bytes": 56850,
+   "sha256": "85b28de0a644a73cf19edf87b8aacd6a567d68efee74100f5ffc0a9f65245e37",
+   "role": "scoring",
+   "supports_claim": "Each recorded victim classified from its TVL series as drained, restored (restore window), or never materially hit"
+  },
+  {
+   "path": "protocols/relatives.json",
+   "exists": true,
+   "bytes": 131915,
+   "sha256": "11b14fa767fb4094db0ad4a93d538816c1d1ed436e961a8c97dd0928d407eed6",
+   "role": "scoring",
+   "supports_claim": "Un-hit relatives of victims -- the actual targets -- with the lineage link and the sibling's current holdings"
+  },
+  {
+   "path": "protocols/tvl_head.json",
+   "exists": true,
+   "bytes": 239398,
+   "sha256": "aa25bb84c519e8e18d12f6438a04c2b55f29bc43baa8a0282434dfb9ca76b718",
+   "role": "live state",
+   "supports_claim": "Current TVL for every protocol, re-read at head; the basis of the hard live-value gate"
+  },
+  {
    "path": "protocols/urgency_pairs.json",
    "exists": true,
-   "bytes": 36602248,
-   "sha256": "8e521c1f0b9af65ecf6136af4bd67d980cc0699a5df115ee2eed6091ae72ed0d",
+   "bytes": 34744854,
+   "sha256": "987bd3e77118e8499e0253905b0037cc40e082dcb342c017052a572e7bc6d80a",
    "role": "scoring",
    "supports_claim": "Per-pair tier assignment and URGENCY components (40 remediation gap / 20 recency+propagation / 25 reachable value / 15 precondition match)"
   },
