@@ -1,0 +1,651 @@
+__NAME__:NewBeltView
+pragma solidity 0.6.12;
+pragma experimental ABIEncoderV2;
+
+interface IMasterBelt {
+    function userInfo(uint, address) external view returns (uint, uint);
+    function poolLength() external view returns (uint);
+    function poolInfo(uint) external view returns (address, uint, uint, uint, address);
+    function pendingBELT(uint256 _pid, address _user) external view returns (uint256);
+}
+
+interface IBeltPool {
+    function sharesTotal() external view returns (uint);
+    function wantLockedTotal() external view returns (uint);
+}
+
+interface IBEP20 {
+    function name() external view returns (string memory);
+    function symbol() external view returns (string memory);
+    function decimals() external view returns (uint256);
+    function balanceOf(address) external view returns (uint);
+    function approve(address spender, uint256 amount) external returns (bool);
+    function allowance(address owner, address spender) external view returns (uint);
+    function totalSupply() external view returns (uint256);
+}
+
+interface IStrategyToken {
+    function balanceOf(address) external view returns (uint);
+    function token() external view returns (address);
+    function symbol() external view returns (string memory);
+    function isWbnb() external view returns (bool);
+    function strategy() external view returns (address);
+    function strategies(uint256 idx) external view returns (address);
+    function depositActiveCount() external view returns (uint256);
+    function withdrawActiveCount() external view returns (uint256);
+    function strategyCount() external view returns (uint256);
+    function ratios(address _strategy) external view returns (uint256);
+    function depositActive(address _strategy) external view returns (bool);
+    function withdrawActive(address _strategy) external view returns (bool);
+    function ratioTotal() external view returns (uint256);
+    function balanceStrategy() external view returns (uint256);
+    function getBalanceOfOneStrategy(address strategyAddress) external view returns (uint256);
+    function getPricePerFullShare() external view returns (uint);
+    function calcPoolValueInToken() external view returns (uint256);
+    function totalSupply() external view returns (uint256);
+    function lockUpPeriod() external view returns (uint);
+    function userDepositTime(address user) external view returns (uint);
+}
+
+interface IDepositor {
+    function coins(int128 arg0) external view returns (address);
+    function underlying_coins(int128 arg0) external view returns (address);
+    function beltLP() external view returns (address);
+    function token() external view returns (address);
+    function add_liquidity(uint256[2] memory uamounts, uint256 minMint) external;
+}
+
+interface ISwap {
+    function fee() external view returns (uint256);
+    function buyback_fee() external view returns (uint256);
+    function coins(int128 i) external view returns (address);
+    function balances(int128 i) external view returns (uint256);
+    function get_virtual_price() external view returns (uint256);
+    function A() external view returns (uint256);
+}
+
+interface IAddressBook {
+    function masterBelt() external view returns (address);
+    
+    function swapView() external view returns (address);
+    function vaultView() external view returns (address);
+    function stakingView() external view returns (address);
+    function sBELT() external view returns (address);
+    
+    function getBeltTokens() external view returns (address[] memory);
+    function getDepositors() external view returns (address[] memory);
+    function depositorInfo(address depositor) external view returns (uint);
+}
+
+// "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol";
+abstract contract Context {
+    function _msgSender() internal view virtual returns (address payable) {
+        return msg.sender;
+    }
+
+    function _msgData() internal view virtual returns (bytes memory) {
+        this;
+        return msg.data;
+    }
+}
+
+abstract contract Ownable is Context {
+    address private _owner;
+
+    event OwnershipTransferred(
+        address indexed previousOwner,
+        address indexed newOwner
+    );
+
+    constructor() internal {
+        address msgSender = _msgSender();
+        _owner = msgSender;
+        emit OwnershipTransferred(address(0), msgSender);
+    }
+
+    function owner() public view returns (address) {
+        return _owner;
+    }
+
+    modifier onlyOwner() {
+        require(_owner == _msgSender(), "Ownable: caller is not the owner");
+        _;
+    }
+
+    function renounceOwnership() public virtual onlyOwner {
+        emit OwnershipTransferred(_owner, address(0));
+        _owner = address(0);
+    }
+
+    function transferOwnership(address newOwner) public virtual onlyOwner {
+        require(
+            newOwner != address(0),
+            "Ownable: new owner is the zero address"
+        );
+        emit OwnershipTransferred(_owner, newOwner);
+        _owner = newOwner;
+    }
+}
+
+/**
+ * @dev Wrappers over Solidity's arithmetic operations with added overflow
+ * checks.
+ *
+ * Arithmetic operations in Solidity wrap on overflow. This can easily result
+ * in bugs, because programmers usually assume that an overflow raises an
+ * error, which is the standard behavior in high level programming languages.
+ * `SafeMath` restores this intuition by reverting the transaction when an
+ * operation overflows.
+ *
+ * Using this library instead of the unchecked operations eliminates an entire
+ * class of bugs, so it's recommended to use it always.
+ */
+library SafeMath {
+    /**
+     * @dev Returns the addition of two unsigned integers, reverting on
+     * overflow.
+     *
+     * Counterpart to Solidity's `+` operator.
+     *
+     * Requirements:
+     * - Addition cannot overflow.
+     */
+    function add(uint256 a, uint256 b) internal pure returns (uint256) {
+        uint256 c = a + b;
+        require(c >= a, "SafeMath: addition overflow");
+
+        return c;
+    }
+
+    /**
+     * @dev Returns the subtraction of two unsigned integers, reverting on
+     * overflow (when the result is negative).
+     *
+     * Counterpart to Solidity's `-` operator.
+     *
+     * Requirements:
+     * - Subtraction cannot overflow.
+     */
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+        return sub(a, b, "SafeMath: subtraction overflow");
+    }
+
+    /**
+     * @dev Returns the subtraction of two unsigned integers, reverting with custom message on
+     * overflow (when the result is negative).
+     *
+     * Counterpart to Solidity's `-` operator.
+     *
+     * Requirements:
+     * - Subtraction cannot overflow.
+     *
+     * _Available since v2.4.0._
+     */
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+
+        return c;
+    }
+
+    /**
+     * @dev Returns the multiplication of two unsigned integers, reverting on
+     * overflow.
+     *
+     * Counterpart to Solidity's `*` operator.
+     *
+     * Requirements:
+     * - Multiplication cannot overflow.
+     */
+    function mul(uint256 a, uint256 b) internal pure returns (uint256) {
+        // Gas optimization: this is cheaper than requiring 'a' not being zero, but the
+        // benefit is lost if 'b' is also tested.
+        // See: https://github.com/OpenZeppelin/openzeppelin-contracts/pull/522
+        if (a == 0) {
+            return 0;
+        }
+
+        uint256 c = a * b;
+        require(c / a == b, "SafeMath: multiplication overflow");
+
+        return c;
+    }
+
+    /**
+     * @dev Returns the integer division of two unsigned integers. Reverts on
+     * division by zero. The result is rounded towards zero.
+     *
+     * Counterpart to Solidity's `/` operator. Note: this function uses a
+     * `revert` opcode (which leaves remaining gas untouched) while Solidity
+     * uses an invalid opcode to revert (consuming all remaining gas).
+     *
+     * Requirements:
+     * - The divisor cannot be zero.
+     */
+    function div(uint256 a, uint256 b) internal pure returns (uint256) {
+        return div(a, b, "SafeMath: division by zero");
+    }
+
+    /**
+     * @dev Returns the integer division of two unsigned integers. Reverts with custom message on
+     * division by zero. The result is rounded towards zero.
+     *
+     * Counterpart to Solidity's `/` operator. Note: this function uses a
+     * `revert` opcode (which leaves remaining gas untouched) while Solidity
+     * uses an invalid opcode to revert (consuming all remaining gas).
+     *
+     * Requirements:
+     * - The divisor cannot be zero.
+     *
+     * _Available since v2.4.0._
+     */
+    function div(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        // Solidity only automatically asserts when dividing by 0
+        require(b > 0, errorMessage);
+        uint256 c = a / b;
+        // assert(a == b * c + a % b); // There is no case in which this doesn't hold
+
+        return c;
+    }
+
+    /**
+     * @dev Returns the remainder of dividing two unsigned integers. (unsigned integer modulo),
+     * Reverts when dividing by zero.
+     *
+     * Counterpart to Solidity's `%` operator. This function uses a `revert`
+     * opcode (which leaves remaining gas untouched) while Solidity uses an
+     * invalid opcode to revert (consuming all remaining gas).
+     *
+     * Requirements:
+     * - The divisor cannot be zero.
+     */
+    function mod(uint256 a, uint256 b) internal pure returns (uint256) {
+        return mod(a, b, "SafeMath: modulo by zero");
+    }
+
+    /**
+     * @dev Returns the remainder of dividing two unsigned integers. (unsigned integer modulo),
+     * Reverts with custom message when dividing by zero.
+     *
+     * Counterpart to Solidity's `%` operator. This function uses a `revert`
+     * opcode (which leaves remaining gas untouched) while Solidity uses an
+     * invalid opcode to revert (consuming all remaining gas).
+     *
+     * Requirements:
+     * - The divisor cannot be zero.
+     *
+     * _Available since v2.4.0._
+     */
+    function mod(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b != 0, errorMessage);
+        return a % b;
+    }
+}
+
+struct TokenPrice {
+    address token;
+    string symbol;
+    uint256 price;
+}
+
+struct SwapInfo {
+    address lpToken;
+    address depositor;
+    uint256 lpTotalSupply;
+    uint256 virtualPrice;
+    uint256 A;
+    uint256 buyback_fee;
+    uint256 fee;
+    address[] coins;
+    uint[] decimals;
+    uint256[] totalSupplies;
+    uint256[] volumes;
+    uint256[] reserves;
+}
+
+struct PoolInfo {
+    address vault;
+    address token;
+    uint256 pid;
+    uint256 totalLocked;
+}
+
+struct VaultInfo {
+    address token;
+    address beltToken;
+    bool isWbnb;
+    
+    uint256 strategyCount;
+    uint256 totalLockedWant;
+    uint256 beltTokenTotalSupply;
+    
+    address[] minters;        
+    address[] strategies;
+    uint256[] ratios;
+    uint256[] strategyBalances;
+    bool[] isDepositActive;
+    bool[] isWithdrawActive;
+    
+    uint256 tokenDecimal;
+    uint256 beltTokenDecimal;
+}
+
+struct StakingInfo {
+    address token;
+    address beltToken;
+        
+    uint256 totalLockedWant;
+        
+    uint256 tokenDecimal;
+    uint256 beltTokenDecimal;
+
+    uint256 beltTokenTotalSupply;
+        
+    uint256 lockUpPeriod;
+    // uint256 depositTime;    
+        
+    uint256 pricePerFullShare;
+}
+
+struct StakingUserInfo {
+    address token;
+    address beltToken;
+    uint tokenBalance;
+    uint beltTokenBalance;
+    uint allowanceToMinter;
+    uint depositTime;
+}
+
+struct PoolUserInfo {
+    uint256 pid;
+    uint256 allowance;
+    uint256 deposit;
+    uint256 balance;
+    uint256 reward;
+}
+
+struct SwapUserInfo {
+    address stableSwap;
+    uint256 allowanceToDepositor;
+    uint256 allowanceToMasterBELT;
+    uint256 lpTokenBalance;
+    uint256[] allowancesToDepositor;
+    uint256[] allowancesToSwap;
+    uint256[] balances;
+}
+
+struct VaultUserInfo {
+    address token;
+    address beltToken;
+    uint tokenBalance;
+    uint beltTokenBalance;
+    uint allowanceToMinter;
+}
+
+struct UserInfo {
+    // staking
+    StakingUserInfo staking;
+    
+    // pool
+    PoolUserInfo[] poolStat;
+        
+    // swap
+    SwapUserInfo[] swapStat;
+    
+    // vaults
+    VaultUserInfo[] vaultStat;
+}
+    
+contract NewBeltView is Ownable {
+    
+    using SafeMath for uint;
+    
+    address public addressBook;
+    
+    constructor(address _addressBook) public {
+        addressBook = _addressBook;
+    }
+    
+    function _getUserStaking(address user) internal view returns (StakingUserInfo memory info) {
+        IStrategyToken sBELT = IStrategyToken(IAddressBook(addressBook).sBELT());
+        
+        if (address(sBELT) == address(0) || user == address(0)) {
+            return StakingUserInfo(address(0), address(0), 0, 0, 0, 0);
+        }
+        
+        IBEP20 belt = IBEP20(sBELT.token());
+            
+        info = StakingUserInfo(
+            address(belt),
+            address(sBELT),
+            belt.balanceOf(user),
+            sBELT.balanceOf(user),
+            belt.allowance(user, address(sBELT)),
+            sBELT.userDepositTime(user)
+        );
+    }
+    
+    function _getUserPools(address user) internal view returns (PoolUserInfo[] memory pools) {
+        IMasterBelt masterBELT = IMasterBelt(IAddressBook(addressBook).masterBelt());
+        
+        if (address(masterBELT) == address(0) || user == address(0)) {
+            return new PoolUserInfo[](0);
+        }
+        
+        uint poolLength = masterBELT.poolLength();
+
+        pools = new PoolUserInfo[](poolLength);
+
+        for(uint i = 0; i < poolLength; i++){
+            (uint shares,) = masterBELT.userInfo(i, user);
+
+            (address token, , , , address pool) = masterBELT.poolInfo(i);
+
+            pools[i] = PoolUserInfo(
+                i,
+                IBEP20(token).allowance(user, address(masterBELT)),
+                shares == 0 ? 0 : shares.mul(IBeltPool(pool).wantLockedTotal()).div(IBeltPool(pool).sharesTotal()),
+                IBEP20(token).balanceOf(user),
+                masterBELT.pendingBELT(i, user)
+            );
+        }
+    }
+    
+    function _getUserSwaps(address user) internal view returns (SwapUserInfo[] memory swaps) {
+        if (user == address(0)) {
+            return new SwapUserInfo[](0);
+        }
+        
+        IAddressBook book = IAddressBook(addressBook);
+        address[] memory depositors = book.getDepositors();
+        
+        swaps = new SwapUserInfo[](depositors.length);
+        
+        for (uint j = 0; j < depositors.length; j++) {
+            address depositor = depositors[j];
+            uint N_COINS = book.depositorInfo(depositor);
+            
+            uint256[] memory balances = new uint256[](N_COINS);
+            uint256[] memory allowancesToDepositor = new uint256[](N_COINS);
+            uint256[] memory allowancesToSwap = new uint256[](N_COINS);
+            IBEP20 lpToken = IBEP20(IDepositor(depositor).token());
+            address stableSwap = IDepositor(depositor).beltLP();
+
+            for(int128 i = 0; i < int128(N_COINS); i++){
+                address coin = IDepositor(depositor).underlying_coins(i);
+
+                balances[uint256(i)] = IBEP20(coin).balanceOf(user);
+                allowancesToDepositor[uint256(i)] = IBEP20(coin).allowance(user, depositor);
+                allowancesToSwap[uint256(i)] = IBEP20(coin).allowance(user, stableSwap);
+            }
+    
+            swaps[j] = SwapUserInfo(
+                stableSwap,
+                lpToken.allowance(user, depositor),
+                lpToken.allowance(user, book.masterBelt()),
+                lpToken.balanceOf(user),
+                allowancesToDepositor,
+                allowancesToSwap,
+                balances
+            );
+        }
+    }
+
+    function _getUserVaults(address user) internal view returns (VaultUserInfo[] memory vaults) {
+        if (user == address(0)) {
+            return new VaultUserInfo[](0);
+        }
+        
+        address[] memory beltTokens = IAddressBook(addressBook).getBeltTokens();
+        
+        vaults = new VaultUserInfo[](beltTokens.length);
+        
+        for (uint j = 0; j < beltTokens.length; j++) {
+            IStrategyToken beltToken = IStrategyToken(beltTokens[j]);
+            IBEP20 token = IBEP20(beltToken.isWbnb() ? address(0) : beltToken.token());
+            
+            vaults[j] = VaultUserInfo(
+                address(token),
+                address(beltToken),
+                address(token) == address(0) ? address(user).balance : token.balanceOf(user),
+                beltToken.balanceOf(user),
+                address(token) == address(0) ? uint(-1) : token.allowance(user, address(beltToken))
+            );
+        }
+    }
+    
+    function getUserStat(address user) public view returns (UserInfo memory info) {
+        info = UserInfo(
+            _getUserStaking(user),
+            _getUserPools(user),
+            _getUserSwaps(user),
+            _getUserVaults(user)
+        );
+    }
+    
+    function getStakingStat() public view returns (StakingInfo memory info) {
+        IStrategyToken beltToken = IStrategyToken(IAddressBook(addressBook).sBELT());
+        
+        if (address(beltToken) == address(0)) {
+            return StakingInfo(address(0), address(0), 0, 0, 0, 0, 0, 0);
+        }
+        
+        IBEP20 token = IBEP20(beltToken.token());
+        
+        info = StakingInfo(
+            address(token), address(beltToken), beltToken.calcPoolValueInToken(), token.decimals(), IBEP20(address(beltToken)).decimals(),  beltToken.totalSupply(), beltToken.lockUpPeriod(), beltToken.getPricePerFullShare()
+        );     
+    }
+    
+    function getPoolStat() public view returns (PoolInfo[] memory list) {
+        IMasterBelt belt = IMasterBelt(IAddressBook(addressBook).masterBelt());
+        
+        if (address(belt) == address(0)) {
+            return new PoolInfo[](0);
+        }
+        
+        uint poolLength = belt.poolLength();
+
+        list = new PoolInfo[](poolLength);
+
+        for(uint i = 0; i < poolLength; i++){
+            (address token, , , , address pool) = belt.poolInfo(i);
+
+            list[i] = PoolInfo(
+                pool,
+                token,
+                i,
+                IBeltPool(pool).wantLockedTotal()
+            );
+        }
+    }
+    
+    function getSwapStat() public view returns (SwapInfo[] memory list) {
+        IAddressBook book = IAddressBook(addressBook);
+        address[] memory depositors = book.getDepositors();
+        
+        list = new SwapInfo[](depositors.length);
+        
+        for (uint i = 0; i < depositors.length; i++) {
+            uint N_COINS = book.depositorInfo(depositors[i]);
+            IDepositor depositor = IDepositor(depositors[i]);
+            
+            address[] memory coins = new address[](N_COINS);
+            uint256[] memory decimals = new uint256[](N_COINS);
+            uint256[] memory volumes = new uint256[](N_COINS);
+            uint256[] memory reserves = new uint256[](N_COINS);
+            uint256[] memory totalSupplies = new uint256[](N_COINS);
+
+            for(int128 j = 0; j < int128(N_COINS); j++){
+                address coin = IDepositor(depositors[i]).underlying_coins(j);
+        
+                decimals[i] = IBEP20(coin).decimals();
+                totalSupplies[uint256(j)] = IStrategyToken(depositor.coins(j)).totalSupply();
+                volumes[uint256(j)] = IStrategyToken(depositor.coins(j)).calcPoolValueInToken();
+                coins[uint256(j)] = coin;
+                reserves[uint256(j)] = ISwap(depositor.beltLP()).balances(j);
+            }
+    
+            list[i] = SwapInfo(depositor.token(), address(depositor), IBEP20(depositor.token()).totalSupply(), ISwap(depositor.beltLP()).get_virtual_price(), ISwap(depositor.beltLP()).A(), ISwap(depositor.beltLP()).buyback_fee(), ISwap(depositor.beltLP()).fee(), coins, decimals, totalSupplies, volumes, reserves);
+        }
+    }
+    
+    function getVaultStat(address minter) public view returns(VaultInfo memory info) {
+        uint256 decimals = 18;
+        uint256 strategyCount = IStrategyToken(minter).strategyCount();
+            
+        address[] memory strategies = new address[](strategyCount);
+        address[] memory minters = new address[](strategyCount);
+        bool[] memory isDepositActive = new bool[](strategyCount);
+        bool[] memory isWithdrawActive = new bool[](strategyCount);
+        uint256[] memory strategyRatios = new uint256[](strategyCount);
+        uint256[] memory strategyBalances = new uint256[](strategyCount);
+        
+        if (!IStrategyToken(minter).isWbnb() && IStrategyToken(minter).token() != address(0)) {
+            decimals = IBEP20(IStrategyToken(minter).token()).decimals();
+        }
+            
+        for(uint j = 0; j < IStrategyToken(minter).strategyCount(); j++) {
+            minters[j] = IStrategyToken(minter).strategies(j);
+            strategies[j] = IStrategyToken(minters[j]).strategy();
+            strategyRatios[j] = IStrategyToken(minter).ratios(minters[j]);
+            strategyBalances[j] = IStrategyToken(minter).getBalanceOfOneStrategy(minters[j]);
+            isDepositActive[j] = IStrategyToken(minter).depositActive(minters[j]);
+            isWithdrawActive[j] = IStrategyToken(minter).withdrawActive(minters[j]);
+        }
+        
+        info = VaultInfo(
+            IStrategyToken(minter).token(), minter, IStrategyToken(minter).isWbnb(), strategyCount, IStrategyToken(minter).calcPoolValueInToken(), IBEP20(minter).totalSupply(), minters, strategies, strategyRatios,
+            strategyBalances, isDepositActive, isWithdrawActive, 
+            decimals, IBEP20(minter).decimals()
+        );   
+    }
+    
+    // Oracle
+    
+    function getTokenPrices(address[] memory tokens) public view returns (TokenPrice[] memory) {
+        TokenPrice[] memory prices = new TokenPrice[](tokens.length);
+        
+        for (uint i = 0; i < tokens.length; i++) {
+            IStrategyToken token = IStrategyToken(tokens[i]);
+            
+            prices[i] = TokenPrice(address(token), token.symbol(), token.getPricePerFullShare());
+        }
+        
+        return prices;
+        
+    }
+    
+    function getTokenPrices() public view returns (TokenPrice[] memory) {
+        address[] memory tokens = IAddressBook(addressBook).getBeltTokens();
+        TokenPrice[] memory prices = new TokenPrice[](tokens.length);
+        
+        for (uint i = 0; i < tokens.length; i++) {
+            IStrategyToken token = IStrategyToken(tokens[i]);
+            
+            prices[i] = TokenPrice(address(token), token.symbol(), token.getPricePerFullShare());
+        }
+        
+        return prices;
+    }
+}

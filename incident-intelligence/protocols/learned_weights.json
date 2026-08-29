@@ -1,0 +1,192 @@
+{
+ "train_window": [
+  2022,
+  2024
+ ],
+ "test_window": [
+  2025,
+  2026
+ ],
+ "weights": {
+  "age_1_3y": {
+   "lift": 0.514,
+   "weight": -0.665,
+   "victims_with": 28,
+   "victims_total": 140,
+   "population_with": 2245
+  },
+  "age_under_1y": {
+   "lift": 2.256,
+   "weight": 0.813,
+   "victims_with": 59,
+   "victims_total": 140,
+   "population_with": 1079
+  },
+  "authority_addrs_beyond_tvl": {
+   "lift": 1.664,
+   "weight": 0.509,
+   "victims_with": 34,
+   "victims_total": 140,
+   "population_with": 843
+  },
+  "chain_hazard_ge2": {
+   "lift": 1.858,
+   "weight": 0.619,
+   "victims_with": 74,
+   "victims_total": 140,
+   "population_with": 1643
+  },
+  "dead_adapter_registry": {
+   "lift": 3.381,
+   "weight": 1.218,
+   "victims_with": 20,
+   "victims_total": 140,
+   "population_with": 244
+  },
+  "has_2plus_audits": {
+   "lift": 2.084,
+   "weight": 0.735,
+   "victims_with": 19,
+   "victims_total": 140,
+   "population_with": 376
+  },
+  "has_governance": {
+   "lift": 5.045,
+   "weight": 1.618,
+   "victims_with": 17,
+   "victims_total": 140,
+   "population_with": 139
+  },
+  "has_oracle_declared": {
+   "lift": 2.127,
+   "weight": 0.755,
+   "victims_with": 51,
+   "victims_total": 140,
+   "population_with": 989
+  },
+  "is_proxy": {
+   "lift": 2.475,
+   "weight": 0.906,
+   "victims_with": 15,
+   "victims_total": 140,
+   "population_with": 250
+  },
+  "multichain_gt3": {
+   "lift": 2.038,
+   "weight": 0.712,
+   "victims_with": 38,
+   "victims_total": 140,
+   "population_with": 769
+  },
+  "no_audit_listed": {
+   "lift": 0.521,
+   "weight": -0.652,
+   "victims_with": 43,
+   "victims_total": 140,
+   "population_with": 3404
+  },
+  "on_bsc": {
+   "lift": 1.788,
+   "weight": 0.581,
+   "victims_with": 41,
+   "victims_total": 140,
+   "population_with": 946
+  },
+  "on_ethereum": {
+   "lift": 1.891,
+   "weight": 0.637,
+   "victims_with": 74,
+   "victims_total": 140,
+   "population_with": 1614
+  },
+  "owner_is_contract": {
+   "lift": 3.73,
+   "weight": 1.316,
+   "victims_with": 17,
+   "victims_total": 140,
+   "population_with": 188
+  },
+  "owner_is_eoa": {
+   "lift": 1.729,
+   "weight": 0.548,
+   "victims_with": 7,
+   "victims_total": 140,
+   "population_with": 167
+  },
+  "pricing_surface_undeclared": {
+   "lift": 1.691,
+   "weight": 0.526,
+   "victims_with": 31,
+   "victims_total": 140,
+   "population_with": 756
+  },
+  "single_audit_only": {
+   "lift": 1.613,
+   "weight": 0.478,
+   "victims_with": 78,
+   "victims_total": 140,
+   "population_with": 1995
+  },
+  "single_chain": {
+   "lift": 0.66,
+   "weight": -0.416,
+   "victims_with": 66,
+   "victims_total": 140,
+   "population_with": 4125
+  },
+  "unverified_implementation": {
+   "lift": 2.007,
+   "weight": 0.697,
+   "victims_with": 9,
+   "victims_total": 140,
+   "population_with": 185
+  },
+  "version_sibling_legacy": {
+   "lift": 1.699,
+   "weight": 0.53,
+   "victims_with": 11,
+   "victims_total": 140,
+   "population_with": 267
+  }
+ },
+ "in_sample": {
+  "n": 140,
+  "median_percentile": 87.0,
+  "top_quartile_share": 0.664,
+  "lift": 2.66
+ },
+ "out_of_sample": {
+  "n": 103,
+  "median_percentile": 82.3,
+  "top_quartile_share": 0.612,
+  "lift": 2.45
+ },
+ "out_of_sample_unseen": {
+  "n": 95,
+  "median_percentile": 78.7,
+  "top_quartile_share": 0.589,
+  "lift": 2.36
+ },
+ "population": 5775,
+ "method": "weights = ln(lift) measured on TRAIN victims against the full listed universe; signals needing >=40 population support, >=4 train victims, and lift outside 0.70-1.35",
+ "excluded_from_fitting_leakage": [
+  "mcap_absent",
+  "mcap_below_tvl",
+  "tvl_falling_fast",
+  "tvl_rising_fast"
+ ],
+ "excluded_from_fitting_ablation": [
+  "admin_multisig",
+  "admin_no_delay_path",
+  "admin_single_signature",
+  "admin_terminal_eoa",
+  "admin_timelocked"
+ ],
+ "caveats": [
+  "population is current DefiLlama data, so post-hack changes leak in",
+  "admin posture was measured, ablated and then dropped: it did not improve out-of-sample prediction (x2.19 -> x2.15) and measures ~1.0 over the full window, so custody exposure is reported separately instead of scored here",
+  "exposure age is the one v4 addition that earned its place: x2.19 -> x2.32",
+  "protocols delisted entirely are absent from both victim and population sets",
+  "lift is a marginal association, not a causal claim, and several signals are proxies for size"
+ ]
+}

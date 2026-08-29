@@ -1,0 +1,39 @@
+{
+  "tag": "Exchange",
+  "category_filter": "Exchange",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=Exchange&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:33Z",
+      "sha256": "ac0fcce287b67bcceb75fee98ec7e77025d355b4224a285a70f6db1ec5d3d5f0",
+      "bytes": 28042,
+      "snapshot": "Exchange_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 5,
+      "rows_older_than_window": 15,
+      "first_date": "2024-12-01",
+      "last_date": "2026-07-19",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=Exchange&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:35Z",
+      "sha256": "14d1212c9e25985e20871766a3987fbaf71602fb71c6f2fd13b64c0cf8478331",
+      "bytes": 24957,
+      "snapshot": "Exchange_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2024-03-20",
+      "last_date": "2024-11-28",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 40
+}

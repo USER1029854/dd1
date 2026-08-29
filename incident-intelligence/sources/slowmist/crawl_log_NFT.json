@@ -1,0 +1,39 @@
+{
+  "tag": "NFT",
+  "category_filter": "NFT",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=NFT&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:28Z",
+      "sha256": "ef87cff80d0dd76eb40bd51005b88ea59c663f809a465dc84d2ee11cfb5c6720",
+      "bytes": 25761,
+      "snapshot": "NFT_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 3,
+      "rows_older_than_window": 17,
+      "first_date": "2023-12-16",
+      "last_date": "2026-06-08",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=NFT&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:30Z",
+      "sha256": "e405ab55df88b5d49d18c38e125085b7617f926bc6294fa0c7bdfb01e81e756c",
+      "bytes": 21054,
+      "snapshot": "NFT_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2023-09-01",
+      "last_date": "2023-11-14",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 40
+}

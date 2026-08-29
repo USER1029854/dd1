@@ -1,0 +1,715 @@
+{
+ "run_id": "RUN-2026-08-23-DEFI-INCIDENT-PRIORITIZATION",
+ "generated_utc": "2026-08-27T23:59:05Z",
+ "safety_attestation": {
+  "production_transactions_submitted": 0,
+  "production_transactions_constructed": 0,
+  "credentials_recovered_or_used": 0,
+  "unauthorized_extraction_optimized": false,
+  "chain_access_methods": [
+   "eth_call",
+   "eth_getStorageAt",
+   "eth_getCode",
+   "explorer getsourcecode",
+   "HTTP GET"
+  ],
+  "statement": "All production-chain interaction was read-only. No transaction was constructed, signed, simulated as a broadcast against live user state, or submitted. No private key or credential was recovered, derived or used. No exploitation sequence was produced."
+ },
+ "primary_sources": {
+  "slowmist_index": {
+   "base_url": "https://hacked.slowmist.io/?c=&page=1",
+   "pages_fetched": 12,
+   "boundary_status": "BOUNDARY_PROVEN",
+   "per_page": [
+    {
+     "page": 1,
+     "url": "https://hacked.slowmist.io/?c=&page=1",
+     "retrieved_utc": "2026-08-23T02:15:36Z",
+     "sha256": "c07771a8b467998c39df10a7ec48a96c48044db532d47dec5816d7e1ac8961c2",
+     "snapshot": "sources/slowmist/all_page_001.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-07-28",
+     "last_date": "2026-08-18",
+     "status": "OK"
+    },
+    {
+     "page": 2,
+     "url": "https://hacked.slowmist.io/?c=&page=2",
+     "retrieved_utc": "2026-08-23T02:15:38Z",
+     "sha256": "e73086bde7c3799066016012024992b5a0b91afff06361cb39e74c7d687a58ba",
+     "snapshot": "sources/slowmist/all_page_002.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-07-15",
+     "last_date": "2026-07-26",
+     "status": "OK"
+    },
+    {
+     "page": 3,
+     "url": "https://hacked.slowmist.io/?c=&page=3",
+     "retrieved_utc": "2026-08-23T02:15:41Z",
+     "sha256": "1206ed1c5af0f52399ad79b4731260835e2b787b27375cd6976e7f442ab1f775",
+     "snapshot": "sources/slowmist/all_page_003.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-06-20",
+     "last_date": "2026-07-15",
+     "status": "OK"
+    },
+    {
+     "page": 4,
+     "url": "https://hacked.slowmist.io/?c=&page=4",
+     "retrieved_utc": "2026-08-23T02:15:44Z",
+     "sha256": "2878f1fe80b41304472748d5155291285c9167fca33b24c95f24bcc56000542e",
+     "snapshot": "sources/slowmist/all_page_004.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-06-05",
+     "last_date": "2026-06-19",
+     "status": "OK"
+    },
+    {
+     "page": 5,
+     "url": "https://hacked.slowmist.io/?c=&page=5",
+     "retrieved_utc": "2026-08-23T02:15:47Z",
+     "sha256": "6f22248e02856281ee7f7475801bcd945b33ba3e593bc73423b43aa4f46bd184",
+     "snapshot": "sources/slowmist/all_page_005.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-05-26",
+     "last_date": "2026-06-04",
+     "status": "OK"
+    },
+    {
+     "page": 6,
+     "url": "https://hacked.slowmist.io/?c=&page=6",
+     "retrieved_utc": "2026-08-23T02:15:49Z",
+     "sha256": "63084f31c3192b9ee00a731144bc194888b0fbbc8529f5fc4187bfee3dcf4a6d",
+     "snapshot": "sources/slowmist/all_page_006.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-05-11",
+     "last_date": "2026-05-25",
+     "status": "OK"
+    },
+    {
+     "page": 7,
+     "url": "https://hacked.slowmist.io/?c=&page=7",
+     "retrieved_utc": "2026-08-23T02:15:52Z",
+     "sha256": "563dd4096ab26c733ac53f215b1503b10261159d5316da2e36c81eaf3a25422d",
+     "snapshot": "sources/slowmist/all_page_007.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-04-22",
+     "last_date": "2026-05-11",
+     "status": "OK"
+    },
+    {
+     "page": 8,
+     "url": "https://hacked.slowmist.io/?c=&page=8",
+     "retrieved_utc": "2026-08-23T02:15:55Z",
+     "sha256": "8e02354aa82d066b061136d7a4fea556cfb6dfe65f8b20f06a5288c1723cee0f",
+     "snapshot": "sources/slowmist/all_page_008.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-04-05",
+     "last_date": "2026-04-21",
+     "status": "OK"
+    },
+    {
+     "page": 9,
+     "url": "https://hacked.slowmist.io/?c=&page=9",
+     "retrieved_utc": "2026-08-23T02:15:58Z",
+     "sha256": "ec82792bee96dfdd21f24f8f50bd4aa5029e8a3acbd101c416f7992b81a91ca2",
+     "snapshot": "sources/slowmist/all_page_009.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-03-22",
+     "last_date": "2026-04-04",
+     "status": "OK"
+    },
+    {
+     "page": 10,
+     "url": "https://hacked.slowmist.io/?c=&page=10",
+     "retrieved_utc": "2026-08-23T02:16:01Z",
+     "sha256": "aa8f58a3e8041c998be31879ab7ff37f9ad3c58681f26361667b72423cc76c93",
+     "snapshot": "sources/slowmist/all_page_010.html",
+     "rows_parsed": 20,
+     "rows_in_window": 20,
+     "first_date": "2026-02-26",
+     "last_date": "2026-03-22",
+     "status": "OK"
+    },
+    {
+     "page": 11,
+     "url": "https://hacked.slowmist.io/?c=&page=11",
+     "retrieved_utc": "2026-08-23T02:16:04Z",
+     "sha256": "3d2c2c9cd275a13b1c68d43e043d80e816dcc7356c25c8aff624be356e70806a",
+     "snapshot": "sources/slowmist/all_page_011.html",
+     "rows_parsed": 20,
+     "rows_in_window": 5,
+     "first_date": "2026-01-20",
+     "last_date": "2026-02-26",
+     "status": "OK"
+    },
+    {
+     "page": 12,
+     "url": "https://hacked.slowmist.io/?c=&page=12",
+     "retrieved_utc": "2026-08-23T02:16:08Z",
+     "sha256": "d8ed7a716bc09df60dc221837a99511b93700c31f919c3a0d26dbea42867a4bd",
+     "snapshot": "sources/slowmist/all_page_012.html",
+     "rows_parsed": 20,
+     "rows_in_window": 0,
+     "first_date": "2025-12-17",
+     "last_date": "2026-01-19",
+     "status": "BOUNDARY_PROVEN"
+    }
+   ]
+  },
+  "defillama_protocols": {
+   "url": "https://api.llama.fi/protocols",
+   "retrieved_utc": "2026-08-23T02:21:21Z",
+   "sha256": "4a74cae500aa4eae8419e9f3ea39600ac9aff8992ec80b71c8a584b8bcfd5fd9",
+   "bytes": 8643007,
+   "rows": 8103,
+   "snapshot": "sources/defillama/protocols.json"
+  },
+  "defillama_adapters_repo": "https://github.com/DefiLlama/DefiLlama-Adapters (raw reads of projects/* and registries/*)"
+ },
+ "artifacts": [
+  {
+   "path": "run_config.json",
+   "exists": true,
+   "bytes": 2814,
+   "sha256": "d17dc9864680064bc8792db542bc5fccc8f8499f75f16a4d037f667cdddba4e8",
+   "role": "config",
+   "supports_claim": "Window 2026-02-22..2026-08-22, thresholds, evidence-level definitions"
+  },
+  {
+   "path": "commands.sh",
+   "exists": true,
+   "bytes": 12319,
+   "sha256": "5565dfb30078f6a9cc3238e973287f2b4acefdbf6ef5f6aa850691dc8281c23d",
+   "role": "reproduction",
+   "supports_claim": "Every retrieval and transformation step in execution order"
+  },
+  {
+   "path": "incidents/all_raw.jsonl",
+   "exists": true,
+   "bytes": 247980,
+   "sha256": "504f85b49186e1598fc5eace32cd4d5d7d5b3415b95e0b62253ea47265fa822b",
+   "role": "incident corpus",
+   "supports_claim": "240 SlowMist rows; 205 inside the window; every row retained and dispositioned"
+  },
+  {
+   "path": "incidents/included.jsonl",
+   "exists": true,
+   "bytes": 550956,
+   "sha256": "88723367cec52fc550ce6e2b99db0a31a640a0db22ce2c23284602a66f156ea8",
+   "role": "incident corpus",
+   "supports_claim": "110 grade-A/B on-chain incidents with reconstructed invariants and guards"
+  },
+  {
+   "path": "incidents/provisional.jsonl",
+   "exists": true,
+   "bytes": 128393,
+   "sha256": "32a09d3380f1436db1ae7462f529f12c52d6d73e9bf69ed883c821dca7cc4ffa",
+   "role": "incident corpus",
+   "supports_claim": "22 grade-C incidents; excluded from statistics and ranking weight"
+  },
+  {
+   "path": "incidents/excluded.jsonl",
+   "exists": true,
+   "bytes": 76923,
+   "sha256": "8ad78d46d4ac44b244b118f10f81fac24099ada91a0944909bc91558cb4819b8",
+   "role": "incident corpus",
+   "supports_claim": "Every exclusion with a concrete reason code from a controlled vocabulary"
+  },
+  {
+   "path": "incidents/duplicate_groups.json",
+   "exists": true,
+   "bytes": 3225,
+   "sha256": "73d910f7566887eb1edc0d2a55e9cb08cc23f7651677993f43824c280bb0dba4",
+   "role": "dedup",
+   "supports_claim": "Clone and repeat lineages; prevents clone incidents inflating independent recurrence"
+  },
+  {
+   "path": "families/families.json",
+   "exists": true,
+   "bytes": 200144,
+   "sha256": "2c2480fe282a4d5eac012d8de1f2151b5ccaf06544e5f7095888b3edd8b28abd",
+   "role": "pattern library",
+   "supports_claim": "43 mechanism families with invariant, mechanism, preconditions, indicators and guards"
+  },
+  {
+   "path": "families/families.md",
+   "exists": true,
+   "bytes": 173361,
+   "sha256": "d1e98254dc3372b7674467f601a542e8a0bbc91c8cb3d76a7225e4e538e06ff3",
+   "role": "pattern library",
+   "supports_claim": "Human-readable family library"
+  },
+  {
+   "path": "families/guard_library.jsonl",
+   "exists": true,
+   "bytes": 157434,
+   "sha256": "b3b080eedafee833665c806c605b1b8b9d4544dd7d0707c88f92cf4d5bb9dbe8",
+   "role": "guard library",
+   "supports_claim": "Decisive guards with evidence patterns and limitations"
+  },
+  {
+   "path": "families/near_miss_library.jsonl",
+   "exists": true,
+   "bytes": 553362,
+   "sha256": "6ad6bde86979e98b43355a168519f805af994234339392a062bb4da144b331e2",
+   "role": "guard library",
+   "supports_claim": "Pairs killed by a precondition or a decisive guard, with residual uncertainty"
+  },
+  {
+   "path": "sources/slowmist/crawl_log_all.json",
+   "exists": true,
+   "bytes": 5838,
+   "sha256": "fc3ba42ff81e8333ac7d5599e393d047ebd87f22c7b18797daa64db4fe097521",
+   "role": "provenance",
+   "supports_claim": "Per-page fetch log, hashes and boundary proof"
+  },
+  {
+   "path": "sources/incident-references/reference_index.json",
+   "exists": true,
+   "bytes": 52986,
+   "sha256": "0b644f6ba511471f6f55b92bede33c83b1a7bd88fc65d457eb300fbf744f7873",
+   "role": "provenance",
+   "supports_claim": "Every reference URL with retrieval status; social posts marked LEAD_ONLY"
+  },
+  {
+   "path": "sources/defillama/protocols.json",
+   "exists": true,
+   "bytes": 8643007,
+   "sha256": "4a74cae500aa4eae8419e9f3ea39600ac9aff8992ec80b71c8a584b8bcfd5fd9",
+   "role": "universe",
+   "supports_claim": "8103 DefiLlama protocol rows, all keys preserved"
+  },
+  {
+   "path": "protocols/defillama_universe.json",
+   "exists": true,
+   "bytes": 16500798,
+   "sha256": "29b5705c4e2b8818df9c15007a3e90103da09a31a25f420281d1451c23fa3098",
+   "role": "universe",
+   "supports_claim": "Normalized universe with derived feature fields"
+  },
+  {
+   "path": "protocols/eligibility.json",
+   "exists": true,
+   "bytes": 13613007,
+   "sha256": "3370f937865130ea3993a76181f4c5e159b382233ba44111403df6689ba55d01",
+   "role": "screen",
+   "supports_claim": "Eligibility decision and sub-threshold high-fit queue per protocol"
+  },
+  {
+   "path": "protocols/pairs_l0.json",
+   "exists": true,
+   "bytes": 16014064,
+   "sha256": "a064cc9539ebe129641781076d264d37452809f7a114520a57f6e20cb56c0229",
+   "role": "screen",
+   "supports_claim": "All generated protocol-family pairs at L0"
+  },
+  {
+   "path": "protocols/deep_screen_worklist.json",
+   "exists": true,
+   "bytes": 53815588,
+   "sha256": "7d18737af1eb918882c04c7e67f82f5f642107a5e9bd5bbd9db5a5ede2c92558",
+   "role": "screen",
+   "supports_claim": "Stratified deep-screen worklist across families and exposure tiers"
+  },
+  {
+   "path": "protocols/adapters_index.json",
+   "exists": true,
+   "bytes": 4465782,
+   "sha256": "69bc876635d937b02da22bbd494450ea134ce5a5bd7e373ad90d054113f9eca5",
+   "role": "adapter evidence",
+   "supports_claim": "Per-protocol adapter read, hashes, addresses, dynamic sources"
+  },
+  {
+   "path": "protocols/registry_configs.json",
+   "exists": true,
+   "bytes": 164522,
+   "sha256": "c269dfe89aed55179e0810a155497d6a30309d9180833c6872ba96987b933a56",
+   "role": "adapter evidence",
+   "supports_claim": "Per-protocol configs from registries/compound.js, aave.js, curators.js"
+  },
+  {
+   "path": "protocols/dead_adapters.json",
+   "exists": true,
+   "bytes": 98370,
+   "sha256": "b461c20ed0b20f68489a4fadb4cf4a4a43f47801ed4113c1d95e1b92f75e9774",
+   "role": "adapter evidence",
+   "supports_claim": "DefiLlama registries/deadAdapters.json: 591 dead deployments with deadFrom"
+  },
+  {
+   "path": "protocols/onchain_probes.json",
+   "exists": true,
+   "bytes": 11263572,
+   "sha256": "b3bdcb51dd7a1c4b25d5c3d52a4897a991e9fee6944bcca489df6a1522ddac63",
+   "role": "live state",
+   "supports_claim": "Read-only eth_call/eth_getStorageAt/getsourcecode results"
+  },
+  {
+   "path": "protocols/prior_art.json",
+   "exists": true,
+   "bytes": 9897,
+   "sha256": "0f51bdfa3c724a5623ad9074e0b3d4ec17dc2a161441a8efede6006d934932df",
+   "role": "prior art",
+   "supports_claim": "Researched prior-art status and documented decisive guards"
+  },
+  {
+   "path": "protocols/conditions.json",
+   "exists": true,
+   "bytes": 1523853,
+   "sha256": "a31949ea434278ab409224fe2e1b76b0529c4bbbb6e67abeaa789778e7b10c40",
+   "role": "screen",
+   "supports_claim": "Creative observable conditions per protocol: fork-of-victim, dead adapter with residual TVL, version-sibling legacy, declared fallback oracle, RWA pricing surface, co-curated vaults, tag-driven architecture and more"
+  },
+  {
+   "path": "protocols/victim_map.json",
+   "exists": true,
+   "bytes": 5839,
+   "sha256": "755a3fbac8a370838ddfbb44327f7571b16da0f60edc5500d299e3dc7bfb793f",
+   "role": "screen",
+   "supports_claim": "In-window incident victims mapped to live DefiLlama slugs, with the families they carry"
+  },
+  {
+   "path": "protocols/subfloor_authority_deferred.json",
+   "exists": true,
+   "bytes": 243035,
+   "sha256": "10b7c24fd883a3bd6522113eb79e7961c53985759eb38007b3cf4c0601915b92",
+   "role": "screen",
+   "supports_claim": "Authority-bearing protocols below the $50,000 floor: identified, recorded, and deliberately not screened"
+  },
+  {
+   "path": "protocols/registry_configs.json",
+   "exists": true,
+   "bytes": 164522,
+   "sha256": "c269dfe89aed55179e0810a155497d6a30309d9180833c6872ba96987b933a56",
+   "role": "adapter evidence",
+   "supports_claim": "Per-protocol configs parsed from registries/compound.js, aave.js and curators.js"
+  },
+  {
+   "path": "protocols/deep_screened.jsonl",
+   "exists": true,
+   "bytes": 96690215,
+   "sha256": "8fb95cd358982dbfdb1a10de8ddf89b4fefcf549654ea6e72d103a183dda0ccc",
+   "role": "scoring",
+   "supports_claim": "Per-pair precondition gate, guards, MATCH/CONFIDENCE/PREVENTION with components"
+  },
+  {
+   "path": "results/candidates_all.csv",
+   "exists": true,
+   "bytes": 9678621,
+   "sha256": "0da7d0b9b8ac8747bd611e29897a43187bbf8bed57913baaac4f9e79d707fab5",
+   "role": "results",
+   "supports_claim": "Every surviving pair with both ranks and full score components"
+  },
+  {
+   "path": "results/candidates_by_priority.md",
+   "exists": true,
+   "bytes": 162028,
+   "sha256": "79d644a37664e11a9c2f043525e0b9930bd44d8fceed19fb01811fbeb2c8fd4c",
+   "role": "results",
+   "supports_claim": "Ranking A - PRIORITY = likelihood x actionability; the queue to actually work"
+  },
+  {
+   "path": "results/candidates_by_likelihood.md",
+   "exists": true,
+   "bytes": 10767,
+   "sha256": "0e9079c2177e1c1db13957a42285d5f12e9c7c90c38cc0cf7d6adee29d938b43",
+   "role": "results",
+   "supports_claim": "Ranking B - likelihood alone, ignoring whether an independent reviewer can act"
+  },
+  {
+   "path": "results/candidates_by_match.md",
+   "exists": true,
+   "bytes": 10707,
+   "sha256": "ed173ec671436de6f23ba7b2d6e94bbde9ca4be263b267fde04507e7c9c87cf7",
+   "role": "results",
+   "supports_claim": "Ranking C - mechanism match only, no learned component"
+  },
+  {
+   "path": "results/upgrade_authority_exposure.md",
+   "exists": true,
+   "bytes": 12571,
+   "sha256": "599ac62d6aab2bb3ec1d5225ab3c1f5b845dd9f70a11cdf295986f6deb729e12",
+   "role": "results",
+   "supports_claim": "Custody exposure: terminal upgrade authority per protocol, scored separately from likelihood on the ablation's evidence"
+  },
+  {
+   "path": "sources/defillama/hacks.json",
+   "exists": true,
+   "bytes": 333699,
+   "sha256": "90ab8c5593a91b4a57f620e529bf6a1998b624ed0bc264e38218897ebd472955",
+   "role": "incident evidence",
+   "supports_claim": "DefiLlama's structured hacks dataset: 1227 incidents with defillamaId, technique and classification"
+  },
+  {
+   "path": "protocols/hazard_tables_v2.json",
+   "exists": true,
+   "bytes": 54598,
+   "sha256": "6652346ef2b9465786384b86f4a5ff5ac5cb0182020652555c0212dead41d30c",
+   "role": "screen",
+   "supports_claim": "Empirical chain and category hazard ratios, blended across the SlowMist window corpus and DefiLlama's dataset"
+  },
+  {
+   "path": "protocols/feature_lift_uncensored.json",
+   "exists": true,
+   "bytes": 8009,
+   "sha256": "28b13ac7550bf9900dedba4738c262682b83e40ee61f8afb169dc0a6c2921307",
+   "role": "validation",
+   "supports_claim": "Per-signal measured lift over the full listed universe, correcting the survivorship censoring"
+  },
+  {
+   "path": "protocols/survivorship_check.json",
+   "exists": true,
+   "bytes": 430,
+   "sha256": "5815a60405bdf82af45717c8dd3e753097d5c243fc85166c8b9553e42f31cf73",
+   "role": "validation",
+   "supports_claim": "The censoring test itself: audit rates among victims that fell below the floor versus those still listed"
+  },
+  {
+   "path": "protocols/learned_weights.json",
+   "exists": true,
+   "bytes": 4303,
+   "sha256": "1e724635ab385ae2a35bc27412c444c7887e4ac72153610da7080d663460eab7",
+   "role": "validation",
+   "supports_claim": "Weights fitted on 2022-24 incidents and validated against 2025-26 incidents, with the temporal split recorded"
+  },
+  {
+   "path": "protocols/ablation.json",
+   "exists": true,
+   "bytes": 900,
+   "sha256": "4dfd7e6f8666ace630ed603af0f142bd84c64413ddfa3173901ccb67d5aaba49",
+   "role": "validation",
+   "supports_claim": "Feature-group ablation: which v4 additions actually improved out-of-sample prediction, and which were dropped for failing to"
+  },
+  {
+   "path": "protocols/backtest.json",
+   "exists": true,
+   "bytes": 9633,
+   "sha256": "92bac5f002193985ff3069cef5bca907ed32e3387c580931f32e769fd9cd7322",
+   "role": "validation",
+   "supports_claim": "Leakage-controlled backtest of the production score against known victims"
+  },
+  {
+   "path": "protocols/admin_posture.json",
+   "exists": true,
+   "bytes": 325973,
+   "sha256": "c654b380d25346b8ab54cf0aba791a99453487eca04f64de0cb38d0ab555d415",
+   "role": "live state",
+   "supports_claim": "Terminal upgrade/privileged authority per protocol, resolved by walking ERC-1967 admin and owner() chains up to three hops"
+  },
+  {
+   "path": "protocols/authority_exposure.json",
+   "exists": true,
+   "bytes": 243425,
+   "sha256": "a31a43aff91d7cc7b4d0aa715ab5955585be703e0862369008f17c0c5baf3fe4",
+   "role": "live state",
+   "supports_claim": "Custody exposure rows behind results/upgrade_authority_exposure.md"
+  },
+  {
+   "path": "incidents/source_verification.json",
+   "exists": true,
+   "bytes": 4942,
+   "sha256": "1d4ff205b30f857c6b61a4215a568eace6fd2b3c478dc3c135e9b72acbda1b3f",
+   "role": "incident evidence",
+   "supports_claim": "Per-claim verification of INC-2026-08-18-MAY against the project's live public source, plus the THORChain upstream check"
+  },
+  {
+   "path": "results/candidates_by_urgency.md",
+   "exists": true,
+   "bytes": 110945,
+   "sha256": "a1bfef1be300fdb007c94d97e8d578ded6f57d577842eac1519434d1fe8b1cf7",
+   "role": "results",
+   "supports_claim": "Urgency-first candidate list: ranked by time-to-exploitation with remediation status as the primary driver, Tier 1-2 first, with CORE.md handoff lines"
+  },
+  {
+   "path": "protocols/victim_state.json",
+   "exists": true,
+   "bytes": 56850,
+   "sha256": "85b28de0a644a73cf19edf87b8aacd6a567d68efee74100f5ffc0a9f65245e37",
+   "role": "scoring",
+   "supports_claim": "Each recorded victim classified from its TVL series as drained, restored (restore window), or never materially hit"
+  },
+  {
+   "path": "protocols/relatives.json",
+   "exists": true,
+   "bytes": 131915,
+   "sha256": "11b14fa767fb4094db0ad4a93d538816c1d1ed436e961a8c97dd0928d407eed6",
+   "role": "scoring",
+   "supports_claim": "Un-hit relatives of victims -- the actual targets -- with the lineage link and the sibling's current holdings"
+  },
+  {
+   "path": "protocols/tvl_head.json",
+   "exists": true,
+   "bytes": 239398,
+   "sha256": "aa25bb84c519e8e18d12f6438a04c2b55f29bc43baa8a0282434dfb9ca76b718",
+   "role": "live state",
+   "supports_claim": "Current TVL for every protocol, re-read at head; the basis of the hard live-value gate"
+  },
+  {
+   "path": "protocols/urgency_pairs.json",
+   "exists": true,
+   "bytes": 33446077,
+   "sha256": "c06f1d42741e74723cfe2a8a08a7681139235ba84a9b4cde273071d374fb2c42",
+   "role": "scoring",
+   "supports_claim": "Per-pair tier assignment and URGENCY components (40 remediation gap / 20 recency+propagation / 25 reachable value / 15 precondition match)"
+  },
+  {
+   "path": "protocols/operator_leads.json",
+   "exists": true,
+   "bytes": 3899,
+   "sha256": "eb73919b33057ab600adc88d1b971444a87e0ecac0962592684b0d3f12d1d9e3",
+   "role": "incident evidence",
+   "supports_claim": "Operator-named leads resolved against this run, with window status and what each changes"
+  },
+  {
+   "path": "protocols/cosmos_evm_triage.json",
+   "exists": true,
+   "bytes": 157501,
+   "sha256": "b2601db5285023f1d63f5cf588d7752aab26edf189d37a4b4e907b95f202412e",
+   "role": "screen",
+   "supports_claim": "Criteria-based triage of the Cosmos EVM precompile exposure surface; every row carries patch_status NOT_DETERMINED and no chain is asserted unremediated"
+  },
+  {
+   "path": "results/cosmos_evm_exposure.md",
+   "exists": true,
+   "bytes": 9757,
+   "sha256": "c44c55255ec29bccbd356c903dd6819f80d332f39da6c96916fdc17778d27ad6",
+   "role": "results",
+   "supports_claim": "What the Cosmos EVM precompile cluster corrected, confirmed and changed in this run, with the assessability of each risk archetype stated"
+  },
+  {
+   "path": "protocols/chain_hazard_measured.json",
+   "exists": true,
+   "bytes": 62539,
+   "sha256": "ee0a5c7105f2cac5fe37ab69778ed97a87d8d24b822630833f78ea36eccb8dac",
+   "role": "screen",
+   "supports_claim": "Per-chain hazard measured as incident share over protocol share, with a support floor below which a chain is left UNMEASURED rather than defaulted"
+  },
+  {
+   "path": "protocols/nonevm_cohort.json",
+   "exists": true,
+   "bytes": 491290,
+   "sha256": "1e06ce3864596f5393e4733f44333ea5e90c06cf0553a14dbdb8bad2b3963d19",
+   "role": "screen",
+   "supports_claim": "Non-EVM protocols above the floor, classified by execution runtime, with the families that structurally apply to each"
+  },
+  {
+   "path": "protocols/appchain_probe.json",
+   "exists": true,
+   "bytes": 5404,
+   "sha256": "1677a59d283fe15b9141498f53769db778d191e27941b9359902d6c5d5b91d6b",
+   "role": "live state",
+   "supports_claim": "Public-source probe of reachable app-chains using app/app.go module discovery"
+  },
+  {
+   "path": "protocols/delivered_ledger.json",
+   "exists": true,
+   "bytes": 151632,
+   "sha256": "fa77e27d6292731e7ca6b725e8a6b3b59aaf68d65747581488f155e725511198",
+   "role": "delivery",
+   "supports_claim": "Cumulative ledger of every protocol handed over in a previous run, reconstructed from git history; excluded from this run's candidates"
+  },
+  {
+   "path": "results/nonevm_cohort.md",
+   "exists": true,
+   "bytes": 15570,
+   "sha256": "acfb2e9435b984933c9ac595d039fab8d325253b9061751e2057a7be0c0af6c5",
+   "role": "results",
+   "supports_claim": "The non-EVM cohort: what the EVM instrument could not see, the Maya verification, the THORChain kill, and an explicit coverage limit"
+  },
+  {
+   "path": "protocols/band_screen.json",
+   "exists": true,
+   "bytes": 3228531,
+   "sha256": "cc75d0626b0660b6b1a2d8bfa6ad5d67aaa05e6cffbf28ab28437ffa692299e0",
+   "role": "screen",
+   "supports_claim": "Per-protocol band status, empirical hazard, attention deficit and attacker economics"
+  },
+  {
+   "path": "protocols/above_band_dropped.json",
+   "exists": true,
+   "bytes": 94556,
+   "sha256": "b3ab287fb9a37560dd19305bee0e778de600ebab405cd5f51bf30a1a69eb8a19",
+   "role": "screen",
+   "supports_claim": "Protocols above the $30M band that were dropped, with the reason"
+  },
+  {
+   "path": "results/audit_variables.txt",
+   "exists": true,
+   "bytes": 37995,
+   "sha256": "ecd95ea81bba7601d14d38aa48825b9a8c3668058db8d044611097a1ea767d46",
+   "role": "handoff",
+   "supports_claim": "One self-contained line per final candidate for the downstream audit prompt"
+  },
+  {
+   "path": "results/excluded_protocols.md",
+   "exists": true,
+   "bytes": 29264,
+   "sha256": "c53ed359d8cc6387b6e66559b36d08c9e3b841291a8aa78dcae6b89d0947a2a6",
+   "role": "results",
+   "supports_claim": "Universe exclusions and killed pairs with reasons"
+  },
+  {
+   "path": "results/run_summary.md",
+   "exists": true,
+   "bytes": 8089,
+   "sha256": "34a166f6924911ea60c1164f975ad11eb756e9123b2fc13c70c2b2ad3bc40887",
+   "role": "results",
+   "supports_claim": "Required summary statistics"
+  },
+  {
+   "path": "quality_report.md",
+   "exists": true,
+   "bytes": 12671,
+   "sha256": "1935ed1fa64f75ec119a9e581cb0a8732dfcc327789ea4b9295315ed9fa62483",
+   "role": "quality",
+   "supports_claim": "Mechanical quality gates and known limitations"
+  }
+ ],
+ "claim_map": {
+  "205 incidents inside the six-month window": "incidents/all_raw.jsonl + sources/slowmist/crawl_log_all.json (boundary proven on page 12)",
+  "110 included grade-A/B incidents": "incidents/included.jsonl",
+  "43 mechanism families": "families/families.json",
+  "family incident counts, losses and recency": "families/families.json (computed from incidents/all_raw.jsonl)",
+  "clone lineages do not inflate recurrence": "incidents/duplicate_groups.json + families.json unique_root_cause_count",
+  "8103 protocols fetched": "sources/defillama/protocols.meta.json",
+  "eligibility and sub-threshold high-fit queue": "protocols/eligibility.json",
+  "adapter read or marked missing for every candidate": "protocols/adapters_index.json",
+  "Compound-fork and curator lineage": "protocols/registry_configs.json (registries/compound.js, curators.js)",
+  "deprecated deployment evidence": "protocols/dead_adapters.json + eligibility.json deprecated/deadUrl flags",
+  "live-state evidence": "protocols/onchain_probes.json",
+  "score components and caps": "protocols/deep_screened.jsonl + results/candidates_all.csv",
+  "prior-art status per final pair": "protocols/prior_art.json + results/candidates_by_*.md",
+  "out-of-sample validation of the scoring model": "protocols/learned_weights.json (fit 2022-24, tested 2025-26 on 95 unseen protocols)",
+  "which features earned their place and which were dropped": "protocols/ablation.json (refit and revalidated per feature group)",
+  "survivorship censoring and its correction": "protocols/survivorship_check.json + protocols/feature_lift_uncensored.json",
+  "leakage control in the backtest": "protocols/backtest.json (tools/backtest.py --no-prior)",
+  "custody exposure measured but kept out of the likelihood score": "protocols/admin_posture.json + results/upgrade_authority_exposure.md + protocols/ablation.json",
+  "function selectors used for on-chain fingerprinting": "tools/keccak.py (derived, self-checked against two known selectors at import)",
+  "Maya Protocol defect claims verified against live public source": "incidents/source_verification.json (5 of 6 confirmed at exact file and line)",
+  "THORChain lineage lead killed on evidence": "incidents/source_verification.json#upstream_check",
+  "every candidate is one not handed over before": "protocols/delivered_ledger.json + results/candidates_all.csv#previously_delivered",
+  "two in-window incidents the index missed": "incidents/all_raw.jsonl#INC-2026-08-20-MAN, #INC-2026-08-22-TCH (source: OPERATOR_SUPPLIED_THREAT_INTELLIGENCE_REPORT)",
+  "Cosmos EVM exposure triaged without asserting patch state": "protocols/cosmos_evm_triage.json + results/cosmos_evm_exposure.md",
+  "candidates ranked by time-to-exploitation, not likelihood": "protocols/urgency_pairs.json + results/candidates_by_urgency.md",
+  "no remediation gap claimed without an artifact-level check": "protocols/urgency_pairs.json (all rows KNOWN_ISSUE_STATUS_UNKNOWN, 28 of 40)",
+  "chain priority measured rather than assumed": "protocols/chain_hazard_measured.json (tools/nonevm_hazard.py)",
+  "non-EVM coverage and its limit": "protocols/nonevm_cohort.json + results/nonevm_cohort.md + protocols/appchain_probe.json",
+  "runtime families are not applied to runtimes that roll back": "tools/nonevm_cohort.py RUNTIME_FAMILIES + tools/matcher.py RUNTIME_ONLY",
+  "near misses": "families/near_miss_library.jsonl",
+  "empirical victim profile and hazard ratios": "tools/hazard.py, derived from incidents/included.jsonl + provisional.jsonl",
+  "band decisions and why each protocol was kept or dropped": "protocols/band_screen.json + protocols/above_band_dropped.json",
+  "creative condition layer": "protocols/conditions.json (definitions in tools/conditions.py)",
+  "deployed-source static indicators": "protocols/onchain_probes.json#<slug>.source_sweep + cached source under sources/deployments/",
+  "hard $50k floor and what it excluded": "protocols/eligibility.json + protocols/subfloor_authority_deferred.json"
+ }
+}

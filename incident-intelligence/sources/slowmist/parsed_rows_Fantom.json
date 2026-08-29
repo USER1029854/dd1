@@ -1,0 +1,2732 @@
+[
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  },
+  {
+    "event_date": "2024-11-17",
+    "target": "Polter Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The lending project Polter Finance on Fantom lost ~$12 million due to an oracle price-related flash loan attack on its newly launched SpookySwap (BOO) market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://x.com/polterfinance/status/1857971122043551898"
+    ]
+  },
+  {
+    "event_date": "2024-05-06",
+    "target": "GNUS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1270000.0,
+    "reported_loss_raw": "$ 1,270,000",
+    "description_raw": "Fantom ecosystem project GNUS fell victim to an attack, resulting in a loss of approximately $1.27 million. GNUS.ai posted on Twitter: \u201cDue to a recent exploit, a hacker was able to mint fake GNUS tokens on Fantom, transfer them via Axelar Bridge to Ethereum and Polygon, and sell them into existing liquidity pools. We will be conducting a snapshot at the block preceding the exploit. To ensure fairness, please refrain from purchasing GNUS tokens post-exploit, as we'll be issuing a new token.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/GnusAi/status/1787118358862942361"
+    ]
+  },
+  {
+    "event_date": "2024-01-16",
+    "target": "Hector Network",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2700000.0,
+    "reported_loss_raw": "$ 2,700,000",
+    "description_raw": "Another $2.7 million is gone after an apparent thief was able to exploit a smart contract that was intended to distribute payouts to Hector's token holders. They then swapped the tokens from the USDC stablecoin to ETH. Investors in the project are furious, especially because various parties had warned Hector Network about apparently insecure practices. Hector Network's team, meanwhile, have not acknowledged the theft, although a law firm involved in the project liquidation promised a statement would be forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=hector-network-compensation-fund-theft"
+    ]
+  },
+  {
+    "event_date": "2022-08-02",
+    "target": "Reaper Farm",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1698423.0,
+    "reported_loss_raw": "$ 1,698,423",
+    "description_raw": "Reaper Farm's ReaperVaultV2 contract was maliciously exploited, resulting in more than $1.6 million worth of damage. Attackers exploited a vulnerability in the ReaperVaultV2 contract that could destroy other users' vault shares and withdraw tokens, thereby withdrawing large amounts of tokens from multiple vaults.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/PeckShieldAlert/status/1554423041232629761"
+    ]
+  },
+  {
+    "event_date": "2022-05-16",
+    "target": "Scream",
+    "slowmist_attack_method": "Stablecoin prices de-anchor",
+    "reported_loss_usd": 35000000.0,
+    "reported_loss_raw": "$ 35,000,000",
+    "description_raw": "Fantom-based DeFi lending protocol Scream caused $35 million in bad debt after failing to adjust the price of two de-pegged USD stablecoins. The two stablecoins are Fantom USD (FUSD) and Dei (DEI). Both stablecoins are still quoted at $1, according to data from the Scream dashboard. However, their trading prices have been severely de-pegged. Among them, FUSD fell to $0.69, and DEI fell to a low of $0.52. Whale players took advantage of this situation to deposit large amounts of FUSD and DEI at a discount, and siphoned all other stablecoins from the Scream platform. Stablecoins such as Fantom USDT, FRAX, DAI, MIM, and USDC have all been withdrawn from the platform. As a result, users who originally had deposits in these stablecoins would not be able to withdraw from Scream.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.theblockcrypto.com/post/147046/defi-lender-left-with-35-million-bad-debt-after-quoting-depegged-stablecoins-at-1?utm_source=cryptopanic&amp;ut"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "SpiritSwap",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 18000.0,
+    "reported_loss_raw": "$ 18,000",
+    "description_raw": "SpiritSwap tweeted that the front-end server placed on AWS was compromised by hackers, the website was tampered with parameters, and $18,000 was currently stolen. According to official postmortem analysis, the attackers contacted GoDaddy and began a social engineering attack on one of its employees. After gaining access to the account, the attackers proceeded to modify DNS settings and change all credentials, effectively hijacking access and Take ownership for yourself. After securing access to the SpiritSwap domain, the attackers then proceeded to deploy a phishing site tricked into appearing to be SpiritSwap. The attacker then uses the \"send to\" function in the exchange contract to reroute any funds exchanged by the user to the attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/Spirit_Swap/status/1525216379041116160"
+    ]
+  },
+  {
+    "event_date": "2022-05-06",
+    "target": "Pragma Money",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "DeFi project Pragma Money on Fantom has announced that around $1.5 million in FTM has been drained from their treasury and project wallets.\nAppears to be done by a team member.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://web3isgoinggreat.com/?id=pragma-defi-protocol-developers-rug-pull-for-15-million"
+    ]
+  },
+  {
+    "event_date": "2022-04-28",
+    "target": "Deus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 13400000.0,
+    "reported_loss_raw": "$ 13,400,000",
+    "description_raw": "Fantom-based decentralized derivatives protocol DEUS Finance was attacked, and the hackers made about $13.4 million in profit. The hack utilized a flash loan-assisted manipulation of price oracles read from the StableV1 AMM-USDC/DEI pair, and then used the manipulated collateral DEI price to borrow and drain the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1519530463337250817"
+    ]
+  },
+  {
+    "event_date": "2022-03-21",
+    "target": "OneRing",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 1454672.24,
+    "reported_loss_raw": "$ 1,454,672.24",
+    "description_raw": "Fantom ecological Stablecoin revenue optimizer OneRing issued a document saying that hackers stole 1,454,672.244369 USDC through flash loan attacks, and the contract has been configured to self-destruct in a specific block, so it is almost impossible to track which specific functions in the contract are called to steal funds. .",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://medium.com/oneringfinance/onering-finance-exploit-post-mortem-after-oshare-hack-602a529db99b"
+    ]
+  },
+  {
+    "event_date": "2022-03-14",
+    "target": "PulseDAO Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4342.0,
+    "reported_loss_raw": "4342 FTM",
+    "description_raw": "According to RugDoc on Twitter, PulseDAO Finance has rugpulled. Social and website are closed. 4342 FTM was removed by contract developer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/RugDocIO/status/1503160281442050054"
+    ]
+  },
+  {
+    "event_date": "2022-03-10",
+    "target": "Fantasm Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1007.0,
+    "reported_loss_raw": "1,007 ETH",
+    "description_raw": "Fantom\u2019s on-chain synthetic asset protocol, Fantasm Finance, posted on social media that its FTM collateral reserves had been exploited, and called on users to exchange their XFTM immediately. After exploiting the vulnerability, the hacker exchanged all the profits for ETH, and used Tornado.cash to mix coins across the chain to the Ethereum main network. According to statistics, the hacker made a profit of 1,007 ETH (about 2.73 million US dollars).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/fantasm_finance/status/1501569232881995785"
+    ]
+  },
+  {
+    "event_date": "2022-02-19",
+    "target": "Gold Mine Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 800000.0,
+    "reported_loss_raw": "$ 800,000",
+    "description_raw": "Rugdoc.io tweeted that the Fantom ecological project Gold Mine Finance has rug pull.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/rugdocio/status/1494737976819163139?s=21"
+    ]
+  },
+  {
+    "event_date": "2021-12-19",
+    "target": "GrimFinance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 30000000.0,
+    "reported_loss_raw": "$ 30,000,000",
+    "description_raw": "According to official sources, GrimFinance, a compound income platform on the Fantom chain, suffered a lightning loan attack, and the current loss has exceeded 30 million U.S. dollars. The attacker uses the function named \"beforeDeposit()\" in GrimFinance's vault strategy to attack and enter the malicious Token contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/financegrim/status/1472357770846519312"
+    ]
+  },
+  {
+    "event_date": "2021-09-03",
+    "target": "Tomb Finance",
+    "slowmist_attack_method": "Fee Collection Mechanism Flaw",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Tomb Finance token TOMB, an algorithmic stablecoin project linked to the Fantom ecosystem and FTM, had the biggest drop of 77% yesterday, and was suspected of being attacked by the community. In this regard, Tomb Finance stated that it used to collect service fees when selling TOMB. The mechanism Gatekeeper was used by a third party, which led to panic selling, but the project was not attacked and no funds were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Fantom&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://tombfinance.medium.com/tomb-finance-post-mortem-480fa68375b2"
+    ]
+  }
+]

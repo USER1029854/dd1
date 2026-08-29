@@ -1,0 +1,9 @@
+[
+ {
+  "slug": "osmosis-dex",
+  "owner": "osmosis-labs",
+  "repo": "osmosis",
+  "tvl": 13244903.857081624,
+  "runtime": "COSMOS_SDK_GO"
+ }
+]

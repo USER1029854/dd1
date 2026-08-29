@@ -1,0 +1,55 @@
+{
+ "method": "Read-only retrieval of public repository source via the GitLab files API, then direct inspection of the exact files and lines named in an operator-supplied technical writeup. No repository was cloned, modified or executed. Nothing here is an exploitation procedure.",
+ "retrieved_utc": "2026-08-24",
+ "incidents": {
+  "INC-2026-08-18-MAY": {
+   "target": "Maya Protocol (MAYAChain)",
+   "upstream_lineage": "hard fork of THORChain (thorchain/thornode)",
+   "repositories_read": [
+    {"repo": "gitlab.com/mayachain/mayanode", "project_id": 36018613, "ref": "develop"},
+    {"repo": "gitlab.com/thorchain/thornode", "project_id": 13422983, "ref": "develop"}
+   ],
+   "claims_verified": [
+    {"bug": "batched MsgDeposit overwrites one voter keyed on the shared tx id",
+     "file": "x/mayachain/handler_deposit.go", "lines": "283,287",
+     "observed": "NewObservedTxVoter(txIn.Tx.ID, []ObservedTx{txIn}) then SetObservedTxInVoter(ctx, txInVoter), constructed fresh rather than fetched and appended",
+     "verdict": "CONFIRMED", "family": "RUNTIME-BATCHED-MESSAGE-SHARED-KEY-CLOBBER"},
+    {"bug": "outbound matcher walks heights by a fixed stride and can skip the true height",
+     "file": "x/mayachain/handler_common_outbound.go", "lines": "88-92",
+     "observed": "outHeight := voter.OutboundHeight; if zero, falls back to voter.FinalisedHeight; then for height := outHeight; height <= ctx.BlockHeight(); height += signingTransPeriod",
+     "verdict": "CONFIRMED", "family": "RECONCILIATION-STRIDE-SKIPS-TRUE-VALUE"},
+    {"bug": "subsidy value computed from a pool ratio with no cap by the pool's asset balance",
+     "file": "x/mayachain/helpers.go", "lines": "224",
+     "observed": "runeValue := pool.AssetValueInRune(coin.Amount) inside subsidizePoolWithSlashBondV92; the only subsequent test is runeValue.IsZero(); no comparison against pool.BalanceAsset",
+     "verdict": "CONFIRMED", "family": "ACC-MULTI-PATH-CREDIT-DRIFT"},
+    {"bug": "pool balance committed before the transfer meant to fund it",
+     "file": "x/mayachain/helpers.go", "lines": "~250-266",
+     "observed": "pool.BalanceCacao = pool.BalanceCacao.Add(f.subsidiseRune) then SetPool(ctx, pool), and only afterwards SendFromModuleToModule(ctx, ReserveName, AsgardName, ...) whose failure returns an error with the pool write already persisted",
+     "verdict": "CONFIRMED", "family": "RUNTIME-STATE-COMMITTED-BEFORE-FUNDING-TRANSFER"},
+    {"bug": "dispatcher logs the handler error and continues in the same context",
+     "file": "x/mayachain/handler_observed_txout.go", "lines": "282-290",
+     "observed": "_, err = handler(ctx, m); on error: Logger().Error(\"handler failed:\"), slashObservedOutbound(\"failed_outbound\"), voter.SetDone(), SetObservedTxOutVoter(...), continue — no cache context, no rollback",
+     "verdict": "CONFIRMED", "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK"},
+    {"bug": "pool unit dilution via near-zero-asset add liquidity",
+     "file": "pool unit math", "lines": null,
+     "observed": "not inspected in this pass",
+     "verdict": "NOT_VERIFIED_HERE", "family": "ACC-ZERO-SUPPLY-INFLATION"}
+   ],
+   "verified_count": 5,
+   "claimed_count": 6,
+   "grade_effect": "Five of six claimed defects were confirmed at the exact file and line stated, against live public source. Under the run's grading rule this is deployed-code evidence, so the record moves from B (SlowMist mechanism record only) to A.",
+   "upstream_check": {
+    "question": "Does THORChain, the $61.9M upstream of this fork, carry the same defects?",
+    "result": "NO_MATCH_ON_ANY_VERIFIED_DEFECT",
+    "evidence": [
+     "x/thorchain/helpers.go contains no subsidizePoolWithSlashBond* function; its AssetValueInRune call sites (937, 1078, 1286) are in unrelated functions, and SetPool(ctx, pool) appears once (line 317) outside a subsidy path.",
+     "x/thorchain/handler_common_outbound.go does not use the plain stride loop. It computes a per-chain searchPeriod (xmrSigningPeriodMultiplier, evmAggregatorSigningPeriodMultiplier, evmTokenSigningPeriodMultiplier, lines 98-105) and its comment states the window is bounded by 'one signingTransPeriod ago, whichever is later'.",
+     "x/thorchain/handler_deposit.go constructs its voter at lines 215-219 with different surrounding structure.",
+     "x/thorchain/handler_observed_txout.go is 2,855 bytes against Maya's 12,418; the dispatcher shape differs."
+    ],
+    "disposition": "The obvious lineage lead is KILLED on evidence. The two codebases have diverged materially; the defects verified on Maya are Maya's, not inherited shape still present upstream. Recorded so the negative result is auditable rather than silently dropped.",
+    "caveat": "This compares the current develop branch of each repository. It establishes that these five shapes are not present there now. It is not a general safety statement about THORChain, and no other defect class was searched for."
+   }
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+  "tag": "Arbitrum",
+  "category_filter": "Arbitrum",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:19:25Z",
+      "sha256": "0dc23b36ee5b900f6564725a428bbfcde4507fb493d10988a305a0d0bff86684",
+      "bytes": 30574,
+      "snapshot": "Arbitrum_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 12,
+      "rows_older_than_window": 8,
+      "first_date": "2025-07-10",
+      "last_date": "2026-08-08",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:19:27Z",
+      "sha256": "bf68cb3858dc28d291cdae7e4c998e86a36c30907ae4d7223ced49a3fa334a68",
+      "bytes": 24598,
+      "snapshot": "Arbitrum_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2024-01-27",
+      "last_date": "2025-07-09",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 40
+}

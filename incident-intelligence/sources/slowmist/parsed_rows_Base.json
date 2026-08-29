@@ -1,0 +1,522 @@
+[
+  {
+    "event_date": "2026-07-25",
+    "target": "Bankrbot",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": 479885.0,
+    "reported_loss_raw": "$ 479,885",
+    "description_raw": "The Bankrbot X account (despite on-device passkey) was compromised and posted fake airdrop links; concurrently, the project's Bankr wallet (without MFA) was drained of ~1.5 billion $BNKR tokens which were then dumped.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/0xdeployer/status/2081155362968015159?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-05-19",
+    "target": "Bankr",
+    "slowmist_attack_method": "Social Engineering",
+    "reported_loss_usd": 440000.0,
+    "reported_loss_raw": "$ 440,000",
+    "description_raw": "The AI-powered crypto trading agent platform Bankr on the Base network suffered a social engineering attack. The attacker exploited prompt injection techniques targeting the automated agent trust layer between Grok and Bankrbot \u2014 including malicious inputs such as Morse code \u2014 to trick the system into executing unauthorized transaction signatures, ultimately gaining access to 14 user wallets and transferring funds. Bankr has suspended the affected functionality, launched an investigation, and pledged to fully reimburse all losses from its treasury.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/bankrbot/status/2056824330999533747"
+    ]
+  },
+  {
+    "event_date": "2026-04-27",
+    "target": "Singularity Finance",
+    "slowmist_attack_method": "Oracle Misconfiguration",
+    "reported_loss_usd": 413000.0,
+    "reported_loss_raw": "$ 413,000",
+    "description_raw": "Singularity Finance vaults were exploited due to a critical oracle misconfiguration. The admin had registered an unsupported Uniswap V3 fee tier of 42 (valid tiers: 100/500/3000/10000) back in January, causing factory.getPool() to silently return address(0). This made the oracle price all non-USDC reserves at zero. The vault only recognized ~$100 in idle USDC while real yield tokens sat undervalued. The attacker flash-loaned 100K USDC from Morpho, deposited into the vault to mint ~99.99% of shares at the broken ratio, then redeemed for a proportional share of actual underlying assets, draining ~$413K. Root cause: admin parameter error combined with missing input validation on fee tiers. The misconfig sat undetected for ~3 months.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/0xSalazar/status/2048762346143666656"
+    ]
+  },
+  {
+    "event_date": "2026-04-22",
+    "target": "Kipseli",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 72350.0,
+    "reported_loss_raw": "$ 72,350",
+    "description_raw": "The Kipseli Router contract on Base was exploited via Improper Validation / Decimal Mismatch. The router blindly used the amount returned by an external USDC-only quoter as the raw transfer amount for tokenOut without verifying that the output token matched the quote token. The attacker used an unsupported path (e.g., WETH \u2192 cbBTC), causing the quoter to return a USDC-scaled value (6 decimals) which was then transferred as cbBTC (8 decimals), resulting in massive over-transfer. The attacker swapped only ~0.04 WETH for ~0.926 cbBTC (worth ~$72.35K). Afterward, the finder contacted the team, returned 80% of the funds as a white-hat disclosure, and kept 20% as a bug bounty.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TheDEFIac/status/2046973478595641435"
+    ]
+  },
+  {
+    "event_date": "2026-04-12",
+    "target": "SubQuery Network",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 134000.0,
+    "reported_loss_raw": "$ 134,000",
+    "description_raw": "Attackers exploited a vulnerability in SubQuery Network\u2019s Settings contract on the Base network (the setContractAddress() function missing the onlyOwner access control modifier). By repeatedly calling this function, the attacker set their address as StakingManager and RewardsDistributor, enabling drainage of pooled SQT from the Staking contract, impacting 272 individual staker/delegator wallets, RewardsBooster, and a small protocol Treasury. Approximately 382,433,441 SQT were drained (worth about $134,000 USD at the time). The team quickly responded by deploying a fix, pausing withdrawals, and committing to full compensation for all affected users. No user private keys were compromised. The root cause was a missing access control from a prior code refactor.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://subquery.network/blog/subquery-network-security-incident-report"
+    ]
+  },
+  {
+    "event_date": "2026-03-07",
+    "target": "Molt EVM",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 127000.0,
+    "reported_loss_raw": "$ 127,000",
+    "description_raw": "Molt EVM, an experimental self-replicating ERC-20 token protocol on Base, was exploited due to a weak access control flaw. The attacker deployed a malicious contract to bypass the onlySpawnerToken modifier, minted large amounts of tokens via mintFromSpawner(), and dumped them through liquidity pools for profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/MeiMighty1/status/2031160110714679490"
+    ]
+  },
+  {
+    "event_date": "2026-02-26",
+    "target": "FOOMCASH",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 2260000.0,
+    "reported_loss_raw": "$ 2,260,000",
+    "description_raw": "The privacy gaming platform FOOMCASH was attacked on Base and Ethereum, resulting in a loss of 24,283,773,519,600 $FOOM (approximately $2.26 million). The vulnerability was caused by a misconfiguration of the verification key, which the attacker exploited to forge zkSNARK proofs and subsequently extract a massive amount of $FOOM from the compromised contracts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/gopluszh/status/2027002497911623960?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-02-20",
+    "target": "Veil Cash",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 5000.0,
+    "reported_loss_raw": "$ 5,000",
+    "description_raw": "Veil.Cash (a zk-SNARK privacy protocol on Base, forked from Tornado Cash) suffered an exploit on its legacy fixed-denomination privacy pools. Due to a misconfigured Groth16 zk-SNARK verifier (where delta2 equaled gamma2), an attacker was able to forge valid zero-knowledge proofs and drain approximately 2.9 ETH (~$5,000) in a single transaction by making multiple fraudulent withdrawals without corresponding deposits. Whitehat interveners and the exploiter voluntarily returned the funds, resulting in 100% recovery. The project\u2019s newer/live pools were unaffected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Veildotcash/status/2025293773891404225"
+    ]
+  },
+  {
+    "event_date": "2026-02-15",
+    "target": "Moonwell",
+    "slowmist_attack_method": "Oracle Misconfiguration",
+    "reported_loss_usd": 1780000.0,
+    "reported_loss_raw": "$ 1,780,000",
+    "description_raw": "According to Decrypt, the DeFi lending protocol Moonwell incurred approximately $1.78 million in bad debt due to an oracle configuration error.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://decrypt.co/358374/oracle-error-leaves-defi-lender-moonwell-1-8-million-bad-debt"
+    ]
+  },
+  {
+    "event_date": "2026-01-29",
+    "target": "Revert Lend",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 50101.0,
+    "reported_loss_raw": "$ 50,101",
+    "description_raw": "Revert Finance\u2019s newly launched Aerodrome Lend vault on Base was exploited for $50,101. The attacker used a flash loan from Morpho to mint an Aerodrome concentrated liquidity NFT, deposited it as collateral, borrowed USDC, and then exploited a missing safety check in the GaugeManager contract. This allowed unstaking and withdrawing all liquidity from the debt-backed position, leaving the vault with a worthless NFT shell. A second attacker replicated it shortly after. User funds were safe; losses were mostly from Revert\u2019s own seeded USDC. The team disabled deposits and published a post-mortem.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/revertfinance/status/2017087480772600157"
+    ]
+  },
+  {
+    "event_date": "2026-01-25",
+    "target": "SwapNet",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 13430000.0,
+    "reported_loss_raw": "$ 13,430,000",
+    "description_raw": "SwapNet\u2019s closed-source aggregator contracts were exploited via an arbitrary-call vulnerability due to insufficient input validation on user-controlled parameters. This allowed attackers to abuse existing token approvals (especially from users who disabled Matcha Meta\u2019s One-Time Approval) to execute unauthorized transferFrom calls, draining ~$13.43M across Base, Ethereum, Arbitrum, and BSC. The attacker swapped large amounts of USDC to ETH on Base and bridged funds. Matcha Meta and 0x core contracts were unaffected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/PeckShieldAlert/status/2015608261119217671"
+    ]
+  },
+  {
+    "event_date": "2026-01-19",
+    "target": "SynapLogic",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 186000.0,
+    "reported_loss_raw": "$ 186,000",
+    "description_raw": "According to a BlockSec alert, the SynapLogic contract lacked critical parameter validation in the swapExactTokensForETHSupportingFeeOnTransferTokens function, allowing attackers to manipulate the whitelist logic and designate arbitrary recipient addresses. In addition, the contract failed to verify whether the total amount of native tokens distributed exceeded the actual payment made, enabling attackers to withdraw excess native tokens while simultaneously receiving newly minted SYP, resulting in losses of approximately $186,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Phalcon_xyz/status/2013439544595562898"
+    ]
+  },
+  {
+    "event_date": "2025-11-24",
+    "target": "Agentic FoF",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 531000.0,
+    "reported_loss_raw": "$ 531,000",
+    "description_raw": "BasisOS disclosed on X: \u201cDue to a security breach, the Agentic FoF was compromised, resulting in approximately USD 531,000 in leaked funds. All vaults have now been suspended, and withdrawals from the Agentic FoF have also been paused pending the results of an internal investigation.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/BasisOS/status/1992689112491725207?s=20"
+    ]
+  },
+  {
+    "event_date": "2025-11-21",
+    "target": "Aerodrome",
+    "slowmist_attack_method": "Domain Hijacking",
+    "reported_loss_usd": 700000.0,
+    "reported_loss_raw": "$ 700,000",
+    "description_raw": "Aerodrome, a DEX built on Base, posted on X that the centralized domains of Velodrome and Aerodrome were hijacked on November 21 due to an internal security vulnerability at NameSilo, resulting in redirection to malicious content. With the rapid response from security partners including Blockaid, Groom Lake, Security Alliance, and FTI Consulting, MetaMask and Coinbase Wallet displayed warnings within two minutes, and the issue was fully mitigated within four hours. The incident resulted in approximately $700,000 in losses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/AerodromeFi/status/1992693120614727758"
+    ]
+  },
+  {
+    "event_date": "2025-11-04",
+    "target": "Moonwell",
+    "slowmist_attack_method": "Oracle Attack",
+    "reported_loss_usd": 1000000.0,
+    "reported_loss_raw": "$ 1,000,000",
+    "description_raw": "According to CertiK\u2019s monitoring, the Moonwell lending contract suffered multiple attack transactions. The attacker exploited an incorrect oracle price for wrst (around USD 5.8 million). By using a flash loan of only about 0.02 wrstETH and depositing it, the attacker repeatedly borrowed over 20 wstETH, gaining 295 ETH (approximately USD 1 million) in profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/CertiKAlert/status/1985620452992253973"
+    ]
+  },
+  {
+    "event_date": "2025-07-15",
+    "target": "Arcadia Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 3600000.0,
+    "reported_loss_raw": "$ 3,600,000",
+    "description_raw": "According to the incident analysis report released by Arcadia Finance, at 04:05 AM UTC on July 15, 2025, an active exploit targeting a series of peripheral contracts occurred. The attacker abused the delegated powers of Arcadia account owners on the rebalancer and compounder asset manager contracts, resulting in a loss of approximately $3.6 million. This exploit was limited to the asset manager contracts; lending and token contracts were not affected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://arcadiafinance.notion.site/Arcadia-Post-Mortem-14-07-2025-23104482afa780fdb291cd3f41b7fc99"
+    ]
+  },
+  {
+    "event_date": "2025-04-26",
+    "target": "Impermax",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 400000.0,
+    "reported_loss_raw": "$ 400,000",
+    "description_raw": "Impermax was attacked on the Base network. In a tweet, Impermax stated that someone launched a flash loan attack and drained its V3 liquidity pools. The team is currently investigating and advises users not to interact with any V3 pools.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://impermax.medium.com/impermax-v3-exploit-post-mortem-6b0818897b25"
+    ]
+  },
+  {
+    "event_date": "2025-01-24",
+    "target": "ODOS",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 100000.0,
+    "reported_loss_raw": "$ 100,000",
+    "description_raw": "According to monitoring by the SlowMist security team, due to a lack of input validation in @odosprotocol, the vulnerability has been exploited across multiple chains, resulting in approximately $100,000 in losses. ODOS stated in a post that the attack exploited a vulnerability in its audited executor contract, allowing the theft of revenue stored within the contract but not affecting any user funds.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/odosprotocol/status/1882668362045821146"
+    ]
+  },
+  {
+    "event_date": "2025-01-10",
+    "target": "Alien Base",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 38000.0,
+    "reported_loss_raw": "$ 38,000",
+    "description_raw": "Multiple attack transactions targeting the Alien Base BunniHub contract resulted in a loss of approximately $38,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1877545774856417400"
+    ]
+  },
+  {
+    "event_date": "2025-01-08",
+    "target": "Virtuals Protocol",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Virtuals Protocol announced on X that their official Discord server has been compromised. They advised users not to click on any posts or private messages from administrators until further notice.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/virtuals_io/status/1876921173340246492?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2024-12-28",
+    "target": "Standing on Bizness (BIZNESS)",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 15700.0,
+    "reported_loss_raw": "$ 15,700",
+    "description_raw": "Standing on Bizness (BIZNESS) appears to have been subjected to a reentrancy attack on Base, resulting in an estimated loss of $15,700.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://basescan.org/tx/0x984cb29cdb4e92e5899e9c94768f8a34047d0e1074f9c4109364e3682e488873"
+    ]
+  },
+  {
+    "event_date": "2024-12-02",
+    "target": "Brett",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to community feedback, the official X account of the Meme token Brett on the Base chain has reportedly been compromised and used to post false information. Please stay vigilant against related risks.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/404460"
+    ]
+  },
+  {
+    "event_date": "2024-10-25",
+    "target": "Unverified Contracts",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 1000000.0,
+    "reported_loss_raw": "$ 1,000,000",
+    "description_raw": "Base chain detected a price manipulation attack targeting unverified lending contracts, where the attacker gained around $1 million in tokens through excessive borrowing.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://basescan.org/tx/0x6ab5b7b51f780e8c6c5ddaf65e9badb868811a95c1fd64e86435283074d3149e"
+    ]
+  },
+  {
+    "event_date": "2024-09-13",
+    "target": "BaseBros Fi",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 130000.0,
+    "reported_loss_raw": "$ 130,000",
+    "description_raw": "The yield-optimizing DeFi protocol BaseBros Fi has vanished after executing a rug pull via an unaudited smart contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://cointelegraph.com/news/basebros-fi-defi-rug-pull-smart-contract-base"
+    ]
+  },
+  {
+    "event_date": "2024-07-21",
+    "target": "ETHTrustFund",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "ETHTrustFund conducted a rugpull and stole approximately $2 million worth of cryptocurrencies on Base.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/0ctoshi/status/1815026461675335752"
+    ]
+  },
+  {
+    "event_date": "2024-05-26",
+    "target": "Normie",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 882000.0,
+    "reported_loss_raw": "$ 882,000",
+    "description_raw": "According to community feedback, the Base ecosystem's meme coin NORMIE has been attacked. The attacker exploited a design flaw in the NORMIE token's cross-chain bridge, manipulating the price on the Base Chain using flash loans. Since transactions with NORMIE on the Base Chain incur taxes, these taxes are automatically directed to a wallet controlled by the project team. The attacker injected a large amount of funds into this wallet via flash loans, significantly diluting the token's supply and causing a flash crash in the price.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/xes9udaz.html"
+    ]
+  },
+  {
+    "event_date": "2024-05-10",
+    "target": "Tsuru",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 410000.0,
+    "reported_loss_raw": "$ 410,000",
+    "description_raw": "According to the SlowMist Security Alert system, potential suspicious activities related to Tsuru have resulted in a loss of 138.78 ETH.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/SlowMist_Team/status/1788936928634834958"
+    ]
+  },
+  {
+    "event_date": "2024-04-15",
+    "target": "Grand Base",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "Grand Base, a real world assets platform built on the Base layer-2 blockchain, the team behind the project claimed that the deployer wallet had been compromised, allowing an attacker to drain the project's liquidity pool. Altogether, 615 ETH (~$2 million) was taken from the project. On April 20th, Grand Base tweeted that during the token reboot process, the team had managed to retrieve our veNFTs from the hacked address and transferred them to a multi-sig wallet. The veNFT position represents and amount of $225,000 and will be used to build robust liquidity when the time comes.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/grandbase_fi/status/1779842048234840261"
+    ]
+  },
+  {
+    "event_date": "2024-04-12",
+    "target": "Sumer Money",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 310000.0,
+    "reported_loss_raw": "$ 310,000",
+    "description_raw": "Sumer Money was exploited on the Base chain due to a smart contract vulnerability, which resulted in a loss of assets worth approximately $310,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://basescan.org/tx/0x619c44af9fedb8f5feea2dcae1da94b6d7e5e0e7f4f4a99352b6c4f5e43a4661"
+    ]
+  },
+  {
+    "event_date": "2024-04-12",
+    "target": "Sumer Money",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 310000.0,
+    "reported_loss_raw": "$ 310,000",
+    "description_raw": "Sumer Money was exploited on the Base chain due to a smart contract vulnerability, which resulted in a loss of assets worth approximately $310,000. The root cause of the exploit is a lack of reentrancy protection, which led to the manipulation of the underlying assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://basescan.org/tx/0x619c44af9fedb8f5feea2dcae1da94b6d7e5e0e7f4f4a99352b6c4f5e43a4661"
+    ]
+  },
+  {
+    "event_date": "2024-03-21",
+    "target": "TICKER",
+    "slowmist_attack_method": "Insider Manipulation",
+    "reported_loss_usd": 900000.0,
+    "reported_loss_raw": "$ 900,000",
+    "description_raw": "TICKER project developer steals $900,000. A developer brought on to run a presale for the TICKER token stole $900,000 from the project. 15% of the token supply was sent to the developer to distribute via an airdrop, but instead of doing so, the developer sold the majority of the tokens for around $900,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=ticker-rug-pull"
+    ]
+  },
+  {
+    "event_date": "2024-02-02",
+    "target": "Detto Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 94147.0,
+    "reported_loss_raw": "$ 94,147",
+    "description_raw": "The project Detto Finance in the Base ecosystem is suspected of a rug pull, with its social media accounts currently inaccessible, resulting in approximately $95,000 in losses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/DackieSwap/status/1753229580465484085"
+    ]
+  },
+  {
+    "event_date": "2023-12-26",
+    "target": "Pike Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 52600.0,
+    "reported_loss_raw": "$ 52,600",
+    "description_raw": "Pike Finance, a cross-chain lending protocol on Base, is suspected of a rug pull, with the deployer removing substantial liquidity, causing a 100% price decline.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/CryptoMonkeyAi/status/1739203055978160553"
+    ]
+  },
+  {
+    "event_date": "2023-11-29",
+    "target": "Aerodrome",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Aerodrome tweeted that the frontend is currently compromised, please do not interact with Aerodrome for the time being, the team is investigating.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/aerodromefi/status/1729771968717541711"
+    ]
+  },
+  {
+    "event_date": "2023-10-05",
+    "target": "friend.tech",
+    "slowmist_attack_method": "SIM Card Attack",
+    "reported_loss_usd": 385000.0,
+    "reported_loss_raw": "$  385,000",
+    "description_raw": "On October 5th, blockchain detective ZachXBT posted on social media, stating that a hacker had made a profit of 234 ETH (~$385,000) in the past 24 hours by conducting SIM card swap attacks on four different friend.tech users.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/zachxbt/status/1709697295464141208"
+    ]
+  },
+  {
+    "event_date": "2023-09-06",
+    "target": "Base",
+    "slowmist_attack_method": "Block Failure",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to official sources, Base had previously experienced a block failure. The Base team immediately investigated, and a fix was subsequently deployed, and block production began to resume. At present, the team confirmed that the network operation and RPC API have returned to normal, and will continue to monitor. Base later tweeted that the glitch had been fixed and no funds were at risk.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://status.base.org/"
+    ]
+  },
+  {
+    "event_date": "2023-08-25",
+    "target": "Magnate Finance",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 6400000.0,
+    "reported_loss_raw": "$ 6,400,000",
+    "description_raw": "Base on-chain exit scam Magnate Finance has seen its TVL drop by ~$6.4M as the deployer modifies the price oracle provider and removes all assets. On-chain sleuth ZachXBT says the Magnate Finance deployer address is linked to exit scams Solfire, Kokomo Finance. Magnate Finance's website and social platforms are currently down and its Telegram group has been deleted. According to MistTrack monitoring, funds have cross-chained from Base to ETH, Arbitrum, and Optimism.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/SlowMist_Team/status/1694918938424234433"
+    ]
+  },
+  {
+    "event_date": "2023-08-16",
+    "target": "SwirlLend",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 460000.0,
+    "reported_loss_raw": "$ 460,000",
+    "description_raw": "The lending protocol SwirlLend team stole about $2.9 million in cryptocurrency from Base and $1.7 million worth of cryptocurrency from Linea, all of which were cross-chained to Ethereum. As of now, the deployer has transferred 254.2 ETH to Tornado Cash. SwirlLend's official Twitter and Telegram accounts have been logged out, and its official website is also inaccessible.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/332931?source=share"
+    ]
+  },
+  {
+    "event_date": "2023-08-15",
+    "target": "RocketSwap",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 471.0,
+    "reported_loss_raw": "471 ETH",
+    "description_raw": "The Base ecological project RocketSwap was attacked. The attacker cross-chained the stolen assets to Ethereum, resulting in a loss of 471 ETH (approximately $868,000). RocketSwap said: \"The team needs to use offline signatures and put the private key on the server when deploying Launchpad. It is currently detected that the server has been brute-forced, and because the farm contract uses a proxy contract, there are multiple high-risk permissions that lead to the transfer of farm assets.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/RocketSwap_Labs/status/1691229656593371136"
+    ]
+  },
+  {
+    "event_date": "2023-08-01",
+    "target": "LeetSwap",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 624000.0,
+    "reported_loss_raw": "$ 624,000",
+    "description_raw": "The axlUSD/WETH pool in LeetSwap, the largest DEX on the Base chain, suffered a price manipulation attack and has suspended trading for investigation. It appears that 342.5 ETH (~$624,000) was exploited. On August 3, LeetSwap stated that it had withdrawn about 400 ETH from the risky liquidity pool. According to the analysis of SlowMist, the main cause of this attack was that the _transferFeesSupportingTaxTokens function in the Pair contract was externally callable. This function allowed the transfer of any specified tokens in the contract to the address that collects fees. The attacker initiated a normal small-swap operation first to acquire the necessary tokens for the next swap. Then, the attacker called the _transferFeesSupportingTaxTokens function to transfer almost all of the tokens of one of the Pair to the address collecting fees, causing an imbalance in the Pair's liquidity. Finally, the attacker called the sync function to balance the pool and performed a reverse swap to take more ETH than expected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Base&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/LeetSwap/status/1686190488506769408"
+    ]
+  }
+]

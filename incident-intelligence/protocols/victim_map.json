@@ -1,0 +1,309 @@
+{
+ "victim_slugs": [
+  "aave-v3",
+  "across",
+  "aethir",
+  "allbridge-core",
+  "atomic-green",
+  "aztec-connect",
+  "barnbridge",
+  "blend-pools-v2",
+  "bonzo-lend",
+  "chi-protocol",
+  "curve-llamalend",
+  "dtrinity-dlend",
+  "foom-cash",
+  "fractal-protocol",
+  "gondi-v3",
+  "goonfi",
+  "goose-finance",
+  "haedal-vault",
+  "hinkal",
+  "juicebox-v3",
+  "kipseli",
+  "lazy-summer-protocol",
+  "lixir-finance",
+  "lumi-finance",
+  "maya-protocol",
+  "namada-shielded-pools",
+  "oraichain",
+  "ostium",
+  "ploutos-money",
+  "renegade",
+  "risex",
+  "set-protocol",
+  "silo-v2",
+  "singularity-finance",
+  "solido-cash",
+  "stake-dao",
+  "stakenova",
+  "taiko-bridge",
+  "thetanuts-finance",
+  "wise-lending-v2",
+  "yieldcore"
+ ],
+ "victim_families": {
+  "maya-protocol": [
+   "ACC-MULTI-PATH-CREDIT-DRIFT"
+  ],
+  "atomic-green": [
+   "SIG-REPLAY-CROSS-POSITION"
+  ],
+  "set-protocol": [
+   "CALLBACK-STATE-LOCK-INCOMPLETE"
+  ],
+  "solido-cash": [
+   "ORACLE-STALE-OR-SILENT-FALLBACK"
+  ],
+  "allbridge-core": [
+   "AMM-POOL-RATIO-SKEW-EXTRACTION"
+  ],
+  "across": [
+   "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+  ],
+  "barnbridge": [
+   "APPROVALS-TO-UPGRADEABLE-SPENDER",
+   "GOV-CHEAP-CONTROL-NO-TIMELOCK"
+  ],
+  "lumi-finance": [
+   "CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS"
+  ],
+  "chi-protocol": [
+   "ACC-HARDCODED-PEG-REDEMPTION"
+  ],
+  "bonzo-lend": [
+   "ORACLE-SPOT-THIN-LIQUIDITY"
+  ],
+  "lazy-summer-protocol": [
+   "ACC-DONATION-UNACCOUNTED-BALANCE",
+   "ACC-NAV-SHAREPRICE-MANIPULABLE"
+  ],
+  "hinkal": [
+   "PROOF-VERIFICATION-BYPASSED"
+  ],
+  "lixir-finance": [
+   "SIG-VERIFIER-DEFEATABLE"
+  ],
+  "thetanuts-finance": [
+   "ACC-ZERO-SUPPLY-INFLATION",
+   "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+  ],
+  "aztec-connect": [
+   "PROOF-VERIFICATION-BYPASSED",
+   "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+  ],
+  "haedal-vault": [
+   "ACC-MULTI-PATH-CREDIT-DRIFT",
+   "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+  ],
+  "fractal-protocol": [
+   "CALLBACK-STATE-LOCK-INCOMPLETE",
+   "SETTLEMENT-EPOCH-BOUNDARY-CREDIT"
+  ],
+  "renegade": [
+   "UPGRADE-INITIALIZER-REACHABLE-LIVE",
+   "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+  ],
+  "yieldcore": [
+   "AUTH-MISSING-ON-VALUE-MOVING-PATH"
+  ],
+  "singularity-finance": [
+   "ACC-NAV-SHAREPRICE-MANIPULABLE",
+   "ORACLE-STALE-OR-SILENT-FALLBACK"
+  ],
+  "kipseli": [
+   "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED",
+   "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+  ],
+  "juicebox-v3": [
+   "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED",
+   "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+  ],
+  "dtrinity-dlend": [
+   "ACC-ZERO-SUPPLY-INFLATION"
+  ],
+  "goose-finance": [
+   "ACC-REWARD-INDEX-INIT-AND-ORDERING"
+  ],
+  "stake-dao": [
+   "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+  ],
+  "aave-v3": [
+   "LIQUIDATION-ON-MANIPULABLE-VALUATION",
+   "ORACLE-STALE-OR-SILENT-FALLBACK"
+  ],
+  "gondi-v3": [
+   "AUTH-MISSING-ON-VALUE-MOVING-PATH"
+  ],
+  "curve-llamalend": [
+   "ACC-DONATION-UNACCOUNTED-BALANCE",
+   "LIQUIDATION-ON-MANIPULABLE-VALUATION",
+   "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+  ],
+  "foom-cash": [
+   "PROOF-VERIFICATION-BYPASSED"
+  ],
+  "ploutos-money": [
+   "ORACLE-STALE-OR-SILENT-FALLBACK"
+  ],
+  "blend-pools-v2": [
+   "ORACLE-SPOT-THIN-LIQUIDITY"
+  ],
+  "oraichain": [
+   "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+  ],
+  "risex": [
+   "AUTH-MISSING-ON-VALUE-MOVING-PATH"
+  ],
+  "ostium": [
+   "ORACLE-STALE-OR-SILENT-FALLBACK"
+  ],
+  "taiko-bridge": [
+   "PROOF-VERIFICATION-BYPASSED"
+  ],
+  "namada-shielded-pools": [
+   "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+  ],
+  "aethir": [
+   "AUTH-MISSING-ON-VALUE-MOVING-PATH"
+  ],
+  "silo-v2": [
+   "ORACLE-STALE-OR-SILENT-FALLBACK"
+  ],
+  "goonfi": [
+   "ORACLE-STALE-OR-SILENT-FALLBACK"
+  ],
+  "wise-lending-v2": [
+   "ACC-NAV-SHAREPRICE-MANIPULABLE"
+  ],
+  "stakenova": [
+   "AUTH-MISSING-ON-VALUE-MOVING-PATH"
+  ]
+ },
+ "slug_to_incidents": {
+  "maya-protocol": [
+   "INC-2026-08-18-MAY"
+  ],
+  "atomic-green": [
+   "INC-2026-08-08-ATO"
+  ],
+  "set-protocol": [
+   "INC-2026-07-30-SET"
+  ],
+  "solido-cash": [
+   "INC-2026-07-23-SOL"
+  ],
+  "allbridge-core": [
+   "INC-2026-07-19-ALL"
+  ],
+  "across": [
+   "INC-2026-07-17-ACR"
+  ],
+  "barnbridge": [
+   "INC-2026-07-15-BAR"
+  ],
+  "lumi-finance": [
+   "INC-2026-07-13-LUM"
+  ],
+  "chi-protocol": [
+   "INC-2026-07-13-CHI"
+  ],
+  "bonzo-lend": [
+   "INC-2026-07-11-BON"
+  ],
+  "lazy-summer-protocol": [
+   "INC-2026-07-06-LAZ"
+  ],
+  "hinkal": [
+   "INC-2026-07-02-HIN"
+  ],
+  "lixir-finance": [
+   "INC-2026-06-25-LIX"
+  ],
+  "thetanuts-finance": [
+   "INC-2026-06-15-THE",
+   "INC-2026-04-20-THE"
+  ],
+  "aztec-connect": [
+   "INC-2026-06-14-AZT"
+  ],
+  "haedal-vault": [
+   "INC-2026-06-09-HAE"
+  ],
+  "fractal-protocol": [
+   "INC-2026-05-22-FRA"
+  ],
+  "renegade": [
+   "INC-2026-05-10-REN"
+  ],
+  "yieldcore": [
+   "INC-2026-04-28-YIE"
+  ],
+  "singularity-finance": [
+   "INC-2026-04-27-SIN"
+  ],
+  "kipseli": [
+   "INC-2026-04-22-KIP"
+  ],
+  "juicebox-v3": [
+   "INC-2026-04-20-JUI"
+  ],
+  "dtrinity-dlend": [
+   "INC-2026-03-17-DTR"
+  ],
+  "goose-finance": [
+   "INC-2026-03-14-GOO"
+  ],
+  "stake-dao": [
+   "INC-2026-03-12-STA"
+  ],
+  "aave-v3": [
+   "INC-2026-03-12-AAV"
+  ],
+  "gondi-v3": [
+   "INC-2026-03-09-GON"
+  ],
+  "curve-llamalend": [
+   "INC-2026-03-02-CUR"
+  ],
+  "foom-cash": [
+   "INC-2026-02-26-FOO"
+  ],
+  "ploutos-money": [
+   "INC-2026-02-26-PLO"
+  ],
+  "blend-pools-v2": [
+   "INC-2026-02-22-BLE"
+  ],
+  "oraichain": [
+   "INC-2026-08-09-ORA"
+  ],
+  "risex": [
+   "INC-2026-08-03-RIS"
+  ],
+  "ostium": [
+   "INC-2026-07-15-OST"
+  ],
+  "taiko-bridge": [
+   "INC-2026-06-21-TAI"
+  ],
+  "namada-shielded-pools": [
+   "INC-2026-06-19-NAM"
+  ],
+  "aethir": [
+   "INC-2026-04-09-AET"
+  ],
+  "silo-v2": [
+   "INC-2026-04-03-SIL"
+  ],
+  "goonfi": [
+   "INC-2026-03-28-GOO"
+  ],
+  "wise-lending-v2": [
+   "INC-2026-02-28-WIS"
+  ],
+  "stakenova": [
+   "INC-2026-02-27-STA"
+  ]
+ }
+}

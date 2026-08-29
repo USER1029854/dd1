@@ -1,0 +1,32 @@
+{
+ "generated":"2026-08-27",
+ "note":"Leads named by the operator, resolved against this run. Each records what it maps to, whether it enters the window corpus, and what it changes.",
+ "leads":[
+  {
+   "lead":"FH token / FHToken",
+   "resolved":"FH/USDT pool on PancakeSwap V2 drained of roughly $20,000. Root cause reported as a flawed _transfer paired with faulty isSell logic causing incorrect burns against the pair's balance.",
+   "date":"2026-08-25/26 (approx)",
+   "in_window":false,
+   "window_note":"The window closes 2026-08-22, so this contributes ZERO to every window statistic in this run. It is recorded as a post-window PROPAGATION datapoint only.",
+   "maps_to_families":["TOKEN-DEFERRED-BURN-LP-RESERVE-DESYNC","TOKEN-TRANSFER-INTENT-HEURISTIC-FORGEABLE"],
+   "why_it_matters":"TOKEN-DEFERRED-BURN-LP-RESERVE-DESYNC is the largest family in this run's window: 14 incidents across 13 independent root causes, most recent in-window 2026-07-28, recorded in incidents/duplicate_groups.json as TEMPLATE_PROPAGATION_INDEPENDENT_DEPLOYMENTS. FH is instance ~15 and lands three days after the window closed. That is direct evidence the template is still propagating, which is exactly the Tier-2 condition: a shared template live across a population, where one falling refines the technique and the rest are hunted within days.",
+   "decisive_check":"Read _transfer in the deployed token: does it burn, reflect, or move balance already held BY THE PAIR, and is the buy/sell branch decided from a value the caller can fabricate (a reserve read, a balance comparison, an address check)? Then confirm whether sync()/skim() is reachable afterwards to realise the desync.",
+   "action_taken":"Raises the technique-recency component for every candidate carrying these families; does not alter the corpus.",
+   "source":"https://en.cryptonomist.ch/2026/08/26/fhtoken-security-exploit-loss/"
+  },
+  {
+   "lead":"CometDEX / Blend",
+   "resolved":"Blend Pools V2 on Stellar (the YieldBlox DAO-managed lending pool) exploited for ~$10.8M. The attacker supplied ~150K USTRY as collateral (real value ~$159K), manipulated the USTRY DEX pool so the Reflector Oracle read a price roughly 100x above real, and borrowed 61,249,278 XLM plus ~1M USDC against the inflated valuation.",
+   "date":"2026-02-22",
+   "in_window":true,
+   "corpus_id":"INC-2026-02-22-BLE",
+   "already_in_corpus":true,
+   "maps_to_families":["ORACLE-SPOT-THIN-LIQUIDITY"],
+   "why_it_matters":"This is the run's clearest worked example of TIER 3 (dependency impairment), and of the limit in this run's coverage. Blend's own contracts were not at fault and funds deposited into Blend pools were not at risk -- but Blend's BACKSTOP is composed of Comet BLND-USDC LP shares, so backstop depositors were impaired by a system Blend does not control and never calls. A call-graph audit of Blend would have returned clean. The protocol merely HOLDS the token.",
+   "what_this_run_cannot_do":"Resolve backing/collateral/LP/vault-share holdings to their issuing protocol. The only dependency edge this run can evidence is the DECLARED oracle, and only where the provider's population is small enough for one incident to mean something (Supra: 2 in-window incidents, 10 declaring protocols). Comet is not separately listed on DefiLlama, which is also the operator's point that urgent systems are not always indexed.",
+   "decisive_check":"For each protocol holding an external LP/receipt/vault share as backstop, reserve or collateral, resolve that holding to its issuing protocol and carry the ISSUER's remediation status onto the target. Absent a holdings model this is the highest-value missing capability in the screen.",
+   "action_taken":"Recorded as the Tier-3 exemplar and as the named gap in results/candidates_by_urgency.md limits.",
+   "source":"https://www.bankless.com/read/news/lending-market-blend-suffers-10m-exploit"
+  }
+ ]
+}

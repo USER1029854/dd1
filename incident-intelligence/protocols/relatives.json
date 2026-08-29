@@ -1,0 +1,5827 @@
+[
+ {
+  "slug": "crvusd",
+  "name": "crvUSD",
+  "head_tvl": 136524817.64608854,
+  "snapshot_tvl": 87732455.51183282,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "CDP",
+  "defillama_url": "https://defillama.com/protocol/crvusd",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "curve-dex",
+    "link": "VERSION_SIBLING",
+    "link_key": "curve-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1342226338.6030674,
+    "victim_hacks": [
+     {
+      "date": "2023-07-30",
+      "amount": 61700000,
+      "technique": "Vyper Compiler Bug",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   },
+   {
+    "victim": "curve-llamalend",
+    "link": "VERSION_SIBLING",
+    "link_key": "curve-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 77979275.79161136,
+    "victim_hacks": [
+     {
+      "date": "2026-03-02",
+      "amount": 240000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 2
+ },
+ {
+  "slug": "yearn-curating",
+  "name": "Yearn Curating",
+  "head_tvl": 52831776.15882609,
+  "snapshot_tvl": 46318402.81692195,
+  "chains": [
+   "Ethereum",
+   "Base",
+   "Hyperliquid L1",
+   "Katana",
+   "Arbitrum"
+  ],
+  "category": "Risk Curators",
+  "defillama_url": "https://defillama.com/protocol/yearn-curating",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "yearn-ether",
+    "link": "VERSION_SIBLING",
+    "link_key": "yearn",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 2.6198333047040128e-11,
+    "victim_hacks": [
+     {
+      "date": "2025-11-30",
+      "amount": 9000000,
+      "technique": "Incorrect Share Accounting",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   },
+   {
+    "victim": "yearn-finance",
+    "link": "VERSION_SIBLING",
+    "link_key": "yearn",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 185297103.11032447,
+    "victim_hacks": [
+     {
+      "date": "2023-04-13",
+      "amount": 11539000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     },
+     {
+      "date": "2025-12-16",
+      "amount": 300000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 2
+ },
+ {
+  "slug": "curve-llamalend-v2",
+  "name": "Curve LlamaLend V2",
+  "head_tvl": 2057612.2112092793,
+  "snapshot_tvl": 2258823.44434935,
+  "chains": [
+   "Optimism"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/curve-llamalend-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "curve-dex",
+    "link": "VERSION_SIBLING",
+    "link_key": "curve-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1342226338.6030674,
+    "victim_hacks": [
+     {
+      "date": "2023-07-30",
+      "amount": 61700000,
+      "technique": "Vyper Compiler Bug",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   },
+   {
+    "victim": "curve-llamalend",
+    "link": "VERSION_SIBLING",
+    "link_key": "curve-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 77979275.79161136,
+    "victim_hacks": [
+     {
+      "date": "2026-03-02",
+      "amount": 240000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 2
+ },
+ {
+  "slug": "kernel",
+  "name": "Kernel",
+  "head_tvl": 1361876.745929351,
+  "snapshot_tvl": 1349779.9610248364,
+  "chains": [
+   "Binance"
+  ],
+  "category": "Restaking",
+  "defillama_url": "https://defillama.com/protocol/kernel",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "kelp",
+    "link": "VERSION_SIBLING",
+    "link_key": "kerneldao",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1117129917.0799406,
+    "victim_hacks": [
+     {
+      "date": "2026-04-18",
+      "amount": 293000000,
+      "technique": "Cross-Chain Message Spoofing",
+      "classification": "Bridge & Cross-Chain"
+     }
+    ],
+    "strength": 1
+   },
+   {
+    "victim": "gain",
+    "link": "VERSION_SIBLING",
+    "link_key": "kerneldao",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 32795427.826680716,
+    "victim_hacks": [
+     {
+      "date": "2024-02-21",
+      "amount": 3010000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 2
+ },
+ {
+  "slug": "onyxdao",
+  "name": "OnyxDAO",
+  "head_tvl": 1395.2282349096477,
+  "snapshot_tvl": 1399.486123222364,
+  "chains": [
+   "Arbitrum"
+  ],
+  "category": "Farm",
+  "defillama_url": "https://defillama.com/protocol/onyxdao",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "onyx-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "onyx",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 17.370446977270813,
+    "victim_hacks": [
+     {
+      "date": "2024-09-26",
+      "amount": 3800000,
+      "technique": "Liquidation Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   },
+   {
+    "victim": "onyx-protocol",
+    "link": "VERSION_SIBLING",
+    "link_key": "onyx",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 24169.844063986326,
+    "victim_hacks": [
+     {
+      "date": "2023-11-01",
+      "amount": 2100000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 2
+ },
+ {
+  "slug": "euler-v2",
+  "name": "Euler V2",
+  "head_tvl": 362685044.0835086,
+  "snapshot_tvl": 364282309.1600549,
+  "chains": [
+   "Monad",
+   "Ethereum",
+   "Base",
+   "Plasma",
+   "BOB",
+   "Avalanche",
+   "Hyperliquid L1",
+   "Unichain",
+   "Arbitrum",
+   "Sonic",
+   "Binance",
+   "Linea",
+   "Berachain",
+   "TAC",
+   "Swellchain",
+   "Mantle"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/euler-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "euler-v1",
+    "link": "VERSION_SIBLING",
+    "link_key": "euler",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 29681.388853212917,
+    "victim_hacks": [
+     {
+      "date": "2023-03-13",
+      "amount": 197000000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aave-v4",
+  "name": "Aave V4",
+  "head_tvl": 353045954.6295521,
+  "snapshot_tvl": 323271438.47448516,
+  "chains": [
+   "Ethereum",
+   "Avalanche"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/aave-v4",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aave-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "aave",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 17400461288.44966,
+    "victim_hacks": [
+     {
+      "date": "2026-03-12",
+      "amount": 862000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "drift-staked-sol",
+  "name": "Drift Staked SOL",
+  "head_tvl": 285051912.8599417,
+  "snapshot_tvl": 264377975.7379465,
+  "chains": [
+   "Solana"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/drift-staked-sol",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "drift-trade",
+    "link": "VERSION_SIBLING",
+    "link_key": "drift",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 642645.569989218,
+    "victim_hacks": [
+     {
+      "date": "2022-05-11",
+      "amount": 14500000,
+      "technique": "Risk Parameter Abuse",
+      "classification": "Market Manipulation"
+     },
+     {
+      "date": "2026-04-01",
+      "amount": 295000000,
+      "technique": "Proxy Upgrade Hijack",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aave-horizon-rwa",
+  "name": "Aave Horizon RWA",
+  "head_tvl": 258740105.01662517,
+  "snapshot_tvl": 257675042.92003065,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "RWA Lending",
+  "defillama_url": "https://defillama.com/protocol/aave-horizon-rwa",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aave-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "aave",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 17400461288.44966,
+    "victim_hacks": [
+     {
+      "date": "2026-03-12",
+      "amount": 862000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "gmx-v2-perps",
+  "name": "GMX V2 Perps",
+  "head_tvl": 208293576.8106148,
+  "snapshot_tvl": 202937295.0345934,
+  "chains": [
+   "Arbitrum",
+   "Avalanche",
+   "MegaETH",
+   "Botanix"
+  ],
+  "category": "Derivatives",
+  "defillama_url": "https://defillama.com/protocol/gmx-v2-perps",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "gmx-v1-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "gmx",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 3214908.871376575,
+    "victim_hacks": [
+     {
+      "date": "2022-09-18",
+      "amount": 565000,
+      "technique": "Stale Price Arbitrage",
+      "classification": "Market Manipulation"
+     },
+     {
+      "date": "2025-07-09",
+      "amount": 42000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "solv-basis-trading",
+  "name": "Solv Basis Trading",
+  "head_tvl": 195021665.52854154,
+  "snapshot_tvl": 190796475.8398293,
+  "chains": [
+   "Binance",
+   "Arbitrum",
+   "Ethereum",
+   "Mantle",
+   "Polygon",
+   "Solana",
+   "Soneium",
+   "Merlin"
+  ],
+  "category": "Basis Trading",
+  "defillama_url": "https://defillama.com/protocol/solv-basis-trading",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "solvbtc",
+    "link": "VERSION_SIBLING",
+    "link_key": "solv-protocol",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 517288957.20215887,
+    "victim_hacks": [
+     {
+      "date": "2026-03-06",
+      "amount": 2700000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aave-v2",
+  "name": "Aave V2",
+  "head_tvl": 110942327.91376165,
+  "snapshot_tvl": 109678387.04757002,
+  "chains": [
+   "Ethereum",
+   "Polygon",
+   "Avalanche"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/aave-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aave-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "aave",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 17400461288.44966,
+    "victim_hacks": [
+     {
+      "date": "2026-03-12",
+      "amount": 862000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "solvbtc-lsts",
+  "name": "SolvBTC LSTs",
+  "head_tvl": 76560540.49510095,
+  "snapshot_tvl": 75012668.42035906,
+  "chains": [
+   "Ethereum",
+   "Bitcoin"
+  ],
+  "category": "Restaked BTC",
+  "defillama_url": "https://defillama.com/protocol/solvbtc-lsts",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "solvbtc",
+    "link": "VERSION_SIBLING",
+    "link_key": "solv-protocol",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 517288957.20215887,
+    "victim_hacks": [
+     {
+      "date": "2026-03-06",
+      "amount": 2700000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "dydx-v4",
+  "name": "dYdX V4",
+  "head_tvl": 75654469.51394369,
+  "snapshot_tvl": 72956640.10301214,
+  "chains": [
+   "dYdX"
+  ],
+  "category": "Derivatives",
+  "defillama_url": "https://defillama.com/protocol/dydx-v4",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "dydx-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "dydx",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 38839079.18942737,
+    "victim_hacks": [
+     {
+      "date": "2023-11-18",
+      "amount": 9000000,
+      "technique": "Risk Parameter Abuse",
+      "classification": "Market Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "solv-strategies",
+  "name": "Solv Strategies",
+  "head_tvl": 67944887.40484226,
+  "snapshot_tvl": 66778044.833148666,
+  "chains": [
+   "Binance",
+   "Avalanche",
+   "Ethereum",
+   "Berachain",
+   "BOB"
+  ],
+  "category": "Onchain Capital Allocator",
+  "defillama_url": "https://defillama.com/protocol/solv-strategies",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "solvbtc",
+    "link": "VERSION_SIBLING",
+    "link_key": "solv-protocol",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 517288957.20215887,
+    "victim_hacks": [
+     {
+      "date": "2026-03-06",
+      "amount": 2700000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "arrakis-modular",
+  "name": "Arrakis Modular",
+  "head_tvl": 64934077.07692779,
+  "snapshot_tvl": 65238302.46855099,
+  "chains": [
+   "Ethereum",
+   "Base",
+   "Plasma",
+   "Arbitrum",
+   "Binance"
+  ],
+  "category": "Liquidity Manager",
+  "defillama_url": "https://defillama.com/protocol/arrakis-modular",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "arrakis-v1",
+    "link": "VERSION_SIBLING",
+    "link_key": "arrakis-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1405300.3929931899,
+    "victim_hacks": [
+     {
+      "date": "2026-08-23",
+      "amount": 7100,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "inverse-finance-firm",
+  "name": "Inverse Finance FiRM",
+  "head_tvl": 29081129.77537395,
+  "snapshot_tvl": 28336325.65887438,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "CDP",
+  "defillama_url": "https://defillama.com/protocol/inverse-finance-firm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "inverse-finance-frontier",
+    "link": "VERSION_SIBLING",
+    "link_key": "inverse-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4932515.432925499,
+    "victim_hacks": [
+     {
+      "date": "2022-04-02",
+      "amount": 15600000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     },
+     {
+      "date": "2022-06-16",
+      "amount": 5800000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "balancer-v3",
+  "name": "Balancer V3",
+  "head_tvl": 28624187.466777645,
+  "snapshot_tvl": 28322175.154523138,
+  "chains": [
+   "Ethereum",
+   "Monad",
+   "Hyperliquid L1",
+   "Base",
+   "Arbitrum",
+   "Avalanche",
+   "Optimism",
+   "xDai",
+   "Plasma"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/balancer-v3",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "balancer-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "balancer",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 28168364.952276547,
+    "victim_hacks": [
+     {
+      "date": "2023-08-27",
+      "amount": 800000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     },
+     {
+      "date": "2025-11-03",
+      "amount": 128000000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "rhea-dex",
+  "name": "Rhea Dex",
+  "head_tvl": 28024983.79456068,
+  "snapshot_tvl": 28466338.74680272,
+  "chains": [
+   "Near"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/rhea-dex",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "rhea-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "rhea-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 79226747.97067386,
+    "victim_hacks": [
+     {
+      "date": "2026-04-16",
+      "amount": 18400000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "wemix.fi-staking",
+  "name": "WEMIX.FI Staking",
+  "head_tvl": 19923463.061402738,
+  "snapshot_tvl": 19319911.56847208,
+  "chains": [
+   "WEMIX"
+  ],
+  "category": "Staking Pool",
+  "defillama_url": "https://defillama.com/protocol/wemix.fi-staking",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "wemix.fi-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "wemix.fi",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1970.8760377531971,
+    "victim_hacks": [
+     {
+      "date": "2026-07-26",
+      "amount": 737000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "moonwell-vaults",
+  "name": "Moonwell Vaults",
+  "head_tvl": 17987669.146018934,
+  "snapshot_tvl": 18198286.65600309,
+  "chains": [
+   "Base",
+   "Optimism"
+  ],
+  "category": "Onchain Capital Allocator",
+  "defillama_url": "https://defillama.com/protocol/moonwell-vaults",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "moonwell-lending",
+    "link": "VERSION_SIBLING",
+    "link_key": "moonwell",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 54784853.46607639,
+    "victim_hacks": [
+     {
+      "date": "2025-11-04",
+      "amount": 1000000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     },
+     {
+      "date": "2026-02-15",
+      "amount": 1780000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "rhea-lst",
+  "name": "RHEA LST",
+  "head_tvl": 17309580.47344154,
+  "snapshot_tvl": 18027613.974743646,
+  "chains": [
+   "Near"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/rhea-lst",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "rhea-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "rhea-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 79226747.97067386,
+    "victim_hacks": [
+     {
+      "date": "2026-04-16",
+      "amount": 18400000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "summer.fi-pro",
+  "name": "Summer.fi Pro",
+  "head_tvl": 17019560.954600256,
+  "snapshot_tvl": 16572831.16452163,
+  "chains": [
+   "Ethereum",
+   "Arbitrum",
+   "Optimism",
+   "Base"
+  ],
+  "category": "CDP Manager",
+  "defillama_url": "https://defillama.com/protocol/summer.fi-pro",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "lazy-summer-protocol",
+    "link": "VERSION_SIBLING",
+    "link_key": "summer.fi",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1134.4445463366278,
+    "victim_hacks": [
+     {
+      "date": "2026-07-05",
+      "amount": 6040000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "juicebox-v1",
+  "name": "Juicebox V1",
+  "head_tvl": 12841541.841311969,
+  "snapshot_tvl": 12464696.043651395,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Launchpad",
+  "defillama_url": "https://defillama.com/protocol/juicebox-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "juicebox-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "juicebox",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 168454.17382640342,
+    "victim_hacks": [
+     {
+      "date": "2026-04-20",
+      "amount": 52000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "pando-leaf",
+  "name": "Pando Leaf",
+  "head_tvl": 11396230.942813499,
+  "snapshot_tvl": 11395758.108036675,
+  "chains": [
+   "Mixin"
+  ],
+  "category": "CDP",
+  "defillama_url": "https://defillama.com/protocol/pando-leaf",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "pando-rings",
+    "link": "VERSION_SIBLING",
+    "link_key": "pando",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 6076000.624938134,
+    "victim_hacks": [
+     {
+      "date": "2022-11-06",
+      "amount": 22000000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "solv-rwa",
+  "name": "Solv RWA",
+  "head_tvl": 9001900.2031856,
+  "snapshot_tvl": 8864405.410146095,
+  "chains": [
+   "Binance",
+   "Mantle"
+  ],
+  "category": "RWA",
+  "defillama_url": "https://defillama.com/protocol/solv-rwa",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "solvbtc",
+    "link": "VERSION_SIBLING",
+    "link_key": "solv-protocol",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 517288957.20215887,
+    "victim_hacks": [
+     {
+      "date": "2026-03-06",
+      "amount": 2700000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aave-v1",
+  "name": "Aave V1",
+  "head_tvl": 7722971.359573057,
+  "snapshot_tvl": 7651606.234775617,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/aave-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aave-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "aave",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 17400461288.44966,
+    "victim_hacks": [
+     {
+      "date": "2026-03-12",
+      "amount": 862000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "balancer-v1",
+  "name": "Balancer V1",
+  "head_tvl": 7453728.87252998,
+  "snapshot_tvl": 7271376.306290396,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/balancer-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "balancer-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "balancer",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 28168364.952276547,
+    "victim_hacks": [
+     {
+      "date": "2023-08-27",
+      "amount": 800000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     },
+     {
+      "date": "2025-11-03",
+      "amount": 128000000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "radpie",
+  "name": "Radpie",
+  "head_tvl": 6891305.495091811,
+  "snapshot_tvl": 6831163.499294861,
+  "chains": [
+   "Arbitrum",
+   "Binance"
+  ],
+  "category": "Yield",
+  "defillama_url": "https://defillama.com/protocol/radpie",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "penpie",
+    "link": "VERSION_SIBLING",
+    "link_key": "magpie-ecosystem",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4779078.022172264,
+    "victim_hacks": [
+     {
+      "date": "2024-09-03",
+      "amount": 27000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "unitus",
+  "name": "Unitus",
+  "head_tvl": 6345635.942607017,
+  "snapshot_tvl": 6337750.145331063,
+  "chains": [
+   "Conflux",
+   "Ethereum",
+   "Binance",
+   "Arbitrum",
+   "Polygon",
+   "Optimism",
+   "Base"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/unitus",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "dforce-lending",
+    "link": "VERSION_SIBLING",
+    "link_key": "dforce",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1027366.0104817534,
+    "victim_hacks": [
+     {
+      "date": "2023-02-10",
+      "amount": 3650000,
+      "technique": "Read-Only Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "save-sol",
+  "name": "Save SOL",
+  "head_tvl": 6180608.370051181,
+  "snapshot_tvl": 5856515.258019808,
+  "chains": [
+   "Solana"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/save-sol",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "save",
+    "link": "VERSION_SIBLING",
+    "link_key": "save-protocol",
+    "victim_state": "RESTORED",
+    "victim_head_tvl": 85337343.55925702,
+    "victim_hacks": [
+     {
+      "date": "2022-11-01",
+      "amount": 1026000,
+      "technique": "Risk Parameter Abuse",
+      "classification": "Market Manipulation"
+     },
+     {
+      "date": "2022-11-02",
+      "amount": 1260000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "termfinance-lend",
+  "name": "TermFinance Lend",
+  "head_tvl": 5167045.698453729,
+  "snapshot_tvl": 5352149.0059675295,
+  "chains": [
+   "Ethereum",
+   "Arbitrum",
+   "Plasma",
+   "Base",
+   "Avalanche"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/termfinance-lend",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "termfinance-vaults",
+    "link": "VERSION_SIBLING",
+    "link_key": "termfinance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1608406.5297940648,
+    "victim_hacks": [
+     {
+      "date": "2026-08-23",
+      "amount": 8500000,
+      "technique": "Malicious Proposal",
+      "classification": "Governance"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "eigenpie",
+  "name": "Eigenpie",
+  "head_tvl": 4468919.609885382,
+  "snapshot_tvl": 4397277.626485557,
+  "chains": [
+   "Ethereum",
+   "Zircuit"
+  ],
+  "category": "Liquid Restaking",
+  "defillama_url": "https://defillama.com/protocol/eigenpie",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "penpie",
+    "link": "VERSION_SIBLING",
+    "link_key": "magpie-ecosystem",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4779078.022172264,
+    "victim_hacks": [
+     {
+      "date": "2024-09-03",
+      "amount": 27000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "venus-flux",
+  "name": "Venus Flux",
+  "head_tvl": 3421097.1191994115,
+  "snapshot_tvl": 3267620.381588009,
+  "chains": [
+   "Binance"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/venus-flux",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "venus-core-pool",
+    "link": "VERSION_SIBLING",
+    "link_key": "venus",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1270393386.9564662,
+    "victim_hacks": [
+     {
+      "date": "2026-03-15",
+      "amount": 3700000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     },
+     {
+      "date": "2025-03-29",
+      "amount": 902000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "woofi-earn",
+  "name": "WOOFi Earn",
+  "head_tvl": 2694195.2574681826,
+  "snapshot_tvl": 2678664.950368923,
+  "chains": [
+   "Arbitrum",
+   "Optimism",
+   "Base",
+   "Avalanche",
+   "Polygon",
+   "Mantle",
+   "Binance",
+   "zkSync Era",
+   "Fantom"
+  ],
+  "category": "Yield",
+  "defillama_url": "https://defillama.com/protocol/woofi-earn",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "woofi-swap",
+    "link": "VERSION_SIBLING",
+    "link_key": "woofi",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 2418018.6707176054,
+    "victim_hacks": [
+     {
+      "date": "2024-03-05",
+      "amount": 8750000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "nirvana-v2",
+  "name": "Nirvana V2",
+  "head_tvl": 2586219.434200352,
+  "snapshot_tvl": 2587685.2648414434,
+  "chains": [
+   "Solana"
+  ],
+  "category": "Reserve Currency",
+  "defillama_url": "https://defillama.com/protocol/nirvana-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "nirvana-v1",
+    "link": "VERSION_SIBLING",
+    "link_key": "nirvana",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 2.5133414945139996,
+    "victim_hacks": [
+     {
+      "date": "2022-07-28",
+      "amount": 3500000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aftermath-afsui",
+  "name": "Aftermath afSUI",
+  "head_tvl": 2393115.919003433,
+  "snapshot_tvl": 2616286.5017385664,
+  "chains": [
+   "Sui"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/aftermath-afsui",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aftermath-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "aftermath-finance",
+    "victim_state": "UNKNOWN_SERIES",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2026-04-29",
+      "amount": 1140000,
+      "technique": "Withdrawal Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "usual-eth0",
+  "name": "Usual ETH0",
+  "head_tvl": 2331494.62808138,
+  "snapshot_tvl": 2272053.029294745,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Synthetics",
+  "defillama_url": "https://defillama.com/protocol/usual-eth0",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "usual-usd0",
+    "link": "VERSION_SIBLING",
+    "link_key": "usual",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 91816483.59537111,
+    "victim_hacks": [
+     {
+      "date": "2025-05-27",
+      "amount": 43000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aftermath-amm",
+  "name": "Aftermath AMM",
+  "head_tvl": 2273092.1242524222,
+  "snapshot_tvl": 2456475.900986493,
+  "chains": [
+   "Sui"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/aftermath-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aftermath-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "aftermath-finance",
+    "victim_state": "UNKNOWN_SERIES",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2026-04-29",
+      "amount": 1140000,
+      "technique": "Withdrawal Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "ztln-p",
+  "name": "ZTLN-P",
+  "head_tvl": 2199829.4936230583,
+  "snapshot_tvl": 2199757.411498039,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "RWA",
+  "defillama_url": "https://defillama.com/protocol/ztln-p",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "zoth-zeusd",
+    "link": "VERSION_SIBLING",
+    "link_key": "zoth",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 3.620667034218472e-05,
+    "victim_hacks": [
+     {
+      "date": "2025-03-01",
+      "amount": 285000,
+      "technique": "Swap Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "wemix-concentrated-range-deposit",
+  "name": "WEMIX Concentrated Range Deposit",
+  "head_tvl": 2169898.424543006,
+  "snapshot_tvl": 2130216.067427858,
+  "chains": [
+   "WEMIX"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/wemix-concentrated-range-deposit",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "wemix.fi-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "wemix.fi",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1970.8760377531971,
+    "victim_hacks": [
+     {
+      "date": "2026-07-26",
+      "amount": 737000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "thalaswap-v3",
+  "name": "ThalaSwap V3",
+  "head_tvl": 2160250.26941101,
+  "snapshot_tvl": 2178086.996514331,
+  "chains": [
+   "Aptos"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/thalaswap-v3",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "thalaswap",
+    "link": "VERSION_SIBLING",
+    "link_key": "thala",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 645216.0639417402,
+    "victim_hacks": [
+     {
+      "date": "2024-11-15",
+      "amount": 25500000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aftermath-aflp",
+  "name": "Aftermath afLP",
+  "head_tvl": 1900087.3302403775,
+  "snapshot_tvl": 1900076.2946296865,
+  "chains": [
+   "Sui"
+  ],
+  "category": "Yield",
+  "defillama_url": "https://defillama.com/protocol/aftermath-aflp",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aftermath-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "aftermath-finance",
+    "victim_state": "UNKNOWN_SERIES",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2026-04-29",
+      "amount": 1140000,
+      "technique": "Withdrawal Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "thala-lsd",
+  "name": "Thala LSD",
+  "head_tvl": 1737748.982161986,
+  "snapshot_tvl": 1950278.1462948765,
+  "chains": [
+   "Aptos"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/thala-lsd",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "thalaswap",
+    "link": "VERSION_SIBLING",
+    "link_key": "thala",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 645216.0639417402,
+    "victim_hacks": [
+     {
+      "date": "2024-11-15",
+      "amount": 25500000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "silo-v3",
+  "name": "Silo V3",
+  "head_tvl": 1721550.3979947097,
+  "snapshot_tvl": 1744058.2420727462,
+  "chains": [
+   "Avalanche",
+   "Ethereum",
+   "XDC",
+   "Arbitrum",
+   "Sonic",
+   "MegaETH"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/silo-v3",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "silo-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "silo-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4976934.185050733,
+    "victim_hacks": [
+     {
+      "date": "2026-04-03",
+      "amount": 359000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "hope-collateral",
+  "name": "HOPE Collateral",
+  "head_tvl": 1604842.3075862927,
+  "snapshot_tvl": 1571979.594754585,
+  "chains": [
+   "Bitcoin",
+   "Ethereum"
+  ],
+  "category": "Basis Trading",
+  "defillama_url": "https://defillama.com/protocol/hope-collateral",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "hope-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "hope-money",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 158.33960000000002,
+    "victim_hacks": [
+     {
+      "date": "2023-10-18",
+      "amount": 825000,
+      "technique": "Arithmetic Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "arena-dex",
+  "name": "Arena DEX",
+  "head_tvl": 1548374.8285808584,
+  "snapshot_tvl": 1586991.6568470222,
+  "chains": [
+   "Avalanche"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/arena-dex",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "arena-socialfi",
+    "link": "VERSION_SIBLING",
+    "link_key": "the-arena",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 142634.27014953547,
+    "victim_hacks": [
+     {
+      "date": "2023-10-07",
+      "amount": 2974530,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "silo-v1",
+  "name": "Silo V1",
+  "head_tvl": 1408737.7900416404,
+  "snapshot_tvl": 1453111.0393770412,
+  "chains": [
+   "Arbitrum",
+   "Ethereum",
+   "Optimism",
+   "Base",
+   "Sonic"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/silo-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "silo-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "silo-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4976934.185050733,
+    "victim_hacks": [
+     {
+      "date": "2026-04-03",
+      "amount": 359000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "dtrinity-dusd",
+  "name": "dTRINITY dUSD",
+  "head_tvl": 1393214.4767453673,
+  "snapshot_tvl": 1392626.0252213322,
+  "chains": [
+   "Ethereum",
+   "Sonic",
+   "Katana",
+   "Fraxtal"
+  ],
+  "category": "Partially Algorithmic Stablecoin",
+  "defillama_url": "https://defillama.com/protocol/dtrinity-dusd",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "dtrinity-dlend",
+    "link": "VERSION_SIBLING",
+    "link_key": "dtrinity",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 929669.1393513494,
+    "victim_hacks": [
+     {
+      "date": "2026-03-17",
+      "amount": 257000,
+      "technique": "First Depositor Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "panoptic-v2",
+  "name": "Panoptic V2",
+  "head_tvl": 1110605.3410644813,
+  "snapshot_tvl": 1047152.5183772678,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Options",
+  "defillama_url": "https://defillama.com/protocol/panoptic-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "panoptic-v1.1",
+    "link": "VERSION_SIBLING",
+    "link_key": "panoptic-protocol",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 2372.9188452827702,
+    "victim_hacks": [
+     {
+      "date": "2025-08-25",
+      "amount": 0,
+      "technique": "Hash Collision",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "venus-isolated-pools",
+  "name": "Venus Isolated Pools",
+  "head_tvl": 1075797.8002457453,
+  "snapshot_tvl": 1122519.653797499,
+  "chains": [
+   "Binance",
+   "Ethereum",
+   "Arbitrum"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/venus-isolated-pools",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "venus-core-pool",
+    "link": "VERSION_SIBLING",
+    "link_key": "venus",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1270393386.9564662,
+    "victim_hacks": [
+     {
+      "date": "2026-03-15",
+      "amount": 3700000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     },
+     {
+      "date": "2025-03-29",
+      "amount": 902000,
+      "technique": "Donation Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "ribbon-earn",
+  "name": "Ribbon Earn",
+  "head_tvl": 1070209.0620198094,
+  "snapshot_tvl": 1042195.7247051634,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Options",
+  "defillama_url": "https://defillama.com/protocol/ribbon-earn",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "ribbon",
+    "link": "VERSION_SIBLING",
+    "link_key": "ribbon-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4266105.955681522,
+    "victim_hacks": [
+     {
+      "date": "2025-12-12",
+      "amount": 2700000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "allbridge-classic",
+  "name": "Allbridge Classic",
+  "head_tvl": 1057520.0534782142,
+  "snapshot_tvl": 1044111.689380362,
+  "chains": [
+   "Ethereum",
+   "Solana",
+   "Terra",
+   "Binance",
+   "Near",
+   "Aurora",
+   "Harmony",
+   "Fuse",
+   "Fantom",
+   "Polygon",
+   "Avalanche",
+   "Celo",
+   "Ripple"
+  ],
+  "category": "Bridge",
+  "defillama_url": "https://defillama.com/protocol/allbridge-classic",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "allbridge-core",
+    "link": "VERSION_SIBLING",
+    "link_key": "allbridge",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 322827.39225000906,
+    "victim_hacks": [
+     {
+      "date": "2026-07-19",
+      "amount": 1650000,
+      "technique": "Withdrawal Logic Flaw",
+      "classification": "Protocol Logic"
+     },
+     {
+      "date": "2023-04-02",
+      "amount": 573000,
+      "technique": "Swap Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "kyberswap-classic",
+  "name": "KyberSwap Classic",
+  "head_tvl": 1052226.087015151,
+  "snapshot_tvl": 1041665.791103335,
+  "chains": [
+   "Ethereum",
+   "Polygon",
+   "Avalanche",
+   "Binance",
+   "Optimism",
+   "zkSync Era",
+   "Bittorrent",
+   "Scroll",
+   "Linea",
+   "Arbitrum",
+   "Cronos",
+   "Fantom",
+   "Velas",
+   "Oasis",
+   "Aurora"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/kyberswap-classic",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "kyberswap-elastic",
+    "link": "VERSION_SIBLING",
+    "link_key": "kyberswap",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 126663.22293912787,
+    "victim_hacks": [
+     {
+      "date": "2023-11-22",
+      "amount": 48000000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "cozy-earn",
+  "name": "Cozy Earn",
+  "head_tvl": 1043001.1492533577,
+  "snapshot_tvl": 1022901.0963307677,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Insurance",
+  "defillama_url": "https://defillama.com/protocol/cozy-earn",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "cozy-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "cozy-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 172357.95062537873,
+    "victim_hacks": [
+     {
+      "date": "2025-08-30",
+      "amount": 427000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "wompie",
+  "name": "Wompie",
+  "head_tvl": 1030797.178389904,
+  "snapshot_tvl": 1023525.3782775126,
+  "chains": [
+   "Binance",
+   "Arbitrum"
+  ],
+  "category": "Yield",
+  "defillama_url": "https://defillama.com/protocol/wompie",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "penpie",
+    "link": "VERSION_SIBLING",
+    "link_key": "magpie-ecosystem",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4779078.022172264,
+    "victim_hacks": [
+     {
+      "date": "2024-09-03",
+      "amount": 27000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "typus-dov",
+  "name": "Typus DOV",
+  "head_tvl": 996301.627435169,
+  "snapshot_tvl": 1352321.0352111273,
+  "chains": [
+   "Sui"
+  ],
+  "category": "Options Vault",
+  "defillama_url": "https://defillama.com/protocol/typus-dov",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "typus-perp",
+    "link": "VERSION_SIBLING",
+    "link_key": "typus-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 16004.4222993526,
+    "victim_hacks": [
+     {
+      "date": "2025-10-15",
+      "amount": 3440000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "solv-others",
+  "name": "Solv Others",
+  "head_tvl": 936697.02279856,
+  "snapshot_tvl": 953839.3739999683,
+  "chains": [
+   "Merlin"
+  ],
+  "category": "Anchor BTC",
+  "defillama_url": "https://defillama.com/protocol/solv-others",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "solvbtc",
+    "link": "VERSION_SIBLING",
+    "link_key": "solv-protocol",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 517288957.20215887,
+    "victim_hacks": [
+     {
+      "date": "2026-03-06",
+      "amount": 2700000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "wemix-full-range-deposit",
+  "name": "WEMIX Full Range Deposit",
+  "head_tvl": 824781.4386222912,
+  "snapshot_tvl": 817446.7142957792,
+  "chains": [
+   "WEMIX"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/wemix-full-range-deposit",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "wemix.fi-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "wemix.fi",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1970.8760377531971,
+    "victim_hacks": [
+     {
+      "date": "2026-07-26",
+      "amount": 737000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "ipor-derivatives",
+  "name": "IPOR Derivatives",
+  "head_tvl": 688263.4483257142,
+  "snapshot_tvl": 685620.6475002147,
+  "chains": [
+   "Ethereum",
+   "Arbitrum",
+   "Base"
+  ],
+  "category": "Derivatives",
+  "defillama_url": "https://defillama.com/protocol/ipor-derivatives",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "fusion-by-ipor",
+    "link": "VERSION_SIBLING",
+    "link_key": "ipor-protocol",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 60438436.65428103,
+    "victim_hacks": [
+     {
+      "date": "2026-01-06",
+      "amount": 336000,
+      "technique": "Arbitrary External Call",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "defituna-liquidity",
+  "name": "DefiTuna Liquidity",
+  "head_tvl": 647101.7130180275,
+  "snapshot_tvl": 555437.040846453,
+  "chains": [
+   "Solana"
+  ],
+  "category": "Liquidity Manager",
+  "defillama_url": "https://defillama.com/protocol/defituna-liquidity",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "defituna-lending",
+    "link": "VERSION_SIBLING",
+    "link_key": "defituna",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1068096.5915535924,
+    "victim_hacks": [
+     {
+      "date": "2026-07-16",
+      "amount": 580000,
+      "technique": "Swap Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "lpeth",
+  "name": "lpETH",
+  "head_tvl": 639047.7097921756,
+  "snapshot_tvl": 622825.0910182524,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/lpeth",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "tenderize-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "tenderize",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 340858.44885809335,
+    "victim_hacks": [
+     {
+      "date": "2025-04-07",
+      "amount": 10850,
+      "technique": "Unknown",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "impermax-v2",
+  "name": "Impermax V2",
+  "head_tvl": 597990.8793552908,
+  "snapshot_tvl": 596795.9895332907,
+  "chains": [
+   "Polygon",
+   "Ethereum",
+   "Base",
+   "Avalanche",
+   "Optimism",
+   "Arbitrum",
+   "Sonic",
+   "zkSync Era",
+   "Fantom",
+   "Scroll",
+   "Linea",
+   "Canto",
+   "Blast",
+   "Mantle",
+   "Moonriver"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/impermax-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "impermax-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "impermax-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 98182.61471285937,
+    "victim_hacks": [
+     {
+      "date": "2025-11-11",
+      "amount": 380000,
+      "technique": "Liquidation Logic Flaw",
+      "classification": "Protocol Logic"
+     },
+     {
+      "date": "2025-04-26",
+      "amount": 300000,
+      "technique": "Incorrect Fee Accounting",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "thalaswap-v2",
+  "name": "ThalaSwap V2",
+  "head_tvl": 586042.5238641906,
+  "snapshot_tvl": 581646.1280425296,
+  "chains": [
+   "Aptos"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/thalaswap-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "thalaswap",
+    "link": "VERSION_SIBLING",
+    "link_key": "thala",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 645216.0639417402,
+    "victim_hacks": [
+     {
+      "date": "2024-11-15",
+      "amount": 25500000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "4swap",
+  "name": "4Swap",
+  "head_tvl": 494167.09039668075,
+  "snapshot_tvl": 495148.95181268535,
+  "chains": [
+   "Mixin"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/4swap",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "pando-rings",
+    "link": "VERSION_SIBLING",
+    "link_key": "pando",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 6076000.624938134,
+    "victim_hacks": [
+     {
+      "date": "2022-11-06",
+      "amount": 22000000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "thala-cdp",
+  "name": "Thala CDP",
+  "head_tvl": 476431.2138158948,
+  "snapshot_tvl": 476491.33699567465,
+  "chains": [
+   "Aptos"
+  ],
+  "category": "CDP",
+  "defillama_url": "https://defillama.com/protocol/thala-cdp",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "thalaswap",
+    "link": "VERSION_SIBLING",
+    "link_key": "thala",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 645216.0639417402,
+    "victim_hacks": [
+     {
+      "date": "2024-11-15",
+      "amount": 25500000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "basin-exchange",
+  "name": "Basin Exchange",
+  "head_tvl": 438854.48088555905,
+  "snapshot_tvl": 4117493.732350946,
+  "chains": [
+   "Arbitrum",
+   "Ethereum"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/basin-exchange",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "beanstalk",
+    "link": "VERSION_SIBLING",
+    "link_key": "beanstalk-farms",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2022-04-17",
+      "amount": 181000000,
+      "technique": "Flashloan Governance Attack",
+      "classification": "Governance"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "cetus-dlmm",
+  "name": "Cetus DLMM",
+  "head_tvl": 433422.5998690873,
+  "snapshot_tvl": 472481.67979677144,
+  "chains": [
+   "Sui"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/cetus-dlmm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "cetus-clmm",
+    "link": "VERSION_SIBLING",
+    "link_key": "cetus",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 25461684.982464403,
+    "victim_hacks": [
+     {
+      "date": "2025-05-22",
+      "amount": 223000000,
+      "technique": "Arithmetic Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "bonzo-vaults",
+  "name": "Bonzo Vaults",
+  "head_tvl": 425571.4871516149,
+  "snapshot_tvl": 446275.5445460362,
+  "chains": [
+   "Hedera"
+  ],
+  "category": "Liquidity Manager",
+  "defillama_url": "https://defillama.com/protocol/bonzo-vaults",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "bonzo-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "bonzo-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 4199409.985668605,
+    "victim_hacks": [
+     {
+      "date": "2026-07-11",
+      "amount": 9050000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "swapx-algebra",
+  "name": "SwapX Algebra",
+  "head_tvl": 404169.60021668655,
+  "snapshot_tvl": 394552.18145359796,
+  "chains": [
+   "Sonic"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/swapx-algebra",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "swapx-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "swapx",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 43833.23001133368,
+    "victim_hacks": [
+     {
+      "date": "2023-02-27",
+      "amount": 1000000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "velar-amm",
+  "name": "Velar AMM",
+  "head_tvl": 401394.0539289217,
+  "snapshot_tvl": 276422.87883491185,
+  "chains": [
+   "Stacks"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/velar-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "velar-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "velar-protocol",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 13986.079022387652,
+    "victim_hacks": [
+     {
+      "date": "2026-02-19",
+      "amount": 401000,
+      "technique": "Predictable Oracle Update",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "paraluni-dex",
+  "name": "Paraluni Dex",
+  "head_tvl": 323497.5490518299,
+  "snapshot_tvl": 324249.38479171944,
+  "chains": [
+   "Binance"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/paraluni-dex",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "paraluni-masterchef",
+    "link": "VERSION_SIBLING",
+    "link_key": "paraluni",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 2641.0969268621975,
+    "victim_hacks": [
+     {
+      "date": "2022-03-13",
+      "amount": 1700000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aave-aptos",
+  "name": "Aave Aptos",
+  "head_tvl": 308734.0261530104,
+  "snapshot_tvl": 342015.57875817956,
+  "chains": [
+   "Aptos"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/aave-aptos",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aave-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "aave",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 17400461288.44966,
+    "victim_hacks": [
+     {
+      "date": "2026-03-12",
+      "amount": 862000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "hyperdrive-hl-earn",
+  "name": "Hyperdrive HL Earn",
+  "head_tvl": 278407.96865162294,
+  "snapshot_tvl": 276883.01982547384,
+  "chains": [
+   "Hyperliquid L1"
+  ],
+  "category": "Yield",
+  "defillama_url": "https://defillama.com/protocol/hyperdrive-hl-earn",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "hyperdrive-hl-lending",
+    "link": "VERSION_SIBLING",
+    "link_key": "hyperdrive-hl",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 879868.6941181667,
+    "victim_hacks": [
+     {
+      "date": "2025-09-27",
+      "amount": 782000,
+      "technique": "Arbitrary External Call",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "sturdy-v2",
+  "name": "Sturdy V2",
+  "head_tvl": 273548.81743624137,
+  "snapshot_tvl": 266989.2797168308,
+  "chains": [
+   "Mode",
+   "Ethereum",
+   "Linea",
+   "Optimism",
+   "Flow",
+   "Sei"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/sturdy-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "sturdy-v1",
+    "link": "VERSION_SIBLING",
+    "link_key": "sturdy",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 76697.43639503689,
+    "victim_hacks": [
+     {
+      "date": "2023-06-12",
+      "amount": 775000,
+      "technique": "Read-Only Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "radiant-v1",
+  "name": "Radiant V1",
+  "head_tvl": 255920.97664804067,
+  "snapshot_tvl": 253053.73131602397,
+  "chains": [
+   "Arbitrum"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/radiant-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "radiant-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "radiant",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 700053.2233155526,
+    "victim_hacks": [
+     {
+      "date": "2024-01-02",
+      "amount": 4500000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "wemix-liquid-staking",
+  "name": "WEMIX Liquid Staking",
+  "head_tvl": 254157.95768504872,
+  "snapshot_tvl": 246771.98932461458,
+  "chains": [
+   "WEMIX"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/wemix-liquid-staking",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "wemix.fi-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "wemix.fi",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1970.8760377531971,
+    "victim_hacks": [
+     {
+      "date": "2026-07-26",
+      "amount": 737000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "defituna-amm",
+  "name": "DefiTuna AMM",
+  "head_tvl": 244514.25123945533,
+  "snapshot_tvl": 182941.4733474859,
+  "chains": [
+   "Solana"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/defituna-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "defituna-lending",
+    "link": "VERSION_SIBLING",
+    "link_key": "defituna",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1068096.5915535924,
+    "victim_hacks": [
+     {
+      "date": "2026-07-16",
+      "amount": 580000,
+      "technique": "Swap Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "solido-flow",
+  "name": "Solido Flow",
+  "head_tvl": 241245.43976302352,
+  "snapshot_tvl": 275126.2298175225,
+  "chains": [
+   "Supra"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/solido-flow",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "solido-cash",
+    "link": "VERSION_SIBLING",
+    "link_key": "solido",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 470481.53317451465,
+    "victim_hacks": [
+     {
+      "date": "2026-07-23",
+      "amount": 900000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "usual-eur0",
+  "name": "Usual EUR0",
+  "head_tvl": 237079.87076410526,
+  "snapshot_tvl": 237538.6016190151,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "RWA",
+  "defillama_url": "https://defillama.com/protocol/usual-eur0",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "usual-usd0",
+    "link": "VERSION_SIBLING",
+    "link_key": "usual",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 91816483.59537111,
+    "victim_hacks": [
+     {
+      "date": "2025-05-27",
+      "amount": 43000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "ethos-reserve",
+  "name": "Ethos Reserve",
+  "head_tvl": 233361.33939906093,
+  "snapshot_tvl": 228441.65549765606,
+  "chains": [
+   "Optimism"
+  ],
+  "category": "CDP",
+  "defillama_url": "https://defillama.com/protocol/ethos-reserve",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "reaper-farm",
+    "link": "VERSION_SIBLING",
+    "link_key": "cod3x",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1463479.3600674337,
+    "victim_hacks": [
+     {
+      "date": "2022-08-01",
+      "amount": 1700000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "cakepie",
+  "name": "Cakepie",
+  "head_tvl": 223938.48284755732,
+  "snapshot_tvl": 237912.00926614783,
+  "chains": [
+   "Binance"
+  ],
+  "category": "Yield",
+  "defillama_url": "https://defillama.com/protocol/cakepie",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "penpie",
+    "link": "VERSION_SIBLING",
+    "link_key": "magpie-ecosystem",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4779078.022172264,
+    "victim_hacks": [
+     {
+      "date": "2024-09-03",
+      "amount": 27000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "typus-safu",
+  "name": "Typus Safu",
+  "head_tvl": 191193.56533863934,
+  "snapshot_tvl": 208254.1694079869,
+  "chains": [
+   "Sui"
+  ],
+  "category": "Yield",
+  "defillama_url": "https://defillama.com/protocol/typus-safu",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "typus-perp",
+    "link": "VERSION_SIBLING",
+    "link_key": "typus-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 16004.4222993526,
+    "victim_hacks": [
+     {
+      "date": "2025-10-15",
+      "amount": 3440000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "voltage-v4",
+  "name": "Voltage V4",
+  "head_tvl": 186232.6251259374,
+  "snapshot_tvl": 183524.9879333336,
+  "chains": [
+   "Fuse"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/voltage-v4",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "voltage-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "voltage",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 550.308356275667,
+    "victim_hacks": [
+     {
+      "date": "2025-03-18",
+      "amount": 322113,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "maxshot",
+  "name": "MaxShot",
+  "head_tvl": 165801.02187458333,
+  "snapshot_tvl": 165699.81284099282,
+  "chains": [
+   "Ethereum",
+   "Base",
+   "Arbitrum",
+   "Plasma",
+   "Optimism"
+  ],
+  "category": "Onchain Capital Allocator",
+  "defillama_url": "https://defillama.com/protocol/maxshot",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "dforce-lending",
+    "link": "VERSION_SIBLING",
+    "link_key": "dforce",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1027366.0104817534,
+    "victim_hacks": [
+     {
+      "date": "2023-02-10",
+      "amount": 3650000,
+      "technique": "Read-Only Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "ironclad-finance",
+  "name": "Ironclad Finance",
+  "head_tvl": 160923.6256169615,
+  "snapshot_tvl": 160923.6256169615,
+  "chains": [
+   "Mode"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/ironclad-finance",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "reaper-farm",
+    "link": "VERSION_SIBLING",
+    "link_key": "cod3x",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1463479.3600674337,
+    "victim_hacks": [
+     {
+      "date": "2022-08-01",
+      "amount": 1700000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "arrakis-v2",
+  "name": "Arrakis V2",
+  "head_tvl": 156016.07658432252,
+  "snapshot_tvl": 152446.7405842973,
+  "chains": [
+   "Ethereum",
+   "Polygon",
+   "Arbitrum",
+   "Optimism"
+  ],
+  "category": "Liquidity Manager",
+  "defillama_url": "https://defillama.com/protocol/arrakis-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "arrakis-v1",
+    "link": "VERSION_SIBLING",
+    "link_key": "arrakis-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1405300.3929931899,
+    "victim_hacks": [
+     {
+      "date": "2026-08-23",
+      "amount": 7100,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "revert-compoundor",
+  "name": "Revert Compoundor",
+  "head_tvl": 148787.84505318716,
+  "snapshot_tvl": 146379.6886746783,
+  "chains": [
+   "Ethereum",
+   "Arbitrum",
+   "Polygon",
+   "Optimism",
+   "Binance"
+  ],
+  "category": "Liquidity Automation",
+  "defillama_url": "https://defillama.com/protocol/revert-compoundor",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "revert-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "revert",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 7965788.6022834275,
+    "victim_hacks": [
+     {
+      "date": "2026-01-29",
+      "amount": 50000,
+      "technique": "Staking Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "solv-vesting",
+  "name": "Solv Vesting",
+  "head_tvl": 142310.61270307284,
+  "snapshot_tvl": 137327.90368039196,
+  "chains": [
+   "Ethereum",
+   "Binance",
+   "Polygon",
+   "Arbitrum"
+  ],
+  "category": "RWA",
+  "defillama_url": "https://defillama.com/protocol/solv-vesting",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "solvbtc",
+    "link": "VERSION_SIBLING",
+    "link_key": "solv-protocol",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 517288957.20215887,
+    "victim_hacks": [
+     {
+      "date": "2026-03-06",
+      "amount": 2700000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "velocore-v1",
+  "name": "Velocore V1",
+  "head_tvl": 126571.96337257104,
+  "snapshot_tvl": 128381.57304813179,
+  "chains": [
+   "zkSync Era"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/velocore-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "velocore-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "velocore",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1174.6604171766132,
+    "victim_hacks": [
+     {
+      "date": "2024-06-02",
+      "amount": 6800000,
+      "technique": "Incorrect Fee Accounting",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "mim-swap",
+  "name": "MIM Swap",
+  "head_tvl": 120829.56857208055,
+  "snapshot_tvl": 123611.83049547294,
+  "chains": [
+   "Arbitrum",
+   "Blast",
+   "Kava",
+   "Nibiru",
+   "Ethereum"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/mim-swap",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "abracadabra-spell",
+    "link": "VERSION_SIBLING",
+    "link_key": "abracadabra",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4827736.600613596,
+    "victim_hacks": [
+     {
+      "date": "2025-03-25",
+      "amount": 13000000,
+      "technique": "Liquidation Logic Flaw",
+      "classification": "Protocol Logic"
+     },
+     {
+      "date": "2024-01-30",
+      "amount": 6500000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     },
+     {
+      "date": "2025-10-04",
+      "amount": 1700000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "hope-swap",
+  "name": "HOPE Swap",
+  "head_tvl": 114226.51557043704,
+  "snapshot_tvl": 114220.14867463325,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/hope-swap",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "hope-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "hope-money",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 158.33960000000002,
+    "victim_hacks": [
+     {
+      "date": "2023-10-18",
+      "amount": 825000,
+      "technique": "Arithmetic Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "orion-liquidity-nodes",
+  "name": "Orion Liquidity Nodes",
+  "head_tvl": 97464.2831589438,
+  "snapshot_tvl": 96999.4961220563,
+  "chains": [
+   "Binance",
+   "Ethereum",
+   "Polygon",
+   "Fantom"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/orion-liquidity-nodes",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "orion-pools",
+    "link": "VERSION_SIBLING",
+    "link_key": "orion",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 283795.0985642988,
+    "victim_hacks": [
+     {
+      "date": "2023-02-02",
+      "amount": 3000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "voltage-liquid-staking",
+  "name": "Voltage Liquid Staking",
+  "head_tvl": 86834.27885698726,
+  "snapshot_tvl": 64478.4226661724,
+  "chains": [
+   "Fuse"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/voltage-liquid-staking",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "voltage-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "voltage",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 550.308356275667,
+    "victim_hacks": [
+     {
+      "date": "2025-03-18",
+      "amount": 322113,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "cozy-v1",
+  "name": "Cozy V1",
+  "head_tvl": 73669.63899901496,
+  "snapshot_tvl": 72292.51771392587,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Insurance",
+  "defillama_url": "https://defillama.com/protocol/cozy-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "cozy-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "cozy-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 172357.95062537873,
+    "victim_hacks": [
+     {
+      "date": "2025-08-30",
+      "amount": 427000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "listapie",
+  "name": "Listapie",
+  "head_tvl": 61326.0251150304,
+  "snapshot_tvl": 59378.39421863814,
+  "chains": [
+   "Binance"
+  ],
+  "category": "Farm",
+  "defillama_url": "https://defillama.com/protocol/listapie",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "penpie",
+    "link": "VERSION_SIBLING",
+    "link_key": "magpie-ecosystem",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4779078.022172264,
+    "victim_hacks": [
+     {
+      "date": "2024-09-03",
+      "amount": 27000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "balancer-cow-amm",
+  "name": "Balancer CoW AMM",
+  "head_tvl": 59803.65724729812,
+  "snapshot_tvl": 59087.94447075231,
+  "chains": [
+   "xDai",
+   "Ethereum",
+   "Arbitrum",
+   "Base"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/balancer-cow-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "balancer-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "balancer",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 28168364.952276547,
+    "victim_hacks": [
+     {
+      "date": "2023-08-27",
+      "amount": 800000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     },
+     {
+      "date": "2025-11-03",
+      "amount": 128000000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aave-arc",
+  "name": "Aave Arc",
+  "head_tvl": 57263.92195470886,
+  "snapshot_tvl": 57263.58455982997,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/aave-arc",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aave-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "aave",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 17400461288.44966,
+    "victim_hacks": [
+     {
+      "date": "2026-03-12",
+      "amount": 862000,
+      "technique": "Oracle Misconfiguration",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "ribbon-lend",
+  "name": "Ribbon Lend",
+  "head_tvl": 52339.58062963239,
+  "snapshot_tvl": 52339.27664400691,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Uncollateralized Lending",
+  "defillama_url": "https://defillama.com/protocol/ribbon-lend",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "ribbon",
+    "link": "VERSION_SIBLING",
+    "link_key": "ribbon-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 4266105.955681522,
+    "victim_hacks": [
+     {
+      "date": "2025-12-12",
+      "amount": 2700000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "apertureswap",
+  "name": "ApertureSwap",
+  "head_tvl": 51432.694469513444,
+  "snapshot_tvl": 50529.26016403766,
+  "chains": [
+   "Manta"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/apertureswap",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aperture-lm",
+    "link": "VERSION_SIBLING",
+    "link_key": "aperture-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 12779.09194638996,
+    "victim_hacks": [
+     {
+      "date": "2026-01-25",
+      "amount": 3670000,
+      "technique": "Token Approval Abuse",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "blend-pools",
+  "name": "Blend Pools",
+  "head_tvl": 48640.97973662923,
+  "snapshot_tvl": 55902.53838443221,
+  "chains": [
+   "Stellar"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/blend-pools",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "blend-pools-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "blend",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2026-02-22",
+      "amount": 10970000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "lodestar-v1",
+  "name": "Lodestar V1",
+  "head_tvl": 47214.66057467814,
+  "snapshot_tvl": 46359.522731040764,
+  "chains": [
+   "Arbitrum"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/lodestar-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "lodestar-v0",
+    "link": "VERSION_SIBLING",
+    "link_key": "lodestar-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 4758.191809574594,
+    "victim_hacks": [
+     {
+      "date": "2022-12-10",
+      "amount": 6900000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "voltage-amm",
+  "name": "Voltage AMM",
+  "head_tvl": 40173.40024459266,
+  "snapshot_tvl": 37754.07391191413,
+  "chains": [
+   "Fuse"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/voltage-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "voltage-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "voltage",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 550.308356275667,
+    "victim_hacks": [
+     {
+      "date": "2025-03-18",
+      "amount": 322113,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "bunni-v1",
+  "name": "Bunni v1",
+  "head_tvl": 31177.036058126043,
+  "snapshot_tvl": 33401.554860664546,
+  "chains": [
+   "Ethereum",
+   "Arbitrum",
+   "Optimism",
+   "Polygon"
+  ],
+  "category": "Liquidity Manager",
+  "defillama_url": "https://defillama.com/protocol/bunni-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "bunni-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "bunni",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 215228.91753188908,
+    "victim_hacks": [
+     {
+      "date": "2025-09-02",
+      "amount": 8400000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "dfx-v3",
+  "name": "DFX V3",
+  "head_tvl": 30873.914430053224,
+  "snapshot_tvl": 30845.14401285055,
+  "chains": [
+   "Ethereum",
+   "Polygon",
+   "Arbitrum"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/dfx-v3",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "dfx-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "dfx-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 87641.34117518351,
+    "victim_hacks": [
+     {
+      "date": "2022-11-10",
+      "amount": 4000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "sperax-demeter-v2",
+  "name": "Sperax Demeter V2",
+  "head_tvl": 30407.65918414982,
+  "snapshot_tvl": 29099.72176960852,
+  "chains": [
+   "Arbitrum"
+  ],
+  "category": "Farm",
+  "defillama_url": "https://defillama.com/protocol/sperax-demeter-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "sperax-usd",
+    "link": "VERSION_SIBLING",
+    "link_key": "sperax",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 521720.7634888941,
+    "victim_hacks": [
+     {
+      "date": "2023-02-04",
+      "amount": 250000,
+      "technique": "Unbacked Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aurelius",
+  "name": "Aurelius",
+  "head_tvl": 29979.93186147594,
+  "snapshot_tvl": 29277.867894610426,
+  "chains": [
+   "Mantle"
+  ],
+  "category": "CDP",
+  "defillama_url": "https://defillama.com/protocol/aurelius",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "reaper-farm",
+    "link": "VERSION_SIBLING",
+    "link_key": "cod3x",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1463479.3600674337,
+    "victim_hacks": [
+     {
+      "date": "2022-08-01",
+      "amount": 1700000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "nemo-vault",
+  "name": "Nemo Vault",
+  "head_tvl": 29093.08796176511,
+  "snapshot_tvl": 29289.91366494746,
+  "chains": [
+   "Sui"
+  ],
+  "category": "Yield Aggregator",
+  "defillama_url": "https://defillama.com/protocol/nemo-vault",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "nemo-yield-trading",
+    "link": "VERSION_SIBLING",
+    "link_key": "nemo",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2025-09-08",
+      "amount": 2590000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "equity",
+  "name": "Equity",
+  "head_tvl": 26858.96797977082,
+  "snapshot_tvl": 26857.691056351665,
+  "chains": [
+   "Fantom"
+  ],
+  "category": "Derivatives",
+  "defillama_url": "https://defillama.com/protocol/equity",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "equalizer-exchange",
+    "link": "VERSION_SIBLING",
+    "link_key": "equalizer",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 149435.5257840543,
+    "victim_hacks": [
+     {
+      "date": "2022-06-07",
+      "amount": 50000,
+      "technique": "Withdrawal Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "mars-lend",
+  "name": "Mars Lend",
+  "head_tvl": 24394.43517421954,
+  "snapshot_tvl": 24392.49400106325,
+  "chains": [
+   "Neutron",
+   "Osmosis",
+   "Terra"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/mars-lend",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "mars-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "mars-protocol",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1807.8830825213824,
+    "victim_hacks": [
+     {
+      "date": "2025-12-14",
+      "amount": 960000,
+      "technique": "Funding Rate Arbitrage",
+      "classification": "Market Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "arena-launch",
+  "name": "Arena Launch",
+  "head_tvl": 24085.251169902003,
+  "snapshot_tvl": 24681.665693834304,
+  "chains": [
+   "Avalanche"
+  ],
+  "category": "Launchpad",
+  "defillama_url": "https://defillama.com/protocol/arena-launch",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "arena-socialfi",
+    "link": "VERSION_SIBLING",
+    "link_key": "the-arena",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 142634.27014953547,
+    "victim_hacks": [
+     {
+      "date": "2023-10-07",
+      "amount": 2974530,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "juicebox-v2",
+  "name": "Juicebox V2",
+  "head_tvl": 23978.985975746175,
+  "snapshot_tvl": 23322.73150924004,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Launchpad",
+  "defillama_url": "https://defillama.com/protocol/juicebox-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "juicebox-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "juicebox",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 168454.17382640342,
+    "victim_hacks": [
+     {
+      "date": "2026-04-20",
+      "amount": 52000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "voltage-lending",
+  "name": "Voltage Lending",
+  "head_tvl": 22475.958641488054,
+  "snapshot_tvl": 21015.441343460167,
+  "chains": [
+   "Fuse"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/voltage-lending",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "voltage-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "voltage",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 550.308356275667,
+    "victim_hacks": [
+     {
+      "date": "2025-03-18",
+      "amount": 322113,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "clober-v2",
+  "name": "Clober V2",
+  "head_tvl": 21416.89606651539,
+  "snapshot_tvl": 24158.51468645243,
+  "chains": [
+   "Base",
+   "Monad",
+   "zkSync Era"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/clober-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "clober-liquidity-vault",
+    "link": "VERSION_SIBLING",
+    "link_key": "clober",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 54300.61379367373,
+    "victim_hacks": [
+     {
+      "date": "2024-12-10",
+      "amount": 500000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "voltage-stableswap",
+  "name": "Voltage StableSwap",
+  "head_tvl": 15508.590168602546,
+  "snapshot_tvl": 16910.39790763127,
+  "chains": [
+   "Fuse"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/voltage-stableswap",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "voltage-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "voltage",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 550.308356275667,
+    "victim_hacks": [
+     {
+      "date": "2025-03-18",
+      "amount": 322113,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "mango-markets-v4-perps",
+  "name": "Mango Markets V4 Perps",
+  "head_tvl": 14989.103405576414,
+  "snapshot_tvl": 14976.301464515425,
+  "chains": [
+   "Solana"
+  ],
+  "category": "Derivatives",
+  "defillama_url": "https://defillama.com/protocol/mango-markets-v4-perps",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "mango-markets-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "mango-markets",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2022-10-11",
+      "amount": 115000000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "prismalrt",
+  "name": "PrismaLRT",
+  "head_tvl": 13996.890100065548,
+  "snapshot_tvl": 13649.627637750456,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "CDP",
+  "defillama_url": "https://defillama.com/protocol/prismalrt",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "prismalst",
+    "link": "VERSION_SIBLING",
+    "link_key": "prisma-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 340644.5967101439,
+    "victim_hacks": [
+     {
+      "date": "2024-03-28",
+      "amount": 11600000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "unilend-v1",
+  "name": "Unilend V1",
+  "head_tvl": 10412.680042732958,
+  "snapshot_tvl": 10130.637527586288,
+  "chains": [
+   "Polygon",
+   "Ethereum",
+   "Binance"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/unilend-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "unilend-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "unilend",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 3.5728572358638475,
+    "victim_hacks": [
+     {
+      "date": "2025-01-12",
+      "amount": 197600,
+      "technique": "Redeem Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "tenderize-v1",
+  "name": "Tenderize V1",
+  "head_tvl": 9174.96283124586,
+  "snapshot_tvl": 8882.896013552276,
+  "chains": [
+   "Arbitrum",
+   "Ethereum"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/tenderize-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "tenderize-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "tenderize",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 340858.44885809335,
+    "victim_hacks": [
+     {
+      "date": "2025-04-07",
+      "amount": 10850,
+      "technique": "Unknown",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "sperax-demeter",
+  "name": "Sperax Demeter",
+  "head_tvl": 9168.695013295228,
+  "snapshot_tvl": 8711.169368397841,
+  "chains": [
+   "Arbitrum"
+  ],
+  "category": "Farm",
+  "defillama_url": "https://defillama.com/protocol/sperax-demeter",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "sperax-usd",
+    "link": "VERSION_SIBLING",
+    "link_key": "sperax",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 521720.7634888941,
+    "victim_hacks": [
+     {
+      "date": "2023-02-04",
+      "amount": 250000,
+      "technique": "Unbacked Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "tenderswap",
+  "name": "TenderSwap",
+  "head_tvl": 6752.419723295917,
+  "snapshot_tvl": 6325.901677888967,
+  "chains": [
+   "Arbitrum",
+   "Ethereum"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/tenderswap",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "tenderize-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "tenderize",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 340858.44885809335,
+    "victim_hacks": [
+     {
+      "date": "2025-04-07",
+      "amount": 10850,
+      "technique": "Unknown",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "pike-v2",
+  "name": "Pike V2",
+  "head_tvl": 5807.0727901598275,
+  "snapshot_tvl": 5610.253419702281,
+  "chains": [
+   "Base"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/pike-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "pike-v1",
+    "link": "VERSION_SIBLING",
+    "link_key": "pike",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1686.9415448237837,
+    "victim_hacks": [
+     {
+      "date": "2024-04-30",
+      "amount": 1600000,
+      "technique": "Proxy Upgrade Hijack",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "panoptic-v1",
+  "name": "Panoptic V1",
+  "head_tvl": 5755.169366961094,
+  "snapshot_tvl": 5755.169366961094,
+  "chains": [
+   "Ethereum",
+   "Unichain",
+   "Base"
+  ],
+  "category": "Options",
+  "defillama_url": "https://defillama.com/protocol/panoptic-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "panoptic-v1.1",
+    "link": "VERSION_SIBLING",
+    "link_key": "panoptic-protocol",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 2372.9188452827702,
+    "victim_hacks": [
+     {
+      "date": "2025-08-25",
+      "amount": 0,
+      "technique": "Hash Collision",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "lore-finance",
+  "name": "Lore Finance",
+  "head_tvl": 4649.069200716127,
+  "snapshot_tvl": 4618.915915799615,
+  "chains": [
+   "Scroll"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/lore-finance",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "reaper-farm",
+    "link": "VERSION_SIBLING",
+    "link_key": "cod3x",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1463479.3600674337,
+    "victim_hacks": [
+     {
+      "date": "2022-08-01",
+      "amount": 1700000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "termfinance-parity",
+  "name": "TermFinance Parity",
+  "head_tvl": 1789.7650889237143,
+  "snapshot_tvl": 7984001.388690938,
+  "chains": [
+   "Ethereum",
+   "Arbitrum"
+  ],
+  "category": "Risk Curators",
+  "defillama_url": "https://defillama.com/protocol/termfinance-parity",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "termfinance-vaults",
+    "link": "VERSION_SIBLING",
+    "link_key": "termfinance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 1608406.5297940648,
+    "victim_hacks": [
+     {
+      "date": "2026-08-23",
+      "amount": 8500000,
+      "technique": "Malicious Proposal",
+      "classification": "Governance"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "clober-v1",
+  "name": "Clober V1",
+  "head_tvl": 1661.5842713084944,
+  "snapshot_tvl": 1672.8718893421171,
+  "chains": [
+   "Arbitrum",
+   "Polygon",
+   "Ethereum",
+   "Polygon zkEVM"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/clober-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "clober-liquidity-vault",
+    "link": "VERSION_SIBLING",
+    "link_key": "clober",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 54300.61379367373,
+    "victim_hacks": [
+     {
+      "date": "2024-12-10",
+      "amount": 500000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "movepump",
+  "name": "MovePump",
+  "head_tvl": 426.71850269941575,
+  "snapshot_tvl": 475.85915589687346,
+  "chains": [
+   "Aptos"
+  ],
+  "category": "Launchpad",
+  "defillama_url": "https://defillama.com/protocol/movepump",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "bluemove-dex",
+    "link": "VERSION_SIBLING",
+    "link_key": "bluemove",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 125.09894605244946,
+    "victim_hacks": [
+     {
+      "date": "2026-07-11",
+      "amount": 529000,
+      "technique": "Incorrect Share Accounting",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "zklend-lst",
+  "name": "zkLend LST",
+  "head_tvl": 116.42049612526671,
+  "snapshot_tvl": 124.98048690306784,
+  "chains": [
+   "Starknet"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/zklend-lst",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "zklend",
+    "link": "VERSION_SIBLING",
+    "link_key": "zklend-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2025-02-11",
+      "amount": 9550000,
+      "technique": "First Depositor Attack",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "sedge",
+  "name": "sedge",
+  "head_tvl": 67.80211941141326,
+  "snapshot_tvl": 67.88445137202123,
+  "chains": [
+   "Base"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/sedge",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "dfx-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "dfx-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 87641.34117518351,
+    "victim_hacks": [
+     {
+      "date": "2022-11-10",
+      "amount": 4000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "revert-v3-staker",
+  "name": "Revert V3 Staker",
+  "head_tvl": 39.7717994417127,
+  "snapshot_tvl": 39.857004886175794,
+  "chains": [
+   "Polygon",
+   "Evmos"
+  ],
+  "category": "Liquidity Manager",
+  "defillama_url": "https://defillama.com/protocol/revert-v3-staker",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "revert-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "revert",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 7965788.6022834275,
+    "victim_hacks": [
+     {
+      "date": "2026-01-29",
+      "amount": 50000,
+      "technique": "Staking Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "cork-phoenix",
+  "name": "Cork Phoenix",
+  "head_tvl": 7.026297714430451,
+  "snapshot_tvl": 7.023726410833543,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Insurance",
+  "defillama_url": "https://defillama.com/protocol/cork-phoenix",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "cork-v1",
+    "link": "VERSION_SIBLING",
+    "link_key": "cork-protocol",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 5607.600828058579,
+    "victim_hacks": [
+     {
+      "date": "2025-05-28",
+      "amount": 12000000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "fusefi-lending",
+  "name": "Fusefi Lending",
+  "head_tvl": 0.5713078209868334,
+  "snapshot_tvl": 0.5534805412335935,
+  "chains": [
+   "Fuse"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/fusefi-lending",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "voltage-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "voltage",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 550.308356275667,
+    "victim_hacks": [
+     {
+      "date": "2025-03-18",
+      "amount": 322113,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "gondi-v2",
+  "name": "Gondi V2",
+  "head_tvl": 0.17609628495537938,
+  "snapshot_tvl": 0.16849826348500033,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "NFT Lending",
+  "defillama_url": "https://defillama.com/protocol/gondi-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "gondi-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "gondi",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 3147913.5557143735,
+    "victim_hacks": [
+     {
+      "date": "2026-03-09",
+      "amount": 230000,
+      "technique": "Token Approval Abuse",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "gondi-v1",
+  "name": "Gondi V1",
+  "head_tvl": 1.4926699847099846e-14,
+  "snapshot_tvl": 1.4628121201763385e-14,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "NFT Lending",
+  "defillama_url": "https://defillama.com/protocol/gondi-v1",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "gondi-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "gondi",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 3147913.5557143735,
+    "victim_hacks": [
+     {
+      "date": "2026-03-09",
+      "amount": 230000,
+      "technique": "Token Approval Abuse",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "raydium-perps",
+  "name": "Raydium Perps",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Interface",
+  "defillama_url": "https://defillama.com/protocol/raydium-perps",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "raydium-amm",
+    "link": "VERSION_SIBLING",
+    "link_key": "raydium",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1103758618.489798,
+    "victim_hacks": [
+     {
+      "date": "2026-06-10",
+      "amount": 1340000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "launchlab",
+  "name": "LaunchLab",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Launchpad",
+  "defillama_url": "https://defillama.com/protocol/launchlab",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "raydium-amm",
+    "link": "VERSION_SIBLING",
+    "link_key": "raydium",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1103758618.489798,
+    "victim_hacks": [
+     {
+      "date": "2026-06-10",
+      "amount": 1340000,
+      "technique": "Infinite Mint",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "drift-amm",
+  "name": "Drift AMM",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/drift-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "drift-trade",
+    "link": "VERSION_SIBLING",
+    "link_key": "drift",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 642645.569989218,
+    "victim_hacks": [
+     {
+      "date": "2022-05-11",
+      "amount": 14500000,
+      "technique": "Risk Parameter Abuse",
+      "classification": "Market Manipulation"
+     },
+     {
+      "date": "2026-04-01",
+      "amount": 295000000,
+      "technique": "Proxy Upgrade Hijack",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "gmx-v2-amm",
+  "name": "GMX V2 AMM",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/gmx-v2-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "gmx-v1-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "gmx",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 3214908.871376575,
+    "victim_hacks": [
+     {
+      "date": "2022-09-18",
+      "amount": 565000,
+      "technique": "Stale Price Arbitrage",
+      "classification": "Market Manipulation"
+     },
+     {
+      "date": "2025-07-09",
+      "amount": 42000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "gmx-v1-amm",
+  "name": "GMX V1 AMM",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/gmx-v1-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "gmx-v1-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "gmx",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 3214908.871376575,
+    "victim_hacks": [
+     {
+      "date": "2022-09-18",
+      "amount": 565000,
+      "technique": "Stale Price Arbitrage",
+      "classification": "Market Manipulation"
+     },
+     {
+      "date": "2025-07-09",
+      "amount": 42000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "blend-backstop-v2",
+  "name": "Blend Backstop V2",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Stellar"
+  ],
+  "category": "Insurance",
+  "defillama_url": "https://defillama.com/protocol/blend-backstop-v2",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "blend-pools-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "blend",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2026-02-22",
+      "amount": 10970000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "blend-backstop",
+  "name": "Blend Backstop",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Stellar"
+  ],
+  "category": "Insurance",
+  "defillama_url": "https://defillama.com/protocol/blend-backstop",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "blend-pools-v2",
+    "link": "VERSION_SIBLING",
+    "link_key": "blend",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2026-02-22",
+      "amount": 10970000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "rhea-cross-chain",
+  "name": "RHEA Cross Chain",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Cross Chain Bridge",
+  "defillama_url": "https://defillama.com/protocol/rhea-cross-chain",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "rhea-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "rhea-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 79226747.97067386,
+    "victim_hacks": [
+     {
+      "date": "2026-04-16",
+      "amount": 18400000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "cetus-aggregator",
+  "name": "Cetus Aggregator",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "DEX Aggregator",
+  "defillama_url": "https://defillama.com/protocol/cetus-aggregator",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "cetus-clmm",
+    "link": "VERSION_SIBLING",
+    "link_key": "cetus",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 25461684.982464403,
+    "victim_hacks": [
+     {
+      "date": "2025-05-22",
+      "amount": 223000000,
+      "technique": "Arithmetic Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "scallop-aggregator",
+  "name": "Scallop Aggregator",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "DEX Aggregator",
+  "defillama_url": "https://defillama.com/protocol/scallop-aggregator",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "scallop-lend",
+    "link": "VERSION_SIBLING",
+    "link_key": "scallop",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 10437184.035472551,
+    "victim_hacks": [
+     {
+      "date": "2026-04-26",
+      "amount": 142000,
+      "technique": "Reward Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "1inch-aqua",
+  "name": "1inch Aqua",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/1inch-aqua",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "1inch-swap",
+    "link": "VERSION_SIBLING",
+    "link_key": "1inch",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 3202945.6426800047,
+    "victim_hacks": [
+     {
+      "date": "2025-03-07",
+      "amount": 5000000,
+      "technique": "Arbitrary External Call",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "woofi-pro-perps",
+  "name": "WooFi Pro Perps",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Interface",
+  "defillama_url": "https://defillama.com/protocol/woofi-pro-perps",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "woofi-swap",
+    "link": "VERSION_SIBLING",
+    "link_key": "woofi",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 2418018.6707176054,
+    "victim_hacks": [
+     {
+      "date": "2024-03-05",
+      "amount": 8750000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "aftermath-aggregator",
+  "name": "Aftermath Aggregator",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "DEX Aggregator",
+  "defillama_url": "https://defillama.com/protocol/aftermath-aggregator",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "aftermath-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "aftermath-finance",
+    "victim_state": "UNKNOWN_SERIES",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2026-04-29",
+      "amount": 1140000,
+      "technique": "Withdrawal Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "samsara",
+  "name": "Samsara",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Onchain Capital Allocator",
+  "defillama_url": "https://defillama.com/protocol/samsara",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "nirvana-v1",
+    "link": "VERSION_SIBLING",
+    "link_key": "nirvana",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 2.5133414945139996,
+    "victim_hacks": [
+     {
+      "date": "2022-07-28",
+      "amount": 3500000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "zoth-ztln",
+  "name": "Zoth ZTLN",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "RWA",
+  "defillama_url": "https://defillama.com/protocol/zoth-ztln",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "zoth-zeusd",
+    "link": "VERSION_SIBLING",
+    "link_key": "zoth",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 3.620667034218472e-05,
+    "victim_hacks": [
+     {
+      "date": "2025-03-01",
+      "amount": 285000,
+      "technique": "Swap Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "thala-vethl",
+  "name": "Thala veTHL",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Aptos"
+  ],
+  "category": "Liquid Staking",
+  "defillama_url": "https://defillama.com/protocol/thala-vethl",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "thalaswap",
+    "link": "VERSION_SIBLING",
+    "link_key": "thala",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 645216.0639417402,
+    "victim_hacks": [
+     {
+      "date": "2024-11-15",
+      "amount": 25500000,
+      "technique": "Missing Input Validation",
+      "classification": "Input Validation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "arena-perps",
+  "name": "Arena Perps",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Interface",
+  "defillama_url": "https://defillama.com/protocol/arena-perps",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "arena-socialfi",
+    "link": "VERSION_SIBLING",
+    "link_key": "the-arena",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 142634.27014953547,
+    "victim_hacks": [
+     {
+      "date": "2023-10-07",
+      "amount": 2974530,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "yuzu-market",
+  "name": "Yuzu Market",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Horizen EON"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/yuzu-market",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "reaper-farm",
+    "link": "VERSION_SIBLING",
+    "link_key": "cod3x",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 1463479.3600674337,
+    "victim_hacks": [
+     {
+      "date": "2022-08-01",
+      "amount": 1700000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "kyberswap-fairflow",
+  "name": "KyberSwap FairFlow",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Yield Aggregator",
+  "defillama_url": "https://defillama.com/protocol/kyberswap-fairflow",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "kyberswap-elastic",
+    "link": "VERSION_SIBLING",
+    "link_key": "kyberswap",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 126663.22293912787,
+    "victim_hacks": [
+     {
+      "date": "2023-11-22",
+      "amount": 48000000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "kyberswap-aggregator",
+  "name": "KyberSwap Aggregator",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "DEX Aggregator",
+  "defillama_url": "https://defillama.com/protocol/kyberswap-aggregator",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "kyberswap-elastic",
+    "link": "VERSION_SIBLING",
+    "link_key": "kyberswap",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 126663.22293912787,
+    "victim_hacks": [
+     {
+      "date": "2023-11-22",
+      "amount": 48000000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "kinto-hyperliquid",
+  "name": "Kinto Hyperliquid",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Interface",
+  "defillama_url": "https://defillama.com/protocol/kinto-hyperliquid",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "kinto-bridge",
+    "link": "VERSION_SIBLING",
+    "link_key": "kinto",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 672216.8786840703,
+    "victim_hacks": [
+     {
+      "date": "2025-07-10",
+      "amount": 1550000,
+      "technique": "Uninitialized Proxy",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "orion-aggregator",
+  "name": "Orion Aggregator",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "DEX Aggregator",
+  "defillama_url": "https://defillama.com/protocol/orion-aggregator",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "orion-pools",
+    "link": "VERSION_SIBLING",
+    "link_key": "orion",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 283795.0985642988,
+    "victim_hacks": [
+     {
+      "date": "2023-02-02",
+      "amount": 3000000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "clober-perps",
+  "name": "Clober Perps",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Interface",
+  "defillama_url": "https://defillama.com/protocol/clober-perps",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "clober-liquidity-vault",
+    "link": "VERSION_SIBLING",
+    "link_key": "clober",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 54300.61379367373,
+    "victim_hacks": [
+     {
+      "date": "2024-12-10",
+      "amount": 500000,
+      "technique": "Reentrancy",
+      "classification": "Reentrancy"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "tropykus-zkevm",
+  "name": "Tropykus zkEVM",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Polygon zkEVM"
+  ],
+  "category": "Lending",
+  "defillama_url": "https://defillama.com/protocol/tropykus-zkevm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "tropykus-rsk",
+    "link": "VERSION_SIBLING",
+    "link_key": "tropykus-finance",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 118176.94607474585,
+    "victim_hacks": [
+     {
+      "date": "2023-06-14",
+      "amount": 150000,
+      "technique": "Rounding Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "dao-maker-vesting",
+  "name": "DAO Maker Vesting",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Ethereum",
+   "Binance",
+   "Polygon",
+   "Fantom",
+   "Step",
+   "Celo"
+  ],
+  "category": "Services",
+  "defillama_url": "https://defillama.com/protocol/dao-maker-vesting",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "dao-swap",
+    "link": "VERSION_SIBLING",
+    "link_key": "dao-maker",
+    "victim_state": "NEVER_MATERIALLY_HIT",
+    "victim_head_tvl": 50472.56807955401,
+    "victim_hacks": [
+     {
+      "date": "2022-09-05",
+      "amount": 580000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "edebase",
+  "name": "EDEBASE",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Base"
+  ],
+  "category": "Derivatives",
+  "defillama_url": "https://defillama.com/protocol/edebase",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "el-dorado-exchange",
+    "link": "VERSION_SIBLING",
+    "link_key": "ede",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 38162.562581694874,
+    "victim_hacks": [
+     {
+      "date": "2023-05-30",
+      "amount": 120000,
+      "technique": "Swap Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "mango-markets-v4-amm",
+  "name": "Mango Markets V4 AMM",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/mango-markets-v4-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "mango-markets-v3",
+    "link": "VERSION_SIBLING",
+    "link_key": "mango-markets",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0,
+    "victim_hacks": [
+     {
+      "date": "2022-10-11",
+      "amount": 115000000,
+      "technique": "Spot Price Manipulation",
+      "classification": "Oracle Manipulation"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "hector-treasury",
+  "name": "Hector Treasury",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Ethereum",
+   "Fantom",
+   "Binance"
+  ],
+  "category": "Reserve Currency",
+  "defillama_url": "https://defillama.com/protocol/hector-treasury",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "hector-lending",
+    "link": "VERSION_SIBLING",
+    "link_key": "hector-network",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 7668.2948913431355,
+    "victim_hacks": [
+     {
+      "date": "2023-06-02",
+      "amount": 653000,
+      "technique": "Token Approval Abuse",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "bluemove-staking",
+  "name": "BlueMove Staking",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Aptos"
+  ],
+  "category": "NFT Marketplace",
+  "defillama_url": "https://defillama.com/protocol/bluemove-staking",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "bluemove-dex",
+    "link": "VERSION_SIBLING",
+    "link_key": "bluemove",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 125.09894605244946,
+    "victim_hacks": [
+     {
+      "date": "2026-07-11",
+      "amount": 529000,
+      "technique": "Incorrect Share Accounting",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "level-amm",
+  "name": "Level AMM",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/level-amm",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "level-perps",
+    "link": "VERSION_SIBLING",
+    "link_key": "level-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 313.5812140704334,
+    "victim_hacks": [
+     {
+      "date": "2023-05-01",
+      "amount": 1100000,
+      "technique": "Reward Logic Flaw",
+      "classification": "Protocol Logic"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "poolz-vesting",
+  "name": "Poolz Vesting",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Binance",
+   "Base",
+   "Arbitrum",
+   "Ethereum",
+   "Manta",
+   "Telos",
+   "Polygon",
+   "Coti",
+   "Avalanche",
+   "Unichain",
+   "Moonbeam"
+  ],
+  "category": "Launchpad",
+  "defillama_url": "https://defillama.com/protocol/poolz-vesting",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "poolz-network",
+    "link": "VERSION_SIBLING",
+    "link_key": "poolz-finance",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 49.926639708342734,
+    "victim_hacks": [
+     {
+      "date": "2023-03-15",
+      "amount": 390000,
+      "technique": "Arithmetic Error",
+      "classification": "Token & Share Accounting"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ },
+ {
+  "slug": "templedao-trade",
+  "name": "TempleDAO Trade",
+  "head_tvl": 0,
+  "snapshot_tvl": 0,
+  "chains": [
+   "Ethereum"
+  ],
+  "category": "Dexs",
+  "defillama_url": "https://defillama.com/protocol/templedao-trade",
+  "is_victim": false,
+  "links": [
+   {
+    "victim": "templedao",
+    "link": "VERSION_SIBLING",
+    "link_key": "temple-dao",
+    "victim_state": "DRAINED_OR_DEAD",
+    "victim_head_tvl": 0.5720257450268246,
+    "victim_hacks": [
+     {
+      "date": "2022-10-11",
+      "amount": 2300000,
+      "technique": "Improper Access Control",
+      "classification": "Access Control"
+     }
+    ],
+    "strength": 1
+   }
+  ],
+  "best_link": "VERSION_SIBLING",
+  "best_strength": 1,
+  "n_victim_relatives": 1
+ }
+]

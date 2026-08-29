@@ -1,0 +1,54 @@
+{
+  "tag": "BSC",
+  "category_filter": "BSC",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=BSC&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:46Z",
+      "sha256": "64bd84cec9dc7da446cfca91d6ca1d8347a9cf1cb0157e703ad9995def9391a3",
+      "bytes": 25890,
+      "snapshot": "BSC_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 20,
+      "rows_older_than_window": 0,
+      "first_date": "2026-05-28",
+      "last_date": "2026-08-15",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=BSC&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:47Z",
+      "sha256": "d4448b672486c8bbdd94304aa558c1be5b5042ab9e26d79e59644392fbf49c06",
+      "bytes": 28626,
+      "snapshot": "BSC_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 18,
+      "rows_older_than_window": 2,
+      "first_date": "2026-01-05",
+      "last_date": "2026-05-28",
+      "status": "OK"
+    },
+    {
+      "page": 3,
+      "url": "https://hacked.slowmist.io/?c=BSC&page=3",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:50Z",
+      "sha256": "f59caeb9386847fc9a49a573fcce5f5d249912e69fd28547582d3386f3a5de09",
+      "bytes": 24123,
+      "snapshot": "BSC_page_003.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2025-01-13",
+      "last_date": "2025-12-29",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 60
+}

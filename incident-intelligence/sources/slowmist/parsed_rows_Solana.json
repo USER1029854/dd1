@@ -1,0 +1,522 @@
+[
+  {
+    "event_date": "2026-07-21",
+    "target": "FlashTrade",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 98000.0,
+    "reported_loss_raw": "$ 98,000",
+    "description_raw": "FlashTrade (a Solana perps protocol) detected an unauthorized $98,000 withdrawal from its ephemeral instance. As a precaution, trading, deposits, and withdrawals were paused. Thanks to the newly rolled-out withdrawal batching and monitoring system, the incident was detected quickly and contained. The team will fully cover the amount, with all user funds safe.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/FlashTrade/status/2079727481574334544"
+    ]
+  },
+  {
+    "event_date": "2026-07-16",
+    "target": "DefiTuna Lending",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 580000.0,
+    "reported_loss_raw": "$ 580,000",
+    "description_raw": "The Solana-based DeFi protocol DefiTuna's lending pools were exploited by an attacker who drained approximately $580K, creating a matching deficit in the USDC lending pool. The attack vector has been identified and patched; the team is investigating and working on fund recovery.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/DeFiTuna/status/2077772502521053668"
+    ]
+  },
+  {
+    "event_date": "2026-07-06",
+    "target": "BonkDAO",
+    "slowmist_attack_method": "Governance Attack",
+    "reported_loss_usd": 20000000.0,
+    "reported_loss_raw": "$ 20,000,000",
+    "description_raw": "BonkDAO suffered a governance attack. The attacker spent ~$4M to buy BONK tokens for sufficient voting power and passed a malicious governance proposal (BIP-76) to transfer ~$20M BONK from the treasury to controlled wallets. No smart contract exploit; used the DAO's own voting system.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://cryptonews.net/news/security/33109969/"
+    ]
+  },
+  {
+    "event_date": "2026-06-10",
+    "target": "Raydium",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 1340000.0,
+    "reported_loss_raw": "$ 1,340,000",
+    "description_raw": "Solana-based decentralized exchange Raydium disclosed a vulnerability in its deprecated AMM V3 program (phased out in 2021), which allowed an attacker to drain approximately $1.34 million from five inactive liquidity pools (Sollet USDT-RAY, Sollet ETH-RAY, SRM-RAY, USDC-RAY, and RAY-SOL). The flaw was due to insufficient validation of LP mint addresses, enabling the attacker to create a fake LP token and bypass proportion checks to withdraw funds. No current users, active programs, SDK, or dApp were affected. Raydium will fully compensate losses from its treasury and is conducting a security review of mainnet programs.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/0xINFRA/status/2064738005697384476"
+    ]
+  },
+  {
+    "event_date": "2026-04-01",
+    "target": "Drift Protocol",
+    "slowmist_attack_method": "Social Engineering",
+    "reported_loss_usd": 285000000.0,
+    "reported_loss_raw": "$ 285,000,000",
+    "description_raw": "According to The Block, the Solana-based decentralized exchange Drift Protocol has been hit by a major exploit, with losses totaling at least $200 million. Some estimates suggest the figure is closer to $270 million, making it the second-largest DeFi security breach in the Solana ecosystem, trailing only the Wormhole bridge hack. The attack targeted multiple Drift vaults, including JLP Delta Neutral, SOL Super Staking, and BTC Super Staking. On-chain data reveals that the attacker swapped the stolen assets for USDC via Jupiter, then bridged them to Ethereum to purchase ETH. As of 17:45 UTC, the attacker held approximately 19,913 ETH (worth roughly $42 million). Drift stated they are currently investigating the \"abnormal activity\" and have advised users to suspend all deposits. Subsequently, according to PeckShield's statistics, Drift Protocol suffered losses exceeding $285 million in the attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/OnchainLens/status/2039507495044194391"
+    ]
+  },
+  {
+    "event_date": "2026-03-28",
+    "target": "GoonFi",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 254000.0,
+    "reported_loss_raw": "$ 254,000",
+    "description_raw": "Solana-based Prop AMM project GoonFi v2's WSOL/USDC pool was drained of ~$254k due to a program config/logic bug that caused mispricing. Searchers exploited the vulnerability in a single atomic transaction, and the project team has subsequently halted the program.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Cetipo/status/2037892924982038893"
+    ]
+  },
+  {
+    "event_date": "2026-03-11",
+    "target": "BONKfun",
+    "slowmist_attack_method": "Domain Hijacking",
+    "reported_loss_usd": 30000.0,
+    "reported_loss_raw": "$ 30,000",
+    "description_raw": "BONKfun announced on X that its official website fell victim to a malicious social engineering attack on March 11. The attacker hijacked the BONKfun domain via the Domain Name Service (DNS) provider and transferred it to an external registrar. The team confirmed that the incident was not caused by a breach of BONK or BONKfun\u2019s internal systems, codebases, or team accounts. Following the incident, the team took immediate action: shutting down the website, coordinating with wallet service providers to flag the domain as malicious, and containing the impact on users. The attack resulted in approximately $30,000 in customer losses; the team will compensate affected users at 110% to cover potential opportunity costs. Control over the BONKfun domain and registration was fully restored around 5 PM ET on March 18. Major wallet provider functionalities were restored by the evening of March 19, and the website is now securely back online. As some antivirus software still flags the main domain as a risk, the team is actively addressing the issue. For users unable to access the official site due to antivirus blocks, a backup domain with identical functionality is now live and available for use.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SolportTom/status/2031930573342519702"
+    ]
+  },
+  {
+    "event_date": "2026-02-27",
+    "target": "Stake Nova",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 137014.0,
+    "reported_loss_raw": "$ 137,014",
+    "description_raw": "Stake Nova suffered a loss of approximately $137,014, representing about 95% of user deposits. The root cause was an unchecked validation issue in the RedeemNovaSol() function, which led to a flash-loan exploit that drained the liquidity pool. The vulnerability has now been fixed, the dApp has been taken offline, and the website is currently under maintenance. The team is offering a 10% on-chain bounty to the attacker; otherwise, they stated they will continue to pursue accountability.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/chrisdior777/status/2027080169983295538?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-01-31",
+    "target": "Step Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 40000000.0,
+    "reported_loss_raw": "$ 40,000,000",
+    "description_raw": "Step Finance has issued a statement on X regarding a recent exploit, disclosing that approximately $40 million was stolen from its treasury due to a compromise of an executive's device. Upon detecting the vulnerability, Step Finance launched an investigation in collaboration with cybersecurity researchers and relevant authorities, and has notified law enforcement. While certain operations were temporarily suspended during this period, the team has successfully recovered approximately $3.7 million in Remora assets and $1 million in other positions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/StepFinance_/status/2018379876642804213"
+    ]
+  },
+  {
+    "event_date": "2026-01-17",
+    "target": "Meteora",
+    "slowmist_attack_method": "Social Engineering",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "Meteora suffered a $1.5 million USDC loss in a fake OTC escrow scam while attempting to buy back its $MET token. Scammers deceived the team using a fraudulent escrow setup for an OTC deal. This was not a smart contract exploit but a social engineering attack. The incident was disclosed in Meteora\u2019s Q1 2026 Token Holder Report, where they also mentioned filing a police report. The protocol used $1M USDC for legitimate buybacks separately.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.mexc.com/zh-TW/news/1064102"
+    ]
+  },
+  {
+    "event_date": "2025-11-20",
+    "target": "DMT \u7a7a\u6295(@dexmaxai)",
+    "slowmist_attack_method": "Phishing Attack",
+    "reported_loss_usd": 130000.0,
+    "reported_loss_raw": "$ 130,000",
+    "description_raw": "GoPlus has issued a security alert: Users who claimed the DMT airdrop from @dexmaxai are advised to revoke approvals immediately or transfer their assets to a secure wallet. Multiple victims reported today that they were tricked into granting approvals for other tokens during the DMT airdrop process, resulting in over a thousand users being compromised and more than USD 130,000 in assets stolen via cross-chain transfers. The official website and Twitter account of @dexmaxai are now offline, indicating a possible rug pull. Investigations show that attackers prompted users to sign additional transactions during the airdrop claim, thereby obtaining malicious token approvals and subsequently transferring the approved assets. After stealing funds, attackers bridged the assets to Ethereum, with most of the stolen funds flowing into HitBTC, while a smaller portion remains on-chain.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/GoPlusZH/status/1991436599461319047"
+    ]
+  },
+  {
+    "event_date": "2025-10-21",
+    "target": "DoodiPals",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 171000.0,
+    "reported_loss_raw": "$ 171,000",
+    "description_raw": "The Solana-based mini entertainment project DoodiPals suffered a private key leak. The attacker sold tokens from dozens of wallets and exchanged them for SOL, making a total profit of about 917 SOL (approximately $171,000 USD).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/evilcos/status/1980443998461608427"
+    ]
+  },
+  {
+    "event_date": "2025-10-09",
+    "target": "Watt Protocol",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to monitoring by Scam Sniffer, the official X account of Watt Protocol was compromised, and the attacker used it to post phishing tweets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/realScamSniffer/status/1976284421448925574"
+    ]
+  },
+  {
+    "event_date": "2025-09-08",
+    "target": "Aqua",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4650000.0,
+    "reported_loss_raw": "$ 4,650,000",
+    "description_raw": "On-chain investigator ZachXBT reported that the Solana project Aqua has likely executed a rug pull involving approximately 21,770 SOL (~$4.65M). A few hours ago, the funds were split into four parts, moved through multiple intermediary addresses, and then sent to various instant exchanges.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.odaily.news/zh-CN/newsflash/447163"
+    ]
+  },
+  {
+    "event_date": "2025-08-04",
+    "target": "Credix",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 4500000.0,
+    "reported_loss_raw": "$ 4,500,000",
+    "description_raw": "The decentralized lending protocol Credix suffered an exploit, losing approximately $4.5 million. The attacker gained control of an admin wallet, minted tokens, and drained liquidity pools.\n\nAfter the incident, Credix claimed it had reached a settlement with the attacker, who agreed to return the funds on the condition that \u201ca certain amount would be fully paid by the Credix treasury.\u201d However, Credix did not disclose how much was actually paid.\n\nShortly after this announcement, Credix deleted its social media accounts and the team disappeared, sparking speculation that the so-called \u201chack\u201d may in fact have been a rug pull orchestrated by insiders. To date, the promised reimbursements have not been fulfilled.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=credix-exploit"
+    ]
+  },
+  {
+    "event_date": "2025-07-21",
+    "target": "Swarms",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The AI agent protocol Swarms disclosed on the X platform that its community Discord account had been compromised. Earlier today, a team member\u2019s Discord account was breached after receiving a malicious direct message from a user. As a result, the attacker deleted several channels and removed over 300 community members.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/swarms_corp/status/1947156712227824027?s=46"
+    ]
+  },
+  {
+    "event_date": "2025-07-09",
+    "target": "Texture",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2200000.0,
+    "reported_loss_raw": "$ 2,200,000",
+    "description_raw": "An attacker exploited a vulnerability in the Solana-based lending protocol Texture, stealing approximately $2.2 million in user funds from one of the project\u2019s vaults. Shortly after the incident, Texture offered the attacker a 10% bounty. The attacker returned $1.98 million and kept $220,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/texture_fi/status/1942972150631002245"
+    ]
+  },
+  {
+    "event_date": "2025-04-26",
+    "target": "Loopscale",
+    "slowmist_attack_method": "Oracle Attack",
+    "reported_loss_usd": 5800000.0,
+    "reported_loss_raw": "$ 5,800,000",
+    "description_raw": "A modular DeFi lending market built on Solana, Loopscale, has suffered an attack. The root cause of the exploit has been identified as an isolated issue with Loopscale\u2019s pricing of RateX-based collateral. The incident led to the theft of approximately 5.7 million USDC and 1,200 SOL, accounting for about 12% of the platform's total funds. According to an official update posted by Loopscale on April 29, following successful negotiations, all stolen assets \u2014 5,726,725 USDC and 1,211 SOL \u2014 were fully returned on April 26. No user deposits were affected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/LoopscaleLabs/status/1916230435291713786"
+    ]
+  },
+  {
+    "event_date": "2025-02-27",
+    "target": "Pumpfun",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Pumpfun's X account has been hacked, and the attacker is using it to promote fake tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/420883"
+    ]
+  },
+  {
+    "event_date": "2025-02-06",
+    "target": "Jupiter",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "JupiterDAO confirmed on X that the official Jupiter X account (@JupiterExchange) has been compromised. Users are advised not to click on any links or copy-paste any contract addresses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/jup_dao/status/1887312135039910354"
+    ]
+  },
+  {
+    "event_date": "2025-01-15",
+    "target": "DAWN",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to Scam Sniffer's monitoring, the X account of the decentralized autonomous wireless network project DAWN was compromised and used to post phishing tweets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/realScamSniffer/status/1879390837496537466"
+    ]
+  },
+  {
+    "event_date": "2024-11-25",
+    "target": "Pump Science",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The DeSci project Pump Science tweeted that the wallet T5j2UB...jjb8sc was exploited due to an oversight in their GitHub repository. The exploiter gained access to the keypair, which had been embedded in the source code of their website.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://foresightnews.pro/news/detail/59033"
+    ]
+  },
+  {
+    "event_date": "2024-11-15",
+    "target": "dogwifcoin (WIF)",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The X account of the meme project dogwifcoin (WIF) is suspected to have been hacked, posting multiple token contract messages. Users are advised to stay vigilant.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://foresightnews.pro/news/detail/58172"
+    ]
+  },
+  {
+    "event_date": "2024-10-23",
+    "target": "SHARPEI",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3400000.0,
+    "reported_loss_raw": "$ 3,400,000",
+    "description_raw": "A dog-themed memecoin project called SHARPEI abruptly cashed out $3.4 million, tanking the token price by more than 96% in seconds. The project had been promoted by crypto influencers, but hit a snag when a pitch deck for the project leaked. The deck contained multiple lies, including claims to have hired multiple \"KOLs\" who later denied involvement, and false claims of partnerships with various platforms and projects. As the token price stuttered along with these revelations, insiders apparently decided to quit while they were ahead, and cashed out in a quick and coordinated sale.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=sharpei-memecoin-rug-pull"
+    ]
+  },
+  {
+    "event_date": "2024-08-29",
+    "target": "io.net",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Ahmad Shadid, former CEO of the decentralized GPU network io.net, posted on X that the official io.net Discord has been hacked. He has informed the IO team and advised not to click on any shared links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/shadid_io/status/1829024547900924118"
+    ]
+  },
+  {
+    "event_date": "2024-08-20",
+    "target": "Parcl",
+    "slowmist_attack_method": "Frontend Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The website frontend of Solana ecosystem real estate trading protocol Parcl has been hacked, extracting tokens from users' Solana wallets and displaying fake transaction results in Phantom. Parcl\u2019s official X account also appears to have been compromised, posting information related to PARCL rewards.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/386398"
+    ]
+  },
+  {
+    "event_date": "2024-06-30",
+    "target": "BorpaToken",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The cross-chain DeFi protocol Entangle announced on X that the official X account of the meme token project BorpaToken, developed by their team, has been compromised. Do not click on any links. The BorpaToken team is in contact with X to resolve the issue.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/377677"
+    ]
+  },
+  {
+    "event_date": "2024-05-16",
+    "target": "pump.fun",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 1900000.0,
+    "reported_loss_raw": "$ 1,900,000",
+    "description_raw": "pump.fun is a Solana-based memecoin generator. On May 16th, the project suffered a $1.9 million exploit by an attacker who then began airdropping the money to somewhat random wallets. pump.fun stated on Twitter that the attack was due to a former employee exploiting their privileges within the company to illegally obtain withdrawal permissions and using a lending protocol to carry out flash loan attacks.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/pumpdotfun/status/1791235050643636303"
+    ]
+  },
+  {
+    "event_date": "2024-04-25",
+    "target": "io.net",
+    "slowmist_attack_method": "Security Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "io.net founder and CEO Ahmad Shadid announced on social media that io.net's metadata APIs recently experienced a security incident. A malicious party exploited accessible mappings of User IDs to Device IDs, leading to unauthorized metadata updates. This breach did not compromise GPU access but did affect the metadata displayed to users on the frontend.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/shadid_io/status/1783499497177256010"
+    ]
+  },
+  {
+    "event_date": "2024-04-10",
+    "target": "Jupiter",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Jupiter, a trading aggregator in the Solana ecosystem, tweeted that they noticed a large number of spam bots hitting our RPCs and limited them. Users are advised to try their operations again. The team is working super hard on helping users in this new congested environment and dealing with extraordinary volume.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/JupiterExchange/status/1777947113361695053"
+    ]
+  },
+  {
+    "event_date": "2024-04-04",
+    "target": "CondomSOL",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 922000.0,
+    "reported_loss_raw": "$ 922,000",
+    "description_raw": "CondomSOL on Solana has exited, and its Twitter account is no longer accessible. The wallet associated with CondomSOL raised 4,965 SOL, equivalent to approximately $922,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/NippleBNB/status/1775653467828171204"
+    ]
+  },
+  {
+    "event_date": "2024-03-30",
+    "target": "Solareum",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 1000000.0,
+    "reported_loss_raw": "$ 1,000,000",
+    "description_raw": "The Solana ecosystem is grappling with a spate of drained wallets. A cause has yet to be definitively determined, but some of the thefts were linked to the use of trading bots like Solareum. According to security researcher Plum, the Solareum Telegram trading bot vulnerability resulted in a loss of assets worth approximately $1 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=solana-drain-attacks"
+    ]
+  },
+  {
+    "event_date": "2024-01-25",
+    "target": "Saga DAO",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 65761.0,
+    "reported_loss_raw": "$ 65,761",
+    "description_raw": "Saga DAO, a community-run fan club for Solana's sellout mobile phone fell victim to a hacker attack, resulting in a theft of 750 SOL, equivalent to approximately $60,000. On February 2nd, SagaDAO tweeted that all funds stolen last week had been recovered. 65,761.03 USDC has been sent back to the Align multisig wallet protected by Phase Labs. The funds were returned from the original attacker's address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.coindesk.com/business/2024/01/24/fan-club-for-solanas-saga-phone-loses-750-sol-to-hack/"
+    ]
+  },
+  {
+    "event_date": "2024-01-07",
+    "target": "MangoFarm",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The MangoFarm project is suspected of a rug pull. The official Twitter account of the MangoFarm is no longer accessible.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/tayvano_/status/1743789297877262642"
+    ]
+  },
+  {
+    "event_date": "2023-12-26",
+    "target": "MegabotETH",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 742000.0,
+    "reported_loss_raw": "$ 742,000",
+    "description_raw": "MegabotETH is suspected of a rug pull. Approximately 742k has been stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/OrbitalFlux/status/1739341914866925606"
+    ]
+  },
+  {
+    "event_date": "2023-10-19",
+    "target": "Synthetify",
+    "slowmist_attack_method": "Governance Attack",
+    "reported_loss_usd": 230000.0,
+    "reported_loss_raw": "$ 230,000",
+    "description_raw": "On October 19, Synthetify Protocol experienced a security incident. The smart contract and the entire platform are currently frozen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/synthetify/status/1714933001027477909?s=20"
+    ]
+  },
+  {
+    "event_date": "2023-09-04",
+    "target": "SaberDAO",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "SaberDAO tweeted that their Discord was hacked.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/The_Saber_DAO/status/1698550070206251303"
+    ]
+  },
+  {
+    "event_date": "2023-08-26",
+    "target": "SVT",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 400000.0,
+    "reported_loss_raw": "$ 400,000",
+    "description_raw": "SVT tokens were attacked by flash loans, and the economic model loopholes of SVT transaction contracts were exploited. The attackers made approximately $400,000 in profit from repeated buying and selling operations. According to MistTrack analysis, the attacker\u2019s initial funds came from SwftSwap, and 1070 BNB has been transferred to Tornado Cash\u200b.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/99qr51p5.html"
+    ]
+  },
+  {
+    "event_date": "2022-12-16",
+    "target": "Raydium",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 4395000.0,
+    "reported_loss_raw": "$ 4,395,000",
+    "description_raw": "In response to an attack, Raydium tweeted that a patch has been put in place so far to prevent further attacks. This attack has nothing to do with the escalated privileges of the program itself. The vulnerability seems to stem from a Trojan horse attack and the leakage of the private key of the liquidity pool owner account. The attacker gained access to the pool owner account and was then able to call the withdraw pnl function, which is used to collect transaction/protocol fees earned on swaps in the pool. The affected pools include SOL-USDC, SOL-USDT, RAY-USDC, RAY-USDT, RAY-SOL, stSOL-USDC, ZBC-USDC, UXP-USDC, and whETH-USDC, with a total loss of approximately $4.395 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/RaydiumProtocol/status/1603860540153028625"
+    ]
+  },
+  {
+    "event_date": "2022-11-02",
+    "target": "Solend",
+    "slowmist_attack_method": "Oracle attack",
+    "reported_loss_usd": 1260000.0,
+    "reported_loss_raw": "$ 1,260,000",
+    "description_raw": "Solend, a lending protocol on Solana, tweeted that an oracle attack against USDH affecting Stable, Coin98, and Kamino\u2019s isolated pools was detected, resulting in $1.26 million in bad debt. Additionally, Solend claims that all other pools, including the Main pool, are safe.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Solana&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/solendprotocol/status/1587671511137398784"
+    ]
+  }
+]

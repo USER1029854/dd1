@@ -1,0 +1,1990 @@
+{
+ "apecoin": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "gmx-v1-perps": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 78% around the incident ($56,344,459 -> $12,200,938) and holds $3,214,909 now",
+  "pre": 56344459,
+  "post": 12200938,
+  "head_tvl": 3214908.871376575,
+  "hacks": 2
+ },
+ "nirvana-v1": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $3 now, below the $50,000 floor",
+  "head_tvl": 2.5133414945139996,
+  "hacks": 1
+ },
+ "dfx-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 92% around the incident ($20,197,431 -> $1,611,957) and holds $87,641 now",
+  "pre": 20197431,
+  "post": 1611957,
+  "head_tvl": 87641.34117518351,
+  "hacks": 1
+ },
+ "typus-perp": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $16,004 now, below the $50,000 floor",
+  "head_tvl": 16004.4222993526,
+  "hacks": 1
+ },
+ "terraport": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($110,555 -> $110,555, 0%); the loss was partial or small against TVL",
+  "pre": 110555,
+  "post": 110555,
+  "head_tvl": 109668.91883516291,
+  "hacks": 1
+ },
+ "taiko-bridge": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($12,665,743 -> $15,584,947, -23%); the loss was partial or small against TVL",
+  "pre": 12665743,
+  "post": 15584947,
+  "head_tvl": 11476286.523368362,
+  "hacks": 1
+ },
+ "kaoyaswap": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,258,216 -> $1,258,216, 0%); the loss was partial or small against TVL",
+  "pre": 1258216,
+  "post": 1258216,
+  "head_tvl": 1553442.5861666477,
+  "hacks": 1
+ },
+ "solrise-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "roe-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $266 now, below the $50,000 floor",
+  "head_tvl": 265.7077138468234,
+  "hacks": 1
+ },
+ "atomic-green": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($90,003 -> $84,568, 6%); the loss was partial or small against TVL",
+  "pre": 90003,
+  "post": 84568,
+  "head_tvl": 84549.71430172512,
+  "hacks": 1
+ },
+ "mobox": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "termfinance-vaults": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 85% around the incident ($10,612,264 -> $1,608,406) and holds $1,608,407 now",
+  "pre": 10612264,
+  "post": 1608406,
+  "head_tvl": 1608406.5297940648,
+  "hacks": 1
+ },
+ "basketdao": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($257,767 -> $257,858, -0%); the loss was partial or small against TVL",
+  "pre": 257767,
+  "post": 257858,
+  "head_tvl": 103628.2940064005,
+  "hacks": 2
+ },
+ "smartcredit": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 68% around the incident ($661,138 -> $213,251) and holds $210,082 now",
+  "pre": 661138,
+  "post": 213251,
+  "head_tvl": 210082.4066181012,
+  "hacks": 1
+ },
+ "polter-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $12,440 now, below the $50,000 floor",
+  "head_tvl": 12439.619711731324,
+  "hacks": 1
+ },
+ "aperture-lm": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $12,779 now, below the $50,000 floor",
+  "head_tvl": 12779.09194638996,
+  "hacks": 1
+ },
+ "templedao": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1 now, below the $50,000 floor",
+  "head_tvl": 0.5720257450268246,
+  "hacks": 1
+ },
+ "balancer-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 65% around the incident ($477,107,895 -> $164,797,346) and holds $28,168,365 now",
+  "pre": 477107895,
+  "post": 164797346,
+  "head_tvl": 28168364.952276547,
+  "hacks": 2
+ },
+ "superrare": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "ankr": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($169,626,027 -> $159,806,689, 6%); the loss was partial or small against TVL",
+  "pre": 169626027,
+  "post": 159806689,
+  "head_tvl": 25737742.0921934,
+  "hacks": 1
+ },
+ "midas-capital": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($3,627,485 -> $2,303,108, 37%); the loss was partial or small against TVL",
+  "pre": 3627485,
+  "post": 2303108,
+  "head_tvl": 102659.7372257401,
+  "hacks": 2
+ },
+ "lava": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $380 now, below the $50,000 floor",
+  "head_tvl": 380.41050730943516,
+  "hacks": 1
+ },
+ "zunami-protocol": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($6,025,968 -> $5,303,263, 12%); the loss was partial or small against TVL",
+  "pre": 6025968,
+  "post": 5303263,
+  "head_tvl": 558530.2255404916,
+  "hacks": 1
+ },
+ "hundred-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 73% around the incident ($9,387,079 -> $2,559,875) and holds $74,846 now",
+  "pre": 9387079,
+  "post": 2559875,
+  "head_tvl": 74846.01108736846,
+  "hacks": 2
+ },
+ "tornado-cash": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($272,271,145 -> $303,160,959, -11%); the loss was partial or small against TVL",
+  "pre": 272271145,
+  "post": 303160959,
+  "head_tvl": 738649064.3788841,
+  "hacks": 1
+ },
+ "hope-lend": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $158 now, below the $50,000 floor",
+  "head_tvl": 158.33960000000002,
+  "hacks": 1
+ },
+ "multichain": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($835,017,182 -> $1,664,432,670, -99%); the loss was partial or small against TVL",
+  "pre": 835017182,
+  "post": 1664432670,
+  "head_tvl": 37621575.21462167,
+  "hacks": 2
+ },
+ "tinyman": {
+  "state": "RESTORED",
+  "basis": "fell 100% around 2022-01-01 ($38,434,474 -> $22,593) and has since recovered to $5,523,730",
+  "pre": 38434474,
+  "post": 22593,
+  "recovery_multiple": 243.49,
+  "head_tvl": 5523729.611363312,
+  "hacks": 1
+ },
+ "yield-protocol": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($696,514 -> $440,743, 37%); the loss was partial or small against TVL",
+  "pre": 696514,
+  "post": 440743,
+  "head_tvl": 203353.89686824664,
+  "hacks": 1
+ },
+ "resupply": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($135,311,335 -> $78,498,352, 42%); the loss was partial or small against TVL",
+  "pre": 135311335,
+  "post": 78498352,
+  "head_tvl": 47676574.933482185,
+  "hacks": 1
+ },
+ "clipper": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($7,952,853 -> $6,640,428, 17%); the loss was partial or small against TVL",
+  "pre": 7952853,
+  "post": 6640428,
+  "head_tvl": 789056.8162764943,
+  "hacks": 1
+ },
+ "venus-core-pool": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,320,346,753 -> $1,122,602,973, 15%); the loss was partial or small against TVL",
+  "pre": 1320346753,
+  "post": 1122602973,
+  "head_tvl": 1270393386.9564662,
+  "hacks": 2
+ },
+ "nemo-yield-trading": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "cypher": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "stake-dao": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($160,729,320 -> $146,419,318, 9%); the loss was partial or small against TVL",
+  "pre": 160729320,
+  "post": 146419318,
+  "head_tvl": 140583863.16696265,
+  "hacks": 1
+ },
+ "thalaswap": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($75,566,371 -> $41,018,455, 46%); the loss was partial or small against TVL",
+  "pre": 75566371,
+  "post": 41018455,
+  "head_tvl": 645216.0639417402,
+  "hacks": 1
+ },
+ "lodestar-v0": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $4,758 now, below the $50,000 floor",
+  "head_tvl": 4758.191809574594,
+  "hacks": 1
+ },
+ "saga": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "jaypeggers": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,220,376 -> $1,220,376, 0%); the loss was partial or small against TVL",
+  "pre": 1220376,
+  "post": 1220376,
+  "head_tvl": 194532.70234054484,
+  "hacks": 1
+ },
+ "equalizer-exchange": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($586,674 -> $586,674, 0%); the loss was partial or small against TVL",
+  "pre": 586674,
+  "post": 586674,
+  "head_tvl": 149435.5257840543,
+  "hacks": 1
+ },
+ "usual-usd0": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($415,561,262 -> $349,119,377, 16%); the loss was partial or small against TVL",
+  "pre": 415561262,
+  "post": 349119377,
+  "head_tvl": 91816483.59537111,
+  "hacks": 1
+ },
+ "yearn-ether": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 2.6198333047040128e-11,
+  "hacks": 1
+ },
+ "velar-perps": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $13,986 now, below the $50,000 floor",
+  "head_tvl": 13986.079022387652,
+  "hacks": 1
+ },
+ "defiplaza": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($2,244,081 -> $2,035,257, 9%); the loss was partial or small against TVL",
+  "pre": 2244081,
+  "post": 2035257,
+  "head_tvl": 188040.4453682548,
+  "hacks": 1
+ },
+ "munchables": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "paraspace-lending-v1": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($89,328,366 -> $114,135,450, -28%); the loss was partial or small against TVL",
+  "pre": 89328366,
+  "post": 114135450,
+  "head_tvl": 240812.5356357726,
+  "hacks": 1
+ },
+ "rhea-lend": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($78,972,267 -> $73,980,588, 6%); the loss was partial or small against TVL",
+  "pre": 78972267,
+  "post": 73980588,
+  "head_tvl": 79226747.97067386,
+  "hacks": 1
+ },
+ "rho-markets": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $6 now, below the $50,000 floor",
+  "head_tvl": 6.129558842431667,
+  "hacks": 1
+ },
+ "tectonic": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($136,482,271 -> $148,194,201, -9%); the loss was partial or small against TVL",
+  "pre": 136482271,
+  "post": 148194201,
+  "head_tvl": 122070362.331912,
+  "hacks": 2
+ },
+ "risex": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($16,204,473 -> $16,154,313, 0%); the loss was partial or small against TVL",
+  "pre": 16204473,
+  "post": 16154313,
+  "head_tvl": 16408230.821957374,
+  "hacks": 1
+ },
+ "aftermath-perps": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "unizen": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "rari-capital": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 63% around the incident ($5,602,897 -> $2,064,173) and holds $1,346,913 now",
+  "pre": 5602897,
+  "post": 2064173,
+  "head_tvl": 1346913.1451982677,
+  "hacks": 2
+ },
+ "dforce-lending": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($57,202,240 -> $42,786,947, 25%); the loss was partial or small against TVL",
+  "pre": 57202240,
+  "post": 42786947,
+  "head_tvl": 1027366.0104817534,
+  "hacks": 1
+ },
+ "gooddollar": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $25,796 now, below the $50,000 floor",
+  "head_tvl": 25796.01797837977,
+  "hacks": 1
+ },
+ "allbridge-core": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 96% around the incident ($20,244,053 -> $881,740) and holds $322,827 now",
+  "pre": 20244053,
+  "post": 881740,
+  "head_tvl": 322827.39225000906,
+  "hacks": 2
+ },
+ "panther-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $114 now, below the $50,000 floor",
+  "head_tvl": 114.05778289402367,
+  "hacks": 1
+ },
+ "uwu-lend": {
+  "state": "RESTORED",
+  "basis": "fell 100% around 2024-06-13 ($27,216,992 -> $17,689) and has since recovered to $94,541",
+  "pre": 27216992,
+  "post": 17689,
+  "recovery_multiple": 4.34,
+  "head_tvl": 94541.35748877456,
+  "hacks": 2
+ },
+ "lumi-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $100 now, below the $50,000 floor",
+  "head_tvl": 100.24769087835925,
+  "hacks": 1
+ },
+ "lendhub": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "curve-llamalend": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($75,928,194 -> $72,244,912, 5%); the loss was partial or small against TVL",
+  "pre": 75928194,
+  "post": 72244912,
+  "head_tvl": 77979275.79161136,
+  "hacks": 1
+ },
+ "0vix": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "tropykus-rsk": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,846,355 -> $2,081,882, -13%); the loss was partial or small against TVL",
+  "pre": 1846355,
+  "post": 2081882,
+  "head_tvl": 118176.94607474585,
+  "hacks": 1
+ },
+ "mango-markets-v3": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "blastoff": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $47,494 now, below the $50,000 floor",
+  "head_tvl": 47493.732332655665,
+  "hacks": 1
+ },
+ "channels-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $14,150 now, below the $50,000 floor",
+  "head_tvl": 14149.936317063137,
+  "hacks": 1
+ },
+ "arcadia-v1": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $24,510 now, below the $50,000 floor",
+  "head_tvl": 24509.80770080408,
+  "hacks": 1
+ },
+ "penpie": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($133,575,747 -> $87,122,550, 35%); the loss was partial or small against TVL",
+  "pre": 133575747,
+  "post": 87122550,
+  "head_tvl": 4779078.022172264,
+  "hacks": 1
+ },
+ "tenderize-v2": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($5,347,240 -> $5,080,110, 5%); the loss was partial or small against TVL",
+  "pre": 5347240,
+  "post": 5080110,
+  "head_tvl": 340858.44885809335,
+  "hacks": 1
+ },
+ "paribus": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "filda": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $38,040 now, below the $50,000 floor",
+  "head_tvl": 38040.49844963455,
+  "hacks": 1
+ },
+ "beanstalk": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "thetanuts-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $427 now, below the $50,000 floor",
+  "head_tvl": 426.66732927944344,
+  "hacks": 2
+ },
+ "dexible-v2": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "rigoblock": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($664 -> $664, 0%); the loss was partial or small against TVL",
+  "pre": 664,
+  "post": 664,
+  "head_tvl": 55288.39345587919,
+  "hacks": 1
+ },
+ "lunafi": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $9 now, below the $50,000 floor",
+  "head_tvl": 9.27332797795907,
+  "hacks": 1
+ },
+ "qubit": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $17,707 now, below the $50,000 floor",
+  "head_tvl": 17706.777698056372,
+  "hacks": 1
+ },
+ "dough-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1,778 now, below the $50,000 floor",
+  "head_tvl": 1777.5901738409289,
+  "hacks": 1
+ },
+ "zetachain": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "renegade": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 62% around the incident ($339,004 -> $128,841) and holds $117,691 now",
+  "pre": 339004,
+  "post": 128841,
+  "head_tvl": 117690.63843707774,
+  "hacks": 1
+ },
+ "arcadia-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 76% around the incident ($16,128,247 -> $3,912,321) and holds $5,553,126 now",
+  "pre": 16128247,
+  "post": 3912321,
+  "head_tvl": 5553126.452017025,
+  "hacks": 1
+ },
+ "four.meme": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($777,093 -> $1,960,146, -152%); the loss was partial or small against TVL",
+  "pre": 777093,
+  "post": 1960146,
+  "head_tvl": 4542861.676097027,
+  "hacks": 2
+ },
+ "kiloex": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($41,532,159 -> $45,095,081, -9%); the loss was partial or small against TVL",
+  "pre": 41532159,
+  "post": 45095081,
+  "head_tvl": 1358286.8843871239,
+  "hacks": 1
+ },
+ "auctus": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $23,012 now, below the $50,000 floor",
+  "head_tvl": 23012.324861474044,
+  "hacks": 1
+ },
+ "gnosis-pay": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "sharwa.finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $3 now, below the $50,000 floor",
+  "head_tvl": 3.349663089802128,
+  "hacks": 2
+ },
+ "maya-protocol": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($5,516,973 -> $4,728,289, 14%); the loss was partial or small against TVL",
+  "pre": 5516973,
+  "post": 4728289,
+  "head_tvl": 4687928.207727705,
+  "hacks": 1
+ },
+ "chainge-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($102,901,978 -> $102,901,978, 0%); the loss was partial or small against TVL",
+  "pre": 102901978,
+  "post": 102901978,
+  "head_tvl": 13301879.63745125,
+  "hacks": 1
+ },
+ "scallop-lend": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($24,000,965 -> $22,382,295, 7%); the loss was partial or small against TVL",
+  "pre": 24000965,
+  "post": 22382295,
+  "head_tvl": 10437184.035472551,
+  "hacks": 1
+ },
+ "gamma": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($122,232,466 -> $68,538,921, 44%); the loss was partial or small against TVL",
+  "pre": 122232466,
+  "post": 68538921,
+  "head_tvl": 3183667.9182084976,
+  "hacks": 1
+ },
+ "denaria": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $188 now, below the $50,000 floor",
+  "head_tvl": 187.97718686441124,
+  "hacks": 1
+ },
+ "orbit-bridge": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($160,001,291 -> $66,074,585, 59%); the loss was partial or small against TVL",
+  "pre": 160001291,
+  "post": 66074585,
+  "head_tvl": 17615887.440666888,
+  "hacks": 1
+ },
+ "unilend-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $4 now, below the $50,000 floor",
+  "head_tvl": 3.5728572358638475,
+  "hacks": 1
+ },
+ "paraluni-masterchef": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $2,641 now, below the $50,000 floor",
+  "head_tvl": 2641.0969268621975,
+  "hacks": 1
+ },
+ "eralend": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $36 now, below the $50,000 floor",
+  "head_tvl": 36.193423643532704,
+  "hacks": 1
+ },
+ "rodeo": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0.0016986969999999997,
+  "hacks": 1
+ },
+ "abracadabra-spell": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($23,712,563 -> $19,398,826, 18%); the loss was partial or small against TVL",
+  "pre": 23712563,
+  "post": 19398826,
+  "head_tvl": 4827736.600613596,
+  "hacks": 3
+ },
+ "ocelotdex": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $3 now, below the $50,000 floor",
+  "head_tvl": 3.19333193267453,
+  "hacks": 2
+ },
+ "drift-trade": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 98% around the incident ($323,163,292 -> $6,512,535) and holds $642,646 now",
+  "pre": 323163292,
+  "post": 6512535,
+  "head_tvl": 642645.569989218,
+  "hacks": 2
+ },
+ "voltage-v3": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $550 now, below the $50,000 floor",
+  "head_tvl": 550.308356275667,
+  "hacks": 1
+ },
+ "bond-protocol": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($5,880 -> $5,880, 0%); the loss was partial or small against TVL",
+  "pre": 5880,
+  "post": 5880,
+  "head_tvl": 83161.44536967331,
+  "hacks": 1
+ },
+ "zoth-zeusd": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 3.620667034218472e-05,
+  "hacks": 1
+ },
+ "sirio-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $23,287 now, below the $50,000 floor",
+  "head_tvl": 23287.464812535763,
+  "hacks": 1
+ },
+ "mirror": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "betterbank": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1 now, below the $50,000 floor",
+  "head_tvl": 1.1331314320943529,
+  "hacks": 1
+ },
+ "raft": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $20,568 now, below the $50,000 floor",
+  "head_tvl": 20568.33415390402,
+  "hacks": 1
+ },
+ "aztec-connect": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "palmswap": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "superfluid": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 67% around the incident ($23,148,801 -> $7,525,705) and holds $6,141,657 now",
+  "pre": 23148801,
+  "post": 7525705,
+  "head_tvl": 6141656.799373312,
+  "hacks": 1
+ },
+ "leetswap": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($87,063 -> $185,610, -113%); the loss was partial or small against TVL",
+  "pre": 87063,
+  "post": 185610,
+  "head_tvl": 172815.43578611544,
+  "hacks": 1
+ },
+ "defituna-lending": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,388,940 -> $618,681, 55%); the loss was partial or small against TVL",
+  "pre": 1388940,
+  "post": 618681,
+  "head_tvl": 1068096.5915535924,
+  "hacks": 1
+ },
+ "yearn-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($433,077,005 -> $396,699,573, 8%); the loss was partial or small against TVL",
+  "pre": 433077005,
+  "post": 396699573,
+  "head_tvl": 185297103.11032447,
+  "hacks": 2
+ },
+ "agave": {
+  "state": "RESTORED",
+  "basis": "fell 99% around 2022-03-15 ($5,579,039 -> $42,348) and has since recovered to $89,754",
+  "pre": 5579039,
+  "post": 42348,
+  "recovery_multiple": 1.12,
+  "head_tvl": 89754.30509348481,
+  "hacks": 1
+ },
+ "across": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($19,562,965 -> $19,069,938, 3%); the loss was partial or small against TVL",
+  "pre": 19562965,
+  "post": 19069938,
+  "head_tvl": 20635318.296875816,
+  "hacks": 1
+ },
+ "bonzo-lend": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 79% around the incident ($14,255,618 -> $2,950,748) and holds $4,199,410 now",
+  "pre": 14255618,
+  "post": 2950748,
+  "head_tvl": 4199409.985668605,
+  "hacks": 1
+ },
+ "solvbtc": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($566,956,756 -> $501,605,414, 12%); the loss was partial or small against TVL",
+  "pre": 566956756,
+  "post": 501605414,
+  "head_tvl": 517288957.20215887,
+  "hacks": 1
+ },
+ "moonwell-lending": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($65,438,718 -> $49,714,045, 24%); the loss was partial or small against TVL",
+  "pre": 65438718,
+  "post": 49714045,
+  "head_tvl": 54784853.46607639,
+  "hacks": 2
+ },
+ "portal": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,572,466,142 -> $2,317,977,046, -47%); the loss was partial or small against TVL",
+  "pre": 1572466142,
+  "post": 2317977046,
+  "head_tvl": 1570150911.7219794,
+  "hacks": 1
+ },
+ "kinto-bridge": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($400,649 -> $571,141, -43%); the loss was partial or small against TVL",
+  "pre": 400649,
+  "post": 571141,
+  "head_tvl": 672216.8786840703,
+  "hacks": 1
+ },
+ "rubic": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "atlantis-loans": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $2,902 now, below the $50,000 floor",
+  "head_tvl": 2902.3083267515694,
+  "hacks": 1
+ },
+ "float-protocol": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($5,734,560 -> $3,259,833, 43%); the loss was partial or small against TVL",
+  "pre": 5734560,
+  "post": 3259833,
+  "head_tvl": 222402.82991874122,
+  "hacks": 1
+ },
+ "xcarnival": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "level-perps": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $314 now, below the $50,000 floor",
+  "head_tvl": 313.5812140704334,
+  "hacks": 1
+ },
+ "wise-lending-v1": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $12 now, below the $50,000 floor",
+  "head_tvl": 11.724816202107839,
+  "hacks": 1
+ },
+ "poolz-network": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $50 now, below the $50,000 floor",
+  "head_tvl": 49.926639708342734,
+  "hacks": 1
+ },
+ "bloom": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "fusion-by-ipor": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($37,831,956 -> $42,103,738, -11%); the loss was partial or small against TVL",
+  "pre": 37831956,
+  "post": 42103738,
+  "head_tvl": 60438436.65428103,
+  "hacks": 1
+ },
+ "overnight-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($27,257,494 -> $27,257,494, 0%); the loss was partial or small against TVL",
+  "pre": 27257494,
+  "post": 27257494,
+  "head_tvl": 10002418.842512306,
+  "hacks": 1
+ },
+ "dexodus-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1 now, below the $50,000 floor",
+  "head_tvl": 1.2738729635481512,
+  "hacks": 1
+ },
+ "swarm-markets": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $27,702 now, below the $50,000 floor",
+  "head_tvl": 27701.636246954287,
+  "hacks": 1
+ },
+ "sir": {
+  "state": "RESTORED",
+  "basis": "fell 100% around 2025-03-30 ($362,543 -> $0) and has since recovered to $109,365",
+  "pre": 362543,
+  "post": 0,
+  "recovery_multiple": 109365.15,
+  "head_tvl": 109365.14889828654,
+  "hacks": 1
+ },
+ "raydium-amm": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($889,761,390 -> $829,302,441, 7%); the loss was partial or small against TVL",
+  "pre": 889761390,
+  "post": 829302441,
+  "head_tvl": 1103758618.489798,
+  "hacks": 1
+ },
+ "ambient": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($2,613,203 -> $1,901,005, 27%); the loss was partial or small against TVL",
+  "pre": 2613203,
+  "post": 1901005,
+  "head_tvl": 2295129.3494354454,
+  "hacks": 1
+ },
+ "deus-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 3
+ },
+ "the-idols": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($10,320,306 -> $8,541,675, 17%); the loss was partial or small against TVL",
+  "pre": 10320306,
+  "post": 8541675,
+  "head_tvl": 6740851.313931965,
+  "hacks": 1
+ },
+ "beluga": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "anchor": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "aethir": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "thoreum-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $40,424 now, below the $50,000 floor",
+  "head_tvl": 40423.77605437394,
+  "hacks": 1
+ },
+ "goledo": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $121 now, below the $50,000 floor",
+  "head_tvl": 121.0519378804233,
+  "hacks": 1
+ },
+ "revest-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 100% around the incident ($31,861,736 -> $119,210) and holds $111,150 now",
+  "pre": 31861736,
+  "post": 119210,
+  "head_tvl": 111150.46595393808,
+  "hacks": 1
+ },
+ "yieldcore": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1 now, below the $50,000 floor",
+  "head_tvl": 0.8908038800988881,
+  "hacks": 1
+ },
+ "dtrinity-dlend": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($909,087 -> $829,056, 9%); the loss was partial or small against TVL",
+  "pre": 909087,
+  "post": 829056,
+  "head_tvl": 929669.1393513494,
+  "hacks": 1
+ },
+ "juice-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($22,256,543 -> $113,092,009, -408%); the loss was partial or small against TVL",
+  "pre": 22256543,
+  "post": 113092009,
+  "head_tvl": 162783.26976411545,
+  "hacks": 1
+ },
+ "veil-cash": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $25,058 now, below the $50,000 floor",
+  "head_tvl": 25057.675509416702,
+  "hacks": 1
+ },
+ "dungeonswap": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $9,779 now, below the $50,000 floor",
+  "head_tvl": 9778.754115723683,
+  "hacks": 1
+ },
+ "1inch-swap": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($4,417,878 -> $3,620,947, 18%); the loss was partial or small against TVL",
+  "pre": 4417878,
+  "post": 3620947,
+  "head_tvl": 3202945.6426800047,
+  "hacks": 1
+ },
+ "civfund": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "saddle-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 75% around the incident ($268,834,346 -> $67,194,429) and holds $969,700 now",
+  "pre": 268834346,
+  "post": 67194429,
+  "head_tvl": 969699.6878793935,
+  "hacks": 1
+ },
+ "omm": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($8,830,620 -> $7,887,885, 11%); the loss was partial or small against TVL",
+  "pre": 8830620,
+  "post": 7887885,
+  "head_tvl": 150412.32363627892,
+  "hacks": 1
+ },
+ "orion-pools": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($7,398,636 -> $7,544,884, -2%); the loss was partial or small against TVL",
+  "pre": 7398636,
+  "post": 7544884,
+  "head_tvl": 283795.0985642988,
+  "hacks": 1
+ },
+ "conic-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 74% around the incident ($146,577,619 -> $37,584,431) and holds $64,056 now",
+  "pre": 146577619,
+  "post": 37584431,
+  "head_tvl": 64055.767608045586,
+  "hacks": 2
+ },
+ "onyx-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $17 now, below the $50,000 floor",
+  "head_tvl": 17.370446977270813,
+  "hacks": 1
+ },
+ "inverse-finance-frontier": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($14,571,893 -> $12,537,930, 14%); the loss was partial or small against TVL",
+  "pre": 14571893,
+  "post": 12537930,
+  "head_tvl": 4932515.432925499,
+  "hacks": 2
+ },
+ "dydx-v3": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($383,705,458 -> $342,854,240, 11%); the loss was partial or small against TVL",
+  "pre": 383705458,
+  "post": 342854240,
+  "head_tvl": 38839079.18942737,
+  "hacks": 1
+ },
+ "cozy-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 72% around the incident ($957,107 -> $271,010) and holds $172,358 now",
+  "pre": 957107,
+  "post": 271010,
+  "head_tvl": 172357.95062537873,
+  "hacks": 1
+ },
+ "zklend": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "arrakis-v1": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,323,448 -> $1,405,300, -6%); the loss was partial or small against TVL",
+  "pre": 1323448,
+  "post": 1405300,
+  "head_tvl": 1405300.3929931899,
+  "hacks": 1
+ },
+ "goldfinch": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 60% around the incident ($6,352,691 -> $2,536,109) and holds $1,961,234 now",
+  "pre": 6352691,
+  "post": 2536109,
+  "head_tvl": 1961233.9388265857,
+  "hacks": 1
+ },
+ "gain": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($151,509,945 -> $151,509,945, 0%); the loss was partial or small against TVL",
+  "pre": 151509945,
+  "post": 151509945,
+  "head_tvl": 32795427.826680716,
+  "hacks": 1
+ },
+ "themis-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $2 now, below the $50,000 floor",
+  "head_tvl": 2.145856240408576,
+  "hacks": 1
+ },
+ "goonfi": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "velocore-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1,175 now, below the $50,000 floor",
+  "head_tvl": 1174.6604171766132,
+  "hacks": 1
+ },
+ "peapods-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,094,771 -> $1,094,771, 0%); the loss was partial or small against TVL",
+  "pre": 1094771,
+  "post": 1094771,
+  "head_tvl": 2039982.6409357723,
+  "hacks": 1
+ },
+ "thorchain-dex": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($80,039,810 -> $66,740,877, 17%); the loss was partial or small against TVL",
+  "pre": 80039810,
+  "post": 66740877,
+  "head_tvl": 63241529.610986575,
+  "hacks": 1
+ },
+ "zircon-gamma": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $3 now, below the $50,000 floor",
+  "head_tvl": 2.54799199061806,
+  "hacks": 1
+ },
+ "harbor-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "goose-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($263,655 -> $263,040, 0%); the loss was partial or small against TVL",
+  "pre": 263655,
+  "post": 263040,
+  "head_tvl": 322872.9765078642,
+  "hacks": 1
+ },
+ "save": {
+  "state": "RESTORED",
+  "basis": "fell 91% around 2022-11-02 ($269,197,907 -> $25,259,893) and has since recovered to $85,337,344",
+  "pre": 269197907,
+  "post": 25259893,
+  "recovery_multiple": 2.38,
+  "head_tvl": 85337343.55925702,
+  "hacks": 2
+ },
+ "unibot": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "lnd": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $2 now, below the $50,000 floor",
+  "head_tvl": 1.709290598198339,
+  "hacks": 1
+ },
+ "cashio": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0.06669221993537365,
+  "hacks": 1
+ },
+ "alephium-bridge": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1,858 now, below the $50,000 floor",
+  "head_tvl": 1858.3423854468301,
+  "hacks": 1
+ },
+ "swerve": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 64% around the incident ($1,204,853 -> $435,740) and holds $305,340 now",
+  "pre": 1204853,
+  "post": 435740,
+  "head_tvl": 305339.65015563753,
+  "hacks": 1
+ },
+ "onyx-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $24,170 now, below the $50,000 floor",
+  "head_tvl": 24169.844063986326,
+  "hacks": 1
+ },
+ "futureswap": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $13 now, below the $50,000 floor",
+  "head_tvl": 12.652719693710688,
+  "hacks": 1
+ },
+ "lixir-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($79,623 -> $74,459, 6%); the loss was partial or small against TVL",
+  "pre": 79623,
+  "post": 74459,
+  "head_tvl": 97067.08780960563,
+  "hacks": 1
+ },
+ "xave-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($2,154,578 -> $2,154,578, 0%); the loss was partial or small against TVL",
+  "pre": 2154578,
+  "post": 2154578,
+  "head_tvl": 149258.754107083,
+  "hacks": 1
+ },
+ "elasticswap": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $4,104 now, below the $50,000 floor",
+  "head_tvl": 4104.057632038772,
+  "hacks": 1
+ },
+ "indexed-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 66% around the incident ($941,556 -> $320,321) and holds $129,948 now",
+  "pre": 941556,
+  "post": 320321,
+  "head_tvl": 129948.4715554855,
+  "hacks": 1
+ },
+ "team-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($137,582,993 -> $101,814,223, 26%); the loss was partial or small against TVL",
+  "pre": 137582993,
+  "post": 101814223,
+  "head_tvl": 45710188.50650269,
+  "hacks": 1
+ },
+ "ribbon": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($9,895,983 -> $4,962,207, 50%); the loss was partial or small against TVL",
+  "pre": 9895983,
+  "post": 4962207,
+  "head_tvl": 4266105.955681522,
+  "hacks": 1
+ },
+ "flashtrade": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($7,904,644 -> $7,153,308, 10%); the loss was partial or small against TVL",
+  "pre": 7904644,
+  "post": 7153308,
+  "head_tvl": 3668510.5763732553,
+  "hacks": 1
+ },
+ "impermax-v3": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 68% around the incident ($2,504,847 -> $801,561) and holds $98,183 now",
+  "pre": 2504847,
+  "post": 801561,
+  "head_tvl": 98182.61471285937,
+  "hacks": 2
+ },
+ "pike-v1": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1,687 now, below the $50,000 floor",
+  "head_tvl": 1686.9415448237837,
+  "hacks": 1
+ },
+ "deltaprime": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($30,824,744 -> $35,287,226, -14%); the loss was partial or small against TVL",
+  "pre": 30824744,
+  "post": 35287226,
+  "head_tvl": 3646768.9135526572,
+  "hacks": 2
+ },
+ "makina": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($82,077,345 -> $62,507,243, 24%); the loss was partial or small against TVL",
+  "pre": 82077345,
+  "post": 62507243,
+  "head_tvl": 43048126.726743266,
+  "hacks": 1
+ },
+ "sentiment": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($8,301,552 -> $3,864,732, 53%); the loss was partial or small against TVL",
+  "pre": 8301552,
+  "post": 3864732,
+  "head_tvl": 517964.16135128477,
+  "hacks": 1
+ },
+ "poly-network": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($283,021,749 -> $174,241,203, 38%); the loss was partial or small against TVL",
+  "pre": 283021749,
+  "post": 174241203,
+  "head_tvl": 44728247.74000001,
+  "hacks": 1
+ },
+ "solido-cash": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($599,789 -> $493,326, 18%); the loss was partial or small against TVL",
+  "pre": 599789,
+  "post": 493326,
+  "head_tvl": 470481.53317451465,
+  "hacks": 1
+ },
+ "platypus-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $28,046 now, below the $50,000 floor",
+  "head_tvl": 28046.141184369233,
+  "hacks": 2
+ },
+ "radiant-v2": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($310,605,622 -> $245,339,883, 21%); the loss was partial or small against TVL",
+  "pre": 310605622,
+  "post": 245339883,
+  "head_tvl": 700053.2233155526,
+  "hacks": 1
+ },
+ "ekubo": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($37,103,066 -> $23,844,686, 36%); the loss was partial or small against TVL",
+  "pre": 37103066,
+  "post": 23844686,
+  "head_tvl": 25846995.3224615,
+  "hacks": 1
+ },
+ "wise-lending-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $30 now, below the $50,000 floor",
+  "head_tvl": 29.57944997225276,
+  "hacks": 1
+ },
+ "elephant-money": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "euler-v1": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $29,681 now, below the $50,000 floor",
+  "head_tvl": 29681.388853212917,
+  "hacks": 1
+ },
+ "silo-v2": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($42,218,413 -> $42,005,558, 1%); the loss was partial or small against TVL",
+  "pre": 42218413,
+  "post": 42005558,
+  "head_tvl": 4976934.185050733,
+  "hacks": 1
+ },
+ "exactly": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 71% around the incident ($39,605,012 -> $11,339,786) and holds $8,460,039 now",
+  "pre": 39605012,
+  "post": 11339786,
+  "head_tvl": 8460038.912952445,
+  "hacks": 1
+ },
+ "el-dorado-exchange": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $38,163 now, below the $50,000 floor",
+  "head_tvl": 38162.562581694874,
+  "hacks": 1
+ },
+ "kyberswap-elastic": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 98% around the incident ($66,575,060 -> $1,006,726) and holds $126,663 now",
+  "pre": 66575060,
+  "post": 1006726,
+  "head_tvl": 126663.22293912787,
+  "hacks": 1
+ },
+ "singularity-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $31,129 now, below the $50,000 floor",
+  "head_tvl": 31128.604010252155,
+  "hacks": 1
+ },
+ "aave-v3": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($25,406,273,895 -> $24,629,528,945, 3%); the loss was partial or small against TVL",
+  "pre": 25406273895,
+  "post": 24629528945,
+  "head_tvl": 17400461288.44966,
+  "hacks": 1
+ },
+ "wemix.fi-lend": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1,971 now, below the $50,000 floor",
+  "head_tvl": 1970.8760377531971,
+  "hacks": 1
+ },
+ "bisq": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "starlay-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($5,196,141 -> $2,891,074, 44%); the loss was partial or small against TVL",
+  "pre": 5196141,
+  "post": 2891074,
+  "head_tvl": 131339.2699184057,
+  "hacks": 1
+ },
+ "sturdy-v1": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($12,809,523 -> $6,233,321, 51%); the loss was partial or small against TVL",
+  "pre": 12809523,
+  "post": 6233321,
+  "head_tvl": 76697.43639503689,
+  "hacks": 1
+ },
+ "pine-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $24,116 now, below the $50,000 floor",
+  "head_tvl": 24116.406713308592,
+  "hacks": 1
+ },
+ "revert-lend": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($13,944,050 -> $7,331,264, 47%); the loss was partial or small against TVL",
+  "pre": 13944050,
+  "post": 7331264,
+  "head_tvl": 7965788.6022834275,
+  "hacks": 1
+ },
+ "lien": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($162,455 -> $160,092, 1%); the loss was partial or small against TVL",
+  "pre": 162455,
+  "post": 160092,
+  "head_tvl": 210247.52818926156,
+  "hacks": 1
+ },
+ "fegex": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "alkimiya": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $9,885 now, below the $50,000 floor",
+  "head_tvl": 9885.335827850537,
+  "hacks": 1
+ },
+ "sperax-usd": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($2,116,537 -> $2,023,260, 4%); the loss was partial or small against TVL",
+  "pre": 2116537,
+  "post": 2023260,
+  "head_tvl": 521720.7634888941,
+  "hacks": 1
+ },
+ "alex": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 83% around the incident ($22,389,326 -> $3,770,347) and holds $700,136 now",
+  "pre": 22389326,
+  "post": 3770347,
+  "head_tvl": 700135.7621452446,
+  "hacks": 1
+ },
+ "amun": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($358,013 -> $204,763, 43%); the loss was partial or small against TVL",
+  "pre": 358013,
+  "post": 204763,
+  "head_tvl": 379345.2414981505,
+  "hacks": 1
+ },
+ "ara-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $82 now, below the $50,000 floor",
+  "head_tvl": 81.94882532512203,
+  "hacks": 1
+ },
+ "swapx-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $43,833 now, below the $50,000 floor",
+  "head_tvl": 43833.23001133368,
+  "hacks": 1
+ },
+ "utopia": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $17,131 now, below the $50,000 floor",
+  "head_tvl": 17131.408407626703,
+  "hacks": 1
+ },
+ "huma-finance-v2": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($167,592,451 -> $167,592,451, 0%); the loss was partial or small against TVL",
+  "pre": 167592451,
+  "post": 167592451,
+  "head_tvl": 231276576.30063844,
+  "hacks": 1
+ },
+ "crosscurve": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 95% around the incident ($3,227,334 -> $148,924) and holds $55,284 now",
+  "pre": 3227334,
+  "post": 148924,
+  "head_tvl": 55283.88699947232,
+  "hacks": 1
+ },
+ "ploutos-money": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $487 now, below the $50,000 floor",
+  "head_tvl": 487.133880841016,
+  "hacks": 1
+ },
+ "flooring-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $11 now, below the $50,000 floor",
+  "head_tvl": 10.679269302050132,
+  "hacks": 2
+ },
+ "otsea": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($103,593 -> $111,659, -8%); the loss was partial or small against TVL",
+  "pre": 103593,
+  "post": 111659,
+  "head_tvl": 591156.3592455961,
+  "hacks": 1
+ },
+ "clober-liquidity-vault": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($0 -> $507,470, 0%); the loss was partial or small against TVL",
+  "pre": 0,
+  "post": 507470,
+  "head_tvl": 54300.61379367373,
+  "hacks": 1
+ },
+ "zkfinance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $24,990 now, below the $50,000 floor",
+  "head_tvl": 24989.51652526043,
+  "hacks": 1
+ },
+ "chi-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1 now, below the $50,000 floor",
+  "head_tvl": 1.1737330562462942,
+  "hacks": 1
+ },
+ "tender-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($3,815,158 -> $1,875,698, 51%); the loss was partial or small against TVL",
+  "pre": 3815158,
+  "post": 1875698,
+  "head_tvl": 173348.61652664232,
+  "hacks": 1
+ },
+ "hyperdrive-hl-lending": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($14,600,285 -> $7,192,959, 51%); the loss was partial or small against TVL",
+  "pre": 14600285,
+  "post": 7192959,
+  "head_tvl": 879868.6941181667,
+  "hacks": 1
+ },
+ "edel": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $887 now, below the $50,000 floor",
+  "head_tvl": 886.9655112502576,
+  "hacks": 1
+ },
+ "afi-protocol": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($225,559,600 -> $225,353,461, 0%); the loss was partial or small against TVL",
+  "pre": 225559600,
+  "post": 225353461,
+  "head_tvl": 225375705.03913334,
+  "hacks": 1
+ },
+ "prismalst": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 77% around the incident ($261,390,560 -> $60,645,754) and holds $340,645 now",
+  "pre": 261390560,
+  "post": 60645754,
+  "head_tvl": 340644.5967101439,
+  "hacks": 1
+ },
+ "bluemove-dex": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $125 now, below the $50,000 floor",
+  "head_tvl": 125.09894605244946,
+  "hacks": 1
+ },
+ "bonqdao": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $334 now, below the $50,000 floor",
+  "head_tvl": 333.99944589611636,
+  "hacks": 1
+ },
+ "purrlend": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $455 now, below the $50,000 floor",
+  "head_tvl": 455.2893084633736,
+  "hacks": 1
+ },
+ "blend-pools-v2": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "hinkal": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $31,367 now, below the $50,000 floor",
+  "head_tvl": 31366.893408277865,
+  "hacks": 1
+ },
+ "seneca": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $17,729 now, below the $50,000 floor",
+  "head_tvl": 17729.09972643819,
+  "hacks": 1
+ },
+ "crema-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($14,592,623 -> $5,937,892, 59%); the loss was partial or small against TVL",
+  "pre": 14592623,
+  "post": 5937892,
+  "head_tvl": 132057.41836753048,
+  "hacks": 1
+ },
+ "mars-perps": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1,808 now, below the $50,000 floor",
+  "head_tvl": 1807.8830825213824,
+  "hacks": 1
+ },
+ "levana-perps": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $13,857 now, below the $50,000 floor",
+  "head_tvl": 13856.757692784238,
+  "hacks": 1
+ },
+ "hashflow": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,172,659 -> $1,112,725, 5%); the loss was partial or small against TVL",
+  "pre": 1172659,
+  "post": 1112725,
+  "head_tvl": 266571.7292940263,
+  "hacks": 1
+ },
+ "rikkei-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1 now, below the $50,000 floor",
+  "head_tvl": 1.0683314050232078,
+  "hacks": 1
+ },
+ "floor-dao": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "woofi-swap": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 61% around the incident ($22,532,436 -> $8,776,175) and holds $2,418,019 now",
+  "pre": 22532436,
+  "post": 8776175,
+  "head_tvl": 2418018.6707176054,
+  "hacks": 1
+ },
+ "blizz-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "pond0x": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "pando-rings": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 90% around the incident ($87,077,595 -> $8,692,143) and holds $6,076,001 now",
+  "pre": 87077595,
+  "post": 8692143,
+  "head_tvl": 6076000.624938134,
+  "hacks": 1
+ },
+ "uxlink": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "fortress-loans": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1,168 now, below the $50,000 floor",
+  "head_tvl": 1168.1215533885545,
+  "hacks": 1
+ },
+ "curve-dex": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($3,149,325,065 -> $2,291,946,730, 27%); the loss was partial or small against TVL",
+  "pre": 3149325065,
+  "post": 2291946730,
+  "head_tvl": 1342226338.6030674,
+  "hacks": 1
+ },
+ "kelp": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,492,106,219 -> $1,544,959,057, -4%); the loss was partial or small against TVL",
+  "pre": 1492106219,
+  "post": 1544959057,
+  "head_tvl": 1117129917.0799406,
+  "hacks": 1
+ },
+ "synthetify": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $25,674 now, below the $50,000 floor",
+  "head_tvl": 25674.310914587546,
+  "hacks": 1
+ },
+ "barnbridge": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $23,571 now, below the $50,000 floor",
+  "head_tvl": 23570.582045114264,
+  "hacks": 1
+ },
+ "hector-lending": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $7,668 now, below the $50,000 floor",
+  "head_tvl": 7668.2948913431355,
+  "hacks": 1
+ },
+ "openleverage": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,584,459 -> $1,267,571, 20%); the loss was partial or small against TVL",
+  "pre": 1584459,
+  "post": 1267571,
+  "head_tvl": 100360.26083046575,
+  "hacks": 1
+ },
+ "litecoin": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "lazy-summer-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $1,134 now, below the $50,000 floor",
+  "head_tvl": 1134.4445463366278,
+  "hacks": 1
+ },
+ "cowswap": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "namada-shielded-pools": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $514 now, below the $50,000 floor",
+  "head_tvl": 514.420598624708,
+  "hacks": 1
+ },
+ "treasure": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "gondi-v3": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($435,559 -> $467,910, -7%); the loss was partial or small against TVL",
+  "pre": 435559,
+  "post": 467910,
+  "head_tvl": 3147913.5557143735,
+  "hacks": 1
+ },
+ "panoptic-v1.1": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $2,373 now, below the $50,000 floor",
+  "head_tvl": 2372.9188452827702,
+  "hacks": 1
+ },
+ "numbers-protocol": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $683 now, below the $50,000 floor",
+  "head_tvl": 682.6617453219171,
+  "hacks": 1
+ },
+ "nomad": {
+  "state": "RESTORED",
+  "basis": "fell 100% around 2022-08-01 ($197,692,233 -> $94,139) and has since recovered to $359,084",
+  "pre": 197692233,
+  "post": 94139,
+  "recovery_multiple": 2.81,
+  "head_tvl": 359083.5348522703,
+  "hacks": 1
+ },
+ "sharedstake": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "saturn": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($33,139,433 -> $33,139,433, 0%); the loss was partial or small against TVL",
+  "pre": 33139433,
+  "post": 33139433,
+  "head_tvl": 169080700.42680436,
+  "hacks": 1
+ },
+ "arena-socialfi": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($103,463 -> $1,567,566, -1415%); the loss was partial or small against TVL",
+  "pre": 103463,
+  "post": 1567566,
+  "head_tvl": 142634.27014953547,
+  "hacks": 1
+ },
+ "set-protocol": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($10,518,326 -> $9,751,415, 7%); the loss was partial or small against TVL",
+  "pre": 10518326,
+  "post": 9751415,
+  "head_tvl": 12456852.120333908,
+  "hacks": 1
+ },
+ "flow": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "aur-protocol": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "foom-cash": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $0 now, below the $50,000 floor",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "bunni-v2": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($56,660,739 -> $50,583,028, 11%); the loss was partial or small against TVL",
+  "pre": 56660739,
+  "post": 50583028,
+  "head_tvl": 215228.91753188908,
+  "hacks": 1
+ },
+ "sonne-finance": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($27,764 -> $30,221, -9%); the loss was partial or small against TVL",
+  "pre": 27764,
+  "post": 30221,
+  "head_tvl": 56221.57330952001,
+  "hacks": 1
+ },
+ "acala": {
+  "state": "UNKNOWN_SERIES",
+  "basis": "TVL series unavailable",
+  "head_tvl": 0,
+  "hacks": 1
+ },
+ "cork-v1": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $5,608 now, below the $50,000 floor",
+  "head_tvl": 5607.600828058579,
+  "hacks": 1
+ },
+ "moola-market": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($8,836,082 -> $9,134,024, -3%); the loss was partial or small against TVL",
+  "pre": 8836082,
+  "post": 9134024,
+  "head_tvl": 984316.3471744627,
+  "hacks": 1
+ },
+ "neutra-finance": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "holds $3,216 now, below the $50,000 floor",
+  "head_tvl": 3215.688838870417,
+  "hacks": 1
+ },
+ "reaper-farm": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($19,352,311 -> $17,782,135, 8%); the loss was partial or small against TVL",
+  "pre": 19352311,
+  "post": 17782135,
+  "head_tvl": 1463479.3600674337,
+  "hacks": 1
+ },
+ "dao-swap": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($1,321,528 -> $1,321,528, 0%); the loss was partial or small against TVL",
+  "pre": 1321528,
+  "post": 1321528,
+  "head_tvl": 50472.56807955401,
+  "hacks": 1
+ },
+ "juicebox-v3": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($220,796 -> $273,432, -24%); the loss was partial or small against TVL",
+  "pre": 220796,
+  "post": 273432,
+  "head_tvl": 168454.17382640342,
+  "hacks": 1
+ },
+ "cetus-clmm": {
+  "state": "DRAINED_OR_DEAD",
+  "basis": "fell 86% around the incident ($243,002,795 -> $33,120,691) and holds $25,461,685 now",
+  "pre": 243002795,
+  "post": 33120691,
+  "head_tvl": 25461684.982464403,
+  "hacks": 1
+ },
+ "ronin-bridge": {
+  "state": "NEVER_MATERIALLY_HIT",
+  "basis": "no large drop around the incident ($841,460,504 -> $678,515,242, 19%); the loss was partial or small against TVL",
+  "pre": 841460504,
+  "post": 678515242,
+  "head_tvl": 5291129.056537992,
+  "hacks": 1
+ }
+}

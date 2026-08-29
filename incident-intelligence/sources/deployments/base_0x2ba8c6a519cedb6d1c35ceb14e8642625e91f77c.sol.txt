@@ -1,0 +1,81 @@
+__NAME__:Proxy
+{{
+  "language": "Solidity",
+  "sources": {
+    "src/core/proxy/Proxy.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.23;\n\nimport \"../base/UpgradeableProxy.sol\";\nimport \"../../interfaces/IControllable.sol\";\nimport \"../../interfaces/IProxy.sol\";\n\n/// @title Proxy for Stability Platform core contracts.\n/// @dev ERC-1967: Proxy Storage Slots used.\n/// @author JodsMigel (https://github.com/JodsMigel)\ncontract Proxy is UpgradeableProxy, IProxy {\n    /// @inheritdoc IProxy\n    function initProxy(address logic_) external override {\n        _init(logic_);\n    }\n\n    /// @inheritdoc IProxy\n    //slither-disable-next-line naming-convention\n    function upgrade(address _newImplementation) external override {\n        if (IControllable(address(this)).platform() != msg.sender) {\n            revert IControllable.NotPlatform();\n        }\n        _upgradeTo(_newImplementation);\n        // the new contract must have the same ABI and you must have the power to change it again\n        if (IControllable(address(this)).platform() != msg.sender) {\n            revert IControllable.NotPlatform();\n        }\n    }\n\n    /// @inheritdoc IProxy\n    function implementation() external view override returns (address) {\n        return _implementation();\n    }\n}\n"
+    },
+    "src/core/base/UpgradeableProxy.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.23;\n\n/// @title Simple ERC-1967 upgradeable proxy implementation\nabstract contract UpgradeableProxy {\n    error ImplementationIsNotContract();\n\n    /// @dev This is the keccak-256 hash of \"eip1967.proxy.implementation\" subtracted by 1, and is\n    bytes32 private constant _IMPLEMENTATION_SLOT = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;\n\n    /// @dev Emitted when the implementation is upgraded.\n    event Upgraded(address indexed implementation);\n\n    constructor() {\n        assert(_IMPLEMENTATION_SLOT == bytes32(uint(keccak256(\"eip1967.proxy.implementation\")) - 1));\n    }\n\n    /// @dev Post deploy initialisation for compatability with EIP-1167 factory\n    function _init(address _logic) internal {\n        // nosemgrep\n        require(_implementation() == address(0), \"Already inited\");\n        _setImplementation(_logic);\n    }\n\n    /// @dev Returns the current implementation address.\n    function _implementation() internal view virtual returns (address impl) {\n        bytes32 slot = _IMPLEMENTATION_SLOT;\n        // solhint-disable-next-line no-inline-assembly\n        //slither-disable-next-line assembly\n        assembly {\n            impl := sload(slot)\n        }\n    }\n\n    /// @dev Upgrades the proxy to a new implementation.\n    function _upgradeTo(address newImplementation) internal virtual {\n        _setImplementation(newImplementation);\n        emit Upgraded(newImplementation);\n    }\n\n    /// @dev Stores a new address in the EIP1967 implementation slot.\n    function _setImplementation(address newImplementation) private {\n        if (newImplementation.code.length == 0) revert ImplementationIsNotContract();\n        bytes32 slot = _IMPLEMENTATION_SLOT;\n        // solhint-disable-next-line no-inline-assembly\n        //slither-disable-next-line assembly\n        assembly {\n            sstore(slot, newImplementation)\n        }\n    }\n\n    /**\n     * @dev Delegates the current call to `implementation`.\n     *\n     * This function does not return to its internal call site, it will return directly to the external caller.\n     */\n    function _delegate(address implementation) internal virtual {\n        //slither-disable-next-line assembly\n        assembly {\n            // Copy msg.data. We take full control of memory in this inline assembly\n            // block because it will not return to Solidity code. We overwrite the\n            // Solidity scratch pad at memory position 0.\n            calldatacopy(0, 0, calldatasize())\n\n            // Call the implementation.\n            // out and outsize are 0 because we don't know the size yet.\n            let result := delegatecall(gas(), implementation, 0, calldatasize(), 0, 0)\n\n            // Copy the returned data.\n            returndatacopy(0, 0, returndatasize())\n\n            switch result\n            // delegatecall returns 0 on error.\n            case 0 { revert(0, returndatasize()) }\n            default { return(0, returndatasize()) }\n        }\n    }\n\n    /**\n     * @dev Delegates the current call to the address returned by `_implementation()`.\n     *\n     * This function does not return to its internal call site, it will return directly to the external caller.\n     */\n    function _fallback() internal virtual {\n        _delegate(_implementation());\n    }\n\n    /// @dev Fallback function that delegates calls to the address returned by `_implementation()`. Will run if no other\n    /// function in the contract matches the call data.\n    //slither-disable-next-line locked-ether\n    fallback() external payable virtual {\n        _fallback();\n    }\n\n    /// @dev Fallback function that delegates calls to the address returned by `_implementation()`. Will run if call data\n    /// is empty.\n    //slither-disable-next-line locked-ether\n    receive() external payable virtual {\n        _fallback();\n    }\n}\n"
+    },
+    "src/interfaces/IControllable.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.23;\n\n/// @dev Base core interface implemented by most platform contracts.\n///      Inherited contracts store an immutable Platform proxy address in the storage,\n///      which provides authorization capabilities and infrastructure contract addresses.\n/// @author Alien Deployer (https://github.com/a17)\n/// @author JodsMigel (https://github.com/JodsMigel)\ninterface IControllable {\n    //region ----- Custom Errors -----\n    error IncorrectZeroArgument();\n    error IncorrectMsgSender();\n    error NotGovernance();\n    error NotMultisig();\n    error NotGovernanceAndNotMultisig();\n    error NotOperator();\n    error NotFactory();\n    error NotPlatform();\n    error NotVault();\n    error IncorrectArrayLength();\n    error AlreadyExist();\n    error NotExist();\n    error NotTheOwner();\n    error ETHTransferFailed();\n    error IncorrectInitParams();\n    //endregion -- Custom Errors -----\n\n    event ContractInitialized(address platform, uint ts, uint block);\n\n    /// @notice Stability Platform main contract address\n    function platform() external view returns (address);\n\n    /// @notice Version of contract implementation\n    /// @dev SemVer scheme MAJOR.MINOR.PATCH\n    //slither-disable-next-line naming-convention\n    function VERSION() external view returns (string memory);\n\n    /// @notice Block number when contract was initialized\n    function createdBlock() external view returns (uint);\n}\n"
+    },
+    "src/interfaces/IProxy.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.23;\n\n/// @dev Proxy of core contract implementation\ninterface IProxy {\n    /// @dev Initialize proxy logic. Need to call after deploy new proxy.\n    /// @param logic Address of core contract implementation\n    function initProxy(address logic) external;\n\n    /// @notice Upgrade proxy implementation (contract logic).\n    /// @dev Upgrade execution allowed only for Platform contract.\n    /// An upgrade of any core contract proxy is always part of a platform time locked upgrade,\n    /// with a change in the platform version.\n    /// @param newImplementation New implementation address\n    function upgrade(address newImplementation) external;\n\n    /// @notice Return current logic implementation\n    /// @return Address of implementation contract\n    function implementation() external view returns (address);\n}\n"
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+      "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      "@solady/=lib/solady/src/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+      "forge-std/=lib/forge-std/src/",
+      "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+      "openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/",
+      "solady/=lib/solady/",
+      "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "metadata": {
+      "useLiteralContent": false,
+      "bytecodeHash": "ipfs",
+      "appendCBOR": true
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "devdoc",
+          "userdoc",
+          "metadata",
+          "abi"
+        ]
+      }
+    },
+    "evmVersion": "paris",
+    "viaIR": false,
+    "libraries": {
+      "src/core/libs/CommonLib.sol": {
+        "CommonLib": "0x23E6e1D49e076358E5777C6dabCc123C2bEAd155"
+      },
+      "src/core/libs/DeployerLib.sol": {
+        "DeployerLib": "0xb444c734f131Be4FaAf1673FBAd39802ACB5efB0"
+      },
+      "src/core/libs/FactoryLib.sol": {
+        "FactoryLib": "0x91007B7211D783452B1E08496a54404C616E0184"
+      },
+      "src/core/libs/StrategyLogicLib.sol": {
+        "StrategyLogicLib": "0xa7E1d04E82AC8f1a223F2FEB634d57cEBa6f3557"
+      },
+      "src/core/libs/VaultBaseLib.sol": {
+        "VaultBaseLib": "0xF6381015f1E976e84AC04F0eCe23F2D097Ee1166"
+      },
+      "src/core/libs/VaultManagerLib.sol": {
+        "VaultManagerLib": "0xe5cf70746ea0f774FC3797a772280c683dA86e7A"
+      },
+      "src/strategies/libs/StrategyLib.sol": {
+        "StrategyLib": "0x77f6472f47Bb9B6A77d2Fb392b58adA73bAA6bc2"
+      },
+      "src/strategies/libs/UniswapV3MathLib.sol": {
+        "UniswapV3MathLib": "0x1Bd5eaf6BE8594d5D35B6f5f652d8e15Cd9B9Cf9"
+      }
+    }
+  }
+}}

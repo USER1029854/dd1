@@ -1,0 +1,67 @@
+__NAME__:DapiProxy
+{{
+  "language": "Solidity",
+  "sources": {
+    "contracts/access-control-registry/interfaces/IAccessControlRegistryAdminned.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"../../utils/interfaces/ISelfMulticall.sol\";\n\ninterface IAccessControlRegistryAdminned is ISelfMulticall {\n    function accessControlRegistry() external view returns (address);\n\n    function adminRoleDescription() external view returns (string memory);\n}\n"
+    },
+    "contracts/access-control-registry/interfaces/IAccessControlRegistryAdminnedWithManager.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./IAccessControlRegistryAdminned.sol\";\n\ninterface IAccessControlRegistryAdminnedWithManager is\n    IAccessControlRegistryAdminned\n{\n    function manager() external view returns (address);\n\n    function adminRole() external view returns (bytes32);\n}\n"
+    },
+    "contracts/api3-server-v1/interfaces/IApi3ServerV1.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./IOevDapiServer.sol\";\nimport \"./IBeaconUpdatesWithSignedData.sol\";\n\ninterface IApi3ServerV1 is IOevDapiServer, IBeaconUpdatesWithSignedData {\n    function readDataFeedWithId(\n        bytes32 dataFeedId\n    ) external view returns (int224 value, uint32 timestamp);\n\n    function readDataFeedWithDapiNameHash(\n        bytes32 dapiNameHash\n    ) external view returns (int224 value, uint32 timestamp);\n\n    function readDataFeedWithIdAsOevProxy(\n        bytes32 dataFeedId\n    ) external view returns (int224 value, uint32 timestamp);\n\n    function readDataFeedWithDapiNameHashAsOevProxy(\n        bytes32 dapiNameHash\n    ) external view returns (int224 value, uint32 timestamp);\n\n    function dataFeeds(\n        bytes32 dataFeedId\n    ) external view returns (int224 value, uint32 timestamp);\n\n    function oevProxyToIdToDataFeed(\n        address proxy,\n        bytes32 dataFeedId\n    ) external view returns (int224 value, uint32 timestamp);\n}\n"
+    },
+    "contracts/api3-server-v1/interfaces/IBeaconUpdatesWithSignedData.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./IDataFeedServer.sol\";\n\ninterface IBeaconUpdatesWithSignedData is IDataFeedServer {\n    function updateBeaconWithSignedData(\n        address airnode,\n        bytes32 templateId,\n        uint256 timestamp,\n        bytes calldata data,\n        bytes calldata signature\n    ) external returns (bytes32 beaconId);\n}\n"
+    },
+    "contracts/api3-server-v1/interfaces/IDapiServer.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"../../access-control-registry/interfaces/IAccessControlRegistryAdminnedWithManager.sol\";\nimport \"./IDataFeedServer.sol\";\n\ninterface IDapiServer is\n    IAccessControlRegistryAdminnedWithManager,\n    IDataFeedServer\n{\n    event SetDapiName(\n        bytes32 indexed dataFeedId,\n        bytes32 indexed dapiName,\n        address sender\n    );\n\n    function setDapiName(bytes32 dapiName, bytes32 dataFeedId) external;\n\n    function dapiNameToDataFeedId(\n        bytes32 dapiName\n    ) external view returns (bytes32);\n\n    // solhint-disable-next-line func-name-mixedcase\n    function DAPI_NAME_SETTER_ROLE_DESCRIPTION()\n        external\n        view\n        returns (string memory);\n\n    function dapiNameSetterRole() external view returns (bytes32);\n\n    function dapiNameHashToDataFeedId(\n        bytes32 dapiNameHash\n    ) external view returns (bytes32 dataFeedId);\n}\n"
+    },
+    "contracts/api3-server-v1/interfaces/IDataFeedServer.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"../../utils/interfaces/IExtendedSelfMulticall.sol\";\n\ninterface IDataFeedServer is IExtendedSelfMulticall {\n    event UpdatedBeaconWithSignedData(\n        bytes32 indexed beaconId,\n        int224 value,\n        uint32 timestamp\n    );\n\n    event UpdatedBeaconSetWithBeacons(\n        bytes32 indexed beaconSetId,\n        int224 value,\n        uint32 timestamp\n    );\n\n    function updateBeaconSetWithBeacons(\n        bytes32[] memory beaconIds\n    ) external returns (bytes32 beaconSetId);\n}\n"
+    },
+    "contracts/api3-server-v1/interfaces/IOevDapiServer.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./IOevDataFeedServer.sol\";\nimport \"./IDapiServer.sol\";\n\ninterface IOevDapiServer is IOevDataFeedServer, IDapiServer {}\n"
+    },
+    "contracts/api3-server-v1/interfaces/IOevDataFeedServer.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./IDataFeedServer.sol\";\n\ninterface IOevDataFeedServer is IDataFeedServer {\n    event UpdatedOevProxyBeaconWithSignedData(\n        bytes32 indexed beaconId,\n        address indexed proxy,\n        bytes32 indexed updateId,\n        int224 value,\n        uint32 timestamp\n    );\n\n    event UpdatedOevProxyBeaconSetWithSignedData(\n        bytes32 indexed beaconSetId,\n        address indexed proxy,\n        bytes32 indexed updateId,\n        int224 value,\n        uint32 timestamp\n    );\n\n    event Withdrew(\n        address indexed oevProxy,\n        address oevBeneficiary,\n        uint256 amount\n    );\n\n    function updateOevProxyDataFeedWithSignedData(\n        address oevProxy,\n        bytes32 dataFeedId,\n        bytes32 updateId,\n        uint256 timestamp,\n        bytes calldata data,\n        bytes[] calldata packedOevUpdateSignatures\n    ) external payable;\n\n    function withdraw(address oevProxy) external;\n\n    function oevProxyToBalance(\n        address oevProxy\n    ) external view returns (uint256 balance);\n}\n"
+    },
+    "contracts/api3-server-v1/proxies/DapiProxy.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./interfaces/IDapiProxy.sol\";\nimport \"../interfaces/IApi3ServerV1.sol\";\n\n/// @title An immutable proxy contract that is used to read a specific dAPI of\n/// a specific Api3ServerV1 contract\n/// @notice In an effort to reduce the bytecode of this contract, its\n/// constructor arguments are validated by ProxyFactory, rather than\n/// internally. If you intend to deploy this contract without using\n/// ProxyFactory, you are recommended to implement an equivalent validation.\n/// @dev The proxy contracts are generalized to support most types of numerical\n/// data feeds. This means that the user of this proxy is expected to validate\n/// the read values according to the specific use-case. For example, `value` is\n/// a signed integer, yet it being negative may not make sense in the case that\n/// the data feed represents the spot price of an asset. In that case, the user\n/// is responsible with ensuring that `value` is not negative.\n/// In the case that the data feed is from a single source, `timestamp` is the\n/// system time of the Airnode when it signed the data. In the case that the\n/// data feed is from multiple sources, `timestamp` is the median of system\n/// times of the Airnodes when they signed the respective data. There are two\n/// points to consider while using `timestamp` in your contract logic: (1) It\n/// is based on the system time of the Airnodes, and not the block timestamp.\n/// This may be relevant when either of them drifts. (2) `timestamp` is an\n/// off-chain value that is being reported, similar to `value`. Both should\n/// only be trusted as much as the Airnode(s) that report them.\ncontract DapiProxy is IDapiProxy {\n    /// @notice Api3ServerV1 address\n    address public immutable override api3ServerV1;\n    /// @notice Hash of the dAPI name\n    bytes32 public immutable override dapiNameHash;\n\n    /// @param _api3ServerV1 Api3ServerV1 address\n    /// @param _dapiNameHash Hash of the dAPI name\n    constructor(address _api3ServerV1, bytes32 _dapiNameHash) {\n        api3ServerV1 = _api3ServerV1;\n        dapiNameHash = _dapiNameHash;\n    }\n\n    /// @notice Reads the dAPI that this proxy maps to\n    /// @return value dAPI value\n    /// @return timestamp dAPI timestamp\n    function read()\n        external\n        view\n        virtual\n        override\n        returns (int224 value, uint32 timestamp)\n    {\n        (value, timestamp) = IApi3ServerV1(api3ServerV1)\n            .readDataFeedWithDapiNameHash(dapiNameHash);\n    }\n}\n"
+    },
+    "contracts/api3-server-v1/proxies/interfaces/IDapiProxy.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./IProxy.sol\";\n\ninterface IDapiProxy is IProxy {\n    function dapiNameHash() external view returns (bytes32);\n}\n"
+    },
+    "contracts/api3-server-v1/proxies/interfaces/IProxy.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n/// @dev See DapiProxy.sol for comments about usage\ninterface IProxy {\n    function read() external view returns (int224 value, uint32 timestamp);\n\n    function api3ServerV1() external view returns (address);\n}\n"
+    },
+    "contracts/utils/interfaces/IExtendedSelfMulticall.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"./ISelfMulticall.sol\";\n\ninterface IExtendedSelfMulticall is ISelfMulticall {\n    function getChainId() external view returns (uint256);\n\n    function getBalance(address account) external view returns (uint256);\n\n    function containsBytecode(address account) external view returns (bool);\n\n    function getBlockNumber() external view returns (uint256);\n\n    function getBlockTimestamp() external view returns (uint256);\n\n    function getBlockBasefee() external view returns (uint256);\n}\n"
+    },
+    "contracts/utils/interfaces/ISelfMulticall.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ninterface ISelfMulticall {\n    function multicall(\n        bytes[] calldata data\n    ) external returns (bytes[] memory returndata);\n\n    function tryMulticall(\n        bytes[] calldata data\n    ) external returns (bool[] memory successes, bytes[] memory returndata);\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 1000
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "devdoc",
+          "userdoc",
+          "metadata",
+          "abi"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    },
+    "libraries": {}
+  }
+}}

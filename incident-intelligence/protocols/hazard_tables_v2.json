@@ -1,0 +1,2645 @@
+{
+ "category_hazard_blended": {
+  "Risk Curators": 0.5,
+  "Lending": 1.96,
+  "Basis Trading": 0.8,
+  "Indexes": 1.5,
+  "RWA": 0.46,
+  "RWA Lending": 0.6,
+  "Options": 1.43,
+  "Canonical Bridge": 1.38,
+  "Prediction Market": 0.7,
+  "Liquid Staking": 0.3,
+  "Farm": 3.98,
+  "Leveraged Farming": 2.06,
+  "Yield": 1.0,
+  "Launchpad": 1.17,
+  "Staking Pool": 5.04,
+  "Liquid Restaking": 0.7,
+  "Liquidity Manager": 2.0,
+  "CDP": 1.26,
+  "NFT Marketplace": 1.97,
+  "NFT Lending": 2.53,
+  "Dexs": 0.72,
+  "Onchain Capital Allocator": 0.54,
+  "Bridge": 1.68,
+  "Cross Chain Bridge": 2.26,
+  "Yield Aggregator": 0.97,
+  "Algo-Stables": 13.2,
+  "Privacy": 8.8,
+  "Derivatives": 1.25
+ },
+ "chain_hazard_blended": {
+  "Polygon": 0.66,
+  "Near": 4.08,
+  "NEAR": 4.08,
+  "Optimism": 0.82,
+  "BSC": 3.61,
+  "Sui": 1.21,
+  "Fantom": 0.48,
+  "Hyperliquid L1": 0.27,
+  "Blast": 0.74,
+  "Linea": 0.36,
+  "Binance": 0.76,
+  "Supra": 6.42,
+  "Solana": 0.92,
+  "zkSync Era": 0.93,
+  "Arbitrum": 1.31,
+  "Ethereum": 2.41,
+  "Sonic": 0.35,
+  "Base": 0.93,
+  "Avalanche": 0.46
+ },
+ "sources": {
+  "slowmist_6mo_n": 128,
+  "defillama_2022plus_n": 312,
+  "method": "geometric mean where both datasets speak; the single available value otherwise; 0.7 default"
+ },
+ "category_hazard_defillama": {
+  "Yield": 0.97,
+  "Derivatives": 1.94,
+  "CDP": 1.38,
+  "Dexs": 0.52,
+  "Canonical Bridge": 0.53,
+  "Indexes": 1.87,
+  "Lending": 2.57,
+  "Liquidity Manager": 1.19,
+  "NFT Marketplace": 1.97,
+  "Liquid Staking": 0.13,
+  "Yield Aggregator": 1.05,
+  "Privacy": 6.4,
+  "Bridge": 0.79,
+  "Farm": 1.15,
+  "Leveraged Farming": 2.13,
+  "Onchain Capital Allocator": 0.42,
+  "Launchpad": 0.91,
+  "Options": 0.85,
+  "Cross Chain Bridge": 1.42,
+  "NFT Lending": 4.27
+ },
+ "chain_hazard_defillama": {
+  "Ethereum": 2.29,
+  "Arbitrum": 1.34,
+  "Solana": 0.76,
+  "Sui": 0.76,
+  "Polygon": 0.78,
+  "Optimism": 0.82,
+  "Fantom": 0.48,
+  "Base": 0.9,
+  "Binance": 0.16,
+  "Blast": 0.74,
+  "Sonic": 0.35,
+  "Avalanche": 0.58,
+  "Linea": 0.36,
+  "zkSync Era": 0.93,
+  "Hyperliquid L1": 0.27
+ },
+ "category_hazard_slowmist": {
+  "Farm": 13.74,
+  "Algo-Stables": 13.2,
+  "Privacy": 12.1,
+  "Staking Pool": 5.04,
+  "Bridge": 3.59,
+  "Cross Chain Bridge": 3.59,
+  "Canonical Bridge": 3.59,
+  "Liquidity Manager": 3.36,
+  "Options": 2.42,
+  "Leveraged Farming": 2.0,
+  "Launchpad": 1.5,
+  "NFT Lending": 1.5,
+  "Lending": 1.49,
+  "Indexes": 1.2,
+  "CDP": 1.15,
+  "Yield": 1.03,
+  "Dexs": 1.0,
+  "Yield Aggregator": 0.9,
+  "Basis Trading": 0.8,
+  "Derivatives": 0.81,
+  "Liquid Staking": 0.7,
+  "Liquid Restaking": 0.7,
+  "Prediction Market": 0.7,
+  "Onchain Capital Allocator": 0.7,
+  "Risk Curators": 0.5,
+  "RWA": 0.46,
+  "RWA Lending": 0.6
+ },
+ "chain_hazard_slowmist": {
+  "Supra": 6.42,
+  "Near": 4.08,
+  "NEAR": 4.08,
+  "Binance": 3.61,
+  "BSC": 3.61,
+  "Ethereum": 2.54,
+  "Sui": 1.93,
+  "Arbitrum": 1.29,
+  "Solana": 1.11,
+  "Base": 0.96,
+  "Polygon": 0.56,
+  "Avalanche": 0.37
+ },
+ "repeat_victims": {
+  "gmx-v1-perps": 2,
+  "gamma": 3,
+  "ooki": 3,
+  "sushiswap": 2,
+  "dydx-v3": 2,
+  "merlin": 3,
+  "basketdao": 2,
+  "balancer-v2": 3,
+  "midas-capital": 2,
+  "zunami-protocol": 2,
+  "hundred-finance": 2,
+  "multichain": 4,
+  "dao-maker-vesting": 2,
+  "badger-dao": 2,
+  "venus-core-pool": 2,
+  "stake-dao": 2,
+  "saga": 2,
+  "thorchain-dex": 4,
+  "1inch-swap": 2,
+  "tectonic": 2,
+  "xtoken": 2,
+  "deus-finance": 4,
+  "rari-capital": 3,
+  "curve-dex": 2,
+  "dforce-lending": 2,
+  "sharedstake": 2,
+  "allbridge-core": 2,
+  "uwu-lend": 2,
+  "valuedefi": 3,
+  "thetanuts-finance": 2,
+  "garden": 2,
+  "four.meme": 2,
+  "sharwa.finance": 2,
+  "mirror": 2,
+  "cream-lending": 2,
+  "yearn-finance": 3,
+  "abracadabra-spell": 3,
+  "ocelotdex": 2,
+  "drift-trade": 2,
+  "zoth-zeusd": 2,
+  "rubic": 2,
+  "raydium-amm": 2,
+  "moonwell-lending": 2,
+  "indexed-finance": 2,
+  "ambient": 2,
+  "conic-finance": 2,
+  "gate": 2,
+  "inverse-finance-frontier": 2,
+  "kucoin": 2,
+  "save": 2,
+  "ribbon": 2,
+  "impermax-v3": 2,
+  "deltaprime": 3,
+  "poly-network": 2,
+  "bancor-v3": 2,
+  "platypus-finance": 2,
+  "radiant-v2": 2,
+  "bisq": 2,
+  "alex": 2,
+  "autoshark": 2,
+  "ronin-bridge": 2,
+  "flooring-protocol": 2,
+  "bunny": 2
+ },
+ "prior_hacks_by_slug": {
+  "apecoin": [
+   {
+    "date": "2022-03-17",
+    "amount": 820000,
+    "technique": "Flashloan Governance Attack",
+    "classification": "Governance"
+   }
+  ],
+  "gmx-v1-perps": [
+   {
+    "date": "2022-09-18",
+    "amount": 565000,
+    "technique": "Stale Price Arbitrage",
+    "classification": "Market Manipulation"
+   },
+   {
+    "date": "2025-07-09",
+    "amount": 42000000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "nirvana-v1": [
+   {
+    "date": "2022-07-28",
+    "amount": 3500000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "dfx-v2": [
+   {
+    "date": "2022-11-10",
+    "amount": 4000000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "typus-perp": [
+   {
+    "date": "2025-10-15",
+    "amount": 3440000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "terraport": [
+   {
+    "date": "2023-04-10",
+    "amount": 4000000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "taiko-bridge": [
+   {
+    "date": "2026-06-21",
+    "amount": 1700000,
+    "technique": "Forged Proof",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "kaoyaswap": [
+   {
+    "date": "2022-08-24",
+    "amount": 118000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "solrise-finance": [
+   {
+    "date": "2024-07-26",
+    "amount": 6700000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "roe-finance": [
+   {
+    "date": "2023-01-11",
+    "amount": 80000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "atomic-green": [
+   {
+    "date": "2026-08-08",
+    "amount": 29984,
+    "technique": "Signature Replay",
+    "classification": "Input Validation"
+   }
+  ],
+  "mobox": [
+   {
+    "date": "2024-03-15",
+    "amount": 750000,
+    "technique": "Borrow Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "termfinance-vaults": [
+   {
+    "date": "2026-08-23",
+    "amount": 8500000,
+    "technique": "Malicious Proposal",
+    "classification": "Governance"
+   }
+  ],
+  "basketdao": [
+   {
+    "date": "2024-01-17",
+    "amount": 1200000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   },
+   {
+    "date": "2022-03-30",
+    "amount": 1200000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "smartcredit": [
+   {
+    "date": "2026-05-04",
+    "amount": 72000,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "polter-finance": [
+   {
+    "date": "2024-11-16",
+    "amount": 8700000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "aperture-lm": [
+   {
+    "date": "2026-01-25",
+    "amount": 3670000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "templedao": [
+   {
+    "date": "2022-10-11",
+    "amount": 2300000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "balancer-v2": [
+   {
+    "date": "2023-08-27",
+    "amount": 800000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   },
+   {
+    "date": "2025-11-03",
+    "amount": 128000000,
+    "technique": "Rounding Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "superrare": [
+   {
+    "date": "2025-07-28",
+    "amount": 730000,
+    "technique": "Merkle Proof Forgery",
+    "classification": "Access Control"
+   }
+  ],
+  "ankr": [
+   {
+    "date": "2022-12-02",
+    "amount": 5000000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "midas-capital": [
+   {
+    "date": "2023-06-17",
+    "amount": 340000,
+    "technique": "Rounding Error",
+    "classification": "Token & Share Accounting"
+   },
+   {
+    "date": "2023-01-17",
+    "amount": 660000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "lava": [
+   {
+    "date": "2024-03-29",
+    "amount": 340000,
+    "technique": "Liquidation Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "zunami-protocol": [
+   {
+    "date": "2023-08-13",
+    "amount": 2100000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "hundred-finance": [
+   {
+    "date": "2022-03-15",
+    "amount": 6200000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   },
+   {
+    "date": "2023-04-15",
+    "amount": 7400000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "tornado-cash": [
+   {
+    "date": "2023-05-20",
+    "amount": 2173500,
+    "technique": "Malicious Proposal",
+    "classification": "Governance"
+   }
+  ],
+  "hope-lend": [
+   {
+    "date": "2023-10-18",
+    "amount": 825000,
+    "technique": "Arithmetic Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "multichain": [
+   {
+    "date": "2022-01-18",
+    "amount": 1400000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   },
+   {
+    "date": "2023-02-15",
+    "amount": 130000,
+    "technique": "Signature Verification Flaw",
+    "classification": "Input Validation"
+   }
+  ],
+  "tinyman": [
+   {
+    "date": "2022-01-01",
+    "amount": 3000000,
+    "technique": "Incorrect Share Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "yield-protocol": [
+   {
+    "date": "2024-04-30",
+    "amount": 181000,
+    "technique": "Incorrect Share Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "resupply": [
+   {
+    "date": "2025-06-25",
+    "amount": 9600000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "clipper": [
+   {
+    "date": "2024-12-01",
+    "amount": 450000,
+    "technique": "Deposit Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "venus-core-pool": [
+   {
+    "date": "2026-03-15",
+    "amount": 3700000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   },
+   {
+    "date": "2025-03-29",
+    "amount": 902000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "nemo-yield-trading": [
+   {
+    "date": "2025-09-08",
+    "amount": 2590000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "cypher": [
+   {
+    "date": "2023-08-07",
+    "amount": 1035000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "stake-dao": [
+   {
+    "date": "2026-03-12",
+    "amount": 176000,
+    "technique": "Caller Impersonation",
+    "classification": "Access Control"
+   }
+  ],
+  "thalaswap": [
+   {
+    "date": "2024-11-15",
+    "amount": 25500000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "lodestar-v0": [
+   {
+    "date": "2022-12-10",
+    "amount": 6900000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "saga": [
+   {
+    "date": "2026-01-21",
+    "amount": 7000000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "jaypeggers": [
+   {
+    "date": "2022-12-29",
+    "amount": 18500,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "equalizer-exchange": [
+   {
+    "date": "2022-06-07",
+    "amount": 50000,
+    "technique": "Withdrawal Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "usual-usd0": [
+   {
+    "date": "2025-05-27",
+    "amount": 43000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "yearn-ether": [
+   {
+    "date": "2025-11-30",
+    "amount": 9000000,
+    "technique": "Incorrect Share Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "velar-perps": [
+   {
+    "date": "2026-02-19",
+    "amount": 401000,
+    "technique": "Predictable Oracle Update",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "defiplaza": [
+   {
+    "date": "2024-07-05",
+    "amount": 200000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "munchables": [
+   {
+    "date": "2024-03-26",
+    "amount": 62500000,
+    "technique": "Proxy Upgrade Hijack",
+    "classification": "Access Control"
+   }
+  ],
+  "paraspace-lending-v1": [
+   {
+    "date": "2023-03-17",
+    "amount": 5000000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "rhea-lend": [
+   {
+    "date": "2026-04-16",
+    "amount": 18400000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "rho-markets": [
+   {
+    "date": "2024-07-19",
+    "amount": 7600000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "tectonic": [
+   {
+    "date": "2024-02-22",
+    "amount": 250000,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   },
+   {
+    "date": "2024-11-18",
+    "amount": null,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "risex": [
+   {
+    "date": "2026-08-03",
+    "amount": 673012,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "aftermath-perps": [
+   {
+    "date": "2026-04-29",
+    "amount": 1140000,
+    "technique": "Withdrawal Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "unizen": [
+   {
+    "date": "2024-03-08",
+    "amount": 2100000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "rari-capital": [
+   {
+    "date": "2025-12-18",
+    "amount": 2000000,
+    "technique": "Uninitialized Proxy",
+    "classification": "Access Control"
+   },
+   {
+    "date": "2022-05-01",
+    "amount": 80000000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "dforce-lending": [
+   {
+    "date": "2023-02-10",
+    "amount": 3650000,
+    "technique": "Read-Only Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "gooddollar": [
+   {
+    "date": "2023-12-16",
+    "amount": 2000000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "allbridge-core": [
+   {
+    "date": "2026-07-19",
+    "amount": 1650000,
+    "technique": "Withdrawal Logic Flaw",
+    "classification": "Protocol Logic"
+   },
+   {
+    "date": "2023-04-02",
+    "amount": 573000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "panther-protocol": [
+   {
+    "date": "2026-08-06",
+    "amount": 7578,
+    "technique": "Malicious Proposal",
+    "classification": "Governance"
+   }
+  ],
+  "uwu-lend": [
+   {
+    "date": "2024-06-10",
+    "amount": 20000000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   },
+   {
+    "date": "2024-06-13",
+    "amount": 3700000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "lumi-finance": [
+   {
+    "date": "2026-07-13",
+    "amount": 270000,
+    "technique": "Signature Verification Flaw",
+    "classification": "Input Validation"
+   }
+  ],
+  "lendhub": [
+   {
+    "date": "2023-01-16",
+    "amount": 6000000,
+    "technique": "Incorrect Share Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "curve-llamalend": [
+   {
+    "date": "2026-03-02",
+    "amount": 240000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "0vix": [
+   {
+    "date": "2023-04-28",
+    "amount": 2000000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "tropykus-rsk": [
+   {
+    "date": "2023-06-14",
+    "amount": 150000,
+    "technique": "Rounding Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "mango-markets-v3": [
+   {
+    "date": "2022-10-11",
+    "amount": 115000000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "blastoff": [
+   {
+    "date": "2024-03-11",
+    "amount": 600000,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "channels-finance": [
+   {
+    "date": "2023-12-30",
+    "amount": 320000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "arcadia-v1": [
+   {
+    "date": "2023-07-10",
+    "amount": 455000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "penpie": [
+   {
+    "date": "2024-09-03",
+    "amount": 27000000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "tenderize-v2": [
+   {
+    "date": "2025-04-07",
+    "amount": 10850,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "paribus": [
+   {
+    "date": "2023-04-11",
+    "amount": 67800,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "filda": [
+   {
+    "date": "2023-04-23",
+    "amount": 700000,
+    "technique": "Bridge Logic Flaw",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "beanstalk": [
+   {
+    "date": "2022-04-17",
+    "amount": 181000000,
+    "technique": "Flashloan Governance Attack",
+    "classification": "Governance"
+   }
+  ],
+  "thetanuts-finance": [
+   {
+    "date": "2026-04-20",
+    "amount": 50000,
+    "technique": "First Depositor Attack",
+    "classification": "Token & Share Accounting"
+   },
+   {
+    "date": "2026-06-15",
+    "amount": 2100000,
+    "technique": "Rounding Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "dexible-v2": [
+   {
+    "date": "2023-02-20",
+    "amount": 2047635,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "rigoblock": [
+   {
+    "date": "2022-02-18",
+    "amount": 464000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "lunafi": [
+   {
+    "date": "2023-05-23",
+    "amount": 35000,
+    "technique": "Reward Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "qubit": [
+   {
+    "date": "2022-01-28",
+    "amount": 80000000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "dough-finance": [
+   {
+    "date": "2024-07-12",
+    "amount": 1960000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "zetachain": [
+   {
+    "date": "2026-04-27",
+    "amount": 333868,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "renegade": [
+   {
+    "date": "2026-05-10",
+    "amount": 209000,
+    "technique": "Uninitialized Proxy",
+    "classification": "Access Control"
+   }
+  ],
+  "arcadia-v2": [
+   {
+    "date": "2025-07-15",
+    "amount": 2500000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "four.meme": [
+   {
+    "date": "2025-03-18",
+    "amount": 80000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   },
+   {
+    "date": "2025-02-11",
+    "amount": 183000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "kiloex": [
+   {
+    "date": "2025-04-14",
+    "amount": 7500000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "auctus": [
+   {
+    "date": "2022-03-26",
+    "amount": 726000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "gnosis-pay": [
+   {
+    "date": "2026-06-01",
+    "amount": 1500000,
+    "technique": "Signature Verification Flaw",
+    "classification": "Input Validation"
+   }
+  ],
+  "sharwa.finance": [
+   {
+    "date": "2026-05-01",
+    "amount": 32850,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   },
+   {
+    "date": "2025-10-20",
+    "amount": 146000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "maya-protocol": [
+   {
+    "date": "2026-08-18",
+    "amount": 1700000,
+    "technique": "Withdrawal Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "chainge-finance": [
+   {
+    "date": "2024-04-15",
+    "amount": null,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "scallop-lend": [
+   {
+    "date": "2026-04-26",
+    "amount": 142000,
+    "technique": "Reward Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "gamma": [
+   {
+    "date": "2024-01-04",
+    "amount": 4500000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "denaria": [
+   {
+    "date": "2026-04-05",
+    "amount": 165618,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "orbit-bridge": [
+   {
+    "date": "2023-12-31",
+    "amount": 81700000,
+    "technique": "Signature Verification Flaw",
+    "classification": "Input Validation"
+   }
+  ],
+  "unilend-v2": [
+   {
+    "date": "2025-01-12",
+    "amount": 197600,
+    "technique": "Redeem Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "paraluni-masterchef": [
+   {
+    "date": "2022-03-13",
+    "amount": 1700000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "eralend": [
+   {
+    "date": "2023-07-25",
+    "amount": 3400000,
+    "technique": "Read-Only Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "rodeo": [
+   {
+    "date": "2023-07-04",
+    "amount": 90000,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "abracadabra-spell": [
+   {
+    "date": "2025-03-25",
+    "amount": 13000000,
+    "technique": "Liquidation Logic Flaw",
+    "classification": "Protocol Logic"
+   },
+   {
+    "date": "2024-01-30",
+    "amount": 6500000,
+    "technique": "Rounding Error",
+    "classification": "Token & Share Accounting"
+   },
+   {
+    "date": "2025-10-04",
+    "amount": 1700000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "ocelotdex": [
+   {
+    "date": "2024-09-20",
+    "amount": 980000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   },
+   {
+    "date": "2024-09-20",
+    "amount": 4900000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "drift-trade": [
+   {
+    "date": "2022-05-11",
+    "amount": 14500000,
+    "technique": "Risk Parameter Abuse",
+    "classification": "Market Manipulation"
+   },
+   {
+    "date": "2026-04-01",
+    "amount": 295000000,
+    "technique": "Proxy Upgrade Hijack",
+    "classification": "Access Control"
+   }
+  ],
+  "voltage-v3": [
+   {
+    "date": "2025-03-18",
+    "amount": 322113,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "bond-protocol": [
+   {
+    "date": "2022-10-21",
+    "amount": 300000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "zoth-zeusd": [
+   {
+    "date": "2025-03-01",
+    "amount": 285000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "sirio-finance": [
+   {
+    "date": "2025-02-01",
+    "amount": 2000000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "mirror": [
+   {
+    "date": "2022-05-30",
+    "amount": 2000000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "betterbank": [
+   {
+    "date": "2025-08-26",
+    "amount": 5000000,
+    "technique": "Reward Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "raft": [
+   {
+    "date": "2023-11-10",
+    "amount": 3300000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "aztec-connect": [
+   {
+    "date": "2026-06-14",
+    "amount": 2100000,
+    "technique": "Forged Proof",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "palmswap": [
+   {
+    "date": "2023-07-24",
+    "amount": 900000,
+    "technique": "Incorrect Share Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "superfluid": [
+   {
+    "date": "2022-02-08",
+    "amount": 8700000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "leetswap": [
+   {
+    "date": "2023-08-01",
+    "amount": 620000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "defituna-lending": [
+   {
+    "date": "2026-07-16",
+    "amount": 580000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "yearn-finance": [
+   {
+    "date": "2023-04-13",
+    "amount": 11539000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   },
+   {
+    "date": "2025-12-16",
+    "amount": 300000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "agave": [
+   {
+    "date": "2022-03-15",
+    "amount": 5500000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "across": [
+   {
+    "date": "2026-07-17",
+    "amount": 4500000,
+    "technique": "Spoofed Event Log",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "bonzo-lend": [
+   {
+    "date": "2026-07-11",
+    "amount": 9050000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "solvbtc": [
+   {
+    "date": "2026-03-06",
+    "amount": 2700000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "moonwell-lending": [
+   {
+    "date": "2025-11-04",
+    "amount": 1000000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   },
+   {
+    "date": "2026-02-15",
+    "amount": 1780000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "portal": [
+   {
+    "date": "2022-02-02",
+    "amount": 326000000,
+    "technique": "Signature Verification Flaw",
+    "classification": "Input Validation"
+   }
+  ],
+  "kinto-bridge": [
+   {
+    "date": "2025-07-10",
+    "amount": 1550000,
+    "technique": "Uninitialized Proxy",
+    "classification": "Access Control"
+   }
+  ],
+  "rubic": [
+   {
+    "date": "2022-12-25",
+    "amount": 1410000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "atlantis-loans": [
+   {
+    "date": "2023-06-10",
+    "amount": 2500000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "float-protocol": [
+   {
+    "date": "2022-01-15",
+    "amount": 1160000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "xcarnival": [
+   {
+    "date": "2022-06-26",
+    "amount": 3800000,
+    "technique": "Deposit Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "level-perps": [
+   {
+    "date": "2023-05-01",
+    "amount": 1100000,
+    "technique": "Reward Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "wise-lending-v1": [
+   {
+    "date": "2024-01-12",
+    "amount": 464000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "poolz-network": [
+   {
+    "date": "2023-03-15",
+    "amount": 390000,
+    "technique": "Arithmetic Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "bloom": [
+   {
+    "date": "2024-05-09",
+    "amount": 540000,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "fusion-by-ipor": [
+   {
+    "date": "2026-01-06",
+    "amount": 336000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "overnight-finance": [
+   {
+    "date": "2022-12-02",
+    "amount": null,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "dexodus-finance": [
+   {
+    "date": "2025-05-26",
+    "amount": 300000,
+    "technique": "Stale Oracle Price",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "swarm-markets": [
+   {
+    "date": "2024-02-22",
+    "amount": 472892,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "sir": [
+   {
+    "date": "2025-03-30",
+    "amount": 355000,
+    "technique": "Proxy Upgrade Hijack",
+    "classification": "Access Control"
+   }
+  ],
+  "raydium-amm": [
+   {
+    "date": "2026-06-10",
+    "amount": 1340000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "ambient": [
+   {
+    "date": "2026-06-07",
+    "amount": 110600,
+    "technique": "Deposit Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "deus-finance": [
+   {
+    "date": "2022-03-15",
+    "amount": 3000000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   },
+   {
+    "date": "2023-05-05",
+    "amount": 6500000,
+    "technique": "Arithmetic Error",
+    "classification": "Token & Share Accounting"
+   },
+   {
+    "date": "2022-04-28",
+    "amount": 13400000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "the-idols": [
+   {
+    "date": "2025-01-14",
+    "amount": 324000,
+    "technique": "Reward Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "beluga": [
+   {
+    "date": "2023-10-13",
+    "amount": 175000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "anchor": [
+   {
+    "date": "2022-05-29",
+    "amount": 800000,
+    "technique": "Stale Oracle Price",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "aethir": [
+   {
+    "date": "2026-04-09",
+    "amount": 400000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "thoreum-finance": [
+   {
+    "date": "2023-01-19",
+    "amount": 65540,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "goledo": [
+   {
+    "date": "2024-01-28",
+    "amount": 1700000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "revest-finance": [
+   {
+    "date": "2022-03-27",
+    "amount": 2010000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "yieldcore": [
+   {
+    "date": "2026-04-28",
+    "amount": 398764,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "dtrinity-dlend": [
+   {
+    "date": "2026-03-17",
+    "amount": 257000,
+    "technique": "First Depositor Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "juice-finance": [
+   {
+    "date": "2024-03-09",
+    "amount": 54000,
+    "technique": "Reward Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "veil-cash": [
+   {
+    "date": "2026-02-21",
+    "amount": 5000,
+    "technique": "Proof Verifier Bug",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "dungeonswap": [
+   {
+    "date": "2023-02-27",
+    "amount": 728000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "1inch-swap": [
+   {
+    "date": "2025-03-07",
+    "amount": 5000000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "civfund": [
+   {
+    "date": "2023-07-09",
+    "amount": 180000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "saddle-finance": [
+   {
+    "date": "2022-04-30",
+    "amount": 11000000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "omm": [
+   {
+    "date": "2023-01-21",
+    "amount": 1891000,
+    "technique": "Redeem Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "orion-pools": [
+   {
+    "date": "2023-02-02",
+    "amount": 3000000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "conic-finance": [
+   {
+    "date": "2023-07-21",
+    "amount": 3300000,
+    "technique": "Read-Only Reentrancy",
+    "classification": "Reentrancy"
+   },
+   {
+    "date": "2023-07-22",
+    "amount": 300000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "onyx-v2": [
+   {
+    "date": "2024-09-26",
+    "amount": 3800000,
+    "technique": "Liquidation Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "inverse-finance-frontier": [
+   {
+    "date": "2022-04-02",
+    "amount": 15600000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   },
+   {
+    "date": "2022-06-16",
+    "amount": 5800000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "dydx-v3": [
+   {
+    "date": "2023-11-18",
+    "amount": 9000000,
+    "technique": "Risk Parameter Abuse",
+    "classification": "Market Manipulation"
+   }
+  ],
+  "cozy-v2": [
+   {
+    "date": "2025-08-30",
+    "amount": 427000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "zklend": [
+   {
+    "date": "2025-02-11",
+    "amount": 9550000,
+    "technique": "First Depositor Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "arrakis-v1": [
+   {
+    "date": "2026-08-23",
+    "amount": 7100,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "goldfinch": [
+   {
+    "date": "2025-12-02",
+    "amount": 330000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "gain": [
+   {
+    "date": "2024-02-21",
+    "amount": 3010000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "themis-protocol": [
+   {
+    "date": "2023-06-27",
+    "amount": 370000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "goonfi": [
+   {
+    "date": "2026-03-28",
+    "amount": 254000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "velocore-v2": [
+   {
+    "date": "2024-06-02",
+    "amount": 6800000,
+    "technique": "Incorrect Fee Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "peapods-finance": [
+   {
+    "date": "2023-12-13",
+    "amount": 231192,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "thorchain-dex": [
+   {
+    "date": "2026-05-15",
+    "amount": 10700000,
+    "technique": "Bridge Logic Flaw",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "zircon-gamma": [
+   {
+    "date": "2023-03-18",
+    "amount": 350000,
+    "technique": "Incorrect Share Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "harbor-protocol": [
+   {
+    "date": "2023-08-19",
+    "amount": 250000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "goose-finance": [
+   {
+    "date": "2026-03-14",
+    "amount": 8435,
+    "technique": "Incorrect Share Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "save": [
+   {
+    "date": "2022-11-01",
+    "amount": 1026000,
+    "technique": "Risk Parameter Abuse",
+    "classification": "Market Manipulation"
+   },
+   {
+    "date": "2022-11-02",
+    "amount": 1260000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "unibot": [
+   {
+    "date": "2023-10-31",
+    "amount": 640000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "lnd": [
+   {
+    "date": "2025-05-09",
+    "amount": 1180000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "cashio": [
+   {
+    "date": "2022-03-23",
+    "amount": 52800000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "alephium-bridge": [
+   {
+    "date": "2026-05-30",
+    "amount": 815000,
+    "technique": "Forged Proof",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "swerve": [
+   {
+    "date": "2023-03-25",
+    "amount": 1300000,
+    "technique": "Malicious Proposal",
+    "classification": "Governance"
+   }
+  ],
+  "onyx-protocol": [
+   {
+    "date": "2023-11-01",
+    "amount": 2100000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "futureswap": [
+   {
+    "date": "2025-12-16",
+    "amount": 270000,
+    "technique": "Flashloan Governance Attack",
+    "classification": "Governance"
+   }
+  ],
+  "lixir-finance": [
+   {
+    "date": "2026-06-25",
+    "amount": 12300,
+    "technique": "Signature Verification Flaw",
+    "classification": "Input Validation"
+   }
+  ],
+  "xave-finance": [
+   {
+    "date": "2022-10-09",
+    "amount": null,
+    "technique": "Malicious Proposal",
+    "classification": "Governance"
+   }
+  ],
+  "elasticswap": [
+   {
+    "date": "2022-12-13",
+    "amount": 850000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "indexed-finance": [
+   {
+    "date": "2023-03-21",
+    "amount": 9925,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "team-finance": [
+   {
+    "date": "2022-10-27",
+    "amount": 15800000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "ribbon": [
+   {
+    "date": "2025-12-12",
+    "amount": 2700000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "flashtrade": [
+   {
+    "date": "2026-07-21",
+    "amount": 98000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "impermax-v3": [
+   {
+    "date": "2025-11-11",
+    "amount": 380000,
+    "technique": "Liquidation Logic Flaw",
+    "classification": "Protocol Logic"
+   },
+   {
+    "date": "2025-04-26",
+    "amount": 300000,
+    "technique": "Incorrect Fee Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "pike-v1": [
+   {
+    "date": "2024-04-30",
+    "amount": 1600000,
+    "technique": "Proxy Upgrade Hijack",
+    "classification": "Access Control"
+   }
+  ],
+  "deltaprime": [
+   {
+    "date": "2024-11-11",
+    "amount": 4800000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   },
+   {
+    "date": "2024-07-23",
+    "amount": 1000000,
+    "technique": "Ownership Takeover",
+    "classification": "Access Control"
+   }
+  ],
+  "makina": [
+   {
+    "date": "2026-01-19",
+    "amount": 4200000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "sentiment": [
+   {
+    "date": "2023-04-04",
+    "amount": 1000000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "poly-network": [
+   {
+    "date": "2023-07-02",
+    "amount": 5000000,
+    "technique": "Forged Proof",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "solido-cash": [
+   {
+    "date": "2026-07-23",
+    "amount": 900000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "platypus-finance": [
+   {
+    "date": "2023-02-16",
+    "amount": 8500000,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   },
+   {
+    "date": "2023-07-12",
+    "amount": 50000,
+    "technique": "Withdrawal Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "radiant-v2": [
+   {
+    "date": "2024-01-02",
+    "amount": 4500000,
+    "technique": "Rounding Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "ekubo": [
+   {
+    "date": "2026-05-05",
+    "amount": 1400000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "wise-lending-v2": [
+   {
+    "date": "2026-02-28",
+    "amount": 66000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "elephant-money": [
+   {
+    "date": "2022-04-12",
+    "amount": 22200000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "euler-v1": [
+   {
+    "date": "2023-03-13",
+    "amount": 197000000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "silo-v2": [
+   {
+    "date": "2026-04-03",
+    "amount": 359000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "exactly": [
+   {
+    "date": "2023-08-18",
+    "amount": 7600000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "el-dorado-exchange": [
+   {
+    "date": "2023-05-30",
+    "amount": 120000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "kyberswap-elastic": [
+   {
+    "date": "2023-11-22",
+    "amount": 48000000,
+    "technique": "Rounding Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "singularity-finance": [
+   {
+    "date": "2026-04-27",
+    "amount": 413000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "aave-v3": [
+   {
+    "date": "2026-03-12",
+    "amount": 862000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "wemix.fi-lend": [
+   {
+    "date": "2026-07-26",
+    "amount": 737000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "bisq": [
+   {
+    "date": "2026-05-01",
+    "amount": 550000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "starlay-finance": [
+   {
+    "date": "2024-02-08",
+    "amount": 2100000,
+    "technique": "Redeem Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "sturdy-v1": [
+   {
+    "date": "2023-06-12",
+    "amount": 775000,
+    "technique": "Read-Only Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "pine-protocol": [
+   {
+    "date": "2023-12-22",
+    "amount": 95000,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "revert-lend": [
+   {
+    "date": "2026-01-29",
+    "amount": 50000,
+    "technique": "Staking Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "lien": [
+   {
+    "date": "2026-07-23",
+    "amount": 542000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "fegex": [
+   {
+    "date": "2024-12-29",
+    "amount": 1070000,
+    "technique": "Cross-Chain Message Spoofing",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "alkimiya": [
+   {
+    "date": "2025-03-28",
+    "amount": 95500,
+    "technique": "Arithmetic Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "sperax-usd": [
+   {
+    "date": "2023-02-04",
+    "amount": 250000,
+    "technique": "Unbacked Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "alex": [
+   {
+    "date": "2025-06-06",
+    "amount": 8373000,
+    "technique": "Caller Impersonation",
+    "classification": "Access Control"
+   }
+  ],
+  "amun": [
+   {
+    "date": "2022-12-26",
+    "amount": 300000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "ara-finance": [
+   {
+    "date": "2023-06-19",
+    "amount": 125000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "swapx-v2": [
+   {
+    "date": "2023-02-27",
+    "amount": 1000000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "utopia": [
+   {
+    "date": "2023-07-20",
+    "amount": 119300,
+    "technique": "Swap Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "huma-finance-v2": [
+   {
+    "date": "2026-05-11",
+    "amount": 101400,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "crosscurve": [
+   {
+    "date": "2026-02-01",
+    "amount": 3000000,
+    "technique": "Cross-Chain Message Spoofing",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "ploutos-money": [
+   {
+    "date": "2026-02-26",
+    "amount": 390000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "flooring-protocol": [
+   {
+    "date": "2026-06-08",
+    "amount": 500000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   },
+   {
+    "date": "2023-12-17",
+    "amount": 1600000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "otsea": [
+   {
+    "date": "2024-09-13",
+    "amount": 26000,
+    "technique": "Reward Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "clober-liquidity-vault": [
+   {
+    "date": "2024-12-10",
+    "amount": 500000,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "zkfinance": [
+   {
+    "date": "2024-11-11",
+    "amount": 200000,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "chi-protocol": [
+   {
+    "date": "2026-07-13",
+    "amount": 8500,
+    "technique": "Redeem Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "tender-finance": [
+   {
+    "date": "2023-03-07",
+    "amount": 1590000,
+    "technique": "Stale Oracle Price",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "hyperdrive-hl-lending": [
+   {
+    "date": "2025-09-27",
+    "amount": 782000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "edel": [
+   {
+    "date": "2026-06-30",
+    "amount": 403000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "afi-protocol": [
+   {
+    "date": "2026-05-30",
+    "amount": 480000,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "prismalst": [
+   {
+    "date": "2024-03-28",
+    "amount": 11600000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "bluemove-dex": [
+   {
+    "date": "2026-07-11",
+    "amount": 529000,
+    "technique": "Incorrect Share Accounting",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "bonqdao": [
+   {
+    "date": "2023-02-01",
+    "amount": 1800000,
+    "technique": "Oracle Misconfiguration",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "purrlend": [
+   {
+    "date": "2026-04-25",
+    "amount": 1500000,
+    "technique": "Caller Impersonation",
+    "classification": "Access Control"
+   }
+  ],
+  "blend-pools-v2": [
+   {
+    "date": "2026-02-22",
+    "amount": 10970000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "hinkal": [
+   {
+    "date": "2026-07-02",
+    "amount": 820000,
+    "technique": "Deposit Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "seneca": [
+   {
+    "date": "2024-02-28",
+    "amount": 6400000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "crema-finance": [
+   {
+    "date": "2022-07-02",
+    "amount": 8800000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "mars-perps": [
+   {
+    "date": "2025-12-14",
+    "amount": 960000,
+    "technique": "Funding Rate Arbitrage",
+    "classification": "Market Manipulation"
+   }
+  ],
+  "levana-perps": [
+   {
+    "date": "2023-12-27",
+    "amount": 1100000,
+    "technique": "Stale Oracle Price",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "hashflow": [
+   {
+    "date": "2023-06-15",
+    "amount": 605000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "rikkei-finance": [
+   {
+    "date": "2022-04-15",
+    "amount": 1100000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "floor-dao": [
+   {
+    "date": "2023-09-05",
+    "amount": null,
+    "technique": "Reward Logic Flaw",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "woofi-swap": [
+   {
+    "date": "2024-03-05",
+    "amount": 8750000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "blizz-finance": [
+   {
+    "date": "2022-05-13",
+    "amount": 8300000,
+    "technique": "Stale Oracle Price",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "pond0x": [
+   {
+    "date": "2023-07-28",
+    "amount": 2200000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "pando-rings": [
+   {
+    "date": "2022-11-06",
+    "amount": 22000000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "uxlink": [
+   {
+    "date": "2025-09-22",
+    "amount": 11300000,
+    "technique": "Delegatecall Hijack",
+    "classification": "Access Control"
+   }
+  ],
+  "fortress-loans": [
+   {
+    "date": "2022-05-08",
+    "amount": 2976004,
+    "technique": "Malicious Proposal",
+    "classification": "Governance"
+   }
+  ],
+  "curve-dex": [
+   {
+    "date": "2023-07-30",
+    "amount": 61700000,
+    "technique": "Vyper Compiler Bug",
+    "classification": "Reentrancy"
+   }
+  ],
+  "kelp": [
+   {
+    "date": "2026-04-18",
+    "amount": 293000000,
+    "technique": "Cross-Chain Message Spoofing",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "synthetify": [
+   {
+    "date": "2023-10-19",
+    "amount": 230000,
+    "technique": "Malicious Proposal",
+    "classification": "Governance"
+   }
+  ],
+  "barnbridge": [
+   {
+    "date": "2026-07-14",
+    "amount": 776000,
+    "technique": "Malicious Proposal",
+    "classification": "Governance"
+   }
+  ],
+  "hector-lending": [
+   {
+    "date": "2023-06-02",
+    "amount": 653000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "openleverage": [
+   {
+    "date": "2024-04-01",
+    "amount": null,
+    "technique": "Unknown",
+    "classification": "Protocol Logic"
+   }
+  ],
+  "litecoin": [
+   {
+    "date": "2026-04-26",
+    "amount": null,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "lazy-summer-protocol": [
+   {
+    "date": "2026-07-05",
+    "amount": 6040000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "cowswap": [
+   {
+    "date": "2023-02-07",
+    "amount": 180000,
+    "technique": "Arbitrary External Call",
+    "classification": "Access Control"
+   }
+  ],
+  "namada-shielded-pools": [
+   {
+    "date": "2026-06-19",
+    "amount": 600000,
+    "technique": "Unbacked Cross-Chain Mint",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "treasure": [
+   {
+    "date": "2022-03-03",
+    "amount": 1400000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "gondi-v3": [
+   {
+    "date": "2026-03-09",
+    "amount": 230000,
+    "technique": "Token Approval Abuse",
+    "classification": "Access Control"
+   }
+  ],
+  "panoptic-v1.1": [
+   {
+    "date": "2025-08-25",
+    "amount": 0,
+    "technique": "Hash Collision",
+    "classification": "Input Validation"
+   }
+  ],
+  "numbers-protocol": [
+   {
+    "date": "2022-11-23",
+    "amount": 13836,
+    "technique": "Bridge Logic Flaw",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "nomad": [
+   {
+    "date": "2022-08-01",
+    "amount": 190000000,
+    "technique": "Forged Proof",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "sharedstake": [
+   {
+    "date": "2023-09-01",
+    "amount": 175000,
+    "technique": "Ownership Takeover",
+    "classification": "Access Control"
+   }
+  ],
+  "saturn": [
+   {
+    "date": "2024-05-07",
+    "amount": 9000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "arena-socialfi": [
+   {
+    "date": "2023-10-07",
+    "amount": 2974530,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "set-protocol": [
+   {
+    "date": "2026-07-30",
+    "amount": 9600,
+    "technique": "Reentrancy",
+    "classification": "Reentrancy"
+   }
+  ],
+  "flow": [
+   {
+    "date": "2025-12-27",
+    "amount": 3900000,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "aur-protocol": [
+   {
+    "date": "2022-11-22",
+    "amount": 13000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "foom-cash": [
+   {
+    "date": "2026-03-02",
+    "amount": 2260000,
+    "technique": "Forged Proof",
+    "classification": "Bridge & Cross-Chain"
+   }
+  ],
+  "bunni-v2": [
+   {
+    "date": "2025-09-02",
+    "amount": 8400000,
+    "technique": "Rounding Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "sonne-finance": [
+   {
+    "date": "2024-05-15",
+    "amount": 20000000,
+    "technique": "Donation Attack",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "acala": [
+   {
+    "date": "2022-08-14",
+    "amount": 0,
+    "technique": "Infinite Mint",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "cork-v1": [
+   {
+    "date": "2025-05-28",
+    "amount": 12000000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "moola-market": [
+   {
+    "date": "2022-10-18",
+    "amount": 8400000,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "neutra-finance": [
+   {
+    "date": "2023-08-01",
+    "amount": 36450,
+    "technique": "Spot Price Manipulation",
+    "classification": "Oracle Manipulation"
+   }
+  ],
+  "reaper-farm": [
+   {
+    "date": "2022-08-01",
+    "amount": 1700000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "dao-swap": [
+   {
+    "date": "2022-09-05",
+    "amount": 580000,
+    "technique": "Improper Access Control",
+    "classification": "Access Control"
+   }
+  ],
+  "juicebox-v3": [
+   {
+    "date": "2026-04-20",
+    "amount": 52000,
+    "technique": "Missing Input Validation",
+    "classification": "Input Validation"
+   }
+  ],
+  "cetus-clmm": [
+   {
+    "date": "2025-05-22",
+    "amount": 223000000,
+    "technique": "Arithmetic Error",
+    "classification": "Token & Share Accounting"
+   }
+  ],
+  "ronin-bridge": [
+   {
+    "date": "2024-08-06",
+    "amount": 12000000,
+    "technique": "Uninitialized Proxy",
+    "classification": "Access Control"
+   }
+  ]
+ }
+}

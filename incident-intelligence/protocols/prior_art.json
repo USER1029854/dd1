@@ -1,0 +1,120 @@
+{
+ "multichain|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY": {
+  "status": "UNREMEDIATED_KNOWN_ISSUE",
+  "basis": "Multichain has been non-operational since July 2024 following the July 2023 ~$126-210M incident; the team itself publicly asked users to revoke approvals over a 'critical vulnerability'. The Singapore High Court approved liquidation of the Multichain Foundation (KPMG appointed liquidators) after a Sonic Labs petition, and a New York court extended a freeze on ~$63M of stolen USDC. There is no maintainer able to deploy a fix, and DefiLlama still reports residual TVL, so the deprecated deployment retains live exposure by definition.",
+  "search_scope": "public reporting, court filings coverage and the project's own revoke advisory; per-contract advisory search not performed",
+  "sources": [
+   "https://cointelegraph.com/news/multichain-asks-users-to-revoke-approvals-amid-critical-vulnerability",
+   "https://www.blocmates.com/news-posts/singapore-high-court-approves-multichain-foundation-liquidation-after-sonic-labs-petition",
+   "https://www.theblock.co/post/377094/multichain-extends-freeze-stolen-usdc"
+  ]
+ },
+ "multichain|APPROVALS-TO-UPGRADEABLE-SPENDER": {
+  "status": "UNREMEDIATED_KNOWN_ISSUE",
+  "basis": "The project publicly advised approval revocation and reported that a large minority of affected addresses had not revoked. Live allowances to an abandoned, unmaintained spender are the value at risk here, not TVL. No maintainer exists to remediate.",
+  "search_scope": "public reporting and the project's own advisory",
+  "sources": [
+   "https://cointelegraph.com/news/multichain-asks-users-to-revoke-approvals-amid-critical-vulnerability"
+  ]
+ },
+ "saddle-finance|UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY": {
+  "status": "KNOWN_FIX_DEPLOYED",
+  "basis": "The Saddle DAO voted in SIP-54 to wind the protocol down, pausing all pools and dissolving the community multisig, and the contracts repository was archived read-only on 2026-02-10. Pausing is the decisive guard for this family. The hypothesis is therefore downgraded rather than promoted; residual DefiLlama TVL means value is still parked in paused contracts, so the remaining question is withdrawal-path liveness, not exploitability.",
+  "search_scope": "protocol docs, governance record (SIP-54) and repository state",
+  "sources": [
+   "https://docs.saddle.finance/saddle-faq",
+   "https://github.com/saddle-finance/saddle-contract"
+  ]
+ },
+ "flux-finance|ACC-DONATION-UNACCOUNTED-BALANCE": {
+  "status": "SIMILAR_ISSUE_ALREADY_REPORTED",
+  "basis": "Flux Finance is a Compound V2 fork with permissioning modifications, audited through Code4rena, and runs a public Immunefi bug-bounty programme. The Compound-fork donation/exchange-rate vector is publicly documented and was raised in Venus's own Code4rena audit before the March 2026 THE-market exploit. Flux's permissioned (KYC-gated) asset pools restrict who can hold and transfer OUSG, which is a partial structural mitigation for those markets; the permissionless asset markets (e.g. USDC) do not inherit that restriction. Whether the deployed cToken implementation carries a rate guard is not established here.",
+  "search_scope": "protocol docs, Code4rena audit reference, Immunefi programme; per-market deployed-bytecode diff NOT performed",
+  "sources": [
+   "https://docs.ondo.finance/protocols/flux",
+   "https://immunefi.com/bug-bounty/fluxfinance/information/",
+   "https://docs.fluxfinance.com/"
+  ],
+  "downgrade": {
+   "apply": true,
+   "guard": "kyc_permissioned_transfer_restriction_on_some_markets",
+   "disposition": "PARTIAL",
+   "residual_hypothesis": "Flux runs BOTH permissioned (KYC-gated, e.g. OUSG via CErc20DelegatorKYC) and permissionless asset markets. Transfer permissioning restricts who may hold and send the permissioned asset, which is a partial structural mitigation of the donation vector for THOSE markets only. The permissionless markets (e.g. USDC) do not inherit that restriction, and the deployed implementations reviewed here (CCashDelegate, CTokenDelegate) do compute cash from balanceOf(address(this)) with no internal cash counter and no exchange-rate change cap. The open question is per-market, not protocol-wide: which markets are permissioned, and does any permissionless market hold enough borrow demand for a rate move to be worth the donated capital?"
+  },
+  "deployed_code_evidence": {
+   "comptroller": "0x95Af143a021DF745bc78e845b54591C53a8B3A51 (ethereum, 5 markets)",
+   "delegator_name": "CErc20DelegatorKYC",
+   "implementations_reviewed": [
+    "CCashDelegate",
+    "CTokenDelegate"
+   ],
+   "getCashPrior_reads_balanceOf_this": true,
+   "internal_cash_counter": false,
+   "exchange_rate_change_cap": false,
+   "note": "Implementation resolved by following the delegator's implementation() pointer and reading verified source."
+  }
+ },
+ "flux-finance|ORACLE-STALE-OR-SILENT-FALLBACK": {
+  "status": "KNOWN_ISSUE_DEPLOYMENT_STATUS_UNKNOWN",
+  "basis": "Flux prices tokenized-treasury collateral (OUSG, backed by BlackRock BUIDL since the 2024 migration). RWA collateral pricing is exactly the surface that failed in Solido Cash and Ploutos Money in this window. Flux is audited and has a bug bounty; the deployed oracle's staleness and fallback behaviour was not resolved by read-only screening.",
+  "search_scope": "protocol docs and audit references; deployed oracle adapter not decompiled",
+  "sources": [
+   "https://docs.ondo.finance/protocols/flux",
+   "https://immunefi.com/bug-bounty/fluxfinance/information/"
+  ]
+ },
+ "steakhouse-financial|ACC-NAV-SHAREPRICE-MANIPULABLE": {
+  "status": "KNOWN_FIX_DEPLOYED",
+  "basis": "Steakhouse publishes depositor-centric vault safeguards: owner multisig, 7-day action timelocks, and an Aragon DAO guardian veto on Morpho vaults, rated best-in-class by Credora. On 2026-02-05 its vaults processed $108.5M of liquidations in one day across ~$1.7B of deposits with every vault maintaining full redeemability, and it reported zero exposure to the Stream Finance and Elixir curator collapses. The 7-day timelock plus guardian veto is a decisive guard against the malicious-component-addition path, so the pair is downgraded to a near miss rather than promoted. IMPORTANT RESIDUAL: a multi-day timelock does not by itself close the Lazy Summer shape, where the loss came from a component that was ALREADY approved and was still counted in totalAssets() during an incomplete offboarding. Offboarding latency is the open question, not admission control.",
+  "search_scope": "protocol risk documentation, Morpho curator profile, independent risk-assessor rating; deployed timelock parameters NOT verified on-chain",
+  "sources": [
+   "https://www.steakhouse.financial/docs/risk-management/monitoring/vault-setup-and-controls",
+   "https://morpho.org/stories/steakhouse",
+   "https://blog.summer.fi/meet-the-yield-sources-steakhouse-defis-powerhouse-risk-curator/"
+  ],
+  "downgrade": {
+   "apply": true,
+   "guard": "curator_action_timelock_plus_guardian_veto",
+   "disposition": "PARTIAL",
+   "residual_hypothesis": "offboarding latency: is an impaired or halted component removed from totalAssets() atomically with pausing it, or does it keep accruing book value for the duration of the timelock?"
+  }
+ },
+ "steakhouse-financial|AUTH-MISSING-ON-VALUE-MOVING-PATH": {
+  "status": "KNOWN_FIX_DEPLOYED",
+  "basis": "Owner multisig plus 7-day action timelocks and a guardian veto cover the privileged-action surface this family targets.",
+  "search_scope": "protocol risk documentation",
+  "sources": [
+   "https://www.steakhouse.financial/docs/risk-management/monitoring/vault-setup-and-controls"
+  ],
+  "downgrade": {
+   "apply": true,
+   "guard": "multisig_plus_timelock_plus_guardian_veto",
+   "disposition": "KILLED",
+   "residual_hypothesis": "none material at discovery stage"
+  }
+ },
+ "flux-finance|ORACLE-SPOT-THIN-LIQUIDITY": {
+  "status": "KNOWN_ISSUE_DEPLOYMENT_STATUS_UNKNOWN",
+  "basis": "Flux is a Compound V2 fork run by the Ondo team, audited through Code4rena, with a public Immunefi bug-bounty programme and Ondo DAO governance. Its collateral set includes tokenized treasuries (OUSG, backed by BlackRock BUIDL since the 2024 migration), which is precisely the pricing surface that failed in Solido Cash and Ploutos Money inside this window. The class of issue is publicly known; the deployed oracle's venue depth, deviation bounds and borrow caps were not resolved by read-only screening.",
+  "search_scope": "protocol documentation, Code4rena audit reference, Immunefi programme; per-market oracle adapter NOT decompiled",
+  "sources": [
+   "https://docs.ondo.finance/protocols/flux",
+   "https://immunefi.com/bug-bounty/fluxfinance/information/"
+  ]
+ },
+ "flux-finance|LIQUIDATION-ON-MANIPULABLE-VALUATION": {
+  "status": "KNOWN_ISSUE_DEPLOYMENT_STATUS_UNKNOWN",
+  "basis": "Same collateral-pricing surface, evaluated on the liquidation side. Flux is audited and bug-bountied; the liquidation path's grace periods, size caps and deviation bounds were not read out of deployed code here.",
+  "search_scope": "protocol documentation, Code4rena audit reference, Immunefi programme; per-market oracle adapter NOT decompiled",
+  "sources": [
+   "https://docs.ondo.finance/protocols/flux",
+   "https://immunefi.com/bug-bounty/fluxfinance/information/"
+  ]
+ },
+ "centrifuge-protocol|SIG-VERIFIER-DEFEATABLE": {
+  "status": "PRIOR_ART_SEARCH_INCOMPLETE",
+  "basis": "The deployed-source sweep flags ecrecover use without an adjacent zero-address check on three Centrifuge-family entries (centrifuge-protocol, anemoy-capital, circle-usyc). Those are very likely one shared codebase rather than three independent findings, so they should be triaged as a single lineage and counted once. No per-deployment audit or advisory search was performed.",
+  "search_scope": "none performed for this pair; lineage observation only",
+  "sources": []
+ }
+}

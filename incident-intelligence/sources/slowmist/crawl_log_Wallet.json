@@ -1,0 +1,39 @@
+{
+  "tag": "Wallet",
+  "category_filter": "Wallet",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:36Z",
+      "sha256": "1a50ba6c33985fcec9e2ef9549bcd1408a90c4a5bf8f26db6ca108dbf6c37384",
+      "bytes": 26957,
+      "snapshot": "Wallet_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 8,
+      "rows_older_than_window": 12,
+      "first_date": "2023-10-06",
+      "last_date": "2026-08-06",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:37Z",
+      "sha256": "ee3c041c85f49ca79dd783188b95d76e4793a8e489f0a3e6f45c41179cd5d509",
+      "bytes": 29681,
+      "snapshot": "Wallet_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2020-12-14",
+      "last_date": "2023-09-20",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 40
+}

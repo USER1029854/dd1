@@ -1,0 +1,522 @@
+[
+  {
+    "event_date": "2026-08-11",
+    "target": "Harmony Protocol",
+    "slowmist_attack_method": "Protocol Logic Vulnerability",
+    "reported_loss_usd": 3200000.0,
+    "reported_loss_raw": "$ 3,200,000",
+    "description_raw": "The Harmony Layer-1 blockchain was exploited, allowing an attacker to unauthorizedly mint approximately 4 billion ONE tokens (about 26% of the supply) via empty blocks and related flaws. Large amounts were quickly funneled to exchanges for sale, causing the token price to crash ~30-40%. The team confirmed the incident, paused the cross-chain bridge, released an emergency validator patch to stop further minting, coordinated with exchanges to freeze funds, and is evaluating a chain rollback.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/harmonyprotocol/status/2087487246148542527"
+    ]
+  },
+  {
+    "event_date": "2026-08-09",
+    "target": "Oraichain",
+    "slowmist_attack_method": "Cross-Chain Bridge Exploit",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Oraichain (AI Layer 1) suffered from a vulnerability in its EVM cross-chain transfer path, enabling unauthorized minting of ORAI tokens. The network has been halted since 04:00 UTC on August 9, 2026, with bridges, cross-chain routes, and public interfaces restricted. The exploit path has been identified and addressed; the team is working with partners and CEXs to limit fund movements and is preparing to burn the unauthorized minted balances and reconcile protocol states to restore the canonical ORAI supply.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/oraichain/status/2086774707882451012"
+    ]
+  },
+  {
+    "event_date": "2026-08-06",
+    "target": "KITE Foundation",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "The KITE Foundation detected abnormal KITE token transfers on Ethereum mainnet, confirming that some wallet addresses had been compromised by hackers. The team urgently paused ERC-20 transfers and related cross-chain channels, with no asset losses to users or the project. A new contract was later deployed, airdropping new tokens 1:1 to legitimate addresses based on the snapshot at block 25,692,498, excluding attacker-controlled addresses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/KiteAIFDN/status/2090006296628253137"
+    ]
+  },
+  {
+    "event_date": "2026-07-26",
+    "target": "WEMIX",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 6250000.0,
+    "reported_loss_raw": "$ 6,250,000",
+    "description_raw": "The owner privileges of a WEMIX$-related smart contract were compromised, allowing the attacker to illegally mint approximately 5.23 million WEMIX$ stablecoins (worth about $6.25 million), which were swapped into WEMIX and USDC.e before being bridged out. The team has suspended bridges and related services while working with exchanges, security firms, and law enforcement to track the funds.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/coinbureau/status/2081559245653483870?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-06-19",
+    "target": "Namada Shielded Pools",
+    "slowmist_attack_method": "Protocol Vulnerability",
+    "reported_loss_usd": 600000.0,
+    "reported_loss_raw": "$ 600,000",
+    "description_raw": "On June 19, 2026, approximately $600,000 in assets (ATOM, USDC, OSMO, TIA, NYM, etc.) were drained from Namada\u2019s Multi-Asset Shielded Pool (MASP) through an IBC Transfer Logic Exploit. The loss initially went unnoticed because a stale indexer continued displaying funds as available, while live RPC queries showed zero balances on the chain. The attacker swept shielded IBC assets cross-chain. Namada confirmed the exploit and is investigating.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/f12sec/status/2068065239187218505?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-04-01",
+    "target": "Galaxy Digital",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 10000.0,
+    "reported_loss_raw": "$ 10,000",
+    "description_raw": "A spokesperson for Galaxy Digital disclosed that the company recently contained a cybersecurity incident. Unauthorized access was strictly limited to an isolated development and testing environment; production systems, trading platforms, and customer accounts remained unaffected. The company quickly detected and contained the intrusion. The affected area was a standalone R&D environment unrelated to core infrastructure, resulting in a loss of less than $10,000 in corporate testing funds. Following a review, it was confirmed that no customer funds or account information were accessed or at risk, and all platforms and services remain fully operational. Galaxy stated they will continue to review the incident and provide updates as appropriate.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.coindesk.com/tech/2026/04/01/galaxy-digital-suffers-hack-but-no-client-funds-or-information-were-compromised"
+    ]
+  },
+  {
+    "event_date": "2026-02-03",
+    "target": "Arbitrum Governance",
+    "slowmist_attack_method": "The X account was hacked",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Arbitrum has issued a security alert: The official X account for Arbitrum Governance (@arbitrumdao_gov) has been compromised. Do not click on any links posted by this account or engage with it. The team is working to restore access and will provide further updates soon.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/arbitrum/status/2018658275588485142"
+    ]
+  },
+  {
+    "event_date": "2026-01-27",
+    "target": "Solar",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Solar, the official Solana Mandarin community, highly suspects its official X account (@Solana_zh) has been hacked. The team currently lacks access and is working urgently with X support to resolve the issue. Recovery time is TBD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/xueqiu88/status/2015990208471437490"
+    ]
+  },
+  {
+    "event_date": "2026-01-25",
+    "target": "Scroll",
+    "slowmist_attack_method": "The X account was hacked",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Scroll alerted on X that the X account of co-founder @shenhaichen has been compromised. They are actively working to recover the account and advise users not to interact with any links or direct messages.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Scroll_ZKP/status/2014427453062524999"
+    ]
+  },
+  {
+    "event_date": "2026-01-21",
+    "target": "SagaEVM",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "According to an official announcement from Saga, the SagaEVM chain has suffered an attack involving a series of malicious contract deployments, cross-chain operations, and liquidity withdrawals. The attacker transferred approximately $7 million worth of USDC, yUSD, ETH, and tBTC, which have since been consolidated into ETH and sent to the address 0x2044\u20266ecb. Following the incident, SagaEVM was halted at block height 6,593,800. The Saga team is currently working with exchanges and cross-chain bridge providers to block the attacker\u2019s address. A comprehensive technical post-mortem will be released in due course. The Saga SSC mainnet and other chains remain unaffected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Sagaxyz__/status/2014144936631738532"
+    ]
+  },
+  {
+    "event_date": "2025-12-27",
+    "target": "Flow",
+    "slowmist_attack_method": "Execution Layer Vulnerability",
+    "reported_loss_usd": 3900000.0,
+    "reported_loss_raw": "$ 3,900,000",
+    "description_raw": "The Flow Foundation announced that an attacker exploited a vulnerability in the Flow execution layer, transferring approximately $3.9 million in assets off the network before validators were able to coordinate and halt operations. The incident did not affect existing user balances, and all user deposits remain intact.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/findlabs/status/2005021008156078274"
+    ]
+  },
+  {
+    "event_date": "2025-11-13",
+    "target": "Hyperliquid",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 4950000.0,
+    "reported_loss_raw": "$ 4,950,000",
+    "description_raw": "According to Arkham\u2019s monitoring, an attacker allegedly carried out a deliberate exploit against HLP (Hyperliquidity Provider) on Hyperliquid. The attacker used 19 wallets and $3 million in principal to open a leveraged long position worth $20\u201330 million on POPCAT with 5\u00d7 leverage, while placing large buy walls to support the price. Subsequently, the attacker suddenly removed the buy walls, causing a flash crash in POPCAT\u2019s price and triggering the liquidation of their $3 million collateral to zero. Due to the lack of liquidity, HLP was forced to absorb the position, ultimately resulting in a bad debt loss of $4.9 million. Analyst @mlmabc noted that losing $3 million within seconds was not a mistake or negligence, but rather a deliberate attack targeting both HLP and Hyperliquid.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/arkham/status/1988662381535216125"
+    ]
+  },
+  {
+    "event_date": "2025-11-03",
+    "target": "Berachain",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12800000.0,
+    "reported_loss_raw": "$ 12,800,000",
+    "description_raw": "Berachain announced that approximately USD 12.8 million in funds lost due to the BEX/Balancer v2 vulnerability have been fully returned to the Berachain Foundation\u2019s deployer address, and the blockchain has now resumed normal operations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/berachain/status/1985742874361651206"
+    ]
+  },
+  {
+    "event_date": "2025-10-23",
+    "target": "Noble",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to monitoring by Scam Sniffer, the official X account of Noble was compromised, and the attacker used it to post phishing tweets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/realScamSniffer/status/1981138805337051345"
+    ]
+  },
+  {
+    "event_date": "2025-10-01",
+    "target": "BNB Chain",
+    "slowmist_attack_method": "Phishing Attack",
+    "reported_loss_usd": 8000.0,
+    "reported_loss_raw": "$ 8,000",
+    "description_raw": "On October 1, BNB Chain officially announced that its English Twitter account had been compromised and was under emergency recovery, warning users not to click on any links.Subsequent investigation revealed that the incident involved a total of 10 phishing links, resulting in losses of approximately $8,000, with a single user losing as much as $6,500.The attacker deployed a phishing contract address, injected $17,800, and exchanged it for $22,000 worth of tokens. Following the incident, the team implemented additional security measures to prevent similar occurrences and further strengthened account protection.As of October 31, all user compensations related to this phishing incident have been completed, and transaction details are available on Etherscan. The root cause of the incident has been confirmed as phishing links, which have since been removed and brought under control.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/BNBCHAIN/status/1984143649584902620"
+    ]
+  },
+  {
+    "event_date": "2025-07-11",
+    "target": "Plasma",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The official X account of @PlasmaFDN has been compromised. The attacker is posting phishing links using the X Bot UA spoofing trick\u2014the URLs appear legitimate at first glance but redirect to a phishing site: https://vault-plasma[.]to. Do not click on any recent links or interact with the account until an official statement is released.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/evilcos/status/1943507167975198964"
+    ]
+  },
+  {
+    "event_date": "2025-06-20",
+    "target": "Abstract Chain",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to reports from social media users, the official X account of Abstract Chain appears to have been compromised. The attacker is impersonating the project to promote a fake \u201cofficial token\u201d scam.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/articles/lwhpdubx"
+    ]
+  },
+  {
+    "event_date": "2025-06-01",
+    "target": "MegaETH",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "MegaETH stated that its X (formerly Twitter) account has been compromised, warning users not to click on any links or view recent posts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/megaeth_labs/status/1929043277652660229"
+    ]
+  },
+  {
+    "event_date": "2025-05-13",
+    "target": "ZKsync",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "ZKsync Developers posted on X that the official X accounts of both ZKsync and Matter Labs have been compromised. Please do not interact with these accounts or click on any related links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/zkSyncDevs/status/1922085897509732721"
+    ]
+  },
+  {
+    "event_date": "2025-05-02",
+    "target": "TRON DAO",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "TRON DAO stated on X that its account was compromised on May 2, 2025, at 9:25 AM PST. During the breach, an unauthorized party published a post containing contract address, sent private messages, and followed several unknown accounts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/trondao/status/1918459819310367216"
+    ]
+  },
+  {
+    "event_date": "2025-05-01",
+    "target": "Hyperliquid",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Hyperliquid's X account is suspected to have been compromised. Please do not trust any content it posts or click on any links, to avoid potential losses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/articles/7teyhf6w"
+    ]
+  },
+  {
+    "event_date": "2025-04-14",
+    "target": "Aergo",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The official website of hybrid blockchain project Aergo is temporarily unavailable due to a DDoS attack. The technical team is actively working on the issue and aims to restore access as soon as possible. Aergo reminds users to stay alert for impersonation and scam attempts \u2014 the team will never initiate DMs or request funds or wallet information.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/aergo_io/status/1911684243530616856"
+    ]
+  },
+  {
+    "event_date": "2025-04-13",
+    "target": "ZKsync",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 5000000.0,
+    "reported_loss_raw": "$ 5,000,000",
+    "description_raw": "The ZKsync security team discovered that an admin account had been compromised, giving the hacker control of approximately $5 million worth of ZK tokens \u2014 the remaining unclaimed tokens from the ZKsync airdrop. The ZKsync Security Council sent an onchain message to the hacker on Monday, April 21st at 15:03 UTC. In an effort to resolve this matter in the spirit of safe harbor, they offered a 10% bounty for returning 90% of the funds involved in the exploit. On Wednesday, April 23rd at 14:39 UTC, 90% of the funds were returned to the Era and Ethereum L1 addresses controlled by the Security Council.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://zksync.mirror.xyz/W5vPDZqEqf2NuwQ5x7SyFnIxqqpE1szAFD69iaaBFnI"
+    ]
+  },
+  {
+    "event_date": "2025-02-28",
+    "target": "Wemix",
+    "slowmist_attack_method": "Credential Compromise",
+    "reported_loss_usd": 6220000.0,
+    "reported_loss_raw": "$ 6,220,000",
+    "description_raw": "According to Yonhap News Agency, Kim Seok-hwan, a representative of Wemix Foundation, a blockchain subsidiary of Wemade, admitted at an emergency meeting that they lost approximately 8.65 million WEMIX tokens (worth about $6.22 million) due to a hack. On February 28, the hacker stole the authentication key of the NFT platform \"Nile\" and attacked the Play Bridge Vault system.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/423515"
+    ]
+  },
+  {
+    "event_date": "2025-01-12",
+    "target": "Litecoin",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Litecoin posted on X, stating that their X account was briefly compromised and some unauthorized content was published. These posts were deleted within seconds. They are still investigating the incident but have immediately found a delegated account that was compromised and removed it.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/litecoin/status/1878155290782351756"
+    ]
+  },
+  {
+    "event_date": "2024-08-24",
+    "target": "Artela",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The parallel-execution EVM public chain Artela announced on the X platform that their official Discord was hacked today. The attacker took control of the Discord channel and spread fake airdrop messages. The team took immediate action, removed the fraudulent posts, and the Discord has now been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Artela_Network/status/1827174784020733978"
+    ]
+  },
+  {
+    "event_date": "2024-08-19",
+    "target": "Sahara AI",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The decentralized AI blockchain platform Sahara AI announced on the X platform that their official Discord has been compromised. Users are advised not to click on any links or respond to any messages until further notice.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/SaharaLabsAI/status/1825496237514375564"
+    ]
+  },
+  {
+    "event_date": "2024-07-31",
+    "target": "Terra",
+    "slowmist_attack_method": "Third-party Vulnerability",
+    "reported_loss_usd": 5280000.0,
+    "reported_loss_raw": "$ 5,280,000",
+    "description_raw": "Terra blockchain experienced a security breach that led to the theft of tokens. The attackers exploited a known vulnerability related to the third-party module IBC hooks, stealing the value of cross-chain assets, including USDC stablecoins and Astroport tokens. The Terra team has taken emergency measures to prevent further losses and coordinated with validators to apply a patch to fix the vulnerability. According to Zaki Manian, co-founder of Sommelier Finance, although the vulnerability was patched in the Cosmos ecosystem back in April, Terra did not include this patch in their June upgrade, resulting in the vulnerability being re-exposed and exploited.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.theblock.co/post/308440/attacker-exploits-ibc-hooks-vulnerability-to-steal-tokens-on-terra-blockchain"
+    ]
+  },
+  {
+    "event_date": "2024-07-26",
+    "target": "Casper Network",
+    "slowmist_attack_method": "Security Vulnerability",
+    "reported_loss_usd": 6700000.0,
+    "reported_loss_raw": "$ 6,700,000",
+    "description_raw": "On July 26, 2024, Casper Network was attacked. Following the attack, Casper Network tweeted that they had worked with validators to pause the network in order to minimize the impact of the security vulnerability until it could be patched. According to the preliminary report released by Casper Network on July 31, 13 wallets were affected in this incident. The total amount of illicit transactions is estimated to be around $6.7 million. Casper Network discovered that malicious actors exploited a vulnerability that allowed a contract installer to bypass access rights checks on urefs, enabling them to grant the contract access to uref-based resources. This privilege escalation facilitated unauthorized access, including the ability to transfer tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://casper.network/en-us/news/casper-blockchain-security-update-preliminary-incident-report"
+    ]
+  },
+  {
+    "event_date": "2024-07-02",
+    "target": "Sydney Sweeney",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to Cointelegraph, the Twitter account of American actress Sydney Sweeney was hacked, with now-deleted posts promoting a crypto token bearing her name in an apparent pump-and-dump scheme.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://cointelegraph.com/news/sydney-sweeney-x-account-promotes-crypto-memecoin"
+    ]
+  },
+  {
+    "event_date": "2024-07-01",
+    "target": "Particle Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to screenshots shared by X user @bmgentile, the modular chain abstraction Layer 1 project Particle Network issued an official apology statement. They stated that their account email was recently hacked and used to send phishing emails, inviting users to participate in the PARTl presale. Please stay vigilant against related risks as the official team investigates the matter.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/377995"
+    ]
+  },
+  {
+    "event_date": "2024-04-24",
+    "target": "Merlin",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to community feedback, the official Discord server of Merlin Chain appears to have been targeted in a hacker attack, where a management account posted a notification containing a phishing link.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/stv5ix5p.html"
+    ]
+  },
+  {
+    "event_date": "2024-02-18",
+    "target": "Starcoin",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On February 18th, Starcoin, a project within the Move ecosystem, tweeted that they detected abnormal activities on their network that required immediate attention to safeguard the integrity and security of the system. As a precautionary measure, Starcoin has temporarily suspended our network to conduct a thorough investigation together with SlowMist.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/StarcoinSTC/status/1759044409746727316"
+    ]
+  },
+  {
+    "event_date": "2024-01-31",
+    "target": "Klaytn",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Klaytn, the South Korean public blockchain, tweeted a reminder to users that its official Discord server has been attacked. Until further notice, please refrain from clicking on any links or interacting with any posts. The team is currently working to remove malicious bots and regain control.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/klaytn_official/status/1752352457634799982"
+    ]
+  },
+  {
+    "event_date": "2023-10-17",
+    "target": "Everscale",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Blockchain network Everscale said that a large number of EVER tokens have been stolen and they are working closely with exchanges where EVER is listed in order to stop any further outflow of tokens. To halt the actions of those responsible, they have temporarily disconnected Octus Bridge.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Everscale_net/status/1714227498702323912"
+    ]
+  },
+  {
+    "event_date": "2023-06-08",
+    "target": "Arbitrum",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to official sources, a bug in Arbitrum's sequencer code previously caused a brief outage in the network's batch transaction submission feature, which prevented transactions from being confirmed on the main chain. The bug has since been fixed and the bulk transaction submission feature has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/ArbitrumDevs/status/1666549893001887744"
+    ]
+  },
+  {
+    "event_date": "2023-05-30",
+    "target": "TRON",
+    "slowmist_attack_method": "Multisig Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "DWallet Labs discovered a zero-day vulnerability in TRON multi-signature accounts that put more than $500 million in digital assets at risk. What about the threshold and number of signers defined in the account. The bug has now been disclosed and fixed, so no user assets are now at risk.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://0d.dwalletlabs.com/game-of-tron-critical-0-day-in-tron-multi-signature-wallets-2c3e90668dc0"
+    ]
+  },
+  {
+    "event_date": "2023-05-29",
+    "target": "Aleo",
+    "slowmist_attack_method": "Inflation Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Fede's Intern, a contributor to the venture capital studio LambdaClass, said on Twitter that it found that Aleo, a programmable privacy network, had an inflation loophole and used the first loophole to stop block production, and contacted the Aleo team by email. Following an open discussion on the Zero Knowledge Podcast, Aleo CEO and Zero Knowledge Podcast contributor Alex Pruden stepped in and the bug is now fixed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/fede_intern/status/1662622123397992450"
+    ]
+  },
+  {
+    "event_date": "2023-05-29",
+    "target": "Polygon zkEVM",
+    "slowmist_attack_method": "Logic Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Blockchain security researcher iczc tweeted that a vulnerability was found in Polygon zkEVM and received a bug bounty from Immunefi L2. The vulnerability prevents asset migration from L1 to L2 by preventing assets bridged from L1 to Polygon zkEVM (L2) from being properly claimed in L2. iczc found in the code logic of processing claim tx pre-execution results that malicious attackers can bypass the \"isReverted\" pre-execution check on claim transactions by setting the gas fee to non-zero, allowing them to send a large number of Low-cost claims DoS attacks on sequencers and validators, increasing computational overhead. Also, transactions are not immediately removed from the pool after execution. The status is updated from Pending to Selected and continues to exist in the PostgreSQL database. Currently, there is only one trusted sequencer capable of fetching transactions from the transaction pool and executing them. Therefore, another vulnerability is to maliciously mark any deposit amount by sending a failed transaction. This will cause claim transactions that correctly use credits to be rejected because the credits are already used. This makes the L2 network unusable for new users. The Polygon zkEVM team fixed this vulnerability by removing the specific gas logic for claiming transactions, with no funds at risk.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/0xiczc/status/1662090451493740545"
+    ]
+  },
+  {
+    "event_date": "2023-05-19",
+    "target": "Stacks",
+    "slowmist_attack_method": "Block Reorganization",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On May 19, Blockworks Research stated on Twitter that the Bitcoin Layer 2 network Stacks has experienced several obstacles in the past few months: 1. There is a serious loophole in the STX \"stacking\" mechanism; 2. Confused review It becomes common during Stacks mining; 3. Stacks chain block reorganization is more common.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Blockchain&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/blockworksres/status/1659228801384194049"
+    ]
+  }
+]

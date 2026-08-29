@@ -1,0 +1,6131 @@
+{
+ "generated_from": "git history of results/candidates_*",
+ "head_at_generation": "693e2ed",
+ "head_excluded": false,
+ "runs": [
+  {
+   "commit": "7d49c12",
+   "subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "protocols": 24
+  },
+  {
+   "commit": "ccb5273",
+   "subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "protocols": 49
+  },
+  {
+   "commit": "3bc30a7",
+   "subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "protocols": 72
+  },
+  {
+   "commit": "2ce88d1",
+   "subject": "Validate the ranking model and measure custody exposure separately",
+   "protocols": 111
+  },
+  {
+   "commit": "5a3468f",
+   "subject": "Remove leftovers from earlier iterations of this run",
+   "protocols": 111
+  },
+  {
+   "commit": "7e319ee",
+   "subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "protocols": 108
+  },
+  {
+   "commit": "1ad898f",
+   "subject": "Never hand over the same protocol twice",
+   "protocols": 130
+  },
+  {
+   "commit": "6e7df7a",
+   "subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "protocols": 117
+  },
+  {
+   "commit": "693e2ed",
+   "subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "protocols": 163
+  }
+ ],
+ "protocols_delivered": 629,
+ "ledger": {
+  "sumer.money": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "flux-finance": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "saddle-finance": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "morpho-optimizer-aavev2": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "grove-finance": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "abstradex": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "granary-finance": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "base-bridge": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "stability": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "agave": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "sentora": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "extended-perps": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "tulipa-capital": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "cooler-loans": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "curve-llamalend": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "rockawayx": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "gami-labs": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "guru-network-classic": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "3bc30a7"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "lido": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "lighter-bridge": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "stake-dao": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "yield-basis": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12"
+   ],
+   "families": []
+  },
+  "ether.fi-liquid": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273",
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "uniswap-v2": {
+   "first_delivered_in": "7d49c12",
+   "first_subject": "Add six-month DeFi incident intelligence and DefiLlama audit prioritization",
+   "runs": [
+    "7d49c12",
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "euler-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "thruster-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "capyfi": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "sturdy-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "venombridge": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "lista-lending": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "steakhouse-financial": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "circle-usyc": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "usdd": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "gauntlet": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "centrifuge-protocol": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "lista-cdp": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "openeden-tbill": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "pareto-credit": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "kpk": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "anemoy-capital": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "convex-finance": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "aster-asbnb": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "k3-capital": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "usd-ai": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "reserve-protocol": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "brickken": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "compound-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "uncx-network-v3": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "vesper": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "gearbox": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "csigma-finance": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "autofinance": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "gaib": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "balancer-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "multichain": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "balancer-v3": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "anzen-v2": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "across": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "aerodrome-ignition": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "synapse-cross-chain-bridge": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273",
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "aura": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "morpho-blue": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "wise-token": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "venus-core-pool": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "uniswap-v4": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "aave-v3": {
+   "first_delivered_in": "ccb5273",
+   "first_subject": "Expand the screen to a $50k floor with a condition layer and deployed-source sweep",
+   "runs": [
+    "ccb5273"
+   ],
+   "families": []
+  },
+  "ordernchaos": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "cub-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "arbinyan": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "aperocket": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "percent-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "velvet-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "cega-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "zero-network": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "caviar-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "shimmerbridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "dtrinity-dlend": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ORACLE-STALE-OR-SILENT-FALLBACK"
+   ]
+  },
+  "lixir-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "uwu-lend": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "charm-finance-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "arcade.xyz": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "fungify": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY",
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "dopple-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "finext-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "debridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "ajna-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "burgerswap": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "blackwing": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "listapie": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "stargate-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "valuedefi": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "contango-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "olive-network": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "lybra-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "premia-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION",
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "crosschain-bridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "wavesbridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "goplus-locker-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "ACC-CREDIT-NOT-RECEIVED"
+   ]
+  },
+  "terminal-finance-pre-deposits": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "dooar-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "frax-fpi": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "enosys-bridge": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "privacy-pools": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "maverick-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "twindex": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "finnexus": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY",
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "cook-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "oreoswap": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "tarot": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "landx-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "trevee-earn": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "impermax-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "bunni-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "silo-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "strata-season-0": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "midas-capital": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "spectra-v1": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "boringdao": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION",
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "bond-protocol": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "aloe": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "set-protocol": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "sato": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "segment-finance": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "yield-millionaire": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "liveart": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "monolith-market": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "lockon": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "loop": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "accumulated-finance-liquid-staking": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7",
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "joe-v2": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "picwe": {
+   "first_delivered_in": "3bc30a7",
+   "first_subject": "Re-target the screen at what actually gets hacked, in a reviewable size band",
+   "runs": [
+    "3bc30a7"
+   ],
+   "families": []
+  },
+  "hundred-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "sperax-usd": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "radiant-v2": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING",
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "revest-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "iron-bank": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "cytonic-airdrop-campaign": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "gravita-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "bridge-mutual": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "tetu-earn": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "vaultcraft": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING",
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "wepiggy": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "likwid": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "openleverage": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "kine-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "ezmoney": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "pell-network": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "xwin-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "pepeteam-bridge": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "singularitydao": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "aavegotchi": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "kokonut-swap": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "insurace": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "88mph": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "bifi": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "izumi-liquidbox": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED",
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "fuji-v1": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE",
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "bunny": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "grizzlyfi-hives": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "satlayer": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "cream-lending": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED",
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "wombex-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "radioshack": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "stabull-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "yieldwolf": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "infinite-trading-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "cakepie": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "shift-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING",
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "goldsand-by-inshallah": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "pooltogether-v4": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "horizon-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "synfutures-v1": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "dforce-lending": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "stonedefi": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP",
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "ante-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "rubicon": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "conic-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING",
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "yaxis": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "impossible": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "prismalst": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "zunami-protocol": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY",
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "single-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "idle": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "sofa.org": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "badger-dao": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "curve-dex": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "abracadabra-spell": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "qidao": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "piku-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "nftx": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "morpheusai": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "accountable": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "rari-capital": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "xgld": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "gro": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "the-idols": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "angle": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "pooltogether-v3": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "defil": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "planet-farm": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "kyberswap-classic": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "tranchess-yield": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "flying-tulip-lend": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "bancor-v2.1": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "yala": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "iziswap": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "wompie": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "termfinance-vaults": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "ideamarket": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "wasabix": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "ddex": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "preon-finance": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "magic-eden": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f",
+    "7e319ee"
+   ],
+   "families": []
+  },
+  "velvet-v3": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "mochifi": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "yieldflow-yield-farming": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "theoriq-alphavault-eth": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "sir": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "pstake-lsd": {
+   "first_delivered_in": "2ce88d1",
+   "first_subject": "Validate the ranking model and measure custody exposure separately",
+   "runs": [
+    "2ce88d1",
+    "5a3468f"
+   ],
+   "families": []
+  },
+  "smardex-amm": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "kyberswap-elastic": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "moneyfi": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "varen": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "elk": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "sectorone-dlmm": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "hunny-finance": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "basedbid": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "landshare": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "treedefi": {
+   "first_delivered_in": "7e319ee",
+   "first_subject": "Extend beyond EVM: verify Maya at source, kill the THORChain lead, add 5 families",
+   "runs": [
+    "7e319ee",
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "de1": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "smartcredit": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ORACLE-SPOT-THIN-LIQUIDITY"
+   ]
+  },
+  "krystal-community-vault": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "xtoken": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "clipper": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "antfarm-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "astaria-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "swapr-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "yield-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "mim-swap": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "derive-v1": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "myx-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "bitstable-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "deri-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "saffron-vaults": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "openeden-prism": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "padswap": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "prdt": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "nested": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "geyser": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "orion-pools": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "domani-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "unsheth": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "resonate-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "printr": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "ufarm-digital": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "meter-passport": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "gammaswap-open-interest": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "arch": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "everything": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "wasabi-perps": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "solo-top": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "clearpool-lending": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "mellow-yield": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "gyroscope-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "base-dollar": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "hashflow": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "juicebox-v3": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "ajna-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "cache.gold": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "sablier-legacy": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "mesher": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "niob-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-QUOTE-STALE-ACROSS-OWN-SWAP"
+   ]
+  },
+  "ipor-derivatives": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "babydoge-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "snowswap": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "opium": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "bella-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "cover-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "ammalgam-dlex": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "silo-v3": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "equilibria": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "moonwell-lending": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "privacy-cash": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "mcdex": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "swaap-maker-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "singular-farm": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "yieldnest": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "ankr": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "hop-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "sunx-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "harvest-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "vault-street-primeusd": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "overtime": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "orbit-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "gnosis-protocol-v1": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "sparklend": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "reservoir-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "makina": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "b.protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "wing-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "mountain-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "steer-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "lendflare": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "unitus": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "ichi": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "tau-labs": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "spectra-metavaults-outside-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "nomiswap": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "aave-v1": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "cronos-zkevm-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "asseto-cash+": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "pooltogether-v5": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "peapods-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "yearn-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "kromatika": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "unslashed": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "joe-dex": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "stafi": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "orderly-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "mortgagefi": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "jetfuel-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "savvy": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "otsea": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "swell-earn": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "mero": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "muffin": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "defibox": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "unagii": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "nomad": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "itrust-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "apostro": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "asymmetry-usdaf": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "lucidly-finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "international-meme-fund-v2": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "8lends": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "tidaldex": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "b.protocol-curator": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "dsf.finance": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "hydt-protocol": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "steakhut-liquidity": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "bearnfi": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "bima-cdp": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "axelar-cross-chain": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "sigma-money": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "adi-bridge": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "credit-coop": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "nucleus": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "threshold-thusd": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "thedeep": {
+   "first_delivered_in": "1ad898f",
+   "first_subject": "Never hand over the same protocol twice",
+   "runs": [
+    "1ad898f"
+   ],
+   "families": []
+  },
+  "yam-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "mummy-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "keep3r-network": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "cozy-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "sommelier": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "venus-isolated-pools": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "clovis": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "thesauros": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "tokenlon-amm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "jpegd": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "onx-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "theoriq-gold-vault": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "penpie": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "cryptex-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "sudoswap-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "peakdefi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "cana-holdings-california-carbon-credits": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "umami-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "tanken-capital": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "swellchain-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "maxshot": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "alongside": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-CREDIT-NOT-RECEIVED"
+   ]
+  },
+  "revert-compoundor": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "fira": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "insuredao": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "SECRET-EMBEDDED-IN-PUBLIC-CODE-AS-AUTH"
+   ]
+  },
+  "ezmanager": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "mayan-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "rezerve-money": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "mint-club-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "unifarm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "mitosis": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "delv-yield": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "union-protocol": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "dyson": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "electra": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "indexed-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "yay!": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "moremarkets.xyz": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "cvi-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "superreturn": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "plutusdao": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "altitude.fi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "derivadex": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "voltz": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "immutablex": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "amphor": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "skate-fi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "dfx-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "yellow": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "flying-tulip-ftusd": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "b-lucky": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "fortunafi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "sector-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "chainport": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "hyperjump": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "biswap-v3": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "keep-network": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY"
+   ]
+  },
+  "jones-dao": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "sherlock": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "usdfi-lending": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "exactly": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "zerolend-lending": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "easedefi.org": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "sushi-bentobox": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "inverse-finance-firm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "king-protocol": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "dodo-amm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "alphax": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "ultrayield-vaults": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "nerona": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "bancor-v3": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "sushiswap": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "conduit-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "frax-swap": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "byzanlink-rwa-markets": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "balancer-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "interest-protocol": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "morph-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "tangent-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "joe-v2.1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "dydx-v3": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "apeswap-amm": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "revault": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "silo-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "royco-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "deltaprime": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "reflexer": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "chamber-vaults": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "kinza-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "extra-finance-leverage-farming": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "cove-boosties": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "degenprime": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "muscadine": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "puffer-unifi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "autopilot": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "snuggle": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "royco-v1": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "premia-v3": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "rumpel-labs": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "anvil": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "dtrinity-dusd": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "elfi-protocol": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "arcadia-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "rank-trading": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "ronin-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "shape-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "cega-v2": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "basalt-vault": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "quickswap-v4": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "bakerfi": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "fractional-art": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "liquid-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "mezo-bridge": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "zoo-finance": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "singularx": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "anthias-labs": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "katana-pre-launch": {
+   "first_delivered_in": "6e7df7a",
+   "first_subject": "New run: 60 fresh candidates, and chain priority measured instead of assumed",
+   "runs": [
+    "6e7df7a"
+   ],
+   "families": []
+  },
+  "secured-finance-lending": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "alvara": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "airpuff": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "volmex": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "sera": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "legion": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "alcum": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "more-vaults": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "apy-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "metronome-v1": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "wrap-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "unipower": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "bridgers": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "halodao": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "origin-dollar": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "hidden-hand": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "PROOF-VERIFICATION-BYPASSED"
+   ]
+  },
+  "vest-markets": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "octus-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "level": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "zkcandy-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "tymio": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "flexa": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "felix-usdhl": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "nocturne": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "demeter": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "the-tokenized-bitcoin": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "gmd-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "synthetix-v4": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "lynx": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "PROOF-VERIFICATION-BYPASSED"
+   ]
+  },
+  "injective-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "bunicorn": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "etherfuse": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "dango-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "pepu-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "hats.v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "xave-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "alchemist": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "rollx": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "aarna-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS"
+   ]
+  },
+  "hyperdrive": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "shardingdao": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "apeswap-lending": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "rosen-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "almanak": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "maxapy": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "gudchain": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "apex-pro": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "bundles": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "opyn-convexity": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "subfrost": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "swerve": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "creamswap": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "tanx.fi": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "cvault-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "cyclone": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "basis-cash": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "yfii": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "impermax-v3": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "fyde-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+   ]
+  },
+  "raindex": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "rysk-v1": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "charm-finance-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "factor-leverage-vault": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "swinghook": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "rise-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "zebradao": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "ea-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "yamato-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "bob-fusion": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "9inch-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "tprotocol-v1": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "alphix": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "gremlix": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "bondlink-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "universe-xyz": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "uncx-network-v4": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "maverick-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+   ]
+  },
+  "mycelium-perpetual-pools": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "btcd": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "zircuit-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "parallel-protocol-v3": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "dexfi-aggregator": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "outcome-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-HARDCODED-PEG-REDEMPTION"
+   ]
+  },
+  "sorare-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "snowbl-capital": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "mars-poolin": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "rainbow-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "latch": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "panoptic-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "untangled-vault": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "arca-labs-arcoin": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "flat-money-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "eth-strategy": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "inverse-finance-frontier": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "apechain-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "pay-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY"
+   ]
+  },
+  "ratex-dex": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-SIGN-OR-BOUND-CHECK-MISSING"
+   ]
+  },
+  "mars-ecosystem": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "gondi-v3": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "ztln-p": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "elysium-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "antarctic": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "nuva": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "morpho-midnight": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "peridot": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "cat-in-a-box": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "radpie": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "ample": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "spot-cash": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "citrea-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "PROOF-VERIFICATION-BYPASSED"
+   ]
+  },
+  "ribbon-earn": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "baseline-protocol": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "SIG-VERIFIER-DEFEATABLE"
+   ]
+  },
+  "sovryn-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "stakestone-berachain-vault": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "decentralized-euro": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "governor-dao": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "angstrom": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "hlp0": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "usual-eth0": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "rho-x": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "limitless-exchange": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "reya-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "gravity-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "AUTH-ZERO-ADDRESS-ACCEPTED"
+   ]
+  },
+  "superfund": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "3f-mutual": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "defi-franc": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "boba-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "xsigma": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "orion-liquidity-nodes": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "lybra-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "fraxlend": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "aegis-markets": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "bob-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "nsure": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "cbridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "ekubo": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "mento-v2": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "juicebox-v1": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "origin-arm": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "pyreswap": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "native-credit-pool": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "extra-finance-vaults": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DONATION-UNACCOUNTED-BALANCE"
+   ]
+  },
+  "kasu": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-DUPLICATE-ID-ACCUMULATION"
+   ]
+  },
+  "solv-rwa": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "UPGRADE-INITIALIZER-REACHABLE-LIVE"
+   ]
+  },
+  "block-analitica": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "matrixdock-stbt": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED"
+   ]
+  },
+  "switcheo-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "megaeth-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "goose": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL"
+   ]
+  },
+  "fuel-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "jaypeggers": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "syntetika": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ACC-NAV-SHAREPRICE-MANIPULABLE"
+   ]
+  },
+  "blur-bids": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "sx-rollup-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "arbitrum-nova-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "powh3d": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "wrapped": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "belt-finance": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "ORACLE-VAULT-SHARE-RATE-AS-SPOT-PRICE"
+   ]
+  },
+  "taiko-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "tokenstore": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "etherflip": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "paradex-bridge": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET"
+   ]
+  },
+  "moonwell-vaults": {
+   "first_delivered_in": "693e2ed",
+   "first_subject": "Screen the families that actually cause the loss, and size the list by evidence",
+   "runs": [
+    "693e2ed"
+   ],
+   "families": [
+    "BRIDGE-MESSAGE-NOT-BOUND-TO-SOURCE"
+   ]
+  }
+ }
+}
