@@ -1,9 +1,9 @@
 {
  "chain": "mainnet",
  "screened": 4947,
- "covered": 4762,
- "missing": 185,
- "empty_contract_senders": 8,
+ "covered": 4947,
+ "missing": 0,
+ "empty_code": 8,
  "hits": [
   {
    "oapp": "0xe97493f0999f14d0f38293b55a316cf22af0b53c",

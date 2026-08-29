@@ -27,5 +27,9 @@ exclusion set** (all prior pushes) before it is written.
 |---|---|---|---|
 | `DISC-20260829-001-layerzero-oapp-delegate-hijack-screen.md` | LayerZero OApp unprivileged-arbitrary-call → delegate-hijack screen (SAND class) across 8,215 OApps on ETH+Base | EVM screen | **clean negative** — no live un-hit unprivileged instance; SAND contained; detector left standing |
 | `DISC-20260829-002-oft-unbacked-mint-recurring-class.md` | The recurring $300M+ LayerZero-OFT unbacked-mint class (SAND / KelpDAO / StakeDAO) and the on-chain config that stops it | forward intelligence + detector spec | in-scope sub-screen (SAND shape) done in DISC-001; delegate/DVN sub-screens specified, not yet run |
+| **`../CANDIDATES_TO_CHECK.md`** | **39 non-repeating protocols to check**, grouped by the 6-month incident each echoes (Arrakis / CometDEX / Moonwell / Sandbox-Allbridge-warp / KelpDAO / Term) | **shortlist of leads** | live-TVL-verified, band-filtered, all dedup-cleared vs the exclusion set; per-row decisive check |
+
+> The 39 candidates in `../CANDIDATES_TO_CHECK.md` have been folded into `_exclusion_set.json` (now 847
+> names), so the next run will not re-deliver them. Backing data: `DISC-20260829-003-candidates.json`.
 
 _The exclusion set is a snapshot in `_exclusion_set.json`; regenerate it when new pushes land._
