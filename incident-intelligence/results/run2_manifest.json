@@ -1,0 +1,33 @@
+{
+ "run": "run2",
+ "generated_utc": "2026-08-29T05:49:54Z",
+ "pinned": {"ethereum": 25858924, "base": 50596624},
+ "chain_access": "read-only",
+ "artifacts": {
+  "crawl_log": "sources/slowmist_run2/crawl_log_all.json",
+  "parsed_rows": "sources/slowmist_run2/parsed_rows_all.json",
+  "fresh_rows": "sources/slowmist_run2/fresh_rows.json",
+  "fresh_incidents_classified": "incidents/run2_fresh.jsonl",
+  "candidates": "results/run2_fresh_candidates.md",
+  "new_families": "families/run2_new_families.json",
+  "arrakis_impl_source": "sources/arrakis/impl_flat.sol",
+  "arrakis_mint_burn_extract": "sources/arrakis/mint_burn_slot0_extract.sol",
+  "arrakis_vaults": "sources/arrakis/vaults.json",
+  "arrakis_vault_tvl": "sources/arrakis/vault_tvl.json",
+  "sandbox_oft_source": "sources/sandbox/sand_base_flat.sol",
+  "sandbox_approveandcall_extract": "sources/sandbox/approveAndCall_extract.sol"
+ },
+ "evidence_tags": {
+  "deployment_verified": [
+   "sources/arrakis/impl_flat.sol (Etherscan verified source, ArrakisVaultV1 impl 0xd68b055...)",
+   "sources/arrakis/vaults.json (on-chain factory enumeration + EIP-1967 impl slot reads)",
+   "sources/arrakis/vault_tvl.json (on-chain getUnderlyingBalances + DefiLlama current prices)",
+   "sources/sandbox/sand_base_flat.sol (Basescan verified source, OFTSand 0xac531Eb2...)"
+  ],
+  "reference_only": [
+   "incident descriptions (SlowMist index) and public postmortem articles",
+   "Comet v1 top-level swap (public GitHub source; not fork-verified)",
+   "Avici/Rain mechanism (public analyses; Solana program not decompiled here)"
+  ]
+ }
+}
