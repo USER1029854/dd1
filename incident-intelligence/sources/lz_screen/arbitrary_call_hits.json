@@ -1,0 +1,18 @@
+[
+ {
+  "oapp": "0xe97493f0999f14d0f38293b55a316cf22af0b53c",
+  "delegate": "0x0e43df9f40cc6eed3ec70ea41d6f34329fe75986",
+  "selectors": [
+   "execute_ab"
+  ],
+  "codelen": 27392
+ },
+ {
+  "oapp": "0xd3e536636ac493b9bf1f80de59dacf120bd74652",
+  "delegate": "0x0e43df9f40cc6eed3ec70ea41d6f34329fe75986",
+  "selectors": [
+   "execute_ab"
+  ],
+  "codelen": 27392
+ }
+]

@@ -1,0 +1,5 @@
+pass0: covered 411/4947
+pass1: covered 753/4947
+pass2: covered 1660/4947
+pass3: covered 2406/4947
+DONE [mainnet] covered=2406/4947 empty=2545 HITS=0 {}

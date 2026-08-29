@@ -1,0 +1,5 @@
+pass0: covered 974/3453
+pass1: covered 1451/3453
+pass2: covered 1872/3453
+pass3: covered 2247/3453
+DONE [base] covered=2247/3453 empty=1207 HITS=2 {'approveAndCall': 1, 'paidCall': 1, 'execute_ab': 1}
