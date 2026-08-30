@@ -1,0 +1,1442 @@
+[
+ {
+  "name": "Arrakis V2",
+  "slug": "arrakis-v2",
+  "category": "Liquidity Manager",
+  "chains": "Ethereum,Polygon",
+  "tvl": 152446.7405842973,
+  "note": "unaudited",
+  "tvl_head": 155454.093468784
+ },
+ {
+  "name": "PacaSwap Bridge",
+  "slug": "pacaswap-bridge",
+  "category": "Bridge",
+  "chains": "Constellation",
+  "tvl": 328687.00014058204,
+  "note": "unaudited",
+  "tvl_head": 282557.49593301397
+ },
+ {
+  "name": "MEV Capital",
+  "slug": "mev-capital",
+  "category": "Risk Curators",
+  "chains": "Ethereum,Hyperliquid L1",
+  "tvl": 11952318.894561918,
+  "note": "unaudited; orc:RedStone,Chronicle",
+  "tvl_head": 11863463.757757574
+ },
+ {
+  "name": "GoldFinger",
+  "slug": "goldfinger",
+  "category": "RWA",
+  "chains": "Binance",
+  "tvl": 23799557.34761747,
+  "note": "",
+  "tvl_head": 23804098.88272428
+ },
+ {
+  "name": "Youves",
+  "slug": "youves",
+  "category": "Synthetics",
+  "chains": "Tezos",
+  "tvl": 16467963.80353182,
+  "note": "orc:Acurast",
+  "tvl_head": 16333873.152929487
+ },
+ {
+  "name": "xExchange",
+  "slug": "xexchange",
+  "category": "Dexs",
+  "chains": "Elrond",
+  "tvl": 3648379,
+  "note": "unaudited",
+  "tvl_head": 3790283
+ },
+ {
+  "name": "Swell Liquid Restaking",
+  "slug": "swell-liquid-restaking",
+  "category": "Liquid Restaking",
+  "chains": "Ethereum",
+  "tvl": 29666479.553911284,
+  "note": "",
+  "tvl_head": 29825971.54418737
+ },
+ {
+  "name": "xALGO Liquid Staking",
+  "slug": "xalgo-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Algorand",
+  "tvl": 25798016.401452053,
+  "note": "orc:Internal",
+  "tvl_head": 24489419.954807118
+ },
+ {
+  "name": "Feather",
+  "slug": "feather",
+  "category": "Risk Curators",
+  "chains": "Sei,Celo",
+  "tvl": 13652853.854242917,
+  "note": "unaudited",
+  "tvl_head": 13520223.46566755
+ },
+ {
+  "name": "Fomo3D",
+  "slug": "fomo3d",
+  "category": "Farm",
+  "chains": "Ethereum",
+  "tvl": 2888053.180768451,
+  "note": "unaudited",
+  "tvl_head": 2928783.624662487
+ },
+ {
+  "name": "Swaap Maker V1",
+  "slug": "swaap-maker-v1",
+  "category": "Dexs",
+  "chains": "Polygon",
+  "tvl": 106480.90170629218,
+  "note": "",
+  "tvl_head": 107779.40319136874
+ },
+ {
+  "name": "Lista RWA",
+  "slug": "lista-rwa",
+  "category": "RWA",
+  "chains": "Binance,Ethereum",
+  "tvl": 4066359.304766928,
+  "note": "unaudited",
+  "tvl_head": 4066609.628763796
+ },
+ {
+  "name": "Pyron",
+  "slug": "pyron",
+  "category": "Lending",
+  "chains": "Fogo",
+  "tvl": 862339.1673670136,
+  "note": "",
+  "tvl_head": 727200.5213881223
+ },
+ {
+  "name": "Streamflow",
+  "slug": "streamflow",
+  "category": "Payments",
+  "chains": "Solana,Aptos",
+  "tvl": 2784118.5869560624,
+  "note": "",
+  "tvl_head": 7879404.568967934
+ },
+ {
+  "name": "3F",
+  "slug": "3f",
+  "category": "RWA Lending",
+  "chains": "Ethereum",
+  "tvl": 29170384.835695233,
+  "note": "unaudited",
+  "tvl_head": 29201250.006644774
+ },
+ {
+  "name": "Overnight Finance",
+  "slug": "overnight-finance",
+  "category": "CDP",
+  "chains": "Blast,Base",
+  "tvl": 10021853.443010524,
+  "note": "",
+  "tvl_head": 10018919.695553523
+ },
+ {
+  "name": "SettleTON",
+  "slug": "settleton",
+  "category": "Yield",
+  "chains": "TON",
+  "tvl": 83499.53750609799,
+  "note": "unaudited",
+  "tvl_head": 83499.53750609799
+ },
+ {
+  "name": "Big Data Protocol",
+  "slug": "big-data-protocol",
+  "category": "Yield",
+  "chains": "Ethereum",
+  "tvl": 69335.09767572199,
+  "note": "unaudited",
+  "tvl_head": 74505.76097239937
+ },
+ {
+  "name": "TanX.fi",
+  "slug": "tanx-fi",
+  "category": "Dexs",
+  "chains": "Ethereum,Arbitrum",
+  "tvl": 284190.3277903003,
+  "note": "unaudited",
+  "tvl_head": 285201.98624761717
+ },
+ {
+  "name": "GLIF",
+  "slug": "glif",
+  "category": "Liquid Staking",
+  "chains": "Filecoin,Base",
+  "tvl": 22278937.40367778,
+  "note": "unaudited",
+  "tvl_head": 19779136.165526833
+ },
+ {
+  "name": "SeaFi",
+  "slug": "seafi",
+  "category": "Yield",
+  "chains": "Avalanche",
+  "tvl": 219736.90028386444,
+  "note": "",
+  "tvl_head": 214035.64363096302
+ },
+ {
+  "name": "Meridian AMM",
+  "slug": "meridian-amm",
+  "category": "Dexs",
+  "chains": "Movement",
+  "tvl": 286658.2377954029,
+  "note": "unaudited",
+  "tvl_head": 282396.7865041329
+ },
+ {
+  "name": "Aera V2",
+  "slug": "aera-v2",
+  "category": "Onchain Capital Allocator",
+  "chains": "Ethereum,Base",
+  "tvl": 41657387.074801154,
+  "note": "orc:Chainlink",
+  "tvl_head": 42743052.6854358
+ },
+ {
+  "name": "Oxygen",
+  "slug": "oxygen",
+  "category": "Lending",
+  "chains": "Solana",
+  "tvl": 55916.399476257,
+  "note": "unaudited",
+  "tvl_head": 55916.399476257
+ },
+ {
+  "name": "Circuit",
+  "slug": "circuit",
+  "category": "CDP",
+  "chains": "Chia",
+  "tvl": 219717.59155600332,
+  "note": "",
+  "tvl_head": 201179.79477207176
+ },
+ {
+  "name": "mStable CDP",
+  "slug": "mstable-cdp",
+  "category": "CDP",
+  "chains": "Ethereum,Polygon",
+  "tvl": 3011414.82518248,
+  "note": "",
+  "tvl_head": 3013142.656669485
+ },
+ {
+  "name": "Mento V3",
+  "slug": "mento-v3",
+  "category": "Dexs",
+  "chains": "Monad,Celo",
+  "tvl": 4238270.849499598,
+  "note": "orc:Chainlink",
+  "tvl_head": 4295100.030119318
+ },
+ {
+  "name": "RealtyX",
+  "slug": "realtyx",
+  "category": "RWA",
+  "chains": "Base,Plume Mainnet",
+  "tvl": 1021632.1012220529,
+  "note": "",
+  "tvl_head": 1026839.6568624359
+ },
+ {
+  "name": "Evedex",
+  "slug": "evedex",
+  "category": "Derivatives",
+  "chains": "Arbitrum,Eventum",
+  "tvl": 2981610.526963085,
+  "note": "unaudited",
+  "tvl_head": 3360442.4416106967
+ },
+ {
+  "name": "Awaken Swap",
+  "slug": "awaken-swap",
+  "category": "Dexs",
+  "chains": "aelf",
+  "tvl": 4616883.980138085,
+  "note": "unaudited",
+  "tvl_head": 4617665.843356575
+ },
+ {
+  "name": "LUSD ChickenBonds",
+  "slug": "lusd-chickenbonds",
+  "category": "Yield Aggregator",
+  "chains": "Ethereum",
+  "tvl": 1507529.6644028754,
+  "note": "",
+  "tvl_head": 1480068.6609023947
+ },
+ {
+  "name": "GrowiHF",
+  "slug": "growihf",
+  "category": "Yield",
+  "chains": "Hyperliquid L1,Hibachi",
+  "tvl": 9651609.008331586,
+  "note": "unaudited",
+  "tvl_head": 10223207.328826742
+ },
+ {
+  "name": "CaviarNine Shape Liquidity",
+  "slug": "caviarnine-shape-liquidity",
+  "category": "Dexs",
+  "chains": "Radix",
+  "tvl": 73905.84462440027,
+  "note": "unaudited",
+  "tvl_head": 74332.28878447463
+ },
+ {
+  "name": "PepeTeam sWAVES",
+  "slug": "pepeteam-swaves",
+  "category": "Liquid Staking",
+  "chains": "Waves",
+  "tvl": 236938.0040676899,
+  "note": "unaudited",
+  "tvl_head": 229933.50623892967
+ },
+ {
+  "name": "Increment Swap",
+  "slug": "increment-swap",
+  "category": "Dexs",
+  "chains": "Flow",
+  "tvl": 1352654.415420745,
+  "note": "",
+  "tvl_head": 1348403.5498259452
+ },
+ {
+  "name": "Lantern Staked SOL",
+  "slug": "lantern-staked-sol",
+  "category": "Liquid Staking",
+  "chains": "Solana",
+  "tvl": 2159008.986733492,
+  "note": "unaudited",
+  "tvl_head": 2175928.294186596
+ },
+ {
+  "name": "Kokoa Finance",
+  "slug": "kokoa-finance",
+  "category": "CDP",
+  "chains": "Klaytn",
+  "tvl": 116130.41279362117,
+  "note": "orc:TWAP",
+  "tvl_head": 110861.27253356166
+ },
+ {
+  "name": "Shido Dex V3",
+  "slug": "shido-dex-v3",
+  "category": "Dexs",
+  "chains": "Shido",
+  "tvl": 512898.9857990712,
+  "note": "",
+  "tvl_head": 512898.9857990712
+ },
+ {
+  "name": "Neptune Finance",
+  "slug": "neptune-finance",
+  "category": "Lending",
+  "chains": "Injective",
+  "tvl": 2339302.838713601,
+  "note": "unaudited; orc:Pyth",
+  "tvl_head": 2417121.9935513115
+ },
+ {
+  "name": "Karura Liquid Staking",
+  "slug": "karura-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Karura",
+  "tvl": 473815.2823540264,
+  "note": "unaudited",
+  "tvl_head": 465078.91871583904
+ },
+ {
+  "name": "Adrena Protocol",
+  "slug": "adrena-protocol",
+  "category": "Derivatives",
+  "chains": "Solana",
+  "tvl": 495138.6471745906,
+  "note": "orc:Chaos,Pyth",
+  "tvl_head": 509322.6960006851
+ },
+ {
+  "name": "RAGE Protocol",
+  "slug": "rage-protocol",
+  "category": "Onchain Capital Allocator",
+  "chains": "Base",
+  "tvl": 274407.4702143827,
+  "note": "",
+  "tvl_head": 387362.34670948127
+ },
+ {
+  "name": "Cauldron",
+  "slug": "cauldron",
+  "category": "Dexs",
+  "chains": "Bitcoincash",
+  "tvl": 854255.4790596595,
+  "note": "unaudited; churn:2",
+  "tvl_head": 770864.6341224272
+ },
+ {
+  "name": "Sonic ICP",
+  "slug": "sonic-icp",
+  "category": "Dexs",
+  "chains": "ICP",
+  "tvl": 3029358.4425017117,
+  "note": "unaudited",
+  "tvl_head": 3029358.4425017117
+ },
+ {
+  "name": "DorkFi",
+  "slug": "dorkfi",
+  "category": "Lending",
+  "chains": "Algorand,Voi Network",
+  "tvl": 215064.78632588408,
+  "note": "",
+  "tvl_head": 208684.1918974929
+ },
+ {
+  "name": "Inertia Bridge",
+  "slug": "inertia-bridge",
+  "category": "Canonical Bridge",
+  "chains": "Initia",
+  "tvl": 198334.30660999444,
+  "note": "unaudited",
+  "tvl_head": 200671.5479849158
+ },
+ {
+  "name": "Virtue",
+  "slug": "virtue",
+  "category": "CDP",
+  "chains": "IOTA",
+  "tvl": 1613188.2632567803,
+  "note": "orc:Pyth",
+  "tvl_head": 412580.1529801478
+ },
+ {
+  "name": "Pondo Protocol",
+  "slug": "pondo-protocol",
+  "category": "Liquid Staking",
+  "chains": "Aleo",
+  "tvl": 425207.88549209514,
+  "note": "unaudited",
+  "tvl_head": 438231.5058092171
+ },
+ {
+  "name": "Uranium.io",
+  "slug": "uranium-io",
+  "category": "RWA",
+  "chains": "Etherlink",
+  "tvl": 7563584.987213811,
+  "note": "unaudited",
+  "tvl_head": 7576804.983563663
+ },
+ {
+  "name": "Rip.xyz",
+  "slug": "rip-xyz",
+  "category": "NFT Automated Strategies",
+  "chains": "Hyperliquid L1",
+  "tvl": 96733.84852259375,
+  "note": "unaudited",
+  "tvl_head": 98635.24791725958
+ },
+ {
+  "name": "Defa By InvoiceMate",
+  "slug": "defa-by-invoicemate",
+  "category": "RWA",
+  "chains": "Stellar,ZIGChain",
+  "tvl": 7188995.334575543,
+  "note": "unaudited",
+  "tvl_head": 7189934.33898672
+ },
+ {
+  "name": "Team Finance",
+  "slug": "team-finance",
+  "category": "Token Locker",
+  "chains": "Ethereum,Binance",
+  "tvl": 45710188.50650269,
+  "note": "",
+  "tvl_head": 45710188.50650269
+ },
+ {
+  "name": "Carbon Defi",
+  "slug": "carbon-defi",
+  "category": "Dexs",
+  "chains": "Ethereum,Sei",
+  "tvl": 1479128.8801471796,
+  "note": "",
+  "tvl_head": 1513531.0312448912
+ },
+ {
+  "name": "Manta Pacific",
+  "slug": "manta-pacific",
+  "category": "Canonical Bridge",
+  "chains": "Ethereum",
+  "tvl": 26050782.239839226,
+  "note": "unaudited",
+  "tvl_head": 25817692.176250435
+ },
+ {
+  "name": "Koi Finance AMM",
+  "slug": "koi-finance-amm",
+  "category": "Dexs",
+  "chains": "zkSync Era",
+  "tvl": 1269187.688596569,
+  "note": "unaudited",
+  "tvl_head": 1274218.9895073073
+ },
+ {
+  "name": "NFT20",
+  "slug": "nft20",
+  "category": "NFT Marketplace",
+  "chains": "Ethereum,Polygon",
+  "tvl": 70907.77416904255,
+  "note": "unaudited",
+  "tvl_head": 70700.1975433854
+ },
+ {
+  "name": "Amnis Finance",
+  "slug": "amnis-finance",
+  "category": "Liquid Staking",
+  "chains": "Aptos",
+  "tvl": 4024498.4890824105,
+  "note": "",
+  "tvl_head": 3434082.3800952584
+ },
+ {
+  "name": "MoneyOnChain",
+  "slug": "moneyonchain",
+  "category": "Dual-Token Stablecoin",
+  "chains": "RSK",
+  "tvl": 21756465.66037448,
+  "note": "",
+  "tvl_head": 21678669.968285166
+ },
+ {
+  "name": "Rocket Vault",
+  "slug": "rocket-vault",
+  "category": "Onchain Capital Allocator",
+  "chains": "Arbitrum",
+  "tvl": 170897.0800000004,
+  "note": "unaudited",
+  "tvl_head": 172320.2100000004
+ },
+ {
+  "name": "1sec",
+  "slug": "1sec",
+  "category": "Bridge",
+  "chains": "ICP,Ethereum",
+  "tvl": 1855325.6449249669,
+  "note": "unaudited",
+  "tvl_head": 2003755.5576171842
+ },
+ {
+  "name": "HypeZion Finance",
+  "slug": "hypezion-finance",
+  "category": "CDP",
+  "chains": "Hyperliquid L1",
+  "tvl": 78258.08405321774,
+  "note": "unaudited",
+  "tvl_head": 73018.8545691349
+ },
+ {
+  "name": "RIF ON CHAIN",
+  "slug": "rif-on-chain",
+  "category": "Dual-Token Stablecoin",
+  "chains": "RSK",
+  "tvl": 24199588.743178252,
+  "note": "",
+  "tvl_head": 21696359.95374989
+ },
+ {
+  "name": "Starke Staked SOL",
+  "slug": "starke-staked-sol",
+  "category": "Liquid Staking",
+  "chains": "Solana",
+  "tvl": 1022621.517577934,
+  "note": "unaudited",
+  "tvl_head": 1153596.160684464
+ },
+ {
+  "name": "Chain Fusion",
+  "slug": "chain-fusion",
+  "category": "Decentralized BTC",
+  "chains": "Bitcoin,Ethereum",
+  "tvl": 24378294.715702645,
+  "note": "",
+  "tvl_head": 24895195.3378528
+ },
+ {
+  "name": "Lisk Bridge",
+  "slug": "lisk-bridge",
+  "category": "Canonical Bridge",
+  "chains": "Ethereum",
+  "tvl": 29778645.48628586,
+  "note": "unaudited",
+  "tvl_head": 34079531.13446228
+ },
+ {
+  "name": "Sceptre Liquid",
+  "slug": "sceptre-liquid",
+  "category": "Liquid Staking",
+  "chains": "Flare",
+  "tvl": 16970332.51637137,
+  "note": "",
+  "tvl_head": 14828219.136715883
+ },
+ {
+  "name": "SomniaLend",
+  "slug": "somnialend",
+  "category": "Lending",
+  "chains": "Somnia",
+  "tvl": 634558.9007272888,
+  "note": "unaudited",
+  "tvl_head": 650768.500315885
+ },
+ {
+  "name": "Bedrock uniIOTX",
+  "slug": "bedrock-uniiotx",
+  "category": "Liquid Staking",
+  "chains": "IoTeX",
+  "tvl": 1214790.1702284229,
+  "note": "",
+  "tvl_head": 1212571.4882360057
+ },
+ {
+  "name": "Phoenix Spot",
+  "slug": "phoenix-spot",
+  "category": "Dexs",
+  "chains": "Solana",
+  "tvl": 1050578.815851377,
+  "note": "unaudited",
+  "tvl_head": 1059546.4669273733
+ },
+ {
+  "name": "Consensus Liquidity DEX",
+  "slug": "consensus-liquidity-dex",
+  "category": "Dexs",
+  "chains": "Klaytn",
+  "tvl": 676995.3842990316,
+  "note": "unaudited",
+  "tvl_head": 639853.4260440753
+ },
+ {
+  "name": "Flamingo Finance",
+  "slug": "flamingo-finance",
+  "category": "Dexs",
+  "chains": "NEO",
+  "tvl": 563099.2798779168,
+  "note": "churn:7",
+  "tvl_head": 590554.5744787278
+ },
+ {
+  "name": "Sudoswap V2",
+  "slug": "sudoswap-v2",
+  "category": "NFT Marketplace",
+  "chains": "Ethereum,Base",
+  "tvl": 684225.4336901143,
+  "note": "",
+  "tvl_head": 683415.5006836179
+ },
+ {
+  "name": "Eclipse Bridge",
+  "slug": "eclipse-bridge",
+  "category": "Canonical Bridge",
+  "chains": "Ethereum",
+  "tvl": 7205331.120738429,
+  "note": "unaudited",
+  "tvl_head": 7217133.598891604
+ },
+ {
+  "name": "Noon",
+  "slug": "noon",
+  "category": "Yield",
+  "chains": "Ethereum,zkSync Era",
+  "tvl": 38412501.6647807,
+  "note": "churn:1",
+  "tvl_head": 38345586.36941609
+ },
+ {
+  "name": "ThalaSwap V2",
+  "slug": "thalaswap-v2",
+  "category": "Dexs",
+  "chains": "Aptos",
+  "tvl": 581646.1280425296,
+  "note": "unaudited",
+  "tvl_head": 586042.5238641906
+ },
+ {
+  "name": "Decibel",
+  "slug": "decibel",
+  "category": "Derivatives",
+  "chains": "Aptos",
+  "tvl": 29817175.038284443,
+  "note": "unaudited",
+  "tvl_head": 29754189.757826407
+ },
+ {
+  "name": "Dual Finance",
+  "slug": "dual-finance",
+  "category": "Options",
+  "chains": "Solana",
+  "tvl": 229999.77313053876,
+  "note": "unaudited; orc:Pyth",
+  "tvl_head": 226179.67737717225
+ },
+ {
+  "name": "BabelFish",
+  "slug": "babelfish",
+  "category": "Bridge",
+  "chains": "RSK",
+  "tvl": 939893.1204999919,
+  "note": "unaudited",
+  "tvl_head": 1056996.451278029
+ },
+ {
+  "name": "Kyan Blue Perps",
+  "slug": "kyan-blue-perps",
+  "category": "Derivatives",
+  "chains": "Arbitrum",
+  "tvl": 80053.20372316329,
+  "note": "unaudited",
+  "tvl_head": 80060.62694589635
+ },
+ {
+  "name": "vfat.io",
+  "slug": "vfat-io",
+  "category": "Yield Aggregator",
+  "chains": "Base,Ethereum",
+  "tvl": 26578605.714242693,
+  "note": "",
+  "tvl_head": 27865648.157913696
+ },
+ {
+  "name": "Chainflip AMM",
+  "slug": "chainflip-amm",
+  "category": "Dexs",
+  "chains": "Chainflip,Ethereum",
+  "tvl": 9534106.207399925,
+  "note": "",
+  "tvl_head": 9534106.207399925
+ },
+ {
+  "name": "xSui",
+  "slug": "xsui",
+  "category": "Liquid Staking",
+  "chains": "Sui",
+  "tvl": 191842.7781654181,
+  "note": "unaudited; fork:SpringSui",
+  "tvl_head": 175402.8299894085
+ },
+ {
+  "name": "BendDAO Lending V1",
+  "slug": "benddao-lending-v1",
+  "category": "NFT Lending",
+  "chains": "Ethereum",
+  "tvl": 666211.0162243029,
+  "note": "orc:NFTOracle,ReserveOracle",
+  "tvl_head": 653384.3839492718
+ },
+ {
+  "name": "StratEx",
+  "slug": "stratex",
+  "category": "Yield Aggregator",
+  "chains": "Base,Flare",
+  "tvl": 277400.7553349416,
+  "note": "unaudited; orc:Chainlink",
+  "tvl_head": 210953.4156326332
+ },
+ {
+  "name": "Ensuro",
+  "slug": "ensuro",
+  "category": "Insurance",
+  "chains": "Ethereum,Polygon",
+  "tvl": 2019753.1452826788,
+  "note": "churn:2",
+  "tvl_head": 2036544.6287050063
+ },
+ {
+  "name": "1inch Swap",
+  "slug": "1inch-swap",
+  "category": "DEX Aggregator",
+  "chains": "Ethereum,Binance",
+  "tvl": 3145949.0215281574,
+  "note": "",
+  "tvl_head": 3167743.813123815
+ },
+ {
+  "name": "Origami Finance",
+  "slug": "origami-finance",
+  "category": "Leveraged Farming",
+  "chains": "Ethereum,Berachain",
+  "tvl": 49394647.61653557,
+  "note": "",
+  "tvl_head": 49394647.61653557
+ },
+ {
+  "name": "Bounce.Tech",
+  "slug": "bounce-tech",
+  "category": "Derivatives",
+  "chains": "Hyperliquid L1",
+  "tvl": 1193975.7258289508,
+  "note": "",
+  "tvl_head": 1037730.0323445236
+ },
+ {
+  "name": "Dano Finance",
+  "slug": "dano-finance",
+  "category": "Dexs",
+  "chains": "Cardano",
+  "tvl": 1074282.3045292934,
+  "note": "",
+  "tvl_head": 3403572.0398990726
+ },
+ {
+  "name": "Zeus Network",
+  "slug": "zeus-network",
+  "category": "Decentralized BTC",
+  "chains": "Bitcoin",
+  "tvl": 3798493.7133326717,
+  "note": "unaudited",
+  "tvl_head": 3798493.7133326717
+ },
+ {
+  "name": "Hashport",
+  "slug": "hashport",
+  "category": "Bridge",
+  "chains": "Ethereum,Hedera",
+  "tvl": 1205756.4339249285,
+  "note": "",
+  "tvl_head": 1148659.3340318014
+ },
+ {
+  "name": "Salvor",
+  "slug": "salvor",
+  "category": "NFT Marketplace",
+  "chains": "Avalanche",
+  "tvl": 339632.4454117367,
+  "note": "",
+  "tvl_head": 314681.36322321865
+ },
+ {
+  "name": "UntitledBank",
+  "slug": "untitledbank",
+  "category": "Lending",
+  "chains": "Soneium",
+  "tvl": 149122.38436775384,
+  "note": "orc:Pyth",
+  "tvl_head": 143969.38642883766
+ },
+ {
+  "name": "Vendor V2",
+  "slug": "vendor-v2",
+  "category": "Lending",
+  "chains": "Base,Arbitrum",
+  "tvl": 678705.1425203449,
+  "note": "orc:Chainlink",
+  "tvl_head": 686790.7685631325
+ },
+ {
+  "name": "Unilend Protocol",
+  "slug": "unilend-protocol",
+  "category": "Lending",
+  "chains": "UNIT0",
+  "tvl": 57851.81933639385,
+  "note": "unaudited; orc:DIA",
+  "tvl_head": 57851.81933639385
+ },
+ {
+  "name": "Y10K Capital",
+  "slug": "y10k-capital",
+  "category": "Risk Curators",
+  "chains": "Ethereum,Sei",
+  "tvl": 32654178.223663807,
+  "note": "unaudited",
+  "tvl_head": 31605113.895828955
+ },
+ {
+  "name": "Lunarbase",
+  "slug": "lunarbase",
+  "category": "Dexs",
+  "chains": "Base,Binance",
+  "tvl": 179682.0593118052,
+  "note": "unaudited",
+  "tvl_head": 155950.52125638354
+ },
+ {
+  "name": "ThetaCash",
+  "slug": "thetacash",
+  "category": "Synthetics",
+  "chains": "Theta",
+  "tvl": 104551.97502787576,
+  "note": "unaudited",
+  "tvl_head": 109321.92400897075
+ },
+ {
+  "name": "Propbase",
+  "slug": "propbase",
+  "category": "RWA",
+  "chains": "Aptos",
+  "tvl": 1355640.4603594225,
+  "note": "",
+  "tvl_head": 1354551.1483429188
+ },
+ {
+  "name": "SMARDEX USDN",
+  "slug": "smardex-usdn",
+  "category": "Basis Trading",
+  "chains": "Ethereum",
+  "tvl": 1517347.7253640997,
+  "note": "unaudited",
+  "tvl_head": 1523931.496606931
+ },
+ {
+  "name": "Turbos",
+  "slug": "turbos",
+  "category": "Dexs",
+  "chains": "Sui",
+  "tvl": 3505413.837381835,
+  "note": "unaudited",
+  "tvl_head": 3391886.347419255
+ },
+ {
+  "name": "SOLID",
+  "slug": "solid",
+  "category": "CDP",
+  "chains": "Terra2",
+  "tvl": 85128.16024733757,
+  "note": "",
+  "tvl_head": 86454.2727349271
+ },
+ {
+  "name": "Alto",
+  "slug": "alto",
+  "category": "CDP",
+  "chains": "Ethereum",
+  "tvl": 284784.3652783451,
+  "note": "orc:Chainlink",
+  "tvl_head": 284784.3652783451
+ },
+ {
+  "name": "Suigar",
+  "slug": "suigar",
+  "category": "Luck Games",
+  "chains": "Sui",
+  "tvl": 121859.51481816867,
+  "note": "",
+  "tvl_head": 117831.60265769476
+ },
+ {
+  "name": "Acre",
+  "slug": "acre",
+  "category": "Yield",
+  "chains": "Ethereum",
+  "tvl": 554978.9607073661,
+  "note": "unaudited",
+  "tvl_head": 561603.6894613307
+ },
+ {
+  "name": "Hakka Finance",
+  "slug": "hakka-finance",
+  "category": "Derivatives",
+  "chains": "Ethereum,Binance",
+  "tvl": 5332715.517942496,
+  "note": "unaudited; orc:Chainlink",
+  "tvl_head": 5410922.49020754
+ },
+ {
+  "name": "Dexalot Portfolio",
+  "slug": "dexalot-portfolio",
+  "category": "Bridge",
+  "chains": "Avalanche,Arbitrum",
+  "tvl": 5916244.829842067,
+  "note": "",
+  "tvl_head": 5513899.583913203
+ },
+ {
+  "name": "VNX",
+  "slug": "vnx",
+  "category": "RWA",
+  "chains": "Solana,Base",
+  "tvl": 5239784.526736558,
+  "note": "",
+  "tvl_head": 5143898.917539361
+ },
+ {
+  "name": "Nucleon",
+  "slug": "nucleon",
+  "category": "Liquid Staking",
+  "chains": "Conflux",
+  "tvl": 650591.0386297045,
+  "note": "",
+  "tvl_head": 610341.9405771531
+ },
+ {
+  "name": "StakePoint",
+  "slug": "stakepoint",
+  "category": "Farm",
+  "chains": "Solana",
+  "tvl": 4106584.045286531,
+  "note": "unaudited",
+  "tvl_head": 4636976.494870689
+ },
+ {
+  "name": "HbarSuite",
+  "slug": "hbarsuite",
+  "category": "Dexs",
+  "chains": "Hedera",
+  "tvl": 3505041,
+  "note": "",
+  "tvl_head": 3519087
+ },
+ {
+  "name": "SundaeSwap V2",
+  "slug": "sundaeswap-v2",
+  "category": "Dexs",
+  "chains": "Cardano",
+  "tvl": 558848.9703105973,
+  "note": "",
+  "tvl_head": 497702.55606168346
+ },
+ {
+  "name": "AstridDAO",
+  "slug": "astriddao",
+  "category": "CDP",
+  "chains": "Astar",
+  "tvl": 179194.79658497122,
+  "note": "orc:DIA",
+  "tvl_head": 159531.91673935685
+ },
+ {
+  "name": "Spectra V2",
+  "slug": "spectra-v2",
+  "category": "Yield",
+  "chains": "Flare,Hemi",
+  "tvl": 38253194.2554615,
+  "note": "unaudited; churn:1",
+  "tvl_head": 30782447.65675433
+ },
+ {
+  "name": "Chainflip Lending",
+  "slug": "chainflip-lending",
+  "category": "Lending",
+  "chains": "Chainflip",
+  "tvl": 4700828.545715149,
+  "note": "orc:Chainlink",
+  "tvl_head": 4766249.07307594
+ },
+ {
+  "name": "Beradrome",
+  "slug": "beradrome",
+  "category": "Yield",
+  "chains": "Berachain",
+  "tvl": 467152.80565428373,
+  "note": "",
+  "tvl_head": 462606.10619738494
+ },
+ {
+  "name": "Splash Protocol",
+  "slug": "splash-protocol",
+  "category": "Dexs",
+  "chains": "Cardano",
+  "tvl": 5017262.12936044,
+  "note": "unaudited",
+  "tvl_head": 3185270.457174087
+ },
+ {
+  "name": "Plasma One",
+  "slug": "plasma-one",
+  "category": "Crypto Card Issuer",
+  "chains": "Plasma",
+  "tvl": 10399313.764407218,
+  "note": "unaudited",
+  "tvl_head": 10519800.883911306
+ },
+ {
+  "name": "Tinlake",
+  "slug": "tinlake",
+  "category": "RWA Lending",
+  "chains": "Ethereum",
+  "tvl": 61316.7895198903,
+  "note": "",
+  "tvl_head": 61308.9334255512
+ },
+ {
+  "name": "SUN.io",
+  "slug": "sun-io",
+  "category": "Dexs",
+  "chains": "Tron",
+  "tvl": 779064.2488107004,
+  "note": "",
+  "tvl_head": 778540.338438146
+ },
+ {
+  "name": "Momentum",
+  "slug": "momentum",
+  "category": "Dexs",
+  "chains": "Sui",
+  "tvl": 4274045.217294951,
+  "note": "",
+  "tvl_head": 4014820.2723892056
+ },
+ {
+  "name": "Tardly",
+  "slug": "tardly",
+  "category": "Yield Lottery",
+  "chains": "Algorand",
+  "tvl": 65024.44727243765,
+  "note": "unaudited",
+  "tvl_head": 61926.994782299975
+ },
+ {
+  "name": "Crypto.com Liquid Staking",
+  "slug": "crypto-com-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Cronos,Solana",
+  "tvl": 29469355.794817783,
+  "note": "unaudited",
+  "tvl_head": 30228040.08301087
+ },
+ {
+  "name": "Helix Spot",
+  "slug": "helix-spot",
+  "category": "Dexs",
+  "chains": "Injective",
+  "tvl": 707042.7287660651,
+  "note": "unaudited",
+  "tvl_head": 665937.3440025846
+ },
+ {
+  "name": "Butter Network",
+  "slug": "butter-network",
+  "category": "Cross Chain Bridge",
+  "chains": "Tron,Ethereum",
+  "tvl": 1417595.9030916526,
+  "note": "unaudited",
+  "tvl_head": 1501536.4331248915
+ },
+ {
+  "name": "Ethena tsUSDe",
+  "slug": "ethena-tsusde",
+  "category": "Yield",
+  "chains": "TON",
+  "tvl": 3290500.892424205,
+  "note": "unaudited",
+  "tvl_head": 3220656.9241092885
+ },
+ {
+  "name": "Harbor",
+  "slug": "harbor",
+  "category": "Yield",
+  "chains": "Ethereum,MegaETH",
+  "tvl": 115455.99814507818,
+  "note": "churn:2; fork:fx Protocol; orc:Harbor,Chainlink",
+  "tvl_head": 116540.43483445869
+ },
+ {
+  "name": "Ring Few",
+  "slug": "ring-few",
+  "category": "Bridge",
+  "chains": "Ethereum,Hyperliquid L1",
+  "tvl": 45495392.99056104,
+  "note": "",
+  "tvl_head": 44385248.63784513
+ },
+ {
+  "name": "Bumpin Trade",
+  "slug": "bumpin-trade",
+  "category": "Derivatives",
+  "chains": "Solana",
+  "tvl": 4228169.89120772,
+  "note": "unaudited",
+  "tvl_head": 4369199.0681923
+ },
+ {
+  "name": "Polynomial Liquidity",
+  "slug": "polynomial-liquidity",
+  "category": "Dexs",
+  "chains": "Polynomial",
+  "tvl": 494536.7567728996,
+  "note": "unaudited; churn:1",
+  "tvl_head": 494536.7567728996
+ },
+ {
+  "name": "HiYield",
+  "slug": "hiyield",
+  "category": "RWA",
+  "chains": "Avalanche,Canto",
+  "tvl": 2739954.019121193,
+  "note": "unaudited",
+  "tvl_head": 2740955.804871193
+ },
+ {
+  "name": "Pumex",
+  "slug": "pumex",
+  "category": "DEX Aggregator",
+  "chains": "Injective",
+  "tvl": 1279006.693221903,
+  "note": "unaudited",
+  "tvl_head": 1819256.9369987645
+ },
+ {
+  "name": "InceptionLRT (Isolated Restaking)",
+  "slug": "inceptionlrt-isolated-restaking",
+  "category": "Liquid Restaking",
+  "chains": "Ethereum",
+  "tvl": 6739228.951135085,
+  "note": "unaudited; churn:2",
+  "tvl_head": 6803532.842006289
+ },
+ {
+  "name": "StableHodl",
+  "slug": "stablehodl",
+  "category": "Yield",
+  "chains": "Polygon,Ethereum",
+  "tvl": 6362853.597004895,
+  "note": "unaudited",
+  "tvl_head": 6363809.871586265
+ },
+ {
+  "name": "Kizzy",
+  "slug": "kizzy",
+  "category": "Prediction Market",
+  "chains": "Monad",
+  "tvl": 76950.97540414897,
+  "note": "unaudited",
+  "tvl_head": 72705.9095967479
+ },
+ {
+  "name": "Agua",
+  "slug": "agua",
+  "category": "Onchain Capital Allocator",
+  "chains": "Ethereum,Monad",
+  "tvl": 8843127.941972453,
+  "note": "",
+  "tvl_head": 8108864.36793057
+ },
+ {
+  "name": "Hibachi Bridge",
+  "slug": "hibachi-bridge",
+  "category": "Canonical Bridge",
+  "chains": "Arbitrum",
+  "tvl": 5243147.670237124,
+  "note": "unaudited",
+  "tvl_head": 5228213.742115715
+ },
+ {
+  "name": "Rezerve Lending",
+  "slug": "rezerve-lending",
+  "category": "Lending",
+  "chains": "Ethereum",
+  "tvl": 1413024.755152294,
+  "note": "unaudited; orc:DIA",
+  "tvl_head": 1419149.461491289
+ },
+ {
+  "name": "Excellar",
+  "slug": "excellar",
+  "category": "Basis Trading",
+  "chains": "Stellar",
+  "tvl": 184188.9950349,
+  "note": "unaudited",
+  "tvl_head": 184188.9950349
+ },
+ {
+  "name": "DipCoin Vault",
+  "slug": "dipcoin-vault",
+  "category": "Yield",
+  "chains": "Sui",
+  "tvl": 1591478.7525727835,
+  "note": "churn:1",
+  "tvl_head": 1591459.2062035932
+ },
+ {
+  "name": "Verio",
+  "slug": "verio",
+  "category": "Liquid Staking",
+  "chains": "Story",
+  "tvl": 2936633.042313078,
+  "note": "unaudited",
+  "tvl_head": 2849818.2856936725
+ },
+ {
+  "name": "FluidTokens",
+  "slug": "fluidtokens",
+  "category": "Lending",
+  "chains": "Cardano",
+  "tvl": 2780339.952577239,
+  "note": "unaudited; churn:2",
+  "tvl_head": 2693636.4946522047
+ },
+ {
+  "name": "Ambient",
+  "slug": "ambient",
+  "category": "Dexs",
+  "chains": "Scroll,Blast",
+  "tvl": 2258778.4130716743,
+  "note": "unaudited",
+  "tvl_head": 2264286.417282034
+ },
+ {
+  "name": "DefiChain DEX",
+  "slug": "defichain-dex",
+  "category": "Dexs",
+  "chains": "DefiChain",
+  "tvl": 1014031.451835668,
+  "note": "",
+  "tvl_head": 1026980.8868147021
+ },
+ {
+  "name": "Accumulated Finance Lending",
+  "slug": "accumulated-finance-lending",
+  "category": "Lending",
+  "chains": "Bitkub,Coti",
+  "tvl": 154376.66339957528,
+  "note": "",
+  "tvl_head": 162036.97048347013
+ },
+ {
+  "name": "0x0.ai",
+  "slug": "0x0-ai",
+  "category": "Privacy",
+  "chains": "Ethereum",
+  "tvl": 253253.15024815217,
+  "note": "",
+  "tvl_head": 256994.01968808187
+ },
+ {
+  "name": "Hegic",
+  "slug": "hegic",
+  "category": "Options",
+  "chains": "Arbitrum,Ethereum",
+  "tvl": 10058444.001464138,
+  "note": "",
+  "tvl_head": 10253990.005413985
+ },
+ {
+  "name": "Scroll Bridge",
+  "slug": "scroll-bridge",
+  "category": "Canonical Bridge",
+  "chains": "Ethereum",
+  "tvl": 39723074.250700876,
+  "note": "unaudited",
+  "tvl_head": 39131465.38432005
+ },
+ {
+  "name": "Bancor V2.1",
+  "slug": "bancor-v2-1",
+  "category": "Dexs",
+  "chains": "Ethereum",
+  "tvl": 9827539.87922932,
+  "note": "churn:2",
+  "tvl_head": 9780272.86351034
+ },
+ {
+  "name": "FILLiquid",
+  "slug": "filliquid",
+  "category": "Liquid Staking",
+  "chains": "Binance,Filecoin",
+  "tvl": 193273.25270714745,
+  "note": "unaudited",
+  "tvl_head": 173344.80179328742
+ },
+ {
+  "name": "Port Finance",
+  "slug": "port-finance",
+  "category": "Lending",
+  "chains": "Solana",
+  "tvl": 194262.98781194692,
+  "note": "orc:Pyth",
+  "tvl_head": 215420.22503801773
+ },
+ {
+  "name": "Toros",
+  "slug": "toros",
+  "category": "Yield",
+  "chains": "Arbitrum,Optimism",
+  "tvl": 7592969.125409122,
+  "note": "churn:10; orc:Chainlink",
+  "tvl_head": 7633786.88423723
+ },
+ {
+  "name": "Bracket Vaults",
+  "slug": "bracket-vaults",
+  "category": "Onchain Capital Allocator",
+  "chains": "Ethereum",
+  "tvl": 641168.8584190861,
+  "note": "",
+  "tvl_head": 496862.5881155528
+ },
+ {
+  "name": "Curve LlamaLend V2",
+  "slug": "curve-llamalend-v2",
+  "category": "Lending",
+  "chains": "Optimism",
+  "tvl": 2258823.44434935,
+  "note": "unaudited; churn:1",
+  "tvl_head": 1972557.83528947
+ },
+ {
+  "name": "SpringSui Ecosystem",
+  "slug": "springsui-ecosystem",
+  "category": "Liquid Staking",
+  "chains": "Sui",
+  "tvl": 597589.1265513414,
+  "note": "",
+  "tvl_head": 519920.17967892357
+ },
+ {
+  "name": "Aftermath afSUI",
+  "slug": "aftermath-afsui",
+  "category": "Liquid Staking",
+  "chains": "Sui",
+  "tvl": 2616286.5017385664,
+  "note": "unaudited",
+  "tvl_head": 2351083.703174598
+ },
+ {
+  "name": "CACHE.Gold",
+  "slug": "cache-gold",
+  "category": "RWA",
+  "chains": "Ethereum",
+  "tvl": 592014.615057525,
+  "note": "",
+  "tvl_head": 572940.4540189059
+ },
+ {
+  "name": "Elix.fi",
+  "slug": "elix-fi",
+  "category": "Dexs",
+  "chains": "Somnia",
+  "tvl": 55375.47129515063,
+  "note": "unaudited",
+  "tvl_head": 55972.29688367255
+ },
+ {
+  "name": "ICPSwap",
+  "slug": "icpswap",
+  "category": "Dexs",
+  "chains": "ICP",
+  "tvl": 3310938.79593,
+  "note": "unaudited",
+  "tvl_head": 3638017.798426
+ },
+ {
+  "name": "Reactor DEX",
+  "slug": "reactor-dex",
+  "category": "Dexs",
+  "chains": "Fuel",
+  "tvl": 1013008.5382293992,
+  "note": "",
+  "tvl_head": 990746.1688833714
+ }
+]
