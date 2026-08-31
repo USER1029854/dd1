@@ -1,0 +1,56 @@
+__NAME__:DummyDiamondImplementation
+{{
+  "language": "Solidity",
+  "sources": {
+    "scripts/generated/DummyDiamondImplementation.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n/**\n * This is a generated dummy diamond implementation for compatibility with\n * etherscan. For full contract implementation, check out the diamond on louper:\n * https://louper.dev/diamond/0xFF091a4FDBcddce68805183dfFdeA47cDbb9fEAC?network=xdai\n */\n\ncontract DummyDiamondImplementation {\n    struct Tuple6871229 {\n        address facetAddress;\n        uint8 action;\n        bytes4[] functionSelectors;\n    }\n\n    struct Tuple1236461 {\n        address facetAddress;\n        bytes4[] functionSelectors;\n    }\n\n    struct Tuple3550792 {\n        uint8 isManaged;\n        uint8 isMintLive;\n        uint8 isBurnLive;\n        uint8 decimals;\n        uint8 onlyWhitelisted;\n        uint216 normalizedStables;\n        uint64[] xFeeMint;\n        int64[] yFeeMint;\n        uint64[] xFeeBurn;\n        int64[] yFeeBurn;\n        bytes oracleConfig;\n        bytes whitelistData;\n        Tuple5479340 managerData;\n    }\n\n    struct Tuple5479340 {\n        address[] subCollaterals;\n        bytes config;\n    }\n\n    function diamondCut(Tuple6871229[] memory _diamondCut, address _init, bytes memory _calldata) external {}\n\n    function implementation() external view returns (address) {}\n\n    function setDummyImplementation(address _implementation) external {}\n\n    function facetAddress(bytes4 _functionSelector) external view returns (address facetAddress_) {}\n\n    function facetAddresses() external view returns (address[] memory facetAddresses_) {}\n\n    function facetFunctionSelectors(address _facet) external view returns (bytes4[] memory _facetFunctionSelectors) {}\n\n    function facets() external view returns (Tuple1236461[] memory facets_) {}\n\n    function accessControlManager() external view returns (address) {}\n\n    function agToken() external view returns (address) {}\n\n    function getCollateralBurnFees(\n        address collateral\n    ) external view returns (uint64[] memory xFeeBurn, int64[] memory yFeeBurn) {}\n\n    function getCollateralDecimals(address collateral) external view returns (uint8) {}\n\n    function getCollateralInfo(address collateral) external view returns (Tuple3550792 memory) {}\n\n    function getCollateralList() external view returns (address[] memory) {}\n\n    function getCollateralMintFees(\n        address collateral\n    ) external view returns (uint64[] memory xFeeMint, int64[] memory yFeeMint) {}\n\n    function getCollateralRatio() external view returns (uint64 collatRatio, uint256 stablecoinsIssued) {}\n\n    function getCollateralWhitelistData(address collateral) external view returns (bytes memory) {}\n\n    function getIssuedByCollateral(\n        address collateral\n    ) external view returns (uint256 stablecoinsFromCollateral, uint256 stablecoinsIssued) {}\n\n    function getManagerData(address collateral) external view returns (bool, address[] memory, bytes memory) {}\n\n    function getOracle(\n        address collateral\n    ) external view returns (uint8 oracleType, uint8 targetType, bytes memory oracleData, bytes memory targetData) {}\n\n    function getOracleValues(\n        address collateral\n    ) external view returns (uint256 mint, uint256 burn, uint256 ratio, uint256 minRatio, uint256 redemption) {}\n\n    function getRedemptionFees()\n        external\n        view\n        returns (uint64[] memory xRedemptionCurve, int64[] memory yRedemptionCurve)\n    {}\n\n    function getTotalIssued() external view returns (uint256) {}\n\n    function isPaused(address collateral, uint8 action) external view returns (bool) {}\n\n    function isTrusted(address sender) external view returns (bool) {}\n\n    function isTrustedSeller(address sender) external view returns (bool) {}\n\n    function isValidSelector(bytes4 selector) external view returns (bool) {}\n\n    function isWhitelistedCollateral(address collateral) external view returns (bool) {}\n\n    function isWhitelistedForCollateral(address collateral, address sender) external returns (bool) {}\n\n    function isWhitelistedForType(uint8 whitelistType, address sender) external view returns (bool) {}\n\n    function sellRewards(uint256 minAmountOut, bytes memory payload) external returns (uint256 amountOut) {}\n\n    function addCollateral(address collateral) external {}\n\n    function adjustStablecoins(address collateral, uint128 amount, bool increase) external {}\n\n    function changeAllowance(address token, address spender, uint256 amount) external {}\n\n    function recoverERC20(address collateral, address token, address to, uint256 amount) external {}\n\n    function revokeCollateral(address collateral) external {}\n\n    function setAccessControlManager(address _newAccessControlManager) external {}\n\n    function setCollateralManager(address collateral, Tuple5479340 memory managerData) external {}\n\n    function setOracle(address collateral, bytes memory oracleConfig) external {}\n\n    function setWhitelistStatus(address collateral, uint8 whitelistStatus, bytes memory whitelistData) external {}\n\n    function toggleTrusted(address sender, uint8 t) external {}\n\n    function setFees(address collateral, uint64[] memory xFee, int64[] memory yFee, bool mint) external {}\n\n    function setRedemptionCurveParams(uint64[] memory xFee, int64[] memory yFee) external {}\n\n    function togglePause(address collateral, uint8 pausedType) external {}\n\n    function toggleWhitelist(uint8 whitelistType, address who) external {}\n\n    function quoteIn(uint256 amountIn, address tokenIn, address tokenOut) external view returns (uint256 amountOut) {}\n\n    function quoteOut(uint256 amountOut, address tokenIn, address tokenOut) external view returns (uint256 amountIn) {}\n\n    function swapExactInput(\n        uint256 amountIn,\n        uint256 amountOutMin,\n        address tokenIn,\n        address tokenOut,\n        address to,\n        uint256 deadline\n    ) external returns (uint256 amountOut) {}\n\n    function swapExactInputWithPermit(\n        uint256 amountIn,\n        uint256 amountOutMin,\n        address tokenIn,\n        address to,\n        uint256 deadline,\n        bytes memory permitData\n    ) external returns (uint256 amountOut) {}\n\n    function swapExactOutput(\n        uint256 amountOut,\n        uint256 amountInMax,\n        address tokenIn,\n        address tokenOut,\n        address to,\n        uint256 deadline\n    ) external returns (uint256 amountIn) {}\n\n    function swapExactOutputWithPermit(\n        uint256 amountOut,\n        uint256 amountInMax,\n        address tokenIn,\n        address to,\n        uint256 deadline,\n        bytes memory permitData\n    ) external returns (uint256 amountIn) {}\n\n    function quoteRedemptionCurve(\n        uint256 amount\n    ) external view returns (address[] memory tokens, uint256[] memory amounts) {}\n\n    function redeem(\n        uint256 amount,\n        address receiver,\n        uint256 deadline,\n        uint256[] memory minAmountOuts\n    ) external returns (address[] memory tokens, uint256[] memory amounts) {}\n\n    function redeemWithForfeit(\n        uint256 amount,\n        address receiver,\n        uint256 deadline,\n        uint256[] memory minAmountOuts,\n        address[] memory forfeitTokens\n    ) external returns (address[] memory tokens, uint256[] memory amounts) {}\n\n    function updateNormalizer(uint256 amount, bool increase) external returns (uint256) {}\n}\n"
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@chainlink/=lib/borrow-contracts/node_modules/@chainlink/",
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@prb/test/=lib/prb-math/lib/prb-test/src/",
+      "@uniswap/=lib/borrow-contracts/node_modules/@uniswap/",
+      "borrow-contracts/=lib/borrow-contracts/",
+      "borrow/=lib/borrow-contracts/contracts/",
+      "contracts/=contracts/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "forge-std/=lib/forge-std/src/",
+      "interfaces/=contracts/interfaces/",
+      "mock/=test/mock/",
+      "oz-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/",
+      "oz/=node_modules/@openzeppelin/contracts/",
+      "prb-math/=lib/prb-math/src/",
+      "prb/math/=lib/prb-math/src/",
+      "solidity-stringutils/=lib/solidity-stringutils/src/",
+      "src/=lib/prb-math/src/",
+      "stringutils/=lib/solidity-stringutils/",
+      "test/=test/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 1000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs",
+      "appendCBOR": true
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "devdoc",
+          "userdoc",
+          "metadata",
+          "abi"
+        ]
+      }
+    },
+    "evmVersion": "paris",
+    "viaIR": true,
+    "libraries": {}
+  }
+}}

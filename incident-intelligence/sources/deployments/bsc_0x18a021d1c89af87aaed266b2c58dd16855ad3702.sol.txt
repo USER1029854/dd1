@@ -1,0 +1,714 @@
+__NAME__:Finwb
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+
+interface IERC20 {
+    function totalSupply() external view returns (uint256);
+    function balanceOf(address account) external view returns (uint256);
+    function transfer(address recipient, uint256 amount) external returns (bool);
+    function allowance(address owner, address spender) external view returns (uint256);
+    function approve(address spender, uint256 amount) external returns (bool);
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+    function decimals() external view returns (uint8);
+}
+
+interface AggregatorV3Interface {
+    function decimals() external view returns (uint8);
+
+    function latestRoundData()
+        external
+        view
+        returns (
+            uint80 roundId,
+            int256 answer,
+            uint256 startedAt,
+            uint256 updatedAt,
+            uint80 answeredInRound
+        );
+}
+
+library SafeERC20 {
+    function safeTransfer(IERC20 token, address to, uint256 value) internal {
+        require(
+            _callOptionalReturn(token, abi.encodeWithSelector(token.transfer.selector, to, value)),
+            "SafeERC20: transfer failed"
+        );
+    }
+
+    function safeTransferFrom(IERC20 token, address from, address to, uint256 value) internal {
+        require(
+            _callOptionalReturn(token, abi.encodeWithSelector(token.transferFrom.selector, from, to, value)),
+            "SafeERC20: transferFrom failed"
+        );
+    }
+
+    function _callOptionalReturn(IERC20 token, bytes memory data) private returns (bool) {
+        (bool success, bytes memory returndata) = address(token).call(data);
+        if (!success) return false;
+        if (returndata.length == 0) return true;
+        return abi.decode(returndata, (bool));
+    }
+}
+
+abstract contract Ownable {
+    address public owner;
+
+    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+
+    constructor() {
+        owner = msg.sender;
+        emit OwnershipTransferred(address(0), msg.sender);
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Ownable: not owner");
+        _;
+    }
+
+    function transferOwnership(address newOwner) external onlyOwner {
+        require(newOwner != address(0), "Ownable: zero");
+        emit OwnershipTransferred(owner, newOwner);
+        owner = newOwner;
+    }
+}
+
+abstract contract ReentrancyGuard {
+    uint256 private _status = 1;
+
+    modifier nonReentrant() {
+        require(_status == 1, "ReentrancyGuard: reentrant");
+        _status = 2;
+        _;
+        _status = 1;
+    }
+}
+
+contract Finwb is Ownable, ReentrancyGuard {
+    using SafeERC20 for IERC20;
+
+    uint32 public constant TERM_30 = 30;
+    uint32 public constant TERM_90 = 90;
+    uint32 public constant TERM_180 = 180;
+    uint32 public constant TERM_360 = 360;
+
+    uint256 public constant EARLY_WITHDRAW_DELAY = 3 days;
+    uint256 public constant BPS_DENOMINATOR = 10_000;
+    uint256 public constant YEAR_DAYS = 365;
+    uint256 public constant USD_18 = 1e18;
+
+    uint256 public minDepositUsd18 = 10 * USD_18;
+    uint256 public maxPriceAge = 1 days;
+
+    struct Position {
+        address user;
+        address token;
+        uint256 principal;
+        uint64 startTs;
+        uint32 termDays;
+        uint16 aprBps;
+        bool withdrawn;
+        uint16 apr30Bps;
+        uint16 apr90Bps;
+        uint16 apr180Bps;
+        uint16 apr360Bps;
+    }
+
+    struct EarlyWithdrawRequest {
+        bool exists;
+        bool withdrawn;
+        uint64 requestedAt;
+        uint64 availableAt;
+        uint256 dueAmount;
+        uint32 elapsedDays;
+        uint32 appliedTermDays;
+        uint16 aprBps;
+    }
+
+    address public payoutWallet;
+
+    mapping(address => bool) public supportedToken;
+    mapping(address => bool) private knownToken;
+    address[] private supportedTokensList;
+
+    mapping(address => address) public priceFeed;
+    mapping(address => uint8) public tokenDecimals;
+
+    mapping(uint32 => bool) public allowedTerm;
+    mapping(address => mapping(uint32 => uint16)) public currentAprBps;
+
+    Position[] public positions;
+    mapping(address => uint256[]) public userPositions;
+    mapping(uint256 => EarlyWithdrawRequest) public earlyWithdrawRequests;
+
+    mapping(address => uint256) public activePrincipalByToken;
+    uint256 public activePositionsCount;
+
+    event PayoutWalletChanged(address indexed wallet);
+    event SupportedTokenSet(address indexed token, bool enabled);
+    event TermSet(uint32 termDays, bool enabled);
+    event AprUpdated(address indexed token, uint32 termDays, uint16 aprBps);
+    event PriceFeedSet(address indexed token, address indexed feed);
+    event MinDepositUsdChanged(uint256 minDepositUsd18);
+    event MaxPriceAgeChanged(uint256 maxPriceAge);
+
+    event DepositCreated(
+        uint256 indexed id,
+        address indexed user,
+        address indexed token,
+        uint256 amount,
+        uint32 termDays,
+        uint16 aprBps
+    );
+
+    event EarlyWithdrawRequested(
+        uint256 indexed id,
+        address indexed user,
+        address indexed token,
+        uint256 dueAmount,
+        uint16 aprBps,
+        uint32 appliedTermDays,
+        uint32 elapsedDays,
+        uint64 requestedAt,
+        uint64 availableAt
+    );
+
+    event Withdrawn(
+        uint256 indexed id,
+        address indexed user,
+        address indexed token,
+        uint256 paidAmount,
+        uint16 effectiveAprBps,
+        uint32 appliedTermDays,
+        uint32 elapsedDays,
+        bool early
+    );
+
+    constructor(address _payoutWallet) {
+        require(_payoutWallet != address(0), "payout zero");
+
+        payoutWallet = _payoutWallet;
+
+        allowedTerm[TERM_30] = true;
+        allowedTerm[TERM_90] = true;
+        allowedTerm[TERM_180] = true;
+        allowedTerm[TERM_360] = true;
+
+        emit PayoutWalletChanged(_payoutWallet);
+        emit TermSet(TERM_30, true);
+        emit TermSet(TERM_90, true);
+        emit TermSet(TERM_180, true);
+        emit TermSet(TERM_360, true);
+    }
+
+    function setPayoutWallet(address wallet) external onlyOwner {
+        require(wallet != address(0), "zero");
+        payoutWallet = wallet;
+        emit PayoutWalletChanged(wallet);
+    }
+
+    function setSupportedToken(address token, bool enabled) external onlyOwner {
+        require(token != address(0), "token zero");
+
+        supportedToken[token] = enabled;
+
+        if (!knownToken[token]) {
+            knownToken[token] = true;
+            supportedTokensList.push(token);
+        }
+
+        if (enabled && tokenDecimals[token] == 0) {
+            tokenDecimals[token] = IERC20(token).decimals();
+        }
+
+        emit SupportedTokenSet(token, enabled);
+    }
+
+    function setAllowedTerm(uint32 termDays, bool enabled) external onlyOwner {
+        require(
+            termDays == TERM_30 ||
+            termDays == TERM_90 ||
+            termDays == TERM_180 ||
+            termDays == TERM_360,
+            "bad term"
+        );
+
+        allowedTerm[termDays] = enabled;
+        emit TermSet(termDays, enabled);
+    }
+
+    function setAprBps(address token, uint32 termDays, uint16 aprBps) external onlyOwner {
+        require(supportedToken[token], "token not supported");
+        require(allowedTerm[termDays], "term not allowed");
+
+        currentAprBps[token][termDays] = aprBps;
+        emit AprUpdated(token, termDays, aprBps);
+    }
+
+    function setPriceFeed(address token, address feed) external onlyOwner {
+        require(token != address(0), "token zero");
+        require(feed != address(0), "feed zero");
+
+        priceFeed[token] = feed;
+        emit PriceFeedSet(token, feed);
+    }
+
+    function setMinDepositUsd18(uint256 value) external onlyOwner {
+        require(value > 0, "min zero");
+        minDepositUsd18 = value;
+        emit MinDepositUsdChanged(value);
+    }
+
+    function setMaxPriceAge(uint256 value) external onlyOwner {
+        require(value > 0, "age zero");
+        maxPriceAge = value;
+        emit MaxPriceAgeChanged(value);
+    }
+
+    function adminFund(address token, uint256 amount) external onlyOwner {
+        require(token != address(0), "token zero");
+        require(amount > 0, "amount=0");
+        IERC20(token).safeTransferFrom(msg.sender, address(this), amount);
+    }
+
+    function adminSweep(address token, uint256 amount) external onlyOwner {
+        require(token != address(0), "token zero");
+        require(amount > 0, "amount=0");
+        IERC20(token).safeTransfer(msg.sender, amount);
+    }
+
+    function deposit(address token, uint256 amount, uint32 termDays) external nonReentrant returns (uint256 id) {
+        require(supportedToken[token], "unsupported token");
+        require(allowedTerm[termDays], "term not allowed");
+        require(amount > 0, "amount=0");
+
+        uint16 apr = currentAprBps[token][termDays];
+        require(apr > 0, "APR not set");
+
+        _requireAprSnapshotsForTerm(token, termDays);
+        _requireMinDepositUsd(token, amount);
+
+        uint16 apr30 = currentAprBps[token][TERM_30];
+        uint16 apr90 = currentAprBps[token][TERM_90];
+        uint16 apr180 = currentAprBps[token][TERM_180];
+        uint16 apr360 = currentAprBps[token][TERM_360];
+
+        IERC20(token).safeTransferFrom(msg.sender, address(this), amount);
+        IERC20(token).safeTransfer(payoutWallet, amount);
+
+        Position memory p = Position({
+            user: msg.sender,
+            token: token,
+            principal: amount,
+            startTs: uint64(block.timestamp),
+            termDays: termDays,
+            aprBps: apr,
+            withdrawn: false,
+            apr30Bps: apr30,
+            apr90Bps: apr90,
+            apr180Bps: apr180,
+            apr360Bps: apr360
+        });
+
+        positions.push(p);
+        id = positions.length - 1;
+        userPositions[msg.sender].push(id);
+
+        activePrincipalByToken[token] += amount;
+        activePositionsCount += 1;
+
+        emit DepositCreated(id, msg.sender, token, amount, termDays, apr);
+    }
+
+    function requestEarlyWithdraw(uint256 id) external nonReentrant {
+        require(id < positions.length, "bad id");
+
+        Position storage p = positions[id];
+
+        require(p.user == msg.sender, "not owner");
+        require(!p.withdrawn, "already");
+
+        EarlyWithdrawRequest storage existing = earlyWithdrawRequests[id];
+        require(!existing.exists, "early request exists");
+
+        uint32 elapsedDays = _elapsedDays(p.startTs);
+        require(elapsedDays < p.termDays, "position matured");
+
+        (
+            uint256 dueAmount,
+            uint16 aprUsed,
+            uint32 fixedElapsedDays,
+            uint32 appliedTermDays
+        ) = _calculateEarlyDue(p, elapsedDays);
+
+        uint64 requestedAt = uint64(block.timestamp);
+        uint64 availableAt = uint64(block.timestamp + EARLY_WITHDRAW_DELAY);
+
+        earlyWithdrawRequests[id] = EarlyWithdrawRequest({
+            exists: true,
+            withdrawn: false,
+            requestedAt: requestedAt,
+            availableAt: availableAt,
+            dueAmount: dueAmount,
+            elapsedDays: fixedElapsedDays,
+            appliedTermDays: appliedTermDays,
+            aprBps: aprUsed
+        });
+
+        emit EarlyWithdrawRequested(
+            id,
+            msg.sender,
+            p.token,
+            dueAmount,
+            aprUsed,
+            appliedTermDays,
+            fixedElapsedDays,
+            requestedAt,
+            availableAt
+        );
+    }
+
+    function withdraw(uint256 id) external nonReentrant {
+        require(id < positions.length, "bad id");
+
+        Position storage p = positions[id];
+
+        require(p.user == msg.sender, "not owner");
+        require(!p.withdrawn, "already");
+
+        EarlyWithdrawRequest storage r = earlyWithdrawRequests[id];
+
+        uint256 due;
+        uint16 aprUsed;
+        uint32 elapsedDays;
+        uint32 appliedTermDays;
+        bool early;
+
+        if (r.exists && !r.withdrawn) {
+            require(block.timestamp >= uint256(r.availableAt), "early not available");
+
+            due = r.dueAmount;
+            aprUsed = r.aprBps;
+            elapsedDays = r.elapsedDays;
+            appliedTermDays = r.appliedTermDays;
+            early = true;
+        } else {
+            elapsedDays = _elapsedDays(p.startTs);
+            require(elapsedDays >= p.termDays, "not matured");
+
+            (due, aprUsed, elapsedDays, appliedTermDays) = _calculateMaturedDue(p, elapsedDays);
+            early = false;
+        }
+
+        require(IERC20(p.token).balanceOf(address(this)) >= due, "insufficient buffer");
+
+        p.withdrawn = true;
+
+        if (r.exists && !r.withdrawn) {
+            r.withdrawn = true;
+        }
+
+        activePrincipalByToken[p.token] -= p.principal;
+        activePositionsCount -= 1;
+
+        IERC20(p.token).safeTransfer(msg.sender, due);
+
+        emit Withdrawn(id, msg.sender, p.token, due, aprUsed, appliedTermDays, elapsedDays, early);
+    }
+
+    function positionsLength() external view returns (uint256) {
+        return positions.length;
+    }
+
+    function getUserPositions(address user) external view returns (uint256[] memory) {
+        return userPositions[user];
+    }
+
+    function getSupportedTokens() external view returns (address[] memory) {
+        return supportedTokensList;
+    }
+
+    function getPosition(uint256 id)
+        external
+        view
+        returns (
+            address user,
+            address token,
+            uint256 principal,
+            uint64 startTs,
+            uint32 termDays,
+            uint16 aprBps,
+            bool withdrawn,
+            uint16 apr30Bps,
+            uint16 apr90Bps,
+            uint16 apr180Bps,
+            uint16 apr360Bps
+        )
+    {
+        require(id < positions.length, "bad id");
+
+        Position memory p = positions[id];
+
+        return (
+            p.user,
+            p.token,
+            p.principal,
+            p.startTs,
+            p.termDays,
+            p.aprBps,
+            p.withdrawn,
+            p.apr30Bps,
+            p.apr90Bps,
+            p.apr180Bps,
+            p.apr360Bps
+        );
+    }
+
+    function getEarlyRequest(uint256 id)
+        external
+        view
+        returns (
+            bool exists,
+            bool withdrawn,
+            uint64 requestedAt,
+            uint64 availableAt,
+            uint256 dueAmount,
+            uint32 elapsedDays,
+            uint32 appliedTermDays,
+            uint16 aprBps
+        )
+    {
+        require(id < positions.length, "bad id");
+
+        EarlyWithdrawRequest memory r = earlyWithdrawRequests[id];
+
+        return (
+            r.exists,
+            r.withdrawn,
+            r.requestedAt,
+            r.availableAt,
+            r.dueAmount,
+            r.elapsedDays,
+            r.appliedTermDays,
+            r.aprBps
+        );
+    }
+
+    function previewWithdraw(uint256 id)
+        public
+        view
+        returns (
+            uint256 dueAmount,
+            uint16 aprUsed,
+            uint32 elapsedDays,
+            uint32 appliedTermDays
+        )
+    {
+        require(id < positions.length, "bad id");
+
+        Position memory p = positions[id];
+        require(!p.withdrawn, "already");
+
+        EarlyWithdrawRequest memory r = earlyWithdrawRequests[id];
+
+        if (r.exists && !r.withdrawn) {
+            return (r.dueAmount, r.aprBps, r.elapsedDays, r.appliedTermDays);
+        }
+
+        elapsedDays = _elapsedDays(p.startTs);
+
+        if (elapsedDays >= p.termDays) {
+            return _calculateMaturedDue(p, elapsedDays);
+        }
+
+        return previewEarlyWithdraw(id);
+    }
+
+    function previewEarlyWithdraw(uint256 id)
+        public
+        view
+        returns (
+            uint256 dueAmount,
+            uint16 aprUsed,
+            uint32 elapsedDays,
+            uint32 appliedTermDays
+        )
+    {
+        require(id < positions.length, "bad id");
+
+        Position memory p = positions[id];
+
+        require(!p.withdrawn, "already");
+
+        EarlyWithdrawRequest memory r = earlyWithdrawRequests[id];
+        require(!r.exists || r.withdrawn, "early request exists");
+
+        elapsedDays = _elapsedDays(p.startTs);
+        require(elapsedDays < p.termDays, "position matured");
+
+        return _calculateEarlyDue(p, elapsedDays);
+    }
+
+    function activePrincipal(address token) external view returns (uint256) {
+        return activePrincipalByToken[token];
+    }
+
+    function getProtocolTvlTokensAndAmounts()
+        external
+        view
+        returns (address[] memory tokens, uint256[] memory amounts)
+    {
+        uint256 len = supportedTokensList.length;
+
+        tokens = new address[](len);
+        amounts = new uint256[](len);
+
+        for (uint256 i = 0; i < len; i++) {
+            address token = supportedTokensList[i];
+            tokens[i] = token;
+            amounts[i] = activePrincipalByToken[token];
+        }
+    }
+
+    function getTokenUsdValue18(address token, uint256 amount) external view returns (uint256) {
+        return _tokenUsdValue18(token, amount);
+    }
+
+    function _requireAprSnapshotsForTerm(address token, uint32 termDays) internal view {
+        if (termDays >= TERM_30) {
+            require(currentAprBps[token][TERM_30] > 0, "APR 30 not set");
+        }
+
+        if (termDays >= TERM_90) {
+            require(currentAprBps[token][TERM_90] > 0, "APR 90 not set");
+        }
+
+        if (termDays >= TERM_180) {
+            require(currentAprBps[token][TERM_180] > 0, "APR 180 not set");
+        }
+
+        if (termDays >= TERM_360) {
+            require(currentAprBps[token][TERM_360] > 0, "APR 360 not set");
+        }
+    }
+
+    function _calculateMaturedDue(Position memory p, uint32 elapsedDays)
+        internal
+        pure
+        returns (
+            uint256 dueAmount,
+            uint16 aprUsed,
+            uint32 fixedElapsedDays,
+            uint32 appliedTermDays
+        )
+    {
+        appliedTermDays = p.termDays;
+        aprUsed = p.aprBps;
+
+        uint32 accrueDays = elapsedDays;
+        if (accrueDays > p.termDays) {
+            accrueDays = p.termDays;
+        }
+
+        uint256 interest = _interest(p.principal, aprUsed, accrueDays);
+
+        dueAmount = p.principal + interest;
+        fixedElapsedDays = elapsedDays;
+    }
+
+    function _calculateEarlyDue(Position memory p, uint32 elapsedDays)
+        internal
+        pure
+        returns (
+            uint256 dueAmount,
+            uint16 aprUsed,
+            uint32 fixedElapsedDays,
+            uint32 appliedTermDays
+        )
+    {
+        appliedTermDays = _appliedTermForElapsed(p.termDays, elapsedDays);
+        aprUsed = _aprForAppliedTerm(p, appliedTermDays);
+
+        uint256 interest = _interest(p.principal, aprUsed, elapsedDays);
+
+        dueAmount = p.principal + interest;
+        fixedElapsedDays = elapsedDays;
+    }
+
+    function _interest(uint256 principal, uint16 aprBps, uint32 daysCount) internal pure returns (uint256) {
+        if (aprBps == 0 || daysCount == 0) return 0;
+
+        return principal * uint256(aprBps) * uint256(daysCount) / (YEAR_DAYS * BPS_DENOMINATOR);
+    }
+
+    function _elapsedDays(uint64 startTs) internal view returns (uint32) {
+        if (block.timestamp <= uint256(startTs)) return 0;
+        return uint32((block.timestamp - uint256(startTs)) / 1 days);
+    }
+
+    function _appliedTermForElapsed(uint32 selectedTermDays, uint32 elapsedDays) internal pure returns (uint32) {
+        if (elapsedDays >= selectedTermDays) {
+            return selectedTermDays;
+        }
+
+        if (selectedTermDays >= TERM_360 && elapsedDays >= TERM_360) {
+            return TERM_360;
+        }
+
+        if (selectedTermDays >= TERM_180 && elapsedDays >= TERM_180) {
+            return TERM_180;
+        }
+
+        if (selectedTermDays >= TERM_90 && elapsedDays >= TERM_90) {
+            return TERM_90;
+        }
+
+        if (selectedTermDays >= TERM_30 && elapsedDays >= TERM_30) {
+            return TERM_30;
+        }
+
+        return 0;
+    }
+
+    function _aprForAppliedTerm(Position memory p, uint32 appliedTermDays) internal pure returns (uint16) {
+        if (appliedTermDays == TERM_30) return p.apr30Bps;
+        if (appliedTermDays == TERM_90) return p.apr90Bps;
+        if (appliedTermDays == TERM_180) return p.apr180Bps;
+        if (appliedTermDays == TERM_360) return p.apr360Bps;
+        return 0;
+    }
+
+    function _requireMinDepositUsd(address token, uint256 amount) internal view {
+        uint256 usdValue18 = _tokenUsdValue18(token, amount);
+        require(usdValue18 >= minDepositUsd18, "deposit below minimum");
+    }
+
+    function _tokenUsdValue18(address token, uint256 amount) internal view returns (uint256) {
+        address feed = priceFeed[token];
+        require(feed != address(0), "price feed not set");
+
+        uint8 tDec = tokenDecimals[token];
+        if (tDec == 0) {
+            tDec = IERC20(token).decimals();
+        }
+
+        AggregatorV3Interface aggregator = AggregatorV3Interface(feed);
+
+        (
+            uint80 roundId,
+            int256 answer,
+            ,
+            uint256 updatedAt,
+            uint80 answeredInRound
+        ) = aggregator.latestRoundData();
+
+        require(answer > 0, "bad price");
+        require(updatedAt > 0, "bad updatedAt");
+        require(block.timestamp - updatedAt <= maxPriceAge, "stale price");
+        require(answeredInRound >= roundId, "stale round");
+
+        uint8 fDec = aggregator.decimals();
+        uint256 price = uint256(answer);
+
+        return amount * price * USD_18 / (10 ** uint256(tDec)) / (10 ** uint256(fDec));
+    }
+}

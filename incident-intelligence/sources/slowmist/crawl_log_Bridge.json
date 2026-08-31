@@ -1,0 +1,54 @@
+{
+  "tag": "Bridge",
+  "category_filter": "Bridge",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:31Z",
+      "sha256": "64dad040e02758b2bdc027539380038c89d5035c569d5e6f7160b11ae78c3503",
+      "bytes": 28761,
+      "snapshot": "Bridge_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 20,
+      "rows_older_than_window": 0,
+      "first_date": "2026-05-11",
+      "last_date": "2026-08-09",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:32Z",
+      "sha256": "e3bf814032d91f3b97e4fa3725a1dac01c0bb15eaa74f623cc108a25fc9f061f",
+      "bytes": 30897,
+      "snapshot": "Bridge_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 7,
+      "rows_older_than_window": 13,
+      "first_date": "2024-04-19",
+      "last_date": "2026-04-29",
+      "status": "OK"
+    },
+    {
+      "page": 3,
+      "url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:34Z",
+      "sha256": "1616c495497bb36398eb9e15abc17bc7101a823f21c62896778d1fcc75cc191d",
+      "bytes": 29717,
+      "snapshot": "Bridge_page_003.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2022-08-20",
+      "last_date": "2024-03-20",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 60
+}

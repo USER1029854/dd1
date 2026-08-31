@@ -1,0 +1,54 @@
+{
+  "tag": "Other",
+  "category_filter": "Other",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=Other&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:35Z",
+      "sha256": "a53242c961d85429c3302285245771c2cfc16ae48e47125b7e6cfa39cbe55bac",
+      "bytes": 29924,
+      "snapshot": "Other_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 20,
+      "rows_older_than_window": 0,
+      "first_date": "2026-04-16",
+      "last_date": "2026-08-18",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=Other&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:37Z",
+      "sha256": "127526cf8a86b5de24f0917d5324ce8bb8beb8dc99a15e82cf5e39177ca3ebd1",
+      "bytes": 29906,
+      "snapshot": "Other_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 10,
+      "rows_older_than_window": 10,
+      "first_date": "2025-11-23",
+      "last_date": "2026-04-13",
+      "status": "OK"
+    },
+    {
+      "page": 3,
+      "url": "https://hacked.slowmist.io/?c=Other&page=3",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:20:39Z",
+      "sha256": "1ed84c6b67bfbd53a69a87cc488f543a6013466e084fedf0fe4cc46e575692be",
+      "bytes": 25765,
+      "snapshot": "Other_page_003.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2025-06-23",
+      "last_date": "2025-11-20",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 60
+}

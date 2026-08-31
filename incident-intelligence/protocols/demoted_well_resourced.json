@@ -1,0 +1,554 @@
+[
+ {
+  "slug": "aave-v1",
+  "family_parent": "aave",
+  "family_live_tvl": 18131278645.31728,
+  "own_live_tvl": 7722971.359573057,
+  "family_id": "ORACLE-SPOT-THIN-LIQUIDITY",
+  "reason": "family holds $18,131,278,645 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "aave-arc",
+  "family_parent": "aave",
+  "family_live_tvl": 18131278645.31728,
+  "own_live_tvl": 57263.92195470886,
+  "family_id": "ORACLE-SPOT-THIN-LIQUIDITY",
+  "reason": "family holds $18,131,278,645 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "aave-aptos",
+  "family_parent": "aave",
+  "family_live_tvl": 18131278645.31728,
+  "own_live_tvl": 308734.0261530104,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $18,131,278,645 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "morpho-optimizer-aavev2",
+  "family_parent": "morpho",
+  "family_live_tvl": 9465990394.805258,
+  "own_live_tvl": 139080.4002253762,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $9,465,990,395 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "morpho-midnight",
+  "family_parent": "morpho",
+  "family_live_tvl": 9465990394.805258,
+  "own_live_tvl": 3252819.246702475,
+  "family_id": "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED",
+  "reason": "family holds $9,465,990,395 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "hamilton-lane-senior-credit-opportunities-securitize-fund",
+  "family_parent": "securitize",
+  "family_live_tvl": 4971214813.253833,
+  "own_live_tvl": 4296646.0314646615,
+  "family_id": "SETTLEMENT-EPOCH-BOUNDARY-CREDIT",
+  "reason": "family holds $4,971,214,813 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "ethena-tsusde",
+  "family_parent": "ethena",
+  "family_live_tvl": 4528282468.509504,
+  "own_live_tvl": 3195207.2254172578,
+  "family_id": "ACC-ZERO-SUPPLY-INFLATION",
+  "reason": "family holds $4,528,282,469 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "justlend-v2",
+  "family_parent": "justlend",
+  "family_live_tvl": 3689401963.3310585,
+  "own_live_tvl": 1508942.40348922,
+  "family_id": "ACC-ZERO-SUPPLY-INFLATION",
+  "reason": "family holds $3,689,401,963 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "uniswap-v1",
+  "family_parent": "uniswap",
+  "family_live_tvl": 3470812967.897186,
+  "own_live_tvl": 3986812.4759229305,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $3,470,812,968 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "jupiter-offerbook",
+  "family_parent": "jupiter",
+  "family_live_tvl": 2447601942.4707212,
+  "own_live_tvl": 1238334.1215657014,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $2,447,601,942 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "jupiter-prediction",
+  "family_parent": "jupiter",
+  "family_live_tvl": 2447601942.4707212,
+  "own_live_tvl": 471341.24314457085,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $2,447,601,942 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "jupiter-lend-dex",
+  "family_parent": "jupiter",
+  "family_live_tvl": 2447601942.4707212,
+  "own_live_tvl": 7636831.56638466,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $2,447,601,942 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "pancakeswap-stableswap",
+  "family_parent": "pancakeswap",
+  "family_live_tvl": 2297217430.4012437,
+  "own_live_tvl": 3811177.3074289495,
+  "family_id": "AMM-POOL-RATIO-SKEW-EXTRACTION",
+  "reason": "family holds $2,297,217,430 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "lista-rwa",
+  "family_parent": "lista-dao",
+  "family_live_tvl": 1830436596.9718807,
+  "own_live_tvl": 4063619.180810103,
+  "family_id": "SETTLEMENT-EPOCH-BOUNDARY-CREDIT",
+  "reason": "family holds $1,830,436,597 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "lisaster",
+  "family_parent": "lista-dao",
+  "family_live_tvl": 1830436596.9718807,
+  "own_live_tvl": 1196281.0503133147,
+  "family_id": "ACC-ZERO-SUPPLY-INFLATION",
+  "reason": "family holds $1,830,436,597 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "tinlake",
+  "family_parent": "centrifuge",
+  "family_live_tvl": 1640261226.4986193,
+  "own_live_tvl": 61318.53363618324,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $1,640,261,226 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "curve-llamalend-v2",
+  "family_parent": "curve-finance",
+  "family_live_tvl": 1558788044.2519767,
+  "own_live_tvl": 2057612.2112092793,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $1,558,788,044 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "compound-v1",
+  "family_parent": "compound-finance",
+  "family_live_tvl": 1529183883.9045594,
+  "own_live_tvl": 3252869.994370587,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $1,529,183,884 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "kinetiq-launch",
+  "family_parent": "kinetiq",
+  "family_live_tvl": 1278913431.4942944,
+  "own_live_tvl": 3977466.6744432277,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $1,278,913,431 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "venus-isolated-pools",
+  "family_parent": "venus",
+  "family_live_tvl": 1274890281.8759115,
+  "own_live_tvl": 1075797.8002457453,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $1,274,890,282 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "venus-flux",
+  "family_parent": "venus",
+  "family_live_tvl": 1274890281.8759115,
+  "own_live_tvl": 3421097.1191994115,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $1,274,890,282 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "kernel",
+  "family_parent": "kerneldao",
+  "family_live_tvl": 1151287221.6525505,
+  "own_live_tvl": 1361876.745929351,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $1,151,287,222 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "jito-restaking",
+  "family_parent": "jito",
+  "family_live_tvl": 1036770476.146318,
+  "own_live_tvl": 17577870.630608406,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $1,036,770,476 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "solv-vesting",
+  "family_parent": "solv-protocol",
+  "family_live_tvl": 866896958.4693308,
+  "own_live_tvl": 142310.61270307284,
+  "family_id": "SETTLEMENT-EPOCH-BOUNDARY-CREDIT",
+  "reason": "family holds $866,896,958 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "solv-rwa",
+  "family_parent": "solv-protocol",
+  "family_live_tvl": 866896958.4693308,
+  "own_live_tvl": 9001900.2031856,
+  "family_id": "UPGRADE-INITIALIZER-REACHABLE-LIVE",
+  "reason": "family holds $866,896,958 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "solv-others",
+  "family_parent": "solv-protocol",
+  "family_live_tvl": 866896958.4693308,
+  "own_live_tvl": 936697.02279856,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $866,896,958 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "hyperlend-isolated",
+  "family_parent": "hyperlend",
+  "family_live_tvl": 580713924.3493713,
+  "own_live_tvl": 360367.3634953813,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $580,713,924 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "bedrock-unieth",
+  "family_parent": "bedrock",
+  "family_live_tvl": 378596698.320214,
+  "own_live_tvl": 25646251.507169273,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $378,596,698 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "bedrock-uniiotx",
+  "family_parent": "bedrock",
+  "family_live_tvl": 378596698.320214,
+  "own_live_tvl": 1284702.0722528975,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $378,596,698 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "threshold-thusd",
+  "family_parent": "threshold-network",
+  "family_live_tvl": 357061262.58300453,
+  "own_live_tvl": 2129466.877578879,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $357,061,263 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "meteora-damm-v2",
+  "family_parent": "meteora",
+  "family_live_tvl": 332818133.4921972,
+  "own_live_tvl": 23958413.45408131,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $332,818,133 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "fraxlend",
+  "family_parent": "frax-finance",
+  "family_live_tvl": 319102715.48147655,
+  "own_live_tvl": 23449297.22408544,
+  "family_id": "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED",
+  "reason": "family holds $319,102,715 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "frax-swap",
+  "family_parent": "frax-finance",
+  "family_live_tvl": 319102715.48147655,
+  "own_live_tvl": 10478515.818997573,
+  "family_id": "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET",
+  "reason": "family holds $319,102,715 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "bamm",
+  "family_parent": "frax-finance",
+  "family_live_tvl": 319102715.48147655,
+  "own_live_tvl": 1947728.786728931,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $319,102,715 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "sunx-bridge",
+  "family_parent": "sun",
+  "family_live_tvl": 302724020.9388647,
+  "own_live_tvl": 26550473.799964774,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $302,724,021 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "sun.io",
+  "family_parent": "sun",
+  "family_live_tvl": 302724020.9388647,
+  "own_live_tvl": 778206.4295908767,
+  "family_id": "AUTH-MISSING-ON-VALUE-MOVING-PATH",
+  "reason": "family holds $302,724,021 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "sunpump",
+  "family_parent": "sun",
+  "family_live_tvl": 302724020.9388647,
+  "own_live_tvl": 2169140.988937819,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $302,724,021 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "mellow-yield",
+  "family_parent": "mellow-protocol",
+  "family_live_tvl": 279853904.1675409,
+  "own_live_tvl": 100479.35145095794,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $279,853,904 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "mellow-restaking",
+  "family_parent": "mellow-protocol",
+  "family_live_tvl": 279853904.1675409,
+  "own_live_tvl": 25573821.035474516,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $279,853,904 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "openeden-prism",
+  "family_parent": "openeden",
+  "family_live_tvl": 278136723.02362186,
+  "own_live_tvl": 570927.0115642463,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $278,136,723 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "openeden-usdo",
+  "family_parent": "openeden",
+  "family_live_tvl": 278136723.02362186,
+  "own_live_tvl": 24563768.912368156,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $278,136,723 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "aerodrome-ignition",
+  "family_parent": "aerodrome",
+  "family_live_tvl": 267647376.60005158,
+  "own_live_tvl": 17054533.449962195,
+  "family_id": "ASSET-OR-MARKET-IDENTITY-NOT-VALIDATED",
+  "reason": "family holds $267,647,377 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "cian-automation",
+  "family_parent": "cian-protocol",
+  "family_live_tvl": 258906011.6931655,
+  "own_live_tvl": 690685.9455784545,
+  "family_id": "CALLBACK-UNAUTHENTICATED-CALLER-USES-APPROVALS",
+  "reason": "family holds $258,906,012 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "idle",
+  "family_parent": "pareto",
+  "family_live_tvl": 236792690.29511407,
+  "own_live_tvl": 1580839.5201950287,
+  "family_id": "ACC-ZERO-SUPPLY-INFLATION",
+  "reason": "family holds $236,792,690 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "valantis-stex",
+  "family_parent": "valantis",
+  "family_live_tvl": 225518735.84651372,
+  "own_live_tvl": 5440152.806562681,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $225,518,736 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "quickswap-v4",
+  "family_parent": "quickswap",
+  "family_live_tvl": 193031597.08053112,
+  "own_live_tvl": 5346067.420275344,
+  "family_id": "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET",
+  "reason": "family holds $193,031,597 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "quickswap-v3",
+  "family_parent": "quickswap",
+  "family_live_tvl": 193031597.08053112,
+  "own_live_tvl": 17563400.534500882,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $193,031,597 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "realt-rmm-marketplace-v2",
+  "family_parent": "realt",
+  "family_live_tvl": 184753624.55628395,
+  "own_live_tvl": 29650284.6355546,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $184,753,625 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "uncx-network-v4",
+  "family_parent": "uncx-network",
+  "family_live_tvl": 175581968.8070387,
+  "own_live_tvl": 3299798.35328539,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $175,581,969 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "uncx-network-solana",
+  "family_parent": "uncx-network",
+  "family_live_tvl": 175581968.8070387,
+  "own_live_tvl": 620554.5105355437,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $175,581,969 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "avant-avbtc",
+  "family_parent": "avant-protocol",
+  "family_live_tvl": 172201785.0260344,
+  "own_live_tvl": 8069995.571892745,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $172,201,785 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "springsui-ecosystem",
+  "family_parent": "suilend-protocol",
+  "family_live_tvl": 171692598.14368263,
+  "own_live_tvl": 521587.0597100652,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $171,692,598 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "steamm",
+  "family_parent": "suilend-protocol",
+  "family_live_tvl": 171692598.14368263,
+  "own_live_tvl": 373205.5897602425,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $171,692,598 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "sosovalue-basis",
+  "family_parent": "sosovalue",
+  "family_live_tvl": 170107357.22108924,
+  "own_live_tvl": 2942804.0514121423,
+  "family_id": "CALLDATA-CALLER-CONTROLLED-TARGET",
+  "reason": "family holds $170,107,357 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "avalon-finance",
+  "family_parent": "avalon-labs",
+  "family_live_tvl": 168412620.38368323,
+  "own_live_tvl": 1326615.4585512548,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $168,412,620 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "avalon-usdalend",
+  "family_parent": "avalon-labs",
+  "family_live_tvl": 168412620.38368323,
+  "own_live_tvl": 69968.87035431017,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $168,412,620 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "volo-vault",
+  "family_parent": "navi-protocol",
+  "family_live_tvl": 163741082.07072958,
+  "own_live_tvl": 9655032.846874334,
+  "family_id": "ORACLE-STALE-OR-SILENT-FALLBACK",
+  "reason": "family holds $163,741,082 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "volo-lst",
+  "family_parent": "navi-protocol",
+  "family_live_tvl": 163741082.07072958,
+  "own_live_tvl": 17781196.111943055,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $163,741,082 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "derive-v1",
+  "family_parent": "derive",
+  "family_live_tvl": 159704394.77258316,
+  "own_live_tvl": 134476.91555042868,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $159,704,395 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "swell-earn",
+  "family_parent": "swell",
+  "family_live_tvl": 144067006.11405855,
+  "own_live_tvl": 568344.9696718082,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $144,067,006 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "swell-btc-lrt",
+  "family_parent": "swell",
+  "family_live_tvl": 144067006.11405855,
+  "own_live_tvl": 460012.9834464045,
+  "family_id": "ACC-ZERO-SUPPLY-INFLATION",
+  "reason": "family holds $144,067,006 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "the-vault-unstake-pool",
+  "family_parent": "the-vault",
+  "family_live_tvl": 136431312.57568237,
+  "own_live_tvl": 462945.67399371153,
+  "family_id": "ACC-ZERO-SUPPLY-INFLATION",
+  "reason": "family holds $136,431,313 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "exponent-risk-tranching",
+  "family_parent": "exponent",
+  "family_live_tvl": 133275298.84454232,
+  "own_live_tvl": 6668974.119253019,
+  "family_id": "ACC-DONATION-UNACCOUNTED-BALANCE",
+  "reason": "family holds $133,275,299 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "exponent-strategy-vaults",
+  "family_parent": "exponent",
+  "family_live_tvl": 133275298.84454232,
+  "own_live_tvl": 10617869.749630231,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $133,275,299 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "felix-usdhl",
+  "family_parent": "felix",
+  "family_live_tvl": 130657851.0613237,
+  "own_live_tvl": 440619.9983606695,
+  "family_id": "ACC-ZERO-SUPPLY-INFLATION",
+  "reason": "family holds $130,657,851 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "rhea-lst",
+  "family_parent": "rhea-finance",
+  "family_live_tvl": 124561312.23867607,
+  "own_live_tvl": 17309580.47344154,
+  "family_id": "AUTH-MISSING-ON-VALUE-MOVING-PATH",
+  "reason": "family holds $124,561,312 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "rhea-dex",
+  "family_parent": "rhea-finance",
+  "family_live_tvl": 124561312.23867607,
+  "own_live_tvl": 28024983.79456068,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $124,561,312 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "extended-spot",
+  "family_parent": "extended",
+  "family_live_tvl": 123796940.0842655,
+  "own_live_tvl": 2834542.902222981,
+  "family_id": "UPGRADE-OLD-DEPLOYMENT-LIVE-AUTHORITY",
+  "reason": "family holds $123,796,940 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ },
+ {
+  "slug": "vvs-flawless",
+  "family_parent": "vvs-finance",
+  "family_live_tvl": 109078663.74305175,
+  "own_live_tvl": 4935111.87203637,
+  "family_id": "QUOTE-OR-ROUTE-OUTPUT-NOT-BOUND-TO-ASSET",
+  "reason": "family holds $109,078,664 across its deployments; a team at that scale patches a public issue fast, so this is usually not the save"
+ }
+]

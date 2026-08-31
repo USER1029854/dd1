@@ -1,0 +1,2292 @@
+__NAME__:PermanentLocksPoolV1
+// SPDX-License-Identifier: MIT
+// File: contracts/aerodrome/IVoter.sol
+
+
+pragma solidity ^0.8.19;
+
+interface IVoter {
+    error AlreadyVotedOrDeposited();
+    error DistributeWindow();
+    error FactoryPathNotApproved();
+    error GaugeAlreadyKilled();
+    error GaugeAlreadyRevived();
+    error GaugeExists();
+    error GaugeDoesNotExist(address _pool);
+    error GaugeNotAlive(address _gauge);
+    error InactiveManagedNFT();
+    error MaximumVotingNumberTooLow();
+    error NonZeroVotes();
+    error NotAPool();
+    error NotApprovedOrOwner();
+    error NotGovernor();
+    error NotEmergencyCouncil();
+    error NotMinter();
+    error NotWhitelistedNFT();
+    error NotWhitelistedToken();
+    error SameValue();
+    error SpecialVotingWindow();
+    error TooManyPools();
+    error UnequalLengths();
+    error ZeroBalance();
+    error ZeroAddress();
+
+    event GaugeCreated(
+        address indexed poolFactory,
+        address indexed votingRewardsFactory,
+        address indexed gaugeFactory,
+        address pool,
+        address bribeVotingReward,
+        address feeVotingReward,
+        address gauge,
+        address creator
+    );
+    event GaugeKilled(address indexed gauge);
+    event GaugeRevived(address indexed gauge);
+    event Voted(
+        address indexed voter,
+        address indexed pool,
+        uint256 indexed tokenId,
+        uint256 weight,
+        uint256 totalWeight,
+        uint256 timestamp
+    );
+    event Abstained(
+        address indexed voter,
+        address indexed pool,
+        uint256 indexed tokenId,
+        uint256 weight,
+        uint256 totalWeight,
+        uint256 timestamp
+    );
+    event NotifyReward(address indexed sender, address indexed reward, uint256 amount);
+    event DistributeReward(address indexed sender, address indexed gauge, uint256 amount);
+    event WhitelistToken(address indexed whitelister, address indexed token, bool indexed _bool);
+    event WhitelistNFT(address indexed whitelister, uint256 indexed tokenId, bool indexed _bool);
+
+    /// @notice Store trusted forwarder address to pass into factories
+    function forwarder() external view returns (address);
+
+    /// @notice The ve token that governs these contracts
+    function ve() external view returns (address);
+
+    /// @notice Factory registry for valid pool / gauge / rewards factories
+    function factoryRegistry() external view returns (address);
+
+    /// @notice Address of Minter.sol
+    function minter() external view returns (address);
+
+    /// @notice Standard OZ IGovernor using ve for vote weights.
+    function governor() external view returns (address);
+
+    /// @notice Custom Epoch Governor using ve for vote weights.
+    function epochGovernor() external view returns (address);
+
+    /// @notice credibly neutral party similar to Curve's Emergency DAO
+    function emergencyCouncil() external view returns (address);
+
+    /// @dev Total Voting Weights
+    function totalWeight() external view returns (uint256);
+
+    /// @dev Most number of pools one voter can vote for at once
+    function maxVotingNum() external view returns (uint256);
+
+    // mappings
+    /// @dev Pool => Gauge
+    function gauges(address pool) external view returns (address);
+
+    /// @dev Gauge => Pool
+    function poolForGauge(address gauge) external view returns (address);
+
+    /// @dev Gauge => Fees Voting Reward
+    function gaugeToFees(address gauge) external view returns (address);
+
+    /// @dev Gauge => Bribes Voting Reward
+    function gaugeToBribe(address gauge) external view returns (address);
+
+    /// @dev Pool => Weights
+    function weights(address pool) external view returns (uint256);
+
+    /// @dev NFT => Pool => Votes
+    function votes(uint256 tokenId, address pool) external view returns (uint256);
+
+    /// @dev NFT => Total voting weight of NFT
+    function usedWeights(uint256 tokenId) external view returns (uint256);
+
+    /// @dev Nft => Timestamp of last vote (ensures single vote per epoch)
+    function lastVoted(uint256 tokenId) external view returns (uint256);
+
+    /// @dev Address => Gauge
+    function isGauge(address) external view returns (bool);
+
+    /// @dev Token => Whitelisted status
+    function isWhitelistedToken(address token) external view returns (bool);
+
+    /// @dev TokenId => Whitelisted status
+    function isWhitelistedNFT(uint256 tokenId) external view returns (bool);
+
+    /// @dev Gauge => Liveness status
+    function isAlive(address gauge) external view returns (bool);
+
+    /// @dev Gauge => Amount claimable
+    function claimable(address gauge) external view returns (uint256);
+
+    /// @notice Number of pools with a Gauge
+    function length() external view returns (uint256);
+
+    /// @notice Called by Minter to distribute weekly emissions rewards for disbursement amongst gauges.
+    /// @dev Assumes totalWeight != 0 (Will never be zero as long as users are voting).
+    ///      Throws if not called by minter.
+    /// @param _amount Amount of rewards to distribute.
+    function notifyRewardAmount(uint256 _amount) external;
+
+    /// @dev Utility to distribute to gauges of pools in range _start to _finish.
+    /// @param _start   Starting index of gauges to distribute to.
+    /// @param _finish  Ending index of gauges to distribute to.
+    function distribute(uint256 _start, uint256 _finish) external;
+
+    /// @dev Utility to distribute to gauges of pools in array.
+    /// @param _gauges Array of gauges to distribute to.
+    function distribute(address[] memory _gauges) external;
+
+    /// @notice Called by users to update voting balances in voting rewards contracts.
+    /// @param _tokenId Id of veNFT whose balance you wish to update.
+    function poke(uint256 _tokenId) external;
+
+    /// @notice Called by users to vote for pools. Votes distributed proportionally based on weights.
+    ///         Can only vote or deposit into a managed NFT once per epoch.
+    ///         Can only vote for gauges that have not been killed.
+    /// @dev Weights are distributed proportional to the sum of the weights in the array.
+    ///      Throws if length of _poolVote and _weights do not match.
+    /// @param _tokenId     Id of veNFT you are voting with.
+    /// @param _poolVote    Array of pools you are voting for.
+    /// @param _weights     Weights of pools.
+    function vote(uint256 _tokenId, address[] calldata _poolVote, uint256[] calldata _weights) external;
+
+    /// @notice Called by users to reset voting state. Required if you wish to make changes to
+    ///         veNFT state (e.g. merge, split, deposit into managed etc).
+    ///         Cannot reset in the same epoch that you voted in.
+    ///         Can vote or deposit into a managed NFT again after reset.
+    /// @param _tokenId Id of veNFT you are reseting.
+    function reset(uint256 _tokenId) external;
+
+    /// @notice Called by users to deposit into a managed NFT.
+    ///         Can only vote or deposit into a managed NFT once per epoch.
+    ///         Note that NFTs deposited into a managed NFT will be re-locked
+    ///         to the maximum lock time on withdrawal.
+    /// @dev Throws if not approved or owner.
+    ///      Throws if managed NFT is inactive.
+    ///      Throws if depositing within privileged window (one hour prior to epoch flip).
+    function depositManaged(uint256 _tokenId, uint256 _mTokenId) external;
+
+    /// @notice Called by users to withdraw from a managed NFT.
+    ///         Cannot do it in the same epoch that you deposited into a managed NFT.
+    ///         Can vote or deposit into a managed NFT again after withdrawing.
+    ///         Note that the NFT withdrawn is re-locked to the maximum lock time.
+    function withdrawManaged(uint256 _tokenId) external;
+
+    /// @notice Claim emissions from gauges.
+    /// @param _gauges Array of gauges to collect emissions from.
+    function claimRewards(address[] memory _gauges) external;
+
+    /// @notice Claim bribes for a given NFT.
+    /// @dev Utility to help batch bribe claims.
+    /// @param _bribes  Array of BribeVotingReward contracts to collect from.
+    /// @param _tokens  Array of tokens that are used as bribes.
+    /// @param _tokenId Id of veNFT that you wish to claim bribes for.
+    function claimBribes(address[] memory _bribes, address[][] memory _tokens, uint256 _tokenId) external;
+
+    /// @notice Claim fees for a given NFT.
+    /// @dev Utility to help batch fee claims.
+    /// @param _fees    Array of FeesVotingReward contracts to collect from.
+    /// @param _tokens  Array of tokens that are used as fees.
+    /// @param _tokenId Id of veNFT that you wish to claim fees for.
+    function claimFees(address[] memory _fees, address[][] memory _tokens, uint256 _tokenId) external;
+
+    /// @notice Set new governor.
+    /// @dev Throws if not called by governor.
+    /// @param _governor .
+    function setGovernor(address _governor) external;
+
+    /// @notice Set new epoch based governor.
+    /// @dev Throws if not called by governor.
+    /// @param _epochGovernor .
+    function setEpochGovernor(address _epochGovernor) external;
+
+    /// @notice Set new emergency council.
+    /// @dev Throws if not called by emergency council.
+    /// @param _emergencyCouncil .
+    function setEmergencyCouncil(address _emergencyCouncil) external;
+
+    /// @notice Set maximum number of gauges that can be voted for.
+    /// @dev Throws if not called by governor.
+    ///      Throws if _maxVotingNum is too low.
+    ///      Throws if the values are the same.
+    /// @param _maxVotingNum .
+    function setMaxVotingNum(uint256 _maxVotingNum) external;
+
+    /// @notice Whitelist (or unwhitelist) token for use in bribes.
+    /// @dev Throws if not called by governor.
+    /// @param _token .
+    /// @param _bool .
+    function whitelistToken(address _token, bool _bool) external;
+
+    /// @notice Whitelist (or unwhitelist) token id for voting in last hour prior to epoch flip.
+    /// @dev Throws if not called by governor.
+    ///      Throws if already whitelisted.
+    /// @param _tokenId .
+    /// @param _bool .
+    function whitelistNFT(uint256 _tokenId, bool _bool) external;
+
+    /// @notice Create a new gauge (unpermissioned).
+    /// @dev Governor can create a new gauge for a pool with any address.
+    /// @param _poolFactory .
+    /// @param _pool .
+    function createGauge(address _poolFactory, address _pool) external returns (address);
+
+    /// @notice Kills a gauge. The gauge will not receive any new emissions and cannot be deposited into.
+    ///         Can still withdraw from gauge.
+    /// @dev Throws if not called by emergency council.
+    ///      Throws if gauge already killed.
+    /// @param _gauge .
+    function killGauge(address _gauge) external;
+
+    /// @notice Revives a killed gauge. Gauge will can receive emissions and deposits again.
+    /// @dev Throws if not called by emergency council.
+    ///      Throws if gauge is not killed.
+    /// @param _gauge .
+    function reviveGauge(address _gauge) external;
+
+    /// @dev Update claims to emissions for an array of gauges.
+    /// @param _gauges Array of gauges to update emissions for.
+    function updateFor(address[] memory _gauges) external;
+
+    /// @dev Update claims to emissions for gauges based on their pool id as stored in Voter.
+    /// @param _start   Starting index of pools.
+    /// @param _end     Ending index of pools.
+    function updateFor(uint256 _start, uint256 _end) external;
+
+    /// @dev Update claims to emissions for single gauge
+    /// @param _gauge .
+    function updateFor(address _gauge) external;
+}
+// File: contracts/aerodrome/IveNFT.sol
+
+
+pragma solidity ^0.8.19;
+
+/**
+ * @title IveNFT Interface
+ * @notice Interface for Voting Escrow NFTs (veNFTs) based on Aerodrome Finance
+ * @dev This interface combines essential veNFT functionality for the Aeroclub project
+ */
+interface IveNFT {
+    // Structs
+    struct LockedBalance {
+        int128 amount;
+        uint256 end;
+        bool isPermanent;
+    }
+
+    struct UserPoint {
+        int128 bias;
+        int128 slope;
+        uint256 ts;
+        uint256 blk;
+        uint256 permanent;
+    }
+
+    struct GlobalPoint {
+        int128 bias;
+        int128 slope;
+        uint256 ts;
+        uint256 blk;
+        uint256 permanentLockBalance;
+    }
+
+    struct Checkpoint {
+        uint256 fromTimestamp;
+        address owner;
+        uint256 delegatedBalance;
+        uint256 delegatee;
+    }
+
+    // Enums
+    enum DepositType {
+        DEPOSIT_FOR_TYPE,
+        CREATE_LOCK_TYPE,
+        INCREASE_LOCK_AMOUNT,
+        INCREASE_UNLOCK_TIME
+    }
+
+    enum EscrowType {
+        NORMAL,
+        LOCKED,
+        MANAGED
+    }
+
+    // Events
+    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
+    event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);
+    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);
+    
+    event Deposit(
+        address indexed provider,
+        uint256 indexed tokenId,
+        DepositType indexed depositType,
+        uint256 value,
+        uint256 locktime,
+        uint256 ts
+    );
+    event Withdraw(address indexed provider, uint256 indexed tokenId, uint256 value, uint256 ts);
+    event LockPermanent(address indexed _owner, uint256 indexed _tokenId, uint256 amount, uint256 _ts);
+    event UnlockPermanent(address indexed _owner, uint256 indexed _tokenId, uint256 amount, uint256 _ts);
+    event Supply(uint256 prevSupply, uint256 supply);
+    
+    event Merge(
+        address indexed _sender,
+        uint256 indexed _from,
+        uint256 indexed _to,
+        uint256 _amountFrom,
+        uint256 _amountTo,
+        uint256 _amountFinal,
+        uint256 _locktime,
+        uint256 _ts
+    );
+    
+    event Split(
+        uint256 indexed _from,
+        uint256 indexed _tokenId1,
+        uint256 indexed _tokenId2,
+        address _sender,
+        uint256 _splitAmount1,
+        uint256 _splitAmount2,
+        uint256 _locktime,
+        uint256 _ts
+    );
+
+    // Core veNFT Functions
+    function token() external view returns (address);
+    function tokenId() external view returns (uint256);
+    function supply() external view returns (uint256);
+    function permanentLockBalance() external view returns (uint256);
+    function epoch() external view returns (uint256);
+
+    // ERC721 Functions
+    function name() external view returns (string memory);
+    function symbol() external view returns (string memory);
+    function tokenURI(uint256 tokenId) external view returns (string memory);
+    function balanceOf(address owner) external view returns (uint256);
+    function ownerOf(uint256 tokenId) external view returns (address);
+    function getApproved(uint256 tokenId) external view returns (address);
+    function isApprovedForAll(address owner, address operator) external view returns (bool);
+    function approve(address to, uint256 tokenId) external;
+    function setApprovalForAll(address operator, bool approved) external;
+    function transferFrom(address from, address to, uint256 tokenId) external;
+    function safeTransferFrom(address from, address to, uint256 tokenId) external;
+    function safeTransferFrom(address from, address to, uint256 tokenId, bytes calldata data) external;
+
+    // Lock Management
+    function locked(uint256 tokenId) external view returns (LockedBalance memory);
+    function createLock(uint256 value, uint256 lockDuration) external returns (uint256);
+    function createLockFor(uint256 value, uint256 lockDuration, address to) external returns (uint256);
+    function increaseAmount(uint256 tokenId, uint256 value) external;
+    function increaseUnlockTime(uint256 tokenId, uint256 lockDuration) external;
+    function withdraw(uint256 tokenId) external;
+    function merge(uint256 from, uint256 to) external;
+    function split(uint256 from, uint256 amount) external returns (uint256 tokenId1, uint256 tokenId2);
+
+    // Permanent Locks
+    function lockPermanent(uint256 tokenId) external;
+    function unlockPermanent(uint256 tokenId) external;
+
+    // Voting Power
+    function balanceOfNFT(uint256 tokenId) external view returns (uint256);
+    function balanceOfNFTAt(uint256 tokenId, uint256 timestamp) external view returns (uint256);
+    function totalSupply() external view returns (uint256);
+    function totalSupplyAt(uint256 timestamp) external view returns (uint256);
+
+    // Delegation
+    function delegates(uint256 delegator) external view returns (uint256);
+    function delegate(uint256 delegator, uint256 delegatee) external;
+    function getPastVotes(address account, uint256 tokenId, uint256 timestamp) external view returns (uint256);
+    function getPastTotalSupply(uint256 timestamp) external view returns (uint256);
+
+    // Voting State
+    function voted(uint256 tokenId) external view returns (bool);
+    function voting(uint256 tokenId, bool voted) external;
+
+    // Managed NFTs
+    function escrowType(uint256 tokenId) external view returns (EscrowType);
+    function createManagedLockFor(address to) external returns (uint256);
+    function depositManaged(uint256 tokenId, uint256 mTokenId) external;
+    function withdrawManaged(uint256 tokenId) external;
+    function weights(uint256 tokenId, uint256 mTokenId) external view returns (uint256);
+    function deactivated(uint256 tokenId) external view returns (bool);
+
+    // Checkpoints
+    function checkpoint() external;
+    function userPointHistory(uint256 tokenId, uint256 loc) external view returns (UserPoint memory);
+    function pointHistory(uint256 loc) external view returns (GlobalPoint memory);
+    function numCheckpoints(uint256 tokenId) external view returns (uint48);
+    function checkpoints(uint256 tokenId, uint48 index) external view returns (Checkpoint memory);
+
+    // Utility
+    function isApprovedOrOwner(address spender, uint256 tokenId) external view returns (bool);
+    function canSplit(address account) external view returns (bool);
+    function slopeChanges(uint256 timestamp) external view returns (int128);
+    function ownerToNFTokenIdList(address owner, uint256 index) external view returns (uint256);
+}
+// File: contracts/aerodrome/IRewardsDistributor.sol
+
+
+pragma solidity ^0.8.0;
+
+
+interface IRewardsDistributor {
+    event CheckpointToken(uint256 time, uint256 tokens);
+    event Claimed(uint256 indexed tokenId, uint256 indexed epochStart, uint256 indexed epochEnd, uint256 amount);
+
+    error NotMinter();
+    error NotManagedOrNormalNFT();
+    error UpdatePeriod();
+
+    /// @notice 7 days in seconds
+    function WEEK() external view returns (uint256);
+
+    /// @notice Timestamp of contract creation
+    function startTime() external view returns (uint256);
+
+    /// @notice Timestamp of most recent claim of tokenId
+    function timeCursorOf(uint256 tokenId) external view returns (uint256);
+
+    /// @notice The last timestamp Minter has called checkpointToken()
+    function lastTokenTime() external view returns (uint256);
+
+    /// @notice Interface of VotingEscrow.sol
+    function ve() external view returns (IveNFT);
+
+    /// @notice Address of token used for distributions (AERO)
+    function token() external view returns (address);
+
+    /// @notice Address of Minter.sol
+    ///         Authorized caller of checkpointToken()
+    function minter() external view returns (address);
+
+    /// @notice Amount of token in contract when checkpointToken() was last called
+    function tokenLastBalance() external view returns (uint256);
+
+    /// @notice Called by Minter to notify Distributor of rebases
+    function checkpointToken() external;
+
+    /// @notice Returns the amount of rebases claimable for a given token ID
+    /// @dev Allows claiming of rebases up to 50 epochs old
+    /// @param tokenId The token ID to check
+    /// @return The amount of rebases claimable for the given token ID
+    function claimable(uint256 tokenId) external view returns (uint256);
+
+    /// @notice Claims rebases for a given token ID
+    /// @dev Allows claiming of rebases up to 50 epochs old
+    ///      `Minter.updatePeriod()` must be called before claiming
+    /// @param tokenId The token ID to claim for
+    /// @return The amount of rebases claimed
+    function claim(uint256 tokenId) external returns (uint256);
+
+    /// @notice Claims rebases for a list of token IDs
+    /// @dev    `Minter.updatePeriod()` must be called before claiming
+    /// @param tokenIds The token IDs to claim for
+    /// @return Whether or not the claim succeeded
+    function claimMany(uint256[] calldata tokenIds) external returns (bool);
+
+    /// @notice Used to set minter once on initialization
+    /// @dev Callable once by Minter only, Minter is immutable
+    function setMinter(address _minter) external;
+}
+// File: @openzeppelin/contracts/token/ERC20/IERC20.sol
+
+
+// OpenZeppelin Contracts (last updated v5.1.0) (token/ERC20/IERC20.sol)
+
+pragma solidity ^0.8.20;
+
+/**
+ * @dev Interface of the ERC-20 standard as defined in the ERC.
+ */
+interface IERC20 {
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+
+    /**
+     * @dev Returns the value of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the value of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves a `value` amount of tokens from the caller's account to `to`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address to, uint256 value) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets a `value` amount of tokens as the allowance of `spender` over the
+     * caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 value) external returns (bool);
+
+    /**
+     * @dev Moves a `value` amount of tokens from `from` to `to` using the
+     * allowance mechanism. `value` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(address from, address to, uint256 value) external returns (bool);
+}
+
+// File: @openzeppelin/contracts/interfaces/IERC20.sol
+
+
+// OpenZeppelin Contracts (last updated v5.0.0) (interfaces/IERC20.sol)
+
+pragma solidity ^0.8.20;
+
+
+// File: @openzeppelin/contracts/utils/introspection/IERC165.sol
+
+
+// OpenZeppelin Contracts (last updated v5.1.0) (utils/introspection/IERC165.sol)
+
+pragma solidity ^0.8.20;
+
+/**
+ * @dev Interface of the ERC-165 standard, as defined in the
+ * https://eips.ethereum.org/EIPS/eip-165[ERC].
+ *
+ * Implementers can declare support of contract interfaces, which can then be
+ * queried by others ({ERC165Checker}).
+ *
+ * For an implementation, see {ERC165}.
+ */
+interface IERC165 {
+    /**
+     * @dev Returns true if this contract implements the interface defined by
+     * `interfaceId`. See the corresponding
+     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[ERC section]
+     * to learn more about how these ids are created.
+     *
+     * This function call must use less than 30 000 gas.
+     */
+    function supportsInterface(bytes4 interfaceId) external view returns (bool);
+}
+
+// File: @openzeppelin/contracts/interfaces/IERC165.sol
+
+
+// OpenZeppelin Contracts (last updated v5.0.0) (interfaces/IERC165.sol)
+
+pragma solidity ^0.8.20;
+
+
+// File: @openzeppelin/contracts/interfaces/IERC1363.sol
+
+
+// OpenZeppelin Contracts (last updated v5.1.0) (interfaces/IERC1363.sol)
+
+pragma solidity ^0.8.20;
+
+
+
+/**
+ * @title IERC1363
+ * @dev Interface of the ERC-1363 standard as defined in the https://eips.ethereum.org/EIPS/eip-1363[ERC-1363].
+ *
+ * Defines an extension interface for ERC-20 tokens that supports executing code on a recipient contract
+ * after `transfer` or `transferFrom`, or code on a spender contract after `approve`, in a single transaction.
+ */
+interface IERC1363 is IERC20, IERC165 {
+    /*
+     * Note: the ERC-165 identifier for this interface is 0xb0202a11.
+     * 0xb0202a11 ===
+     *   bytes4(keccak256('transferAndCall(address,uint256)')) ^
+     *   bytes4(keccak256('transferAndCall(address,uint256,bytes)')) ^
+     *   bytes4(keccak256('transferFromAndCall(address,address,uint256)')) ^
+     *   bytes4(keccak256('transferFromAndCall(address,address,uint256,bytes)')) ^
+     *   bytes4(keccak256('approveAndCall(address,uint256)')) ^
+     *   bytes4(keccak256('approveAndCall(address,uint256,bytes)'))
+     */
+
+    /**
+     * @dev Moves a `value` amount of tokens from the caller's account to `to`
+     * and then calls {IERC1363Receiver-onTransferReceived} on `to`.
+     * @param to The address which you want to transfer to.
+     * @param value The amount of tokens to be transferred.
+     * @return A boolean value indicating whether the operation succeeded unless throwing.
+     */
+    function transferAndCall(address to, uint256 value) external returns (bool);
+
+    /**
+     * @dev Moves a `value` amount of tokens from the caller's account to `to`
+     * and then calls {IERC1363Receiver-onTransferReceived} on `to`.
+     * @param to The address which you want to transfer to.
+     * @param value The amount of tokens to be transferred.
+     * @param data Additional data with no specified format, sent in call to `to`.
+     * @return A boolean value indicating whether the operation succeeded unless throwing.
+     */
+    function transferAndCall(address to, uint256 value, bytes calldata data) external returns (bool);
+
+    /**
+     * @dev Moves a `value` amount of tokens from `from` to `to` using the allowance mechanism
+     * and then calls {IERC1363Receiver-onTransferReceived} on `to`.
+     * @param from The address which you want to send tokens from.
+     * @param to The address which you want to transfer to.
+     * @param value The amount of tokens to be transferred.
+     * @return A boolean value indicating whether the operation succeeded unless throwing.
+     */
+    function transferFromAndCall(address from, address to, uint256 value) external returns (bool);
+
+    /**
+     * @dev Moves a `value` amount of tokens from `from` to `to` using the allowance mechanism
+     * and then calls {IERC1363Receiver-onTransferReceived} on `to`.
+     * @param from The address which you want to send tokens from.
+     * @param to The address which you want to transfer to.
+     * @param value The amount of tokens to be transferred.
+     * @param data Additional data with no specified format, sent in call to `to`.
+     * @return A boolean value indicating whether the operation succeeded unless throwing.
+     */
+    function transferFromAndCall(address from, address to, uint256 value, bytes calldata data) external returns (bool);
+
+    /**
+     * @dev Sets a `value` amount of tokens as the allowance of `spender` over the
+     * caller's tokens and then calls {IERC1363Spender-onApprovalReceived} on `spender`.
+     * @param spender The address which will spend the funds.
+     * @param value The amount of tokens to be spent.
+     * @return A boolean value indicating whether the operation succeeded unless throwing.
+     */
+    function approveAndCall(address spender, uint256 value) external returns (bool);
+
+    /**
+     * @dev Sets a `value` amount of tokens as the allowance of `spender` over the
+     * caller's tokens and then calls {IERC1363Spender-onApprovalReceived} on `spender`.
+     * @param spender The address which will spend the funds.
+     * @param value The amount of tokens to be spent.
+     * @param data Additional data with no specified format, sent in call to `spender`.
+     * @return A boolean value indicating whether the operation succeeded unless throwing.
+     */
+    function approveAndCall(address spender, uint256 value, bytes calldata data) external returns (bool);
+}
+
+// File: @openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol
+
+
+// OpenZeppelin Contracts (last updated v5.3.0) (token/ERC20/utils/SafeERC20.sol)
+
+pragma solidity ^0.8.20;
+
+
+
+/**
+ * @title SafeERC20
+ * @dev Wrappers around ERC-20 operations that throw on failure (when the token
+ * contract returns false). Tokens that return no value (and instead revert or
+ * throw on failure) are also supported, non-reverting calls are assumed to be
+ * successful.
+ * To use this library you can add a `using SafeERC20 for IERC20;` statement to your contract,
+ * which allows you to call the safe operations as `token.safeTransfer(...)`, etc.
+ */
+library SafeERC20 {
+    /**
+     * @dev An operation with an ERC-20 token failed.
+     */
+    error SafeERC20FailedOperation(address token);
+
+    /**
+     * @dev Indicates a failed `decreaseAllowance` request.
+     */
+    error SafeERC20FailedDecreaseAllowance(address spender, uint256 currentAllowance, uint256 requestedDecrease);
+
+    /**
+     * @dev Transfer `value` amount of `token` from the calling contract to `to`. If `token` returns no value,
+     * non-reverting calls are assumed to be successful.
+     */
+    function safeTransfer(IERC20 token, address to, uint256 value) internal {
+        _callOptionalReturn(token, abi.encodeCall(token.transfer, (to, value)));
+    }
+
+    /**
+     * @dev Transfer `value` amount of `token` from `from` to `to`, spending the approval given by `from` to the
+     * calling contract. If `token` returns no value, non-reverting calls are assumed to be successful.
+     */
+    function safeTransferFrom(IERC20 token, address from, address to, uint256 value) internal {
+        _callOptionalReturn(token, abi.encodeCall(token.transferFrom, (from, to, value)));
+    }
+
+    /**
+     * @dev Variant of {safeTransfer} that returns a bool instead of reverting if the operation is not successful.
+     */
+    function trySafeTransfer(IERC20 token, address to, uint256 value) internal returns (bool) {
+        return _callOptionalReturnBool(token, abi.encodeCall(token.transfer, (to, value)));
+    }
+
+    /**
+     * @dev Variant of {safeTransferFrom} that returns a bool instead of reverting if the operation is not successful.
+     */
+    function trySafeTransferFrom(IERC20 token, address from, address to, uint256 value) internal returns (bool) {
+        return _callOptionalReturnBool(token, abi.encodeCall(token.transferFrom, (from, to, value)));
+    }
+
+    /**
+     * @dev Increase the calling contract's allowance toward `spender` by `value`. If `token` returns no value,
+     * non-reverting calls are assumed to be successful.
+     *
+     * IMPORTANT: If the token implements ERC-7674 (ERC-20 with temporary allowance), and if the "client"
+     * smart contract uses ERC-7674 to set temporary allowances, then the "client" smart contract should avoid using
+     * this function. Performing a {safeIncreaseAllowance} or {safeDecreaseAllowance} operation on a token contract
+     * that has a non-zero temporary allowance (for that particular owner-spender) will result in unexpected behavior.
+     */
+    function safeIncreaseAllowance(IERC20 token, address spender, uint256 value) internal {
+        uint256 oldAllowance = token.allowance(address(this), spender);
+        forceApprove(token, spender, oldAllowance + value);
+    }
+
+    /**
+     * @dev Decrease the calling contract's allowance toward `spender` by `requestedDecrease`. If `token` returns no
+     * value, non-reverting calls are assumed to be successful.
+     *
+     * IMPORTANT: If the token implements ERC-7674 (ERC-20 with temporary allowance), and if the "client"
+     * smart contract uses ERC-7674 to set temporary allowances, then the "client" smart contract should avoid using
+     * this function. Performing a {safeIncreaseAllowance} or {safeDecreaseAllowance} operation on a token contract
+     * that has a non-zero temporary allowance (for that particular owner-spender) will result in unexpected behavior.
+     */
+    function safeDecreaseAllowance(IERC20 token, address spender, uint256 requestedDecrease) internal {
+        unchecked {
+            uint256 currentAllowance = token.allowance(address(this), spender);
+            if (currentAllowance < requestedDecrease) {
+                revert SafeERC20FailedDecreaseAllowance(spender, currentAllowance, requestedDecrease);
+            }
+            forceApprove(token, spender, currentAllowance - requestedDecrease);
+        }
+    }
+
+    /**
+     * @dev Set the calling contract's allowance toward `spender` to `value`. If `token` returns no value,
+     * non-reverting calls are assumed to be successful. Meant to be used with tokens that require the approval
+     * to be set to zero before setting it to a non-zero value, such as USDT.
+     *
+     * NOTE: If the token implements ERC-7674, this function will not modify any temporary allowance. This function
+     * only sets the "standard" allowance. Any temporary allowance will remain active, in addition to the value being
+     * set here.
+     */
+    function forceApprove(IERC20 token, address spender, uint256 value) internal {
+        bytes memory approvalCall = abi.encodeCall(token.approve, (spender, value));
+
+        if (!_callOptionalReturnBool(token, approvalCall)) {
+            _callOptionalReturn(token, abi.encodeCall(token.approve, (spender, 0)));
+            _callOptionalReturn(token, approvalCall);
+        }
+    }
+
+    /**
+     * @dev Performs an {ERC1363} transferAndCall, with a fallback to the simple {ERC20} transfer if the target has no
+     * code. This can be used to implement an {ERC721}-like safe transfer that rely on {ERC1363} checks when
+     * targeting contracts.
+     *
+     * Reverts if the returned value is other than `true`.
+     */
+    function transferAndCallRelaxed(IERC1363 token, address to, uint256 value, bytes memory data) internal {
+        if (to.code.length == 0) {
+            safeTransfer(token, to, value);
+        } else if (!token.transferAndCall(to, value, data)) {
+            revert SafeERC20FailedOperation(address(token));
+        }
+    }
+
+    /**
+     * @dev Performs an {ERC1363} transferFromAndCall, with a fallback to the simple {ERC20} transferFrom if the target
+     * has no code. This can be used to implement an {ERC721}-like safe transfer that rely on {ERC1363} checks when
+     * targeting contracts.
+     *
+     * Reverts if the returned value is other than `true`.
+     */
+    function transferFromAndCallRelaxed(
+        IERC1363 token,
+        address from,
+        address to,
+        uint256 value,
+        bytes memory data
+    ) internal {
+        if (to.code.length == 0) {
+            safeTransferFrom(token, from, to, value);
+        } else if (!token.transferFromAndCall(from, to, value, data)) {
+            revert SafeERC20FailedOperation(address(token));
+        }
+    }
+
+    /**
+     * @dev Performs an {ERC1363} approveAndCall, with a fallback to the simple {ERC20} approve if the target has no
+     * code. This can be used to implement an {ERC721}-like safe transfer that rely on {ERC1363} checks when
+     * targeting contracts.
+     *
+     * NOTE: When the recipient address (`to`) has no code (i.e. is an EOA), this function behaves as {forceApprove}.
+     * Opposedly, when the recipient address (`to`) has code, this function only attempts to call {ERC1363-approveAndCall}
+     * once without retrying, and relies on the returned value to be true.
+     *
+     * Reverts if the returned value is other than `true`.
+     */
+    function approveAndCallRelaxed(IERC1363 token, address to, uint256 value, bytes memory data) internal {
+        if (to.code.length == 0) {
+            forceApprove(token, to, value);
+        } else if (!token.approveAndCall(to, value, data)) {
+            revert SafeERC20FailedOperation(address(token));
+        }
+    }
+
+    /**
+     * @dev Imitates a Solidity high-level call (i.e. a regular function call to a contract), relaxing the requirement
+     * on the return value: the return value is optional (but if data is returned, it must not be false).
+     * @param token The token targeted by the call.
+     * @param data The call data (encoded using abi.encode or one of its variants).
+     *
+     * This is a variant of {_callOptionalReturnBool} that reverts if call fails to meet the requirements.
+     */
+    function _callOptionalReturn(IERC20 token, bytes memory data) private {
+        uint256 returnSize;
+        uint256 returnValue;
+        assembly ("memory-safe") {
+            let success := call(gas(), token, 0, add(data, 0x20), mload(data), 0, 0x20)
+            // bubble errors
+            if iszero(success) {
+                let ptr := mload(0x40)
+                returndatacopy(ptr, 0, returndatasize())
+                revert(ptr, returndatasize())
+            }
+            returnSize := returndatasize()
+            returnValue := mload(0)
+        }
+
+        if (returnSize == 0 ? address(token).code.length == 0 : returnValue != 1) {
+            revert SafeERC20FailedOperation(address(token));
+        }
+    }
+
+    /**
+     * @dev Imitates a Solidity high-level call (i.e. a regular function call to a contract), relaxing the requirement
+     * on the return value: the return value is optional (but if data is returned, it must not be false).
+     * @param token The token targeted by the call.
+     * @param data The call data (encoded using abi.encode or one of its variants).
+     *
+     * This is a variant of {_callOptionalReturn} that silently catches all reverts and returns a bool instead.
+     */
+    function _callOptionalReturnBool(IERC20 token, bytes memory data) private returns (bool) {
+        bool success;
+        uint256 returnSize;
+        uint256 returnValue;
+        assembly ("memory-safe") {
+            success := call(gas(), token, 0, add(data, 0x20), mload(data), 0, 0x20)
+            returnSize := returndatasize()
+            returnValue := mload(0)
+        }
+        return success && (returnSize == 0 ? address(token).code.length > 0 : returnValue == 1);
+    }
+}
+
+// File: contracts/autopilot/RewardsVault.sol
+
+
+pragma solidity ^0.8.0;
+
+
+
+/// @title Autopilot Rewards Vault
+/// @notice Generic token storage vault for the PermanentLocksPool contract
+/// @dev This contract holds tokens and allows only the deploying contract to deposit/withdraw
+/// @author Aeroclub Team
+contract RewardsVault {
+
+	/// @notice The contract that deployed this vault
+	/// @dev Only this contract can deposit/withdraw tokens
+	address public immutable locks_vault_contract;
+
+
+	/// @notice Mapping to track total amount of each token stored in the vault
+	mapping(address => uint256) public total_tokens_stored;
+
+	// ============================================================================
+	// EVENTS
+	// ============================================================================
+
+	/// @notice Emitted when tokens are deposited into the vault
+	/// @param token Address of the token deposited
+	/// @param amount Amount of tokens deposited
+	/// @param new_total New total amount stored after deposit
+	event TokensDeposited(address indexed token, uint256 amount, uint256 new_total);
+
+	/// @notice Emitted when tokens are withdrawn from the vault
+	/// @param token Address of the token withdrawn
+	/// @param recipient Address receiving the tokens
+	/// @param amount Amount of tokens withdrawn
+	/// @param new_total New total amount stored after withdrawal
+	event TokensWithdrawn(address indexed token, address indexed recipient, uint256 amount, uint256 new_total);
+
+	/// @notice Emitted when non-accounted (excess) tokens are withdrawn
+	/// @param token Address of the token withdrawn
+	/// @param recipient Address receiving the tokens
+	/// @param amount Amount of excess tokens withdrawn
+	event NonAccountedTokensWithdrawn(address indexed token, address indexed recipient, uint256 amount);
+
+
+	// ============================================================================
+	// MODIFIERS
+	// ============================================================================
+
+
+	/// @notice Restricts access to locks vault contract only
+	modifier onlyLocksVault() {
+		require(msg.sender == address(locks_vault_contract), "Not locks vault contract");
+		_;
+	}
+
+	// ============================================================================
+	// CONSTRUCTOR
+	// ============================================================================
+
+	/// @notice Initializes the rewards vault
+	constructor() {
+		locks_vault_contract = msg.sender;
+	}
+
+	// ============================================================================
+	// VAULT FUNCTIONS
+	// ============================================================================
+
+	/// @notice Deposits tokens into the vault
+	/// @dev Only callable by the locks vault contract
+	/// @param token Address of the token to deposit
+	/// @param amount Amount of tokens to deposit
+	function deposit(IERC20 token, uint256 amount) external onlyLocksVault {
+		require(amount > 0, "Cannot deposit zero amount");
+		require(address(token) != address(0), "Cannot deposit zero address token");
+
+		// Transfer tokens from locks vault contract to this contract
+		SafeERC20.safeTransferFrom(
+			token,
+			locks_vault_contract,
+			address(this),
+			amount
+		);
+
+		// Update stored amount
+		total_tokens_stored[address(token)] += amount;
+
+		emit TokensDeposited(address(token), amount, total_tokens_stored[address(token)]);
+	}
+
+	/// @notice Withdraws tokens from the vault
+	/// @dev Only callable by the locks vault contract
+	/// @param token Address of the token to withdraw
+	/// @param recipient Address to receive the tokens
+	/// @param amount Amount of tokens to withdraw
+	function withdraw(IERC20 token, address recipient, uint256 amount) external onlyLocksVault {
+		require(amount > 0, "Cannot withdraw zero amount");
+		require(recipient != address(0), "Cannot withdraw to zero address");
+		require(address(token) != address(0), "Cannot withdraw zero address token");
+
+		// Cap withdrawal amount to what's actually available
+		uint256 available_amount = total_tokens_stored[address(token)];
+		uint256 withdrawal_amount = amount > available_amount ? available_amount : amount;
+
+		// Update stored amount
+		total_tokens_stored[address(token)] -= withdrawal_amount;
+
+		// Transfer tokens to recipient
+		SafeERC20.safeTransfer(
+			token,
+			recipient,
+			withdrawal_amount
+		);
+
+		emit TokensWithdrawn(address(token), recipient, withdrawal_amount, total_tokens_stored[address(token)]);
+	}
+
+	/// @notice Withdraws non-accounted tokens (difference between actual balance and tracked amount)
+	/// @dev Only callable by the locks vault contract
+	/// @param token Address of the token to withdraw excess amount
+	/// @param recipient Address to receive the tokens
+	/// @return withdrawn_amount Amount of excess tokens withdrawn
+	function withdrawNonAccounted(IERC20 token, address recipient) external onlyLocksVault returns (uint256 withdrawn_amount) {
+		require(recipient != address(0), "Cannot withdraw to zero address");
+		require(address(token) != address(0), "Cannot withdraw zero address token");
+
+		// Calculate the difference between actual balance and tracked amount
+		uint256 actual_balance = token.balanceOf(address(this));
+		uint256 tracked_amount = total_tokens_stored[address(token)];
+		
+		if (actual_balance <= tracked_amount) {
+			return 0; // No excess tokens to withdraw
+		}
+		
+		withdrawn_amount = actual_balance - tracked_amount;
+		
+		// Transfer excess tokens to recipient (don't update total_tokens_stored as these weren't tracked)
+		SafeERC20.safeTransfer(
+			token,
+			recipient,
+			withdrawn_amount
+		);
+
+		emit NonAccountedTokensWithdrawn(address(token), recipient, withdrawn_amount);
+	}
+}
+// File: contracts/autopilot/IDepositValidator.sol
+
+
+pragma solidity ^0.8.0;
+
+
+/// @title Deposit Validator Interface
+/// @notice Interface for deposit validation contracts used by PermanentLocksPool
+/// @dev This interface allows for different validation implementations
+/// @author Aeroclub Team
+interface IDepositValidator {
+
+	/// @notice Validates if a deposit is allowed, reverts if not
+	/// @param _nft_contract The veNFT contract
+	/// @param _lock_id The lock ID to validate
+	/// @param _depositor The address attempting to deposit
+	function validateDepositOrFail(
+		IveNFT _nft_contract,
+		uint256 _lock_id,
+		address _depositor
+	) external view;
+}
+// File: contracts/autopilot/IPermanentLocksPoolV1.sol
+
+
+pragma solidity ^0.8.0;
+
+
+interface IPermanentLocksPoolV1 {
+  /// @notice Returns the rewards token used in the locks pool
+  function rewards_token() external view returns (IERC20);
+
+  /// @notice Checks if an operator is permitted to perform actions in the locks pool
+  /// @param operator Address of the operator to check
+  function permitted_operators(address operator) external view returns (bool);
+
+  /// @notice Takes a snapshot of current rewards and updates the pool state
+  /// @param amount Amount of rewards to snapshot
+  function snapshotRewards(uint256 amount) external;
+}
+// File: contracts/autopilot/PermanentLocksPoolV1.sol
+
+
+pragma solidity ^0.8.0;
+
+
+
+
+
+
+
+
+
+interface IERC20Metadata {
+  function decimals() external view returns (uint8);
+}
+
+/// @title Aeroclub Permanent Locks Vault V1 (Batched Individual Voting)
+/// @notice A vault contract that stores individual NFTs and votes with them in batches
+/// @dev This version votes with individual NFTs in batches to optimize gas while avoiding delegation requirements
+/// @author Aeroclub Team
+contract PermanentLocksPoolV1 is IPermanentLocksPoolV1 {
+
+  /// @notice The veNFT contract for managing locked positions
+  IveNFT public immutable nft_locks_contract;
+  
+  /// @notice The voter contract for managing votes and claiming rewards
+  IVoter public immutable voter_contract;
+  
+  /// @notice The token used for reward distribution (typically USDC)
+  IERC20 public immutable rewards_token;
+
+  /// @notice The rewards distributor contract for claiming rebase rewards
+  IRewardsDistributor public immutable rewards_distributor;
+
+  /// @notice Timestamp offset for epoch calculations (depends on Aerodrome/Velodrome)
+  /// @dev This aligns our epochs with the underlying protocol's epoch system
+  uint256 public immutable epochs_offset_timestamp;
+
+  uint8 public immutable reward_token_decimals;
+
+  uint256 public window_preepoch_duration;
+
+  uint256 public window_postepoch_duration;
+
+  /// @notice Address of the auto-swapper contract that processes rewards
+  /// @dev Only this address can call snapshotReward function
+	address public swapper_contract_address;
+  
+  /// @notice Mapping of addresses authorized to perform operational tasks
+  /// @dev These operators can vote, claim rewards, and transfer tokens to swapper
+  mapping(address => bool) public permitted_operators;
+  
+  /// @notice Contract owner with administrative privileges
+  address public owner;
+  
+  /// @notice The rewards vault contract for storing and managing user rewards
+  RewardsVault public rewards_vault;
+
+  /// @notice The deposit validator contract for validating deposits
+  IDepositValidator public deposit_validator;
+
+  /// @notice Scaling factor for reward calculations
+  uint8 public constant DECIMALS = 18;
+
+  /// @notice Scaling factor for reward calculations to maintain precision (based on veAERO decimals)
+  uint256 public constant SCALE = 10 ** DECIMALS;
+
+  /// @notice Total tracked voting power from users who deposited through this contract per epoch
+  /// @dev Used for proportional reward calculations, indexed by snapshot_id
+  mapping(uint256 => uint256) public total_tracked_weight;
+  
+  /// @notice ID of the last reward snapshot (corresponds to epoch ID)
+  uint256 public last_snapshot_id;
+
+  /// @notice Mapping from lock_id to user's lock index in their userLocks array
+  mapping(uint256 => uint256) public lock_id_to_user_index;
+
+
+  /// @notice Whether deposits are paused
+  bool public deposits_paused = true;
+
+
+  /// @notice Per-epoch accumulated scaled rewards per unit of voting power
+  /// @dev Maps epoch ID to cumulative reward coefficient for that epoch
+  mapping(uint256 => uint256) public acc_reward_scaled_per_epoch;
+
+  /// @title Individual Lock Deposit Information Structure
+  /// @notice Stores all data related to a specific lock deposit
+  /// @dev This struct tracks each lock deposit separately for accurate reward calculation
+  struct LockInfo {
+    /// @notice Original NFT ID that was deposited (for reference)
+    uint256 lock_id;
+
+    /// @notice First snapshot ID that this lock is eligible for
+    /// @dev This lock can only claim rewards from snapshots >= this ID
+    uint256 start_snapshot_id;
+
+
+    /// @notice Last epoch ID for which rewards were calculated for this lock
+    /// @dev Used to calculate rewards earned since last claim or rebase update
+    uint256 rewards_snapshot_id;
+
+
+    /// @notice Current voting power of this lock (updated after rebase)
+    uint256 voting_power;
+
+
+    /// @notice Accumulated rewards waiting to be claimed
+    /// @dev These are rewards calculated but not yet distributed to user
+    uint256 postponed_rewards;
+  }
+  
+  /// @notice Mapping from user address to array of their lock deposits
+  mapping(address => LockInfo[]) public user_locks;
+
+  /// @notice Mapping from lock ID to it's owner 
+  mapping(uint256 => address) public lock_owner;
+
+  // ============================================================================
+  // EVENTS
+  // ============================================================================
+
+  /// @notice Emitted when a user deposits a permanent lock into the vault
+  /// @param user Address of the user making the deposit
+  /// @param deposited_nft_id Token ID of the deposited veNFT
+  /// @param lock_index Index of this lock in user's lock array
+  /// @param amount Voting power of the deposited lock
+  /// @param start_snapshot_id Starting snapshot ID for this lock
+  event Deposit(address indexed user, uint256 indexed deposited_nft_id, uint256 lock_index, uint256 amount, uint256 start_snapshot_id);
+  
+  /// @notice Emitted when a user withdraws a lock from the vault
+  /// @param user Address of the user making the withdrawal
+  /// @param withdrawn_nft_id Token ID of the withdrawn veNFT
+  /// @param amount Voting power of the withdrawn lock
+  event Withdraw(address indexed user, uint256 indexed withdrawn_nft_id, uint256 amount);
+  
+  /// @notice Emitted when a user claims their accumulated rewards
+  /// @param user Address of the user claiming rewards
+  /// @param lock_id Token ID of the lock for which rewards are claimed
+  /// @param reward_amount Amount of rewards claimed
+  event Claim(address indexed user, uint256 indexed lock_id, uint256 reward_amount);
+  
+  /// @notice Emitted when a new reward snapshot is taken
+  /// @param reward_amount Amount of rewards distributed in this snapshot
+  /// @param snapshot_id ID of the snapshot (epoch ID)
+  /// @param acc_reward_scaled Current accumulated reward scaled value
+  event RewardsSnapshot(uint256 reward_amount, uint256 snapshot_id, uint256 acc_reward_scaled);
+  
+  /// @notice Emitted when the swapper contract address is updated
+  /// @param old_swapper Previous swapper contract address
+  /// @param new_swapper New swapper contract address
+  event SwapperAddressUpdated(address indexed old_swapper, address indexed new_swapper);
+
+  /// @notice Emitted when deposit validator contract is updated
+  /// @param old_validator Previous deposit validator contract address
+  /// @param new_validator New deposit validator contract address
+  event DepositValidatorUpdated(address indexed old_validator, address indexed new_validator);
+  
+  /// @notice Emitted when operator permissions are updated
+  /// @param operator Address of the operator
+  /// @param permitted Whether the operator is now permitted
+  event OperatorPermissionUpdated(address indexed operator, bool permitted);
+
+  /// @notice Emitted when window durations are updated
+  /// @param old_preepoch_duration Previous pre-epoch window duration
+  /// @param new_preepoch_duration New pre-epoch window duration
+  /// @param old_postepoch_duration Previous post-epoch window duration
+  /// @param new_postepoch_duration New post-epoch window duration
+  event WindowDurationsUpdated(
+    uint256 old_preepoch_duration,
+    uint256 new_preepoch_duration,
+    uint256 old_postepoch_duration,
+    uint256 new_postepoch_duration
+  );
+
+  event EmergencySnapshot(uint256 snapshot_id);
+
+  /// @notice Emitted when ownership is transferred
+  /// @param previous_owner Address of the previous owner
+  /// @param new_owner Address of the new owner
+  event OwnershipTransferred(address indexed previous_owner, address indexed new_owner);
+
+  /// @notice Emitted when deposits are paused or resumed
+  /// @param paused Whether deposits are now paused
+  event DepositsPausedUpdated(bool paused);
+
+  /// @notice Emitted when voting is completed
+  /// @param nft_ids Array of NFT IDs that voted
+  /// @param pools Array of pool addresses that were voted for
+  event VotingCompleted(uint256[] nft_ids, address[] pools);
+
+  /// @notice Emitted when voting rewards are claimed
+  /// @param nft_ids Array of NFT IDs that claimed rewards
+  event VotingRewardsClaimed(uint256[] nft_ids);
+
+  /// @notice Emitted when rebase rewards are claimed
+  /// @param nft_ids Array of NFT IDs that claimed rebase rewards
+  /// @param final_balances Array of final balances for each NFT
+  event RebaseRewardsClaimed(uint256[] nft_ids, uint256[] final_balances);
+
+  /// @notice Emitted when tokens are transferred to swapper
+  /// @param tokens Array of token addresses transferred
+  event SwapperFilled(address[] tokens);
+
+  // ============================================================================
+  // MODIFIERS
+  // ============================================================================
+
+  /// @notice Restricts access to contract owner only
+  modifier onlyOwner() {
+    require(msg.sender == owner, "Not owner");
+    _;
+  }
+
+  /// @notice Restricts access to permitted operators only
+  modifier onlyPermittedOperator() {
+    require(permitted_operators[msg.sender], "Not permitted operator");
+    _;
+  }
+
+  /// @notice Restricts access to swapper contract only
+  modifier onlySwapper() {
+    require(swapper_contract_address == msg.sender, "Not a swapper contract");
+    _;
+  }
+
+
+  // ============================================================================
+  // CONSTRUCTOR
+  // ============================================================================
+
+  /// @notice Initializes the vault with required contract addresses
+  /// @param _nft_locks_contract Address of the veNFT contract
+  /// @param _voter_contract Address of the voter contract
+  /// @param _epochs_offset_timestamp Timestamp offset for epoch calculations
+  /// @param _rewards_token Address of the rewards token (typically USDC)
+  /// @param _rewards_distributor Address of the rewards distributor contract
+  /// @param _deposit_validator Address of the deposit validator contract (can be zero to disable)
+  constructor(
+    IveNFT _nft_locks_contract,
+    IVoter _voter_contract,
+    uint256 _epochs_offset_timestamp,
+    IERC20 _rewards_token,
+    IRewardsDistributor _rewards_distributor,
+    IDepositValidator _deposit_validator,
+    uint256 _window_preepoch_duration,
+    uint256 _window_postepoch_duration
+  ) {
+
+    require(
+      address(_nft_locks_contract) != address(0) &&
+      address(_voter_contract) != address(0) &&
+      address(_rewards_token) != address(0) &&
+      address(_rewards_distributor) != address(0), 
+      "Zero address"
+    );
+
+    require(_epochs_offset_timestamp > 0, "Invalid epochs offset timestamp");
+
+    nft_locks_contract = _nft_locks_contract;
+    voter_contract = _voter_contract;
+    epochs_offset_timestamp = _epochs_offset_timestamp;
+    rewards_token = _rewards_token;
+    rewards_distributor = _rewards_distributor;
+
+    // Can be zero if no deposit validation is required
+    deposit_validator = _deposit_validator;
+    
+    owner = msg.sender;
+
+    _setWindowDurations(_window_preepoch_duration, _window_postepoch_duration);
+    // _setWindowDurations requires deposits_paused to be true so we reset it here
+    deposits_paused = false;
+    
+    // Deploy rewards vault with this contract as the authorized caller
+    rewards_vault = new RewardsVault();
+
+    // needed so we dont get _emergencySnapshot() call on first deposit
+    last_snapshot_id = _getCurrentEpochId();
+
+    reward_token_decimals = IERC20Metadata(address(_rewards_token)).decimals();
+    require(reward_token_decimals <= DECIMALS, "Rewards token decimals cannot exceed internal decimals");
+  }
+
+  // ============================================================================
+  // USER FUNCTIONS
+  // ============================================================================
+
+  /// @notice Deposits a veNFT lock into the vault
+  /// @dev Lock must not have voted in current epoch and user must own the NFT
+  /// @param _lock_id Token ID of the permanent veNFT to deposit
+  function deposit(uint256 _lock_id) external {
+
+    require(!deposits_paused, "Deposits are paused");
+    require(
+      nft_locks_contract.escrowType(_lock_id) == IveNFT.EscrowType.NORMAL,
+      "Lock must be normal"
+    );
+
+    _emergencySnapshot();
+
+    IveNFT.LockedBalance memory lock = nft_locks_contract.locked(_lock_id);
+    uint256 current_epoch_id = _getCurrentEpochId();
+
+    uint256 last_voted = voter_contract.lastVoted(_lock_id);
+    require(
+      last_voted == 0 ||
+      last_voted < epochs_offset_timestamp ||
+      _getEpochIdByTimestamp(last_voted) != current_epoch_id, 
+      "Already voted in current epoch"
+    );
+
+    require(
+      nft_locks_contract.ownerOf(_lock_id) == msg.sender,
+      "Not owner of NFT"
+    );
+
+    if(nft_locks_contract.voted(_lock_id)) {
+      voter_contract.reset(_lock_id);
+    }
+
+    if(!lock.isPermanent) {
+      nft_locks_contract.lockPermanent(_lock_id);
+    }
+
+    // Validate deposit using deposit validator contract
+    if (address(deposit_validator) != address(0)) {
+      deposit_validator.validateDepositOrFail(
+        nft_locks_contract,
+        _lock_id,
+        msg.sender
+      );
+    }
+
+    uint256 amount = nft_locks_contract.balanceOfNFT(_lock_id);
+    require(amount > 0, "Zero voting power");
+
+    nft_locks_contract.transferFrom(msg.sender, address(this), _lock_id);
+    
+    uint256 eligible_epoch = _isInSpecialWindow(last_snapshot_id) ? last_snapshot_id + 1 : last_snapshot_id;
+    total_tracked_weight[eligible_epoch] += amount;
+
+    LockInfo memory new_lock = LockInfo({
+      lock_id: _lock_id,
+      start_snapshot_id: eligible_epoch,
+      rewards_snapshot_id: eligible_epoch,
+      voting_power: amount,
+      postponed_rewards: 0
+    });
+
+    lock_owner[_lock_id] = msg.sender;
+    user_locks[msg.sender].push(new_lock);
+
+    uint256 new_lock_index = user_locks[msg.sender].length - 1;
+    lock_id_to_user_index[_lock_id] = new_lock_index;
+
+    emit Deposit(msg.sender, _lock_id, new_lock_index, amount, eligible_epoch);
+  }
+
+  /// @notice Withdraws a specific lock by lock ID
+  /// @dev Must not be in special window and user must own the lock
+  /// @param _lock_id Lock ID of the NFT to withdraw
+  function withdraw(uint256 _lock_id) external {
+
+    _emergencySnapshot();
+
+		_isNotInSpecialWindowOrFail(last_snapshot_id);
+    
+    // Claim rewards before withdrawing
+    _claim(_lock_id);
+    
+    uint256 lock_index = _getLockIndexOrFail(msg.sender, _lock_id);
+    
+    LockInfo storage lock_info = user_locks[msg.sender][lock_index];
+    
+    uint256 amount = lock_info.voting_power;
+    if(lock_info.start_snapshot_id > last_snapshot_id) {
+      total_tracked_weight[lock_info.start_snapshot_id] -= _min(total_tracked_weight[lock_info.start_snapshot_id], amount);
+    } else {
+      total_tracked_weight[last_snapshot_id] -= _min(total_tracked_weight[last_snapshot_id], amount);
+    }
+    
+    uint256 last_index = user_locks[msg.sender].length - 1;
+    if (lock_index != last_index) {
+      user_locks[msg.sender][lock_index] = user_locks[msg.sender][last_index];
+      // Update mapping for the moved lock
+      uint256 moved_lock_id = user_locks[msg.sender][lock_index].lock_id;
+      lock_id_to_user_index[moved_lock_id] = lock_index;
+    }
+    user_locks[msg.sender].pop();
+    
+    // Clear mappings for withdrawn lock
+    delete lock_owner[_lock_id];
+    delete lock_id_to_user_index[_lock_id];
+
+    nft_locks_contract.transferFrom(address(this), msg.sender, _lock_id);
+
+    emit Withdraw(msg.sender, _lock_id, amount);
+  }
+
+  /// @notice Claims accumulated rewards for a specific lock
+  /// @dev User must have lock deposited and lock ID must be valid
+  /// @param _lock_id Lock ID to claim rewards from
+  function claim(uint256 _lock_id) external {
+    _emergencySnapshot();
+    _claim(_lock_id);
+  }
+
+  /// @notice Executes multiple function calls in a single transaction
+  /// @dev Allows batching of operations like multiple claims or withdrawals
+  /// @param _calls Array of encoded function calls to execute
+  /// @return results Array of return data from each call
+  function multicall(bytes[] calldata _calls) external returns (bytes[] memory results) {
+    results = new bytes[](_calls.length);
+    for (uint256 i = 0; i < _calls.length; i++) {
+      (bool success, bytes memory result) = address(this).delegatecall(_calls[i]);
+      require(success, "Multicall: call failed");
+      results[i] = result;
+    }
+  }
+
+  // ============================================================================
+  // OPERATOR FUNCTIONS
+  // ============================================================================
+
+  /// @notice Votes with multiple NFTs in batches during special window
+  /// @dev Only permitted operators can call this during special window
+  /// @param _nft_ids Array of NFT IDs to vote with
+  /// @param _pools Array of pool addresses to vote for
+  /// @param _percentages Array of vote weight percentages for each pool
+  /// @param _for_epoch_id The epoch ID for which the vote is being cast
+  function voteWithNfts(
+    uint256[] calldata _nft_ids,
+		address[] calldata _pools,
+    uint256[] calldata _percentages,
+    uint256 _for_epoch_id
+  ) external onlyPermittedOperator {
+
+    // Ensure there is not error when voting and snapshot did not pass somehow
+    _emergencySnapshot();
+
+		_isInSpecialWindowOrFail(last_snapshot_id);
+
+    uint256 current_epoch_id = _getCurrentEpochId();
+    require(current_epoch_id == _for_epoch_id, "Invalid epoch ID for voting");
+
+    require(_nft_ids.length > 0, "No NFT IDs provided");
+    
+    for (uint256 i = 0; i < _nft_ids.length; i++) {
+      uint256 nft_id = _nft_ids[i];
+      voter_contract.vote(nft_id, _pools, _percentages);
+    }
+
+    emit VotingCompleted(_nft_ids, _pools);
+  }
+
+  /// @notice Votes with multiple NFTs in batches during special window (safe version)
+  /// @dev Only permitted operators can call this during special window
+  /// @dev This version continues even if individual NFT votes fail
+  /// @param _nft_ids Array of NFT IDs to vote with
+  /// @param _pools Array of pool addresses to vote for
+  /// @param _percentages Array of vote weight percentages for each pool
+  /// @param _for_epoch_id The epoch ID for which the vote is being cast
+  function voteWithNftsSafe(
+    uint256[] calldata _nft_ids,
+    address[] calldata _pools,
+    uint256[] calldata _percentages,
+    uint256 _for_epoch_id
+  ) external onlyPermittedOperator {
+
+    // Ensure there is not error when voting and snapshot did not pass somehow
+    _emergencySnapshot();
+
+    _isInSpecialWindowOrFail(last_snapshot_id);
+
+    uint256 current_epoch_id = _getCurrentEpochId();
+    require(current_epoch_id == _for_epoch_id, "Invalid epoch ID for voting");
+
+    require(_nft_ids.length > 0, "No NFT IDs provided");
+    
+    uint256[] memory successful_nft_ids = new uint256[](_nft_ids.length);
+    uint256 successful_count = 0;
+    
+    for (uint256 i = 0; i < _nft_ids.length; i++) {
+      uint256 nft_id = _nft_ids[i];
+      try voter_contract.vote(nft_id, _pools, _percentages) {
+        // Vote successful, add to successful list
+        successful_nft_ids[successful_count] = nft_id;
+        successful_count++;
+      } catch {
+        // Vote failed for this NFT, continue with next one
+        continue;
+      }
+    }
+
+    // Create array with exact size of successful votes
+    uint256[] memory final_successful_ids = new uint256[](successful_count);
+    for (uint256 j = 0; j < successful_count; j++) {
+      final_successful_ids[j] = successful_nft_ids[j];
+    }
+
+    emit VotingCompleted(final_successful_ids, _pools);
+  }
+
+  /// @notice Claims voting rewards (bribes) from gauges for multiple NFTs
+  /// @dev Only permitted operators can call this during special window
+  /// @param _nft_ids Array of NFT IDs to claim rewards for
+  /// @param _bribes_and_fees Array of bribe/fee contract addresses
+  /// @param _tokens Array of token arrays for each bribe contract
+  function claimVotingRewards(
+    uint256[] calldata _nft_ids,
+    address[] calldata _bribes_and_fees,
+		address[][] calldata _tokens
+  ) external onlyPermittedOperator {
+
+		_isInSpecialWindowOrFail(last_snapshot_id);
+
+    require(_bribes_and_fees.length == _tokens.length, "Array length mismatch");
+    require(_nft_ids.length > 0, "No NFT IDs provided");
+
+    // Claim rewards for each NFT
+    for (uint256 i = 0; i < _nft_ids.length; i++) {
+      uint256 nft_id = _nft_ids[i];
+      require(nft_locks_contract.ownerOf(nft_id) == address(this), "Contract doesn't own NFT");
+      
+      voter_contract.claimBribes(
+        _bribes_and_fees,
+        _tokens,
+        nft_id
+      );
+    }
+
+    emit VotingRewardsClaimed(_nft_ids);
+  }
+
+  /// @notice Claims rebase rewards from RewardsDistributor for multiple NFTs
+  /// @dev Only permitted operators can call this outside special window
+  ///      This claims rebase rewards that are automatically added to each NFT
+  /// @param _nft_ids Array of NFT IDs to claim rebase rewards for
+  function claimRebaseRewards(
+    uint256[] calldata _nft_ids
+  ) external onlyPermittedOperator {
+
+    _emergencySnapshot();
+
+    _isNotInSpecialWindowOrFail(last_snapshot_id);
+
+    require(_nft_ids.length > 0, "No NFT IDs provided");
+    
+    uint256 total_before_balance = 0;
+    uint256 total_after_balance = 0;
+
+    // Claim rebase rewards for each NFT
+    uint256[] memory final_balances = new uint256[](_nft_ids.length);
+    for (uint256 i = 0; i < _nft_ids.length; i++) {
+
+      uint256 nft_id = _nft_ids[i];
+      address nft_owner = lock_owner[nft_id];
+      uint256 nft_index = lock_id_to_user_index[nft_id];
+
+      LockInfo storage lock_info = user_locks[nft_owner][nft_index];
+
+      if(last_snapshot_id > lock_info.rewards_snapshot_id) {
+        uint256 new_pending_rewards = _calcNewPendingRewards(lock_info);
+        lock_info.postponed_rewards += new_pending_rewards;
+        lock_info.rewards_snapshot_id = last_snapshot_id;
+      }
+      
+      require(nft_owner != address(0), "NFT not in vault");
+
+      total_before_balance += lock_info.voting_power;
+
+      rewards_distributor.claim(nft_id);
+
+      // now we have updated balance for this NFT
+      
+      uint256 new_lock_balance = nft_locks_contract.balanceOfNFT(nft_id);
+      total_after_balance += new_lock_balance;
+      
+      lock_info.voting_power = new_lock_balance;
+      final_balances[i] = new_lock_balance;
+    }
+
+    // Apply rebase change (can be positive or negative)
+    if (total_before_balance > 0 && total_after_balance != total_before_balance) {
+      int256 rebase_change = int256(total_after_balance) - int256(total_before_balance);
+      int256 new_weight = int256(total_tracked_weight[last_snapshot_id]) + rebase_change;
+
+      // we need to care only about last_snapshot_id because we 
+      // cannot have total_tracked_weight[last_snapshot_id + 1]
+      // outside of special window
+      total_tracked_weight[last_snapshot_id] = new_weight > 0 ? uint256(new_weight) : 0;
+    }
+
+    emit RebaseRewardsClaimed(_nft_ids, final_balances);
+  }
+
+  /// @notice Transfers accumulated reward tokens to the swapper contract
+  /// @dev Only permitted operators can call this during special window
+  ///      This prepares tokens for swapping to the reward token (USDC)
+  /// @param _tokens Array of token addresses to transfer
+  function fillSwapper(
+		address[] calldata _tokens
+  ) external onlyPermittedOperator {
+
+		_isInSpecialWindowOrFail(last_snapshot_id);
+
+    require(swapper_contract_address != address(0), "Swapper contract not set");
+
+    for (uint256 i = 0; i < _tokens.length; i++) {
+
+      IERC20 token = IERC20(_tokens[i]);
+      uint256 balance = token.balanceOf(address(this));
+      if (balance > 0) {
+        SafeERC20.safeTransfer(token, swapper_contract_address, balance);
+      }
+    }
+
+    emit SwapperFilled(_tokens);
+  }
+
+  // ============================================================================
+  // SWAPPER FUNCTIONS
+  // ============================================================================
+
+  /// @notice Creates a reward snapshot and distributes rewards proportionally
+  /// @dev Only the swapper contract can call this function
+  ///      This is the core function that enables reward distribution
+  ///      If reward_amount is 0 or no deposits exist, only updates snapshot ID
+  /// @dev Requirements:
+  ///      - Cannot snapshot same epoch twice (must be new epoch)
+  ///      - If reward_amount > 0, requires active deposits (total_amount > 0)
+  ///      - MUST be called during special window
+  /// @dev This function CANNOT be called if several epochs were not snapshoted
+  ///      If this happens, use emergencySnapshot() to create a snapshot with 0 rewards
+  /// @param reward_amount Amount of rewards to distribute (in reward token)
+  ///        Can be 0 if no rewards were generated this epoch
+  function snapshotRewards(uint256 reward_amount) external onlySwapper {
+
+    _isInSpecialWindowOrFail(last_snapshot_id);
+
+    uint256 current_epoch = _getCurrentEpochId();
+
+    require(
+      current_epoch > last_snapshot_id,
+      "Already snapshoted this epoch"
+    );
+
+    uint256 reward_scaled = 0;
+    if(reward_amount > 0) {
+
+      // Transfer rewards from swapper to rewards vault
+      SafeERC20.safeTransferFrom(
+        rewards_token,
+        swapper_contract_address,
+        address(this),
+        reward_amount
+      );
+      
+      // Approve rewards vault to take the tokens
+      SafeERC20.forceApprove(rewards_token, address(rewards_vault), reward_amount);
+      
+      // Deposit rewards into vault
+      rewards_vault.deposit(rewards_token, reward_amount);
+
+      if(total_tracked_weight[last_snapshot_id] > 0) {
+        // Scale reward_amount to internal DECIMALS (18) - we only scale up since constructor ensures reward_token_decimals <= DECIMALS
+        uint256 scaled_reward_amount = reward_amount * (10**(DECIMALS - reward_token_decimals));
+
+        // Calculate coefficient: reward_scaled = scaled_reward_amount / total_tracked_weight
+        // We know about small inefficiency in this formula, but it is negligible
+        // and actual losses are less then 1$ in over thousand years
+        reward_scaled = (scaled_reward_amount * SCALE) / total_tracked_weight[last_snapshot_id];
+      }
+    }
+
+    // Update per-epoch accumulator: current epoch = previous epoch + new rewards
+    acc_reward_scaled_per_epoch[current_epoch] = acc_reward_scaled_per_epoch[last_snapshot_id] + reward_scaled;
+
+    // Copy previous epoch's total tracked weight to new epoch
+    total_tracked_weight[current_epoch] += total_tracked_weight[last_snapshot_id];
+    
+    // Update snapshot ID to current epoch
+    last_snapshot_id = current_epoch;
+
+    emit RewardsSnapshot(reward_amount, last_snapshot_id, acc_reward_scaled_per_epoch[last_snapshot_id]);
+  }
+
+  /// @notice Internal emergency snapshot mechanism to prevent reward calculation issues
+  /// @dev Automatically creates a snapshot with 0 rewards if bots fail to snapshot during special window
+  ///      This ensures epoch progression continues even if automated systems fail
+  /// @dev Conditions for emergency snapshot:
+  ///      - Must not be in special window (prevents interference with bot operations)
+  ///      - Current epoch must be different from last snapshot epoch
+  /// @return success True if emergency snapshot was taken, false if conditions not met
+  function _emergencySnapshot() internal returns (bool success) {
+
+    uint256 current_epoch = _getCurrentEpochId();
+
+    if(
+      _isNotInSpecialWindow(last_snapshot_id) &&
+      current_epoch > last_snapshot_id
+    ) {
+
+      // if bots somehow failed to snapshot several or more epochs
+      if(current_epoch > last_snapshot_id + 1) {
+
+        // If some user deposited during special window - we need to fill the acc_reward_scaled for 
+        // the epoch he is starting from
+        acc_reward_scaled_per_epoch[last_snapshot_id + 1] = acc_reward_scaled_per_epoch[last_snapshot_id];
+
+        // Here we are copying acc_reward_scaled from last WORKING epoch to the new one
+        acc_reward_scaled_per_epoch[current_epoch] = acc_reward_scaled_per_epoch[last_snapshot_id];
+
+        // Again if some users deposited during special window we need to copy data from last WORKING epoch
+        // AND from epoch his voting power was postponed to (N & N+1) to current epoch weights
+        total_tracked_weight[current_epoch] += total_tracked_weight[last_snapshot_id] + total_tracked_weight[last_snapshot_id + 1];
+      } else {
+
+        // Here we are copying acc_reward_scaled from last WORKING epoch to the new one
+        acc_reward_scaled_per_epoch[current_epoch] = acc_reward_scaled_per_epoch[last_snapshot_id];
+
+        // Copy previous epoch's total tracked weight to new epoch
+        total_tracked_weight[current_epoch] += total_tracked_weight[last_snapshot_id];
+      }
+
+      last_snapshot_id = current_epoch;
+      emit RewardsSnapshot(0, last_snapshot_id, acc_reward_scaled_per_epoch[last_snapshot_id]);
+      emit EmergencySnapshot(last_snapshot_id);
+      return true;
+    } else {
+      return false;
+    }
+    
+  }
+
+  /// @notice Public emergency snapshot function for manual intervention
+  /// @dev Allows anyone to trigger emergency snapshot if bots fail to operate
+  ///      Useful as a safety mechanism to ensure system continues functioning
+  /// @dev Requirements:
+  ///      - Emergency snapshot conditions must be met (see _emergencySnapshot)
+  ///      - Will revert if no emergency snapshot is needed
+  function emergencySnapshot() external {
+    require(_emergencySnapshot(), "No emergency snapshot taken");
+  }
+
+  // ============================================================================
+  // OWNER FUNCTIONS
+  // ============================================================================
+
+  /// @notice Sets the swapper contract address
+  /// @dev Only owner can call this function
+  /// @param _swapper_contract Address of the new swapper contract
+  function setSwapperContract(address _swapper_contract) external onlyOwner {
+    require(_swapper_contract != address(0), "Swapper address cannot be zero");
+    address old_swapper = swapper_contract_address;
+    swapper_contract_address = _swapper_contract;
+    emit SwapperAddressUpdated(old_swapper, _swapper_contract);
+  }
+
+  /// @notice Updates operator permissions
+  /// @dev Only owner can call this function
+  /// @param _operator Address of the operator
+  /// @param _permitted Whether to grant or revoke permissions
+  function setPermittedOperator(address _operator, bool _permitted) external onlyOwner {
+    require(_operator != address(0), "Operator address cannot be zero");
+    permitted_operators[_operator] = _permitted;
+    emit OperatorPermissionUpdated(_operator, _permitted);
+  }
+
+  /// @notice Transfers ownership to a new address
+  /// @dev Only owner can call this function
+  /// @param _new_owner Address of the new owner
+  function transferOwnership(address _new_owner) external onlyOwner {
+    require(_new_owner != address(0), "New owner address cannot be zero");
+    address old_owner = owner;
+    owner = _new_owner;
+    emit OwnershipTransferred(old_owner, _new_owner);
+  }
+
+  /// @notice Updates the special window durations
+  /// @dev Only owner can call this function
+  /// @dev Requirements:
+  ///      - Deposits must be paused
+  ///      - Pre-epoch duration must be at least 90 minutes
+  ///      - Post-epoch duration must be at least 30 minutes
+  ///      - Combined durations must be less than 6 days to prevent overlapping windows
+  /// @param _window_preepoch_duration New duration for pre-epoch window (in seconds)
+  /// @param _window_postepoch_duration New duration for post-epoch window (in seconds)
+  function setWindowDurations(
+    uint256 _window_preepoch_duration,
+    uint256 _window_postepoch_duration
+  ) external onlyOwner {
+    uint256 old_preepoch = window_preepoch_duration;
+    uint256 old_postepoch = window_postepoch_duration;
+
+    _setWindowDurations(_window_preepoch_duration, _window_postepoch_duration);
+
+    emit WindowDurationsUpdated(
+      old_preepoch,
+      _window_preepoch_duration,
+      old_postepoch,
+      _window_postepoch_duration
+    );
+  }
+
+  /// @notice Emergency withdrawal of unaccounted tokens from rewards vault
+  /// @dev Only owner can call this function, not during special window
+  /// @dev Withdraws only the difference between actual balance and tracked amount
+  /// @param _token Address of the token to withdraw unaccounted amount
+  /// @param _recipient Address to receive the withdrawn tokens
+  /// @return withdrawn_amount Amount of unaccounted tokens withdrawn
+  function emergencyWithdrawFromRewardsVault(
+    IERC20 _token,
+    address _recipient
+  ) external onlyOwner returns (uint256 withdrawn_amount) {
+    _emergencySnapshot();
+    _isNotInSpecialWindowOrFail(last_snapshot_id);
+    require(_recipient != address(0), "Recipient cannot be zero address");
+    
+    withdrawn_amount = rewards_vault.withdrawNonAccounted(_token, _recipient);
+  }
+
+  /// @notice Emergency withdrawal of non-reward tokens from this contract
+  /// @dev Only owner can call this function, not during special window
+  /// @param _token Address of the token to withdraw (cannot be rewards token)
+  /// @param _recipient Address to receive the withdrawn tokens
+  /// @param _amount Amount of tokens to withdraw
+  function emergencyWithdrawFromLocksVault(
+    IERC20 _token,
+    address _recipient,
+    uint256 _amount
+  ) external onlyOwner {
+    _emergencySnapshot();
+    _isNotInSpecialWindowOrFail(last_snapshot_id);
+    require(_recipient != address(0), "Recipient cannot be zero address");
+    require(_amount > 0, "Amount must be greater than zero");
+    
+    SafeERC20.safeTransfer(_token, _recipient, _amount);
+  }
+
+  /// @notice Pauses or resumes deposits
+  /// @dev Only owner can call this function
+  /// @param _paused Whether to pause deposits
+  function setDepositsPaused(bool _paused) external onlyOwner {
+    deposits_paused = _paused;
+    emit DepositsPausedUpdated(_paused);
+  }
+
+  /// @notice Sets the deposit validator contract address
+  /// @dev Only owner can call this function
+  /// @param _deposit_validator Address of the new deposit validator contract (can be zero to disable)
+  function setDepositValidator(IDepositValidator _deposit_validator) external onlyOwner {
+    address old_validator = address(deposit_validator);
+    deposit_validator = _deposit_validator;
+    emit DepositValidatorUpdated(old_validator, address(_deposit_validator));
+  }
+
+  // ============================================================================
+  // VIEW FUNCTIONS
+  // ============================================================================
+
+  /// @notice Gets the total number of locks for a user
+  /// @param _user Address of the user
+  /// @return Total number of locks deposited by the user
+  function getUserLocksCount(address _user) external view returns (uint256) {
+    return user_locks[_user].length;
+  }
+
+  /// @notice Retrieves lock information for a user with pagination
+  /// @param _user Address of the user
+  /// @param _offset Starting index for pagination
+  /// @param _limit Maximum number of locks to return
+  /// @return Array of LockInfo structs containing user's lock details
+  function getUserLocks(address _user, uint256 _offset, uint256 _limit) external view returns (LockInfo[] memory) {
+    uint256 total_locks = user_locks[_user].length;
+    
+    if (_offset >= total_locks) {
+      return new LockInfo[](0);
+    }
+    
+    uint256 end = _offset + _limit;
+    if (end > total_locks) {
+      end = total_locks;
+    }
+    
+    uint256 length = end - _offset;
+    LockInfo[] memory result = new LockInfo[](length);
+    
+    for (uint256 i = 0; i < length; i++) {
+      result[i] = user_locks[_user][_offset + i];
+    }
+    
+    return result;
+  }
+  
+  /// @notice Retrieves specific lock information by lock ID and owner
+  /// @param _owner Address of the lock owner
+  /// @param _lock_id Lock ID to retrieve information for
+  /// @return LockInfo struct containing the specific lock details
+  function getUserLock(address _owner, uint256 _lock_id) external view returns (LockInfo memory) {
+    uint256 lock_index = _getLockIndexOrFail(_owner, _lock_id);
+    return user_locks[_owner][lock_index];
+  }
+
+  /// @notice Calculates pending rewards for a specific lock
+  /// @dev This is useful for frontend display and user decision making
+  /// @param _owner Address of the lock owner
+  /// @param _lock_id Lock ID to calculate pending rewards for
+  /// @return pending_rewards Amount of pending rewards for this lock
+  function getPendingRewards(address _owner, uint256 _lock_id) external view returns (uint256) {
+    uint256 lock_index = _getLockIndexOrFail(_owner, _lock_id);
+    LockInfo storage lock_info = user_locks[_owner][lock_index];
+    
+    return _calcPendingRewards(lock_info) / (10**(DECIMALS - reward_token_decimals));
+  }
+
+
+  /// @notice Gets total tracked weight information for current epoch
+  /// @return total_tracked_weight_ Total tracked weight from users who deposited through this contract
+  function getTvl() external view returns (
+    uint256 total_tracked_weight_
+  ) {
+    total_tracked_weight_ = total_tracked_weight[last_snapshot_id] + total_tracked_weight[last_snapshot_id + 1];
+  }
+
+  /// @notice Gets the current epoch ID
+  /// @return Current epoch ID based on block timestamp
+  function getCurrentEpochId() external view returns (uint256) {
+    return _getCurrentEpochId();
+  }
+
+
+  /// @notice Provides comprehensive epoch information
+  /// @dev Useful for understanding epoch timing and special window status
+  /// @param _epoch_id The epoch ID to get information for
+  /// @return epoch_start Timestamp when epoch starts
+  /// @return epoch_end Timestamp when epoch ends
+  /// @return wrapped_start Timestamp when special window starts
+  /// @return wrapped_end Timestamp when special window ends
+  function getEpochInfo(uint256 _epoch_id) external view returns (
+    uint256 epoch_start,
+    uint256 epoch_end,
+    uint256 wrapped_start,
+    uint256 wrapped_end
+  ) {
+    epoch_start = _getEpochStartAt(_epoch_id);
+    epoch_end = _getEpochEndAt(_epoch_id);
+    wrapped_start = _getWrappedEpochStartAt(_epoch_id);
+    wrapped_end = _getWrappedEpochEndAt(_epoch_id);
+  }
+
+  // ============================================================================
+  // INTERNAL FUNCTIONS
+  // ============================================================================
+
+  /// @notice Internal function to get lock index and validate owner
+  /// @param _owner Address of the lock owner
+  /// @param _lock_id Lock ID to get index for
+  /// @return lock_index Index of the lock in owner's array
+  function _getLockIndexOrFail(address _owner, uint256 _lock_id) internal view returns (uint256 lock_index) {
+    lock_index = lock_id_to_user_index[_lock_id];
+    require(
+      lock_index < user_locks[_owner].length && user_locks[_owner][lock_index].lock_id == _lock_id,
+      "Lock not found or not owned by specified owner"
+    );
+  }
+
+  /// @notice Internal function to claim rewards for a specific lock
+  /// @param _lock_id Lock ID to claim rewards from
+  function _claim(uint256 _lock_id) internal {
+
+    address recipient = lock_owner[_lock_id];
+
+    uint256 lock_index = _getLockIndexOrFail(recipient, _lock_id);
+    LockInfo storage lock_info = user_locks[recipient][lock_index];
+    
+    uint256 lock_weight = lock_info.voting_power;
+    if(lock_weight == 0) {
+      return; // Skip locks with zero voting power
+    }
+    
+    // Calculate rewards for this lock based on its proportional weight
+    uint256 pending_rewards = _calcPendingRewards(lock_info);
+
+    if(pending_rewards > 0) {
+
+      // Update this lock's reward baseline
+      lock_info.postponed_rewards = 0; // Reset postponed rewards after claiming
+      lock_info.rewards_snapshot_id = last_snapshot_id; // Update to current epoch
+
+      // Scale down pending_rewards from internal DECIMALS (18) to reward token decimals
+      uint256 scaled_down_rewards = pending_rewards / (10**(DECIMALS - reward_token_decimals));
+
+      rewards_vault.withdraw(rewards_token, recipient, scaled_down_rewards);
+      emit Claim(recipient, _lock_id, scaled_down_rewards);
+    }
+  }
+
+  /// @notice Calculates new pending rewards for a lock since last update
+  /// @dev Uses per-epoch accumulator to calculate rewards earned between epochs
+  /// @param _lock_info Lock information to calculate rewards for
+  /// @return New pending rewards amount (before scaling down to token decimals)
+  function _calcNewPendingRewards(
+    LockInfo storage _lock_info
+  ) internal view returns (uint256) {
+
+    if(last_snapshot_id > _lock_info.rewards_snapshot_id) {
+      // Calculate difference in accumulated rewards per unit since last update
+      uint256 delta_acc = acc_reward_scaled_per_epoch[last_snapshot_id] - acc_reward_scaled_per_epoch[_lock_info.rewards_snapshot_id];
+      if (delta_acc > 0) {
+        return (_lock_info.voting_power * delta_acc) / SCALE;
+      } else {
+        return 0;
+      }
+    } else {
+      return 0;
+    }
+  }
+
+  function _calcPendingRewards(
+    LockInfo storage _lock_info
+  ) internal view returns (uint256 pending_rewards) {
+    return _calcNewPendingRewards(_lock_info) + _lock_info.postponed_rewards;
+  }
+
+  /// @notice Requires that current time is within special window
+  /// @dev Special window is when Aeroclub bots perform critical operations
+  /// @param current_epoch_id The epoch ID to check against
+	function _isInSpecialWindowOrFail(
+		uint256 current_epoch_id
+	) internal view {
+		require(
+			_isInSpecialWindow(current_epoch_id),
+			"Not in special window"
+		);
+	}
+
+  /// @notice Checks if current time is within special window
+  /// @dev Special window: ~2 hours before epoch end to ~1 hour after epoch start
+  /// @param epoch_id The epoch ID to check against
+  /// @return true if currently in special window
+  function _isInSpecialWindow(
+    uint256 epoch_id
+  ) internal view returns (bool) {
+    return (
+      _getWrappedEpochEndAt(epoch_id) < block.timestamp &&
+      block.timestamp <= _getWrappedEpochStartAt(epoch_id + 1)
+    );
+  }
+
+  /// @notice Checks if current timestamp is NOT in special window
+  /// @dev Convenience function for readable code - opposite of _isInSpecialWindow
+  /// @param epoch_id The epoch ID to check the special window against
+  /// @return false if currently in special window, true otherwise
+  function _isNotInSpecialWindow(
+    uint256 epoch_id
+  ) internal view returns (bool) {
+    return !_isInSpecialWindow(epoch_id);
+  }
+
+  /// @notice Requires that current time is NOT within special window
+  /// @dev Used to prevent user actions during bot operation periods
+  ///      Special window is when Aeroclub bots perform critical operations like:
+  ///      - Voting with the master NFT
+  ///      - Claiming rewards from gauges
+  ///      - Transferring tokens to swapper
+  /// @param epoch_id The epoch ID to check against
+  function _isNotInSpecialWindowOrFail(
+		uint256 epoch_id
+	) internal view {
+		require(
+			!_isInSpecialWindow(epoch_id),
+			"Currently in special window"
+		);
+	}
+
+  /// @notice Converts timestamp to epoch ID
+  /// @dev Epochs are weekly periods starting from epochs_offset_timestamp
+  ///      Formula: (timestamp - offset) / 1 week
+  ///      This aligns with Aerodrome/Velodrome epoch system
+  /// @param _timestamp The timestamp to convert (must be >= epochs_offset_timestamp)
+  /// @return Epoch ID for the given timestamp (0-based indexing)
+  function _getEpochIdByTimestamp(
+    uint256 _timestamp
+  ) internal view returns (uint256) {
+    return (_timestamp - epochs_offset_timestamp) / 1 weeks;
+  }
+
+	/// @notice Gets current epoch ID based on block timestamp
+	/// @dev Convenience function that applies _getEpochIdByTimestamp to current time
+	/// @return Current epoch ID (0-based, increments weekly)
+	function _getCurrentEpochId() internal view returns (uint256) {
+		return _getEpochIdByTimestamp(block.timestamp);
+	}
+
+	/// @notice Calculates the start timestamp of an epoch
+	/// @dev Formula: epochs_offset_timestamp + (epoch_id * 1 week)
+	///      Each epoch starts exactly at the beginning of its week
+	/// @param _epoch_id The epoch ID (0-based)
+	/// @return Timestamp when the epoch starts (inclusive)
+	function _getEpochStartAt(
+		uint256 _epoch_id
+	) internal view returns (uint256) {
+    return epochs_offset_timestamp + (_epoch_id * 1 weeks);
+	}
+
+	/// @notice Calculates the end timestamp of an epoch
+	/// @dev Formula: epoch_start + 1 week - 1 second
+	///      Ends at the last second before next epoch starts
+	/// @param _epoch_id The epoch ID (0-based)
+	/// @return Timestamp when the epoch ends (inclusive - last second of the week)
+	function _getEpochEndAt(
+		uint256 _epoch_id
+	) internal view returns (uint256) {
+		return _getEpochStartAt(_epoch_id) + 1 weeks - 1;
+	}
+
+	/// @notice Calculates when special window starts for an epoch
+	/// @dev Special window starts ~1 hour after epoch start
+	///      This gives time for any epoch transition processes to complete
+	///      Formula: epoch_start + ~1 hour
+	/// @param _epoch_id The epoch ID (0-based)
+	/// @return Timestamp when special window starts for bot operations
+	function _getWrappedEpochStartAt(
+		uint256 _epoch_id
+	) internal view returns (uint256) {
+		return _getEpochStartAt(_epoch_id) + window_postepoch_duration;
+	}
+
+	/// @notice Calculates when special window ends for an epoch
+	/// @dev Special window ends ~2 hours before epoch end
+	///      This ensures bots have completed all operations before epoch transition
+	///      Formula: epoch_end - ~2 hours
+	/// @param _epoch_id The epoch ID (0-based)
+	/// @return Timestamp when special window ends (bot operations must be complete)
+	function _getWrappedEpochEndAt(
+		uint256 _epoch_id
+	) internal view returns (uint256) {
+		return _getEpochEndAt(_epoch_id) - window_preepoch_duration;
+	}
+
+  /// @notice Internal setter for window durations with comprehensive validation
+  /// @dev Validates and sets both window duration parameters
+  /// @param _window_preepoch_duration Pre-epoch window duration to set
+  /// @param _window_postepoch_duration Post-epoch window duration to set
+  function _setWindowDurations(
+    uint256 _window_preepoch_duration,
+    uint256 _window_postepoch_duration
+  ) internal {
+
+    require(deposits_paused, "Cannot set window durations while deposits are active");
+    require(_window_preepoch_duration >= 1.5 hours, "Pre-epoch window must be at least 90 minutes");
+    require(_window_postepoch_duration >= 0.5 hours, "Post-epoch window must be at least 30 minutes");
+    require(
+      _window_preepoch_duration + _window_postepoch_duration < 6 days,
+      "Combined window durations must be less than 6 days"
+    );
+
+    window_preepoch_duration = _window_preepoch_duration;
+    window_postepoch_duration = _window_postepoch_duration;
+  }
+
+  /// @notice Returns the minimum of two numbers
+  /// @param a First number
+  /// @param b Second number
+  /// @return The smaller of the two numbers
+  function _min(uint256 a, uint256 b) internal pure returns (uint256) {
+    return a < b ? a : b;
+  }
+	
+}

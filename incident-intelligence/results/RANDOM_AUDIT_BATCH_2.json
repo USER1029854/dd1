@@ -1,0 +1,1622 @@
+[
+ {
+  "name": "Valantis STEX",
+  "slug": "valantis-stex",
+  "category": "Dexs",
+  "chains": "Hyperliquid L1",
+  "tvl": 6135406.81100506,
+  "note": "",
+  "tvl_head": 5407593.158928307
+ },
+ {
+  "name": "JPOW AI",
+  "slug": "jpow-ai",
+  "category": "CDP",
+  "chains": "Solana",
+  "tvl": 166198.90044402654,
+  "note": "unaudited",
+  "tvl_head": 199502.74157783904
+ },
+ {
+  "name": "Zircuit",
+  "slug": "zircuit",
+  "category": "Canonical Bridge",
+  "chains": "Ethereum",
+  "tvl": 4955167.746098125,
+  "note": "unaudited",
+  "tvl_head": 4953813.99597073
+ },
+ {
+  "name": "Neemo Finance",
+  "slug": "neemo-finance",
+  "category": "Liquid Restaking",
+  "chains": "Astar,Ethereum",
+  "tvl": 957636.0742887474,
+  "note": "",
+  "tvl_head": 990019.0438620851
+ },
+ {
+  "name": "Hydro LST",
+  "slug": "hydro-lst",
+  "category": "Liquid Staking",
+  "chains": "Injective",
+  "tvl": 8982819.71825934,
+  "note": "",
+  "tvl_head": 9320112.927924788
+ },
+ {
+  "name": "Aries Markets",
+  "slug": "aries-markets",
+  "category": "Lending",
+  "chains": "Aptos",
+  "tvl": 78251.86579405784,
+  "note": "orc:Pyth,Switchboard",
+  "tvl_head": 70904.06911023904
+ },
+ {
+  "name": "Canopy",
+  "slug": "canopy",
+  "category": "Yield Aggregator",
+  "chains": "Movement",
+  "tvl": 1123150.5882003603,
+  "note": "",
+  "tvl_head": 1131798.779175807
+ },
+ {
+  "name": "Saros DLMM",
+  "slug": "saros-dlmm",
+  "category": "Dexs",
+  "chains": "Solana",
+  "tvl": 116477.47902465258,
+  "note": "",
+  "tvl_head": 116477.47902465258
+ },
+ {
+  "name": "DAOLama",
+  "slug": "daolama",
+  "category": "Lending",
+  "chains": "TON",
+  "tvl": 55776.4272370602,
+  "note": "unaudited",
+  "tvl_head": 52106.084733303236
+ },
+ {
+  "name": "Prime Staking",
+  "slug": "prime-staking",
+  "category": "Liquid Staking",
+  "chains": "XDC",
+  "tvl": 6914756.459903166,
+  "note": "unaudited",
+  "tvl_head": 6620689.003748678
+ },
+ {
+  "name": "Binaryx Platform",
+  "slug": "binaryx-platform",
+  "category": "RWA",
+  "chains": "Polygon",
+  "tvl": 8902007.715394761,
+  "note": "",
+  "tvl_head": 8961339.112693364
+ },
+ {
+  "name": "Save SOL",
+  "slug": "save-sol",
+  "category": "Liquid Staking",
+  "chains": "Solana",
+  "tvl": 5856515.258019808,
+  "note": "unaudited",
+  "tvl_head": 6388739.8344416255
+ },
+ {
+  "name": "YBTC.B",
+  "slug": "ybtc-b",
+  "category": "Anchor BTC",
+  "chains": "Bitlayer",
+  "tvl": 147364.58078173271,
+  "note": "unaudited",
+  "tvl_head": 149459.37164583284
+ },
+ {
+  "name": "WaterNeuron",
+  "slug": "waterneuron",
+  "category": "Liquid Staking",
+  "chains": "ICP",
+  "tvl": 5618087.728687639,
+  "note": "",
+  "tvl_head": 5776938.594011438
+ },
+ {
+  "name": "BAMM",
+  "slug": "bamm",
+  "category": "Lending",
+  "chains": "Fraxtal",
+  "tvl": 1917252.6233325563,
+  "note": "unaudited",
+  "tvl_head": 1925246.7655572887
+ },
+ {
+  "name": "Liqwid",
+  "slug": "liqwid",
+  "category": "Lending",
+  "chains": "Cardano",
+  "tvl": 12397870.637981838,
+  "note": "",
+  "tvl_head": 12397870.637981838
+ },
+ {
+  "name": "ScrubVault",
+  "slug": "scrubvault",
+  "category": "Basis Trading",
+  "chains": "Kava,Arbitrum",
+  "tvl": 138958.1493777986,
+  "note": "unaudited",
+  "tvl_head": 138514.29391348627
+ },
+ {
+  "name": "Linx App",
+  "slug": "linx-app",
+  "category": "Lending",
+  "chains": "Alephium",
+  "tvl": 74211.38206567016,
+  "note": "",
+  "tvl_head": 81135.59465020425
+ },
+ {
+  "name": "Pools Finance",
+  "slug": "pools-finance",
+  "category": "Dexs",
+  "chains": "IOTA",
+  "tvl": 1361553.6996561275,
+  "note": "",
+  "tvl_head": 1089190.9437437966
+ },
+ {
+  "name": "SquadSwap Dynamo",
+  "slug": "squadswap-dynamo",
+  "category": "Dexs",
+  "chains": "Binance",
+  "tvl": 264895.20723778836,
+  "note": "",
+  "tvl_head": 265802.95824548136
+ },
+ {
+  "name": "OmniBTC",
+  "slug": "omnibtc",
+  "category": "Lending",
+  "chains": "Sui,Arbitrum",
+  "tvl": 1832574.1719759905,
+  "note": "unaudited; orc:Pyth",
+  "tvl_head": 1752200.3951399392
+ },
+ {
+  "name": "Token Mill",
+  "slug": "token-mill",
+  "category": "Launchpad",
+  "chains": "Avalanche,Solana",
+  "tvl": 67040.3288142936,
+  "note": "unaudited",
+  "tvl_head": 68963.74730994395
+ },
+ {
+  "name": "FaroSwap",
+  "slug": "faroswap",
+  "category": "Dexs",
+  "chains": "Pharos",
+  "tvl": 891216.1338745904,
+  "note": "unaudited",
+  "tvl_head": 921227.3006095934
+ },
+ {
+  "name": "four.meme",
+  "slug": "four-meme",
+  "category": "Launchpad",
+  "chains": "Binance",
+  "tvl": 4487963.5394351715,
+  "note": "",
+  "tvl_head": 4403837.156459581
+ },
+ {
+  "name": "Mezo Borrow",
+  "slug": "mezo-borrow",
+  "category": "CDP",
+  "chains": "Mezo",
+  "tvl": 4169694.1784177353,
+  "note": "unaudited",
+  "tvl_head": 3977049.4502361803
+ },
+ {
+  "name": "Hyperstable CDP",
+  "slug": "hyperstable-cdp",
+  "category": "CDP",
+  "chains": "Hyperliquid L1",
+  "tvl": 168809.04840990496,
+  "note": "orc:Pyth",
+  "tvl_head": 158116.07186054194
+ },
+ {
+  "name": "Varlamore Capital",
+  "slug": "varlamore-capital",
+  "category": "Risk Curators",
+  "chains": "Sonic,Ethereum",
+  "tvl": 530635.786994191,
+  "note": "churn:1",
+  "tvl_head": 617289.9209470997
+ },
+ {
+  "name": "DSF.Finance",
+  "slug": "dsf-finance",
+  "category": "Yield",
+  "chains": "Ethereum",
+  "tvl": 403728.21622257837,
+  "note": "churn:1",
+  "tvl_head": 397462.15360222274
+ },
+ {
+  "name": "Kamigotchi",
+  "slug": "kamigotchi",
+  "category": "Gaming",
+  "chains": "Yominet",
+  "tvl": 158835.65925383742,
+  "note": "unaudited",
+  "tvl_head": 154001.24473262407
+ },
+ {
+  "name": "Button Tranche",
+  "slug": "button-tranche",
+  "category": "Yield",
+  "chains": "Ethereum",
+  "tvl": 396884.3968618094,
+  "note": "",
+  "tvl_head": 426324.8315497831
+ },
+ {
+  "name": "PancakeSwap StableSwap",
+  "slug": "pancakeswap-stableswap",
+  "category": "Dexs",
+  "chains": "Binance,Arbitrum",
+  "tvl": 3767511.214458936,
+  "note": "unaudited",
+  "tvl_head": 3763450.307628406
+ },
+ {
+  "name": "Orderly Chain",
+  "slug": "orderly-chain",
+  "category": "Canonical Bridge",
+  "chains": "Ethereum",
+  "tvl": 317452.1379942424,
+  "note": "unaudited",
+  "tvl_head": 321319.47401721997
+ },
+ {
+  "name": "T RIZE",
+  "slug": "t-rize",
+  "category": "RWA",
+  "chains": "Base",
+  "tvl": 23000000,
+  "note": "unaudited",
+  "tvl_head": 23000000
+ },
+ {
+  "name": "mStable V2",
+  "slug": "mstable-v2",
+  "category": "CDP",
+  "chains": "Ethereum",
+  "tvl": 3108365.2786889956,
+  "note": "unaudited",
+  "tvl_head": 3111785.1033296133
+ },
+ {
+  "name": "Francium",
+  "slug": "francium",
+  "category": "Yield",
+  "chains": "Solana",
+  "tvl": 6144136,
+  "note": "churn:1; orc:Pyth",
+  "tvl_head": 6144136
+ },
+ {
+  "name": "Saros AMM",
+  "slug": "saros-amm",
+  "category": "Dexs",
+  "chains": "Solana",
+  "tvl": 60250.775530212864,
+  "note": "",
+  "tvl_head": 57524.35141752028
+ },
+ {
+  "name": "BIM Yield",
+  "slug": "bim-yield",
+  "category": "Yield Aggregator",
+  "chains": "Base,Polygon",
+  "tvl": 245271.86352765054,
+  "note": "",
+  "tvl_head": 237694.60361047002
+ },
+ {
+  "name": "GoPlus Locker V3",
+  "slug": "goplus-locker-v3",
+  "category": "Token Locker",
+  "chains": "Binance,Base",
+  "tvl": 30759860.167646494,
+  "note": "unaudited",
+  "tvl_head": 30314933.804508135
+ },
+ {
+  "name": "Stratis Liquid Staking",
+  "slug": "stratis-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Stratis",
+  "tvl": 379916.4906284307,
+  "note": "",
+  "tvl_head": 386466.9520915538
+ },
+ {
+  "name": "TradeGPT",
+  "slug": "tradegpt",
+  "category": "Dexs",
+  "chains": "0G",
+  "tvl": 1928506.7089581897,
+  "note": "unaudited",
+  "tvl_head": 1928506.7089581897
+ },
+ {
+  "name": "Cetus CLMM",
+  "slug": "cetus-clmm",
+  "category": "Dexs",
+  "chains": "Sui,Aptos",
+  "tvl": 24733471.119235773,
+  "note": "unaudited",
+  "tvl_head": 23206751.4535105
+ },
+ {
+  "name": "Rocket Bridge",
+  "slug": "rocket-bridge",
+  "category": "Bridge",
+  "chains": "Arbitrum",
+  "tvl": 220202.27101049383,
+  "note": "unaudited",
+  "tvl_head": 220233.39783081363
+ },
+ {
+  "name": "Ammalgam Vaults",
+  "slug": "ammalgam-vaults",
+  "category": "Yield",
+  "chains": "Ethereum",
+  "tvl": 1616158.5182022112,
+  "note": "",
+  "tvl_head": 1635477.4488107841
+ },
+ {
+  "name": "Sharky",
+  "slug": "sharky",
+  "category": "NFT Lending",
+  "chains": "Solana",
+  "tvl": 168082.1216562236,
+  "note": "unaudited",
+  "tvl_head": 132739.14442247472
+ },
+ {
+  "name": "sICX",
+  "slug": "sicx",
+  "category": "Liquid Staking",
+  "chains": "Icon",
+  "tvl": 554723.4456415405,
+  "note": "unaudited; orc:Band",
+  "tvl_head": 368922.728802512
+ },
+ {
+  "name": "ENKI Protocol",
+  "slug": "enki-protocol",
+  "category": "Liquid Staking",
+  "chains": "Metis",
+  "tvl": 236466.9181315993,
+  "note": "",
+  "tvl_head": 243850.31455129336
+ },
+ {
+  "name": "Shell Protocol",
+  "slug": "shell-protocol",
+  "category": "Dexs",
+  "chains": "Arbitrum",
+  "tvl": 126723.15893396668,
+  "note": "unaudited; churn:1",
+  "tvl_head": 126597.79159240419
+ },
+ {
+  "name": "LiquidSwap",
+  "slug": "liquidswap",
+  "category": "Dexs",
+  "chains": "Aptos",
+  "tvl": 1204686.4672377915,
+  "note": "",
+  "tvl_head": 1186485.6186112799
+ },
+ {
+  "name": "CatFee Staking Vault",
+  "slug": "catfee-staking-vault",
+  "category": "Staking Pool",
+  "chains": "Tron",
+  "tvl": 17863267.22646391,
+  "note": "unaudited",
+  "tvl_head": 17697422.36571559
+ },
+ {
+  "name": "Bucket Protocol V2",
+  "slug": "bucket-protocol-v2",
+  "category": "CDP",
+  "chains": "Sui",
+  "tvl": 7987492.237355473,
+  "note": "unaudited",
+  "tvl_head": 7540072.166036963
+ },
+ {
+  "name": "Flex",
+  "slug": "flex",
+  "category": "Lending",
+  "chains": "Ethereum",
+  "tvl": 917264.3275206572,
+  "note": "unaudited",
+  "tvl_head": 1059262.6946545069
+ },
+ {
+  "name": "T3tris Finance",
+  "slug": "t3tris-finance",
+  "category": "Onchain Capital Allocator",
+  "chains": "Arbitrum,Robinhood Chain",
+  "tvl": 13200831.528304297,
+  "note": "",
+  "tvl_head": 13278711.381158302
+ },
+ {
+  "name": "sTLOS Liquid Staking",
+  "slug": "stlos-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Telos",
+  "tvl": 371375.4975532519,
+  "note": "",
+  "tvl_head": 351902.6761846636
+ },
+ {
+  "name": "MovePosition",
+  "slug": "moveposition",
+  "category": "Lending",
+  "chains": "Movement",
+  "tvl": 1227724.7469814438,
+  "note": "orc:Pyth,Switchboard",
+  "tvl_head": 1307403.0216853248
+ },
+ {
+  "name": "Manifest Trade",
+  "slug": "manifest-trade",
+  "category": "Dexs",
+  "chains": "Solana",
+  "tvl": 17774671.150394753,
+  "note": "unaudited",
+  "tvl_head": 19425237.022781793
+ },
+ {
+  "name": "Choice Exchange",
+  "slug": "choice-exchange",
+  "category": "Dexs",
+  "chains": "Injective",
+  "tvl": 224061.09155747612,
+  "note": "",
+  "tvl_head": 232138.67782969665
+ },
+ {
+  "name": "zkBob",
+  "slug": "zkbob",
+  "category": "Privacy",
+  "chains": "Polygon,Optimism",
+  "tvl": 235704.16231156013,
+  "note": "unaudited",
+  "tvl_head": 236777.71141123876
+ },
+ {
+  "name": "MetalX Lending",
+  "slug": "metalx-lending",
+  "category": "Lending",
+  "chains": "Proton",
+  "tvl": 37676720.66259817,
+  "note": "orc:TWAP",
+  "tvl_head": 36522862.26420349
+ },
+ {
+  "name": "Uniswap V1",
+  "slug": "uniswap-v1",
+  "category": "Dexs",
+  "chains": "Ethereum",
+  "tvl": 3891886.2786489124,
+  "note": "",
+  "tvl_head": 3941326.051979336
+ },
+ {
+  "name": "TownSquare Loop Vaults",
+  "slug": "townsquare-loop-vaults",
+  "category": "Leveraged Farming",
+  "chains": "Monad,Base",
+  "tvl": 218146.58973677942,
+  "note": "unaudited",
+  "tvl_head": 128481.58732929573
+ },
+ {
+  "name": "Opyn Gamma",
+  "slug": "opyn-gamma",
+  "category": "Options",
+  "chains": "Ethereum,Polygon",
+  "tvl": 1070161.4706158044,
+  "note": "orc:Chainlink",
+  "tvl_head": 1082617.840361203
+ },
+ {
+  "name": "Picnic",
+  "slug": "picnic",
+  "category": "Indexes",
+  "chains": "Polygon",
+  "tvl": 200470.040791156,
+  "note": "",
+  "tvl_head": 200470.040791156
+ },
+ {
+  "name": "Permapod",
+  "slug": "permapod",
+  "category": "Lending",
+  "chains": "ZIGChain",
+  "tvl": 2401777.933025724,
+  "note": "churn:1; fork:Mars Lend; orc:Stork",
+  "tvl_head": 254652.14098996433
+ },
+ {
+  "name": "Wombat Exchange",
+  "slug": "wombat-exchange",
+  "category": "Dexs",
+  "chains": "Binance,Arbitrum",
+  "tvl": 1575838.6139526227,
+  "note": "churn:2",
+  "tvl_head": 1484458.9169948061
+ },
+ {
+  "name": "Axiome Swap",
+  "slug": "axiome-swap",
+  "category": "Dexs",
+  "chains": "Axiome",
+  "tvl": 590269.6345593627,
+  "note": "unaudited",
+  "tvl_head": 521352.7508736373
+ },
+ {
+  "name": "Gate Swap Spot",
+  "slug": "gate-swap-spot",
+  "category": "Dexs",
+  "chains": "GateLayer",
+  "tvl": 2711451.743857464,
+  "note": "unaudited",
+  "tvl_head": 2762758.7166345404
+ },
+ {
+  "name": "Eternal Finance",
+  "slug": "eternal-finance",
+  "category": "Yield",
+  "chains": "Aptos",
+  "tvl": 287008.8781710193,
+  "note": "unaudited; orc:Internal",
+  "tvl_head": 259721.54817294175
+ },
+ {
+  "name": "Metric V2",
+  "slug": "metric-v2",
+  "category": "Dexs",
+  "chains": "Ethereum,Base",
+  "tvl": 4803542.6782952435,
+  "note": "unaudited",
+  "tvl_head": 4796650.849349832
+ },
+ {
+  "name": "BetterSwap V2",
+  "slug": "betterswap-v2",
+  "category": "Dexs",
+  "chains": "VeChain",
+  "tvl": 199205.07855761691,
+  "note": "",
+  "tvl_head": 245104.12297419802
+ },
+ {
+  "name": "Sovryn Dex",
+  "slug": "sovryn-dex",
+  "category": "Dexs",
+  "chains": "RSK,BOB",
+  "tvl": 8542761.206304401,
+  "note": "",
+  "tvl_head": 8575664.708040057
+ },
+ {
+  "name": "Scrub Invest",
+  "slug": "scrub-invest",
+  "category": "Yield",
+  "chains": "Kava",
+  "tvl": 7113682.706658806,
+  "note": "unaudited",
+  "tvl_head": 7020865.920796169
+ },
+ {
+  "name": "AnyHedge",
+  "slug": "anyhedge",
+  "category": "Derivatives",
+  "chains": "Bitcoincash",
+  "tvl": 4240561.848819506,
+  "note": "unaudited; churn:3; orc:Oracles.Cash",
+  "tvl_head": 4240561.848819506
+ },
+ {
+  "name": "Veno Finance",
+  "slug": "veno-finance",
+  "category": "Liquid Staking",
+  "chains": "Cronos,Ethereum",
+  "tvl": 34951330.18951255,
+  "note": "",
+  "tvl_head": 35352820.00600311
+ },
+ {
+  "name": "HypurrFi Isolated",
+  "slug": "hypurrfi-isolated",
+  "category": "Lending",
+  "chains": "Hyperliquid L1",
+  "tvl": 690465.5112216779,
+  "note": "orc:Pyth",
+  "tvl_head": 712945.4786182857
+ },
+ {
+  "name": "Optim Finance",
+  "slug": "optim-finance",
+  "category": "Staking Rental",
+  "chains": "Cardano",
+  "tvl": 767730.0273101894,
+  "note": "",
+  "tvl_head": 767730.0273101894
+ },
+ {
+  "name": "Solomon USDv",
+  "slug": "solomon-usdv",
+  "category": "Basis Trading",
+  "chains": "Solana",
+  "tvl": 1512504.6601170877,
+  "note": "",
+  "tvl_head": 1514594.087122623
+ },
+ {
+  "name": "Temple",
+  "slug": "temple",
+  "category": "Dexs",
+  "chains": "Canton",
+  "tvl": 5315787.10934149,
+  "note": "unaudited",
+  "tvl_head": 5864533.40834116
+ },
+ {
+  "name": "Kava Mint",
+  "slug": "kava-mint",
+  "category": "CDP",
+  "chains": "Kava",
+  "tvl": 11925830.074724128,
+  "note": "unaudited; orc:Internal",
+  "tvl_head": 11837110.424223406
+ },
+ {
+  "name": "Pirex",
+  "slug": "pirex",
+  "category": "Yield",
+  "chains": "Ethereum,Arbitrum",
+  "tvl": 3581901.168626752,
+  "note": "",
+  "tvl_head": 3758491.610134226
+ },
+ {
+  "name": "Paimon",
+  "slug": "paimon",
+  "category": "RWA",
+  "chains": "Binance",
+  "tvl": 12331772.656116663,
+  "note": "",
+  "tvl_head": 12346646.432097381
+ },
+ {
+  "name": "TruStake",
+  "slug": "trustake",
+  "category": "Liquid Staking",
+  "chains": "Aptos,Injective",
+  "tvl": 4342809.92688259,
+  "note": "",
+  "tvl_head": 3856851.0717498367
+ },
+ {
+  "name": "Napier",
+  "slug": "napier",
+  "category": "Yield",
+  "chains": "Ethereum,Base",
+  "tvl": 105868.54493663117,
+  "note": "",
+  "tvl_head": 106891.03229051342
+ },
+ {
+  "name": "40 Acres",
+  "slug": "40-acres",
+  "category": "Lending",
+  "chains": "Base,Optimism",
+  "tvl": 29496197.947371636,
+  "note": "",
+  "tvl_head": 31310432.85481683
+ },
+ {
+  "name": "Enhanced",
+  "slug": "enhanced",
+  "category": "Yield",
+  "chains": "Ethereum",
+  "tvl": 172672.18358487336,
+  "note": "unaudited; fork:Opyn Gamma",
+  "tvl_head": 168474.99396867017
+ },
+ {
+  "name": "Tangible RWA",
+  "slug": "tangible-rwa",
+  "category": "RWA",
+  "chains": "Polygon,Arbitrum",
+  "tvl": 42701792.82949608,
+  "note": "churn:1; orc:Curve",
+  "tvl_head": 42403832.3881919
+ },
+ {
+  "name": "Aktionariat",
+  "slug": "aktionariat",
+  "category": "RWA",
+  "chains": "Ethereum,Polygon",
+  "tvl": 369196.39328850206,
+  "note": "unaudited; orc:Chainlink",
+  "tvl_head": 370447.1608117044
+ },
+ {
+  "name": "LFJ POE",
+  "slug": "lfj-poe",
+  "category": "Dexs",
+  "chains": "Monad",
+  "tvl": 185946.18315980927,
+  "note": "unaudited",
+  "tvl_head": 155640.4079696385
+ },
+ {
+  "name": "Liquidium",
+  "slug": "liquidium",
+  "category": "Lending",
+  "chains": "ICP",
+  "tvl": 4156225.5889412193,
+  "note": "unaudited",
+  "tvl_head": 4357391.099281834
+ },
+ {
+  "name": "HyperWave",
+  "slug": "hyperwave",
+  "category": "Yield",
+  "chains": "Hyperliquid L1,Arbitrum",
+  "tvl": 2154761.0708162864,
+  "note": "",
+  "tvl_head": 2164747.704314468
+ },
+ {
+  "name": "Soneium Bridge",
+  "slug": "soneium-bridge",
+  "category": "Canonical Bridge",
+  "chains": "Ethereum",
+  "tvl": 170426.25764496168,
+  "note": "unaudited",
+  "tvl_head": 172416.08887212147
+ },
+ {
+  "name": "Interlay BTC",
+  "slug": "interlay-btc",
+  "category": "Bridge",
+  "chains": "Interlay",
+  "tvl": 163344.1390035869,
+  "note": "unaudited; orc:DIA",
+  "tvl_head": 165762.71872230002
+ },
+ {
+  "name": "Kai Finance",
+  "slug": "kai-finance",
+  "category": "Leveraged Farming",
+  "chains": "Sui",
+  "tvl": 1619373.8523277366,
+  "note": "unaudited; orc:Pyth",
+  "tvl_head": 1436720.4974040752
+ },
+ {
+  "name": "Verified Network",
+  "slug": "verified-network",
+  "category": "RWA",
+  "chains": "Ethereum,Base",
+  "tvl": 126717.4589173726,
+  "note": "unaudited",
+  "tvl_head": 126724.86857139845
+ },
+ {
+  "name": "Arbitrove",
+  "slug": "arbitrove",
+  "category": "Indexes",
+  "chains": "Arbitrum",
+  "tvl": 606493.4346269057,
+  "note": "orc:Dark Oracle",
+  "tvl_head": 612732.266451031
+ },
+ {
+  "name": "alphagrowth",
+  "slug": "alphagrowth",
+  "category": "Risk Curators",
+  "chains": "Unichain,Base",
+  "tvl": 7171602.79648096,
+  "note": "unaudited",
+  "tvl_head": 6920072.165802779
+ },
+ {
+  "name": "Goldilocks",
+  "slug": "goldilocks",
+  "category": "Yield",
+  "chains": "Berachain",
+  "tvl": 544818.9545780151,
+  "note": "unaudited",
+  "tvl_head": 530376.9686475405
+ },
+ {
+  "name": "Doma DEX V3",
+  "slug": "doma-dex-v3",
+  "category": "Dexs",
+  "chains": "Doma",
+  "tvl": 875795.0577146475,
+  "note": "",
+  "tvl_head": 911880.4388535494
+ },
+ {
+  "name": "Cozy V2",
+  "slug": "cozy-v2",
+  "category": "Insurance",
+  "chains": "Optimism",
+  "tvl": 172357.60321763082,
+  "note": "orc:Chainlink,UMA",
+  "tvl_head": 172369.34213808557
+ },
+ {
+  "name": "FlashTrade",
+  "slug": "flashtrade",
+  "category": "Derivatives",
+  "chains": "Solana",
+  "tvl": 4296299.987953405,
+  "note": "unaudited; orc:Pyth",
+  "tvl_head": 3465019.7845974183
+ },
+ {
+  "name": "aPriori",
+  "slug": "apriori",
+  "category": "Liquid Staking",
+  "chains": "Monad",
+  "tvl": 729161.5640898317,
+  "note": "unaudited",
+  "tvl_head": 680593.2249460667
+ },
+ {
+  "name": "9mm V2",
+  "slug": "9mm-v2",
+  "category": "Dexs",
+  "chains": "Pulse,Base",
+  "tvl": 82546.89694422392,
+  "note": "unaudited",
+  "tvl_head": 75424.32764411194
+ },
+ {
+  "name": "Kava Liquid",
+  "slug": "kava-liquid",
+  "category": "Liquid Staking",
+  "chains": "Kava",
+  "tvl": 907897.7264096637,
+  "note": "unaudited",
+  "tvl_head": 934981.7489511385
+ },
+ {
+  "name": "Cube",
+  "slug": "cube",
+  "category": "Dexs",
+  "chains": "Solana",
+  "tvl": 93483.31618025704,
+  "note": "unaudited",
+  "tvl_head": 97516.94289091018
+ },
+ {
+  "name": "DaVinciGraph",
+  "slug": "davincigraph",
+  "category": "Token Locker",
+  "chains": "Hedera",
+  "tvl": 1851744,
+  "note": "unaudited",
+  "tvl_head": 1851744
+ },
+ {
+  "name": "Atmos DEX",
+  "slug": "atmos-dex",
+  "category": "Dexs",
+  "chains": "Supra",
+  "tvl": 172084.64357258056,
+  "note": "unaudited",
+  "tvl_head": 191576.87116382655
+ },
+ {
+  "name": "Neutral Trade",
+  "slug": "neutral-trade",
+  "category": "Onchain Capital Allocator",
+  "chains": "Solana",
+  "tvl": 14109430.987031117,
+  "note": "unaudited; churn:1; orc:Pyth",
+  "tvl_head": 13266124.255789671
+ },
+ {
+  "name": "Ambit Finance",
+  "slug": "ambit-finance",
+  "category": "Lending",
+  "chains": "Binance",
+  "tvl": 66280.36906817395,
+  "note": "unaudited; orc:RedStone",
+  "tvl_head": 66122.81627591533
+ },
+ {
+  "name": "Swirl",
+  "slug": "swirl",
+  "category": "Liquid Staking",
+  "chains": "IOTA",
+  "tvl": 4216358.275146749,
+  "note": "",
+  "tvl_head": 2896630.414055195
+ },
+ {
+  "name": "PiggyBank",
+  "slug": "piggybank",
+  "category": "Yield",
+  "chains": "Solana",
+  "tvl": 1567527.0068029515,
+  "note": "",
+  "tvl_head": 1563914.5634000865
+ },
+ {
+  "name": "UXD",
+  "slug": "uxd",
+  "category": "Partially Algorithmic Stablecoin",
+  "chains": "Solana",
+  "tvl": 298119.0812756926,
+  "note": "",
+  "tvl_head": 298056.5528023329
+ },
+ {
+  "name": "Alt Fun",
+  "slug": "alt-fun",
+  "category": "Launchpad",
+  "chains": "Hyperliquid L1",
+  "tvl": 115975.67811203108,
+  "note": "unaudited",
+  "tvl_head": 66644.98312855893
+ },
+ {
+  "name": "Ostable",
+  "slug": "ostable",
+  "category": "Algo-Stables",
+  "chains": "Obyte",
+  "tvl": 351381.0998853801,
+  "note": "unaudited",
+  "tvl_head": 334683.1413338046
+ },
+ {
+  "name": "Solayer Restaking",
+  "slug": "solayer-restaking",
+  "category": "Restaking",
+  "chains": "Solana",
+  "tvl": 10540527.997726927,
+  "note": "unaudited",
+  "tvl_head": 11234585.826509897
+ },
+ {
+  "name": "OneSwap",
+  "slug": "oneswap",
+  "category": "Dexs",
+  "chains": "CSC,Ethereum",
+  "tvl": 240510.8077245387,
+  "note": "",
+  "tvl_head": 241555.54528914418
+ },
+ {
+  "name": "3Jane Options",
+  "slug": "3jane-options",
+  "category": "Options Vault",
+  "chains": "Ethereum",
+  "tvl": 125589.02914332651,
+  "note": "fork:Ribbon; orc:Chainlink",
+  "tvl_head": 128024.58376078926
+ },
+ {
+  "name": "Pika V4",
+  "slug": "pika-v4",
+  "category": "Derivatives",
+  "chains": "Optimism",
+  "tvl": 89247.9688639518,
+  "note": "unaudited; orc:Pyth",
+  "tvl_head": 87049.54484614417
+ },
+ {
+  "name": "Hatom Lending",
+  "slug": "hatom-lending",
+  "category": "Lending",
+  "chains": "Elrond",
+  "tvl": 5953782.044786907,
+  "note": "",
+  "tvl_head": 6433775.218083077
+ },
+ {
+  "name": "ATOMA",
+  "slug": "atoma",
+  "category": "Basis Trading",
+  "chains": "Arbitrum",
+  "tvl": 283827.6082667202,
+  "note": "unaudited",
+  "tvl_head": 322723.55075230077
+ },
+ {
+  "name": "Katana Perps",
+  "slug": "katana-perps",
+  "category": "Derivatives",
+  "chains": "Katana",
+  "tvl": 2166830.2634040983,
+  "note": "unaudited",
+  "tvl_head": 2175967.41583887
+ },
+ {
+  "name": "Anoncoin",
+  "slug": "anoncoin",
+  "category": "Launchpad",
+  "chains": "Solana",
+  "tvl": 106507.05691365193,
+  "note": "unaudited",
+  "tvl_head": 118889.80347423509
+ },
+ {
+  "name": "Magma Staking",
+  "slug": "magma-staking",
+  "category": "Liquid Staking",
+  "chains": "Monad",
+  "tvl": 1442577.8053307317,
+  "note": "unaudited",
+  "tvl_head": 1313752.806705847
+ },
+ {
+  "name": "Rhino.fi",
+  "slug": "rhino-fi",
+  "category": "Bridge",
+  "chains": "Polygon,Arbitrum",
+  "tvl": 1105421.41528655,
+  "note": "",
+  "tvl_head": 1240990.7349448144
+ },
+ {
+  "name": "Increment Liquid Staking",
+  "slug": "increment-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Flow",
+  "tvl": 628566.9445092402,
+  "note": "",
+  "tvl_head": 600593.7579240836
+ },
+ {
+  "name": "RISEx",
+  "slug": "risex",
+  "category": "Derivatives",
+  "chains": "RISE",
+  "tvl": 16163761.614014234,
+  "note": "unaudited; orc:Stork",
+  "tvl_head": 17316421.6823354
+ },
+ {
+  "name": "Deriverse",
+  "slug": "deriverse",
+  "category": "Dexs",
+  "chains": "Solana",
+  "tvl": 128909.2743764619,
+  "note": "",
+  "tvl_head": 151443.2598465785
+ },
+ {
+  "name": "Alpha Arcade",
+  "slug": "alpha-arcade",
+  "category": "Prediction Market",
+  "chains": "Algorand",
+  "tvl": 218095.7443094245,
+  "note": "unaudited",
+  "tvl_head": 218095.7443094245
+ },
+ {
+  "name": "Nami Index",
+  "slug": "nami-index",
+  "category": "Indexes",
+  "chains": "Thorchain",
+  "tvl": 61132.37557951,
+  "note": "",
+  "tvl_head": 58079.43974281
+ },
+ {
+  "name": "Gala Swap",
+  "slug": "gala-swap",
+  "category": "Dexs",
+  "chains": "Gala",
+  "tvl": 3942791.5105104367,
+  "note": "unaudited",
+  "tvl_head": 3969821.0113641303
+ },
+ {
+  "name": "StarGate",
+  "slug": "stargate",
+  "category": "Farm",
+  "chains": "VeChain",
+  "tvl": 4740619.796853763,
+  "note": "unaudited",
+  "tvl_head": 5736944.93560805
+ },
+ {
+  "name": "hemiBTC",
+  "slug": "hemibtc",
+  "category": "Bridge",
+  "chains": "Bitcoin",
+  "tvl": 4483955.236403734,
+  "note": "unaudited",
+  "tvl_head": 555636.9113290436
+ },
+ {
+  "name": "Supralend",
+  "slug": "supralend",
+  "category": "Lending",
+  "chains": "Supra",
+  "tvl": 52863.898000332825,
+  "note": "unaudited",
+  "tvl_head": 52529.454053307745
+ },
+ {
+  "name": "Bluefin Pro",
+  "slug": "bluefin-pro",
+  "category": "Derivatives",
+  "chains": "Sui",
+  "tvl": 1926386.60974904,
+  "note": "orc:Pyth",
+  "tvl_head": 1920279.3393737061
+ },
+ {
+  "name": "Particle LAMM",
+  "slug": "particle-lamm",
+  "category": "Derivatives",
+  "chains": "Blast",
+  "tvl": 136164.15534750125,
+  "note": "",
+  "tvl_head": 138044.82264651376
+ },
+ {
+  "name": "N1 Exchange Bridge",
+  "slug": "n1-exchange-bridge",
+  "category": "Bridge",
+  "chains": "Solana",
+  "tvl": 1790130.2437831005,
+  "note": "unaudited",
+  "tvl_head": 1761680.8858585104
+ },
+ {
+  "name": "Hubble",
+  "slug": "hubble",
+  "category": "CDP",
+  "chains": "Solana",
+  "tvl": 1474909.3338666472,
+  "note": "orc:Pyth",
+  "tvl_head": 1510032.9961495288
+ },
+ {
+  "name": "STONEUSD",
+  "slug": "stoneusd",
+  "category": "CeDeFi",
+  "chains": "Ethereum,Binance",
+  "tvl": 2016862.4579520165,
+  "note": "",
+  "tvl_head": 2018826.2967620967
+ },
+ {
+  "name": "Shido Dex V2",
+  "slug": "shido-dex-v2",
+  "category": "Dexs",
+  "chains": "Shido",
+  "tvl": 392760.6365472296,
+  "note": "",
+  "tvl_head": 216754.0688432477
+ },
+ {
+  "name": "Hydro Lending",
+  "slug": "hydro-lending",
+  "category": "Lending",
+  "chains": "Injective",
+  "tvl": 4522399.262236383,
+  "note": "unaudited",
+  "tvl_head": 4732474.632015476
+ },
+ {
+  "name": "Theo Straddle Vaults",
+  "slug": "theo-straddle-vaults",
+  "category": "Basis Trading",
+  "chains": "Ethereum,Linea",
+  "tvl": 1112069.0967368293,
+  "note": "",
+  "tvl_head": 1115336.3118571206
+ },
+ {
+  "name": "NOXA Fun",
+  "slug": "noxa-fun",
+  "category": "Launchpad",
+  "chains": "Robinhood Chain,Monad",
+  "tvl": 4935107.615020919,
+  "note": "unaudited",
+  "tvl_head": 5747206.184547049
+ },
+ {
+  "name": "Bonk Staked SOL",
+  "slug": "bonk-staked-sol",
+  "category": "Liquid Staking",
+  "chains": "Solana",
+  "tvl": 9773391.229029361,
+  "note": "unaudited",
+  "tvl_head": 10529675.284551416
+ },
+ {
+  "name": "Ostium",
+  "slug": "ostium",
+  "category": "Derivatives",
+  "chains": "Arbitrum",
+  "tvl": 16733507.117067179,
+  "note": "orc:Stork,Chainlink",
+  "tvl_head": 16387532.440194612
+ },
+ {
+  "name": "Quarry",
+  "slug": "quarry",
+  "category": "Yield",
+  "chains": "Solana",
+  "tvl": 5794793.037349782,
+  "note": "unaudited; churn:1",
+  "tvl_head": 6156487.231981322
+ },
+ {
+  "name": "B.Protocol",
+  "slug": "b-protocol",
+  "category": "Liquidations",
+  "chains": "Ethereum,Arbitrum",
+  "tvl": 1824523.0292365088,
+  "note": "orc:Chainlink",
+  "tvl_head": 1788896.8199731677
+ },
+ {
+  "name": "Layer2 Finance",
+  "slug": "layer2-finance",
+  "category": "Yield",
+  "chains": "Ethereum",
+  "tvl": 208665.13822476496,
+  "note": "",
+  "tvl_head": 208645.12955097528
+ },
+ {
+  "name": "Sophon Bridge",
+  "slug": "sophon-bridge",
+  "category": "Canonical Bridge",
+  "chains": "Ethereum",
+  "tvl": 11975048.776711239,
+  "note": "unaudited",
+  "tvl_head": 12182821.701089473
+ },
+ {
+  "name": "TONCO",
+  "slug": "tonco",
+  "category": "Dexs",
+  "chains": "TON",
+  "tvl": 381991.69395507115,
+  "note": "",
+  "tvl_head": 307168.22949415265
+ },
+ {
+  "name": "Bidask",
+  "slug": "bidask",
+  "category": "Dexs",
+  "chains": "TON",
+  "tvl": 97233.49084682796,
+  "note": "unaudited",
+  "tvl_head": 97233.49084682796
+ },
+ {
+  "name": "Apex Omni",
+  "slug": "apex-omni",
+  "category": "Derivatives",
+  "chains": "Ethereum,Arbitrum",
+  "tvl": 30397606.649624377,
+  "note": "unaudited; orc:Stork",
+  "tvl_head": 30752691.01967465
+ },
+ {
+  "name": "Surf Liquid",
+  "slug": "surf-liquid",
+  "category": "Yield",
+  "chains": "Base,Ethereum",
+  "tvl": 219739.3361978488,
+  "note": "unaudited; churn:2",
+  "tvl_head": 219456.247636343
+ },
+ {
+  "name": "Colony",
+  "slug": "colony",
+  "category": "Yield",
+  "chains": "Avalanche",
+  "tvl": 187530.19670888377,
+  "note": "churn:4",
+  "tvl_head": 163386.62522806865
+ },
+ {
+  "name": "bitCow",
+  "slug": "bitcow",
+  "category": "Dexs",
+  "chains": "Bitlayer",
+  "tvl": 184261.8693514042,
+  "note": "unaudited",
+  "tvl_head": 184883.9653776521
+ },
+ {
+  "name": "Joe V2.2",
+  "slug": "joe-v2-2",
+  "category": "Dexs",
+  "chains": "Avalanche,Arbitrum",
+  "tvl": 2628895.27243993,
+  "note": "",
+  "tvl_head": 2370221.6408237834
+ },
+ {
+  "name": "Opus",
+  "slug": "opus",
+  "category": "CDP",
+  "chains": "Starknet",
+  "tvl": 340055.0668033969,
+  "note": "orc:Pragma",
+  "tvl_head": 340587.7474538549
+ },
+ {
+  "name": "Aevo Perps",
+  "slug": "aevo-perps",
+  "category": "Derivatives",
+  "chains": "Ethereum,Arbitrum",
+  "tvl": 15113904.977457559,
+  "note": "orc:Pyth",
+  "tvl_head": 15269803.152744299
+ },
+ {
+  "name": "Gardens",
+  "slug": "gardens",
+  "category": "Governance Incentives",
+  "chains": "xDai,Celo",
+  "tvl": 71927.36675824336,
+  "note": "unaudited",
+  "tvl_head": 72146.18521014819
+ },
+ {
+  "name": "World Markets Spot",
+  "slug": "world-markets-spot",
+  "category": "Dexs",
+  "chains": "MegaETH",
+  "tvl": 3250066.7506360807,
+  "note": "unaudited",
+  "tvl_head": 3118527.3425013665
+ },
+ {
+  "name": "Usual EUR0",
+  "slug": "usual-eur0",
+  "category": "RWA",
+  "chains": "Ethereum",
+  "tvl": 237538.6016190151,
+  "note": "unaudited",
+  "tvl_head": 235669.30843013397
+ },
+ {
+  "name": "KoffeeSwap",
+  "slug": "koffeeswap",
+  "category": "Dexs",
+  "chains": "Kucoin",
+  "tvl": 251294.80226739307,
+  "note": "unaudited",
+  "tvl_head": 232860.79589671252
+ },
+ {
+  "name": "Sherpa",
+  "slug": "sherpa",
+  "category": "Onchain Capital Allocator",
+  "chains": "Ethereum,Base",
+  "tvl": 456112.95075551537,
+  "note": "",
+  "tvl_head": 476928.53736247524
+ },
+ {
+  "name": "Tenderize V2",
+  "slug": "tenderize-v2",
+  "category": "Liquid Staking",
+  "chains": "Ethereum,Arbitrum",
+  "tvl": 368517.52697121876,
+  "note": "",
+  "tvl_head": 320600.96122343786
+ },
+ {
+  "name": "Templar Protocol",
+  "slug": "templar-protocol",
+  "category": "Lending",
+  "chains": "Stellar,Ethereum",
+  "tvl": 28073402.58101636,
+  "note": "unaudited; orc:Pyth",
+  "tvl_head": 27511882.658689618
+ },
+ {
+  "name": "Kogefarm",
+  "slug": "kogefarm",
+  "category": "Yield",
+  "chains": "Polygon,Fantom",
+  "tvl": 165634.33110990655,
+  "note": "",
+  "tvl_head": 163752.18704801073
+ },
+ {
+  "name": "Boson Protocol",
+  "slug": "boson-protocol",
+  "category": "RWA",
+  "chains": "Polygon,Ethereum",
+  "tvl": 230211.66866017267,
+  "note": "",
+  "tvl_head": 230195.67009306885
+ },
+ {
+  "name": "Minswap DEX",
+  "slug": "minswap-dex",
+  "category": "Dexs",
+  "chains": "Cardano",
+  "tvl": 15256658.784538958,
+  "note": "churn:3",
+  "tvl_head": 14253553.376560088
+ },
+ {
+  "name": "Ultraswap",
+  "slug": "ultraswap",
+  "category": "Lending",
+  "chains": "Algorand",
+  "tvl": 132743.41888965067,
+  "note": "unaudited",
+  "tvl_head": 126575.86760824623
+ },
+ {
+  "name": "Textile FX",
+  "slug": "textile-fx",
+  "category": "Dexs",
+  "chains": "Binance,Ethereum",
+  "tvl": 438553.4444503571,
+  "note": "unaudited",
+  "tvl_head": 534112.1171151361
+ },
+ {
+  "name": "GuacSwap",
+  "slug": "guacswap",
+  "category": "Dexs",
+  "chains": "Solana",
+  "tvl": 67491.47279206893,
+  "note": "unaudited",
+  "tvl_head": 72789.93228324206
+ },
+ {
+  "name": "Swapscanner LSD",
+  "slug": "swapscanner-lsd",
+  "category": "Liquid Staking",
+  "chains": "Klaytn",
+  "tvl": 18036463.28283551,
+  "note": "",
+  "tvl_head": 1968148.52589363
+ },
+ {
+  "name": "Stakingverse",
+  "slug": "stakingverse",
+  "category": "Liquid Staking",
+  "chains": "Ethereum,LUKSO",
+  "tvl": 4868209.325540827,
+  "note": "churn:1",
+  "tvl_head": 4815250.693855177
+ },
+ {
+  "name": "FlatQube",
+  "slug": "flatqube",
+  "category": "Dexs",
+  "chains": "Everscale",
+  "tvl": 114621,
+  "note": "",
+  "tvl_head": 111617
+ },
+ {
+  "name": "Weft V2",
+  "slug": "weft-v2",
+  "category": "Lending",
+  "chains": "Radix",
+  "tvl": 316455.53258512315,
+  "note": "unaudited",
+  "tvl_head": 320757.55558093404
+ },
+ {
+  "name": "Rigoblock",
+  "slug": "rigoblock",
+  "category": "Onchain Capital Allocator",
+  "chains": "Arbitrum,Ethereum",
+  "tvl": 54699.20876289111,
+  "note": "unaudited; orc:BackGeoOracle",
+  "tvl_head": 54616.35908731891
+ },
+ {
+  "name": "BitU Protocol",
+  "slug": "bitu-protocol",
+  "category": "CDP",
+  "chains": "Binance",
+  "tvl": 19547798.502161056,
+  "note": "orc:Chainlink",
+  "tvl_head": 19547798.502161056
+ },
+ {
+  "name": "stCELO",
+  "slug": "stcelo",
+  "category": "Liquid Staking",
+  "chains": "Celo",
+  "tvl": 1499942.5042919917,
+  "note": "",
+  "tvl_head": 1476825.615668393
+ },
+ {
+  "name": "LeverUp",
+  "slug": "leverup",
+  "category": "Derivatives",
+  "chains": "Monad",
+  "tvl": 3147887.7796803126,
+  "note": "orc:Pyth",
+  "tvl_head": 2888426.2642759797
+ },
+ {
+  "name": "Verus Market",
+  "slug": "verus-market",
+  "category": "Dexs",
+  "chains": "Verus",
+  "tvl": 2985615.766512474,
+  "note": "unaudited",
+  "tvl_head": 2946520.654527329
+ },
+ {
+  "name": "Myriad Markets",
+  "slug": "myriad-markets",
+  "category": "Prediction Market",
+  "chains": "Abstract,Binance",
+  "tvl": 290188.4098293485,
+  "note": "unaudited",
+  "tvl_head": 276795.92701058905
+ },
+ {
+  "name": "Parasail",
+  "slug": "parasail",
+  "category": "Restaking",
+  "chains": "Filecoin,Arbitrum",
+  "tvl": 1343763.8376518455,
+  "note": "",
+  "tvl_head": 1187486.5577771284
+ },
+ {
+  "name": "SOFA.org",
+  "slug": "sofa-org",
+  "category": "Options",
+  "chains": "Ethereum,Arbitrum",
+  "tvl": 1046794.1870858357,
+  "note": "orc:Chainlink",
+  "tvl_head": 870753.2209169569
+ }
+]

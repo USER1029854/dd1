@@ -1,0 +1,44 @@
+[
+ {
+  "family_id": "LZ-OAPP-ARBITRARY-CALL-DELEGATE-HIJACK",
+  "title": "LayerZero OApp exposes an unprivileged arbitrary-target call, letting an attacker seize the OApp's endpoint delegate and mint unbacked",
+  "broken_invariant": "Only an authorized party may configure an OApp's LayerZero endpoint settings (delegate, send/receive libraries, DVNs). A cross-chain mint must be backed by a verified lock/burn on the source chain.",
+  "mechanism": "The token/OApp contract exposes a method that performs target.call(data) from its own context reachable by any caller (approveAndCall, paidCall, transferAndCall, multicall with arbitrary target, generic execute). EndpointV2.setDelegate keys the delegate by msg.sender, so the attacker makes the OApp call endpoint.setDelegate(attacker). As delegate the attacker sets a malicious receive library / DVN and delivers a forged inbound OFT message, minting unbacked tokens, then bridges back to unlock real backing from the OFT adapter.",
+  "mandatory_preconditions": ["contract is a LayerZero OApp/OFT (endpoint()+peers())", "contract exposes an unprivileged method doing an arbitrary-target low-level call", "the arbitrary-call guard (if any) does not forbid a call to the endpoint with the caller's own address as the first param"],
+  "decisive_guards": ["the arbitrary-call method restricts target to a fixed allowlist that excludes the endpoint", "delegate/config changes gated by a separate non-bypassable role the call cannot assume", "no arbitrary-call surface on the OApp at all"],
+  "false_positive_killers": ["contract is not an OApp (endpoint() reverts)", "the call method cannot pass calldata whose first word is the caller (blocks setDelegate(attacker))", "endpoint peers already severed / bridge paused with no live backing"],
+  "static_indicators": ["approveAndCall", "paidCall", "transferAndCall", "functionCall(target,", "target.call{", "setDelegate", "OAppCore", "ILayerZeroEndpointV2"],
+  "decisive_check": "Intersect the LayerZero OApp/OFT population with contracts exposing an unprivileged arbitrary-target call; for each match, value at risk = backing locked in its OFT adapter(s).",
+  "evidence": "Sandbox SAND OFT (Base 0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF), 2026-08-21; verified in sources/sandbox/sand_base_flat.sol (ERC20BasicApproveExtension.approveAndCall/paidCall).",
+  "incident_ids": ["INC-2026-08-21-SANDBOX"],
+  "modules": ["EVM", "BRIDGE"]
+ },
+ {
+  "family_id": "SOLANA-SIG-VERIFY-INSTRUCTION-INDEX-MISROUTED",
+  "title": "Signature verification bound to the wrong instruction index, so an attacker's own signature is accepted as a second/other party's",
+  "broken_invariant": "A privileged action requires a genuine signature from a distinct authorized signer; each required signature is verified against its own Ed25519 instruction.",
+  "mechanism": "The program verifies a second signature by reading an Ed25519 verify instruction, but the instruction index (via instruction introspection / sysvar) is misrouted to the first verify, so the attacker's single self-signature satisfies both checks. The escalation path then grants admin (AddCollateralAdmin) over user accounts and withdraws collateral.",
+  "mandatory_preconditions": ["program verifies >=2 signatures via Ed25519 program + instruction introspection", "the index used to fetch the second verify instruction is fixed/wrong or attacker-influenced", "a privileged escalation (add-admin / set-authority) is gated only by that verification"],
+  "decisive_guards": ["each required signature fetched by a correct, distinct instruction index and bound to a distinct expected pubkey", "the escalation requires an on-chain distinct multisig/PDA, not a passed signature bundle"],
+  "false_positive_killers": ["signer pubkeys are pinned and compared, not just 'a valid signature exists'", "instruction index derived from the verified instruction set, not a constant"],
+  "static_indicators": ["load_instruction_at", "get_instruction_relative", "ed25519", "instructions sysvar", "AddCollateralAdmin", "SubmitSignatures"],
+  "decisive_check": "For each program (and each shared-stack partner), confirm every required signature is verified against its own instruction index and bound to a distinct expected signer; confirm the admin-escalation cannot be satisfied by a self-signature.",
+  "evidence": "Avici on the Rain card stack, 2026-08-28 (~$500k). Shared-stack fleet per SlowMist + Rain: Avici/KAST/Offramp/Rhythmic/ether.fi cards on Solana/Tron/Stellar/Monad.",
+  "incident_ids": ["INC-2026-08-28-AVICI"],
+  "modules": ["SOLANA"]
+ },
+ {
+  "family_id": "AMM-SAME-ASSET-SWAP-NOT-DISTINCT",
+  "title": "Weighted-pool AMM swap does not require token_in != token_out, so a same-asset swap corrupts reserve accounting",
+  "broken_invariant": "A swap moves value between two DISTINCT pool assets; reserves and the invariant (e.g. weighted constant-product) stay consistent after each swap.",
+  "mechanism": "swap(token_in, token_out) omits a distinctness check. A same-asset swap (e.g. USDC->USDC) updates the single reserve twice under the pricing formula, leaving it inconsistent; looped on flash-loaned funds it extracts value. (Lens E distinctness mirror.)",
+  "mandatory_preconditions": ["multi-asset/weighted-pool AMM where swap takes explicit token_in/token_out", "no require(token_in != token_out) before reserves are read/written", "flash-loanable input available (self or external)"],
+  "decisive_guards": ["explicit token_in != token_out (or distinct pool-index) check before touching reserves", "pool topology makes same-asset swap inexpressible (fixed token0/token1 pairs)"],
+  "false_positive_killers": ["swap reverts on token_in==token_out at the entry", "reserves keyed such that a same-asset swap is a no-op"],
+  "static_indicators": ["swap_exact_amount_in", "swap_exact_amount_out", "execute_swap", "token_in", "token_out", "require_auth"],
+  "decisive_check": "Confirm the swap entry rejects token_in==token_out before mutating reserves, in every deployment of the template.",
+  "evidence": "CometDEX / Comet AMM BLND-USDC (Blend backstop), Stellar/Soroban, 2026-08-25 (~$717k). Top-level swap fns in CometDEX/comet-contracts-v1 do only require_auth() at that layer.",
+  "incident_ids": ["INC-2026-08-25-COMETDEX"],
+  "modules": ["SOROBAN", "SUI", "SOLANA", "EVM"]
+ }
+]

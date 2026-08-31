@@ -1,0 +1,486 @@
+{
+ "population": 2268,
+ "victims_tested": 67,
+ "victim_percentile_median": 62.3,
+ "victim_percentile_mean": 57.2,
+ "share_in_top_quartile": 0.328,
+ "top_quartile_lift": 1.31,
+ "prior_hack_signals": "leakage-controlled: only hacks strictly before the protocol's first recorded incident",
+ "scope": "the $50k-$30M band only",
+ "victims": [
+  {
+   "slug": "1inch-swap",
+   "score": 21.42,
+   "percentile": 47.3,
+   "tvl": 3145949.0215281574,
+   "category": "DEX Aggregator"
+  },
+  {
+   "slug": "abracadabra-spell",
+   "score": 20.29,
+   "percentile": 39.7,
+   "tvl": 4667807.27631079,
+   "category": "CDP"
+  },
+  {
+   "slug": "across",
+   "score": 30.15,
+   "percentile": 84.0,
+   "tvl": 20247263.495207924,
+   "category": "Cross Chain Bridge"
+  },
+  {
+   "slug": "alex",
+   "score": 15.16,
+   "percentile": 9.9,
+   "tvl": 700135.7621452446,
+   "category": "Dexs"
+  },
+  {
+   "slug": "allbridge-core",
+   "score": 30.7,
+   "percentile": 85.5,
+   "tvl": 338501.4850251734,
+   "category": "Bridge"
+  },
+  {
+   "slug": "ambient",
+   "score": 24.56,
+   "percentile": 64.8,
+   "tvl": 2258778.4130716743,
+   "category": "Dexs"
+  },
+  {
+   "slug": "arcadia-v2",
+   "score": 17.9,
+   "percentile": 22.5,
+   "tvl": 5470140.147872324,
+   "category": "Liquidity Manager"
+  },
+  {
+   "slug": "arrakis-v1",
+   "score": 26.55,
+   "percentile": 74.3,
+   "tvl": 1494413.2271680604,
+   "category": "Liquidity Manager"
+  },
+  {
+   "slug": "atomic-green",
+   "score": 26.27,
+   "percentile": 73.6,
+   "tvl": 84486.99591469641,
+   "category": "Derivatives"
+  },
+  {
+   "slug": "basketdao",
+   "score": 33.15,
+   "percentile": 90.7,
+   "tvl": 112721.49186158071,
+   "category": "Indexes"
+  },
+  {
+   "slug": "bonzo-lend",
+   "score": 23.06,
+   "percentile": 56.3,
+   "tvl": 4237832.390238939,
+   "category": "Lending"
+  },
+  {
+   "slug": "bunni-v2",
+   "score": 24.56,
+   "percentile": 64.8,
+   "tvl": 213435.86474052098,
+   "category": "Dexs"
+  },
+  {
+   "slug": "cetus-clmm",
+   "score": 19.18,
+   "percentile": 30.0,
+   "tvl": 24733471.119235773,
+   "category": "Dexs"
+  },
+  {
+   "slug": "chainge-finance",
+   "score": 16.16,
+   "percentile": 15.1,
+   "tvl": 13028029.229996104,
+   "category": "Dexs"
+  },
+  {
+   "slug": "clipper",
+   "score": 20.56,
+   "percentile": 41.0,
+   "tvl": 781256.8520148742,
+   "category": "Dexs"
+  },
+  {
+   "slug": "clober-liquidity-vault",
+   "score": 19.9,
+   "percentile": 32.3,
+   "tvl": 160960.18453399953,
+   "category": "Dexs"
+  },
+  {
+   "slug": "cozy-v2",
+   "score": 15.14,
+   "percentile": 9.8,
+   "tvl": 172357.60321763082,
+   "category": "Insurance"
+  },
+  {
+   "slug": "crosscurve",
+   "score": 33.15,
+   "percentile": 90.7,
+   "tvl": 56152.6856734668,
+   "category": "Cross Chain Bridge"
+  },
+  {
+   "slug": "defiplaza",
+   "score": 20.56,
+   "percentile": 41.0,
+   "tvl": 161333.54694703585,
+   "category": "Dexs"
+  },
+  {
+   "slug": "defituna-lending",
+   "score": 18.74,
+   "percentile": 26.6,
+   "tvl": 1002161.9789964049,
+   "category": "Lending"
+  },
+  {
+   "slug": "deltaprime",
+   "score": 19.72,
+   "percentile": 31.7,
+   "tvl": 3648227.9575257585,
+   "category": "Leveraged Farming"
+  },
+  {
+   "slug": "drift-trade",
+   "score": 18.54,
+   "percentile": 25.8,
+   "tvl": 642619.7169952428,
+   "category": "Derivatives"
+  },
+  {
+   "slug": "dtrinity-dlend",
+   "score": 48.46,
+   "percentile": 99.9,
+   "tvl": 912099.7549388899,
+   "category": "Lending"
+  },
+  {
+   "slug": "ekubo",
+   "score": 15.56,
+   "percentile": 12.6,
+   "tvl": 25947902.581735507,
+   "category": "Dexs"
+  },
+  {
+   "slug": "flashtrade",
+   "score": 20.54,
+   "percentile": 41.0,
+   "tvl": 4296299.987953405,
+   "category": "Derivatives"
+  },
+  {
+   "slug": "four.meme",
+   "score": 14.28,
+   "percentile": 8.0,
+   "tvl": 4487963.5394351715,
+   "category": "Launchpad"
+  },
+  {
+   "slug": "gamma",
+   "score": 25.55,
+   "percentile": 69.5,
+   "tvl": 3105706.1609403086,
+   "category": "Liquidity Manager"
+  },
+  {
+   "slug": "gmx-v1-perps",
+   "score": 23.27,
+   "percentile": 58.6,
+   "tvl": 3173782.850809669,
+   "category": "Derivatives"
+  },
+  {
+   "slug": "goldfinch",
+   "score": 29.66,
+   "percentile": 83.1,
+   "tvl": 1645216.378927161,
+   "category": "RWA Lending"
+  },
+  {
+   "slug": "gondi-v3",
+   "score": 31.7,
+   "percentile": 88.0,
+   "tvl": 3121447.0199235,
+   "category": "NFT Lending"
+  },
+  {
+   "slug": "goose-finance",
+   "score": 36.27,
+   "percentile": 95.1,
+   "tvl": 318136.60515148565,
+   "category": "Farm"
+  },
+  {
+   "slug": "hyperdrive-hl-lending",
+   "score": 14.74,
+   "percentile": 8.4,
+   "tvl": 903755.0519581424,
+   "category": "Lending"
+  },
+  {
+   "slug": "impermax-v3",
+   "score": 20.47,
+   "percentile": 40.8,
+   "tvl": 98182.61471285937,
+   "category": "Lending"
+  },
+  {
+   "slug": "juice-finance",
+   "score": 24.92,
+   "percentile": 65.7,
+   "tvl": 159272.62772238496,
+   "category": "Leveraged Farming"
+  },
+  {
+   "slug": "juicebox-v3",
+   "score": 26.93,
+   "percentile": 75.8,
+   "tvl": 163510.5659316718,
+   "category": "Launchpad"
+  },
+  {
+   "slug": "kiloex",
+   "score": 17.6,
+   "percentile": 21.6,
+   "tvl": 1576426.5470454027,
+   "category": "Derivatives"
+  },
+  {
+   "slug": "kinto-bridge",
+   "score": 36.74,
+   "percentile": 95.5,
+   "tvl": 672216.8786840703,
+   "category": "Canonical Bridge"
+  },
+  {
+   "slug": "lien",
+   "score": 23.91,
+   "percentile": 61.0,
+   "tvl": 204912.06037841467,
+   "category": "Options"
+  },
+  {
+   "slug": "lixir-finance",
+   "score": 40.55,
+   "percentile": 98.6,
+   "tvl": 94901.5401852037,
+   "category": "Liquidity Manager"
+  },
+  {
+   "slug": "maya-protocol",
+   "score": 27.15,
+   "percentile": 76.1,
+   "tvl": 4592973.533809875,
+   "category": "Cross Chain Bridge"
+  },
+  {
+   "slug": "openleverage",
+   "score": 18.56,
+   "percentile": 26.0,
+   "tvl": 99822.69001971593,
+   "category": "Dexs"
+  },
+  {
+   "slug": "otsea",
+   "score": 24.56,
+   "percentile": 64.8,
+   "tvl": 576061.6634300734,
+   "category": "Dexs"
+  },
+  {
+   "slug": "penpie",
+   "score": 24.16,
+   "percentile": 62.3,
+   "tvl": 4503553.380778712,
+   "category": "Yield"
+  },
+  {
+   "slug": "prismalst",
+   "score": 30.29,
+   "percentile": 84.5,
+   "tvl": 331656.3019646857,
+   "category": "CDP"
+  },
+  {
+   "slug": "radiant-v2",
+   "score": 25.46,
+   "percentile": 68.7,
+   "tvl": 693777.8138104784,
+   "category": "Lending"
+  },
+  {
+   "slug": "rari-capital",
+   "score": 27.01,
+   "percentile": 76.0,
+   "tvl": 1374780.6301502262,
+   "category": "Yield Aggregator"
+  },
+  {
+   "slug": "renegade",
+   "score": 39.57,
+   "percentile": 98.2,
+   "tvl": 114525.89371395342,
+   "category": "Dexs"
+  },
+  {
+   "slug": "revert-lend",
+   "score": 22.46,
+   "percentile": 52.7,
+   "tvl": 7651407.6704466,
+   "category": "Lending"
+  },
+  {
+   "slug": "ribbon",
+   "score": 17.42,
+   "percentile": 20.5,
+   "tvl": 4174198.925108518,
+   "category": "Options Vault"
+  },
+  {
+   "slug": "risex",
+   "score": 23.86,
+   "percentile": 60.9,
+   "tvl": 16163761.614014234,
+   "category": "Derivatives"
+  },
+  {
+   "slug": "ronin-bridge",
+   "score": 28.74,
+   "percentile": 80.6,
+   "tvl": 5172000.438215795,
+   "category": "Canonical Bridge"
+  },
+  {
+   "slug": "scallop-lend",
+   "score": 22.08,
+   "percentile": 49.6,
+   "tvl": 10913969.0802162,
+   "category": "Lending"
+  },
+  {
+   "slug": "set-protocol",
+   "score": 31.15,
+   "percentile": 86.5,
+   "tvl": 12301047.478158107,
+   "category": "Indexes"
+  },
+  {
+   "slug": "silo-v2",
+   "score": 32.46,
+   "percentile": 89.1,
+   "tvl": 5866437.131115082,
+   "category": "Lending"
+  },
+  {
+   "slug": "sir",
+   "score": 25.25,
+   "percentile": 67.7,
+   "tvl": 106823.01426800192,
+   "category": "Derivatives"
+  },
+  {
+   "slug": "smartcredit",
+   "score": 25.46,
+   "percentile": 68.7,
+   "tvl": 204900.2011673413,
+   "category": "Lending"
+  },
+  {
+   "slug": "solido-cash",
+   "score": 37.09,
+   "percentile": 95.9,
+   "tvl": 505159.8090858303,
+   "category": "CDP"
+  },
+  {
+   "slug": "sonne-finance",
+   "score": 25.8,
+   "percentile": 70.7,
+   "tvl": 55616.58293389414,
+   "category": "Lending"
+  },
+  {
+   "slug": "starlay-finance",
+   "score": 20.06,
+   "percentile": 33.7,
+   "tvl": 139207.2826026425,
+   "category": "Lending"
+  },
+  {
+   "slug": "taiko-bridge",
+   "score": 29.74,
+   "percentile": 83.6,
+   "tvl": 11647101.440162884,
+   "category": "Canonical Bridge"
+  },
+  {
+   "slug": "tenderize-v2",
+   "score": 16.27,
+   "percentile": 15.4,
+   "tvl": 368517.52697121876,
+   "category": "Liquid Staking"
+  },
+  {
+   "slug": "termfinance-vaults",
+   "score": 22.16,
+   "percentile": 49.8,
+   "tvl": 12450702.821594812,
+   "category": "Yield"
+  },
+  {
+   "slug": "thalaswap",
+   "score": 15.16,
+   "percentile": 9.9,
+   "tvl": 684285.3587593026,
+   "category": "Dexs"
+  },
+  {
+   "slug": "the-idols",
+   "score": 17.42,
+   "percentile": 20.5,
+   "tvl": 6571388.65203143,
+   "category": "Reserve Currency"
+  },
+  {
+   "slug": "uwu-lend",
+   "score": 39.46,
+   "percentile": 98.1,
+   "tvl": 156312.01155525542,
+   "category": "Lending"
+  },
+  {
+   "slug": "woofi-swap",
+   "score": 22.56,
+   "percentile": 53.2,
+   "tvl": 2388568.269584059,
+   "category": "Dexs"
+  },
+  {
+   "slug": "yield-protocol",
+   "score": 33.46,
+   "percentile": 91.3,
+   "tvl": 203353.89686824664,
+   "category": "Lending"
+  }
+ ],
+ "caveats": [
+  "DefiLlama data is current, not pre-hack: audits added after an incident and TVL that moved afterwards both leak into the score",
+  "only the structural half of the model is tested (hazard + neglect + economics); family evidence requires a deep screen that was not run against the full population",
+  "victims still listed are survivors; protocols that died after being hacked are absent"
+ ]
+}

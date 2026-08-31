@@ -1,0 +1,314 @@
+[
+  {
+    "event_date": "2026-08-09",
+    "target": "Coinsbuy",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 7900000.0,
+    "reported_loss_raw": "$ 7,900,000",
+    "description_raw": "Wallets linked to Coinsbuy (a B2B crypto payment processor) were drained of more than $7.9 million across Ethereum and TRON around 13:00 UTC on August 9, 2026. The attacker laundered part of the funds into Monero (XMR) via exchanges, while ChangeNOW helped freeze a six-figure amount; Coinsbuy temporarily paused deposits and withdrawals, which have since resumed.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/DarkWebInformer/status/2086566165665522120"
+    ]
+  },
+  {
+    "event_date": "2020-11-10",
+    "target": "SharkTron",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 10000000.0,
+    "reported_loss_raw": "$ 10,000,000",
+    "description_raw": "According to FXStreet, the community accused Daniel Wood of the DeFi project based on the Tron blockchain and the anonymous developer of the JustSwap whitelist project SharkTron for running away. Although the specific losses are not yet known, Twitter users reported that they lost 366 million to 400 million TRX (worth about 10 million US dollars). The TRON Foundation officially tweeted that it has contacted Binance to jointly track down the stolen funds and related personnel, and that some funds have been frozen by Binance. The TRON Foundation will also cooperate with other exchanges to track stolen funds. In addition, the TRON Foundation recommends that the victims submit a report to the local police.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.fxstreet.com/cryptocurrencies/news/over-400-million-trx-tokens-stolen-by-defi-protocol-sharktron-202011091401"
+    ]
+  },
+  {
+    "event_date": "2020-09-06",
+    "target": "CherryFi",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The transfer logic of TRON's DeFi project CherryFi calls the safeTransfer function to perform specific transfer operations. However, the USDT transfer logic does not return a value, which causes the safeTransfer call to never succeed, which leads to the lockup of funds, and therefore users cannot perform USDT transfers in and out. It is understood that the CherryFi code has not been audited.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.quadrigainitiative.com/hackfraudscam/cherryficontractvulnerabilities.php"
+    ]
+  },
+  {
+    "event_date": "2020-02-03",
+    "target": "LuckLambo104",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 6588.0,
+    "reported_loss_raw": "6,588 TRX",
+    "description_raw": "The hacker at the beginning of the TKnzni address continued to launch a transaction rollback attack on the LuckLambo104 contract address beginning with TGsyJF by creating an attack contract, and profited 6,588 TRX. The contract was created at 23:00 on February 01 and was attacked the day after it went live. The current contract balance has returned to zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.first.vip/kx/peckshield%EF%BC%9A%E6%B3%A2%E5%9C%BAlucklambo104%E7%AB%9E%E7%8C%9C%E6%B8%B8%E6%88%8F%E6%8C%81%E7%BB%AD%E9%81%AD%E9%BB%91%E5%"
+    ]
+  },
+  {
+    "event_date": "2019-12-06",
+    "target": "Tron Lounge",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 54653.0,
+    "reported_loss_raw": "54,653 TRX",
+    "description_raw": "The hacker at the beginning of the TFNsSk address initiated a transaction rollback attack on the Tron Lounge DApp contract beginning with TRON TR3n2D through a self-created contract, and has made a profit of 54,653 TRX so far.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/135913.htm"
+    ]
+  },
+  {
+    "event_date": "2019-11-21",
+    "target": "Dice",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 18808.0,
+    "reported_loss_raw": "18,808 TRX",
+    "description_raw": "The hackers launched a trade rollback attack on TRON's Dice contracts through self-created contracts, and have gained 18,808 TRX to date.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://blocking.net/23972/security-alert-wavefield-dice-contract-is-subject-to-transaction-rollback-attack/"
+    ]
+  },
+  {
+    "event_date": "2019-07-27",
+    "target": "MULTI.TODAY",
+    "slowmist_attack_method": "Rule Exploitation",
+    "reported_loss_usd": 102652.0,
+    "reported_loss_raw": "102,652 TRX",
+    "description_raw": "The attacker adopted a \"card position\" rollback betting method for the game mechanics: the first gameplay investment of the game is profitable early, and the \"player\" deploys the contract to invest at the beginning of each round, thereby making the investment The return is maximized, so far the attacker has made a total of 102,652 TRX.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/110439.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-26",
+    "target": "7Tron",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 67695.0,
+    "reported_loss_raw": "67,695 TRX",
+    "description_raw": "The attackers launched a roll back attack on the contracts, which so far has yielded a total of 67,695 TRX.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/110227.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-25",
+    "target": "7Tron",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 113913.0,
+    "reported_loss_raw": "113,913 TRX",
+    "description_raw": "The attackers launched a trade rollback attack on the contracts, which so far has yielded a total of 113,913 TRX.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/110017.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-24",
+    "target": "TronCity",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 257112.0,
+    "reported_loss_raw": "257,112 TRX",
+    "description_raw": "There was an unusually large transaction in the game contract of the TronCity project. The total balance of 257,112 TRX in the game contract was emptied at one time.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/109824.htm"
+    ]
+  },
+  {
+    "event_date": "2019-07-23",
+    "target": "TronChip",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 61867.0,
+    "reported_loss_raw": "61,867 TRX",
+    "description_raw": "Hackers launched a series of attacks on TronChip, earning a total of 61,867 TRX.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.tuoluo.cn/kuaixun/detail-76270.html"
+    ]
+  },
+  {
+    "event_date": "2019-07-04",
+    "target": "TKjoHFN",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The hackers launched an attack by rolling back the transaction, and so far, the attack has been profitable.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/search/Bitpoint"
+    ]
+  },
+  {
+    "event_date": "2019-07-02",
+    "target": "TLGUt5",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 45200.0,
+    "reported_loss_raw": "45,200 TRX",
+    "description_raw": "The attacker launched multiple roll back attacks on the DApp contract address beginning with TLGUt5. So far, it has gained 45,200 TRX, and the contract balance of the attacked contract is almost zero.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/105246.htm"
+    ]
+  },
+  {
+    "event_date": "2019-06-30",
+    "target": "\u6ce2\u573a\u8d85\u7ea7\u793e\u533a\uff08TRX\u00b7\u03bcTORRENT SUPER COMMUNITY\uff09",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "At 1:00 am on June 30, the App of Torrent super community was shut down. All of the wallet assets were moved out two weeks ago, and investors are currently unable to cash out.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.tuoluo.cn/article/detail-51738.html"
+    ]
+  },
+  {
+    "event_date": "2019-06-28",
+    "target": "SPOKpark",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 50845.0,
+    "reported_loss_raw": "50,845 TRX",
+    "description_raw": "Hackers have made a profit of 50,845 TRX by creating multiple contracts to launch a trade rollback attack on SPOKpark, a Tron DApp game. The SPOKpark website is no longer accessible.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://blocking.net/8691/monitoring-shows-wave-field-spokpark-is-subject-to-transaction-rollback-attack/"
+    ]
+  },
+  {
+    "event_date": "2019-06-12",
+    "target": "Roulette",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 27000.0,
+    "reported_loss_raw": "27,000 TRX",
+    "description_raw": "The hacker has gained 27,000 TRX by launching a trade rollback attack on the  DappRoulette contract with a self-created contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/101189.htm"
+    ]
+  },
+  {
+    "event_date": "2019-05-13",
+    "target": "DiceGame",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 5150.0,
+    "reported_loss_raw": "5,150 TRX",
+    "description_raw": "The DiceGame game suffered a roll back attack, and the hackers at the TYUcGmi address gained a total of 5,150 TRX.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/95033.htm"
+    ]
+  },
+  {
+    "event_date": "2019-05-03",
+    "target": "TronBank",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 26730000.0,
+    "reported_loss_raw": "26,730,000 TRX",
+    "description_raw": "At 4:12 AM on May 3, Beijing time, a contract call transferred 26.73 million TRX (valued at RMB 4.27 million) from the TronBank contract, and the contract balance returned to zero. About two hours after the theft, wojak, the owner of THeRTT**, who transferred the 26.73 million TRX address, appeared. According to wojak, he wrote a script to analyze the bytecode of the TRON virtual machine, scan the contracts in batches and initiate transactions to see if there is any way to make money, but accidentally hit a bug in the Tronbank contract. At first he didn't even know that the money came from Tronbank. Some people in the community suggested that wojak return the money to the Tronbank developers, but wojak believes that this is not his problem. Developers should write test examples, do audits, and at least run some formal verifications (obviously they didn\u2019t do anything). He is willing to return the money intact to every investor in Tronbank, not the developer of the project. Based on the available information, it is still too early to conclude that \"the developer placed a backdoor in the contract\". There are only two objective conclusions that can be drawn at present: 1. TRX Pro has a backdoor in the contract on the main network; 2. The code certified on TSC does not match the actual contract operation logic.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://mp.weixin.qq.com/s/aInEaYdS9X7HP7FbzWl6AQ"
+    ]
+  },
+  {
+    "event_date": "2019-05-02",
+    "target": "Wheel Of Fortune",
+    "slowmist_attack_method": "Roll back attack",
+    "reported_loss_usd": 7856.0,
+    "reported_loss_raw": "7,856  TRX",
+    "description_raw": "The TRON Wheel Of Fortune DApp is being attacked by a transaction rollback, with a total loss of 7,856 TRX, and the attack is still ongoing. Previously, security personnel found that the hacker continued to conduct transaction rollback attacks on multiple DAPP contract addresses through the same method.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.tuoniaox.com/newsflash/p-345662.html"
+    ]
+  },
+  {
+    "event_date": "2019-04-11",
+    "target": "TronWow",
+    "slowmist_attack_method": "Random number attack",
+    "reported_loss_usd": 2167377.0,
+    "reported_loss_raw": "2,167,377 TRX",
+    "description_raw": "The hacker launched 1,203 attacks on the TronWow,  made a total of 2,167,377 TRX profits.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.jinse.com/lives/89296.htm"
+    ]
+  },
+  {
+    "event_date": "2019-04-11",
+    "target": "TronBank",
+    "slowmist_attack_method": "Oracle Attack",
+    "reported_loss_usd": 170000000.0,
+    "reported_loss_raw": "170,000,000 BTT",
+    "description_raw": "Tron Dapp TronBank was attacked by Fake token attack at 1 am, about 170 million BTT were stolen in 1 hour (worth about 850,000 yuan). Monitoring showed that the hacker created a fake token BTTx to initiate the \"invest\" function to the contract, and the contract did not determine whether the sender's token id was consistent with the BTT real token id1002000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://coingape.com/tronbank-dapp-attack-tron-dapp-vulnerabilities/"
+    ]
+  },
+  {
+    "event_date": "2019-04-10",
+    "target": "IseriCoin",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Hacker has used contract vulnerabilities to send a huge amount of IseriCoin tokens to his account.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.jinse.com/lives/89100.htm"
+    ]
+  },
+  {
+    "event_date": "2019-03-29",
+    "target": "TronCrush",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 150000.0,
+    "reported_loss_raw": "150,000 TCC",
+    "description_raw": "The transfer does not determine that to and from cannot be the same address, resulting in an attack that can create more than 15w TCC tokens without foundation.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://blocking.net/1638/dapp-trend-list-all-vulnerability-wave-fields-on-eos-may-be-reproduced/"
+    ]
+  },
+  {
+    "event_date": "2018-12-31",
+    "target": "Tronwin",
+    "slowmist_attack_method": "Overflow",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "2,000,000 TRX",
+    "description_raw": "Tron DApp Tronwin is hacked because of overflow and 2 million TRX were stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Tron&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://bcsec.org/index/detail/id/435/tag/0"
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "tag": "ETH",
+  "category_filter": "ETH",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=ETH&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:38Z",
+      "sha256": "b3d6eb91fcd0378dd05432ec003807b724deb80b2ac9d5ba9407237e6d467bf2",
+      "bytes": 26617,
+      "snapshot": "ETH_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 20,
+      "rows_older_than_window": 0,
+      "first_date": "2026-06-09",
+      "last_date": "2026-08-10",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=ETH&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:40Z",
+      "sha256": "ed0fde0f2169e07240dc02d2db84c6214bf311f4dfa4a610f80e9b050b065c4b",
+      "bytes": 29538,
+      "snapshot": "ETH_page_002.html",
+      "rows_parsed": 20,
+      "rows_in_window": 20,
+      "rows_older_than_window": 0,
+      "first_date": "2026-04-05",
+      "last_date": "2026-06-09",
+      "status": "OK"
+    },
+    {
+      "page": 3,
+      "url": "https://hacked.slowmist.io/?c=ETH&page=3",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:42Z",
+      "sha256": "bd63695096391b027be87748d102cc33bff9bf56b085b6677bf7f7426f2099c3",
+      "bytes": 28627,
+      "snapshot": "ETH_page_003.html",
+      "rows_parsed": 20,
+      "rows_in_window": 13,
+      "rows_older_than_window": 7,
+      "first_date": "2025-12-02",
+      "last_date": "2026-03-30",
+      "status": "OK"
+    },
+    {
+      "page": 4,
+      "url": "https://hacked.slowmist.io/?c=ETH&page=4",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:45Z",
+      "sha256": "e9613a498d978e66cfc33df28899c0c0bc5d76d2d37e45ce7e540edbc02e4a8c",
+      "bytes": 26000,
+      "snapshot": "ETH_page_004.html",
+      "rows_parsed": 20,
+      "rows_in_window": 0,
+      "rows_older_than_window": 20,
+      "first_date": "2025-04-08",
+      "last_date": "2025-11-30",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 80
+}

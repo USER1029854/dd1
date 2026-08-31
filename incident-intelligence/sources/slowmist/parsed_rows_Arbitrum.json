@@ -1,0 +1,522 @@
+[
+  {
+    "event_date": "2026-08-08",
+    "target": "Atomic Green",
+    "slowmist_attack_method": "Signature Replay Attack",
+    "reported_loss_usd": 29984.27,
+    "reported_loss_raw": "$ 29,984.27",
+    "description_raw": "Atomic Green (a non-custodial leveraged trading protocol on Arbitrum) was exploited due to a signature replay vulnerability. The same manager signature could be replayed across 21 different Uniswap V3 LP positions, combined with flashloan-based price manipulation, allowing the attacker to trigger unauthorized full LP burns and resulting in a loss of approximately 29,984.27 USDC.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2086042810265055619"
+    ]
+  },
+  {
+    "event_date": "2026-07-15",
+    "target": "Cascade",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 1343921.0,
+    "reported_loss_raw": "$ 1,343,921",
+    "description_raw": "Cascade, a perpetual contract platform backed by institutions including Polychain, was attacked on Arbitrum through its pre-launch locked CLS vault (First Wave invite-only deposits). The attacker accumulated long positions in a low-liquidity market to hedge against CLS short positions, artificially manipulated the mark price upward, triggering large-scale liquidations of CLS short positions. After profiting from the attack, the attacker immediately withdrew approximately $1.34 million USDC. The project team paused trading and withdrawals, and the funds were largely recovered afterward, with full compensation arranged for affected users.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/cascade_xyz/status/2077747846011306123"
+    ]
+  },
+  {
+    "event_date": "2026-07-15",
+    "target": "Ostium",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 18000000.0,
+    "reported_loss_raw": "$ 18,000,000",
+    "description_raw": "Ostium, an RWA-focused perpetuals DEX on Arbitrum, suffered an oracle manipulation exploit. The attacker used a compromised oracle signer key to submit fraudulent future-dated price reports, generating artificial trading profits and draining approximately $18 million USDC from the liquidity vault. The protocol has halted trading and is investigating.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/kaledora/status/2077525044733837736"
+    ]
+  },
+  {
+    "event_date": "2026-07-13",
+    "target": "Lumi Finance",
+    "slowmist_attack_method": "Smart Contract Logic Vulnerability",
+    "reported_loss_usd": 270000.0,
+    "reported_loss_raw": "$ 270,000",
+    "description_raw": "The DeFi protocol Lumi Finance on Arbitrum suffered an exploit where attackers leveraged Sodium smart accounts that performed token approvals as a side effect during UserOp validation. This allowed a malicious Paymaster to gain allowances from multiple accounts and drain funds, resulting in approximately $270,000 in losses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2076669154036527314"
+    ]
+  },
+  {
+    "event_date": "2026-05-27",
+    "target": "Stake DAO",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 91000.0,
+    "reported_loss_raw": "$ 91,000",
+    "description_raw": "On May 27, 2026, an attacker compromised StakeDAO\u2019s deployer EOA private key and used it to repoint the vsdCRV LayerZero OFT peer on Arbitrum, forging a mint of ~5.44 trillion unbacked vsdCRV. The attacker drained ~43.8 ETH (~$91K) from the vasdCRV Curve pool before bridging the proceeds. StakeDAO core contracts were never at risk; legitimate backing was secured within 47 minutes, the product was deprecated, and a governance proposal was issued to fully compensate affected users.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/stakedaohq/status/2064366142685094064?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-05-22",
+    "target": "Fractal Protocol",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 13700.0,
+    "reported_loss_raw": "$ 13,700",
+    "description_raw": "Fractal Protocol\u2019s USDF vault on Arbitrum was exploited via a smart contract logic flaw. The attacker used an Aave V3 USDC.e flash loan, looped through Balancer V2 batchSwap callbacks, and recursively called the vault\u2019s deposit (0xb6b55f25) and withdraw functions. This exploited the fixed daily-accrued tokenPrice (~1.27 USDC/USDF) and share-rounding accounting issues without proper invariant checks across re-entrant flows, allowing the extraction of approximately 13,700 USDC.e. The vault\u2019s liquid USDC buffer dropped from around 14,778 USDC to near zero. Pre-hack TVL was approximately 97,270 USD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/DefimonAlerts/status/2058619391776878967"
+    ]
+  },
+  {
+    "event_date": "2026-05-17",
+    "target": "SEA Token",
+    "slowmist_attack_method": "Flashloan Price Manipulation",
+    "reported_loss_usd": 153000.0,
+    "reported_loss_raw": "$ 153,000",
+    "description_raw": "SEA Token on Arbitrum was exploited through a flashloan-enabled price manipulation attack due to a protocol logic flaw in its Solidity smart contract. The attacker used a flash loan to artificially manipulate the token price (likely via liquidity pool imbalance or oracle dependency), allowing unauthorized extraction of approximately $153,000 in value.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/procur3/status/2057004818145952190"
+    ]
+  },
+  {
+    "event_date": "2026-05-13",
+    "target": "ShapeShift FOX Colony",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 132700.0,
+    "reported_loss_raw": "$ 132,700",
+    "description_raw": "ShapeShift\u2019s FOX Colony (a community governance and participation program for FOX token holders) on Arbitrum was exploited via a smart contract vulnerability in its Colony Network contracts. The attacker drained approximately $132.7K in USDC and FOX tokens in a single sophisticated transaction by exploiting a meta-transaction self-call flaw combined with DSAuth authorization logic. The core exchange platform was unaffected; this impacted the DAO/community treasury.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/blockaid_/status/2054593377438421492?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-05-12",
+    "target": "Aurellion Labs",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 456000.0,
+    "reported_loss_raw": "$ 456,000",
+    "description_raw": "Aurellion Labs' Diamond Proxy contract (EIP-2535) was exploited due to an unprotected initialize(address) function in the SafeOwnable Facet. Although an owner was set, the OpenZeppelin-style _initialized storage slot remained 0, allowing re-initialization. The attacker called initialize() to take ownership, used diamondCut to add a malicious facet with pullERC20/sweep functions, and drained USDC from wallets that had previously approved the diamond proxy. The project paused operations, committed to reimbursing users, and advised revoking old approvals.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2054163700035289446"
+    ]
+  },
+  {
+    "event_date": "2026-05-10",
+    "target": "Renegade",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 209000.0,
+    "reported_loss_raw": "$ 209,000",
+    "description_raw": "Renegade\u2019s legacy V1 deployment on Arbitrum was exploited. The attacker took advantage of an unprotected initializer in the Dark Pool proxy contract (combined with a faulty migration from April 2025 that left the version counter out of sync), injected malicious logic, and used delegatecall to drain approximately $209,000 worth of 27 different ERC-20 tokens from the proxy contract\u2019s storage. The exploiter, acting as a whitehat, negotiated on-chain with the team. Renegade offered a 90/10 split (return 90%, keep 10% as a whitehat bounty, no legal action). The whitehat returned ~$190,000 within 45 minutes. The team confirmed the issue was isolated to the V1 Arbitrum deployment (which has been paused), all other deployments are safe, and all affected users will be made whole.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/renegade_fi/status/2053531772634427599?s=46"
+    ]
+  },
+  {
+    "event_date": "2026-04-03",
+    "target": "Silo V2",
+    "slowmist_attack_method": "Oracle Misconfiguration",
+    "reported_loss_usd": 392000.0,
+    "reported_loss_raw": "$ 392,000",
+    "description_raw": "The attacker exploited a Misconfigured Oracle Exploit in combination with protocol logic issues to launch an attack against the Silo V2 contracts on Arbitrum. The incident involved price manipulation or configuration flaws in the oracle mechanism, which ultimately enabled unauthorized fund extraction. This was a relatively small-scale incident affecting Silo Finance V2, with limited impact on core user funds. Similar to other cases, the affected contracts were likely peripheral or experimental components rather than the core protocol. Following the attack, the stolen funds were obfuscated through mixers and/or cross-chain bridges. Although Silo Finance has undergone audits, newly introduced features or misconfigurations can still introduce potential risks.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://smartcontractshacking.com/hacks/silo-v2-hack-2026"
+    ]
+  },
+  {
+    "event_date": "2026-03-12",
+    "target": "Stake DAO",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 176000.0,
+    "reported_loss_raw": "$ 176,000",
+    "description_raw": "Stake DAO\u2019s Votemarket module was exploited. The attacker used a vulnerability in the L1BlockOracleUpdater peripheral contract to inject fabricated L1 block data via the LaPoste cross-chain bridge, poisoning the oracle and forging vote proofs to drain ~$176,000 in campaign incentive rewards across 54 campaigns. The incident was later resolved as a white-hat event with most funds recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/StakeDAOHQ/status/2036029009054642461"
+    ]
+  },
+  {
+    "event_date": "2026-01-14",
+    "target": "FutureSwap",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 74000.0,
+    "reported_loss_raw": "$ 74,000",
+    "description_raw": "The FutureSwap protocol deployed on Arbitrum was exploited again via a reentrancy vulnerability, following its first attack four days ago, resulting in a loss of approximately $74,000. The attacker had previously abused the reentrancy function 0x5308fcb1 three days earlier to over-mint LP tokens, and after the cooldown period expired, redeemed the excess collateralized assets to realize profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/phalcon_xyz/status/2011404828115866061?s=46"
+    ]
+  },
+  {
+    "event_date": "2026-01-06",
+    "target": "Fusion by IPOR",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 336000.0,
+    "reported_loss_raw": "$ 336,000",
+    "description_raw": "Fusion has released a security update stating that its IPOR USDC Fusion Optimizer contains a vulnerability in the Arbitrum Vault. The IPOR team was notified and confirmed on January 6 that the vulnerability had resulted in a loss of approximately $336,000 USDC. This exploit only affected a specific older version of the Fusion Vault, and due to its unique configuration, it was the only vault susceptible to this particular attack vector. According to further analysis by SlowMist, the root cause of the incident lies in the underlying contract delegated by the EOA account controlled via EIP\u20117702, which contained a security flaw allowing arbitrary external calls. The attacker exploited this flaw to create and configure a malicious circuit-breaker contract targeting the Plasma Vault, thereby illicitly extracting funds from the vault. The official statement noted that the loss represents less than 1% of the total funds secured by Fusion. The team is currently working with Security Alliance to track the funds and attempt recovery. IPOR DAO will cover the deficit from its treasury, and all affected depositors will receive full compensation. Additionally, according to CertiK, approximately $267,000 of the stolen funds have been cross\u2011chain transferred to the Ethereum network and subsequently moved into Tornado Cash. On January 7, the IPOR team announced on X that the funds have been recovered, and a 10% bounty agreement has been reached with the white-hat party, which will be covered by the IPOR DAO. The incident has now been concluded as a good-faith white-hat security event.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/ipor_io/status/2008728627190321480"
+    ]
+  },
+  {
+    "event_date": "2026-01-05",
+    "target": "USDGambit and TLP",
+    "slowmist_attack_method": "Deployer Account Compromise",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "Multiple suspicious transactions involving proxy contracts were detected on Arbitrum (ARB), with estimated losses of approximately $1.5 million. Preliminary analysis indicates that the sole deployer of the USDGambit and TLP projects may have lost access to their account. Subsequently, the attacker deployed a new contract and updated the ProxyAdmin permissions to seize control. The stolen funds were then bridged to the Ethereum network and deposited into Tornado Cash.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/CyversAlerts/status/2008100710483685488?s=20"
+    ]
+  },
+  {
+    "event_date": "2026-01-05",
+    "target": "TMX",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 1400000.0,
+    "reported_loss_raw": "$ 1,400,000",
+    "description_raw": "According to CertiK Alert, a vulnerability involving a contract related to TMX on Arbitrum has been detected, with estimated losses of around $1.4 million. During the exploit loop, the attacker minted and staked TMX LP tokens using USDT, then swapped USDT for USDG, unstaked, and sold even more USDG.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/certikalert/status/2008360565010559045?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2025-12-17",
+    "target": "Futureswap",
+    "slowmist_attack_method": "Governance Attack",
+    "reported_loss_usd": 830000.0,
+    "reported_loss_raw": "$830,000",
+    "description_raw": "According to monitoring by SlowMist\u2019s MistEye security monitoring system, potential suspicious activities related to @futureswapx have been detected. Further analysis indicates that the root cause lies in an attacker creating a malicious proposal and leveraging flash loans to vote, ultimately granting privileges to the attack contract and enabling it to transfer tokens from other users.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2001138489656766726"
+    ]
+  },
+  {
+    "event_date": "2025-10-20",
+    "target": "Sharwa.Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 146000.0,
+    "reported_loss_raw": "$ 146,000",
+    "description_raw": "According to a BlockSec Phalcon alert, Sharwa.Finance disclosed that it had suffered an attack and subsequently suspended operations. However, several hours later, multiple suspicious transactions occurred again, suggesting that the attacker might have exploited the same underlying vulnerability through slightly different attack paths.In general, the attacker first created a margin account, then used the provided collateral to borrow additional assets through leveraged lending, and finally launched a sandwich attack targeting the swap operations involving the borrowed assets.\nThe root cause appears to lie in the lack of a bankruptcy check in the swap() function of the MarginTrading contract. This function is responsible for swapping borrowed assets from one token (e.g., WBTC) to another (e.g., USDC). It verifies solvency only once \u2014 based on the account state at the start of the swap \u2014 before executing the asset exchange, leaving room for manipulation during the process.Attacker 1 (address starting with 0xd356) conducted multiple attacks, earning approximately USD 61,000, while Attacker 2 (address starting with 0xaa24) executed a single attack, gaining around USD 85,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/phalcon_xyz/status/1980219745480946087?s=46"
+    ]
+  },
+  {
+    "event_date": "2025-09-22",
+    "target": "UXLINK",
+    "slowmist_attack_method": "Social Engineering",
+    "reported_loss_usd": 11000000.0,
+    "reported_loss_raw": "$ 11,000,000",
+    "description_raw": "AI-driven Web3 social platform UXLINK suffered an attack affecting platform-related assets, resulting in losses exceeding USD 11 million. Investigation showed that the attacker had prepared for months prior to the incident, impersonating a business partner and leveraging deepfake video conferencing as part of a social engineering scheme. Through these methods, the attacker gained access to the personal devices of several SAFE key holders and obtained sensitive information such as passwords and private keys. After gaining control over the legacy arb-UXLINK smart contract, the attacker executed unauthorized token minting and subsequently transferred and sold the assets. UXLINK CEO Rolland Saf stated that several million dollars have been recovered through immediate collaboration with exchanges, and all recovered funds have been allocated to buybacks in support of the community. In addition, significant security enhancements have been made to signing devices, internal processes, and infrastructure to prevent similar incidents from occurring in the future.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/UXLINKofficial/status/1998228868365529555"
+    ]
+  },
+  {
+    "event_date": "2025-07-10",
+    "target": "Kinto",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1550000.0,
+    "reported_loss_raw": "$ 1,550,000",
+    "description_raw": "Ramon Recuero, co-founder of Kinto, a modular exchange platform in the Arbitrum ecosystem, tweeted about the recent attack, stating that the hacker exploited a vulnerability on Arbitrum that allowed unlimited minting of K tokens. The attacker minted 110,000 K and launched an attack targeting the Morpho Vault and a Uniswap v4 pool. The incident resulted in approximately $1.55 million in losses (ETH and USDC) and caused significant volatility in the price of the K token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/ramonrecuero/status/1943426114468352006"
+    ]
+  },
+  {
+    "event_date": "2025-07-09",
+    "target": "GMX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42000000.0,
+    "reported_loss_raw": "$ 42,000,000",
+    "description_raw": "On July 9, according to monitoring by MistTrack\u2019s MistEye security system, the well-known decentralized trading platform GMX (@GMX_IO) suffered an attack, resulting in asset losses exceeding $42 million.\n\nAnalysis indicates that the core of this attack lies in the exploitation of two features: the use of leverage when the Keeper system executes orders, and the update mechanism where the global average price adjusts during shorting operations but does not update when closing short positions. Leveraging these mechanics, the attacker conducted a reentrancy attack to create large short positions, manipulating the global short average price and the size of the global short position. This, in turn, artificially inflated the price of GLP, which the attacker then redeemed for profit. Following negotiation, the attacker returned all stolen funds and received a $5 million bounty.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1942949653231841352"
+    ]
+  },
+  {
+    "event_date": "2025-05-16",
+    "target": "Nitron",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 950559.0,
+    "reported_loss_raw": "$ 950,559",
+    "description_raw": "On May 16th, Demex's lending market Nitron was exploited, resulting in a loss of $950,559 in user funds. According to Demex's post-incident analysis, the root cause of the exploit was a donation-based oracle manipulation attack targeting the deprecated dGLP vault.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://blog.dem.exchange/nitron-post-mortem/"
+    ]
+  },
+  {
+    "event_date": "2025-04-18",
+    "target": "NUMA.",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 530000.0,
+    "reported_loss_raw": "$ 530,000",
+    "description_raw": "NUMA was attacked on the Arbitrum chain, resulting in a loss of approximately $530,000. The attacker swapped all assets to ETH, bridged them to Ethereum mainnet, and deposited the funds into Tornado Cash.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/officer_cia/status/1913979776953356722"
+    ]
+  },
+  {
+    "event_date": "2025-01-08",
+    "target": "Moby",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 2500000.0,
+    "reported_loss_raw": "$ 2,500,000",
+    "description_raw": "According to Moby Post-Mortem Report, on January 8, an attacker took control of the Private Key used to authorize upgrades to Moby\u2019s core contracts, compromising the protocol. This led to the exposure of 3.77 wBTC, 207.76 wETH, and 1,500,351.5 USDC in the sOLP and mOLP liquidity pools. Of the stolen funds, 1,470,091.74 USDC was recovered with the assistance of Seal911 team.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://medium.com/moby-trade/moby-post-mortem-report-growth-plan-504ad5b0dd35"
+    ]
+  },
+  {
+    "event_date": "2025-01-08",
+    "target": "Orange Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 830000.0,
+    "reported_loss_raw": "$ 830,000",
+    "description_raw": "The Arbitrum-based liquidity management project Orange Finance suffered a $830,000 asset theft due to a misconfigured multi-sig. The attacker gained ownership of each vault, modified their implementations, and withdrew both the deposited assets and excessively approved funds. About 94% (roughly $780,000) of the total loss came from deposited assets, while the remaining 6% (around $47,000) resulted from excessive approvals.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://mirror.xyz/0x6FA2aF9a4d6fFe654361F713780963C10412e7c3/gN17YMrLhKKg9YT9a391U74pWr9IhqBUDWUqDyDamjE"
+    ]
+  },
+  {
+    "event_date": "2024-10-24",
+    "target": "Ramses Exchange",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 93000.0,
+    "reported_loss_raw": "$ 93,000",
+    "description_raw": "The contract of Ramses Exchange on Arbitrum was attacked, resulting in a loss of approximately $93,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://arbiscan.io/tx/0xb91c4e0debaf0feb1f20c979eebc1282c8024ae299ef5903591badcf1f4938bb"
+    ]
+  },
+  {
+    "event_date": "2024-10-18",
+    "target": "Tapioca DAO",
+    "slowmist_attack_method": "Malware Attack",
+    "reported_loss_usd": 4700000.0,
+    "reported_loss_raw": "$ 4,700,000",
+    "description_raw": "Tapioca DAO experienced a significant security breach, with attackers obtaining relevant private keys through social engineering attacks and stealing approximately $4.7 million in cryptocurrency. On October 25, Tapioca DAO released an incident analysis report stating that the security breach occurred because attackers successfully compromised the private keys of a core contributor responsible for smart contract development. SEAL911 confirmed that the attackers were part of a North Korean hacking group that used a contagious interview attack method to inject malware onto the contributor's computer, thereby gaining access to the private keys of their address to carry out the theft.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://mirror.xyz/tapiocada0.eth/RVcRuKmJAavD05ObYsyYOHLDJ4gkEZKwyY_Y0Gx6gNc"
+    ]
+  },
+  {
+    "event_date": "2024-09-16",
+    "target": "DeltaPrime",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 5980000.0,
+    "reported_loss_raw": "$ 5,980,000",
+    "description_raw": "DeFi project DeltaPrime has officially confirmed on platform X that a security incident occurred. DeltaPrime Blue (Arbitrum) was attacked and drained for $5.98M. This was due to a compromised private key.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/DeltaPrimeDefi/status/1835603279369125893"
+    ]
+  },
+  {
+    "event_date": "2024-07-25",
+    "target": "Sorta Finance",
+    "slowmist_attack_method": "Scam",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to on-chain detective ZachXBT, Sorta Finance is likely to conduct an exit scam on Arbitrum in the future, so do not use the protocol. This scammer has previously stolen over $25 million through scams such as Magnate, Kokomo, Lendora, Solfire, Crolend, and HashDAO.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/zachxbt/status/1816443881447440789"
+    ]
+  },
+  {
+    "event_date": "2024-07-20",
+    "target": "Arbitrum",
+    "slowmist_attack_method": "DNS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The arbitrum.com website appears to have been hacked and is being redirected to the official website of the Meme project MOG. Please stay vigilant and ensure the safety of your assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/381295"
+    ]
+  },
+  {
+    "event_date": "2024-05-31",
+    "target": "MixedSwapRouter",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 16000.0,
+    "reported_loss_raw": "$ 16,000",
+    "description_raw": "According to monitoring by the SlowMist security team, the MixedSwapRouter on Arbitrum was attacked, resulting in a loss of approximately 293,000 WINR, valued at around $16,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1796469028858573023"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "Predy Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 464000.0,
+    "reported_loss_raw": "$ 464,000",
+    "description_raw": "The decentralized exchange Predy Finance on the Arbitrum chain was attacked, resulting in the loss of $464k worth of crypto assets from its lending pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/SlowMist_Team/status/1790326798469001379"
+    ]
+  },
+  {
+    "event_date": "2024-04-30",
+    "target": "Yield Protocol",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 181000.0,
+    "reported_loss_raw": "$ 181,000",
+    "description_raw": "A hacker stole approximately $181,000 worth of crypto assets from Yield\u2019s strategic contracts present on the Arbitrum blockchain. The hacker exploited a discrepancy between the pool token balance and total supply with flash-loaned assets and then withdrew extra pool tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/367002"
+    ]
+  },
+  {
+    "event_date": "2024-04-19",
+    "target": "Hedgey",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 44700000.0,
+    "reported_loss_raw": "$ 44,700,000",
+    "description_raw": "Hedgey Finance suffered two exploits, one on the Ethereum and another on the Arbitrum network. The ETH attack resulted in a loss of $1.9 million, while the Arbitrum exploit led to a theft of $42.8 million in ARB tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://cryptonews.com/news/hedgey-finance-suffers-dual-exploits-losing-44-7-million-in-funds.htm"
+    ]
+  },
+  {
+    "event_date": "2024-03-29",
+    "target": "Lava",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 340000.0,
+    "reported_loss_raw": "$ 340,000",
+    "description_raw": "Lava suffered a flash loan attack, resulting in approximately $340,000 in losses. All lending markets are reportedly paused as the investigation is ongoing.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/LavaLending/status/1773571491587637329"
+    ]
+  },
+  {
+    "event_date": "2024-03-20",
+    "target": "Dolomite",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1800000.0,
+    "reported_loss_raw": "$ 1,800,000",
+    "description_raw": "On March 20th, Dolomite, a decentralized trading protocol in the Arbitrum ecosystem, was attacked due to a vulnerability in its old contracts on the Ethereum mainnet. Approximately 187 victims suffered asset losses totaling $1.8 million, including 1,245,271 USDC, 94,423 DAI, and 165.9 WETH. As of March 24th, Dolomite has recovered 90% of the assets taken by the attacker.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Dolomite_io/status/1770499040741859645"
+    ]
+  },
+  {
+    "event_date": "2024-03-15",
+    "target": "Mozaic",
+    "slowmist_attack_method": "Insider Manipulation",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "The DeFi project Mozaic was exploited, who stole approximately $2 million from the project. According to Mozaic, this individual was a Mozaic developer who had illegally obtained the private keys of a security module by compromising the data of a core team member. They also stated that about 90% of the stolen funds have now been frozen on MEXC.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Mozaic_Fi/status/1768754080271196178"
+    ]
+  },
+  {
+    "event_date": "2024-03-05",
+    "target": "WOOFi",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 8750000.0,
+    "reported_loss_raw": "$ 8,750,000",
+    "description_raw": "The sPMM algorithm controlling the pricing of WOOFi trades on DEX WOOFi was exploited on Arbitrum. The exploit consisted of a sequence of flash loans that took advantage of low liquidity to manipulate the price of WOO in order to repay the flash loans at a cheaper price. The exploiter repeated this attack 3 times within a very short period of time, which netted about $8.75m in profits after returning the flash loans.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://woo.org/blog/en/woofi-spmm-exploit-post-mortem"
+    ]
+  },
+  {
+    "event_date": "2024-02-16",
+    "target": "xPET",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 254000.0,
+    "reported_loss_raw": "$ 254,000",
+    "description_raw": "The CEO of SocialFi xPET tweeted that SocialFi was attacked due to vulnerabilities related to the newly launched PvP feature, resulting in hackers stealing 91.5 ETH (approximately $25,400).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Michaeltalkhere/status/1758558740461306362"
+    ]
+  },
+  {
+    "event_date": "2024-01-27",
+    "target": "Citadel Finance",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 93000.0,
+    "reported_loss_raw": "$ 93,000",
+    "description_raw": "Citadel Finance was exploited on the Arbitrum chain, which resulted in a loss of 43 ETH, worth approximately $93,000. The root cause of the exploit is price manipulation of the underlying assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Arbitrum&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://neptunemutual.com/blog/how-was-citadel-finance-exploited/"
+    ]
+  }
+]

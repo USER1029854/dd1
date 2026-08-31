@@ -1,0 +1,522 @@
+[
+  {
+    "event_date": "2026-08-06",
+    "target": "RRWallet",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "Security firm Coinspect disclosed that RRWallet (RenrenBit\u2019s wallet) generated vulnerable seed phrases due to a weak RNG in the CryptoJS library (Ill Bloom vulnerability, CVE-2026-71851), making private keys predictable and leading to theft. One user lost approximately $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/coinspect/status/2085430121670811898"
+    ]
+  },
+  {
+    "event_date": "2026-08-05",
+    "target": "ZEUS",
+    "slowmist_attack_method": "Infrastructure Compromise",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "ZEUS (Bitcoin Lightning Network wallet and LSP provider) infrastructure suffered a cybersecurity incident/attack within the last few hours; the attack was mitigated. Services were temporarily taken offline for a full systems audit out of caution; no customer funds were lost or at risk, and closed LSP channels will be replaced upon restoration. The incident appears limited to ZEUS infrastructure, with no evidence of a Lightning node software vulnerability.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/ZeusLN/status/2085113369367871605"
+    ]
+  },
+  {
+    "event_date": "2026-07-30",
+    "target": "Coldcard",
+    "slowmist_attack_method": "Firmware Vulnerability",
+    "reported_loss_usd": 100000000.0,
+    "reported_loss_raw": "$ 100000000",
+    "description_raw": "Coldcard hardware wallets (by Coinkite) suffered from a firmware bug (since March 2021 on certain versions) that generated seeds with insufficient entropy (~40 bits on Mk3, ~72 bits on newer models vs. the intended 128 bits). Attackers offline brute-forced predictable private keys and drained numerous single-signature Bitcoin addresses across multiple waves without ever accessing the devices, with cumulative losses exceeding $100 million and the incident ongoing.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/glxyresearch/status/2084411904924045370"
+    ]
+  },
+  {
+    "event_date": "2026-06-23",
+    "target": "SecondFi",
+    "slowmist_attack_method": "Predictable Private Key Exploit",
+    "reported_loss_usd": 2400000.0,
+    "reported_loss_raw": "$ 2,400,000",
+    "description_raw": "SecondFi (formerly Yoroi) Cardano wallet suffered an exploit due to a vulnerability in its proprietary web wallet generation software, exposing private keys at the address level. Attackers drained ~16 million ADA ($2.4M) from 374 affected wallets across three attacks. The project secured ~129 million ADA (~$19.4M) through emergency rescue; affected users must wait for official recovery and are advised to use hardware wallets for migration.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/secondfiapp/status/2071558652641870076"
+    ]
+  },
+  {
+    "event_date": "2026-05-25",
+    "target": "Third-party Gnosis Safe Module (SquidRouterModule)",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 3200000.0,
+    "reported_loss_raw": "$ 3,200,000",
+    "description_raw": "A third-party Gnosis Safe module named SquidRouterModule was exploited, draining approximately $3-3.2 million from 86 Gnosis Safe wallets on Ethereum and Base within about 2 hours. The module has no affiliation with the official Squid Router protocol\u2014confusion arose solely due to the contract name on Basescan. Victims had previously added this faulty third-party module as a trusted Safe Module, granting it permission to spend any tokens without signatures. The attacker exploited weak authentication (accepting a publicly visible constant string as \"message security\" proof) to execute arbitrary calldata, forcing fake Uniswap V3 swaps (real tokens for worthless 'u' token in attacker-controlled pools) and draining funds, which were consolidated into ~3.07M DAI. Squid confirmed its core router and user funds/integrations remain fully secure.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/squidrouter/status/2058890710611276238"
+    ]
+  },
+  {
+    "event_date": "2026-04-11",
+    "target": "Zerion",
+    "slowmist_attack_method": "AI-enabled Social Engineering Attack",
+    "reported_loss_usd": 100000.0,
+    "reported_loss_raw": "$ 100,000",
+    "description_raw": "An employee device at Zerion was compromised through an AI-driven social engineering attack, allegedly linked to a DPRK-associated advanced persistent threat (APT) group. The attacker successfully obtained the employee\u2019s logged-in sessions, account credentials, and private keys to company hot wallets used for internal testing and operations, and subsequently transferred approximately $100,000 from multiple internal hot wallets. No user funds were affected in this incident, and Zerion\u2019s products, mobile applications, and backend infrastructure were not compromised. The attack was limited to an employee device and internal company hot wallet systems. Following the incident, the team proactively took down the web application and carried out full credential rotation, device security reviews, and infrastructure hardening measures to prevent further risk exposure.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/zerion/status/2044167535231414727?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-04-02",
+    "target": "Trust Wallet",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "According to ZachXBT, the Trust Wallet Discord vanity URL (discord[.]gg/trustwallet) has been hijacked and currently directs users to a phishing server. Users are advised to avoid using links from official channels\u2014including the official website, Telegram, and blogs\u2014to join the Discord at this time.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://t.me/investigations/309"
+    ]
+  },
+  {
+    "event_date": "2026-02-25",
+    "target": "Holdstation",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 462000.0,
+    "reported_loss_raw": "$ 462,000",
+    "description_raw": "the Holdstation team confirmed that its DeFAI Smart Wallet product suffered a supply chain attack targeting the application distribution infrastructure. This resulted in unauthorized transactions in some user wallets, with a confirmed loss of approximately $462,000 USDT. Smart contracts were not directly exploited. The team committed to 100% compensation for affected users and is reinforcing security measures.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/HoldstationW/status/2026487570751008932"
+    ]
+  },
+  {
+    "event_date": "2025-12-26",
+    "target": "Trust Wallet",
+    "slowmist_attack_method": "Malicious Code Injection Attack",
+    "reported_loss_usd": 8500000.0,
+    "reported_loss_raw": "$ 8,500,000",
+    "description_raw": "Trust Wallet has issued an official notice confirming that version 2.68 of its browser extension contains a security vulnerability, and advised all users running version 2.68 to immediately disable it and upgrade to version 2.69. According to SlowMist\u2019s analysis, this backdoor incident originated from a malicious modification of Trust Wallet\u2019s internal codebase (analytics service logic), rather than the introduction of a compromised third-party package (e.g., a malicious npm package). The attacker directly tampered with the application\u2019s own code, using the legitimate PostHog library to redirect analytics data to a malicious server. As of December 31, the incident has been confirmed to affect 2,520 wallet addresses, with a total loss of approximately USD 8.5 million. Preliminary investigation indicates that this attack is related to the Sha1-Hulud industry-level supply chain incident that occurred in November. Trust Wallet has now rolled back the extension to the secure version 2.69 and initiated a compensation process for affected users.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TrustWallet/status/2006029258209005699"
+    ]
+  },
+  {
+    "event_date": "2024-10-30",
+    "target": "Keystone",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The official X account of the hardware wallet Keystone is suspected to have been hacked. Users are advised to remain vigilant and be cautious of potential risks.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/evilcos/status/1851427481464848699"
+    ]
+  },
+  {
+    "event_date": "2024-10-11",
+    "target": "Ordinals Wallet",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to monitoring by Scam Sniffer, the X account of Ordinals Wallet was hacked, and a phishing link was posted. Upon review, the related post has already been deleted.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/394907"
+    ]
+  },
+  {
+    "event_date": "2024-07-10",
+    "target": "Wasabi Wallet",
+    "slowmist_attack_method": "Security Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a message posted by Wasabi Wallet on Twitter, users have reported that a coordinator named WasabiCoordinator is gradually stealing user funds through a complex attack. Wasabi Wallet advises all users connected to this coordinator to immediately stop CoinJoin operations and announces that a new version will be released soon to prevent such attacks. Subsequently, Wasabi Wallet tweeted that there were three types of attacks in this incident: attacks on free coordinators, supply chain (GitHub) compromise, user-targeted attacks.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://github.com/WalletWasabi/WalletWasabi/discussions/13249"
+    ]
+  },
+  {
+    "event_date": "2024-07-02",
+    "target": "Bittensor",
+    "slowmist_attack_method": "Security Vulnerability",
+    "reported_loss_usd": 8000000.0,
+    "reported_loss_raw": "$ 8,000,000",
+    "description_raw": "On July 2, 2024, the decentralized AI project Bittensor was attacked, resulting in some Bittensor wallet users being compromised. The hackers stole approximately 32,000 TAO tokens, valued at around $8 million. On-chain investigator ZachXBT suggested that the attack may have been due to a private key leak. However, Bittensor later clarified that the affected users were actually compromised because a malicious Bittensor package had been uploaded to the Python PyPi package manager.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://blog.bittensor.com/bittnesor-community-update-july-3-2024-45661b1d542d"
+    ]
+  },
+  {
+    "event_date": "2024-03-20",
+    "target": "Trezor",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On the X platform, on-chain investigator ZachXBT reported that the X account of hardware wallet provider Trezor was hacked.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/zachxbt/status/1770225097552363795?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1770225097552363795%7Ctwgr%5E0ba4bb6530b9180869e"
+    ]
+  },
+  {
+    "event_date": "2024-02-02",
+    "target": "Phantom",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The user-friendly crypto wallet designed for DeFi and NFTs, Phantom, reported a DDoS attack on its platform. Someone attempted to overload its systems, causing potential temporary interruptions in some services. User assets are secure.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/phantom/status/1753100432145318116"
+    ]
+  },
+  {
+    "event_date": "2024-01-17",
+    "target": "Trezor",
+    "slowmist_attack_method": "Third-party Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Trezor, the manufacturer of encrypted hardware wallets, has announced that it is currently investigating a security incident that occurred on January 17, 2024. Unauthorized access was detected to the third-party support portal used by Trezor. No damage has been inflicted on customers' digital assets. Internal audits indicate that the exposure might be limited to information of customers who have interacted with Trezor Support since December 2021, encompassing only email and names/nicknames.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://blog.trezor.io/trezor-security-update-stay-vigilant-against-potential-phishing-attack-bb05015a21f8"
+    ]
+  },
+  {
+    "event_date": "2024-01-02",
+    "target": "Wizz Wallet",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Wizz Wallet, the wallet of the Atomicals protocol, posted on Twitter that builders within the Atomicals ecosystem, including the Wizz team, have experienced DDoS attacks.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/wizzwallet/status/1742020813673714138"
+    ]
+  },
+  {
+    "event_date": "2023-12-26",
+    "target": "Telcoin",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 1240000.0,
+    "reported_loss_raw": "$ 1,240,000",
+    "description_raw": "Recently, Telcoin Wallet was subjected to a targeted attack, and Telcoin tweeted that it is aware of the situation with the Telcoin app. Use of the app has been temporarily frozen while the issue is investigated and an update will be provided as soon as possible.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/telcoin/status/1739394228361310678"
+    ]
+  },
+  {
+    "event_date": "2023-12-22",
+    "target": "UniSat Wallet",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "UniSat Wallet's official tweet is suspected to have been hacked.It posted a promotional tweet for a program with closed comments and a suspected malicious link.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.theblockbeats.info/flash/208203"
+    ]
+  },
+  {
+    "event_date": "2023-10-06",
+    "target": "MCT",
+    "slowmist_attack_method": "Domain Hijacking",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On October 6th, MCT issued an announcement stating that in the past two days, some users had reported cases of their MCT wallets being compromised. After investigation today, it was discovered that due to the DNS domain hijacking, under certain specific conditions, private keys could potentially be uploaded to a fraudulent domain. MCT advises users who have entered their private keys into MCT since September 15, 2023, to transfer their wallet balances as a precautionary measure as soon as possible.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/mctxyz/status/1710270416391139735?s=20"
+    ]
+  },
+  {
+    "event_date": "2023-09-20",
+    "target": "Coinbase Wallet",
+    "slowmist_attack_method": "Phishing Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On September 20th, SlowMist tweeted that Coinbase Wallet recently integrated the Web3 messaging network protocol (http://xmtp.org). As long as the user's wallet address opens the messaging network, it may receive any information sent by the messaging protocol. Many attackers used this feature to send messages with phishing links to wallet users. Relevant wallet users need to be vigilant and not click on unknown links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/SlowMist_Team/status/1704464871080001976"
+    ]
+  },
+  {
+    "event_date": "2023-09-07",
+    "target": "Ordinals Wallet",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Ordinals Wallet suffered a SIM Swap attack. The Twitter account was hacked and phishing links were posted. The attacker is PinkDrainer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/MistTrack_io/status/1699611085572284829"
+    ]
+  },
+  {
+    "event_date": "2023-08-10",
+    "target": "MPC Wallets",
+    "slowmist_attack_method": "BitForge Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Crypto infrastructure company Fireblocks has disclosed a series of vulnerabilities (collectively referred to as \"BitForge\") affecting various popular crypto wallets that use multi-party computation (MPC) technology, CoinDesk reported. The company classified BitForge as a \"zero-day\" vulnerability, and Coinbase, ZenGo, and Binance \u2014 the three companies most affected by BitForge \u2014 have already worked with Fireblocks to fix the underlying vulnerability. \"If not remediated, the vulnerabilities would allow attackers and malicious insiders to siphon funds from the wallets of millions of retail and institutional customers in seconds, without the knowledge of users or providers\", Fireblocks said.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.coindesk.com/tech/2023/08/09/fireblocks-discloses-zero-day-vulnerabilities-impacting-leading-mpc-wallets/"
+    ]
+  },
+  {
+    "event_date": "2023-07-12",
+    "target": "Klever",
+    "slowmist_attack_method": "Low Entropy Mnemonic Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Klever published a report on an external security incident on July 12. All wallets affected by the suspicious activity on July 12 were reported to be affected by a known vulnerability caused by low-entropy mnemonics. It's important to underscore that this issue is not exclusive to Klever. Reports indicate that users of multiple wallet providers are affected. All the wallets involved were imported into Klever Wallet K5. These wallets had not been originally created using Klever Wallet K5, instead all the wallets were created using an old and weak pseudorandom number generator (PRNG) algorithm as their entropy source. This algorithm was commonly used in early versions of various cryptocurrency wallet providers, which relied on the Javascript platform. The use of such a weak PRNG algorithm can significantly compromise the security and unpredictability of the generated keys, potentially making them more vulnerable to attacks or unauthorized access. Klever strongly recommends immediately migrating old wallets to new wallets created on Klever Wallet K5 or Klever Safe.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://klever.org/en/blog/klever-alert-external-security-incident"
+    ]
+  },
+  {
+    "event_date": "2023-06-07",
+    "target": "Xverse",
+    "slowmist_attack_method": "Mnemonic leaked",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Ordinals eco-wallet Xverse tweeted: Xverse has fixed a bug that caused wallet helpers to be stored unencrypted on local devices, and all users should update the Chrome extension to the latest version. The risk of this bug is minimal if it is confirmed that no helper words leave the user's local device. However, if users are concerned about the threat, they can migrate their assets to a newly generated wallet. This error does not affect Xverse iOS and Android apps.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://protos.com/terra-founder-do-kwon-claims-to-have-funded-top-montenegro-political-party/"
+    ]
+  },
+  {
+    "event_date": "2023-06-03",
+    "target": "Atomic",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 100000000.0,
+    "reported_loss_raw": "$ 100,000,000",
+    "description_raw": "On June 3, multiple Atomic Wallet users posted on social media that their wallet assets had been stolen. Atomic says less than 1% of monthly active users are currently affected/reported. According to SlowMist, Atomic Wallet officially offlined cloudflare\u2019s download site and sha256sum verification site in an emergency. From this, it is speculated that there may be a security problem in the link of downloading the historical version. It is reported that this incident is suspected to be related to the North Korean hacker group Lazarus Group.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/AtomicWallet/status/1664946301815910400"
+    ]
+  },
+  {
+    "event_date": "2023-05-25",
+    "target": "Trezor",
+    "slowmist_attack_method": "RDP downgrade attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to The Block, cybersecurity firm Unciphered claims it was able to hack into hardware-encrypted wallets powered by Trezor T models. In a YouTube demo, Unciphered showed exploiting the wallet vulnerability to extract the mnemonic private key from the wallet, saying the attack is only feasible if the attacker has physical access to the hardware wallet. Trezor CTO Tom\u00e1\u0161 Su\u0161\u00e1nka responded: \"This appears to be a vulnerability called an RDP downgrade attack, which requires extremely sophisticated technical knowledge and advanced equipment. Even with the above conditions, Trezor can pass a powerful passphrase, making RDP downgrade attacks ineffective.\u201d Trezor added that they have taken the important step of developing a new secure element for hardware wallets with their sister company Tropic Square to solve future problems.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.theblock.co/post/232085/cybersecurity-firm-claims-it-hacked-private-key-from-a-trezor-t-hardware-wallet"
+    ]
+  },
+  {
+    "event_date": "2023-03-01",
+    "target": "iToken",
+    "slowmist_attack_method": "Insider Manipulation",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to the official WeChat account of Ping An Xuhui, employees Zhang, Dong, and Liu from Company A decided in early March 2023 to insert a backdoor program into a certain cryptocurrency wallet software to obtain users' private keys. The three individuals illegally obtained over 27,000 mnemonic phrases and more than 10,000 private keys, successfully converting over 19,000 digital wallet addresses. In April 2024, the Xuhui District People's Court sentenced Liu, Zhang, and Dong to three years in prison for the crime of illegally obtaining data from a computer information system and fined each of them 30,000 RMB. It is worth noting that Company A is suspected to be the former Huobi company. In an exclusive report by WuShuo in 2023, it was revealed that due to the installation of trojans by former employees, some users' mnemonic phrases or private keys of iToken (formerly Huobi Wallet) were leaked. HTX responded that the trojan installation was the personal act of former Huobi employees before the acquisition, leading to the theft of others' mnemonic phrases and private keys.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.wublock123.com/index.php?m=content&amp;c=index&amp;a=show&amp;catid=10&amp;id=29686"
+    ]
+  },
+  {
+    "event_date": "2023-02-28",
+    "target": "MyAlgo",
+    "slowmist_attack_method": "Mnemonic Vulnerability",
+    "reported_loss_usd": 9200000.0,
+    "reported_loss_raw": "$ 9,200,000",
+    "description_raw": "Algorand ecological wallet MyAlgo issued a reminder on Twitter that the hack occurred more than a week ago, and no other actions have taken place since then. The attacked users all had large amounts of funds on their accounts and used mnemonic wallets with keys stored in the browser. ZachXBT, an on-chain data analyst, tweeted: \u201cDue to the attack on MyAlgo, Algorand\u2019s ecological wallet, from February 19th to 21st, more than $9.2 million in assets (19.5 million ALGOs, 3.5 million USDCs, etc.) may have been stolen on Algorand. ChangeNow shared that they were able to freeze $1.5 million.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/myalgo_/status/1630218075411828739"
+    ]
+  },
+  {
+    "event_date": "2023-02-11",
+    "target": "OneKey",
+    "slowmist_attack_method": "\"Man-in-the-middle\" attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Cybersecurity startup Unciphered has carried out an attack on encrypted hardware wallets made by OneKey. In a video on YouTube, Unciphered demonstrates a so-called \"man-in-the-middle\" wallet attack method that exploits a vulnerability to extract a mnemonic seed phrase, or private key, from a OneKey Mini hardware wallet. OneKey acknowledged the vulnerability in a statement and said that no one was affected as it had updated the security patch. OneKey said it has paid a bounty to Unciphered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.theblock.co/post/210665/security-firm-unciphered-hacked-into-popular-hardware-wallet-onekey"
+    ]
+  },
+  {
+    "event_date": "2022-12-26",
+    "target": "BitKeep",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 9000000.0,
+    "reported_loss_raw": "$ 9,000,000",
+    "description_raw": "Several users claimed that their funds were stolen in the official Telegarm group of BitKeep, a Web3 multi-chain wallet. BitKeep issued an announcement saying that after preliminary investigation by the team, it is suspected that some APK package downloads were hijacked by hackers, and the packages implanted by hackers were installed. At present, funds on multiple chains have been damaged, and only BNB Chain has lost more than 3 million US dollars.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/73b6rcf2.html"
+    ]
+  },
+  {
+    "event_date": "2022-11-17",
+    "target": "Trust Wallet",
+    "slowmist_attack_method": "Wallet Vulnerability",
+    "reported_loss_usd": 170000.0,
+    "reported_loss_raw": "$ 170,000",
+    "description_raw": "Trust Wallet released an analysis report saying: \"In November 2022, a vulnerability was discovered in the back-end module WebAssembly (WASM) at the core of the open source repository wallet. The vulnerability affected new wallets generated by browser extension versions 0.0.172 and 0.0.182, and only the private keys of a limited number of new wallets created in these versions were affected. Despite our best efforts, two breaches occurred, resulting in a combined loss of approximately $170,000 at the time of the attack. \"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://community.trustwallet.com/t/browser-extension-wasm-vulnerability-postmortem/750787"
+    ]
+  },
+  {
+    "event_date": "2022-10-20",
+    "target": "Petra",
+    "slowmist_attack_method": "Mnemonic Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Aptos ecological wallet Petra tweeted that the Aptos Labs team discovered a vulnerability on Petra on October 20. The mnemonic is related to account creation in existing wallets, and the mnemonic displayed on the page may be inaccurate. To access the exact 12 mnemonic phrases, set up, manage your account, enter your password, and click Show Key Recovery Phrase. Currently, Petra has fixed the vulnerability.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/PetraWallet/status/1583235962317852672"
+    ]
+  },
+  {
+    "event_date": "2022-10-18",
+    "target": "Bitkeep Swap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1180000.0,
+    "reported_loss_raw": "$ 1,180,000",
+    "description_raw": "According to the official news of the wallet BitKeep, BitKeep Swap was attacked by hackers, and the development team has carried out urgent processing. The hacker's attack has been stopped. The attack was concentrated on the BNB Chain, resulting in a loss of about 1 million US dollars. According to SlowMist MistTrack monitoring, Bitkeep Swap attackers have transferred 4,300 BNB (about $1.18 million) stolen funds to Tornado Cash in the form of 100 BNB each.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/BitKeepOS/status/1582157619032395776"
+    ]
+  },
+  {
+    "event_date": "2022-10-11",
+    "target": "Rabby",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 190000.0,
+    "reported_loss_raw": "$ 190,000",
+    "description_raw": "DeBank plug-in wallet Rabby tweeted that its Rabby Swap smart contract has a vulnerability, and users who have used it should revoke Rabby Swap approvals on all chains as soon as possible. According to the analysis of the SlowMist security team, the Rabby Swap contract was attacked, and the token exchange function in the contract was directly called externally through the functionCallWithValue function in the OpenZeppelin Address library. The parameters passed in by the user are not checked, resulting in any external call problems. Attackers exploit this issue to steal funds from users authorized by this contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/SlowMist_Team/status/1579839744128978945"
+    ]
+  },
+  {
+    "event_date": "2022-10-11",
+    "target": "TokenPocket",
+    "slowmist_attack_method": "Abnormal traffic attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to the official announcement of TokenPocket, the official website tokenpocket.pro is currently attacked by abnormal traffic, and the technical team is carrying out emergency maintenance. During the technical maintenance period, the TokenPocket website will not be accessible normally, and the security of user assets will not be affected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/TokenPocket_TP/status/1579787917656207361"
+    ]
+  },
+  {
+    "event_date": "2022-01-20",
+    "target": "MetaMask",
+    "slowmist_attack_method": "Information Leakage",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "@alxlpsc disclosed on medium that MetaMask has serious privacy leaks. The vulnerability mainly uses MetaMask to automatically load NFT image URLs. Basic attack idea: the attacker can set the URI of the NFT to a server URL that he can control, and transfer the NFT to the target account; when the user logs in to MetaMask, MetaMask will automatically scan the NFT owned by the account, and initiate a pointer to The HTTP request to the attacker's server; the attacker can obtain the victim's IP information from the access log.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://medium.com/@alxlpsc/critical-privacy-vulnerability-getting-exposed-by-metamask-693c63c2ce94"
+    ]
+  },
+  {
+    "event_date": "2021-12-13",
+    "target": "Dharma",
+    "slowmist_attack_method": "Downtime",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Dharma Wallet officially tweeted that there was a downtime. After Dharma updated Twitter, it said that it has returned to normal and all funds are safe.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/Dharma_HQ/status/1381759523371708416"
+    ]
+  },
+  {
+    "event_date": "2021-11-01",
+    "target": "Chivo",
+    "slowmist_attack_method": "Wallet Stolen",
+    "reported_loss_usd": 22650.0,
+    "reported_loss_raw": "$ 22,650",
+    "description_raw": "Chivo Wallet is a national digital wallet issued by the government of El Salvador on September 7 for the implementation of the Bitcoin Act. To this end, El Salvador promised that users who download and authenticate the Chivo Wallet will receive a $30 bitcoin reward. This move allowed the official wallet of El Salvador to exceed 2 million users in one month. Between October 9th and October 14th, Cristosal, a human rights organization in El Salvador, received 755 notices about Salvadorans reporting that their Chivo wallet identity was stolen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.bbc.com/zhongwen/trad/business-58656282"
+    ]
+  },
+  {
+    "event_date": "2020-12-14",
+    "target": "Nexus Mutual",
+    "slowmist_attack_method": "Permission Stolen",
+    "reported_loss_usd": 370000.0,
+    "reported_loss_raw": "370,000 NXM",
+    "description_raw": "DeFi insurance agreement Nexus Mutual stated on Twitter that the personal address of its founder Hugh Karp was attacked by a platform user, stolen 370,000 NXM and lost more than 8 million US dollars. The official said that this is a targeted attack, only the official name, Karp used a hardware wallet, the attacker obtained remote access to his computer, and modified the wallet plug-in MetaMask, deceived him to sign the transaction, the attacker Completed KYC 11 days ago, and then changed to a new address on December 3. , To transfer funds to the attacker\u2019s own address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Wallet&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/NexusMutual/status/1338441875326427137"
+    ]
+  }
+]

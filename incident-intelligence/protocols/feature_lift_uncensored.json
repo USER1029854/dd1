@@ -1,0 +1,400 @@
+{
+ "scope": "FULL LISTED UNIVERSE (censoring-corrected)",
+ "population": 5775,
+ "victims": 140,
+ "ordering_only": [
+  "mcap_absent",
+  "mcap_below_tvl",
+  "tvl_falling_fast",
+  "tvl_rising_fast"
+ ],
+ "signals": [
+  {
+   "signal": "declared_fallback_oracle",
+   "lift": 3.694,
+   "victims_with": 6,
+   "victims_total": 140,
+   "population_with": 67,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "admin_multisig",
+   "lift": 3.397,
+   "victims_with": 7,
+   "victims_total": 140,
+   "population_with": 85,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "has_governance",
+   "lift": 2.968,
+   "victims_with": 10,
+   "victims_total": 140,
+   "population_with": 139,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "owner_is_contract",
+   "lift": 2.414,
+   "victims_with": 11,
+   "victims_total": 140,
+   "population_with": 188,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "deprecated_flag",
+   "lift": 2.26,
+   "victims_with": 4,
+   "victims_total": 140,
+   "population_with": 73,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "mcap_below_tvl",
+   "lift": 2.258,
+   "victims_with": 15,
+   "victims_total": 140,
+   "population_with": 274,
+   "population_total": 5775,
+   "fitted": false
+  },
+  {
+   "signal": "chain_hazard_ge2",
+   "lift": 2.134,
+   "victims_with": 85,
+   "victims_total": 140,
+   "population_with": 1643,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "has_oracle_declared",
+   "lift": 2.127,
+   "victims_with": 51,
+   "victims_total": 140,
+   "population_with": 989,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "on_ethereum",
+   "lift": 2.121,
+   "victims_with": 83,
+   "victims_total": 140,
+   "population_with": 1614,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "has_2plus_audits",
+   "lift": 1.975,
+   "victims_with": 18,
+   "victims_total": 140,
+   "population_with": 376,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "pricing_surface_undeclared",
+   "lift": 1.91,
+   "victims_with": 35,
+   "victims_total": 140,
+   "population_with": 756,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "age_under_1y",
+   "lift": 1.866,
+   "victims_with": 47,
+   "victims_total": 140,
+   "population_with": 1039,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "multichain_gt3",
+   "lift": 1.77,
+   "victims_with": 33,
+   "victims_total": 140,
+   "population_with": 769,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "tvl_over_5m",
+   "lift": 1.745,
+   "victims_with": 36,
+   "victims_total": 140,
+   "population_with": 851,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "cat_hazard_ge2",
+   "lift": 1.699,
+   "victims_with": 18,
+   "victims_total": 140,
+   "population_with": 437,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "rebranded",
+   "lift": 1.695,
+   "victims_with": 6,
+   "victims_total": 140,
+   "population_with": 146,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "dead_adapter_registry",
+   "lift": 1.691,
+   "victims_with": 10,
+   "victims_total": 140,
+   "population_with": 244,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "is_proxy",
+   "lift": 1.65,
+   "victims_with": 10,
+   "victims_total": 140,
+   "population_with": 250,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "admin_no_delay_path",
+   "lift": 1.598,
+   "victims_with": 11,
+   "victims_total": 140,
+   "population_with": 284,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "single_audit_only",
+   "lift": 1.53,
+   "victims_with": 74,
+   "victims_total": 140,
+   "population_with": 1995,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "tvl_500k_5m",
+   "lift": 1.509,
+   "victims_with": 29,
+   "victims_total": 140,
+   "population_with": 793,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "version_sibling_legacy",
+   "lift": 1.39,
+   "victims_with": 9,
+   "victims_total": 140,
+   "population_with": 267,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "tvl_falling_fast",
+   "lift": 1.32,
+   "victims_with": 4,
+   "victims_total": 140,
+   "population_with": 125,
+   "population_total": 5775,
+   "fitted": false
+  },
+  {
+   "signal": "authority_addrs_beyond_tvl",
+   "lift": 1.174,
+   "victims_with": 24,
+   "victims_total": 140,
+   "population_with": 843,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "unverified_implementation",
+   "lift": 1.115,
+   "victims_with": 5,
+   "victims_total": 140,
+   "population_with": 185,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "on_bsc",
+   "lift": 1.047,
+   "victims_with": 24,
+   "victims_total": 140,
+   "population_with": 946,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "tvl_rising_fast",
+   "lift": 1.015,
+   "victims_with": 40,
+   "victims_total": 140,
+   "population_with": 1625,
+   "population_total": 5775,
+   "fitted": false
+  },
+  {
+   "signal": "no_public_repo",
+   "lift": 0.938,
+   "victims_with": 104,
+   "victims_total": 140,
+   "population_with": 4574,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "age_1_3y",
+   "lift": 0.902,
+   "victims_with": 49,
+   "victims_total": 140,
+   "population_with": 2242,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "mcap_absent",
+   "lift": 0.862,
+   "victims_with": 108,
+   "victims_total": 140,
+   "population_with": 5168,
+   "population_total": 5775,
+   "fitted": false
+  },
+  {
+   "signal": "admin_terminal_eoa",
+   "lift": 0.846,
+   "victims_with": 4,
+   "victims_total": 140,
+   "population_with": 195,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "admin_single_signature",
+   "lift": 0.829,
+   "victims_with": 4,
+   "victims_total": 140,
+   "population_with": 199,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "tvl_under_500k",
+   "lift": 0.749,
+   "victims_with": 75,
+   "victims_total": 140,
+   "population_with": 4131,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "owner_is_eoa",
+   "lift": 0.741,
+   "victims_with": 3,
+   "victims_total": 140,
+   "population_with": 167,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "single_chain",
+   "lift": 0.71,
+   "victims_with": 71,
+   "victims_total": 140,
+   "population_with": 4125,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "dead_front_end",
+   "lift": 0.673,
+   "victims_with": 33,
+   "victims_total": 140,
+   "population_with": 2022,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "no_audit_listed",
+   "lift": 0.582,
+   "victims_with": 48,
+   "victims_total": 140,
+   "population_with": 3404,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "rwa_pricing_surface",
+   "lift": 0.546,
+   "victims_with": 2,
+   "victims_total": 140,
+   "population_with": 151,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "has_fork_lineage",
+   "lift": 0.534,
+   "victims_with": 22,
+   "victims_total": 140,
+   "population_with": 1700,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "misrepresented_tokens",
+   "lift": 0.498,
+   "victims_with": 8,
+   "victims_total": 140,
+   "population_with": 663,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "age_over_3y",
+   "lift": 0.327,
+   "victims_with": 15,
+   "victims_total": 140,
+   "population_with": 1894,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "tag_clmm",
+   "lift": 0.241,
+   "victims_with": 2,
+   "victims_total": 140,
+   "population_with": 342,
+   "population_total": 5775,
+   "fitted": true
+  },
+  {
+   "signal": "admin_timelocked",
+   "lift": 0.0,
+   "victims_with": 0,
+   "victims_total": 140,
+   "population_with": 22,
+   "population_total": 5775,
+   "fitted": true
+  }
+ ]
+}

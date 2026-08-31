@@ -1,0 +1,159 @@
+{
+ "osmosis-dex": {
+  "slug": "osmosis-dex",
+  "repo": "osmosis-labs/osmosis",
+  "ref": "main",
+  "files_read": 16,
+  "status": "PROBED",
+  "by_family": {
+   "RUNTIME-HANDLER-ERROR-NO-ROLLBACK": {
+    "PRE": [],
+    "GUARD": [
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "app/app.go",
+      "line": 1315,
+      "evidence": "if err != nil {  ...  return nil, err",
+      "follow_line": 1316,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/gamm/keeper/msg_server.go",
+      "line": 50,
+      "evidence": "if err != nil {  ...  return nil, err",
+      "follow_line": 51,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/gamm/handler.go",
+      "line": 46,
+      "evidence": "if err != nil {  ...  return err",
+      "follow_line": 47,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/gamm/keeper/grpc_query.go",
+      "line": 79,
+      "evidence": "if err != nil {  ...  return nil, err",
+      "follow_line": 80,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/incentives/keeper/msg_server.go",
+      "line": 33,
+      "evidence": "if err != nil {  ...  return nil, err",
+      "follow_line": 34,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/incentives/keeper/hooks.go",
+      "line": 24,
+      "evidence": "if err != nil {  ...  return err",
+      "follow_line": 25,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/incentives/keeper/grpc_query.go",
+      "line": 50,
+      "evidence": "if err != nil {  ...  return nil, err",
+      "follow_line": 51,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/incentives/keeper/store.go",
+      "line": 68,
+      "evidence": "if err != nil {  ...  return err",
+      "follow_line": 69,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/mint/keeper/keeper.go",
+      "line": 130,
+      "evidence": "if err != nil {  ...  return err",
+      "follow_line": 131,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/mint/keeper/hooks.go",
+      "line": 57,
+      "evidence": "if err != nil {  ...  return err",
+      "follow_line": 58,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     },
+     {
+      "indicator": "GO-DISPATCH-RETURNS-ERR",
+      "family": "RUNTIME-HANDLER-ERROR-NO-ROLLBACK",
+      "role": "GUARD",
+      "file": "x/mint/keeper/grpc_query.go",
+      "line": 44,
+      "evidence": "if err != nil {  ...  return nil, err",
+      "follow_line": 45,
+      "note": "the dispatcher propagates the error so the runtime aborts the transaction",
+      "repo": "osmosis-labs/osmosis"
+     }
+    ],
+    "WEAK": []
+   },
+   "RECONCILIATION-STRIDE-SKIPS-TRUE-VALUE": {
+    "PRE": [],
+    "GUARD": [
+     {
+      "indicator": "INDEXED-LOOKUP",
+      "family": "RECONCILIATION-STRIDE-SKIPS-TRUE-VALUE",
+      "role": "GUARD",
+      "file": "x/incentives/keeper/grpc_query.go",
+      "line": 262,
+      "evidence": "gauge, err := q.Keeper.GetGaugeByID(ctx, gaugeID)",
+      "note": "records are looked up by identifier against an index, not by walking a counter",
+      "repo": "osmosis-labs/osmosis"
+     }
+    ],
+    "WEAK": []
+   }
+  },
+  "unguarded_families": [],
+  "guarded_families": [
+   "RECONCILIATION-STRIDE-SKIPS-TRUE-VALUE",
+   "RUNTIME-HANDLER-ERROR-NO-ROLLBACK"
+  ]
+ }
+}

@@ -1,0 +1,454 @@
+[
+ {
+  "slug": "kodiak-islands",
+  "group": "ALM-SLOT0",
+  "incident": "Arrakis V1 2026-08-23",
+  "reason": "ALM issuing LP-share tokens on Berachain; if mint()/burn() value the position off the pool spot tick (slot0) with the TWAP/deviation guard only on rebalance, a flash-skew mints cheap and burns rich.",
+  "check": "Read the deployed vault mint/burn: is the valuation sqrtPrice/tick from spot, and is there a TWAP/deviation check on the mint path (not just rebalance)?",
+  "tvl": 24242108.19998,
+  "category": "Liquidity Manager",
+  "chains": [
+   "Berachain"
+  ]
+ },
+ {
+  "slug": "acryptos",
+  "group": "ALM-SLOT0",
+  "incident": "Arrakis V1 2026-08-23",
+  "reason": "DefiLlama confirms it as an Automated Concentrated Liquidity Manager (ACLM) for V3 DEXs \u2014 the exact Arrakis surface. Confirm whether share mint/withdraw values the V3 position off spot tick or off the declared Chainlink oracle.",
+  "check": "Trace ACLM deposit/withdraw share math to its price source; is there a TWAP/deviation guard on the mint path (not only rebalance)?",
+  "tvl": 10540475.09842,
+  "category": "Liquidity Manager",
+  "chains": [
+   "Moonbeam",
+   "Moonriver",
+   "Ethereum"
+  ]
+ },
+ {
+  "slug": "mito-finance",
+  "group": "ALM-SLOT0",
+  "incident": "Arrakis V1 2026-08-23",
+  "reason": "Injective ALM vaults; non-EVM ALM where mint/burn valuation guards are often thinner than EVM incumbents.",
+  "check": "Confirm vault share issuance is not priced off an instantaneous AMM ratio.",
+  "tvl": 412181.02854,
+  "category": "Liquidity Manager",
+  "chains": [
+   "Injective"
+  ]
+ },
+ {
+  "slug": "metropolis-dlmm-vaults",
+  "group": "ALM-SLOT0",
+  "incident": "Arrakis V1 2026-08-23",
+  "reason": "DLMM (concentrated-liquidity) vaults on Sonic; DLMM bins make spot valuation especially skewable at a range edge.",
+  "check": "Check that vault share mint values bins off a time-averaged, not active-bin, price.",
+  "tvl": 256161.59174,
+  "category": "Liquidity Manager",
+  "chains": [
+   "Sonic"
+  ]
+ },
+ {
+  "slug": "defituna-liquidity",
+  "group": "ALM-SLOT0",
+  "incident": "Arrakis V1 2026-08-23",
+  "reason": "Solana CLMM liquidity manager; concentrated-liquidity share pricing off active tick is the Arrakis shape on a different VM.",
+  "check": "Confirm deposit/withdraw doesn't value the position at the instantaneous active tick.",
+  "tvl": 586838.47654,
+  "category": "Liquidity Manager",
+  "chains": [
+   "Solana"
+  ]
+ },
+ {
+  "slug": "stellar-dex",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "DEX on Stellar/Soroban \u2014 the exact VM where Comet's missing token_in!=token_out drained the Blend backstop; new-VM AMMs frequently omit the distinctness guard.",
+  "check": "Confirm the swap entry rejects token_in==token_out before touching reserves.",
+  "tvl": 14010931.3762,
+  "category": "Dexs",
+  "chains": [
+   "Stellar"
+  ]
+ },
+ {
+  "slug": "stellar-amm",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Second Soroban AMM; same-VM relative of the Comet exploit.",
+  "check": "Same-asset-swap distinctness check present?",
+  "tvl": 8130504.84125,
+  "category": "Dexs",
+  "chains": [
+   "Stellar"
+  ]
+ },
+ {
+  "slug": "sushi-stellar",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Sushi deployment on Stellar/Soroban; a port to a new VM can drop invariants the EVM version enforced implicitly.",
+  "check": "Verify the Soroban port forbids same-asset swaps and preserves reserve invariants.",
+  "tvl": 9967136.27699,
+  "category": "Dexs",
+  "chains": [
+   "Stellar"
+  ]
+ },
+ {
+  "slug": "deepbook-v3",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Sui on-chain CLOB and liquidity layer; the CometDEX analog here is a self-match / settlement-rounding gap (crossing your own orders, or same-asset settlement) in a Move port.",
+  "check": "Check that self-trades and same-asset settlements can't net value out, and audit settlement rounding direction.",
+  "tvl": 12292943.87704,
+  "category": "Dexs",
+  "chains": [
+   "Sui"
+  ]
+ },
+ {
+  "slug": "meteora-damm-v2",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Solana dynamic AMM v2; large TVL, new-VM pool accounting.",
+  "check": "Confirm swap/deposit distinctness and reserve reconciliation.",
+  "tvl": 24004348.31827,
+  "category": "Dexs",
+  "chains": [
+   "Solana"
+  ]
+ },
+ {
+  "slug": "saber",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Solana stable-swap; stable-swap invariants on same-decimals assets are exactly where same-asset accounting bugs hide.",
+  "check": "Same-asset-swap guard + curve invariant on equal reserves.",
+  "tvl": 5155934.91734,
+  "category": "Dexs",
+  "chains": [
+   "Solana"
+  ]
+ },
+ {
+  "slug": "dedust",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "TON DEX; TON VM asset identity handling differs from EVM.",
+  "check": "Confirm asset identity/distinctness and jetton accounting on swaps.",
+  "tvl": 5361847.29132,
+  "category": "Dexs",
+  "chains": [
+   "TON-staking",
+   "TON",
+   "staking"
+  ]
+ },
+ {
+  "slug": "saphyre-v3",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Uniswap-V3 fork on Sei \u2014 a fork inherits parent bugs and rarely parent fixes; diff against upstream both ways.",
+  "check": "Diff against Uniswap V3 upstream; enumerate added/removed guards on swap/mint.",
+  "tvl": 13322023.49104,
+  "category": "Dexs",
+  "chains": [
+   "Sei-staking",
+   "Sei",
+   "staking"
+  ]
+ },
+ {
+  "slug": "vena-finance",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V3 fork on Fluent, Pyth oracle; new-chain lending markets often list low-float collateral.",
+  "check": "Which collaterals are thin, and can spot be moved cheaply vs the borrow they unlock?",
+  "tvl": 12004339.52969,
+  "category": "Lending",
+  "chains": [
+   "Fluent-borrowed",
+   "Fluent",
+   "borrowed"
+  ]
+ },
+ {
+  "slug": "hypurrfi-pooled",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V3 fork on Hyperliquid L1; Pyth/RedStone feeds on a young chain with thin spot markets.",
+  "check": "Per-collateral liquidity vs oracle; flash-manipulability of the cheapest listed asset.",
+  "tvl": 8644731.562210001,
+  "category": "Lending",
+  "chains": [
+   "Hyperliquid L1",
+   "Hyperliquid L1-borrowed",
+   "borrowed"
+  ]
+ },
+ {
+  "slug": "yeilend",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V3 fork on Sei with Api3/Pyth/RedStone; multiple feeds don't help if the collateral's spot is thin.",
+  "check": "Identify the thinnest collateral and price the borrow it unlocks against manipulation cost.",
+  "tvl": 10216073.14683,
+  "category": "Lending",
+  "chains": [
+   "Sei-borrowed",
+   "Sei",
+   "borrowed"
+  ]
+ },
+ {
+  "slug": "more-markets",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V3 fork on Flow, Pyth; Flow spot liquidity is shallow.",
+  "check": "Thin-collateral enumeration + oracle manipulability.",
+  "tvl": 7426486.86426,
+  "category": "Lending",
+  "chains": [
+   "Flow-borrowed",
+   "Flow",
+   "borrowed"
+  ]
+ },
+ {
+  "slug": "bonzo-lend",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V2 fork on Hedera; V2 lineage lacks some V3 risk guards.",
+  "check": "Confirm price-source and per-asset caps on listed collateral.",
+  "tvl": 16927009.36907,
+  "category": "Lending",
+  "chains": [
+   "Hedera",
+   "Hedera-borrowed",
+   "borrowed"
+  ]
+ },
+ {
+  "slug": "enosys-loans",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Liquity-V2 fork on Flare (CDP); Liquity forks price collateral off feeds that on a small chain can be thin.",
+  "check": "Collateral oracle source + redemption/liquidation pricing robustness.",
+  "tvl": 7986180.66768,
+  "category": "CDP",
+  "chains": [
+   "Flare"
+  ]
+ },
+ {
+  "slug": "layerbank",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Compound-V2 fork across RSK/Manta/BOB; Compound-V2 forks are the classic thin-collateral-listing victims.",
+  "check": "Per-market collateral factor + oracle; cheapest manipulable listed asset.",
+  "tvl": 3727868.04532,
+  "category": "Lending",
+  "chains": [
+   "Scroll-borrowed",
+   "Manta-borrowed",
+   "Mode-borrowed"
+  ]
+ },
+ {
+  "slug": "pnetwork",
+  "group": "BRIDGE-FORGERY",
+  "incident": "Allbridge/Sandbox/warp 2026-08",
+  "reason": "Multi-chain mint/burn bridge; prior pNetwork incidents + the fresh mint-on-unverified-burn pattern make its message->mint binding worth re-checking.",
+  "check": "Is each mint bound to a verified burn on the source (not just an attested message body)?",
+  "tvl": 13099805.903339999,
+  "category": "Bridge",
+  "chains": [
+   "EOS",
+   "Telos",
+   "xDai"
+  ]
+ },
+ {
+  "slug": "wan-bridge",
+  "group": "BRIDGE-FORGERY",
+  "incident": "Allbridge/Sandbox/warp 2026-08",
+  "reason": "Wanchain cross-chain mint/burn; validator-signature bridges are where forged-source mints recur.",
+  "check": "Confirm the mint verifies the source burn/lock, and signer-set integrity.",
+  "tvl": 6773925.52745,
+  "category": "Bridge",
+  "chains": [
+   "Moonriver",
+   "Moonbeam",
+   "FunctionX"
+  ]
+ },
+ {
+  "slug": "universal-bridge",
+  "group": "BRIDGE-FORGERY",
+  "incident": "Allbridge/Sandbox/warp 2026-08",
+  "reason": "Issues 80+ 1:1 wrapped assets (uXRP, uSUI, uSOL) on Ethereum; wrapped-asset mints must be bound to a proven reserve/lock, not an attestation alone (note: some backing is custodial = partly off-chain).",
+  "check": "Confirm the on-chain mint authorization requires a verified lock/proof; enumerate who can mint each uAsset.",
+  "tvl": 6933711.4,
+  "category": "Bridge",
+  "chains": [
+   "Ethereum"
+  ]
+ },
+ {
+  "slug": "txflow-bridge",
+  "group": "BRIDGE-FORGERY",
+  "incident": "Allbridge/Sandbox/warp 2026-08",
+  "reason": "Cross-chain liquidity/settlement layer holding ~$16M; the fresh bridge losses all credited on a message the code trusted without a proven source lock/burn.",
+  "check": "Confirm every credited/settled amount is bound to a verified source-chain lock or burn, not just an attested message.",
+  "tvl": 16383033.32729,
+  "category": "Bridge",
+  "chains": [
+   "Arbitrum"
+  ]
+ },
+ {
+  "slug": "volo-lst",
+  "group": "LST-SHARE-RATE",
+  "incident": "KelpDAO 2026-04 / share-rate",
+  "reason": "Sui LST; its share token is read as collateral elsewhere \u2014 if any market prices it off an instantaneous exchange rate it is manipulable.",
+  "check": "Where is volo's LST used as collateral, and is its rate read spot or smoothed?",
+  "tvl": 16851283.93967,
+  "category": "Liquid Staking",
+  "chains": [
+   "Sui"
+  ]
+ },
+ {
+  "slug": "hylo-lsts",
+  "group": "LST-SHARE-RATE",
+  "incident": "KelpDAO 2026-04 / share-rate",
+  "reason": "Solana LST set; share-rate-as-price and cross-program composability risk.",
+  "check": "Rate-read robustness where hylo LSTs back other positions.",
+  "tvl": 20837492.16575,
+  "category": "Liquid Staking",
+  "chains": [
+   "Solana"
+  ]
+ },
+ {
+  "slug": "bedrock-unieth",
+  "group": "LST-SHARE-RATE",
+  "incident": "KelpDAO 2026-04 / share-rate",
+  "reason": "uniETH LRT; LRTs bridged cross-chain (OFT) or used as collateral inherit both KelpDAO's forged-mint and share-rate-as-spot surfaces.",
+  "check": "Cross-chain mint verification + any spot share-rate reads.",
+  "tvl": 25073390.97322,
+  "category": "Liquid Restaking",
+  "chains": [
+   "Ethereum"
+  ]
+ },
+ {
+  "slug": "stakestone-stone",
+  "group": "LST-SHARE-RATE",
+  "incident": "KelpDAO 2026-04 / share-rate",
+  "reason": "STONE is an omnichain LST explicitly designed to move cross-chain; the cross-chain trust config is the KelpDAO/StakeDAO surface.",
+  "check": "DVN count + delegate immutability on STONE's cross-chain path; share-rate read robustness.",
+  "tvl": 20967369.88782,
+  "category": "Liquid Staking",
+  "chains": [
+   "Ethereum"
+  ]
+ },
+ {
+  "slug": "pickle",
+  "group": "GOV-VAULT",
+  "incident": "Term Finance 2026-08-23",
+  "reason": "Governance-driven yield vaults; where deposit/stake confers votes and a majority can pass a fund-moving proposal, cheap-quorum capture drains vaults.",
+  "check": "Can deposit-derived voting weight pass a proposal that moves vault funds, and is the timelock removable by that same vote?",
+  "tvl": 4829223.906130001,
+  "category": "Yield Aggregator",
+  "chains": [
+   "Moonriver",
+   "Moonbeam",
+   "Ethereum-staking"
+  ]
+ },
+ {
+  "slug": "bluefin-spot",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Sui orderbook DEX; same self-match / settlement-invariant surface as any Move CLOB port.",
+  "check": "Verify self-trade handling and settlement conservation on Move.",
+  "tvl": 19972633.99493
+ },
+ {
+  "slug": "astroport",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "CosmWasm AMM across Neutron/Terra2/Injective; multi-VM CosmWasm pools where asset-denom identity handling differs from EVM.",
+  "check": "Check pair swap forbids same-denom and validates denom identity (no poisoned CW20/native mapping).",
+  "tvl": 9624114.38601
+ },
+ {
+  "slug": "rhea-dex",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Largest Near DEX ($28M); Near VM asset accounting is a fresh, less-audited surface.",
+  "check": "Same-asset-swap distinctness + rounding direction on Near.",
+  "tvl": 27870941.77862
+ },
+ {
+  "slug": "ston-fi",
+  "group": "AMM-DISTINCTNESS",
+  "incident": "CometDEX 2026-08-25",
+  "reason": "Largest TON DEX ($26M); TON jetton transfer/asynchrony model makes reserve reconciliation error-prone.",
+  "check": "Verify jetton-in equals credited amount and same-jetton swaps are rejected.",
+  "tvl": 26380000.0
+ },
+ {
+  "slug": "seamless-v2",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V3 fork on Base/Ethereum; even mature-chain forks list long-tail collateral on RedStone feeds.",
+  "check": "Enumerate collaterals; any thin asset on a manipulable feed with a high LTV?",
+  "tvl": 15537786.98144
+ },
+ {
+  "slug": "solera",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V3 fork on Plume/Hemi with Stork/eOracle; brand-new chains + non-Chainlink feeds + RWA collateral.",
+  "check": "Per-collateral spot depth vs oracle; is any RWA/low-float asset cheaply movable?",
+  "tvl": 4728851.42557
+ },
+ {
+  "slug": "extra-finance-xlend",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V3-style lending on Base/Optimism; leveraged-farming lenders list LP and long-tail collateral.",
+  "check": "Which collaterals are LP/thin, and how is each priced?",
+  "tvl": 2535718.84773
+ },
+ {
+  "slug": "neverland",
+  "group": "LEND-THIN-COLLATERAL",
+  "incident": "Moonwell 2026-08-27",
+  "reason": "Aave-V3 fork on Monad ($12M) with RedStone/Chainlink; a young high-throughput chain with shallow spot books.",
+  "check": "Thinnest listed collateral vs oracle manipulability.",
+  "tvl": 18966159.99489
+ },
+ {
+  "slug": "rhea-lst",
+  "group": "LST-SHARE-RATE",
+  "incident": "KelpDAO 2026-04 / share-rate",
+  "reason": "Near LST ($18M); its staked-NEAR rate, if read spot by any Near money-market, is manipulable.",
+  "check": "Where rhea LST backs borrow, is its exchange rate read spot or smoothed?",
+  "tvl": 18676508.44868
+ },
+ {
+  "slug": "infrared-finance",
+  "group": "LST-SHARE-RATE",
+  "incident": "KelpDAO 2026-04 / share-rate",
+  "reason": "Berachain liquid staking ($20M); iBGT/validator-staking share tokens widely used as collateral in the young Berachain DeFi stack.",
+  "check": "Confirm the LST rate used by downstream markets is not the instantaneous vault ratio.",
+  "tvl": 18320674.50471
+ }
+]

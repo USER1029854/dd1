@@ -1,0 +1,2342 @@
+[
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=4",
+    "slowmist_page_no": 4,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=5",
+    "slowmist_page_no": 5,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=6",
+    "slowmist_page_no": 6,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=7",
+    "slowmist_page_no": 7,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=8",
+    "slowmist_page_no": 8,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=9",
+    "slowmist_page_no": 9,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=10",
+    "slowmist_page_no": 10,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=11",
+    "slowmist_page_no": 11,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=12",
+    "slowmist_page_no": 12,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=13",
+    "slowmist_page_no": 13,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=14",
+    "slowmist_page_no": 14,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  },
+  {
+    "event_date": "2024-07-07",
+    "target": "Interlay",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Polkadot issued a warning on Twitter, alerting users that the official Twitter account of Interlay, a cross-chain interoperability project, was compromised and used to post a scam message. Users are advised to be cautious and avoid clicking any links.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://x.com/Polkadot/status/1809883982533718347"
+    ]
+  },
+  {
+    "event_date": "2024-02-08",
+    "target": "Starlay Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2100000.0,
+    "reported_loss_raw": "$ 2,100,000",
+    "description_raw": "A critical security incident within the Starlay protocol\u2019s USDC lending pool on the Acala EVM platform. An exploit was identified and executed due to abnormal behavior in the liquidity index calculation mechanism, which allowed an attacker to withdraw an amount far exceeding their original deposit after borrowing LDOT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/starlay_fi/status/1755920814497742957"
+    ]
+  },
+  {
+    "event_date": "2023-06-28",
+    "target": "Manta Network",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of Manta Network, a Poca eco-privacy project, which was previously stolen and posted false airdrops, has been restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/f2lzk34v.html"
+    ]
+  },
+  {
+    "event_date": "2022-08-14",
+    "target": "Acala",
+    "slowmist_attack_method": "On-chain setup error",
+    "reported_loss_usd": 52000000.0,
+    "reported_loss_raw": "$ 52,000,000",
+    "description_raw": "The Polkadot ecological project Acala caused an additional issuance of aUSD due to an error on the chain, allowing attackers to mint aUSD. The vulnerability caused aUSD to lose its peg to the US dollar, initially falling to $0.60 and hovering around $0.90. Acala suspended the protocol shortly after the attack and disabled the transfer of the stolen aUSD and the attackers exchanging Acala tokens for some of the aUSD.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://medium.com/acalanetwork/updates-on-the-ausd-incident-22-august-2022-997efec98b35"
+    ]
+  },
+  {
+    "event_date": "2022-07-21",
+    "target": "Tableland",
+    "slowmist_attack_method": "Discord was hacked",
+    "reported_loss_usd": 45819.0,
+    "reported_loss_raw": "$ 45,819",
+    "description_raw": "The Tableland Discord server was compromised by malicious actors, successfully impersonating moderators on the channel and leading community members to a fake Tableland domain that funneled targeted assets from member ETH wallets. The perpetrators utilized a fakemint scheme, which lured community members using a pretense of an exclusive, limited mint. Instead, target victims were taken to a malicious website that tricked some of them into granting specific wallet permissions. Once granted, the perpetrators were able to siphon away Tableland Rigs and other NFTs",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://docs.tableland.xyz/security/anatomy-of-a-fakemint"
+    ]
+  },
+  {
+    "event_date": "2021-08-25",
+    "target": "Dot.Finance",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 429724.0,
+    "reported_loss_raw": "$429,724",
+    "description_raw": "Polkadot Eco DeFi revenue aggregator Dot.Finance suffered a lightning loan attack. Dot.Finance's token PINK plummeted 35% in a short time, from 0.77 USD to approximately 0.5 USD. The attacker made a profit of 900.89 BNB (approximately $429,724 in total).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://medium.com/@Knownsec_Blockchain_Lab/knowsec-blockchain-lab-dot-finance-flash-loan-security-incident-analysis-98f7b5707a15"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "Bondly Finance",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 373000000.0,
+    "reported_loss_raw": "373,000,000 BONDLY",
+    "description_raw": "The digital collectibles market platform Bondly Finance released an analysis report on the previous attack. Bondly Finance believes that the attacker obtained access to the password account belonging to Bondly CEO Brandon Smith through a carefully planned strategy. The password account contains the assistance of his hardware wallet. Recalling the phrase to restore the phrase, after copying, allowed the attacker to access the BONDLY smart contract, and the company wallet that was also leaked, resulting in the minting of 373 million BONDLY tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://bondlyfinance.medium.com/bondly-attack-july-14th-2021-postmortem-beb7cf02e9ba"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "OptionRoom",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12300000.0,
+    "reported_loss_raw": "12,300,000 ROOM",
+    "description_raw": "According to official news, Polkadot's ecological oracle and prediction protocol OptionRoom stated that it was affected by the \"cross-chain asset bridge ChainSwap attack\", and many projects including OptionRoom were affected by the hacker attack. Hackers can obtain 2.3 million ROOM tokens on Ethereum and 10 million ROOM tokens on BSC. OptionRoom noticed the hacking before the hackers sold any tokens and decided to remove liquidity from Uniswap and Pancakeswap to protect token holders and liquidity providers from being sold to the liquidity pool by hackers. By selling the deployer's tokens to the Uniswap pool, OptionRoom was able to recover $342,117. In this way, OptionRoom successfully extracted liquidity on behalf of the liquidity provider of the project. The recovered amount will be allocated according to the share of the liquidity provider.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/option_room/status/1414006279778054144"
+    ]
+  },
+  {
+    "event_date": "2021-07-11",
+    "target": "Dora Factory",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 42373.0,
+    "reported_loss_raw": "$ 42,373",
+    "description_raw": "According to official sources, Dora Factory, a multi-chain service infrastructure based on Polkadot, suffered a contract vulnerability in the cross-chain asset bridge ChainSwap. The 7,872 DORA locked in the ChainSwap cross-chain bridge contract was taken out by hackers and sold through Uniswap.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://twitter.com/DoraFactory/status/1414158149615964160"
+    ]
+  },
+  {
+    "event_date": "2021-07-04",
+    "target": "RAI Finance",
+    "slowmist_attack_method": "Affected by ChainSwap Attack",
+    "reported_loss_usd": 414013.0,
+    "reported_loss_raw": "$ 414,013",
+    "description_raw": "RAI Finance, a cross-chain transaction protocol based on the Polkadot blockchain, issued a post stating that due to the vulnerability of the ChainSwap smart contract, the RAI access and payment permission addresses connected to it were also hacked and stolen. The total amount of stolen RAI in the account reached 2.9 million. On July 5, Rai Finance tweeted that after investigation by the team, hackers had returned 2.2 million RAIs to ChainSwap Deployer. The total loss caused by this incident was reduced to 670,000 RAI.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://medium.com/rai-finance/hacker-has-returned-part-of-the-rai-stolen-due-to-a-loophole-in-the-chainswap-contract-9b1161eafc51"
+    ]
+  },
+  {
+    "event_date": "2021-04-05",
+    "target": "Polkatrain",
+    "slowmist_attack_method": "Arbitrage attack",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "Polkatrain, an ecological IDO platform of Polkadot, had an accident this morning. According to SlowMist analysis, the contract in question is the POLT_LBP contract of the Polkatrain project. This contract has a swap function and a rebate mechanism. When users purchase through the swap function When the PLOT token is used, a certain amount of rebate will be obtained, and the rebate will be forwarded to the user in the form of calling transferFrom by the _update function in the contract. Since the _update function does not set the maximum amount of rebates for a pool, nor does it determine whether the total rebates have been used up when rebates are made, malicious arbitrageurs can continuously call the swap function to exchange tokens to get the contract. Rebate reward. The SlowMist security team reminds DApp project parties to fully consider the business scenario and economic model of the project when designing the AMM exchange mechanism to prevent unexpected situations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://polkatrain-com.gitbook.io/polkatrian-en/the-response-for-hacker-attack-incident-from-polkatrain-team"
+    ]
+  },
+  {
+    "event_date": "2020-11-13",
+    "target": "Akropolis",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 2030000.0,
+    "reported_loss_raw": "$ 2,030,000",
+    "description_raw": "Hackers took advantage of the storage asset verification flaws in the Akropolis project of the Polkadot ecosystem to launch multiple consecutive reentry attacks on the contract, causing the Akropolis contract to issue a large number of pooltokens out of thin air without new asset injection, and then reuse these pooltokens. Withdrawing DAI from the YCurve and sUSD pools resulted in the loss of 2.03 million DAI in the project contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polkadot&page=15",
+    "slowmist_page_no": 15,
+    "reference_urls": [
+      "https://cointelegraph.com/news/akropolis-defi-protocol-paused-as-hackers-get-away-with-2m-in-dai"
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "TOKEN-DEFERRED-BURN-LP-RESERVE-DESYNC": {
+    "reason": "Victims are individually deployed BSC/Base tokens with custom transfer logic that are not listed as DefiLlama protocols; the family has no addressable protocol population in this universe. Handed to the token-level monitoring workstream instead.",
+    "family_incident_count": 14,
+    "family_loss_usd": 5425242.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "TOKEN-TRANSFER-OVERRIDE-BREAKS-CONSERVATION": {
+    "reason": "Same population problem as the deferred-burn family.",
+    "family_incident_count": 3,
+    "family_loss_usd": 475500.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "TOKEN-TRANSFER-INTENT-HEURISTIC-FORGEABLE": {
+    "reason": "Same population problem as the deferred-burn family.",
+    "family_incident_count": 2,
+    "family_loss_usd": 277041.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "HOOK-ZERO-VALUE-TRANSFER-TRIGGERS-ACCRUAL": {
+    "reason": "Applies to token contracts with accrual hooks; only reachable through per-token screening, not the protocol universe.",
+    "family_incident_count": 2,
+    "family_loss_usd": 630000.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "TOKEN-PACKED-OWNERSHIP-UNDERFLOW": {
+    "reason": "Requires DN404/BT404 lineage; no in-universe protocol above the TVL threshold carries it.",
+    "family_incident_count": 2,
+    "family_loss_usd": 40000.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "AUTH-ZERO-ADDRESS-ACCEPTED": {
+    "reason": "Screened as a cheap read-only sweep (owner()==address(0) with non-zero balance) rather than as a protocol-family pair.",
+    "family_incident_count": 1,
+    "family_loss_usd": 98200.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "SECRET-EMBEDDED-IN-PUBLIC-CODE-AS-AUTH": {
+    "reason": "Requires bytecode constant analysis per contract; run as a sweep over deep-screened deployments rather than as a ranked pair.",
+    "family_incident_count": 3,
+    "family_loss_usd": 4171100.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "STORAGE-LAYOUT-COLLISION-PHANTOM-CREDIT": {
+    "reason": "Requires a storage-layout dump per contract; run as a sweep over deep-screened deployments.",
+    "family_incident_count": 1,
+    "family_loss_usd": 25000.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "METATX-SENDER-IDENTITY-CONFUSION": {
+    "reason": "Requires ERC-2771 detection per contract; run as a sweep.",
+    "family_incident_count": 2,
+    "family_loss_usd": 282700.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "ACC-CREDIT-NOT-RECEIVED": {
+    "reason": "Reward-tracker contracts are rarely separate DefiLlama entries; folded into the reward-index sweep.",
+    "family_incident_count": 1,
+    "family_loss_usd": 560000.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "ACC-DUPLICATE-ID-ACCUMULATION": {
+    "reason": "Detected by selector-shape sweep over deep-screened deployments.",
+    "family_incident_count": 2,
+    "family_loss_usd": 13021.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "ACC-SIGN-OR-BOUND-CHECK-MISSING": {
+    "reason": "Detected by parameter-shape sweep over deep-screened deployments.",
+    "family_incident_count": 3,
+    "family_loss_usd": 3064900.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "ACC-HARDCODED-PEG-REDEMPTION": {
+    "reason": "Folded into the stablecoin-issuer oracle screen.",
+    "family_incident_count": 1,
+    "family_loss_usd": 8500.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "SIG-VERIFIER-DEFEATABLE": {
+    "reason": "Detected by source-grep sweep over deep-screened deployments.",
+    "family_incident_count": 2,
+    "family_loss_usd": 97819.47,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "AUTH-IDENTITY-SATISFIABLE-BY-ATTACKER-CONTRACT": {
+    "reason": "Detected by source-grep sweep over deep-screened deployments.",
+    "family_incident_count": 3,
+    "family_loss_usd": 278700.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  },
+  "AUTH-PUBLIC-CLAIM-NO-ELIGIBILITY": {
+    "reason": "Detected by selector sweep over deep-screened deployments.",
+    "family_incident_count": 1,
+    "family_loss_usd": 907700.0,
+    "handled_as": "read-only sweep over deep-screened deployments"
+  }
+}

@@ -1,0 +1,145 @@
+[
+ {
+  "event_date": "2026-08-28",
+  "target": "Avici",
+  "slowmist_attack_method": "Smart Contract Vulnerability",
+  "reported_loss_usd": 500859.22,
+  "reported_loss_raw": "$ 500,859.22",
+  "description_raw": "Attackers exploited a vulnerability in an outdated version of Rain\u2019s Solana card contract used by Avici (and a few other programs). By submitting crafted signature bundles to gain unauthorized admin rights via AddCollateralAdmin and then withdrawing collateral, they drained $500,859.22 from 1,685 users\u2019 card balances. Self-custodial wallets were unaffected. The contract was upgraded across all programs, and full refunds were promised.",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/avici/status/2093439613201482068?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+  ]
+ },
+ {
+  "event_date": "2026-08-27",
+  "target": "Moonwell",
+  "slowmist_attack_method": "Price Manipulation",
+  "reported_loss_usd": 8790000.0,
+  "reported_loss_raw": "$ 8,790,000",
+  "description_raw": "Base-based DeFi lending protocol Moonwell was attacked. The attacker inflated the price of the low-liquidity token MAMO, posted it as collateral, and borrowed real assets such as cbBTC and USDC from markets including mCBTC and mUSDC. Blockaid first reported about 50.6 cbBTC (over $4,000,000) drained, later updating observed outflows to about $8,790,000.",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/blockaid_/status/2092914508666753081"
+  ]
+ },
+ {
+  "event_date": "2026-08-26",
+  "target": "FH Token",
+  "slowmist_attack_method": "Smart Contract Vulnerability",
+  "reported_loss_usd": 20000.0,
+  "reported_loss_raw": "$ 20,000",
+  "description_raw": "FH Token on the BSC chain was exploited in its FH/USDT liquidity pool on PancakeSwap V2. A flaw in the token\u2019s _transfer function and isSell logic caused incorrect token burns during sells, allowing the attacker to drain funds from the pool through repeated buy-and-sell loops, resulting in a loss of approximately $20,000.",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/TenArmorAlert/status/2092427353456812207"
+  ]
+ },
+ {
+  "event_date": "2026-08-25",
+  "target": "CometDEX",
+  "slowmist_attack_method": "Smart Contract Vulnerability",
+  "reported_loss_usd": 717518.92,
+  "reported_loss_raw": "$ 717,518.92",
+  "description_raw": "The BLND-USDC liquidity pool of CometDEX (Comet AMM) on the Stellar network was exploited due to an accounting bug that allowed same-asset swaps (USDC\u2192USDC), corrupting reserve calculations. The attacker used flash loans from a Blend pool and repeated the process about 36 times to extract excess funds, resulting in a loss of approximately $717,518.92 USDC. Funds were subsequently moved.",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/blend_capital/status/2092288347766984713"
+  ]
+ },
+ {
+  "event_date": "2026-08-25",
+  "target": "Enjin",
+  "slowmist_attack_method": "Smart Contract Vulnerability",
+  "reported_loss_usd": 162000.0,
+  "reported_loss_raw": "$ 162,000",
+  "description_raw": "Enjin\u2019s legacy ERC-1155 Crypto Items platform on Ethereum was exploited. The attacker used a storage-layout mismatch in delegate-call adapters plus an unprotected initialize function to take over the Managed Delegate Proxy via DELEGATECALL. After gaining manager privileges, they registered a malicious adapter, transferred NFTs from about 52 wallets without approval, and melted them to redeem the backing ENJ from the reserve, draining approximately 5.24 million ENJ .",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/SlowMist_Team/status/2092455321654694355"
+  ]
+ },
+ {
+  "event_date": "2026-08-23",
+  "target": "TermFinance Vaults",
+  "slowmist_attack_method": "Governance Attack",
+  "reported_loss_usd": 8500000.0,
+  "reported_loss_raw": "$ 8,500,000",
+  "description_raw": "On August 23, 2026, Term Finance\u2019s Strategy Vaults (Ethereum-based fixed-rate lending protocol by Term Labs) suffered a governance exploit. The attacker acquired majority voting power (100% on several USDC vaults, ~91% on the ETH Meta Vault), passed malicious proposals to disable the timelock and drain ~2,843 ETH and 1.68M USDC (later swapped to DAI), resulting in ~$8.5 million losses (about 68% of the vaults\u2019 then-TVL).",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/term_labs/status/2091428394130886740"
+  ]
+ },
+ {
+  "event_date": "2026-08-23",
+  "target": "Arrakis V1",
+  "slowmist_attack_method": "Flashloan Price Manipulation",
+  "reported_loss_usd": 7018.0,
+  "reported_loss_raw": "$ 7,018",
+  "description_raw": "On August 23, 2026, the Arrakis V1 / G-UNI ENS\u2013WETH liquidity-manager vault (0x7c687f775a3b73bbab0e15832f24caab5d53bdde) was drained via Uniswap V3 spot-price manipulation. The attacker flash-loaned 1,800 WETH from Morpho Blue, skewed the pool\u2019s instantaneous spot price, minted vault shares at the distorted valuation, restored the price, and burned the shares for a richer token mix, netting \u22482.94 WETH. Root cause: mint()/burn() valued the Uniswap V3 position off pool.slot0() with no TWAP or deviation guard (TWAP only protected rebalance()).",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/exvulsec/status/2091521539585999337"
+  ]
+ },
+ {
+  "event_date": "2026-08-23",
+  "target": "warp.green",
+  "slowmist_attack_method": "Smart Contract Vulnerability",
+  "reported_loss_usd": 93000.0,
+  "reported_loss_raw": "$ 93,000",
+  "description_raw": "The ERC-20 bridge of warp.green (a cross-chain messaging protocol between Chia and EVM chains) suffered an exploit due to a vulnerability in the Chia-side Chialisp puzzle. The attacker minted worthless CAT tokens, presented them as burned wUSDC, obtained validator signatures, and drained ~$93,000 USDC from the Base and Ethereum bridge contracts, later converting the funds to ETH. The CAT bridge (securing assets like wXCH) appears unaffected.",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/warpdotgreen/status/2091772015598325920"
+  ]
+ },
+ {
+  "event_date": "2026-08-22",
+  "target": "TAC",
+  "slowmist_attack_method": "Contract Vulnerability",
+  "reported_loss_usd": 7500000.0,
+  "reported_loss_raw": "$ 7,500,000",
+  "description_raw": "Layer 1 blockchain TAC was exploited when an attacker used a vulnerability in the shared Cosmos EVM precompile layer to drain approximately 2.985 billion TAC tokens (valued at around $7.5 million) from a single account. The project confirmed it was a drain (not a mint), total supply unchanged, only $TAC affected, and the flaw is not in TAC-specific code. The chain was halted at block 24,671,475; the team is coordinating with SEAL 911 and exchanges to track funds and plans to release a post-mortem and relaunch plan.",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/TacBuild/status/2091873937655574938"
+  ]
+ },
+ {
+  "event_date": "2026-08-21",
+  "target": "The Sandbox",
+  "slowmist_attack_method": "Smart Contract Vulnerability",
+  "reported_loss_usd": 675000.0,
+  "reported_loss_raw": "$ 675,000",
+  "description_raw": "The Sandbox\u2019s SAND cross-chain bridge (LayerZero OFT on Base and BNB Chain) was exploited. The attacker used a configuration function to gain sole verifier rights, minting large amounts of unbacked SAND and draining approximately 14.74 million real SAND (~$675,000) from the Ethereum vault. The project quickly halted affected bridging; Ethereum and Polygon assets remained unaffected.",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/TheSandboxGame/status/2091978565256417332"
+  ]
+ },
+ {
+  "event_date": "2026-08-19",
+  "target": "Allbridge",
+  "slowmist_attack_method": "Bridge Logic Flaw",
+  "reported_loss_usd": 190000.0,
+  "reported_loss_raw": "$ 190,000",
+  "description_raw": "On August 19, 2026, the cross-chain bridge Allbridge was attacked. The attacker had prepared on July 26 by calling Circle\u2019s MessageTransmitterV2.sendMessage on Polygon to forge a CCTP-style message claiming a 1M USDC transfer (with no actual burn) and obtained a valid attestation. On Aug 19, after a real CCTP deposit brought the Base Router balance to ~191k USDC, the attacker used the forged message via receiveCctpMessage (which lacked proper verification and credited it as a real deposit), flash-loaned ~809k USDC from Aave to match the claimed amount, and withdrew ~999k USDC, netting ~$189,800.",
+  "slowmist_page_url": "https://hacked.slowmist.io/?c=&page=1",
+  "slowmist_page_no": 1,
+  "reference_urls": [
+   "https://x.com/SlowMist_Team/status/2090994186346790999"
+  ]
+ }
+]

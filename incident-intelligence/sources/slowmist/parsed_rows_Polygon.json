@@ -1,0 +1,379 @@
+[
+  {
+    "event_date": "2026-06-25",
+    "target": "Polymarket",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 3100000.0,
+    "reported_loss_raw": "$ 3,100,000",
+    "description_raw": "Polymarket suffered a third-party supply chain attack where hackers injected a malicious script into the platform's frontend, draining approximately $3.1 million in PUSD from 11 user wallets. Funds were moved from Polygon to Ethereum. Polymarket contained the incident, removed the affected dependency, and promised full refunds to impacted users.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/polymarkettrade/status/2070155882906730671?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-06-23",
+    "target": "Royal.io",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 263000.0,
+    "reported_loss_raw": "$ 263,000",
+    "description_raw": "A legacy royalties contract (Royal1155LD) associated with Royal.io on Polygon was exploited due to a logic flaw in reward/pro-rata royalty accounting. The attacker used a flash loan and 100 zero-value ERC1155 transfers to manipulate the beforeLdaTransfer function, inflating balances and withdrawing ~$263K USDC.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://cryptorank.io/news/feed/c9d17-legacy-polygon-royalties-contract-exploit-drains-261k-through-reward-logic-flaw"
+    ]
+  },
+  {
+    "event_date": "2026-05-22",
+    "target": "Polymarket",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 573200.0,
+    "reported_loss_raw": "$ 573,200",
+    "description_raw": "Polymarket suffered an internal private key compromise incident. A six-year-old operational wallet private key (used for the rewards payout system and market initializer) was compromised, resulting in the extraction of approximately $573,200 (in USDC and POL) from addresses on the Polygon chain. Polymarket officials quickly clarified that this was not due to any smart contract or UMA CTF Adapter vulnerability; user funds, market resolutions, and the platform\u2019s core functions remain fully secure. The team immediately rotated the private key, revoked permissions, and collaborated to freeze approximately $164,000 in funds, resulting in a net loss of about $409,200. The incident was first publicly flagged by on-chain investigator ZachXBT, and the platform continues to operate normally.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/devjoshstevens/status/2057768173915484505"
+    ]
+  },
+  {
+    "event_date": "2026-05-11",
+    "target": "Ink Finance",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 140000.0,
+    "reported_loss_raw": "$ 140,000",
+    "description_raw": "Ink Finance\u2019s Workspace Treasury Proxy contract on Polygon was exploited due to a whitelist validation logic flaw. The attacker deployed a malicious contract matching a whitelisted claimer address, passed authentication checks via the claim() function, and drained approximately $140,000 USDT (amplified with a ~$25K Balancer V2 flash loan).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.cryptotimes.io/2026/05/11/ink-finance-exploited-on-polygon-140k-usdt-drained-in-flash-loan-attack/"
+    ]
+  },
+  {
+    "event_date": "2026-05-11",
+    "target": "Huma Finance",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 101400.0,
+    "reported_loss_raw": "$ 101,400",
+    "description_raw": "A logic flaw in Huma Finance\u2019s deprecated V1 BaseCreditPool contracts on Polygon was exploited, draining approximately 101,400 USDC and USDC.e from accumulated protocol fees and pool owner fees. No user funds were at risk, PST token unaffected. The team had already been sunsetting V1 pools and immediately paused all V1 contracts. Huma\u2019s V2 on Solana is a complete rewrite and remains secure.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/humafinance/status/2053858499378258198"
+    ]
+  },
+  {
+    "event_date": "2026-01-07",
+    "target": "Polycule",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 230000.0,
+    "reported_loss_raw": "$ 230,000",
+    "description_raw": "The Polymarket-based trading bot project Polycule has been hacked. The Polycule team stated that approximately $230,000 in user funds were affected in this incident. The related bots have been taken offline, and patching and security audits are expected to be completed before the end of this week.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/pmx_trade/status/2008997887678820862?s=20"
+    ]
+  },
+  {
+    "event_date": "2025-11-11",
+    "target": "Polymarket",
+    "slowmist_attack_method": "Phishing attack",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "According to a post by crypto trader @25usdc, hackers are exploiting the comment section of Polymarket to carry out scam activities, resulting in losses exceeding $500,000. The attackers post links to their phishing websites in an obfuscated, non-plain-text format. When users log in to these sites via email, malicious scripts are injected, leading to data breaches and the loss of funds.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/25usdc/status/1987948736228511992?s=20"
+    ]
+  },
+  {
+    "event_date": "2024-12-16",
+    "target": "BTC24H (BTC24H)",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 85700.0,
+    "reported_loss_raw": "$ 85,700",
+    "description_raw": "BTC24H (BTC24H) is suspected to have been attacked on Polygon, with an estimated loss of $85,700.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://polygonscan.com/tx/0x554c9e4067e3bc0201ba06fc2cfeeacd178d7dd9c69f9b211bc661bb11296fde"
+    ]
+  },
+  {
+    "event_date": "2024-10-24",
+    "target": "Cryptobottle",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 527000.0,
+    "reported_loss_raw": "$ 527,000",
+    "description_raw": "In October 2024, Cryptobottle on Polygon suffered three separate attacks, with total losses amounting to approximately $527,000. The attack on October 24 was the largest of the three, where the attacker exploited a critical vulnerability to disable the balance check in the swap() method after a callback. This allowed them to make arbitrary swaps to acquire a large amount of NAS tokens, which they then sold, resulting in a loss of around $490,000 for the project.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://polygonscan.com/tx/0x115203d01c2e95d8c3585ec5c561bc7e40425f2a7c019abb1f3fc498cf451f90"
+    ]
+  },
+  {
+    "event_date": "2024-08-24",
+    "target": "Polygon",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Mudit Gupta, the Chief Information Security Officer of Polygon, stated on the X platform that the Polygon Community Discord has been compromised. He advised users not to click on any links within the server as the team is working to regain control.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Mudit__Gupta/status/1827235421979603352"
+    ]
+  },
+  {
+    "event_date": "2024-05-14",
+    "target": "PI (PI)",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 490000.0,
+    "reported_loss_raw": "$ 490,000",
+    "description_raw": "The PI (PI) on Polygon is suspected of a rug pull, and the current token price has dropped by 100%, causing losses exceeding $490,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.dextools.io/app/cn/polygon/pair-explorer/0x452861b678a479a832ad51125ae2ebbbcadfe068?t=1717061798213"
+    ]
+  },
+  {
+    "event_date": "2024-01-23",
+    "target": "GMEE",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The blockchain gaming platform GMEE has announced via Twitter that the GMEE token contract on Polygon experienced unauthorized GitLab access a few hours ago, resulting in the theft of 600 million GMEE tokens. Subsequently, the attacker exchanged the tokens for ETH and MATIC.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/GAMEEToken/status/1749652962849464727"
+    ]
+  },
+  {
+    "event_date": "2023-07-11",
+    "target": "LibertiVault",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 450000.0,
+    "reported_loss_raw": "$ 450,000",
+    "description_raw": "The LibertiVault contract was attacked, losing about 123 ETH and 56,234 USDT on Polygon, worth about $290,000; 35 ETH and 96,223 USDT on Ethereum, worth about $160,000. Total damages exceeded $450,000. Attackers exploited a reentrancy vulnerability in the LibertiVault contract to repeatedly call the deposit function, manipulate the contract balance, and mint tokens based on incorrect balance calculations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.odaily.news/newsflash/329192"
+    ]
+  },
+  {
+    "event_date": "2023-05-23",
+    "target": "LunaFi",
+    "slowmist_attack_method": "Reward Mechanism Flaw",
+    "reported_loss_usd": 35000.0,
+    "reported_loss_raw": "$ 35,000",
+    "description_raw": "Polygon ecological project LunaFi was attacked. The attacker obtained initial funds from TornadoCash on BSC, the root cause was a flaw in reward calculation, and many other issues in the contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://polygonscan.com/address/0x11576cb3d8d6328cf319e85b10e09a228e84a8de"
+    ]
+  },
+  {
+    "event_date": "2023-05-20",
+    "target": "Aave",
+    "slowmist_attack_method": "Compatibility issues",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "About 110 million USD in WETH, USDT, WBTC, WMATIC in Aave V2 on Polygon cannot be withdrawn, nor can it be borrowed and repaid. This is because the interest rate strategy contract is only compatible with Ethereum, not Polygon. At present, Aave has submitted a patch to fix this problem, which will be deployed after voting. Funds are not at risk, but it takes at least a week for funds to be unfrozen.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://beincrypto.com/aave-users-unable-to-access-over-100m/"
+    ]
+  },
+  {
+    "event_date": "2023-04-30",
+    "target": "0VIX",
+    "slowmist_attack_method": "Oracle Attack",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "DeFi protocol 0VIX on the Polygon chain was exploited for around $2 million. The attack was carried out by an attacker manipulating the oracle, who then performed a flash loan attack on the project. The agreement was suspended after the attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.coindesk.com/business/2023/04/28/defi-protocol-0vix-loses-nearly-2m-in-flash-loan-exploit/"
+    ]
+  },
+  {
+    "event_date": "2023-02-02",
+    "target": "BonqDAO & AllianceBlock",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 120000000.0,
+    "reported_loss_raw": "$ 120,000,000",
+    "description_raw": "Non-custodial lending platform BonqDAO and crypto infrastructure platform AllianceBlock were hacked due to a bug in BonqDAO's smart contracts, resulting in losses of approximately $120 million. Among them, hackers removed approximately 114 million WALBT ($11 million), AllianceBlock\u2019s wrapped native token, and 98 million BEUR tokens ($108 million) from a BonqDAO vault. According to the analysis of SlowMist, the root cause of the attack is that the attacker uses the oracle machine to quote the required collateral, which is much lower than the profit obtained by the attack, thereby manipulating the market and liquidating other users by maliciously submitting wrong prices. In addition, AllianceBlock stated that the incident has nothing to do with the BonqDAO vault, no smart contracts were breached, and both teams are working on eliminating liquidity to mitigate hackers converting stolen tokens into other assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.theblock.co/post/207799/bonqdao-exploited-for-88-million-allianceblock-tokens-stolen-during-the-exploit"
+    ]
+  },
+  {
+    "event_date": "2023-01-16",
+    "target": "Midas Capital",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 650000.0,
+    "reported_loss_raw": "$ 650,000",
+    "description_raw": "Due to the read-only-reentrancy problem (read-only-reentrancy) when interacting with the Curve liquidity pool, the cross-chain money market solution Midas Capital was attacked and exploited in the Polygon liquidity pool of the stablecoin protocol Jarvis, and has lost $650,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://twitter.com/MidasCapitalxyz/status/1615407372402585601"
+    ]
+  },
+  {
+    "event_date": "2022-08-06",
+    "target": "GenomesDAO",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to SlowMist, the GenomesDAO project on MATIC was attacked by hackers, resulting in the unexpected withdrawal of funds in its LPSTAKING contract. This incident is because the LPSTAKING contract of GenomesDAO can be arbitrarily repeatedly initialized and set key parameters, resulting in the malicious exhaustion of the collateral in the contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://panewslab.com/zh/articledetails/5rit2a09.html"
+    ]
+  },
+  {
+    "event_date": "2022-05-14",
+    "target": "Quickswap",
+    "slowmist_attack_method": "DNS Hijacking Attack",
+    "reported_loss_usd": 107600.0,
+    "reported_loss_raw": "$ 107,600",
+    "description_raw": "Decentralized exchange Quickswap has come under attack for a vulnerability in its hosting provider GoDaddy. The hijackers gained access to QuickSwap's DNS through a vulnerability in GoDaddy, where QuickSwap domains were hosted. Some DEX users lost around $107,600 through platform swaps before QuickSwap was able to regain control of our domain.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://quickswap-layer2.medium.com/quickswaps-godaddy-domain-hijack-how-it-happened-our-proposal-to-restore-the-community-35be9ddbb19a"
+    ]
+  },
+  {
+    "event_date": "2021-10-21",
+    "target": "Polygon Plasma Bridge",
+    "slowmist_attack_method": "Double Spend Attack",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "Bug bounty platform Immunefi says white hat hacker Gerhard Wagner submitted a critical vulnerability affecting the Polygon Plasma Bridge on October 5, 2021 that allows attackers to withdraw their burn transactions from the bridge multiple times for up to 223 times. About $850 million is at risk, and an attack with just $100,000 would result in a loss of $22.3 million. Polygon confirmed the bug and immediately began fixing the underlying issue, which was resolved within a week. Polygon agreed to pay up to $2 million for the submission.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://medium.com/immunefi/polygon-double-spend-bug-fix-postmortem-2m-bounty-5a1db09db7f1"
+    ]
+  },
+  {
+    "event_date": "2021-07-28",
+    "target": "PolyYeld Finance",
+    "slowmist_attack_method": "Compatibility Issue",
+    "reported_loss_usd": 4900000000000.0,
+    "reported_loss_raw": "4,900,000,000,000 YELD",
+    "description_raw": "The profit farming agreement PolyYeld Finance was attacked. The project contract was used to mint 4.9 trillion YELD tokens and dump them in the secondary market.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://thoreum-finance.medium.com/what-exploit-happened-today-for-gocerberus-and-garuda-also-for-lokum-ybear-piggy-caramelswap-3943ee23a39f"
+    ]
+  },
+  {
+    "event_date": "2021-07-16",
+    "target": "PancakeBunny",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 2402462.0,
+    "reported_loss_raw": "$ 2,402,462",
+    "description_raw": "DeFi revenue aggregator PancakeBunny tweeted that its version on Polygon was attacked by outsiders and has suspended all Polygon Sushi Vaults. According to officials, Polygon vaults, BSC PancakeBunny vaults, and BUNNY are currently safe. The attacker made a profit of 1281 WETH.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://pancakebunny.medium.com/polybunny-post-mortem-compensation-42b5c35ce957"
+    ]
+  },
+  {
+    "event_date": "2021-07-14",
+    "target": "pSPACE",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Polygon Space Token (pSPACE) of the Polygon platform suffered a lightning loan attack. It is reported that this is a profit-inflation bug.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/peckshield/status/1415231793020628992"
+    ]
+  },
+  {
+    "event_date": "2021-07-12",
+    "target": "helios",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1446704.0,
+    "reported_loss_raw": "$ 1,446,704",
+    "description_raw": "DeFi project helios on Polygon rug pull. (0x8eb6ead701b7d378cf62c898a0a7b72639a89201)",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://rugdoc.io/project/helios-cash/"
+    ]
+  },
+  {
+    "event_date": "2021-06-28",
+    "target": "SafeDollar",
+    "slowmist_attack_method": "Flash loan attack",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "The algorithmic stablecoin project SafeDollar on Polygon is suspected of being hacked, and an unconfirmed contract seems to have taken away 250,000 USD in USDC and USDT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.coindesk.com/markets/2021/06/28/stablecoin-safedollar-hit-by-cyberattack/"
+    ]
+  },
+  {
+    "event_date": "2021-06-20",
+    "target": "PolyDEX",
+    "slowmist_attack_method": "ERC777 Reentrancy Attack",
+    "reported_loss_usd": 500000.0,
+    "reported_loss_raw": "$ 500,000",
+    "description_raw": "The Polygon ecological project PolyDEX had a hacking incident. The hackers carried out a reentry attack on the Token Locker smart contract and stole about $500,000 worth of funds from the project.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://polydex.medium.com/plx-locker-smart-contract-incident-post-mortem-75342124a3e8"
+    ]
+  },
+  {
+    "event_date": "2021-06-05",
+    "target": "PolyButterfly",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1500000.0,
+    "reported_loss_raw": "$ 1,500,000",
+    "description_raw": "On June 5, 2021, PolyButterfly, a decentralized financial protocol based on Polygon, disappeared. Its website has been closed, and its Twitter account and Telegram chat history have been deleted. Before this mysterious disappearance, it was revealed that the PolyButterfly code had a dangerous backdoor that allowed the product team to remove customer liquidity. According to RugDoc, the scammers stole more than 600 ether, or more than $1,500,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://u.today/beware-polygon-matic-flooded-with-rug-pulls"
+    ]
+  },
+  {
+    "event_date": "2021-04-20",
+    "target": "EasyFi",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 46900000.0,
+    "reported_loss_raw": "$ 46,900,000",
+    "description_raw": "Ankitt Gaur, founder and CEO of Layer 2 DeFi lending protocol EasyFi (EASY), said, \u201cOn April 19, team members reported that a large number of EASY tokens were transferred from the official EasyFi wallet to the Ethereum network and several unknowns on the Polygon network. Wallet. Someone may have attacked the management key or mnemonic. The hacker successfully obtained the administrator key and transferred $6 million of existing liquid funds in the form of USD/DAI/USDT from the protocol pool, and transferred 298 Ten thousand EASY tokens (approximately 30% of the total supply of EASY tokens, currently valued at 40.9 million U.S. dollars) were transferred to the wallet of the suspected hacker (0x83a2EB63B6Cc296529468Afa85DbDe4A469d8B37).\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Polygon&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/ChainNewscom/status/1384336818959704064"
+    ]
+  }
+]

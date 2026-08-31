@@ -1,0 +1,782 @@
+[
+  {
+    "event_date": "2026-08-18",
+    "target": "Maya Protocol",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 1700000.0,
+    "reported_loss_raw": "$ 1,700,000",
+    "description_raw": "Maya Protocol (MAYAChain) suffered a security vulnerability attack. The attacker exploited 6 chained edge-case bugs in Trade Account, outbound handling, and pool math, inflating accounting via false subsidy (e.g., ARB.LINK pool), then added/removed liquidity to extract ~48.87M CACAO and convert to ~20.83 BTC plus other assets, causing ~$1.7 million loss. The team paused global operations to fix the issues and seeks fund recovery.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/AaluxxMyth/status/2089792721086996703"
+    ]
+  },
+  {
+    "event_date": "2026-07-24",
+    "target": "Triple-A",
+    "slowmist_attack_method": "Hot Wallet Compromise",
+    "reported_loss_usd": 11800000.0,
+    "reported_loss_raw": "$ 11,800,000",
+    "description_raw": "Singapore-based stablecoin payments firm Triple-A suffered unauthorized access to its hot wallets across multiple chains, with attackers draining approximately $9.7M\u2013$11.8M in company-owned digital assets that were swapped and bridged/consolidated to a single Ethereum address. Client funds remained unaffected in separate trust accounts; services were briefly paused for security checks and have been fully restored.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TripleAHQ/status/2081622020932948328"
+    ]
+  },
+  {
+    "event_date": "2026-07-23",
+    "target": "Solido Cash",
+    "slowmist_attack_method": "Oracle Misassignment",
+    "reported_loss_usd": 73400.0,
+    "reported_loss_raw": "$ 73,400",
+    "description_raw": "Solido Cash (the largest DeFi protocol on Supra) was exploited due to an oracle misassignment on SOLID collateral (stale feed fallback to CASH oracle, severely overvaluing collateral). The attacker, in two waves (one atomic tx + one multi-wallet manual), deposited cheap collateral, minted excess CASH, and sold it on DEXs for SUPRA, netting ~293.7M SUPRA. No user funds were affected; losses primarily hit LPs (mostly the foundation) and protocol reserves. The protocol paused relevant functions and released a forensic report.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SolidoMoney/status/2081323242854469730"
+    ]
+  },
+  {
+    "event_date": "2026-07-11",
+    "target": "Bonzo Lend",
+    "slowmist_attack_method": "Oracle Price Manipulation",
+    "reported_loss_usd": 9050000.0,
+    "reported_loss_raw": "$ 9,050,000",
+    "description_raw": "Bonzo Lend on Hedera was exploited through a third-party oracle (Supra) vulnerability. An attacker submitted a massively manipulated SAUCE price, allowing them to borrow approximately $9.05 million in assets with minimal collateral. The borrowed funds were subsequently swapped on SaucerSwap and bridged to Ethereum via LayerZero (over $5M tracked on-chain). Bonzo Lend paused the protocol shortly after detecting abnormal activity.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://bonzo.finance/blog/bonzo-lend-incident-report-oracle-provider-exploit"
+    ]
+  },
+  {
+    "event_date": "2026-06-21",
+    "target": "Quicksilver Zone",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 3500.0,
+    "reported_loss_raw": "$ 3,500",
+    "description_raw": "Quicksilver Zone (Cosmos Liquid Staking protocol) was exploited via Unchecked Proof Minting vulnerability. The attacker forged proofs to mint large amounts of unbacked qATOM (~505K) and qOSMO (~10M). The chain was halted; actual drained loss was limited (~$3,500). The team is working with Cosmos Hub and Osmosis to burn fake tokens and recover.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Cosmos_Airdrops/status/2069848864643858660"
+    ]
+  },
+  {
+    "event_date": "2026-06-09",
+    "target": "Haedal Vault",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 915179.0,
+    "reported_loss_raw": "$ 915,179",
+    "description_raw": "Haedal Protocol\u2019s Vault pools on Sui suffered an exploit due to a hidden cross-version logic flaw from a 2025 upgrade. The attacker used deprecated old deposit paths to mint inflated LP shares and redeemed them via new paths for excess underlying assets, causing ~$915k in direct losses. Haedal has paused the affected contracts, will fully compensate users, and is preparing a patched upgrade.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/HaedalProtocol/status/2064337754969055568"
+    ]
+  },
+  {
+    "event_date": "2026-06-08",
+    "target": "OpenMonero P2P",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 62900.0,
+    "reported_loss_raw": "$ 62,900",
+    "description_raw": "On June 8, 2026, OpenMonero's P2P trading platform server was breached. The hacker gained root access and stole approximately 200 XMR. The project owner announced on Telegram that all funds were lost; the attack was not at the application layer.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/orangefren/status/2064714742296441178?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-06-01",
+    "target": "The X account of crypto KOL Jadoodoo",
+    "slowmist_attack_method": "Social Engineering",
+    "reported_loss_usd": 5000.0,
+    "reported_loss_raw": "$ 5000",
+    "description_raw": "GoPlus issued a security alert stating that the X account of crypto KOL Jadoodoo (@jadoodoo_\n) has been hacked. The attacker is sending phishing links via direct messages to fans under the guise of collaboration offers. Multiple KOLs have already fallen victim, with total losses of around $5,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/GoPlusZH/status/2061305938297143567"
+    ]
+  },
+  {
+    "event_date": "2026-05-31",
+    "target": "Phala Cloud",
+    "slowmist_attack_method": "API endpoint vulnerability",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "A vulnerability in the Phala Cloud API endpoint allowed unauthorized modifications to some Offchain KMS CVMs. The attacker deployed a malicious pre-launch script to affected CVMs, which may have accessed decrypted environment variables after boot. The issue was identified, patched, and contained on June 1, 2026. Affected users/CVMs have been directly notified via email.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/phalanetwork/status/2061523264783237153?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-05-19",
+    "target": "HermesVault",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 29466.0,
+    "reported_loss_raw": "$ 29,466",
+    "description_raw": "HermesVault, an Algorand-based privacy protocol using zero-knowledge proofs for private transactions, was exploited. The attacker exploited a flaw in the key reset defense logic within the withdrawal verification script. This allowed bypassing the zero-knowledge (zk) verification process and unauthorized withdrawal of funds. The protocol permanently shut down operations following the incident. Lead engineer Giulio Pizzini confirmed that the core zk circuit remained secure, but the auxiliary withdrawal script had a vulnerability. The team patched the issue, refunded a large portion of the funds, and initiated a full refund process for affected users.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/giuliopizzini/status/2056858969403183292?referrer=grok-com"
+    ]
+  },
+  {
+    "event_date": "2026-05-18",
+    "target": "Echo Protocol",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 821700.0,
+    "reported_loss_raw": "$ 821,700",
+    "description_raw": "Echo Protocol\u2019s eBTC on Monad was compromised due to an admin private key leak. The attacker granted themselves minting rights, minted 1,000 unbacked eBTC (~$76.7M nominal value), deposited 45 eBTC (~$3.45M) as collateral into Curvance to borrow ~11.29 WBTC (~$867K), bridged it to Ethereum, swapped for ETH, and sent ~384 ETH (~$821K) to Tornado Cash. The remaining 955 eBTC stays under attacker control, posing ongoing depegging risk.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://www.kucoin.com/zh-hant/news/flash/peckshield-reports-821-000-stolen-in-echoprotocol-hack-on-monad"
+    ]
+  },
+  {
+    "event_date": "2026-05-11",
+    "target": "Roaring Kitty\u2018s X account",
+    "slowmist_attack_method": "The X account was hacked",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "Keith Gill\u2019s (Roaring Kitty) verified X account was apparently hacked on May 11, 2026. Attackers posted the contract address of a newly launched Solana meme coin $RKC (Red Kitten Crew) on Pump.fun, along with related images. This briefly pumped the token\u2019s market cap to around $11-12 million. The posts were deleted within an hour, causing a 90%+ crash. The developer used 10 wallets to acquire ~39.52% of the supply (with ~$1,950 investment) and dumped for over $611K profit. Over 80 wallets lost approximately $2.86 million in total. Keith Gill has not issued any statement regarding the incident.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://ourcryptotalk.com/news/roaring-kitty-x-account-hacked-to-scam-rkc-token"
+    ]
+  },
+  {
+    "event_date": "2026-05-04",
+    "target": "SmartCredit",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 72000.0,
+    "reported_loss_raw": "$ 72,000",
+    "description_raw": "SmartCredit\u2019s Leveraged Lido module was exploited. The attacker drained funds from this leveraged staking feature. The team has paused the Leveraged Lido functionality, and the protocol\u2019s Loss Provision Fund will fully cover the gap for affected stakers.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/smartcredit_io/status/2051361795789496337"
+    ]
+  },
+  {
+    "event_date": "2026-04-29",
+    "target": "Sweat Foundation",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 3500000.0,
+    "reported_loss_raw": "$ 3,500,000",
+    "description_raw": "Sweat Foundation was exploited. An attacker drained approximately 13.71 billion SWEAT tokens (about 65% of total supply) from multiple foundation-controlled accounts within roughly 30 seconds, resulting in a loss of about $3.5 million. The attacker exploited a vulnerability in the SWEAT token contract using a custom drainer contract, then attempted to liquidate and bridge the funds via Ref Finance and Wormhole. The team quickly paused the contract, coordinated freezes with MEXC, and restored all external user balances.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SweatEconomy/status/2049588862352060474"
+    ]
+  },
+  {
+    "event_date": "2026-04-29",
+    "target": "Aftermath Finance",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 1140000.0,
+    "reported_loss_raw": "$ 1,140,000",
+    "description_raw": "Aftermath Finance, a decentralized perpetuals trading platform built on the Sui blockchain, suffered a security exploit in its perpetuals (perps) protocol. The vulnerability stemmed from a flaw in the fee accounting logic, specifically allowing negative \"builder code\" fees to be set. This enabled the attacker to inflate synthetic collateral and drain funds from the protocol's vault.The attacker drained approximately $1.14 million in USDC across 11 transactions within about 36 minutes. Blockchain security firm Blockaid detected and flagged the attack in real time (attacker address starting with 0x1a65...2d41e). Aftermath Finance promptly paused the affected perpetuals product and collaborated with security partners including Blockaid and CertiK for investigation. The team confirmed that the exploit was isolated to the perpetual futures market; spot trading, AMM pools, afSUI staking, and other products remained unaffected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/AftermathFi/status/2049681357559808130"
+    ]
+  },
+  {
+    "event_date": "2026-04-26",
+    "target": "Scallop",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 142000.0,
+    "reported_loss_raw": "$ 142,000",
+    "description_raw": "A deprecated side contract (V2 rewards contract) tied to Scallop\u2019s sSUI Spool rewards pool was exploited. The attacker exploited a missing validation in the reward accumulator logic (uninitialized variable in update_points function). By staking a small amount (0.2 SUI), they generated massive fake reward points (162 trillion), draining the entire leftover rewards pool of approximately 150,000 SUI. Core lending markets, user deposits, and active pools were unaffected. The team promptly froze the affected contract, committed to covering 100% of the loss from treasury, and resumed normal operations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Scallop_io/status/2048976878997041499"
+    ]
+  },
+  {
+    "event_date": "2026-04-25",
+    "target": "Purrlend",
+    "slowmist_attack_method": "Admin Privilege Abuse",
+    "reported_loss_usd": 1520000.0,
+    "reported_loss_raw": "$ 1,520,000",
+    "description_raw": "According to Purrlend's official post-mortem report, Purrlend suffered a security incident on April 25. The deployments on HyperEVM and MegaETH incurred a total loss of approximately $1.52 million. The attacker compromised the team's 2/3-admin multi-signature wallet, granting malicious addresses various administrative permissions, including the BRIDGE_ROLE. Subsequently, the attacker used the mintUnbacked function to mint approximately 2 million unbacked pUSDm and 4.85 million pUSDC without collateral. These tokens were then used as collateral to borrow real assets from the liquidity pools. HyperEVM suffered a loss of about $1.2 million, while MegaETH lost approximately $325,000. Purrlend has paused the protocol, revoked the permissions, and contacted law enforcement agencies as well as blockchain analytics firms to trace the funds. The root cause of the incident was the lack of a time-lock in the multi-signature configuration, rather than any vulnerability in the smart contract logic itself. The team is currently exploring compensation options.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/purrlend/status/2049807764944458094?s=46"
+    ]
+  },
+  {
+    "event_date": "2026-04-21",
+    "target": "Volo Vaults",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 3500000.0,
+    "reported_loss_raw": "$ 3,500,000",
+    "description_raw": "Volo, a protocol in the Sui ecosystem, disclosed on X that Volo Vaults experienced a security vulnerability today, resulting in approximately $3.5 million in assets (WBTC, XAUm, and USDC) being stolen. Volo stated that it detected the attack and immediately notified the Sui Foundation and ecosystem partners, and has frozen all vaults to prevent further losses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/volo_sui/status/2046715584201511351"
+    ]
+  },
+  {
+    "event_date": "2026-04-19",
+    "target": "Vercel",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Vercel CEO Guillermo Rauch stated on X that the company is currently conducting a full investigation into a security incident. The incident originated from a compromise of Context.ai, an AI platform used by a Vercel employee. This breach led to the attacker gaining access to the employee\u2019s Google Workspace account associated with Vercel. From there, the attacker carried out a series of actions that further escalated access within the environment. Vercel clarified that all customer environment variables are fully encrypted at rest. However, the platform allows some variables to be explicitly marked as \u201cnon-sensitive.\u201d The attacker was able to enumerate these and leverage them to gain additional access. The company noted that the speed of the attacker\u2019s actions and their understanding of Vercel\u2019s architecture were beyond expectations.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/rauchg/status/2045995362499076169"
+    ]
+  },
+  {
+    "event_date": "2026-04-16",
+    "target": "Rhea Finance",
+    "slowmist_attack_method": "Slippage Protection Logic Flaw",
+    "reported_loss_usd": 18400000.0,
+    "reported_loss_raw": "$ 18,400,000",
+    "description_raw": "According to CertiK, a security incident occurred in the NEAR ecosystem DeFi protocol Rhea Finance. The attacker created multiple fake token contracts and added liquidity to newly created pools, allegedly misleading the protocol\u2019s oracle and validation layers, thereby extracting at least approximately $7.6 million in assets from the related pools. On April 18, Rhea Finance released an update regarding its security incident, stating that its lending market suffered an unauthorized attack on April 16, specifically targeting its leveraged trading functionality. The attacker exploited a potential vulnerability in the slippage protection mechanism, stealing approximately $18.4 million in assets from the protocol\u2019s reserve pool. This resulted in actual losses within the protocol, affecting both reserve balances and participating users. The attacker has since returned approximately 3.359 million USDC and 1.564 million NEAR to the RHEA lending contract. In addition, 4.34 million USDT has been frozen\u2014of which 3.291 million USDT was frozen by Tether in the attacker\u2019s wallet, and 1.053 million USDT was frozen within NEAR Intent. Meanwhile, to ensure fund safety, the lending contract has been suspended, and recovery efforts are still ongoing. The team is actively attempting to contact the attacker in order to recover the remaining affected assets. Furthermore, the team has formally initiated tracking procedures with centralized exchanges to identify the account holder.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/rhea_finance/status/2045203607856042118"
+    ]
+  },
+  {
+    "event_date": "2026-04-13",
+    "target": "Dango",
+    "slowmist_attack_method": "Insurance Fund Logic Vulnerability",
+    "reported_loss_usd": 1900000.0,
+    "reported_loss_raw": "$ 1,900,000",
+    "description_raw": "The DeFi project Dango released an update three hours after disclosing a security incident last night, stating that the white-hat hacker has fully returned the stolen funds and received a bug bounty. User funds were not affected. The founder of Dango said that fixes will be deployed, additional security measures will be implemented, and preparations are underway to restart the blockchain. According to the earlier announcement, the attacker exploited a logic flaw in the insurance fund to steal USDC collateral. The vulnerability arose because the insurance fund allowed anyone to make donations but failed to verify that the donation amount was positive. Thanks to rate limits on the cross-chain bridge, the attacker was only able to bridge $410,000 worth of USDC to Ethereum, while the remaining $1.49 million stayed on Dango and was successfully recovered. The vulnerability has now been fixed and does not affect other trading system functions such as order matching, PnL settlement, or liquidation.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/dango/status/2043710283244331409"
+    ]
+  },
+  {
+    "event_date": "2026-04-03",
+    "target": "Adobe",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "GoPlus has issued a security alert regarding a suspected cyberattack on Adobe, involving the potential leak of approximately 13 million users' data. Affected users may face heightened risks, including phishing emails or calls impersonating Adobe customer support, precision social engineering scams leveraging leaked ticket information, and credential stuffing attacks.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/IntCyberDigest/status/2039774692085526854"
+    ]
+  },
+  {
+    "event_date": "2026-04-03",
+    "target": "HypurrFi",
+    "slowmist_attack_method": "Domain Hijacking",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "DeFi lending protocol HypurrFi tweeted that the hypurr.fi domain has been hijacked. The team has migrated its infrastructure to hypurrfi .com. The protocol itself, user funds, and team infrastructure remain unaffected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/HypurrFi/status/2040186175483416995"
+    ]
+  },
+  {
+    "event_date": "2026-03-31",
+    "target": "Arf's official X account",
+    "slowmist_attack_method": "Account Compromised",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "Huma Finance issued a warning on X stating that the official X account of its partner Arf, @arf_one, has been compromised. Please refrain from interacting with any posts from that account until it has been fully secured.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/humafinance/status/2038810915802611834"
+    ]
+  },
+  {
+    "event_date": "2026-03-31",
+    "target": "axios npm package",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "Socket has detected an active supply chain attack targeting version 1.14.1 of the core npm package, axios. The attacker injected malicious code into axios by introducing a malicious dependency that first appeared today. Developers using axios are advised to pin their versions immediately and review their project lockfiles.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Cointelegraph/status/2038843819760734636"
+    ]
+  },
+  {
+    "event_date": "2026-03-24",
+    "target": "Moonwell",
+    "slowmist_attack_method": "Governance Attack",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "According to The Block, DeFi lending protocol Moonwell is facing a governance attack on its Moonriver deployment, where an unknown attacker spent approximately $1,800 to acquire 40 million MFAM tokens and managed to buy, propose, and pass a initial vote within just 11 minutes. The attacker is seeking to transfer administrative control of seven lending markets, the comptroller, and the oracle to a malicious contract, which would enable the extraction of roughly $1.08 million in user funds. Although the proposal reached a quorum early on, \"No\" votes have since taken the lead, and while the voting is set to continue until March 27, the final outcome remains dependent on the remaining votes and community coordination.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.theblock.co/post/395272/moonwell-governance-attack"
+    ]
+  },
+  {
+    "event_date": "2026-03-24",
+    "target": "LiteLLM",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "SlowMist's CISO 23pds warned on X: \"A major supply chain attack has hit LiteLLM (97M monthly downloads) via PyPI. Simply executing pip install litellm allows attackers to steal sensitive data: SSH keys, cloud logins (AWS/GCP/Azure), K8s configs, Git credentials, API keys, shell history, crypto wallets, and DB passwords.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/im23pds/status/2036599387267428713"
+    ]
+  },
+  {
+    "event_date": "2026-03-23",
+    "target": "Bitcoin Depot",
+    "slowmist_attack_method": "Credential Compromise",
+    "reported_loss_usd": 3665000.0,
+    "reported_loss_raw": "$ 3,665,000",
+    "description_raw": "According to Decrypt, Bitcoin ATM operator Bitcoin Depot disclosed in a filing with the U.S. Securities and Exchange Commission that it experienced a security breach on March 23. Approximately 50.9 BTC, valued at around $3.665 million, was stolen by attackers. The hackers infiltrated the company\u2019s IT systems and obtained credentials for its digital asset settlement accounts, enabling unauthorized fund transfers. Bitcoin Depot stated that it has activated its incident response procedures, engaged external cybersecurity experts to investigate the attack vector and secure remaining assets, and notified law enforcement authorities. The company also noted that its customer platform and user data were not affected by the breach.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://decrypt.co/363734/bitcoin-depot-atm-operator-3-6-million-btc-stolen-security-breach"
+    ]
+  },
+  {
+    "event_date": "2026-03-01",
+    "target": "Bitrefill",
+    "slowmist_attack_method": "APT Endpoint Compromise Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Bitcoin payment service provider Bitrefill disclosed on X that it suffered a cyberattack on March 1, 2026, resulting in a customer data breach. The attack originated from a compromised employee laptop, which allowed the attacker to access parts of the company\u2019s databases and cryptocurrency wallets.The investigation indicates that the attack methods closely resemble those previously used by the North Korean DPRK Lazarus Group / Bluenoroff hacking organization in targeting crypto companies.Approximately 18,500 purchase records were affected, involving limited customer information such as email addresses, crypto payment addresses, and IP metadata. Among these, around 1,000 records contained customer names stored in encrypted form, which may also have been accessed.Bitrefill stated that customers do not need to take specific action but are advised to remain vigilant for any suspicious communications.The company added that the affected systems have been shut down and isolated, and it is working with security experts, on-chain analysts, and law enforcement agencies. Operations have now largely returned to normal.Bitrefill emphasized that it remains financially strong and profitable, capable of absorbing the losses from this incident, and will continue strengthening its cybersecurity measures, including internal access controls, monitoring, and incident response mechanisms.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.theblock.co/post/393974/crypto-ecommerce-bitrefill-discloses-cyberattack-north-koreas-lazarus-potential-suspect"
+    ]
+  },
+  {
+    "event_date": "2026-02-22",
+    "target": "Blend Pools V2",
+    "slowmist_attack_method": "Oracle Manipulation Attack",
+    "reported_loss_usd": 10200000.0,
+    "reported_loss_raw": "$ 10,200,000",
+    "description_raw": "Blend Pools V2 (specifically the YieldBlox DAO-managed lending pool on Stellar) was exploited. The attacker manipulated the price of the low-liquidity asset USTRY ~100x higher in a single trade on Stellar DEX (SDEX). This manipulated the Reflector oracle price feed. The attacker then deposited the overvalued USTRY as collateral into the Blend Pools V2 lending pool and borrowed approximately $10.2M\u2013$10.97M worth of XLM and USDC. Stellar validators and Blockaid responded quickly, freezing a large portion (~48M XLM / ~$7.3M) of the funds. Most of the stolen assets were contained, though some USDC was bridged out.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/blockaid_/status/2057118828740374669?s=46&amp;t=DLwbX9Nw4QECiyZQ0av-fg"
+    ]
+  },
+  {
+    "event_date": "2026-01-08",
+    "target": "Darren Lau's X account",
+    "slowmist_attack_method": "The X account was hacked",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "CertiK Alert tweeted that the X account of Darren Lau, founder of The Daily Ape, has been compromised by hackers. The CertiK security team warns users not to click any links or approve any transactions before control of the account is restored, and to remain vigilant.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/CertiKAlert/status/2009259852007190682"
+    ]
+  },
+  {
+    "event_date": "2026-01-05",
+    "target": "Bitlight Labs X Account",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The X (formerly Twitter) account of Bitlight Labs, a Bitcoin RGB protocol and Lightning Network stablecoin payment infrastructure provider, was suspected of being compromised and posted content related to a meme token.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/BitlightLabs"
+    ]
+  },
+  {
+    "event_date": "2026-01-01",
+    "target": "PRXVT",
+    "slowmist_attack_method": "Sybil Attack",
+    "reported_loss_usd": 97000.0,
+    "reported_loss_raw": "$ 97,000",
+    "description_raw": "PRXVT staking contract was exploited on January 1, 2026, via a Sybil Attack using CREATE2 addresses. The attacker drained approximately $97K from the protocol.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://smartcontractshacking.com/hacks/prxvt-hack-2026"
+    ]
+  },
+  {
+    "event_date": "2025-12-30",
+    "target": "Unleash Protocol",
+    "slowmist_attack_method": "Privilege compromise",
+    "reported_loss_usd": 3900000.0,
+    "reported_loss_raw": "$ 3,900,000",
+    "description_raw": "The Unleash Protocol project deployed on Story Protocol suffered an unauthorized contract upgrade, followed by the malicious transfer of user assets. The attacker manipulated the project\u2019s multisig governance privileges to perform the upgrade, resulting in the theft and cross-chain transfer of assets including WIP, USDC, WETH, stIP, and vIP to external addresses. The currently confirmed loss is approximately USD 3.9 million. Unleash has suspended all operations and initiated a full investigation and audit process, urging users to refrain from interacting with its contracts. Story Protocol itself remains unaffected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/UnleashProtocol/status/2005907998691229933"
+    ]
+  },
+  {
+    "event_date": "2025-12-27",
+    "target": "Debot",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 255000.0,
+    "reported_loss_raw": "$ 255,000",
+    "description_raw": "SlowMist founder Cos stated on the X platform that the team is currently following up on the DeBot incident and monitoring on-chain activity. According to him, users\u2019 private keys associated with DeBot have been compromised, and the hacker has so far profited approximately $255,000, with theft still ongoing. Previously, in response to community claims that the DeBot wallet may have been hacked and user funds stolen, the DeBot official team said that the secure wallet addresses are operating normally and have not been affected. They added that they have noticed the issue concerning certain addresses and are actively following up and handling the matter. On December 30, all compensation applications for Debot were fully processed and issued. The team stated that if any security issues occur in the future, they will continue to uphold a 100% compensation commitment.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/evilcos/status/2004936235949981886"
+    ]
+  },
+  {
+    "event_date": "2025-12-11",
+    "target": "0G Foundation",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 520000.0,
+    "reported_loss_raw": "$ 520,000",
+    "description_raw": "The 0G Foundation posted on X that a targeted attack on December 11 resulted in a breach of their reward contract. The attacker exploited the emergency withdrawal function of the 0G reward contract, which is used for distributing alliance rewards, stealing 520,010 $0G tokens, 9.93 ETH, and $4,200 worth of USDT. These tokens were subsequently bridged and dispersed through Tornado Cash. Due to a critical vulnerability in Next.js (CVE-2025-66478) exploited on December 5, the attacker moved laterally via internal IP addresses, affecting services including the Alignment service, Validator nodes, Gravity NFT service, Node Sales service, Compute, Aiverse, Perpdex, Ascend, and others. However, the core chain infrastructure and user funds remained unaffected.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/0G_Foundation/status/1999781517283737670"
+    ]
+  },
+  {
+    "event_date": "2025-12-11",
+    "target": "Almanak",
+    "slowmist_attack_method": "DDoS Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to an announcement by Almanak, during today\u2019s airdrop, operational errors and a DDoS attack caused delays in claims and failures in wallet deployment. The claim function was originally scheduled to open at 12:15 UTC, but was actually delayed until 12:35 UTC. About 1,100 users encountered a \u201cPENDING\u201d status issue while creating wallets.The team has restored the system, cleared the backlog, and confirmed that users\u2019 tokens remain safe and intact.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/almanak/status/1999141226319155492"
+    ]
+  },
+  {
+    "event_date": "2025-12-04",
+    "target": "PEPE",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to cybersecurity firm Blockaid, the official website of the meme coin PEPE was compromised by attackers, who modified the website\u2019s front-end code, causing users visiting the site to be redirected to a malicious page.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://cointelegraph.com/news/pepe-memecoin-site-hacked"
+    ]
+  },
+  {
+    "event_date": "2025-12-03",
+    "target": "React",
+    "slowmist_attack_method": "Remote Code Execution Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to Finance Feeds, hackers exploited a vulnerability in the React JavaScript library to inject code into websites that steals funds from cryptocurrency wallets, primarily targeting cryptocurrency platforms. On December 3, the React team released a patch for CVE-2025-55182, a vulnerability that allowed unauthenticated code to execute on remote computers. The React team strongly advised all affected modules to upgrade immediately to prevent further exploitation.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://financefeeds.com/zh-CN/hackers-exploit-javascript-library-to-deploy/"
+    ]
+  },
+  {
+    "event_date": "2025-11-23",
+    "target": "Port3 Network",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 830000.0,
+    "reported_loss_raw": "$ 830,000",
+    "description_raw": "The decentralized AI data network Port3 Network disclosed on X that its token PORT3 was maliciously minted by a hacker exploiting a cross-chain bridge vulnerability. According to on-chain analyst Yujin, the attacker used a contract flaw in the BridgeIn cross-chain bridge to mint 1 billion PORT3 tokens. The hacker then sold 162.75 million of these tokens on-chain, receiving 199.5 BNB (approximately USD 166,000) and causing the PORT3 price to plunge by 76%. Port3 Network later released an incident report explaining that the root cause stemmed from its use of NEXA Network\u2019s CATERC20 cross-chain token solution. CATERC20 contains a boundary-condition validation vulnerability: after token ownership is renounced, a key function returns a value of 0, which unintentionally satisfies the ownership check condition. This results in permission verification failure, allowing attackers to perform privileged operations\u2014including unauthorized token minting\u2014without proper authorization. Notably, this issue was not identified in the CATERC20 audit report. Since Port3 had previously renounced ownership of the token to achieve greater decentralization, it remained vulnerable to this flaw. Following the incident, the Port3 team urgently removed the remaining on-chain liquidity, and several centralized exchanges suspended PORT3 deposits. Unable to continue selling, the attacker burned the remaining 837.25 million unsold PORT3 tokens approximately 40 minutes earlier.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Port3Network/status/1992471015948210277"
+    ]
+  },
+  {
+    "event_date": "2025-11-20",
+    "target": "WLFI",
+    "slowmist_attack_method": "Phishing Attack & Private Key Leakage",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to a WLFI announcement, prior to the platform\u2019s official launch, some user wallets were compromised due to phishing attacks or mnemonic phrase leaks. WLFI emphasized that the incident was not caused by any platform or smart contract vulnerability, but originated from third-party security issues. The team has developed new smart contract logic that allows assets to be reassigned to secure new wallets after completing KYC verification. Wallets that have not submitted a request or failed verification will remain frozen, though users can initiate the recovery process through customer support. According to Emmett Gallic, World Liberty Fi burned a total of 166.67 million WLFI tokens (worth approximately $22.14 million) from a suspected compromised wallet and reallocated an equal amount of tokens to a new secure address.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/worldlibertyfi/status/1991243561715519933"
+    ]
+  },
+  {
+    "event_date": "2025-11-17",
+    "target": "Nofx AI",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "SlowMist founder Cos reminded users of the NOFX AI open-source automated trading system to be aware of potential security risks. Although the NOFX AI open-source work has shown good intentions, real theft incidents have already occurred, and some users\u2019 wallet private keys as well as CEX/DEX API keys have been leaked as a result. Cos confirmed that this vulnerability also affects the wallet private key security of Aster users. He stated that SlowMist has collaborated with relevant security teams to notify affected users as much as possible to help reduce risks, and advised users to stay vigilant and take timely security measures.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/evilcos/status/1990275471318401394"
+    ]
+  },
+  {
+    "event_date": "2025-11-14",
+    "target": "Aftermath",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Sui\u2019s official X account issued a reminder stating that the X account of Aftermath, a liquid staking protocol in the Sui ecosystem, has been compromised. Users are advised not to interact with the account until the team regains control.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SuiNetwork/status/1989137508907774053"
+    ]
+  },
+  {
+    "event_date": "2025-10-28",
+    "target": "GMGN",
+    "slowmist_attack_method": "Phishing Attack",
+    "reported_loss_usd": 10300.0,
+    "reported_loss_raw": "$10,300",
+    "description_raw": "GMGN co-founder Haze posted on X (Twitter):\"We have noticed a deliberate external phishing attack targeting GMGN. The attacker induced users to click by forging a third-party token website, triggering unauthorized transactions not initiated by the users themselves.Currently, this issue has been completely resolved, affected accounts have been restored to safety, and similar phishing attacks have been fully blocked.This incident affected approximately 107 users.For losses caused by unauthorized control of accounts, we will provide 100% full compensation and distribute it to GMGN accounts within today.\"",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/haze0x/status/1983042747406651440"
+    ]
+  },
+  {
+    "event_date": "2025-10-25",
+    "target": "GMGN",
+    "slowmist_attack_method": "Sandwich Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "On October 27, GMGN Co-founder Haze posted on X, stating that the team has completed compensation payments to users affected by the MEV attack. He noted that 48 hours earlier, GMGN had suffered an MEV attack involving 729 affected transactions. The team has since finished calculating the losses and distributed compensation to the affected users\u2019 wallets yesterday.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/haze0x/status/1982635884341272897"
+    ]
+  },
+  {
+    "event_date": "2025-10-19",
+    "target": "Astra Nova",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 9090000.0,
+    "reported_loss_raw": "$ 9,090,000",
+    "description_raw": "Astra Nova announced on X that its third-party managed account was compromised, allowing the attacker to take control and liquidate assets. The team stated that they are taking necessary measures and will involve law enforcement once evidence collection is complete. They also emphasized that the smart contracts and infrastructure remain secure. According to monitoring by @ai_9684xtpa, the attacker associated with Astra Nova dumped tokens and gained at least $9.09 million in profit. Among them, the addresses beginning with 0x9E6 and 0x643 profited more than $6.18 million. Except for address 0x643, which used Zerion to sell, most of the sales were executed through 1inch.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/Astra__Nova/status/1979828018295316582"
+    ]
+  },
+  {
+    "event_date": "2025-10-15",
+    "target": "Typus Finance",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 3440000.0,
+    "reported_loss_raw": "$ 3,440,000",
+    "description_raw": "According to Typus Finance\u2019s post-incident analysis report, on October 15, 2025, an attacker exploited a critical vulnerability in the project\u2019s oracle module to drain funds from the TLP contract. The stolen assets include 588,357.9 SUI, 1,604,034.7 USDC, 0.6 xBTC, and 32.227 suiETH, with an estimated total value of approximately USD 3.44 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://medium.com/@TypusFinance/typus-finance-tlp-oracle-exploit-post-mortem-report-response-plan-ce2d0800808b"
+    ]
+  },
+  {
+    "event_date": "2025-09-28",
+    "target": "dTRINITY",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 56000.0,
+    "reported_loss_raw": "$ 56,000",
+    "description_raw": "The DeFi protocol dTRINITY suffered an exploit targeting its swap adapter contracts, resulting in the loss of approximately $56,000 belonging to core team members.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/dTRINITY_DeFi/status/1972564217904644557"
+    ]
+  },
+  {
+    "event_date": "2025-09-27",
+    "target": "Hyperdrive",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 782000.0,
+    "reported_loss_raw": "$ 782,000",
+    "description_raw": "The DeFi protocol Hyperdrive, built on the Hyperliquid chain, was exploited. The attacker repeatedly abused an arbitrary call vulnerability in the router, resulting in a loss of approximately $782,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/hyperdrivedefi/status/1972095669403111519"
+    ]
+  },
+  {
+    "event_date": "2025-09-26",
+    "target": "HyperVault",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 3610000.0,
+    "reported_loss_raw": "$ 3,610,000",
+    "description_raw": "The DeFi protocol HyperVault, built on the Hyperliquid chain, has executed a rug pull, making off with approximately $3.61 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.odaily.news/zh-CN/newsflash/450084"
+    ]
+  },
+  {
+    "event_date": "2025-09-24",
+    "target": "SBI Crypto",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 21000000.0,
+    "reported_loss_raw": "$ 21,000,000",
+    "description_raw": "According to on-chain investigator ZachXBT, Japan\u2019s financial giant SBI Group may have experienced a security breach involving its cryptocurrency mining subsidiary, SBI Crypto. Wallet addresses associated with the company reportedly saw approximately USD 21 million in suspicious outflows on September 24. The stolen funds included multiple cryptocurrencies such as Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Dogecoin (DOGE), and Bitcoin Cash (BCH). The attacker transferred the funds through five instant exchange platforms before ultimately depositing them into the Tornado Cash mixing protocol.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.coindesk.com/business/2025/10/01/sbi-crypto-reportedly-hit-by-usd21m-hack-with-suspected-dprk-links"
+    ]
+  },
+  {
+    "event_date": "2025-09-23",
+    "target": "Corepound",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 400000.0,
+    "reported_loss_raw": "$ 400,000",
+    "description_raw": "The DeFi project Corepound, built on the Core DAO blockchain, has carried out a rug pull, making off with approximately $400,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/CommunityofCore/status/1970916743628587292"
+    ]
+  },
+  {
+    "event_date": "2025-09-14",
+    "target": "Yala",
+    "slowmist_attack_method": "Security Vulnerability",
+    "reported_loss_usd": 7640000.0,
+    "reported_loss_raw": "$ 7,640,000",
+    "description_raw": "On September 14, the stablecoin protocol Yala disclosed that a recent security incident occurred when a hacker abused a temporary deployment key during the setup of an authorized cross-chain bridge. The attacker deployed an unauthorized bridge and extracted 7.64 million USDC (approximately 1,636 ETH). On October 29, the suspect involved in the case was arrested by law enforcement in Bangkok, Thailand, and most of the affected funds have been successfully recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://blog.yala.org/yala-post-mortem-september-14/"
+    ]
+  },
+  {
+    "event_date": "2025-09-12",
+    "target": "Kame Aggregator",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1320000.0,
+    "reported_loss_raw": "$ 1,320,000",
+    "description_raw": "Kame Aggregator suffered an exploit due to a design flaw in the swap() function, which allowed arbitrary executor calls. This vulnerability enabled attackers to transfer tokens authorized to the AggregationRouter by users, particularly those with unlimited or oversized approvals. The total value of affected assets was approximately $1.32 million, of which around $946,000 was recovered by the Kame team from the primary exploiter, and about $22,000 was recovered by white-hat hackers.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://kameagg.substack.com/p/post-mortem-kame-aggregator-exploit"
+    ]
+  },
+  {
+    "event_date": "2025-09-08",
+    "target": "Nemo Protocol",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 2400000.0,
+    "reported_loss_raw": "$ 2,400,000",
+    "description_raw": "Nemo Protocol, a DeFi protocol on Sui, was attacked, resulting in a loss of approximately $2.4 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://suiscan.xyz/mainnet/account/0x01229b3cc8469779d42d59cfc18141e4b13566b581787bf16eb5d61058c1c724/activity"
+    ]
+  },
+  {
+    "event_date": "2025-09-08",
+    "target": "SwissBorg",
+    "slowmist_attack_method": "Third-party Vulnerability",
+    "reported_loss_usd": 41500000.0,
+    "reported_loss_raw": "$ 41,500,000",
+    "description_raw": "Swiss crypto platform SwissBorg suffered a security incident in which approximately 192,600 SOL (~$41.5M) was stolen on Solana. According to SwissBorg\u2019s official statement, the incident was caused by a compromised partner API, impacting its SOL Earn program.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/swissborg/status/1965123506477359471"
+    ]
+  },
+  {
+    "event_date": "2025-08-27",
+    "target": "BetterBank",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 5000000.0,
+    "reported_loss_raw": "$ 5,000,000",
+    "description_raw": "The PulseChain-based defi project BetterBank was exploited by an attacker who took advantage of a vulnerability that allowed them to mint arbitrary tokens, some of which they then swapped for ETH. The attacker later returned around $2.7 million of the stolen assets, having cashed out around $1.4 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.web3isgoinggreat.com/?id=betterbank-exploit"
+    ]
+  },
+  {
+    "event_date": "2025-08-12",
+    "target": "ODIN.FUN",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 7000000.0,
+    "reported_loss_raw": "$ 7,000,000",
+    "description_raw": "The Bitcoin-based memecoin launchpad ODIN.FUN suffered an exploit, losing approximately 58.2 BTC (around $7 million). The attacker allegedly manipulated the prices of several tokens and then withdrew bitcoin based on the inflated values. On August 17, ODIN.FUN co-founder Bob Bodily stated: \u201cMade great progress on funds today (as many of you already saw). 30+ BTC back into Odin. More funds in progress too.\u201d",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/BobBodily/status/1955477887701881007"
+    ]
+  },
+  {
+    "event_date": "2025-06-27",
+    "target": "PANews",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The @PANewsCN X account has been compromised. Do not click on any recent links or interact with its posts. Please wait for an official update.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1938442696944980343"
+    ]
+  },
+  {
+    "event_date": "2025-06-23",
+    "target": "CoinTelegraph",
+    "slowmist_attack_method": "Frontend Attack",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "According to monitoring by Scam Sniffer, the front end of CoinTelegraph has been hacked\u2014exercise caution. Reportedly, clicking the CoinTelegraph website triggers a pop-up containing \u201cairdrop\u201d information that cannot be closed within the page.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Other&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/realScamSniffer/status/1936956218423320916"
+    ]
+  }
+]

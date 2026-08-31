@@ -1,0 +1,782 @@
+[
+  {
+    "event_date": "2026-08-15",
+    "target": "FoxMarket",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 118700.0,
+    "reported_loss_raw": "$ 118,700",
+    "description_raw": "FoxMarket (a DeFi project on BSC) had its FoxLpBondsPool.stake() function calculate and fix _stakeAmount from a manipulable Pancake AMM spot quote before a large USDT\u2192Fox swap. The attacker used flash loans to skew pair reserves, then addLiquidity used a mismatched ratio; Treasury.lpBonds() trusted the stale value, minted excess Fox tokens, and sent inviter rewards to an attacker-controlled address, which were sold in the same transaction.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2089196291800908164"
+    ]
+  },
+  {
+    "event_date": "2026-08-02",
+    "target": "LOOPSDAO",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 690000.0,
+    "reported_loss_raw": "$ 690000",
+    "description_raw": "LOOPSDAO\u2019s LpdFi protocol on BSC was exploited. The attacker used a flash loan to manipulate the spot price of the thin PancakeSwap LPD/USDC pair (no TWAP or deviation guard), opened a massively inflated interest-bearing position with minimal LPD, and claimed interest right across the daily settlement boundary. This triggered the protocol to burn its own Cake-LP and pay out the inflated amount, draining approximately $690,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/DefimonAlerts/status/2084157533204197380"
+    ]
+  },
+  {
+    "event_date": "2026-08-02",
+    "target": "MOKE",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 907700.0,
+    "reported_loss_raw": "$ 907700",
+    "description_raw": "The MOKE token protocol on BNB Chain was exploited via a smart contract vulnerability. The attacker abused an unprotected public claim() function in MokeToken.releaseContract() (no eligibility check on the caller), repeatedly draining ~166 million MOKE from the protocol\u2019s internal reserve pool, then used flash loans, Venus leverage, LP removal, and dividend distribution mechanisms to convert it into ~1,546 BNB, resulting in a loss of approximately $907,700.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TenArmorAlert/status/2084102947500368164"
+    ]
+  },
+  {
+    "event_date": "2026-07-30",
+    "target": "Swan Treasury",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 625000.0,
+    "reported_loss_raw": "$ 625,000",
+    "description_raw": "The decentralized asset management protocol Swan Treasury on BNB Chain was exploited due to the leakage of an off-chain signer's private key (the _signer key hardcoded in the ZhaiquanBuy contract). The attacker forged valid signatures and used PancakeSwap flash loans to purchase approximately 687,000 STY tokens at around a 100x discount (spending approximately 19,700 USDT). The attacker then forged the related claim()/transfer signatures and dumped the tokens into the STY/USDT pool, making a profit of approximately $625,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/DefimonAlerts/status/2083039796784410802"
+    ]
+  },
+  {
+    "event_date": "2026-07-28",
+    "target": "Crypto DAO",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 52000.0,
+    "reported_loss_raw": "$ 52,000",
+    "description_raw": "The Pro token contract of Crypto DAO was exploited due to missing access control, with the attacker calling publicly accessible vault functions. According to GoPlus Security\u2019s analysis, the attacker\u2019s actual profit was approximately $52,000, while the contract lost around 167,200 Pro tokens. The related addresses monitored by Blockaid collectively held approximately $8.2 million worth of USDT (not the actual stolen amount).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/GoPlusSecurity/status/2082353004980707444"
+    ]
+  },
+  {
+    "event_date": "2026-07-28",
+    "target": "LULA",
+    "slowmist_attack_method": "Price Manipulation Attack",
+    "reported_loss_usd": 578100.0,
+    "reported_loss_raw": "$ 578,100",
+    "description_raw": "The LULA token on BSC was exploited when attackers abused the privileged recycle() function in its contract, combined with an approximately $237 million flash loan to manipulate PancakeSwap V2 liquidity pool reserves, resulting in a loss of about $578,100.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/CertiKAlert/status/2082309959484911845"
+    ]
+  },
+  {
+    "event_date": "2026-07-22",
+    "target": "42DAO",
+    "slowmist_attack_method": "Price Oracle Manipulation",
+    "reported_loss_usd": 915000.0,
+    "reported_loss_raw": "$ 915,000",
+    "description_raw": "The 42DAO protocol was exploited. The attacker manipulated the Median Oracle with an abnormally low BTCB price, triggering forced liquidations of multiple BTCB vaults and profiting approximately $915,000. This caused its algorithmic stablecoin Balance Coin (BLC) to crash over 99% from near $1 to about $0.001.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2079759793192132810"
+    ]
+  },
+  {
+    "event_date": "2026-06-28",
+    "target": "AIDC",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 121000.0,
+    "reported_loss_raw": "$ 121,000",
+    "description_raw": "AIDC token on BSC was exploited due to a flaw in _sellTransfer()/burn logic. The attacker manipulated the PancakeSwap LP pool, causing burn fees to accumulate without properly deducting from sender balance, draining ~$121K WBNB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2071437371590238249"
+    ]
+  },
+  {
+    "event_date": "2026-06-20",
+    "target": "LABUBU/OLPC",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 1100000.0,
+    "reported_loss_raw": "$ 1,100,000",
+    "description_raw": "The OLPC/LABUBU liquidity pool on PancakeSwap V2 (BNB Chain) was exploited, resulting in approximately $1.1 million in losses. The attacker exploited a logic vulnerability in the OLPC token contract\u2019s _update function. Approximately 46 days prior, the OLPC owner had maliciously changed the decimalsValue parameter to an extremely large value (7326680472586200649) and later renounced ownership. A small OLPC transfer triggered massive burns of OLPC and LABUBU tokens from the pool (to the dead address), desynchronizing the pair\u2019s cached reserves. This allowed the attacker to drain a large amount of LABUBU, which was swapped through intermediate pools for ~1.115 million USDT. Funds were bridged to Ethereum and deposited into Tornado Cash.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/PeckShieldAlert/status/2068314444422402515"
+    ]
+  },
+  {
+    "event_date": "2026-06-19",
+    "target": "JB",
+    "slowmist_attack_method": "Flashloan Price Manipulation",
+    "reported_loss_usd": 50000.0,
+    "reported_loss_raw": "$ 50,000",
+    "description_raw": "The JB DeFi protocol suffered an exploit involving flashloan and price manipulation, resulting in approximately $50,000 being drained. The attack exploited protocol logic through flash loan-enabled price manipulation on the Solidity-based contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://defillama.com/hacks"
+    ]
+  },
+  {
+    "event_date": "2026-06-17",
+    "target": "Little Boy Plus",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 367000.0,
+    "reported_loss_raw": "$ 367,000",
+    "description_raw": "On June 17, 2026, Little Boy Plus \u2014 a fully decentralized DeFi mining protocol on BSC claiming \u201cno team, no admin keys\u201d \u2014 was exploited. An attacker exploited a logic vulnerability in the LBPHashrate contract\u2019s _update() function. By triggering it with a zero-value transferFrom call (bypassing OpenZeppelin authorization), the attacker unauthorizedly called _harvest and minted LBP tokens directly to the PancakeSwap LBP/USDT pair via mintReward. This inflated the pair\u2019s balance without updating reserves, allowing the attacker to drain ~377,642 USDT (~$367k\u2013$378k) through PancakePair.swap(). The funds were later sent to Tornado Cash.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2067424733747122259"
+    ]
+  },
+  {
+    "event_date": "2026-06-17",
+    "target": "DIP",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 111000.0,
+    "reported_loss_raw": "$ 111,000",
+    "description_raw": "The DIP token contract (Etherisc ecosystem) was exploited due to a missing return statement in the _transfer() function for PancakeSwap-routed trades, causing double transfers. The attacker used skim(router) and sync() to manipulate the pool and drain ~$111K USDC.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2067078816514908286"
+    ]
+  },
+  {
+    "event_date": "2026-06-05",
+    "target": "DTXT/USDT liquidity pair on BSC",
+    "slowmist_attack_method": "Business Logic Vulnerability",
+    "reported_loss_usd": 35041.0,
+    "reported_loss_raw": "$ 35,041",
+    "description_raw": "The DTXT/USDT liquidity pair on BSC was exploited. The attacker exploited a forgeable liquidity-addition detection logic in the DTXT contract (by sending a small amount of USDT directly to the pair address, tricking the contract into classifying large sells as liquidity additions). This bypassed sell fees and drained the pool, resulting in a loss of approximately $35,041 USDT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2062876917045608594"
+    ]
+  },
+  {
+    "event_date": "2026-06-04",
+    "target": "ATM",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 243500.0,
+    "reported_loss_raw": "$ 243,500",
+    "description_raw": "The ATM token on BSC was exploited due to a flaw in its custom transferFrom() function logic (which automatically swapped ~20% of transferred amounts to BSC-USD). The attacker repeatedly triggered the mechanism to drain approximately $243,500 from the protocol.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TenArmorAlert/status/2062351507056460166"
+    ]
+  },
+  {
+    "event_date": "2026-06-04",
+    "target": "BYToken",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 87402.0,
+    "reported_loss_raw": "$ 87,402",
+    "description_raw": "The public triggerAutoBurn() maintenance function in BYToken contract on BSC was abused. The attacker took a Moolah flashloan (~422k WBNB), performed Pancake swaps, then called the unprivileged function. This burned ~67.8 quadrillion BY directly from the BY/WBNB pair and called pair.sync(), rewriting reserves to 1 BY + full WBNB. The extreme skew allowed massive BY sells to drain nearly all WBNB liquidity, netting the attacker ~146.60 BNB ($87,402).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TenArmorAlert/status/2062708160700322257"
+    ]
+  },
+  {
+    "event_date": "2026-06-03",
+    "target": "ApeBond",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 3421.0,
+    "reported_loss_raw": "$ 3,421",
+    "description_raw": "ApeBond's ApeYieldVault smart contract on BSC was exploited. The attacker used a public helper contract to call migrateToVotingEscrow with duplicate pool IDs, inflating a lock amount from ~1.71 quadrillion ABOND to ~29 quadrillion ABOND. They then unlocked, claimed the inflated lock, sold ABOND in the public ABOND/WBNB pool, repaid a Moolah flashloan, and kept ~5.72 WBNB profit. The entire flow was permissionless and on-chain.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/clarahacks/status/2062564868130029636"
+    ]
+  },
+  {
+    "event_date": "2026-06-01",
+    "target": "TESSERA",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 2400000.0,
+    "reported_loss_raw": "$ 2,400,000",
+    "description_raw": "The DeFi project TesseraDAO (TSR token) on BNB Chain was attacked. Hackers gained control of the core contract, minted 99 million TSR tokens, and sold them on PancakeSwap for approximately $2.4 million, causing the TSR price to plummet 99%. The funds were bridged to Ethereum and laundered via Tornado Cash.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SpecterAnalyst/status/2061704532761956614"
+    ]
+  },
+  {
+    "event_date": "2026-05-30",
+    "target": "AROS",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 295300.0,
+    "reported_loss_raw": "$ 295,300",
+    "description_raw": "The DeFi project AROS on BSC was exploited. The attacker interacted with the AROS/USDT PancakeSwap liquidity pool and drained approximately $295.3K USDT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TenArmorAlert/status/2061289921990570349"
+    ]
+  },
+  {
+    "event_date": "2026-05-29",
+    "target": "YSDAO",
+    "slowmist_attack_method": "Reserve Manipulation Attack",
+    "reported_loss_usd": 19500.0,
+    "reported_loss_raw": "$ 19,500",
+    "description_raw": "Computility-associated YSDAO project on BSC suffered a liquidity pool attack on PancakeSwap V2. The hacker manipulated reserves via contract calls and extracted funds, resulting in approximately $19.5K loss.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TenArmorAlert/status/2061278221497254013"
+    ]
+  },
+  {
+    "event_date": "2026-05-28",
+    "target": "Joe Agent",
+    "slowmist_attack_method": "Reentrancy Attack",
+    "reported_loss_usd": 45000.0,
+    "reported_loss_raw": "$ 45,000",
+    "description_raw": "The Joe Agent ($JOE) project smart contract had a single-function reentrancy vulnerability. The attacker exploited the logic in _removeLiquidityViaContract where BNB was sent via low-level call before updating lpInfo[user].lpAmount, performing ~25 reentrancy loops to steal 62.5 BNB and ~1.196M JOE.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/2059887450663551352"
+    ]
+  },
+  {
+    "event_date": "2026-05-28",
+    "target": "DxSale",
+    "slowmist_attack_method": "Ownership Override Attack",
+    "reported_loss_usd": 7300000.0,
+    "reported_loss_raw": "$ 7,300,000",
+    "description_raw": "Legacy liquidity locker contracts of DxSale (a veteran DeFi launchpad on BNB Chain) were exploited, draining approximately $7.3 million from over 1,400 old LPs locked since 2021. The attacker used owner privileges via a custom drainer to set near-zero fees, backdate unlock times to 1970, and withdraw funds; on-chain links suggest possible team connections, with the platform remaining silent.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/eyeonchains/status/2060083479631843408"
+    ]
+  },
+  {
+    "event_date": "2026-05-27",
+    "target": "Superfortune",
+    "slowmist_attack_method": "Multisig Address Tampering",
+    "reported_loss_usd": 15180000.0,
+    "reported_loss_raw": "$ 15180000",
+    "description_raw": "On May 27, 2026, Superfortune ($GUA) experienced a security incident. The team intended to transfer additionally unlocked tokens to the airdrop claim contract address. However, during the multisig transaction execution, the recipient address was altered, resulting in approximately 14.98 million GUA (worth about $15.18 million at the time) being sent to a suspected hacker-controlled address. The attacker subsequently dumped all the tokens on-chain for roughly 2,784 ETH (approximately $5.66 million at the time) and distributed the funds across multiple wallets. The incident caused GUA's price to plummet by 70-76%. Official preliminary investigation points to address tampering in a multisignature transaction. Although initially described as a \"suspected address poisoning attack,\" the possibility is considered low due to no prior interaction between the hacker address and any Superfortune-related addresses. The team is continuing its investigation and will provide further updates.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/SUPERFORTUNE888/status/2059818459421372485"
+    ]
+  },
+  {
+    "event_date": "2026-05-26",
+    "target": "SKP",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 212850.0,
+    "reported_loss_raw": "$ 212,850",
+    "description_raw": "On BSC, the SKP token suffered a token-side LP balance drain + sync attack. The attacker profited approximately $212.85k in a single transaction (162,854.21 USDT + 75.88 BNB). The root cause was a flaw in SKP token logic that allowed extra SKP tokens to be transferred out from the Pancake V2 SKP/USDT LP after a large buy, followed by calling sync() to write incorrect reserves, pushing the SKP reserve close to zero. The attacker used flash loans to amplify the attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/TenArmorAlert/status/2059454844201562191"
+    ]
+  },
+  {
+    "event_date": "2026-05-12",
+    "target": "SQ Protocol",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 346100.0,
+    "reported_loss_raw": "$ 346,100",
+    "description_raw": "On May 12, 2026, at approximately 10:11 UTC, the SQ Protocol on BNB Chain was exploited for $346,137. The attacker abused a hardcoded owner backdoor in the verified Staking contract (0x404404a845fff0201f3a4d419b4839fc419c99f7). Using a type-0x4 transaction with authorizationList, they took ownership, minted fake staking claims, redeemed ~296.5K USDT, swept SQi tokens, and dumped them in the SQi/USDT pool for additional profit. Total realized loss: approximately $346.1K.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Defi_Nerd_sec/status/2054425936746148148"
+    ]
+  },
+  {
+    "event_date": "2026-04-28",
+    "target": "JUDAO",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 228000.0,
+    "reported_loss_raw": "$ 228,000",
+    "description_raw": "The JUDAO token / liquidity pool on BSC was exploited via Flashloan-assisted Manipulation. The attacker used flash loans to manipulate pool reserves or pricing, draining funds through PancakeSwap V2 routes (e.g., BUSD-JUDAO pair). Losses included at least 205,259 USDT plus 36 BNB.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/DefimonAlerts/status/2049019388947321334"
+    ]
+  },
+  {
+    "event_date": "2026-04-13",
+    "target": "MONA",
+    "slowmist_attack_method": "Reserve Manipulation Attack",
+    "reported_loss_usd": 60950.0,
+    "reported_loss_raw": "$ 60,950",
+    "description_raw": "On April 14, 2026, attackers exploited the BurnAddress mechanism in the MONA token on BSC via a Deferred LP Burn / reserve manipulation attack. The attacker first farmed 10,000 MONA through 25 fresh accounts, sold 9,900 MONA to create a deferred burn credit, bought out most of the pool's MONA inventory, then triggered BurnAddress.burn() with a zero-value transferFrom to burn MONA directly from the LP and call sync(). This left the MONA/USDT pair with near-zero MONA but almost full USDT reserves. Finally, selling the remaining ~100 MONA drained a large amount of USDT. Flash loans from Moolah and borrowing from Venus were used for funding and fully repaid in the same transaction. The root cause was non-atomic handling in _handleSell() and burnsellMona(): USDT payout happened immediately while MONA burn was deferred and could be triggered later, breaking the AMM invariant.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.darknavy.org/web3/exploits/burnaddress-mona-deferred-lp-burn/"
+    ]
+  },
+  {
+    "event_date": "2026-04-07",
+    "target": "TGAI",
+    "slowmist_attack_method": "Reserve Manipulation Attack",
+    "reported_loss_usd": 11940.0,
+    "reported_loss_raw": "$ 11,940",
+    "description_raw": "Computility-associated TGAI project on BSC suffered a reserve manipulation attack on PancakeSwap V2 liquidity pool. The hacker used a ~$2.4M USDT flash loan, deployed multiple helper contracts to buy TGAI, manipulated reserves via sync() function with ~17.5K USDT injection, then swapped to extract profits, resulting in approximately $11.94K loss.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/exvulsec/status/2041447720016396698"
+    ]
+  },
+  {
+    "event_date": "2026-04-04",
+    "target": "BSC TMM/USDT",
+    "slowmist_attack_method": "Reserve Manipulation Attack",
+    "reported_loss_usd": 1665000.0,
+    "reported_loss_raw": "$ 1,665,000",
+    "description_raw": "According to ExVul monitoring, a TMM/USDT reserve manipulation attack occurred on the BSC (BNB Chain), resulting in a loss of approximately 1.665 million USDT. The attacker utilized flash loans from Lista DAO Moolah, Venus, Aave V3, PancakeSwap Vault, and Uniswap PoolManager to manipulate the TMM/USDT trading pair. By burning TMM to a dead address, the attacker reduced the pair's reserve to just 1 TMM, subsequently swapping 850 million TMM for approximately 272 million USDT. After repaying all flash loans, the attacker transferred a net profit of roughly 1.665 million USDT to associated addresses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/exvulsec/status/2040649377803546859"
+    ]
+  },
+  {
+    "event_date": "2026-04-03",
+    "target": "EIP-7702 Victim",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 17200.0,
+    "reported_loss_raw": "$ 17,200",
+    "description_raw": "A user EOA on BNB Chain (with EIP-7702 delegation) that had set delegated code via an EIP-7702 Type-4 transaction was drained for ~$17.2K. The delegated code included a pancakeV3SwapCallback() function without proper access control. The attacker directly called this callback with crafted calldata, forcing the victim account to transfer its tokens to an attacker-controlled address. The victim had enabled the delegation to support swap-related logic.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://blocksec.com/blog/weekly-web3-security-incident-roundup-mar-30-apr-5-2026"
+    ]
+  },
+  {
+    "event_date": "2026-04-02",
+    "target": "SAS Token",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 12000.0,
+    "reported_loss_raw": "$ 12,000",
+    "description_raw": "The SAS Token on BNB Chain was exploited via a flawed custom transfer logic (Deferred Burn Exploit). The token\u2019s custom transfer logic had a flaw: sending SAS to the LP pool only incremented a global sellBurn counter, while any subsequent ordinary transfer could burn SAS directly from the pool and call sync() to rewrite reserves, bypassing the AMM\u2019s swap logic. The attacker accumulated sellBurn credit through sells, triggered an unrelated ordinary transfer to burn SAS from the pool down to ~1 wei, and then reverse-swapped to extract profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://blocksec.com/blog/weekly-web3-security-incident-roundup-mar-30-apr-5-2026"
+    ]
+  },
+  {
+    "event_date": "2026-03-31",
+    "target": "LML/USDT staking protocol",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 950000.0,
+    "reported_loss_raw": "$ 950,000",
+    "description_raw": "LML/USDT staking protocol on BNB Chain suffered a price manipulation attack. The hacker used flash loans to massively inflate the LML/USDT pool spot price, exploited a logic flaw in the staking contract\u2019s reward calculation (which relied on a stale stored price with a 3600-second cooldown instead of live AMM price), batch-claimed oversized LML rewards from pre-staked addresses via EIP-7702, and sold them in the distorted pool for approximately $950,000 profit, causing the LML token price to crash 99.6%.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Phalcon_xyz/status/2039211832947408928"
+    ]
+  },
+  {
+    "event_date": "2026-03-26",
+    "target": "Unknown Stake Contract",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 133000.0,
+    "reported_loss_raw": "$ 133,000",
+    "description_raw": "According to monitoring by BlockSec Phalcon, a suspicious transaction targeting an unknown contract (Stake) on the BSC chain has been detected, resulting in a loss of approximately $133,000. The attacker exploited a spot price dependency vulnerability within the Stake contract. By manipulating the price of TUR in the TUR-NOBEL pool and subsequently staking TUR, the attacker triggered reward calculations based on the artificially inflated price. They then claimed the amplified rewards through a referral account and ultimately profited by swapping the stolen TUR for USDT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Phalcon_xyz/status/2037245722454876304"
+    ]
+  },
+  {
+    "event_date": "2026-03-23",
+    "target": "BCE-USDT liquidity pool",
+    "slowmist_attack_method": "Reserve Manipulation Attack",
+    "reported_loss_usd": 679000.0,
+    "reported_loss_raw": "$ 679,000",
+    "description_raw": "According to BlockSec Phalcon's monitoring, the BCE-USDT pool on PancakeSwap (BSC chain) was exploited a few hours ago, resulting in a loss of approximately $679,000. The root cause lies in a vulnerability within the BCE token's burn mechanism. The attacker deployed two malicious contracts to bypass buy/sell restrictions and trigger the token burn, ultimately extracting about $679,000 from the pool by manipulating its reserves.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/phalcon_xyz/status/2035998829296984572?s=46"
+    ]
+  },
+  {
+    "event_date": "2026-03-22",
+    "target": "Cyrus Finance",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 516840.0,
+    "reported_loss_raw": "$ 516,840",
+    "description_raw": "The DeFi yield protocol Cyrus Finance (CyrusTreasury contract) on BNB Chain was exploited. The attacker used a flash loan to manipulate the PancakeSwap V3 ETH/USDT pool spot price, triggering a vulnerability in the withdrawUSDTFromAny function to over-extract liquidity from an LP position, profiting approximately $516,840 before laundering the funds via Tornado Cash in 9 batches.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://certik.medium.com/cyrus-finance-incident-analysis-91f1754a058f"
+    ]
+  },
+  {
+    "event_date": "2026-03-15",
+    "target": "Venus Protocol",
+    "slowmist_attack_method": "Donation Attack",
+    "reported_loss_usd": 3700000.0,
+    "reported_loss_raw": "$ 3,700,000",
+    "description_raw": "Venus Protocol\u2019s Core Pool THE (Thena) market was exploited. The attacker accumulated THE tokens over 9 months, used a donation attack (direct transfer bypassing supply cap and mint) to inflate the vTHE exchange rate, combined with price manipulation borrow loops, extracted ~$3.7M in assets and left ~$2.15M in bad debt for the protocol.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/VenusProtocol/status/2033241018704044377"
+    ]
+  },
+  {
+    "event_date": "2026-03-14",
+    "target": "Goose Finance",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 8435.0,
+    "reported_loss_raw": "$ 8,435",
+    "description_raw": "Goose Finance, a yield farming protocol on BNB Chain, was exploited due to a share accounting flaw in the StrategyGooseEgg contract. The attacker repeatedly looped deposit() and withdraw() to mint inflated shares before rewards were settled, then redeemed them at higher value after harvest, profiting ~$8,435.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://blocksec.com/blog/weekly-web3-security-incident-roundup-mar-9-mar-15-2026"
+    ]
+  },
+  {
+    "event_date": "2026-03-12",
+    "target": "AM/USDT pool",
+    "slowmist_attack_method": "Reserve Manipulation Attack",
+    "reported_loss_usd": 131000.0,
+    "reported_loss_raw": "$ 131,000",
+    "description_raw": "The AM/USDT pool on the BSC chain was exploited several hours ago, with estimated losses of approximately $131,000. The root cause lies in a vulnerability within the burn mechanism, which was exploited to manipulate the AM reserves in the pool and artificially inflate the token price. The attacker first manipulated the toBurnAmount and then triggered the burn logic after the AM balance in the pool had been adjusted. This drove the AM reserves down to an unnaturally low level, allowing the attacker to sell AM back to the pool at an inflated price to realize a profit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/Phalcon_xyz/status/2031957703451688970"
+    ]
+  },
+  {
+    "event_date": "2026-03-10",
+    "target": "MT-WBNB liquidity pool",
+    "slowmist_attack_method": "Reserve Manipulation Attack",
+    "reported_loss_usd": 242000.0,
+    "reported_loss_raw": "$ 242,000",
+    "description_raw": "According to BlockSec Phalcon's monitoring, a suspicious transaction targeting the MT-WBNB liquidity pool on BSC was detected several hours ago, resulting in an estimated loss of approximately $242,000. The root cause lies in a flaw within the buyer restriction mechanism: under deflationary mode, normal buy orders were reverted; however, the router and pair addresses were whitelisted. The attacker bypassed these restrictions by swapping and removing liquidity through the router to acquire MT tokens from the pair. Subsequently, the attacker sold MT to accumulate a pendingBurnAmount and invoked the distributeFees() function to directly burn MT from the trading pair, artificially inflating the price. This allowed the attacker to swap MT back for WBNB to realize a profit. Furthermore, a referral rule that allowed the transfer of the first 0.2 MT to bypass buyer restrictions enabled the attacker to initiate the exploit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/phalcon_xyz/status/2031226066572837313?s=46"
+    ]
+  },
+  {
+    "event_date": "2026-01-27",
+    "target": "PGNLZ",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 100000.0,
+    "reported_loss_raw": "$100,000",
+    "description_raw": "According to BlockSec monitoring, an unknown contract on the BSC network was exploited. The attacker leveraged a design flaw in the \u201cburn pair\u201d mechanism to execute two reverse swaps, resulting in losses of approximately $100,000. The attacker first drained PGNLZ tokens, then triggered PGNLP burns and price manipulation, ultimately siphoning off most of the USDT from the liquidity pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/phalcon_xyz/status/2016154398817505595?s=46"
+    ]
+  },
+  {
+    "event_date": "2026-01-05",
+    "target": "OLY",
+    "slowmist_attack_method": "Sandwich attack",
+    "reported_loss_usd": 63400.0,
+    "reported_loss_raw": "$ 63,400",
+    "description_raw": "According to TenArmorAlert, a sandwich attack involving OLY has been detected on BSC, causing estimated losses of around $63,400.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/TenArmorAlert/status/2007999080794833369"
+    ]
+  },
+  {
+    "event_date": "2025-12-29",
+    "target": "MSCST",
+    "slowmist_attack_method": "flash loan attack",
+    "reported_loss_usd": 130000.0,
+    "reported_loss_raw": "$130,000",
+    "description_raw": "On the BSC network, an unknown smart contract MSCST suffered a flash loan attack, resulting in an estimated loss of approximately $130,000. The root cause of the exploit lies in the lack of access control (ACL) within the releaseReward() function of the MSCST contract, which allowed the attacker to manipulate the price of the GPC token in the PancakeSwap liquidity pool (address: 0x12da).",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/Phalcon_xyz/status/2005518274864595002"
+    ]
+  },
+  {
+    "event_date": "2025-12-12",
+    "target": "ZEROBASE",
+    "slowmist_attack_method": "Frontend Attack",
+    "reported_loss_usd": 123000.0,
+    "reported_loss_raw": "$ 123,000",
+    "description_raw": "According to SlowMist founder Yu Cos and ZEROBASE officials, a malicious contract on the BSC chain, \u201cVault\u201d (0x0dd2\u20262396), impersonated the ZEROBASE frontend to trick users into authorizing USDT. The incident is suspected to have occurred due to a compromise of the ZEROBASE frontend and was not an issue with the Binance Web3 wallet itself. So far, hundreds of addresses have been affected, with the largest single loss reaching $123,000. The stolen funds have been transferred to the Ethereum address 0x4a57\u2026fc84. ZEROBASE has enabled an authorization monitoring mechanism, and the community is urging users to quickly revoke risky authorizations via revoke.cash.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/zerobasezk/status/1999466921314648585"
+    ]
+  },
+  {
+    "event_date": "2025-11-20",
+    "target": "GANA Payment",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 3100000.0,
+    "reported_loss_raw": "$ 3,100,000",
+    "description_raw": "According to on-chain security analyst ZachXBT, the payment project GANA Payment on the BSC chain was attacked a few hours ago, resulting in an estimated loss of $3.1 million. The attacker has deposited 1,140 BNB (around $1.04 million) into Tornado Cash on BSC, and transferred funds to Ethereum via a cross-chain bridge. Of these funds, 346.8 ETH (around $1.05 million) has also been deposited into Tornado Cash on Ethereum. Currently, another 346 ETH (about $1.046 million) remains idle in an Ethereum address starting with 0x7a.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/articles/8fe34b80-9db2-47df-97ca-a2ac53668e45"
+    ]
+  },
+  {
+    "event_date": "2025-09-24",
+    "target": "GriffinAI",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "The attackers exploited a misconfigured LayerZero bridge along with a compromised private key for the GAIN BSC contract. By setting a malicious peer contract on Ethereum, they bypassed validation checks and minted 5 billion counterfeit GAIN tokens on BSC. The attackers then sold approximately 150 million of these counterfeit tokens (about 2.8% of the total fake supply) on PancakeSwap, cashing out around USD 3 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/OliFeldmeier/status/1972367705023103244"
+    ]
+  },
+  {
+    "event_date": "2025-08-23",
+    "target": "ABCCApp",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 10100.0,
+    "reported_loss_raw": "$ 10,100",
+    "description_raw": "ABCCApp on BSC was reportedly attacked, resulting in a loss of approximately $10.1K.\n\nThe root cause was that the contract\u2019s addFixedDay() function lacked access control, and fixedDay was used in calculating claimable USDT.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://bscscan.com/tx/0xee4eae6f70a6894c09fda645fb24ab841e9847a788b1b2e8cb9cc50c1866fb12"
+    ]
+  },
+  {
+    "event_date": "2025-08-16",
+    "target": "D3X AI",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 158900.0,
+    "reported_loss_raw": "$ 158,900",
+    "description_raw": "D3X AI (@D3X_AI) was attacked on BSC, resulting in a loss of approximately $158.9K.\n\nThe root cause was that the exchange() function of contract 0xb8ad relied on the spot price of the d3xat token from a UniswapV2 pair, which the attacker exploited through a price manipulation attack.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://bscscan.com/tx/0x26bcefc152d8cd49f4bb13a9f8a6846be887d7075bc81fa07aa8c0019bd6591f"
+    ]
+  },
+  {
+    "event_date": "2025-07-17",
+    "target": "VDS",
+    "slowmist_attack_method": "Business Logic Flaw",
+    "reported_loss_usd": 13000.0,
+    "reported_loss_raw": "$ 13,000",
+    "description_raw": "According to monitoring by SlowMist's MistEye security system, VDS on the BSC appears to have been attacked, with an estimated loss of around $13,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1945672192471302645"
+    ]
+  },
+  {
+    "event_date": "2025-06-25",
+    "target": "MEV Bot",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "A suspicious attack involving MEV bot 0xb5cb occurred on BSC, resulting in losses of approximately $2 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://bscscan.com/tx/0x7708aaedf3d408c47b04d62dac6edd2496637be9cb48852000662d22d2131f44"
+    ]
+  },
+  {
+    "event_date": "2025-05-22",
+    "target": "Nexo",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 31535.0,
+    "reported_loss_raw": "$ 31,535",
+    "description_raw": "According to monitoring by the SlowMist security team, the digital asset wealth management platform Nexo suffered a sandwich attack due to a lack of access control in one of its contracts, resulting in a loss of approximately $31,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1925384887600828669"
+    ]
+  },
+  {
+    "event_date": "2025-05-11",
+    "target": "MobiusDAO",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 2150000.0,
+    "reported_loss_raw": "$ 2,150,000",
+    "description_raw": "Mobius Token on BSC is suspected to have been exploited, with estimated losses of $2.15 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/MobiusDAO123/status/1921847836548735142"
+    ]
+  },
+  {
+    "event_date": "2025-04-27",
+    "target": "LIFE Protocol",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 51000.0,
+    "reported_loss_raw": "$ 51,000",
+    "description_raw": "According to the SlowMist MistEye security monitoring system, LIFE Protocol has been attacked, resulting in a loss of over $51,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1916391258664174045"
+    ]
+  },
+  {
+    "event_date": "2025-04-24",
+    "target": "ACB",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 22804.0,
+    "reported_loss_raw": "$ 22,804",
+    "description_raw": "According to the SlowMist MistEye security monitoring system, ACB appears to have been attacked on BSC, resulting in a loss of approximately $22,000.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1915239816486412697"
+    ]
+  },
+  {
+    "event_date": "2025-04-15",
+    "target": "KiloEx",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 8440000.0,
+    "reported_loss_raw": "$ 8,440,000",
+    "description_raw": "The decentralized perpetual futures exchange KiloEx was attacked, involving assets across multiple chains including BNB and Base. According to an analysis by the SlowMist Security Team, the root cause of the incident was the lack of access control checks in KiloEx's top-level contract (MinimalForwarder), which allowed the manipulation of oracle prices. Thanks to the active response from the project team and collaboration with SlowMist and others, all stolen assets were successfully recovered after 3.5 days of effort.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/KiloEx_perp/status/1913168299292328115"
+    ]
+  },
+  {
+    "event_date": "2025-03-28",
+    "target": "Min Token (MIN)",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 21415.0,
+    "reported_loss_raw": "$ 21,415",
+    "description_raw": "According to monitoring by SlowMist's security team, Min Token (MIN) is suspected to have been attacked on BSC, resulting in a loss of approximately $21,400.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1905448377980256401"
+    ]
+  },
+  {
+    "event_date": "2025-03-18",
+    "target": "Four.Meme",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 19500.0,
+    "reported_loss_raw": "$ 19,500",
+    "description_raw": "BNB-based memecoin launchpad Four.Meme was attacked. According to the SlowMist security team\u2019s analysis, the attacker purchased a small amount of tokens before launch through the 0x7f79f6df function of Four.Meme, and used this feature to send tokens to a specified PancakeSwap Pair address that had not yet been created. This allowed the attacker to create the Pair and add liquidity without needing to transfer the yet-to-be-launched tokens to the Pair, bypassing the transfer restrictions (MODE_TRANSFER_RESTRICTED) that applied before the Four.Meme Token launch. Ultimately, the attacker was able to add liquidity at an unintended price to steal pool liquidity.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1901845958767657072"
+    ]
+  },
+  {
+    "event_date": "2025-02-11",
+    "target": "Four.Meme",
+    "slowmist_attack_method": "Business Logic Flaw",
+    "reported_loss_usd": 183000.0,
+    "reported_loss_raw": "$ 183,000",
+    "description_raw": "The memecoin platform Four.Meme was attacked. According to an analysis by the SlowMist security team, the attacker was able to execute a frontrunning attack by pre-creating a liquidity pool on PancakeSwap v3 with an extremely high token price. When the token was integrated into PancakeSwap v3, liquidity was added based on the unbalanced pool set up by the attacker. Since the project team did not verify the pool's price, the added liquidity followed the maliciously set price. As a result, the attacker was able to exploit this mechanism to drain assets from the pool.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1889206331644789244"
+    ]
+  },
+  {
+    "event_date": "2025-02-08",
+    "target": "Cashverse",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 107900.0,
+    "reported_loss_raw": "$ 107,900",
+    "description_raw": "According to monitoring by the SlowMist security team, Cashverse appears to have been attacked on BSC.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1888125078560452989"
+    ]
+  },
+  {
+    "event_date": "2025-02-07",
+    "target": "BankX",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 43000.0,
+    "reported_loss_raw": "$ 43,000",
+    "description_raw": "According to monitoring by the SlowMist security team, BankX appears to have been attacked on BSC, ETH, and Optimism.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1887802943266771423"
+    ]
+  },
+  {
+    "event_date": "2025-01-22",
+    "target": "AST",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 64700.0,
+    "reported_loss_raw": "$ 64,700",
+    "description_raw": "According to monitoring by the SlowMist security team, AST was allegedly attacked on BSC.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1881874569042317610"
+    ]
+  },
+  {
+    "event_date": "2025-01-13",
+    "target": "Mosca",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 37600.0,
+    "reported_loss_raw": "$ 37600",
+    "description_raw": "Mosca appears to have suffered another attack on BSC, resulting in losses of approximately $37,600.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=BSC&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://x.com/TenArmorAlert/status/1878699517450883407"
+    ]
+  }
+]

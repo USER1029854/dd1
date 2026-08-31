@@ -1,0 +1,9 @@
+{
+ "victims_linked": 161,
+ "still_in_band": 67,
+ "fell_below_floor": 72,
+ "above_band": 22,
+ "no_audit_rate_in_band": 0.209,
+ "no_audit_rate_fell_out": 0.625,
+ "interpretation": "Unaudited victims are over-represented among protocols that fell below the $50k floor after being hacked, so measuring signal lift only against surviving protocols understates neglect. The population is censored by the very outcome being predicted."
+}

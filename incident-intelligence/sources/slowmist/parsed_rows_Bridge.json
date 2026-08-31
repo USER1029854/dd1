@@ -1,0 +1,782 @@
+[
+  {
+    "event_date": "2026-08-09",
+    "target": "Coreum Bridge",
+    "slowmist_attack_method": "Bridge Logic Vulnerability",
+    "reported_loss_usd": 200000.0,
+    "reported_loss_raw": "$ 200,000",
+    "description_raw": "On August 9, 2026, the cross-chain bridge connecting the XRP Ledger and Coreum (now tx) was exploited. The attacker abused a flaw in the deposit-verification/relayer logic by creating fake deposits (self-transfers of the bridge\u2019s own wrapped tokens with valid memos), tricking the relayers into authorizing real XRP withdrawals from the bridge\u2019s reserve. Nearly 200,000 XRP (~$200,000) was drained in 94 multisig transactions over 97 minutes.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/txEcosystem/status/2087269579190046895"
+    ]
+  },
+  {
+    "event_date": "2026-07-26",
+    "target": "ChainConnect",
+    "slowmist_attack_method": "Unauthorized Access",
+    "reported_loss_usd": 650000.0,
+    "reported_loss_raw": "$ 650,000",
+    "description_raw": "ChainConnect\u2019s EVM integration was compromised through unauthorized access. Approximately $650,000 in tokens was drained from the bridge contracts across Ethereum, BNB Chain, Avalanche C-Chain and Polygon in 23 transactions; bridge operations were paused immediately.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/VenomFoundation/status/2082101022928040063"
+    ]
+  },
+  {
+    "event_date": "2026-07-26",
+    "target": "Garden Finance",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 450000.0,
+    "reported_loss_raw": "$ 450,000",
+    "description_raw": "Security firm Blockaid detected an ongoing exploit targeting Garden Finance\u2019s HTLC contracts, draining about $450,000 in USDT across Ethereum, Base, Arbitrum, and BNB Chain. The project stated that an independent solver\u2019s off-chain database was compromised and fraudulent records were inserted, causing improper fund releases; the protocol and smart contracts themselves were not compromised, and the app has been temporarily taken offline.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/blockaid_/status/2081409252489298100"
+    ]
+  },
+  {
+    "event_date": "2026-07-23",
+    "target": "Verus Ethereum Bridge",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 7540000.0,
+    "reported_loss_raw": "$ 7,540,000",
+    "description_raw": "The Verus Ethereum Bridge was exploited again. The attacker abused the bridge\u2019s import path to trigger unbacked payouts on the Ethereum side, draining approximately $7.54 million in assets (ETH, tBTC, USDC, etc.) from the bridge reserves. This is the second exploit of the same flaw from May. The project has not issued a detailed official statement yet.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/blockaid_/status/2080143099561496896"
+    ]
+  },
+  {
+    "event_date": "2026-07-22",
+    "target": "AFX Bridge",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 24150000.0,
+    "reported_loss_raw": "$ 24,150,000",
+    "description_raw": "The AFX-operated cross-chain/USDC custody bridge on Arbitrum was exploited. The attacker used compromised validator hot keys to meet the quorum and drain approximately $24.15 million USDC. The funds were bridged to Ethereum and swapped for ETH. Arbitrum\u2019s native bridge was unaffected, and AFX\u2019s core trading infrastructure remained secure. The team suspended bridge operations and is investigating with security partners.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/AFX_XYZ/status/2080126901205770734"
+    ]
+  },
+  {
+    "event_date": "2026-07-21",
+    "target": "Wanchain Cardano-BNB Chain Bridge",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 10000000.0,
+    "reported_loss_raw": "$10,000,000",
+    "description_raw": "Wanchain\u2019s Cardano-to-BNB Chain cross-chain bridge was exploited. The attacker drained approximately 515 million NIGHT tokens from the Cardano-side lock address. The incident may involve signature validation or replay flaws. Wanchain suspended the bridge; Midnight\u2019s core network was unaffected. Multiple exchanges froze related funds, and NIGHT price dropped sharply before partial recovery.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/wanchain_org/status/2079444149066244340"
+    ]
+  },
+  {
+    "event_date": "2026-07-19",
+    "target": "Allbridge Core",
+    "slowmist_attack_method": "Flash Loan Price Manipulation",
+    "reported_loss_usd": 1650000.0,
+    "reported_loss_raw": "$ 1,650,000",
+    "description_raw": "Cross-chain bridge protocol Allbridge Core was exploited on July 19-20, 2026. The attacker used a ~$1.12M USDC flash loan from Kamino to rapidly swap in the Solana USDC/USDT liquidity pools, manipulating ratios and draining approximately $1.65 million. The team paused the protocol, urged affected LPs to withdraw funds immediately, and asked arbitrage profiteers to return funds for LP compensation.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/Allbridge_io/status/2078932561036722319"
+    ]
+  },
+  {
+    "event_date": "2026-07-17",
+    "target": "Across",
+    "slowmist_attack_method": "Deposit signal spoofing",
+    "reported_loss_usd": 0.0,
+    "reported_loss_raw": "0",
+    "description_raw": "Cross-chain bridge protocol Across was attacked on its Solana deployment on July 17, 2026. The attacker exploited a gap in Solana\u2019s event system to spoof deposit signals, tricking relayers into paying out on fake deposits. User funds remained completely safe with zero losses; all transactions were completed or fully refunded. Losses were contained to the Risk Labs-operated relayer. The team paused Solana deposits and restored operations the next day, with a full post-mortem planned.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://startupfortune.com/across-protocol-got-hacked-on-solana-and-no-user-lost-a-cent/"
+    ]
+  },
+  {
+    "event_date": "2026-07-15",
+    "target": "TeleSwap",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 735000.0,
+    "reported_loss_raw": "$ 735,000",
+    "description_raw": "The cross-chain bridge protocol TeleSwap was suspected of being exploited on July 15, 2026. Suspicious outflows of over $735,000 occurred from its Bitcoin hot wallet, which then stopped processing transactions. Five days later, the project has still not publicly disclosed the incident, and the attacker has moved funds toward Tornado Cash for laundering.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://t.me/s/investigations"
+    ]
+  },
+  {
+    "event_date": "2026-06-21",
+    "target": "Taiko Bridge",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 1700000.0,
+    "reported_loss_raw": "$ 1,700,000",
+    "description_raw": "On June 21-22, 2026, Taiko (an Ethereum L2) suffered a bridge exploit targeting its ERC20 Vault. Attackers exploited a compromise in the chain state verification mechanism by forging SGX proofs to register a malicious prover, bypassing verification to submit fake bridge messages and drain approximately $1.7 million in assets (including USDC, ETH, and TAIKO tokens). Taiko quickly confirmed the verification compromise, paused the bridge and block production, initially urged users to withdraw funds, and later contained the incident while coordinating with exchanges to freeze attacker assets. A full post-mortem is forthcoming.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/taikoxyz/status/2068858818352865626"
+    ]
+  },
+  {
+    "event_date": "2026-06-17",
+    "target": "Aztec Bridge",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 2160000.0,
+    "reported_loss_raw": "$ 2,160,000",
+    "description_raw": "On June 17, 2026, attackers exploited Aztec\u2019s deprecated Private Rollup Bridge (launched in 2021 and shut down in 2022). They abused an immutable escape-hatch function that lacked proper ownership checks, using manipulated or fake rollup proofs to withdraw assets without corresponding deposits. Approximately $2.16 million (1,158 ETH, 150,000 DAI, and 0.47 renBTC) was drained. Aztec Labs confirmed the affected contract is unrelated to the current Aztec Network or the AZTEC ERC-20 token and that they have no control over the immutable old contracts.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/aztecFND/status/2067511967237939636"
+    ]
+  },
+  {
+    "event_date": "2026-06-10",
+    "target": "Secret Network",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 4670000.0,
+    "reported_loss_raw": "$ 4,670,000",
+    "description_raw": "An attacker exploited a vulnerability in Secret Network\u2019s modified CW20-ICS20 contract used for the Axelar IBC bridge. By creating a fake Cosmos chain and sending forged IBC deposit packets (the contract had critical source-channel verification checks commented out), the attacker minted approximately $4.67 million in unbacked \u201csaTokens\u201d (Secret-wrapped versions of Axelar-bridged assets). These were redeemed through the legitimate bridge channel, draining real assets from Axelar\u2019s escrow in about 18 minutes. Funds were then bridged out via Osmosis to Ethereum and mostly cashed out on exchanges. The incident was detected on June 17 and publicly disclosed on June 19. Axelar paused the Secret bridge routes; its core protocol and other chains were unaffected. No funds have been recovered.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/axelar/status/2068355855565594885"
+    ]
+  },
+  {
+    "event_date": "2026-06-08",
+    "target": "Syscoin Bridge",
+    "slowmist_attack_method": "Bridge Verification Flaw",
+    "reported_loss_usd": 10000000.0,
+    "reported_loss_raw": "$ 10,000,000",
+    "description_raw": "Syscoin Bridge was exploited. The attacker leveraged a validation issue in the bridge flow, resulting in an unauthorized creation of approximately 5 billion SYS on the UTXO side. The funds were subsequently moved and split. The team has paused the bridge, is actively tracing the tainted outputs, coordinating with exchanges for blacklisting/monitoring, and working on a fix and remediation.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/syscoin/status/2063749418365665413"
+    ]
+  },
+  {
+    "event_date": "2026-05-30",
+    "target": "Alephium Bridge",
+    "slowmist_attack_method": "Off-Chain Vulnerability in the Bridge Backend",
+    "reported_loss_usd": 815000.0,
+    "reported_loss_raw": "$ 815,000",
+    "description_raw": "Alephium TokenBridge was exploited. The attacker used a backend vulnerability in the bridge to forge messages, draining approximately $815K assets from Ethereum and BNB Chain within about 7 minutes, while minting a large amount of unbacked wrapped ALPH. The team quickly shut down the bridge, pledged to compensate users, and advised users to withdraw ALPH liquidity.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/alephium/status/2060768639100268782"
+    ]
+  },
+  {
+    "event_date": "2026-05-30",
+    "target": "Gravity Bridge",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 5400000.0,
+    "reported_loss_raw": "$ 5,400,000",
+    "description_raw": "Gravity Bridge, a cross-chain bridge connecting Ethereum and the Cosmos ecosystem, was exploited likely due to a compromised contract key or signing authorization. The attacker drained approximately $5.4M in assets (primarily USDC, ETH, and USDT). The exploiter has begun laundering funds via exchanges and mixers, with a significant portion (~2,102 ETH) still under their control.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/PeckShieldAlert/status/2060636956984594521"
+    ]
+  },
+  {
+    "event_date": "2026-05-20",
+    "target": "Butter Bridge",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 180000.0,
+    "reported_loss_raw": "$ 180,000",
+    "description_raw": "The Butter Bridge V3.1 (part of MAP Protocol and Butter Network) was exploited. An attacker used a vulnerability in the OmniServiceProxy contract\u2019s retry message verification logic, specifically an abi.encodePacked hash collision with dynamic-bytes fields. This allowed forging a cross-chain retry message that bypassed authentication, resulting in the minting of approximately 1 quadrillion (10^15) MAPO tokens (about 4.8 million times the legitimate ~208 million circulating supply). The attacker dumped ~1 billion fake MAPO into the Uniswap V4 ETH/MAPO pool, extracting roughly $180,000 in liquidity (\u224852.21 ETH). The teams immediately paused the bridge and related swaps. User funds in pending swaps are safe, and a patch/audit/redeployment is in progress. The remaining ~999 trillion fake tokens stay in the attacker\u2019s wallet, posing ongoing dilution risk.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://ourcryptotalk.com/news/butter-bridge-exploit-mints-1-quadrillion-mapo-tokens"
+    ]
+  },
+  {
+    "event_date": "2026-05-18",
+    "target": "Verus-Ethereum Bridge",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 11580000.0,
+    "reported_loss_raw": "$ 11,580,000",
+    "description_raw": "Blockaid detected an ongoing exploit on the Verus-Ethereum Bridge. The attacker drained approximately $11.58 million in assets (including ~1,625 ETH, ~103.6 tBTC, and ~147k USDC). The funds were swapped and consolidated into a drainer wallet (e.g., 0x65Cb8b128Bf6e690761044CCECA422bb239C25F9). This is a cross-chain bridge incident affecting the bridge infrastructure, not the core Verus blockchain. The project had recently issued an urgent update, but the exploit still occurred. Funds remain in the attacker's control as of the latest reports. On May 22, PeckShield's monitoring revealed that the exploiter of the Verus cross-chain bridge has returned 4,052.4 ETH (valued at around $8.5 million) to the team's designated address. This recovery accounts for 75% of the total plundered funds, while the remaining 25% (approximately 1,350 ETH) is being retained in the hacker's wallet as a bug bounty.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/MetaEraHK/status/2056192367716380711"
+    ]
+  },
+  {
+    "event_date": "2026-05-15",
+    "target": "Adshares Bridge",
+    "slowmist_attack_method": "Bridge Verification Bypass",
+    "reported_loss_usd": 628000.0,
+    "reported_loss_raw": "$ 628,000",
+    "description_raw": "Adshares Bridge was exploited on Ethereum around May 15, 2026. The attacker used the bridge-minter EOA to sign three wrapTo() calls with non-existent native-chain transaction IDs on the Adshares canonical chain. This allowed minting large amounts of fake wrapped ADS (wADS: 99,999.93 \u00d72 + 999,999.94). The fake tokens were then dumped via Uniswap V4 UniversalRouter, draining roughly $628K in ETH and USDC from liquidity pools. Security researchers flagged it quickly, and the project posted an on-chain whitehat message offering a 10% bounty for return of 90% of funds.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://cryptoadventure.com/adshares-bridge-exploit-drains-about-628k-after-fake-wads-mint/"
+    ]
+  },
+  {
+    "event_date": "2026-05-13",
+    "target": "Transit Finance",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 1880000.0,
+    "reported_loss_raw": "$ 1,880,000",
+    "description_raw": "Decentralized cross-chain aggregation protocol Transit Finance suffered an exploit on its deprecated (2022-era) TRON smart contract, resulting in approximately $1.88 million in DAI being drained. The stolen funds were transferred to an Ethereum address. The team confirmed it was isolated to legacy code, stated that current contracts are secure, completed remediation on May 12, and promised full user compensation. They sent an on-chain message to the attacker offering a bug bounty for return within 48 hours, or they would pursue legal action.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/BSCNews/status/2054613633460777265"
+    ]
+  },
+  {
+    "event_date": "2026-05-11",
+    "target": "TAC",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 2854000.0,
+    "reported_loss_raw": "$ 2,854,000",
+    "description_raw": "Following a security incident, TAC identified an exploit on the TON side of its cross-chain layer carried out by an external attacker. The incident resulted in a loss of approximately $2.8M across USDT, BLUM, and tsTON. The TAC token, TON, and all ERC-20 tokens bridged from Ethereum are NOT affected. The bridge remains paused while forensic analysis and remediation are ongoing. A post-mortem will be published soon. The team is working with law enforcement and security partners to trace funds and plans to make users whole via a structured sale of Foundation TAC token reserves.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=1",
+    "slowmist_page_no": 1,
+    "reference_urls": [
+      "https://x.com/TacBuild/status/2054620834879381870?s=20"
+    ]
+  },
+  {
+    "event_date": "2026-04-29",
+    "target": "Syndicate Labs",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 380000.0,
+    "reported_loss_raw": "$ 380,000",
+    "description_raw": "Syndicate Labs\u2019 Commons cross-chain bridge was compromised due to a private key leak. The attacker used the leaked upgrade key to maliciously upgrade the bridge contracts, draining approximately 18.5 million SYND tokens (worth ~$330,000) and ~$50,000 in user assets, for a total loss of $380,000. The incident was limited to specific chains, and the project pledged full compensation to affected users.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://crypto.news/syndicate-labs-suffers-380k-synd-bridge-exploit-pledges-full-user-compensation/"
+    ]
+  },
+  {
+    "event_date": "2026-04-27",
+    "target": "ZetaChain GatewayEVM",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 334000.0,
+    "reported_loss_raw": "$ 334,000",
+    "description_raw": "ZetaChain disclosed in a post on X that its GatewayEVM contract was attacked today, affecting only wallets belonging to the internal ZetaChain team. The attack vector has been blocked to prevent further loss of funds. As a precautionary measure, cross-chain transactions on ZetaChain are currently suspended. The investigation is still ongoing, and no user funds have been affected so far. On April 29, ZetaChain announced on X that on April 27 it had suffered a premeditated and targeted attack. The attacker funded addresses using Tornado Cash and impersonated wallet addresses. Cross-chain ZETA transfers were not affected, and user funds remained safe. All impacted wallets were controlled by ZetaChain. A mainnet patch has been deployed, and cross-chain transactions will be re-enabled after continued monitoring. The attack impacted the arbitrary call functionality of GatewayEVM, resulting in an estimated loss of approximately $334,000 across four connected chains.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/ZetaChain/status/2048854107633631356?s=20"
+    ]
+  },
+  {
+    "event_date": "2026-04-18",
+    "target": "Kelp DAO",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 293000000.0,
+    "reported_loss_raw": "$ 293,000,000",
+    "description_raw": "LayerZero issued a statement saying that on April 18, Kelp DAO suffered an attack resulting in approximately $290 million in losses. The incident is initially assessed to have been carried out by a highly sophisticated nation-state actor, suspected to be the TraderTraitor subgroup of North Korea\u2019s Lazarus Group. The attack was completely isolated to Kelp DAO\u2019s rsETH configuration and was caused by its use of a single DVN (Decentralized Verifier Network) setup. The LayerZero protocol itself was not exploited, and no other cross-chain assets or applications were affected. The core of the attack involved the hacker compromising downstream RPC infrastructure used by LayerZero\u2019s DVN. The attacker obtained the RPC node list used by the DVN, then infiltrated two independent RPC nodes. They replaced the op-geth binary and used a custom payload to forge messages. This setup allowed the attacker to display false data only to the DVN, while showing correct data to other observers, including LayerZero Scan. The attacker then launched a DDoS attack against the uncompromised RPC nodes, forcing a failover to the poisoned RPC nodes. As a result, the DVN accepted the falsified messages, enabling the attack to succeed. After the attack was completed, the attacker removed the malicious binaries, logs, and configuration files. LayerZero has since decommissioned all affected RPC nodes, replaced them, and confirmed that the DVN has returned to normal operation.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/LayerZero_Core/status/2046081551574983137"
+    ]
+  },
+  {
+    "event_date": "2026-04-13",
+    "target": "Hyperbridge",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 2500000.0,
+    "reported_loss_raw": "$ 2,500,000",
+    "description_raw": "Based on monitoring by CertiK Alert, the Hyperbridge gateway contract fell victim to an exploit. The attacker utilized forged messages to manipulate administrative permissions of the Polkadot token contract on the Ethereum network. By unauthorized minting and liquidating 1 billion tokens, the attacker realized a profit of roughly $237,000. On April 16, it was reported that according to an official announcement from Hyperbridge, its token gateway was attacked on April 13. The estimated losses have been revised from approximately $237,000 to about $2.5 million, mainly affecting incentive liquidity pools on Ethereum, Base, BNB Chain, and Arbitrum.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/CertiKAlert/status/2043557571609731268"
+    ]
+  },
+  {
+    "event_date": "2026-04-09",
+    "target": "Aethir",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 90000.0,
+    "reported_loss_raw": "$ 90,000",
+    "description_raw": "Aethir's cross-chain bridge contracts (primarily AethirOFTAdapter and Ethereum-related bridging contracts) were targeted in an exploit. The attacker attempted to drain funds by exploiting access control or ownership transfer vulnerabilities (e.g., transferOwnership issues), involving chains like BNB Chain. The Aethir team quickly detected the anomaly, promptly disconnected the compromised contracts, and collaborated with major exchanges (Binance, Upbit, Bithumb, etc.) to blacklist attacker wallets, effectively containing further damage. The main ATH token supply on Ethereum remained intact, and other bridges like ETH-ARB on Squid were unaffected. Initial estimates put potential losses around $400,000, but user impact was limited to under $90,000. The project promised a full compensation plan.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://crypto.news/aethir-contains-bridge-hack-while-losses-stay-below-90k/"
+    ]
+  },
+  {
+    "event_date": "2026-04-07",
+    "target": "Squid Multicall",
+    "slowmist_attack_method": "Approval Exploit",
+    "reported_loss_usd": 517000.0,
+    "reported_loss_raw": "$ 517,000",
+    "description_raw": "A user mistakenly approved the SquidMulticall contract (instead of the intended Squid Router contract) with unlimited token allowances. An attacker then called the permissionless run() function on SquidMulticall with crafted calldata to execute transferFrom() from the victim\u2019s approved tokens across multiple chains (ETH, BSC, Arbitrum, Avalanche, etc.). This drained approximately $517K.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://blocksec.com/blog/weekly-web3-security-incident-roundup-apr-6-apr-12-2026"
+    ]
+  },
+  {
+    "event_date": "2026-02-23",
+    "target": "DGLD",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 250000.0,
+    "reported_loss_raw": "$ 250,000",
+    "description_raw": "DGLD (Swiss physical gold-backed tokenized asset) was exploited due to a legacy edge case in the Ethereum contract\u2019s transferFrom behavior. Attackers minted large amounts of unbacked fake DGLD on Base and dumped them on DEXes. The team promptly paused contracts, froze illicit tokens, and contained the incident. Physical gold was never at risk, all pre-exploit holders retained their backed tokens, with ~$250k economic impact mostly borne by the project.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://dgld.ch/news/post-incident-report-february-2026-exploit"
+    ]
+  },
+  {
+    "event_date": "2026-02-21",
+    "target": "IoTeX\u2019s ioTube bridge",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 4400000.0,
+    "reported_loss_raw": "$ 4,400,000",
+    "description_raw": "The IoT-focused public chain IoTeX suffered a professional hacker attack caused by a private key compromise of the ioTube bridge\u2019s Ethereum-side validator owner. This allowed the attacker to gain administrative privileges and illicitly extract assets from the token safe. According to the official confirmation on February 24, the incident resulted in approximately $4.4 million in asset losses (including USDC, USDT, IOTX, and WBTC). The hacker converted most of the stolen funds into roughly 2,183 ETH and bridged them to the Bitcoin network via THORChain (with approximately 66.6 BTC currently tracked). The IoTeX team has implemented security enhancements and address blacklisting via the v2.3.4 mainnet upgrade. They have also issued an on-chain ultimatum: the attacker can receive a 10% white-hat bounty (approx. $440,000) and be exempted from legal liability if the funds are returned within 48 hours. A compensation plan for affected users is currently being finalized.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/iotex_io/status/2025824807120412842"
+    ]
+  },
+  {
+    "event_date": "2026-02-01",
+    "target": "CrossCurve",
+    "slowmist_attack_method": "Smart Contract Vulnerability",
+    "reported_loss_usd": 3000000.0,
+    "reported_loss_raw": "$ 3,000,000",
+    "description_raw": "The cross-chain liquidity protocol CrossCurve (formerly EYWA) has confirmed that its cross-chain bridge protocol is under attack, due to a vulnerability in its smart contract that was exploited, resulting in the theft of approximately USD 3 million across multiple networks. Blockchain security firm Defimon Alerts identified that the attack vector exploited a gateway verification bypass vulnerability in CrossCurve\u2019s ReceiverAxelar contract. Analysis shows that anyone could use a forged cross-chain message to call the contract\u2019s expressExecute function, thereby bypassing the intended gateway verification and triggering unauthorized token unlocks on the protocol\u2019s PortalV2 contract. Subsequently, CrossCurve issued a security update regarding the $EYWA token, stating that the exploitation has been successfully contained.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.theblock.co/post/387939/crosscurve-bridge-exploited-for-approximately-3-million-across-multiple-chains-via-spoofed-messages"
+    ]
+  },
+  {
+    "event_date": "2025-10-31",
+    "target": "Garden Finance",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 10800000.0,
+    "reported_loss_raw": "$ 10,800,000",
+    "description_raw": "According to CertiK Alert, the Garden attacker has transferred 501 BNB and 1,910 ETH (worth approximately $6.65 million) to Tornado Cash.The address starting with 0x98BC still holds around $910,000 in assets.It is reported that Garden Finance suffered an attack on October 31, resulting in a loss of about $10.8 million, after its solver was compromised.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/jzgulati/status/1984127214959624421"
+    ]
+  },
+  {
+    "event_date": "2025-10-28",
+    "target": "402Bridge",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 17693.0,
+    "reported_loss_raw": "$ 17,693",
+    "description_raw": "402Bridge posted on X to alert users that a token theft incident had occurred. The technical team is investigating the entire process and advised all users to immediately revoke existing authorizations and transfer their assets out of their wallets. According to available information, the x402 cross-chain protocol 402Bridge was likely compromised after the contract ownership was transferred by the original creator to address 0x2b8F.... More than 200 users lost their remaining USDC due to excessive token approval amounts, with the attacker\u2019s address (starting with 0x2b8F9) stealing a total of 17,693 USDC. The stolen funds were then swapped for ETH and bridged to Arbitrum through multiple cross-chain transactions. 402Bridge later confirmed that, due to a private key leak, several of the team\u2019s test wallets and the main wallet were also compromised.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/402bridge/status/1982859472629559796"
+    ]
+  },
+  {
+    "event_date": "2025-09-23",
+    "target": "Seedify",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 1700000.0,
+    "reported_loss_raw": "$ 1,700,000",
+    "description_raw": "Meta Alchemist, founder of the Web3 incubator and launchpad platform Seedify, announced on X that one of its SFUND bridges was recently hacked. According to Seedify\u2019s official account, a DPRK-affiliated group known for multiple Web3 exploits gained access to a developer\u2019s private key. Using this access, the attackers were able to mint a large number of SFUND tokens through a bridge contract that had previously passed audit.As a result, the OFT contract was compromised, allowing the attackers to alter its settings and mint unauthorized tokens on Avalanche.Subsequently, the hacker transferred the minted tokens across multiple chains, including BNB, where they sold most of the SFUND tokens. In response, Binance founder Changpeng Zhao stated that he had communicated with several security experts in the industry, who successfully tracked and froze approximately $200,000 of the stolen funds on the HTX exchange.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/SeedifyFund/status/1970537553515417918"
+    ]
+  },
+  {
+    "event_date": "2025-09-12",
+    "target": "Shibarium Bridge",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 2400000.0,
+    "reported_loss_raw": "$ 2,400,000",
+    "description_raw": "The Shibarium bridge, connecting the Layer 2 network of the same name to Ethereum, was targeted in a flash loan attack, resulting in a loss of approximately $2.4 million. The attacker used a flash loan to purchase 4.6 million BONE tokens and obtained validator signing keys, gaining control of the majority of validator power, and ultimately signed a malicious state to drain assets from the bridge.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.theblock.co/post/370536/shibarium-bridge-suffers-sophisticated-flash-loan-attack-with-2-4-million-drained"
+    ]
+  },
+  {
+    "event_date": "2025-07-09",
+    "target": "ZKSwap",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 5000000.0,
+    "reported_loss_raw": "$ 5,000,000",
+    "description_raw": "ZKSwap\u2019s Ethereum Layer 1 bridge suffered an exploit in which the attacker leveraged its emergency withdrawal mechanism, resulting in a loss of approximately $5 million. Analysis revealed that the component responsible for verifying zero-knowledge proofs had failed to actually perform the verification. This critical oversight allowed the attacker to forge arbitrary withdrawal proofs, effectively bypassing the bridge\u2019s core security guarantees.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://blockaid.io/blog/how-zkswaps-5m-exploit-couldve-been-prevented-with-onchain-monitoring"
+    ]
+  },
+  {
+    "event_date": "2025-06-01",
+    "target": "Force Bridge",
+    "slowmist_attack_method": "Supply Chain Attack",
+    "reported_loss_usd": 3700000.0,
+    "reported_loss_raw": "$ 3,700,000",
+    "description_raw": "The Force Bridge, a cross-chain bridge on the Nervos Network, is suspected to have been compromised, with approximately $3.7 million in assets stolen. The Nervos team has urgently suspended all contracts and is actively investigating the incident. According to the incident investigation report, malicious code was discovered in one of the Docker images. The code had been injected into Ethereum-related modules and was not part of the public source code \u2014 instead, it was embedded through a locally built Docker image.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://talk.nervos.org/t/force-bridge-incident-root-cause-analysis-user-commitment/8801"
+    ]
+  },
+  {
+    "event_date": "2024-08-06",
+    "target": "Ronin",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 12000000.0,
+    "reported_loss_raw": "$ 12,000,000",
+    "description_raw": "The Ronin Bridge project experienced unusual cross-chain asset withdrawals, suggesting a potential attack. According to the SlowMist security team, the vulnerability was caused by the modification of weight to an unexpected value, allowing funds to be withdrawn without passing any multi-signature threshold checks. The attacker extracted approximately 4,000 ETH and 2 million USDC from the bridge, amounting to a value of around $12 million. As of August 7th, white hats have returned $12 million worth of assets and received a $500,000 bug bounty.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://x.com/SlowMist_Team/status/1820783952145355247"
+    ]
+  },
+  {
+    "event_date": "2024-05-15",
+    "target": "ALEX Lab",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 4300000.0,
+    "reported_loss_raw": "$ 4,300,000",
+    "description_raw": "Bitcoin DeFi application ALEX Lab was drained of over $4.3 million in various tokens after a suspected private key compromise attacked its bridging service. Hackers transferred over $300,000 USD worth of BTC, $3.3 million USD worth of stablecoins, and $75,000 USD worth of Sugar Kingdom (SKO) tokens.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/ALEXLabBTC/status/1790611871986331855"
+    ]
+  },
+  {
+    "event_date": "2024-04-24",
+    "target": "XBridge",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": 1440000.0,
+    "reported_loss_raw": "$ 1,440,000",
+    "description_raw": "The cross-chain bridge project XBridge was exploited due to a smart contract vulnerability on the Ethereum Mainnet and the BNB chain, resulting in a loss of approximately $1.44 million.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://etherscan.io/tx/0x903d88a92cbc0165a7f662305ac1bff97430dbcccaa0fe71e101e18aa9109c92"
+    ]
+  },
+  {
+    "event_date": "2024-04-24",
+    "target": "X Bridge",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 824000.0,
+    "reported_loss_raw": "$ 824,000",
+    "description_raw": "The cross-chain bridge X Bridge has experienced multiple suspicious transactions, which are still ongoing. A suspicious address was recently funded by Tornado Cash\n on BNBChain, then bridged to ETH, and subsequently deposited 0.15 ETH into 'OwnedUpgradeabilityProxy.' Shortly after, a withdrawal of 482M STC totaling $824K was made from your 'OwnedUpgradeabilityProxy' contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/6xjzb1bo.html"
+    ]
+  },
+  {
+    "event_date": "2024-04-19",
+    "target": "Meson Finance",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Twitter account of the cross-chain bridge Meson Finance posted a tweet containing a phishing link. Meson Finance tweeted that the relevant content has been deleted and confirmed that the issue originated from a third-party API rather than a direct attack on the account.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=2",
+    "slowmist_page_no": 2,
+    "reference_urls": [
+      "https://twitter.com/SlowMist_Team/status/1781212216605479277"
+    ]
+  },
+  {
+    "event_date": "2024-03-20",
+    "target": "LayerSwap",
+    "slowmist_attack_method": "DNS Attack",
+    "reported_loss_usd": 100000.0,
+    "reported_loss_raw": "$ 100,000",
+    "description_raw": "The @GoDaddy account for the L2 cross-chain bridge LayerSwap's domain http://layerswap[.]io was compromised. The compromise of the domain led to a phishing site being displayed, resulting in approximately 50 users losing ~$100K worth assets. To address this, Layerswap is refunding the affected users in full plus and an additional 10% as a compensation for the caused inconvenience.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/layerswap/status/1770679223876780091"
+    ]
+  },
+  {
+    "event_date": "2024-03-05",
+    "target": "OrdiZK",
+    "slowmist_attack_method": "Rug Pull",
+    "reported_loss_usd": 1400000.0,
+    "reported_loss_raw": "$ 1,400,000",
+    "description_raw": "OrdiZK advertized themselves as a privacy bridge between the Ethereum network and Bitcoin, has exited, resulting in approximately $1.4 million in losses.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/CoinDesk/status/1765034858177253545"
+    ]
+  },
+  {
+    "event_date": "2023-12-31",
+    "target": "Orbit Chain",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 81600000.0,
+    "reported_loss_raw": "$ 81,600,000",
+    "description_raw": "Cross-chain bridge protocol Orbit Chain has suffered an attack, resulting in a loss of $81.6 million. Orbit Chain has tweeted that the team has requested major cryptocurrency exchanges worldwide to freeze the stolen assets.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/Orbit_Chain/status/1741725778956730778"
+    ]
+  },
+  {
+    "event_date": "2023-12-04",
+    "target": "Stargate Snapshot",
+    "slowmist_attack_method": "Phishing Attack",
+    "reported_loss_usd": 43000.0,
+    "reported_loss_raw": "$ 43,000",
+    "description_raw": "A Discord Mod on LayerZero has reported that a scammer who introduced a phishing link within a proposal vote on the Stargate Snapshot platform, enticing users to stake $STG tokens. Over 1K users took part in the vote, resulting in a loss of ~$43K",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/i825jmhr.html"
+    ]
+  },
+  {
+    "event_date": "2023-10-08",
+    "target": "OmniBTC",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "OmniBTC's Discord was hacked and the attackers posted a phishing link in the announcement channel.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/_erkan_aslan/status/1711053201179390423"
+    ]
+  },
+  {
+    "event_date": "2023-09-05",
+    "target": "Connext",
+    "slowmist_attack_method": "DoS Attack",
+    "reported_loss_usd": 39000.0,
+    "reported_loss_raw": "$ 39,000",
+    "description_raw": "According to a number of community users, there seems to be a problem in the Layer2 interoperability protocol Connext airdrop claim process. The NEXT tokens of some accounts were claimed to unexpected addresses. The data on the chain shows that the address starting with 0x44Af received a large number of Connext token NEXT airdrops through 230 accounts in the past 1 hour, and sold them all for ETH, USDT and USDC, earning nearly 39,000 US dollars. According to SlowMist analysis, users can claim NEXT tokens through the claimBySignature function of the NEXT Distributor contract. There are recipient and beneficiary roles, the recipient role is used to receive the NEXT tokens of the claim, and the beneficiary role is the address that is eligible to receive NEXT tokens, which has been determined when the Connext protocol announces the air investment qualifications. When the user makes a NEXT token claim, the contract will perform two checks: one is to check the signature of the beneficiary role, and the other is to check whether the beneficiary role is eligible to receive the airdrop. During the first check, it will check whether the recipient passed in by the user is signed by the beneficiary role, so the random incoming recipient address cannot pass the check if it is not signed by the beneficiary. If you specify a beneficiary address to construct a signature, even if it can pass the signature check, it cannot pass the second check on the eligibility for airdrops. Airdrop claim eligibility checks are checked through Merkle proofs, which should be officially generated by the Connext protocol. Therefore, users who are not eligible to receive airdrops cannot bypass the check to receive other people's airdrops. On September 7, Connext released a post-mortem analysis, stating that the attacker performed DOS operations on Tokensoft\u2019s API, causing the claim database and UI to crash. During this process, 274,956 NEXT from 253 wallets (not related to Connext) were claimed (0.26% of the total airdrop) and sold for approximately 40,000 USDT before ordinary users were able to claim it. But Connext was not compromised in any way. After the DOS attack ended, airdrop claims returned to normal.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/y42fzup8.html"
+    ]
+  },
+  {
+    "event_date": "2023-07-07",
+    "target": "Multichain",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": 126000000.0,
+    "reported_loss_raw": "$ 126,000,000",
+    "description_raw": "Around $126 million worth of tokens have been withdrawn from the Multichain bridge on the Fantom network. 7,200 WETH (approximately $13.7 million) and $4 million in stablecoin DAI (the above four tokens are worth more than $100 million), which also includes other tokens such as Chainlink, YFI, Wootrade Network, and UniDex\u2019s total supply nearly a quarter. Assets also appear to be moving on Multichain\u2019s Moonriver bridge, including 4.8 million USDC and 1 million USDT. Dogechain also experienced abnormal fund flows, and at least 660,000 USDC were sent to the same wallet as Moonriver's fund flows. Multichain tweeted that the \u201cteam is unsure of what happened and is currently investigating\u201d and advised users to stop using the service and withdraw contract approval.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.theblock.co/post/238206/tens-of-millions-of-dollars-withdrawn-from-multichain-on-fantom-in-possible-exploit"
+    ]
+  },
+  {
+    "event_date": "2023-07-02",
+    "target": "Poly Network",
+    "slowmist_attack_method": "Trojan horse virus",
+    "reported_loss_usd": 10000000.0,
+    "reported_loss_raw": "$ 10,000,000",
+    "description_raw": "The Poly Network, a cross-chain interoperability protocol, was attacked again. This attack affected 58 assets on 11 blockchains. According to SlowMist analysis, Poly Network hackers have profited over $10 million worth of mainstream assets. The attackers implanted a Trojan virus into the program compilation environment, allowing them to acquire the consensus keys of Poly Network\u2019s Relay Chain. Subsequently, they utilized these keys to forge cross-chain transactions. The hackers implanted a Trojan horse code block during the program compilation process, obtaining and uploading consensus keys during program startup. They then employed these keys to sign the block header of the forged Poly Network\u2019s Relay Chain, ultimately submitting the forged cross-chain transactions and block header to the target chain to execute the cross-chain exploit.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://polynetwork.medium.com/the-poly-network-exploit-analysis-b0a77aff6078"
+    ]
+  },
+  {
+    "event_date": "2023-06-01",
+    "target": "Cellframe Network",
+    "slowmist_attack_method": "Flash Loan Attack",
+    "reported_loss_usd": 74000.0,
+    "reported_loss_raw": "$ 74,000",
+    "description_raw": "The Cellframe Network, a blockchain network based on sharding architecture, is suspected of being attacked by a flash loan. The attacker made a profit of 245 BNB (approximately 74,000 US dollars), and the token CELL has fallen by more than 65%. According to MistTrack analysis, the attacker's address (0x252...079) on Ethereum had withdrawn 1.37 ETH from Binance.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/MistTrack_io/status/1664182095730872320"
+    ]
+  },
+  {
+    "event_date": "2023-05-25",
+    "target": "Multichain",
+    "slowmist_attack_method": "Unknown",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Multichain tweeted that although most of the cross-chain routes of the Multichain protocol are operating normally, due to force majeure, some cross-chain routes cannot be used, and the time to restore services is unknown. After service is restored, pending transactions will be credited automatically. Multichain will compensate users affected during this process, and the compensation plan will be announced later. According to previous reports from multiple community users, there is an abnormal delay in the arrival of Multichain cross-chain funds. Markets show that the Multichain token MULTI has fallen 24.1% in the past 24 hours and is currently trading at $5.36.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/MultichainOrg/status/1661443109019062272"
+    ]
+  },
+  {
+    "event_date": "2023-05-24",
+    "target": "Celer Network",
+    "slowmist_attack_method": "Contract Vulnerability",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Cross-chain interoperability protocol Celer Network reported Wednesday that it has patched a code vulnerability first discovered by Jump Crypto, The Block reported. In a blog post published by Celer and Jump Crypto, a vulnerability in the State Guardian Network (SGN), Celer's proof-of-stake (PoS) blockchain, was disclosed. If implemented, the vulnerability could allow a malicious validator to submit a large number of fraudulent \"votes\", resulting in a change in the state of the network. Celer emphasized that the breach did not result in any financial loss. The vulnerability was not publicly accessible and no funds were directly at risk when it was discovered. Celer said it would propose a bug bounty for Jump Crypto as a result of the discovery.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.theblock.co/post/232025/celer-network-patches-code-vulnerability-discovered-by-jump-crypto"
+    ]
+  },
+  {
+    "event_date": "2023-04-19",
+    "target": "zkLink",
+    "slowmist_attack_method": "Account Compromise",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The Discord server of the cross-chain trading platform zkLink has been hacked, and some hackers posted phishing links. Do not click on any links until the team confirms that they have regained control of the server.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/zkLinkorg/status/1648557699477434369"
+    ]
+  },
+  {
+    "event_date": "2023-04-02",
+    "target": "Allbridge",
+    "slowmist_attack_method": "Price Manipulation",
+    "reported_loss_usd": 570000.0,
+    "reported_loss_raw": "$ 570,000",
+    "description_raw": "The cross-chain bridge Allbridge was hacked and lost about $570,000 (including about 280,000 BUSD and about 290,000 USDT). The root cause appears to be manipulation of the Swap price of the pool. The hacker played the dual role of liquidity provider and trader, draining the funds in the pool. On April 4, Allbridge tweeted: \"The owner of address 0xC578 contacted us and refunded 1,500 BNB (approximately $463,600), and the remaining funds will be considered a white hat bounty for this individual.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/Allbridge_io/status/1642507995610329088"
+    ]
+  },
+  {
+    "event_date": "2023-02-15",
+    "target": "Multichain",
+    "slowmist_attack_method": "Rush Attack",
+    "reported_loss_usd": 130000.0,
+    "reported_loss_raw": "$ 130,000",
+    "description_raw": "Multichain's AnyswapV4Router contract suffered a rush attack, and the attacker made a profit of about 87 Ethereum, about $130,000. After analysis, the attacker used the MEV contract (0xd050) to pre-emptively call the anySwapOutUnderlyingWithPermit function of the AnyswapV4Router contract before the normal transaction was executed (the user authorized WETH but has not yet performed the transfer), although the function uses the permit signature of the token verification, but the stolen WETH this time does not have a relevant signature verification function, and only triggers a deposit function in a fallback. In subsequent function calls, the attacker can directly use the safeTransferFrom function to transfer the WETH authorized by the _underlying address to the attacked contract to the attack contract without signature verification.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://www.panewslab.com/zh/sqarticledetails/543vc392.html"
+    ]
+  },
+  {
+    "event_date": "2022-12-25",
+    "target": "Rubic",
+    "slowmist_attack_method": "Data incoming error",
+    "reported_loss_usd": 1400000.0,
+    "reported_loss_raw": "$ 1,400,000",
+    "description_raw": "The multi-chain exchange protocol Rubic was hacked and lost more than $1.4 million. The attacker has transferred 1,100 ETH to the Tornado Cash mixing protocol. According to the analysis of the SlowMist security team, the root cause of the attack is that the Rubic protocol wrongly added USDC tokens to the Router whitelist, resulting in the theft of USDC tokens of users authorized to the RubicProxy contract.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://foresightnews.pro/news/h5Detail/15051"
+    ]
+  },
+  {
+    "event_date": "2022-11-04",
+    "target": "pNetwork",
+    "slowmist_attack_method": "Configuration Error",
+    "reported_loss_usd": 10800000.0,
+    "reported_loss_raw": "$ 10,800,000",
+    "description_raw": "An address on the BNB Chain minted more than $1 billion of pGALA tokens out of thin air, and sold them through PancakeSwap to make a profit. The pGALA contract hacker has made a profit of $4.3 million. One Smart Money address arbitraged nearly $6.5 million in this attack, even more than the attacker's profit. Multi-link is tweeted by the protocol pNetwork, and the pGALA contract on the BNB Chain needs to be redeployed due to the misconfiguration of the cross-chain bridge. Huobi Global announced that it would re-list GALA after proposing that the GALA purchased after the abnormal event would be renamed pGALA, and the project party agreed to pay full compensation to the holders of the currency before the accident.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/pNetworkDeFi/status/1588266897061031936"
+    ]
+  },
+  {
+    "event_date": "2022-11-02",
+    "target": "Rubic",
+    "slowmist_attack_method": "Private Key Leakage",
+    "reported_loss_usd": 1200000.0,
+    "reported_loss_raw": "$ 1,200,000",
+    "description_raw": "The multi-chain exchange protocol Rubic tweeted that an administrator\u2019s wallet address, which manages the RBC/BRBC cross-chain bridge and staking rewards, was stolen, and the team suspected that malware stole the private key. The attacker sold about 34 million RBC/BRBC on Uniswap and PancakeSwap, the user's staking funds are safe and the smart contract is not exploited.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/CryptoRubic/status/1587704890800889858"
+    ]
+  },
+  {
+    "event_date": "2022-10-28",
+    "target": "THORChain",
+    "slowmist_attack_method": "Network interruption",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "The THORChain network of the cross-chain DeFi protocol was interrupted. The official said that the consensus problem has been identified and a patch will be released. The code pushes cosmos.Uint (instead of uint64) into the string, which causes the string to get an arbitrarily large integer instead of the actual value, causing the memo string to be on a different node. On October 28th, THORChain was back online and produced blocks. The network is signing block transactions, so pending transactions should start going through. Once the queue is cleared, the transaction will be re-enabled. Expect 2-3 hours. During the network outage, investors did not lose any funds. However, the exchange deposits and withdrawals of Thorchain's native currency RUNE have been suspended on centralized exchanges such as Kucoin.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/THORChain/status/1585800482764730369"
+    ]
+  },
+  {
+    "event_date": "2022-10-11",
+    "target": "QANplatform",
+    "slowmist_attack_method": "Profanity Vulnerability",
+    "reported_loss_usd": 2000000.0,
+    "reported_loss_raw": "$ 2,000,000",
+    "description_raw": "Layer1 blockchain QANplatform (QANX), which is resistant to quantum computing attacks, tweeted that its smart contract cross-chain bridge was attacked, and the attacker managed to extract tokens, reminding users not to perform any transactions related to QANX tokens. According to the findings, the hackers obtained the private keys to the bridge wallet and withdrew more than 1.4 billion QANX tokens worth more than $1 million in two transactions.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://medium.com/qanplatform/qanx-bridge-wallet-disclosure-analysis-continuously-updated-724121bbbf9a"
+    ]
+  },
+  {
+    "event_date": "2022-08-20",
+    "target": "Rainbow Bridge",
+    "slowmist_attack_method": "Fake NEAR blocks",
+    "reported_loss_usd": null,
+    "reported_loss_raw": "-",
+    "description_raw": "Aurora Labs CEO Alex Shevchenko revealed that an attacker trying to steal funds from Rainbow Bridge was stopped in 31 seconds, losing 5 ETH in the process.",
+    "slowmist_page_url": "https://hacked.slowmist.io/?c=Bridge&page=3",
+    "slowmist_page_no": 3,
+    "reference_urls": [
+      "https://twitter.com/AlexAuroraDev/status/1520810591803293696"
+    ]
+  }
+]

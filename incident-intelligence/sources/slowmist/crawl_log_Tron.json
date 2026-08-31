@@ -1,0 +1,39 @@
+{
+  "tag": "Tron",
+  "category_filter": "Tron",
+  "window_start": "2026-02-22",
+  "window_end": "2026-08-22",
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://hacked.slowmist.io/?c=Tron&page=1",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:52Z",
+      "sha256": "1c3b330f20136efd8fa714bcce94bfc6ab4f3e7945d2f9c92b4d60ceccfa1c85",
+      "bytes": 24063,
+      "snapshot": "Tron_page_001.html",
+      "rows_parsed": 20,
+      "rows_in_window": 1,
+      "rows_older_than_window": 19,
+      "first_date": "2019-04-11",
+      "last_date": "2026-08-09",
+      "status": "OK"
+    },
+    {
+      "page": 2,
+      "url": "https://hacked.slowmist.io/?c=Tron&page=2",
+      "http": "200",
+      "retrieved_utc": "2026-08-23T02:16:53Z",
+      "sha256": "222ef481503d483047b9e42a461350c774b9e1eb652296a389c1b0d16fd8aebf",
+      "bytes": 8096,
+      "snapshot": "Tron_page_002.html",
+      "rows_parsed": 4,
+      "rows_in_window": 0,
+      "rows_older_than_window": 4,
+      "first_date": "2018-12-31",
+      "last_date": "2019-04-11",
+      "status": "BOUNDARY_PROVEN"
+    }
+  ],
+  "total_rows": 24
+}
