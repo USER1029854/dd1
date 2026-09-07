@@ -1,0 +1,962 @@
+[
+ {
+  "name": "Oddz",
+  "slug": "oddz",
+  "category": "Options",
+  "chains": "Avalanche,Binance",
+  "tvl": 59201.336957234795,
+  "age": 4.778226890262003,
+  "rev30": null,
+  "surface": "auto-roll / settlement automators (the sofa.org shape)"
+ },
+ {
+  "name": "Katana",
+  "slug": "katana",
+  "category": "Options Vault",
+  "chains": "Solana",
+  "tvl": 1985577.585212181,
+  "age": 4.675422920196046,
+  "rev30": null,
+  "surface": "auto-roll / settlement automators (the sofa.org shape)"
+ },
+ {
+  "name": "FLRFarm",
+  "slug": "flrfarm",
+  "category": "Yield",
+  "chains": "Flare,Songbird",
+  "tvl": 54488.69240375752,
+  "age": 4.650560699242216,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Domination Finance",
+  "slug": "domination-finance",
+  "category": "Derivatives",
+  "chains": "Base,Polygon",
+  "tvl": 247682.0038864418,
+  "age": 4.506555213448203,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "Klayportal",
+  "slug": "klayportal",
+  "category": "Staking Pool",
+  "chains": "Klaytn",
+  "tvl": 554172.7204844608,
+  "age": 4.372344755558807,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "LiNEAR Protocol",
+  "slug": "linear-protocol",
+  "category": "Liquid Staking",
+  "chains": "Near",
+  "tvl": 49686117.61672179,
+  "age": 4.343498167532424,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Mole",
+  "slug": "mole",
+  "category": "Yield",
+  "chains": "Sui,Aptos",
+  "tvl": 8672158.453681137,
+  "age": 4.259001814158502,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Hedge",
+  "slug": "hedge",
+  "category": "CDP",
+  "chains": "Solana",
+  "tvl": 51637.702785989975,
+  "age": 4.135451966365503,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "Demex Perp",
+  "slug": "demex-perp",
+  "category": "Derivatives",
+  "chains": "Carbon",
+  "tvl": 198782.0617810591,
+  "age": 4.048872818724712,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "Aurora Plus",
+  "slug": "aurora-plus",
+  "category": "Farm",
+  "chains": "Aurora",
+  "tvl": 1071303.2460887772,
+  "age": 4.011971911824661,
+  "rev30": null,
+  "surface": "reward/harvest automators"
+ },
+ {
+  "name": "Flashstake",
+  "slug": "flashstake",
+  "category": "Yield",
+  "chains": "Ethereum,Optimism",
+  "tvl": 51800.66220710786,
+  "age": 3.9607050739251175,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Easedefi.org",
+  "slug": "easedefi-org",
+  "category": "Insurance",
+  "chains": "Ethereum",
+  "tvl": 4862466.31339919,
+  "age": 3.923764149267584,
+  "rev30": null,
+  "surface": "claim/settlement automators"
+ },
+ {
+  "name": "Kleva Farm",
+  "slug": "kleva-farm",
+  "category": "Leveraged Farming",
+  "chains": "Klaytn",
+  "tvl": 783812.1504501466,
+  "age": 3.91012373830868,
+  "rev30": null,
+  "surface": "auto-compound + deleverage keepers"
+ },
+ {
+  "name": "Meteora vaults",
+  "slug": "meteora-vaults",
+  "category": "Yield Aggregator",
+  "chains": "Solana",
+  "tvl": 51597863.44396341,
+  "age": 3.8719111875730126,
+  "rev30": null,
+  "surface": "per-vault strategy + harvester keepers"
+ },
+ {
+  "name": "Yield Yak Staked Avax",
+  "slug": "yield-yak-staked-avax",
+  "category": "Liquid Staking",
+  "chains": "Avalanche",
+  "tvl": 388060.1607836655,
+  "age": 3.8610436710839204,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Nitron",
+  "slug": "nitron",
+  "category": "CDP",
+  "chains": "Carbon",
+  "tvl": 72439.24610328481,
+  "age": 3.7508258565227846,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "NEOPIN Staking",
+  "slug": "neopin-staking",
+  "category": "Staking Pool",
+  "chains": "Klaytn,Tron",
+  "tvl": 36569344.634456635,
+  "age": 3.7292197872685984,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "Opyn Squeeth",
+  "slug": "opyn-squeeth",
+  "category": "Derivatives",
+  "chains": "Ethereum",
+  "tvl": 611266.2259845379,
+  "age": 3.6884343674309523,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "BendDAO APE Staking",
+  "slug": "benddao-ape-staking",
+  "category": "Yield",
+  "chains": "Ethereum,ApeChain",
+  "tvl": 2357482.368151872,
+  "age": 3.548597672859669,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Phoenix Bonds",
+  "slug": "phoenix-bonds",
+  "category": "Yield Aggregator",
+  "chains": "Near",
+  "tvl": 89322.36369696869,
+  "age": 3.521191375294981,
+  "rev30": null,
+  "surface": "per-vault strategy + harvester keepers"
+ },
+ {
+  "name": "ABC Pool",
+  "slug": "abc-pool",
+  "category": "Staking Pool",
+  "chains": "Conflux",
+  "tvl": 5091841.821529818,
+  "age": 3.4055926310027433,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "Quicksilver Protocol",
+  "slug": "quicksilver-protocol",
+  "category": "Liquid Staking",
+  "chains": "Quicksilver",
+  "tvl": 254784.63021783164,
+  "age": 3.3917136355689532,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "TokenPocket",
+  "slug": "tokenpocket",
+  "category": "Staking Pool",
+  "chains": "Ethereum",
+  "tvl": 245639.70448000592,
+  "age": 3.376275659922074,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "CRETH2",
+  "slug": "creth2",
+  "category": "Liquid Staking",
+  "chains": "Ethereum",
+  "tvl": 1673884.993126368,
+  "age": 3.336583403453276,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Zomma Protocol",
+  "slug": "zomma-protocol",
+  "category": "Options",
+  "chains": "zkSync Era,Arbitrum",
+  "tvl": 79865.12760749878,
+  "age": 3.315525501373114,
+  "rev30": null,
+  "surface": "auto-roll / settlement automators (the sofa.org shape)"
+ },
+ {
+  "name": "FilFi",
+  "slug": "filfi",
+  "category": "Staking Pool",
+  "chains": "Filecoin",
+  "tvl": 110385.16105911492,
+  "age": 3.272154084579608,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "Carmine Options",
+  "slug": "carmine-options",
+  "category": "Options",
+  "chains": "Starknet",
+  "tvl": 95818.51572496214,
+  "age": 3.230853570880978,
+  "rev30": null,
+  "surface": "auto-roll / settlement automators (the sofa.org shape)"
+ },
+ {
+  "name": "Stella",
+  "slug": "stella",
+  "category": "Leveraged Farming",
+  "chains": "Arbitrum",
+  "tvl": 442829.22741781484,
+  "age": 3.213421873772911,
+  "rev30": null,
+  "surface": "auto-compound + deleverage keepers"
+ },
+ {
+  "name": "Hypha",
+  "slug": "hypha",
+  "category": "Liquid Staking",
+  "chains": "Avalanche",
+  "tvl": 3748216.3847732926,
+  "age": 3.192564250738918,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "HashKing",
+  "slug": "hashking",
+  "category": "Liquid Staking",
+  "chains": "Filecoin",
+  "tvl": 301601.9859231558,
+  "age": 3.177210718268091,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Meter Liquid Staking",
+  "slug": "meter-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Meter",
+  "tvl": 85038.14914642386,
+  "age": 3.1438917177607344,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "JewelSwap Liquid Staking",
+  "slug": "jewelswap-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Elrond,Sui",
+  "tvl": 313192.1803530252,
+  "age": 3.1226048709824497,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "HERE Wallet staking",
+  "slug": "here-wallet-staking",
+  "category": "Liquid Staking",
+  "chains": "Near",
+  "tvl": 597620.4886977935,
+  "age": 3.1092626589073604,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Messina Liquid Staking",
+  "slug": "messina-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Algorand",
+  "tvl": 1056158.502151416,
+  "age": 2.9920010848332868,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "MEV Protocol",
+  "slug": "mev-protocol",
+  "category": "Liquid Staking",
+  "chains": "Ethereum",
+  "tvl": 121001.92980173901,
+  "age": 2.8629520932046715,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Blast pre-launch Farm",
+  "slug": "blast-pre-launch-farm",
+  "category": "Farm",
+  "chains": "Ethereum",
+  "tvl": 2286517.549068449,
+  "age": 2.7962974762589585,
+  "rev30": null,
+  "surface": "reward/harvest automators"
+ },
+ {
+  "name": "IntentX",
+  "slug": "intentx",
+  "category": "Derivatives",
+  "chains": "Base,Mantle",
+  "tvl": 5673214.303925948,
+  "age": 2.787997723595336,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "Deri V4",
+  "slug": "deri-v4",
+  "category": "Options",
+  "chains": "Linea,Binance",
+  "tvl": 7893599.80360532,
+  "age": 2.77608073983075,
+  "rev30": null,
+  "surface": "auto-roll / settlement automators (the sofa.org shape)"
+ },
+ {
+  "name": "Balanced Dollar",
+  "slug": "balanced-dollar",
+  "category": "CDP",
+  "chains": "Icon",
+  "tvl": 367576.1131584924,
+  "age": 2.707612703301069,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "Magma Finance",
+  "slug": "magma-finance",
+  "category": "CDP",
+  "chains": "IoTeX",
+  "tvl": 77574.34077233898,
+  "age": 2.6961207892980252,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "Blueberry",
+  "slug": "blueberry",
+  "category": "Yield",
+  "chains": "Hyperliquid L1,Ethereum",
+  "tvl": 257207.40808417456,
+  "age": 2.606111086101678,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Omni Liquid Staking",
+  "slug": "omni-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Astar,Astar zkEVM",
+  "tvl": 308649.068662451,
+  "age": 2.5781813232909223,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Clip Finance",
+  "slug": "clip-finance",
+  "category": "Liquidity Manager",
+  "chains": "Linea,Binance",
+  "tvl": 86180.15034641248,
+  "age": 2.5590256916318657,
+  "rev30": null,
+  "surface": "rebalance/compound automators"
+ },
+ {
+  "name": "SHUI",
+  "slug": "shui",
+  "category": "Liquid Staking",
+  "chains": "Conflux",
+  "tvl": 1113047.5276500501,
+  "age": 2.542865462052972,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Strater",
+  "slug": "strater",
+  "category": "Yield",
+  "chains": "Sui",
+  "tvl": 134589.09709031036,
+  "age": 2.5173674914796584,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Artemis Finance",
+  "slug": "artemis-finance",
+  "category": "Liquid Staking",
+  "chains": "Goat,Metis",
+  "tvl": 818328.0510940296,
+  "age": 2.4926765034025404,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Tensorplex",
+  "slug": "tensorplex",
+  "category": "Liquid Staking",
+  "chains": "Bittensor",
+  "tvl": 261988.8539419055,
+  "age": 2.4690656459697653,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Hatom TAO Liquid Staking",
+  "slug": "hatom-tao-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Elrond",
+  "tvl": 937226.2487397611,
+  "age": 2.446633282956067,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "AILayer farm",
+  "slug": "ailayer-farm",
+  "category": "Farm",
+  "chains": "Bitcoin,zkLink",
+  "tvl": 81415606.94731627,
+  "age": 2.4305822301909727,
+  "rev30": null,
+  "surface": "reward/harvest automators"
+ },
+ {
+  "name": "Particle DUO",
+  "slug": "particle-duo",
+  "category": "CDP",
+  "chains": "Blast",
+  "tvl": 58151.44234448315,
+  "age": 2.4144768585522107,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "Breadchain",
+  "slug": "breadchain",
+  "category": "CDP",
+  "chains": "xDai",
+  "tvl": 404184.8680603774,
+  "age": 2.397561935924103,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "BTCFi CDP",
+  "slug": "btcfi-cdp",
+  "category": "CDP",
+  "chains": "Bitcoin,Bifrost Network",
+  "tvl": 7607315.009074215,
+  "age": 2.3789907157313075,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "Manta CeDeFi",
+  "slug": "manta-cedefi",
+  "category": "Basis Trading",
+  "chains": "Manta",
+  "tvl": 26811460.15124582,
+  "age": 2.294046081028111,
+  "rev30": null,
+  "surface": "rebalance/hedge automators"
+ },
+ {
+  "name": "Core Earn",
+  "slug": "core-earn",
+  "category": "Liquid Staking",
+  "chains": "CORE",
+  "tvl": 156082.45087057768,
+  "age": 2.280427835213804,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Affine Restaking",
+  "slug": "affine-restaking",
+  "category": "Liquid Restaking",
+  "chains": "Ethereum,Linea",
+  "tvl": 61160.49803073376,
+  "age": 2.194035046020501,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Doubler",
+  "slug": "doubler",
+  "category": "Derivatives",
+  "chains": "Arbitrum,Manta",
+  "tvl": 159160.90100526038,
+  "age": 2.1689838029966553,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "Corn Kernels",
+  "slug": "corn-kernels",
+  "category": "Farm",
+  "chains": "Ethereum",
+  "tvl": 346611.45456103934,
+  "age": 1.9344758121290753,
+  "rev30": null,
+  "surface": "reward/harvest automators"
+ },
+ {
+  "name": "Gain",
+  "slug": "gain",
+  "category": "Onchain Capital Allocator",
+  "chains": "Ethereum",
+  "tvl": 32144759.191364888,
+  "age": 1.8920842913274518,
+  "rev30": null,
+  "surface": "allocation/rebalance automators"
+ },
+ {
+  "name": "GOLDSTATION Staking",
+  "slug": "goldstation-staking",
+  "category": "Staking Pool",
+  "chains": "Klaytn",
+  "tvl": 461632.4736367302,
+  "age": 1.8758149800641337,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "Adrastea LRT",
+  "slug": "adrastea-lrt",
+  "category": "Liquid Restaking",
+  "chains": "Solana",
+  "tvl": 593054.2854754926,
+  "age": 1.8681595703736211,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Hourglass",
+  "slug": "hourglass",
+  "category": "Yield",
+  "chains": "Ethereum,Mantle",
+  "tvl": 154834.28708822088,
+  "age": 1.8681595703736211,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Synatra",
+  "slug": "synatra",
+  "category": "Yield Aggregator",
+  "chains": "Solana",
+  "tvl": 2024025.3034184878,
+  "age": 1.8529329722001053,
+  "rev30": null,
+  "surface": "per-vault strategy + harvester keepers"
+ },
+ {
+  "name": "Endur",
+  "slug": "endur",
+  "category": "Liquid Staking",
+  "chains": "Starknet",
+  "tvl": 6333219.402647156,
+  "age": 1.7795542304446512,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Biquid",
+  "slug": "biquid",
+  "category": "Liquid Staking",
+  "chains": "Bifrost Network",
+  "tvl": 2978287.920159842,
+  "age": 1.756796810353327,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Inter Protocol",
+  "slug": "inter-protocol",
+  "category": "CDP",
+  "chains": "Agoric",
+  "tvl": 81563.78141978351,
+  "age": 1.7181161279586035,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "InfinityPools",
+  "slug": "infinitypools",
+  "category": "Derivatives",
+  "chains": "Base",
+  "tvl": 116780.18810183214,
+  "age": 1.6196568750413025,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "Reti Pooling",
+  "slug": "reti-pooling",
+  "category": "Staking Pool",
+  "chains": "Algorand",
+  "tvl": 65115310.876512416,
+  "age": 1.6196553529712874,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "Sophon Farm",
+  "slug": "sophon-farm",
+  "category": "Farm",
+  "chains": "Sophon,Ethereum",
+  "tvl": 2382854.8678784883,
+  "age": 1.6163093357211606,
+  "rev30": null,
+  "surface": "reward/harvest automators"
+ },
+ {
+  "name": "Angles Stake",
+  "slug": "angles-stake",
+  "category": "Liquid Staking",
+  "chains": "Sonic",
+  "tvl": 617091.2171047936,
+  "age": 1.6024125510940677,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Ethereal Season Zero",
+  "slug": "ethereal-season-zero",
+  "category": "Farm",
+  "chains": "Ethereum",
+  "tvl": 1854199.666552587,
+  "age": 1.5368134579941186,
+  "rev30": null,
+  "surface": "reward/harvest automators"
+ },
+ {
+  "name": "Hemi Staking",
+  "slug": "hemi-staking",
+  "category": "Farm",
+  "chains": "Hemi",
+  "tvl": 43312407.968463644,
+  "age": 1.4925497593639816,
+  "rev30": null,
+  "surface": "reward/harvest automators"
+ },
+ {
+  "name": "Qearn",
+  "slug": "qearn",
+  "category": "Staking Pool",
+  "chains": "Qubic",
+  "tvl": 14101198.601881342,
+  "age": 1.4680829278063965,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "stCYBER",
+  "slug": "stcyber",
+  "category": "Liquid Staking",
+  "chains": "Cyber",
+  "tvl": 1041166.052727391,
+  "age": 1.4660288943208561,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Solido Cash",
+  "slug": "solido-cash",
+  "category": "CDP",
+  "chains": "Supra",
+  "tvl": 466407.26277857076,
+  "age": 1.3943016619515005,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "bemo V2",
+  "slug": "bemo-v2",
+  "category": "Liquid Staking",
+  "chains": "TON",
+  "tvl": 429735.0577332697,
+  "age": 1.38118544556388,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Cyclo",
+  "slug": "cyclo",
+  "category": "Derivatives",
+  "chains": "Flare",
+  "tvl": 179365.7997726136,
+  "age": 1.3620650434837176,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "Telegram USD",
+  "slug": "telegram-usd",
+  "category": "CDP",
+  "chains": "TON",
+  "tvl": 363204.221791,
+  "age": 1.3431415909215665,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "Solv Strategies",
+  "slug": "solv-strategies",
+  "category": "Onchain Capital Allocator",
+  "chains": "Binance,Avalanche",
+  "tvl": 67515482.61620745,
+  "age": 1.3406938803685478,
+  "rev30": null,
+  "surface": "allocation/rebalance automators"
+ },
+ {
+  "name": "Supra Staking",
+  "slug": "supra-staking",
+  "category": "Staking Pool",
+  "chains": "Supra",
+  "tvl": 4129537.606839269,
+  "age": 1.3231222162386644,
+  "rev30": null,
+  "surface": "reward/rate-update keepers"
+ },
+ {
+  "name": "XOXNO Liquid Staking",
+  "slug": "xoxno-liquid-staking",
+  "category": "Liquid Staking",
+  "chains": "Elrond",
+  "tvl": 974702.1144932956,
+  "age": 1.3206010023878272,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Stobix",
+  "slug": "stobix",
+  "category": "Derivatives",
+  "chains": "Base",
+  "tvl": 52241.10121183694,
+  "age": 1.2240207131945244,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "AlphBanX",
+  "slug": "alphbanx",
+  "category": "CDP",
+  "chains": "Alephium",
+  "tvl": 151524.24159747406,
+  "age": 1.2166670221747373,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "hskhodlium",
+  "slug": "hskhodlium",
+  "category": "Liquid Staking",
+  "chains": "HashKey Chain",
+  "tvl": 405357.4817695405,
+  "age": 1.2166667050768174,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "The Rig",
+  "slug": "the-rig",
+  "category": "Liquid Staking",
+  "chains": "Fuel",
+  "tvl": 404264.5721818972,
+  "age": 1.1999751779332357,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Myth Finance dualSTAKE",
+  "slug": "myth-finance-dualstake",
+  "category": "Liquid Staking",
+  "chains": "Algorand",
+  "tvl": 141250.56389059976,
+  "age": 1.197293100307665,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Escher",
+  "slug": "escher",
+  "category": "Liquid Staking",
+  "chains": "Union,Babylon Genesis",
+  "tvl": 352829.1665845687,
+  "age": 1.1669912865075633,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Rysk V12",
+  "slug": "rysk-v12",
+  "category": "Options Vault",
+  "chains": "Hyperliquid L1,Ethereum",
+  "tvl": 49547912.65957797,
+  "age": 1.1598881662640321,
+  "rev30": null,
+  "surface": "auto-roll / settlement automators (the sofa.org shape)"
+ },
+ {
+  "name": "Zeus btcSOL",
+  "slug": "zeus-btcsol",
+  "category": "Liquid Restaking",
+  "chains": "Solana",
+  "tvl": 586771.7652106432,
+  "age": 1.1206516112158333,
+  "rev30": null,
+  "surface": "oracle/rate-update + rebalance keepers"
+ },
+ {
+  "name": "Liminal Basis",
+  "slug": "liminal-basis",
+  "category": "Basis Trading",
+  "chains": "Hyperliquid L1",
+  "tvl": 24216209.96281122,
+  "age": 1.1176824014238496,
+  "rev30": null,
+  "surface": "rebalance/hedge automators"
+ },
+ {
+  "name": "GammaSwap Yield Tokens",
+  "slug": "gammaswap-yield-tokens",
+  "category": "Yield",
+  "chains": "Base",
+  "tvl": 87916.10433703384,
+  "age": 1.0715282601250165,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Atrium",
+  "slug": "atrium",
+  "category": "Farm",
+  "chains": "Cardano",
+  "tvl": 402512.5290005324,
+  "age": 1.0550852109114193,
+  "rev30": null,
+  "surface": "reward/harvest automators"
+ },
+ {
+  "name": "Spectra MetaVaults",
+  "slug": "spectra-metavaults",
+  "category": "Onchain Capital Allocator",
+  "chains": "Base,Flare",
+  "tvl": 9223400.148997117,
+  "age": null,
+  "rev30": null,
+  "surface": "allocation/rebalance automators"
+ },
+ {
+  "name": "GMX V1 Perps",
+  "slug": "gmx-v1-perps",
+  "category": "Derivatives",
+  "chains": "Avalanche,Arbitrum",
+  "tvl": 3191545.3980495427,
+  "age": null,
+  "rev30": null,
+  "surface": "settlement/roll/funding keepers, DOV vaults"
+ },
+ {
+  "name": "Kolibri",
+  "slug": "kolibri",
+  "category": "CDP",
+  "chains": "Tezos",
+  "tvl": 602078.4593604725,
+  "age": null,
+  "rev30": null,
+  "surface": "liquidation & rate-update keepers"
+ },
+ {
+  "name": "TEN Finance",
+  "slug": "ten-finance",
+  "category": "Yield",
+  "chains": "Binance",
+  "tvl": 212728.00677547502,
+  "age": null,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ },
+ {
+  "name": "Penguin Finance",
+  "slug": "penguin-finance",
+  "category": "Yield",
+  "chains": "Avalanche",
+  "tvl": 76787.63281322783,
+  "age": null,
+  "rev30": null,
+  "surface": "harvest/compound strategy contracts"
+ }
+]
