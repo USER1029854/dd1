@@ -33,3 +33,4 @@ exclusion set** (all prior pushes) before it is written.
 > names), so the next run will not re-deliver them. Backing data: `DISC-20260829-003-candidates.json`.
 
 _The exclusion set is a snapshot in `_exclusion_set.json`; regenerate it when new pushes land._
+| `DISC-20260903-005-aggregate-signature-auth-detector.md` | What SOFA actually was (replayable/non-binding aggregate-signature auth on a pooled entrypoint), the real family, and a reusable **code-level detector**; ran it across GitHub → no live on-chain sibling | mechanism + detector + honest negative | supersedes the age lens; keep the detector running |

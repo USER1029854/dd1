@@ -1,5 +1,10 @@
 # Old, ungated automators — 96 unwatched protocols old enough to have a forgotten one
 
+> **Lens correction (2026-09-03):** the real SOFA bug was *not* age-related — it was a replayable /
+> non-binding aggregate-signature authorization on a pooled entrypoint, found by reading code, not by
+> age. See `discoveries/DISC-20260903-005-aggregate-signature-auth-detector.md`. This file stays a valid
+> generic *unwatched* coverage list, but it is **not** the right lens for the SOFA pattern.
+
 > **Why this list exists.** A prior pick, `sofa-org`, turned out to have a real vulnerability, and its
 > shape is worth learning from: the bug was in **one of its old automators — an automation contract that
 > hadn't been used in about a year, but was still live and still not access-gated.** That is the classic
