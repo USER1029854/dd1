@@ -1,0 +1,2064 @@
+[
+ {
+  "name": "Frigg.eco",
+  "slug": "frigg.eco",
+  "cat": "RWA",
+  "tvl": 182532,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-10",
+  "desc": "Frigg - Invest in a sustainable Future.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Foodcourt",
+  "slug": "foodcourt",
+  "cat": "Dexs",
+  "tvl": 45315,
+  "chains": [
+   "Binance",
+   "REIchain"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-05",
+  "desc": "Foodcourt is DEX on REI chain that enable KUMA stable yield farming.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "CyberTime",
+  "slug": "cybertime",
+  "cat": "Services",
+  "tvl": 45090,
+  "chains": [
+   "Binance"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "CyberTime Finance is a decentralized application platform designed to be an ecosystem containing farming, DAO, NFT, Mystery Boxes and a game called Da",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "AnchorSwap",
+  "slug": "anchorswap",
+  "cat": "Dexs",
+  "tvl": 44283,
+  "chains": [
+   "Binance"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-10",
+  "desc": "AnchorSwap is a Decentralized Exchange and Automatic Liquidity Acquisition Yield Farm",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "AtomicHub",
+  "slug": "atomichub",
+  "cat": "Dexs",
+  "tvl": 44111,
+  "chains": [
+   "Wax",
+   "EOS"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "AtomicHub is a one stop solution for creating, trading, buying and selling NFTs that is already used by millions of loyal users.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "WOWswap",
+  "slug": "wowswap",
+  "cat": "Dexs",
+  "tvl": 43405,
+  "chains": [
+   "Binance",
+   "Polygon",
+   "Avalanche",
+   "IoTeX",
+   "Kava",
+   "Heco",
+   "Ethereum",
+   "Metis"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "WOWswap is a decentralized leveraged trading protocol built on Ethereum, Solana, Arbitrum, Avalanche, Binance Smart Chain, IoTeX, Polygon and HECO Cha",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Spin Spot",
+  "slug": "spin-spot",
+  "cat": "Dexs",
+  "tvl": 41370,
+  "chains": [
+   "Near"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-06",
+  "desc": "Spin is a DeFi derivatives infrastructure built on NEAR Protocol, a reliable and scalable L1 solution. The on-chain order book solution offered by Spi",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "SpicySwap",
+  "slug": "spicyswap",
+  "cat": "Dexs",
+  "tvl": 39719,
+  "chains": [
+   "Tezos"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "Next-generation DEX built on Tezos",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Humble Defi",
+  "slug": "humble-defi",
+  "cat": "Dexs",
+  "tvl": 36754,
+  "chains": [
+   "Voi Network",
+   "Algorand"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-04",
+  "desc": "Humble Defi is your one stop shop Defi suite. Our first product, Humble Swap is an AMM style exchange that allows you to swap, pool and earn on your a",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Phuture",
+  "slug": "phuture",
+  "cat": "Indexes",
+  "tvl": 36363,
+  "chains": [
+   "Avalanche",
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-06",
+  "desc": "Phuture is a decentralised crypto index platform that simplifies investments through automated, themed index funds on Ethereum.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "SuperFarm",
+  "slug": "superfarm",
+  "cat": "Services",
+  "tvl": 30660,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "Cross-chain protocol allowing anyone to deploy DeFi and NFT farms with no code required.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Platypus Finance",
+  "slug": "platypus-finance",
+  "cat": "Dexs",
+  "tvl": 28893,
+  "chains": [
+   "Avalanche"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "Platypus combined stableswap and stablecoin, masterfully utilizing its underlying assets to bring next-level capital efficiency.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "Oswap AMM",
+  "slug": "oswap-amm",
+  "cat": "Dexs",
+  "tvl": 28102,
+  "chains": [
+   "Obyte"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-05",
+  "desc": "A fully decentralized protocol for automated liquidity provision on Obyte.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Aldrin",
+  "slug": "aldrin",
+  "cat": "Dexs",
+  "tvl": 25606,
+  "chains": [
+   "Solana"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "Aldrin's mission is to simplify DeFi and create powerful tools for all traders to succeed.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "RobiniaSwap",
+  "slug": "robiniaswap",
+  "cat": "Dexs",
+  "tvl": 23341,
+  "chains": [
+   "Binance"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "Robinia Swap is the Yield Farm DeFi and AMM decentralized exchange running on Binance Smart Chain.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "HaloFi",
+  "slug": "halofi",
+  "cat": "Services",
+  "tvl": 22809,
+  "chains": [
+   "Polygon",
+   "Celo",
+   "Base"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-04",
+  "desc": "HaloFi (prev. GoodGhosting) helps you grow your wealth, step by step, with crypto. Whether you want to save regularly or hold onto your tokens for the",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "ExinSwap",
+  "slug": "exinswap",
+  "cat": "Dexs",
+  "tvl": 21705,
+  "chains": [
+   "Mixin"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "ExinSwap is the automated market making trading platform of Exin.",
+  "surface": "other_bespoke",
+  "deadchain": true,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Penguin",
+  "slug": "penguin",
+  "cat": "Dexs",
+  "tvl": 20948,
+  "chains": [
+   "Solana"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-03",
+  "desc": "A Liquidity-as-a-Service Platform, built on Solana.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "DolphinSwap",
+  "slug": "dolphinswap",
+  "cat": "Dexs",
+  "tvl": 20132,
+  "chains": [
+   "EOS"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-03",
+  "desc": "DolphinSwap supports multiple proportional market-making mechanisms",
+  "surface": "other_bespoke",
+  "deadchain": true,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Aptoswap",
+  "slug": "aptoswap",
+  "cat": "Dexs",
+  "tvl": 18634,
+  "chains": [
+   "Aptos"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-10",
+  "desc": "Swap platform on Aptos",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Polkaswap",
+  "slug": "polkaswap",
+  "cat": "Dexs",
+  "tvl": 18282,
+  "chains": [
+   "Sora"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-10",
+  "desc": "Polkaswap is a DEX built on SORA network",
+  "surface": "other_bespoke",
+  "deadchain": true,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "BlockNG",
+  "slug": "blockng",
+  "cat": "Dexs",
+  "tvl": 18213,
+  "chains": [
+   "smartBCH"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-05",
+  "desc": "BlockNG is a non-profit organization formed by a group of early evangelists of blockchain, dedicated to using the digital economy to reconstruct human",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "BeGlobal Finance",
+  "slug": "beglobal-finance",
+  "cat": "Dexs",
+  "tvl": 17726,
+  "chains": [
+   "Binance"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "BeGlobal.finance aims to be your preferred DeFi site offering trading (swaps), optimizer (auto-compound), NFTs with multiple utilies and highest yield",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Cykura",
+  "slug": "cykura",
+  "cat": "Dexs",
+  "tvl": 15324,
+  "chains": [
+   "Solana"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "Cykura is the first CLMM on Solana that solves the problem of capital inefficiency and maximizes returns for liquidity providers while offering a smoo",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "Solidly",
+  "slug": "solidly",
+  "cat": "Dexs",
+  "tvl": 13396,
+  "chains": [
+   "Fantom"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "Solidly allows low cost, near 0 slippage trades on uncorrelated or tightly correlated assets. The protocol incentivizes fees instead of liquidity. Liq",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Powaa Protocol",
+  "slug": "powaa-protocol",
+  "cat": "Services",
+  "tvl": 12912,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-09",
+  "desc": "Powaa protocol was built to swap all the obsolete assets on PoW Ethereum for ETHW after the upcoming Ethereum Merge towards PoS.",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "MonoX",
+  "slug": "monox",
+  "cat": "Dexs",
+  "tvl": 11074,
+  "chains": [
+   "Polygon",
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "MonoX is a new DeFi protocol using a single token design for liquidity pools (instead of using pool pairs). This is made possible by grouping deposite",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Loop Finance",
+  "slug": "loop-finance",
+  "cat": "Dexs",
+  "tvl": 10460,
+  "chains": [
+   "Terra",
+   "Juno"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "LOOPTokenized Community & DEX on Terra",
+  "surface": "other_bespoke",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Olive",
+  "slug": "olive",
+  "cat": "Options Vault",
+  "tvl": 49950,
+  "chains": [
+   "Ethereum",
+   "Polygon",
+   "Arbitrum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-04",
+  "desc": "Olive is a multi-chain protocol that combines composability with structured products to amplify yields without exposing users' funds to principal or c",
+  "surface": "options_structured_payoff",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Vovo Finance",
+  "slug": "vovo-finance",
+  "cat": "Yield",
+  "tvl": 42508,
+  "chains": [
+   "Arbitrum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-07",
+  "desc": "Structured products with various risk-returns and payoff structures through packaged financial instruments",
+  "surface": "options_structured_payoff",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Y2K V1",
+  "slug": "y2k-v1",
+  "cat": "Derivatives",
+  "tvl": 41678,
+  "chains": [
+   "Arbitrum"
+  ],
+  "dep": true,
+  "rev30d": 0.01,
+  "listed": "2022-12",
+  "desc": "Y2K Finance is a suite of structured products designed for exotic peg derivatives, that will allow market participants the ability to robustly hedge o",
+  "surface": "options_structured_payoff",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Pods Yield",
+  "slug": "pods-yield",
+  "cat": "Yield",
+  "tvl": 29834,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-07",
+  "desc": "Change the way you earn. Tap into low-risk protected vaults to make more with less overhead. Starting with ETH and options.",
+  "surface": "options_structured_payoff",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Predy V3.2",
+  "slug": "predy-v3.2",
+  "cat": "Derivatives",
+  "tvl": 24536,
+  "chains": [
+   "Arbitrum"
+  ],
+  "dep": true,
+  "rev30d": 759.8636363636365,
+  "listed": "2022-04",
+  "desc": "Predy V3.2 allows traders to utilize portfolio margin for Squart and ETH perpetual trading while simplifying the creation of delta-neutral and leverag",
+  "surface": "options_structured_payoff",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Antimatter",
+  "slug": "antimatter",
+  "cat": "Options",
+  "tvl": 13293,
+  "chains": [
+   "Avalanche",
+   "Ethereum",
+   "Binance",
+   "Arbitrum",
+   "Kava"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "Antimatter is positioned to be the gateway for DeFi derivatives, including four main products now, Dual Investment, Bull & Bear Tokens, Financial NFTs",
+  "surface": "options_structured_payoff",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "CougarSwap",
+  "slug": "cougarswap",
+  "cat": "Yield",
+  "tvl": 45853,
+  "chains": [
+   "Cronos",
+   "Binance",
+   "Avalanche",
+   "Polygon",
+   "Fantom",
+   "Arbitrum",
+   "Harmony",
+   "Moonbeam"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "Cougar Ecosystem - Advanced Yield Farming On Multiple Chains",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "0xDAO",
+  "slug": "0xdao",
+  "cat": "Yield",
+  "tvl": 42193,
+  "chains": [
+   "Fantom"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "Protocol on top of solidly",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Thoreum Finance",
+  "slug": "thoreum-finance",
+  "cat": "Yield",
+  "tvl": 41555,
+  "chains": [
+   "Binance"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "The World First Liquidity Mining Coin with Static Rewards.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "HedgeFarm",
+  "slug": "hedgefarm",
+  "cat": "Yield",
+  "tvl": 36361,
+  "chains": [
+   "Avalanche"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-10",
+  "desc": "HedgeFarm allows you to access crypto investment vaults that will suit your needs depending on what type of crypto assets you want to invest in and wh",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Kalmy App",
+  "slug": "kalmy-app",
+  "cat": "Yield",
+  "tvl": 36276,
+  "chains": [
+   "Binance",
+   "Fantom",
+   "Avalanche"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "Kalmy.APP is a DeFi hub. Farming, lending, swaps, NFTs - the goal is to have it all and more.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "PearZap",
+  "slug": "pearzap",
+  "cat": "Yield",
+  "tvl": 34183,
+  "chains": [
+   "Binance",
+   "Polygon",
+   "Fantom"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "High yields farming and cross-chain - #Polygon & #BSC",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Waterfall BSC",
+  "slug": "waterfall-bsc",
+  "cat": "Yield",
+  "tvl": 31750,
+  "chains": [
+   "Binance",
+   "Arbitrum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "Waterfall, a new Stable & Smart DeFi Token on BSC Network",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Invariant",
+  "slug": "invariant",
+  "cat": "Dexs",
+  "tvl": 30697,
+  "chains": [
+   "Solana",
+   "Eclipse"
+  ],
+  "dep": false,
+  "rev30d": 73.00000000000003,
+  "listed": "2022-05",
+  "desc": "Invariant is the revolutionary AMM DEX with concentrated liquidity built on Solana that prioritizes capital efficiency, permissionless, and composabil",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Sense",
+  "slug": "sense",
+  "cat": "Yield",
+  "tvl": 29766,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-09",
+  "desc": "Sense is an ecosystem platform, where teams can build and develop new fixed-income primitives for DeFi, such as bonds, yield-tokens, tranches, and yie",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Pacoca",
+  "slug": "pacoca",
+  "cat": "Yield",
+  "tvl": 28747,
+  "chains": [
+   "Binance"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "Pa\u00e7oca is a portfolio manager where users can track their DeFi assets, invest in smart vaults with compounding yields, and trade tokens at the best ra",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Bent Finance",
+  "slug": "bent-finance",
+  "cat": "Yield",
+  "tvl": 27069,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "BENT is a staking and farming platform that enhances your curve to elevate your yields. By the people for the people.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Hedgehog",
+  "slug": "hedgehog",
+  "cat": "Liquidity Manager",
+  "tvl": 26785,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-12",
+  "desc": "An automated strategy that earns ETH, by providing liquidity for the Uniswap V3 and hedging its impermanent losses with Squeeth.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Universe Finance",
+  "slug": "universe-finance",
+  "cat": "Liquidity Manager",
+  "tvl": 26291,
+  "chains": [
+   "Ethereum",
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-10",
+  "desc": "Universe Finance is a Uniswap V3 liquidity management platform based on risk grading and quantitative strategies.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "GoodDollar",
+  "slug": "gooddollar",
+  "cat": "Yield",
+  "tvl": 25796,
+  "chains": [
+   "Ethereum",
+   "Fuse"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "GoodDollar is a universal basic income protocol and DAO to fight inequality that leverages staking and market incentives to sustainably fund the distr",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "GoblinGold",
+  "slug": "goblingold",
+  "cat": "Yield",
+  "tvl": 25454,
+  "chains": [
+   "Solana"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-03",
+  "desc": "Goblin Gold DAO is an automated crypto growth engine that leverages customized risk strategies to generate DeFi yield. The protocol is designed to inv",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Ottopia",
+  "slug": "ottopia",
+  "cat": "Yield",
+  "tvl": 24867,
+  "chains": [
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "OtterClam is a decentralized ecosystem that incorporates elements of finance, governance, and NFTs, in the Metaverse. These three components correspon",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "SandClock",
+  "slug": "sandclock",
+  "cat": "Yield",
+  "tvl": 24153,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-12",
+  "desc": "Sandclock is a multichain DeFi platform with the objective of creating ultra programmable money by leveraging cutting-edge yield generating strategies",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Mover",
+  "slug": "mover",
+  "cat": "Yield",
+  "tvl": 23516,
+  "chains": [
+   "Ethereum",
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "Mover helps you earn the highest and safest yield on your digital assets with our automatic portfolio management system. You can also send, receive an",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Vector Finance",
+  "slug": "vector-finance",
+  "cat": "Yield",
+  "tvl": 22829,
+  "chains": [
+   "Avalanche"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-03",
+  "desc": "Vector Finance is a premier yield booster on the Avalanche blockchain for advanced DeFi strategies.On Vector, users can: earn substantial rewards from",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Brahma Vaults (Sunset)",
+  "slug": "brahma-vaults-(sunset)",
+  "cat": "Yield",
+  "tvl": 22735,
+  "chains": [
+   "Ethereum",
+   "Polygon"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "Brahma Vaults managed interactions and risk with multiple chains, dApps and instruments in a fully transparent and composable way, to earn yield, hedg",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "KordFi",
+  "slug": "kordfi",
+  "cat": "Yield",
+  "tvl": 22288,
+  "chains": [
+   "Tezos"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-08",
+  "desc": "Kord.Fi is a lending and levered farming DeFi protocol on Tezos",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Kava Boost",
+  "slug": "kava-boost",
+  "cat": "Farm",
+  "tvl": 21576,
+  "chains": [
+   "Kava"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-11",
+  "desc": "Kava Boost is a storage protocol that receives incentives for simply supplying.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Solidex",
+  "slug": "solidex",
+  "cat": "Yield Aggregator",
+  "tvl": 20357,
+  "chains": [
+   "Fantom"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "Solidex is a protocol to optimize yield, voting power, and liquidity provisioning on Solidly.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Proteo Defi",
+  "slug": "proteo-defi",
+  "cat": "Farm",
+  "tvl": 20075,
+  "chains": [
+   "Elrond"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-12",
+  "desc": "Proteo is an extreme-scarce token with a complete Defi Ecosystem. Swaps, Yield Farming, Lending and Flash Offers solutions in MultiversX.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Waterfall DeFi",
+  "slug": "waterfall-defi",
+  "cat": "Yield Aggregator",
+  "tvl": 19663,
+  "chains": [
+   "Binance",
+   "Avalanche"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-04",
+  "desc": "Waterfall Defi is a risk lego / tranching protocol that offers fixed and variable yield products based on risk appetite",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "DarkAuto",
+  "slug": "darkauto",
+  "cat": "Yield Aggregator",
+  "tvl": 19632,
+  "chains": [
+   "Cronos",
+   "Dogechain"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-09",
+  "desc": "DarkAuto is a decentralized and multichain yield optimization platform powered by the DarkCrypto Foundation. Through a portfolio of investment strateg",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Matter Defi",
+  "slug": "matter-defi",
+  "cat": "Yield",
+  "tvl": 19563,
+  "chains": [
+   "Tezos"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-08",
+  "desc": "Matter DeFi is a yield farming platform aimed to incentivize providing liquidity on SpicySwap DEX. Users may stake SpicySwap LP Tokens to earn the pro",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Golff Protocol",
+  "slug": "golff-protocol",
+  "cat": "Yield",
+  "tvl": 17991,
+  "chains": [
+   "Ethereum",
+   "Binance",
+   "Heco"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "Golff is positioned as a one-stop services encrypted bank, committing to creating a light, open and free financial world where everyone can participat",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "PolyYeld Finance",
+  "slug": "polyyeld-finance",
+  "cat": "Yield",
+  "tvl": 17138,
+  "chains": [
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "PolyYeld Finance is a next-generation yield farming protocol on the Polygon network with lots of unique and creative features that enable you to earn ",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "BooFinance",
+  "slug": "boofinance",
+  "cat": "Yield",
+  "tvl": 16980,
+  "chains": [
+   "Avalanche"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "The Boo Finance Protocol is pioneering DeFi 3.0 with optimized, competitive yield-farming and staking with deflationary NFTs and DAO on the Avalanche ",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "MFinance",
+  "slug": "mfinance",
+  "cat": "Yield",
+  "tvl": 16295,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "M.finance is the first cross-chain mining contract in the entire network.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Croblanc",
+  "slug": "croblanc",
+  "cat": "Yield",
+  "tvl": 15707,
+  "chains": [
+   "Cronos"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-02",
+  "desc": "Defi yield optimizer for Cronos",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Bolide",
+  "slug": "bolide",
+  "cat": "Yield Aggregator",
+  "tvl": 15457,
+  "chains": [
+   "Binance",
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-04",
+  "desc": "Bolide is the go-to hub for all things crypto that has a suite of tools built to make DeFi accessible to everyone, everywhere. Bolide\u2019s products offer",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Timeless Finance",
+  "slug": "timeless-finance",
+  "cat": "Yield",
+  "tvl": 15315,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-07",
+  "desc": "Timeless is a yield market protocol that lets you boost, hedge, and trade yield",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Bank of Chain",
+  "slug": "bank-of-chain",
+  "cat": "Yield Aggregator",
+  "tvl": 15227,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-11",
+  "desc": "Planning to become the next generation of Decentralized Banking (DeB), Bank of Chain (BoC) is a Multichain Yield Optimizer that provides the best long",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Salem Finance",
+  "slug": "salem-finance",
+  "cat": "Yield",
+  "tvl": 15021,
+  "chains": [
+   "Polygon",
+   "Cronos",
+   "Fantom"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "Salem Finance is a Yield Farming Protocol.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "MarshmallowDeFi",
+  "slug": "marshmallowdefi",
+  "cat": "Yield",
+  "tvl": 14606,
+  "chains": [
+   "Binance"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "MarshmallowDeFi (MASH) is the next generation of Automated Market Making (AMM) decentralized exchange with a deflationary governance token model. We a",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Diamond Protocol V1",
+  "slug": "diamond-protocol-v1",
+  "cat": "Yield",
+  "tvl": 14254,
+  "chains": [
+   "Arbitrum",
+   "Optimism",
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-05",
+  "desc": "Diamond v1 is a modular vault protocol where #DeFi strategists can build and deploy on-chain strategies without writing code.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Aperture LM",
+  "slug": "aperture-lm",
+  "cat": "Liquidity Manager",
+  "tvl": 12814,
+  "chains": [
+   "Avalanche",
+   "Terra"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-03",
+  "desc": "Cross-chain investment ecosystem with a community-driven marketplace for strategies. All your DeFi needs taken care of in one single place.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Yelay V1",
+  "slug": "yelay-v1",
+  "cat": "Yield Aggregator",
+  "tvl": 12458,
+  "chains": [
+   "Arbitrum",
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-05",
+  "desc": "Automatically optimize yield across the best DeFi platforms. Transform crypto yield into things your customers really want.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Buffaloswap",
+  "slug": "buffaloswap",
+  "cat": "Yield",
+  "tvl": 12250,
+  "chains": [
+   "Binance"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "Safe, Fair & Transparent Yield Farming Optimizer on BSC",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "OliveDAO",
+  "slug": "olivedao",
+  "cat": "Yield",
+  "tvl": 11148,
+  "chains": [
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-05",
+  "desc": "First Lossless Liquidity Mining Protocol on Polygon, become an LP with no impermanence loss and earn rewards to direct liquidity across protocols as a",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "PolyShield",
+  "slug": "polyshield",
+  "cat": "Yield",
+  "tvl": 10628,
+  "chains": [
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "PolyShield is a yield farming protocol on Polygon",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "DungeonSwap",
+  "slug": "dungeonswap",
+  "cat": "Yield",
+  "tvl": 10370,
+  "chains": [
+   "Binance"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "DungeonSwap is a decentralized table-top RPG style web game on the Binance Smart Chain with play-to-earn, yield farming features and NFTs.",
+  "surface": "vault_share_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Timeswap V1",
+  "slug": "timeswap-v1",
+  "cat": "Lending",
+  "tvl": 43816,
+  "chains": [
+   "Polygon"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-04",
+  "desc": "Timeswap is the first oracleless lending/borrowing protocol. Timeswap enables the creation of money markets for ANY ERC-20 tokens.",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Credix",
+  "slug": "credix",
+  "cat": "RWA Lending",
+  "tvl": 35515,
+  "chains": [
+   "Solana"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-05",
+  "desc": "Credix is an institutional capital markets ecosystem designed for debt financing and private credit.",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Morpho Optimizer CompoundV2",
+  "slug": "morpho-optimizer-compoundv2",
+  "cat": "Lending",
+  "tvl": 31426,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-08",
+  "desc": "Morpho Compound is an on-chain peer-to-peer layer on top of lending pools. Rates are seamlessly improved for borrowers and lenders while preserving th",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "RociFi V1",
+  "slug": "rocifi-v1",
+  "cat": "Lending",
+  "tvl": 30507,
+  "chains": [
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-09",
+  "desc": "RociFi - On-chain Credit Scoring and Capital-Efficient Lending Protocol",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Euler V1",
+  "slug": "euler-v1",
+  "cat": "Lending",
+  "tvl": 28378,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "Permissionless crypto lending markets are almost here. Euler is a non-custodial protocol on Ethereum that allows users to lend and borrow almost any c",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "Poof Cash",
+  "slug": "poof-cash",
+  "cat": "Lending",
+  "tvl": 25759,
+  "chains": [
+   "Celo"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-10",
+  "desc": "Decentralized, private DeFi for EVMs.",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "BNPL Pay",
+  "slug": "bnpl-pay",
+  "cat": "Lending",
+  "tvl": 23194,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-08",
+  "desc": "Collateralised and uncollateralised loans",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Argo",
+  "slug": "argo",
+  "cat": "CDP",
+  "tvl": 22303,
+  "chains": [
+   "Aptos"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-10",
+  "desc": "Argo is a lending protocol on Aptos that lets users collateral for minting and borrowing a dollar-pegged stablecoin USDA",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Llamalend",
+  "slug": "llamalend",
+  "cat": "NFT Lending",
+  "tvl": 21878,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": 0,
+  "listed": "2022-11",
+  "desc": "Deposit NFTs and borrow ETH for small illiquid NFT collections that can't get into the main NFT lending markets",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "OpenSky Finance",
+  "slug": "opensky-finance",
+  "cat": "NFT Lending",
+  "tvl": 21165,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-09",
+  "desc": "The first integrated peer-to-pool and peer-to-peer NFT lending protocol built on top of aave.com",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Yupana",
+  "slug": "yupana",
+  "cat": "Lending",
+  "tvl": 18049,
+  "chains": [
+   "Tezos"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-09",
+  "desc": "Yupana.Finance is an open-source, decentralized, and non-custodial lending protocol built to securely borrow and lend crypto assets via smart contract",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "GARD",
+  "slug": "gard",
+  "cat": "CDP",
+  "tvl": 16930,
+  "chains": [
+   "Algorand"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-04",
+  "desc": "The GARD Protocol offers decentralized money and fixed-yield products for Algorand users. Users can leverage their assets held in collateralized debt ",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Atlendis V1",
+  "slug": "atlendis-v1",
+  "cat": "Uncollateralized Lending",
+  "tvl": 16806,
+  "chains": [
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-07",
+  "desc": "Atlendis is a capital-efficient DeFi lending protocol that enables crypto loans without collateral.",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "NFTfi",
+  "slug": "nftfi",
+  "cat": "NFT Lending",
+  "tvl": 15962,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-11",
+  "desc": "NFT peer-to-peer lending protocol",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "MMO Finance",
+  "slug": "mmo-finance",
+  "cat": "NFT Lending",
+  "tvl": 15511,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-07",
+  "desc": "MMO Finance is a decentralized pool based NFT lending platform.",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Fringe V1",
+  "slug": "fringe-v1",
+  "cat": "Lending",
+  "tvl": 14665,
+  "chains": [
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-06",
+  "desc": "A safe place for you to invest and borrow against your holdings. Fast, easily and on your own terms.",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Unilend V1",
+  "slug": "unilend-v1",
+  "cat": "Lending",
+  "tvl": 10269,
+  "chains": [
+   "Polygon",
+   "Ethereum",
+   "Binance"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-11",
+  "desc": "UniLend is a comprehensive permissionless DeFi protocol. Anyone can list any asset on UniLend to access decentralized trading, lending/borrowing, and ",
+  "surface": "lending_accounting",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "Mobius Finance",
+  "slug": "mobius-finance",
+  "cat": "Synthetics",
+  "tvl": 41272,
+  "chains": [
+   "Polygon"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "Mobius Finance is the first multi-collateral decentralized trading protocol that allows users to create and trade synthetic assets with zero slippage,",
+  "surface": "synthetic_stable_math",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "Duet Protocol",
+  "slug": "duet-protocol",
+  "cat": "Synthetics",
+  "tvl": 39160,
+  "chains": [
+   "Arbitrum",
+   "Binance"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-05",
+  "desc": "A parallel universe which turns flat assets into sharp assets.",
+  "surface": "synthetic_stable_math",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "Oin Finance",
+  "slug": "oin-finance",
+  "cat": "Algo-Stables",
+  "tvl": 35699,
+  "chains": [
+   "Ethereum",
+   "Harmony",
+   "Near"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "A robust turnkey stablecoin issuance platform built for the multi-chain universe",
+  "surface": "synthetic_stable_math",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "ION DAO",
+  "slug": "ion-dao",
+  "cat": "Synthetics",
+  "tvl": 32849,
+  "chains": [
+   "Osmosis"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-10",
+  "desc": "ION is the secondary native token on the Osmosis chain. Created by the Osmosis community, ION DAO is collectively discussing potential use cases as a ",
+  "surface": "synthetic_stable_math",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "Synthetify",
+  "slug": "synthetify",
+  "cat": "Synthetics",
+  "tvl": 25674,
+  "chains": [
+   "Solana"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2021-10",
+  "desc": "Synthetify is a decentralized synthetic assets protocol build on the Solana blockchain. The protocol allows for the creation and exchange of synthetic",
+  "surface": "synthetic_stable_math",
+  "deadchain": false,
+  "prevhack": true,
+  "tier": "C"
+ },
+ {
+  "name": "Crafting Finance",
+  "slug": "crafting-finance",
+  "cat": "Synthetics",
+  "tvl": 12126,
+  "chains": [
+   "Aurora",
+   "Ethereum"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "Crafting is a protocol for forging and trading Rafts, which are smart synthetic assets",
+  "surface": "synthetic_stable_math",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "DotOracle",
+  "slug": "dotoracle",
+  "cat": "Bridge",
+  "tvl": 40793,
+  "chains": [
+   "Ethereum",
+   "Binance",
+   "Avalanche",
+   "Moonbeam",
+   "OKExChain"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-08",
+  "desc": "DotOracle is a real-time decentralized Oracle and Cross-chain bridge supported by multi-chains such as Polkadot, Ethereum, Binance Smart Chain, Fantom",
+  "surface": "bridge_messaging",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "EverRise",
+  "slug": "everrise",
+  "cat": "Cross Chain Bridge",
+  "tvl": 30202,
+  "chains": [
+   "Binance",
+   "Ethereum",
+   "Polygon",
+   "Avalanche",
+   "Fantom"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-01",
+  "desc": "EverRise is a blockchain technology company that offers bridging and security solutions across blockchains through an ecosystem of decentralized appli",
+  "surface": "bridge_messaging",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Kintsugi",
+  "slug": "kintsugi",
+  "cat": "Cross Chain Bridge",
+  "tvl": 10439,
+  "chains": [
+   "Kintsugi"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-07",
+  "desc": "Radically open #Bitcoin on Kusama Network, canary network of @interlayHQ",
+  "surface": "bridge_messaging",
+  "deadchain": true,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Risk Harbor",
+  "slug": "risk-harbor",
+  "cat": "Insurance",
+  "tvl": 38072,
+  "chains": [
+   "Arbitrum",
+   "Ethereum",
+   "Optimism",
+   "Avalanche",
+   "Aurora",
+   "Terra2",
+   "Terra",
+   "Fantom",
+   "Polygon"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-03",
+  "desc": "Risk Harbor is a risk management marketplace for decentralized finance (DeFi) that utilizes a completely automated, transparent, and impartial invaria",
+  "surface": "settlement_logic",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Polkamarkets",
+  "slug": "polkamarkets",
+  "cat": "Prediction Market",
+  "tvl": 13618,
+  "chains": [
+   "Ethereum",
+   "Polygon",
+   "Moonriver",
+   "Moonbeam",
+   "xDai",
+   "Celo"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2021-12",
+  "desc": "Polkamarkets is an Autonomous Prediction Market Protocol built for cross-chain information exchange and trading, where users take positions on outcome",
+  "surface": "settlement_logic",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "Ditto",
+  "slug": "ditto",
+  "cat": "Liquid Staking",
+  "tvl": 31927,
+  "chains": [
+   "Aptos"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-10",
+  "desc": "Stake APT tokens via Ditto to receive stAPT",
+  "surface": "staking_reward_machine",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "DexPad",
+  "slug": "dexpad",
+  "cat": "Launchpad",
+  "tvl": 26880,
+  "chains": [
+   "Cronos",
+   "Polygon",
+   "Avalanche",
+   "Kava"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-06",
+  "desc": "DexPad is a No-Code Platform for ERC-20 Tokens on multiple EVM-compatible chains. Mint, Lock, Airdrop or Presale your token without any coding knowled",
+  "surface": "staking_reward_machine",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "sKCS",
+  "slug": "skcs",
+  "cat": "Liquid Staking",
+  "tvl": 25959,
+  "chains": [
+   "Kucoin"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-07",
+  "desc": "Simplified and secure staking for KCS on KCC.",
+  "surface": "staking_reward_machine",
+  "deadchain": true,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Algem",
+  "slug": "algem",
+  "cat": "Liquid Staking",
+  "tvl": 23099,
+  "chains": [
+   "Astar"
+  ],
+  "dep": false,
+  "rev30d": null,
+  "listed": "2022-07",
+  "desc": "Algem is the native liquid staking DeFi dApp on top of Astar Network offering new ways for ASTR users and holders to earn more. Algem is developed on ",
+  "surface": "staking_reward_machine",
+  "deadchain": true,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "STRX Finance",
+  "slug": "strx-finance",
+  "cat": "Liquid Staking",
+  "tvl": 18581,
+  "chains": [
+   "Tron"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-11",
+  "desc": "STRX.FINANCE is a TRON Blockchain's liquid staking technology that unleashes TRX's real potential. Holders of TRX tokens can stake their tokens on the",
+  "surface": "staking_reward_machine",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "ThunderPOKT",
+  "slug": "thunderpokt",
+  "cat": "Liquid Staking",
+  "tvl": 15720,
+  "chains": [
+   "Pokt"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-04",
+  "desc": "tPOKT is a liquid staking solution that allows you to stake any amount of pokt and start earning rewards",
+  "surface": "staking_reward_machine",
+  "deadchain": true,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "Eversol",
+  "slug": "eversol",
+  "cat": "Liquid Staking",
+  "tvl": 15321,
+  "chains": [
+   "Solana"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-09",
+  "desc": "Eversol is a Solana Stake Pool that promotes network decentralization. Eversol's main concept is to dedicate a percentage of the pool rewards to the S",
+  "surface": "staking_reward_machine",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "B"
+ },
+ {
+  "name": "Stake.ly",
+  "slug": "stake.ly",
+  "cat": "Liquid Staking",
+  "tvl": 14225,
+  "chains": [
+   "Klaytn"
+  ],
+  "dep": true,
+  "rev30d": null,
+  "listed": "2022-09",
+  "desc": "Stake.ly is a liquid staking protocol on Klaytn.",
+  "surface": "staking_reward_machine",
+  "deadchain": true,
+  "prevhack": false,
+  "tier": "C"
+ },
+ {
+  "name": "UniDex Perp",
+  "slug": "unidex-perp",
+  "cat": "Derivatives",
+  "tvl": 29876,
+  "chains": [
+   "Optimism",
+   "zkSync Era",
+   "Arbitrum",
+   "Metis",
+   "Base",
+   "Binance",
+   "Boba",
+   "Fantom",
+   "Evmos"
+  ],
+  "dep": true,
+  "rev30d": 411054.4591611479,
+  "listed": "2022-06",
+  "desc": "UniDex is a DeFi aggregation layer making interesting trading products such as leverage trading aggregation, derivatives, and other trading products.",
+  "surface": "derivatives_engine",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ },
+ {
+  "name": "JOJO",
+  "slug": "jojo",
+  "cat": "Derivatives",
+  "tvl": 25486,
+  "chains": [
+   "Base",
+   "Arbitrum",
+   "Binance",
+   "zkSync Era"
+  ],
+  "dep": false,
+  "rev30d": 0,
+  "listed": "2022-11",
+  "desc": "JOJO is a decentralized perpetual contract trading platform that uses an off-chain matching and on-chain settlement order book model.JOJO balances liq",
+  "surface": "derivatives_engine",
+  "deadchain": false,
+  "prevhack": false,
+  "tier": "A"
+ }
+]
