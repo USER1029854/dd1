@@ -1,0 +1,30 @@
+{
+  "class": "RAW-NARROWING-CAST-IN-SOLVENCY-VALUATION (truncation defeats free-collateral check)",
+  "origin_incident": {"protocol": "Notional Finance V1", "date": "2026-09-04", "loss_usd": 1730000,
+    "escrow_proxy": "0x9abd0b8868546105F6F48298eaDC1D9c82f7f683",
+    "current_impl": "0x7885484eb568275c45fff07415c5430dac682848 (EmptyProxy - PAUSED post-hack)",
+    "erc1155trade_deployed": ["0x6f10251649c3d0b545506a5f374b63ccdf18ceaf","0xc9ec73e9369d20d13ca6b44587095a33b3b871fd"]},
+  "bug_site": "contracts/utils/ExchangeRate.sol :: _convertToETH / _convertETHTo",
+  "bug_line": "uint128 absBalance = uint128(balance.abs());  // int256 abs() narrowed by a RAW cast; 0.6.x truncates silently; |bal|==2^128 -> 0",
+  "tell": "SafeCast.toUint128(...) used on the RESULT one line below, but a RAW uint128(...) used on the balance -- demonstrable inconsistency",
+  "detector_queries": [
+    "\"uint128(balance.abs())\"  (exact tell)",
+    "\"= uint128(\" \"abs()\" language:Solidity  (abs-then-narrow, broad)",
+    "\"int128(\" \"freeCollateral\" language:Solidity  (narrowing near solvency gate)"
+  ],
+  "independent_live_forks_of_exact_bug": [
+    {"repo": "pledgefinance/pledge-contracts", "product": "Pledge Finance / Pledger (BSC fixed-rate lending, pTokens=fCash)",
+     "exchangerate_identical_to_notional_v1": true, "pragma": "^0.6.0",
+     "funded_mainnet_deployment_found": false,
+     "evidence_of_no_funded_deployment": ["0 DefiLlama TVL entries","absent from tintinweb/smart-contract-sanctuary-bsc (G_LIQUIDITY_HAIRCUT/depositIntoMarket/batchOperation: 0 hits)","no committed deployment manifest/subgraph in repo","README says 'testing phase'","live PLGR is a separate v0.8.4 token; product pivoted to AMM/RWA V2.0"]}
+  ],
+  "false_positives_cleared": [
+    {"who":"Notional V2/V3 (funded, current)","why_safe":"bounds-checks before cast: require(type(int128).min <= finalNotional && finalNotional <= type(int128).max) then int128(...)"},
+    {"who":"Perpetual Protocol v2","why_safe":".toInt128() SafeCast"},
+    {"who":"Logium","why_safe":"require(amount < uint128(type(int128).max)) bound"},
+    {"who":"Pendle Boros","why_safe":"signedSize is int128 already; abs() <= 2^127 fits uint128 (author-noted safe cast)"},
+    {"who":"Rysk OptionHandler/Manager","why_safe":"casts strike prices (bounded), not a liability defeating a solvency gate"}
+  ],
+  "result": "No NEW live FUNDED exploitable instance. Class confined to the Notional V1 lineage: Notional V1 itself (the incident, now paused/EmptyProxy) + one dormant source-only fork (Pledge) that would be exploitable the instant it deploys a funded market. Notional V2/V3 fixed. Standing detector + specific watch on Pledge and any Notional-V1 fork.",
+  "chains_checked": {"eth": "Alchemy + Etherscan V2 getsourcecode", "bsc": "nodereal RPC + Etherscan V2 getsourcecode + sanctuary-bsc mirror"}
+}
