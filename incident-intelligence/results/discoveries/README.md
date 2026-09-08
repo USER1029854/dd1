@@ -34,3 +34,4 @@ exclusion set** (all prior pushes) before it is written.
 
 _The exclusion set is a snapshot in `_exclusion_set.json`; regenerate it when new pushes land._
 | `DISC-20260903-005-aggregate-signature-auth-detector.md` | What SOFA actually was (replayable/non-binding aggregate-signature auth on a pooled entrypoint), the real family, and a reusable **code-level detector**; ran it across GitHub → no live on-chain sibling | mechanism + detector + honest negative | supersedes the age lens; keep the detector running |
+| `DISC-20260908-006-proxyactions-singleton-owned-safe.md` | GEB/Maker proxy-actions class (Sep-2 GebProxyActions): a SAFE owned by an anyone-callable singleton is drainable by anyone. Mechanism proven on live RAI; censused RAI + HAI (clean), OD immune | deep audit + on-chain census + detector | clean at head across 3 live deployments; standing detector for the next instance |

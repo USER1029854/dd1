@@ -1,0 +1,562 @@
+[
+ {
+  "date": "2026-09-08",
+  "target": "WealthManagementV2",
+  "loss": "$ 26,414",
+  "method": "Private Key Leakage",
+  "desc": "The WealthManagementV2 contract lost funds after owner privileges were suspected of being illegally transferred (possibly due to a leaked private key). The attacker-controlled owner instantly set extreme plan parameters (period=0, interestMultiplier/unlockMultiplier=528,300,000) via updatePlanConfig with no timelock or bounds, minted inflated interest by investing and redeeming in the same transaction, then unlocked and withdrew the funds via a second investment, resulting in a loss of 26,414 USDT."
+ },
+ {
+  "date": "2026-09-07",
+  "target": "Cozy Finance",
+  "loss": "$160,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "DeFi protection protocol Cozy Finance on Optimism was exploited for about $160,000. The attacker first bought PTokens in the Aave v2 and Curve protection markets, then submitted undisputed YES answers to the UMA Optimistic Oracle. The trigger did not independently verify a real Aave/Curve hack, and PToken payout eligibility was not tied to a pre-proposal holder snapshot. After the markets moved to TRIGGERED, the attacker burned PTokens and claimed USDC."
+ },
+ {
+  "date": "2026-09-07",
+  "target": "Unnamed BSC DEX Router",
+  "loss": "$ 46,070",
+  "method": "Smart Contract Vulnerability",
+  "desc": "An unnamed DEX router on BNB Chain was exploited because uniswapV3SwapCallback did not authenticate a real V3 pool. The attacker used a fake pool, set victims as payer, and drained existing token allowances via transferFrom, stealing about 62.28 WBNB from 29 wallets in one transaction."
+ },
+ {
+  "date": "2026-09-06",
+  "target": "Liquid Network",
+  "loss": "$ 320,000,000",
+  "method": "Elements Software Vulnerability",
+  "desc": "Purported white-hat attackers exploited a bug in Elements (Liquid\u2019s underlying software) to create about 4,000 unbacked L-BTC, then used SideSwap\u2019s normal peg-out flow to withdraw ~4,000 BTC (~$320 million) from the Liquid Federation wallet. No keys were compromised. The sidechain has been paused."
+ },
+ {
+  "date": "2026-09-05",
+  "target": "Rocket",
+  "loss": "$ 287,000",
+  "method": "Price Manipulation",
+  "desc": "An attacker exploited a dormant, illiquid perpetual market on Rocket. Using a burner account, they posted orders at artificially inflated prices and traded against themselves to generate fake profits on one account while bankrupting the burner. The profitable account then withdrew approximately $287K in positive PnL from the Bridge, with the loss socialized across the platform. Deposits, withdrawals and trading were paused."
+ },
+ {
+  "date": "2026-09-05",
+  "target": "Secured Finance",
+  "loss": "$ 180000",
+  "method": "Flash Loan Price Manipulation",
+  "desc": "Secured Finance\u2019s fixed-rate lending protocol was exploited via an order-book accounting flaw that treated unfilled orders as filled and created invalid balances. Attackers used flash loans and self-trades to manipulate the current-block price and withdraw funds. Markets on Ethereum, Arbitrum, and Filecoin were paused. The team\u2019s preliminary loss estimate is about $180,000; no recovery has been confirmed."
+ },
+ {
+  "date": "2026-09-05",
+  "target": "Reddio",
+  "loss": "$ 22,800",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Reddio\u2019s RedSonic Vault on Ethereum was exploited for about 9.25 ETH (~$22,800). After permissionlessly registering an stETH vault, the same stETH was counted in both the ETH vault and the stETH vault. The attacker used a flash loan to inflate the rsvETH share price, redeemed excess ETH, then redeemed rsvstETH to recover the same stETH."
+ },
+ {
+  "date": "2026-09-05",
+  "target": "Dream Health Chain",
+  "loss": "$ 71,851",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Dream Health Chain\u2019s staking/reward contracts on BSC were exploited for about 71,851 USDT. A broken award state machine allowed a claimed reward to be reset with a tiny or zero-effective DHC deposit, so the same fixed payout could be claimed repeatedly from the shared pool. The attacker looped pledge and claim, then sold about 542,070 DHC into the DHC-USDT pool."
+ },
+ {
+  "date": "2026-09-04",
+  "target": "Notional Finance",
+  "loss": "$ 1,730,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Notional Finance\u2019s legacy V1 Escrow contract was exploited. The attacker abused an unsafe uint128 cast in free-collateral valuation so that a fabricated liability of about 2^128 truncated to zero, bypassing solvency checks, minting fake fCash claims, and withdrawing about 69,257.37 DAI and 1,658,524.86 USDC (~$1.73M). The funds were swapped into roughly 689.2 ETH and deposited into Tornado Cash. The team paused the affected contract, said other user assets were not at risk, and is pursuing recovery."
+ },
+ {
+  "date": "2026-09-03",
+  "target": "XRPH Wallet",
+  "loss": "$ 452,000",
+  "method": "Seed Phrase Leakage",
+  "desc": "On the evening of September 3, 2026, approximately 4,011 XRPH Wallet user accounts suffered unauthorized transactions involving XRPH, XRPHAI and other assets, with roughly $452,000 stolen. Funds were collected, bridged via NEAR Intents to Ethereum, and converted to about 445,198 DAI, which remains unmoved in one address. The project confirmed no issue with the XRP Ledger itself, took the app offline, and is investigating."
+ },
+ {
+  "date": "2026-09-02",
+  "target": "GebProxyActions",
+  "loss": "$ 14,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The GebProxyActions contract was exploited due to missing caller access control in the quitSystem function. Victims had previously called it directly instead of via DSProxy delegatecall, setting ownsSAFE[safe] to the GebProxyActions contract. The attacker called GebProxyActions.quitSystem(manager, safe, dst) directly, bypassing GebSafeManager\u2019s safeAllowed check and transferring collateral to themselves."
+ },
+ {
+  "date": "2026-08-31",
+  "target": "Aquifer",
+  "loss": "$ 2,500,000",
+  "method": "Wallet Credential Compromise",
+  "desc": "Solana-based proprietary AMM Aquifer was exploited for about $2.5 million. Public reporting points to compromised protocol-linked wallets or admin credentials rather than a confirmed smart-contract bug. The attacker operated addresses on both Solana and Ethereum. The same day, Aquifer\u2019s Solana upgrade authority posted an on-chain white-hat offer: return at least 80% of stolen assets by September 3, 2026, 14:00 UTC to designated recovery addresses, and keep up to 20% as a bounty, in exchange for no civil claims by the project."
+ },
+ {
+  "date": "2026-08-31",
+  "target": "Ankr",
+  "loss": "$ 410,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "An attacker exploited a vulnerability in Ankr\u2019s ankrFLOW liquid staking contract to mint approximately 8.6 million unbacked ankrFLOW tokens, then used them as collateral with More Markets\u2019 E-mode to drain about 15.5 million WFLOW (~$410,000 at spot) from the lending reserve. The attacker realized roughly $246,000 after slippage. The Flow Foundation stated the root cause was in Ankr\u2019s Solidity contract, not Flow EVM or More Markets."
+ },
+ {
+  "date": "2026-08-31",
+  "target": "Float Protocol",
+  "loss": "$ 28,000",
+  "method": "Flash Loan Price Manipulation",
+  "desc": "An attacker used a flash loan to execute large swaps on a Uniswap V3 pool and manipulate the spot price (slot0). This caused Float Protocol\u2019s Hypervisor contracts to misprice LP shares. Because critical functions lacked TWAP/oracle validation and slippage protection, the attacker repeatedly deposited and withdrew at inflated share values, extracting about $28,000 (10.71 ETH)."
+ },
+ {
+  "date": "2026-08-31",
+  "target": "Balancer V1",
+  "loss": "$ 234,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "An attacker exploited a rounding/precision vulnerability in legacy Balancer V1 contracts. Using flash loans to compress WBTC reserves to near-zero, they minted a large amount of BPT with only 1 satoshi of WBTC and then proportionally exited to drain DPI, USDC, WETH and WBTC from the pool."
+ },
+ {
+  "date": "2026-08-30",
+  "target": "Tectonic",
+  "loss": "$ 120,400,000",
+  "method": "Price Manipulation",
+  "desc": "On August 30, 2026, an attacker looped borrowing and re-supplying Tectonic\u2019s governance token TONIC as collateral while manipulating its price by ~195x, then borrowed about $120.4 million from multiple Tectonic lending markets in one transaction. Cronos halted and rolled back the chain, restoring on-chain assets to the pre-exploit state; approximately $9.19 million that left Cronos before the halt remains unrecovered. Supply and borrow remain paused."
+ },
+ {
+  "date": "2026-08-29",
+  "target": "Full Sail",
+  "loss": "$ 91,000",
+  "method": "Oracle Manipulation",
+  "desc": "An attacker exploited a vulnerability in Switchboard\u2019s production code to add a controlled key to a live oracle, published false prices roughly 100 times below market, deposited into Full Sail vaults at distorted values, then restored prices and withdrew more than deposited."
+ },
+ {
+  "date": "2026-08-29",
+  "target": "Fogo Foundation",
+  "loss": "$ 3,000,000",
+  "method": "Private Key Compromised",
+  "desc": "The Fogo Foundation experienced a compromise by an unknown actor, resulting in 400 million FOGO tokens being sent to a bad actor. The Foundation immediately alerted exchanges, law enforcement, and forensic experts. Initially stated no impact on the blockchain, but later halted the mainnet as a precaution to restrict associated addresses and prevent further asset movement. Mainnet was later restarted after recovering and permanently removing 237 million tokens."
+ },
+ {
+  "date": "2026-08-28",
+  "target": "Avici",
+  "loss": "$ 500,859.22",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Attackers exploited a vulnerability in an outdated version of Rain\u2019s Solana card contract used by Avici (and a few other programs). By submitting crafted signature bundles to gain unauthorized admin rights via AddCollateralAdmin and then withdrawing collateral, they drained $500,859.22 from 1,685 users\u2019 card balances. Self-custodial wallets were unaffected. The contract was upgraded across all programs, and full refunds were promised."
+ },
+ {
+  "date": "2026-08-27",
+  "target": "Moonwell",
+  "loss": "$ 8,790,000",
+  "method": "Price Manipulation",
+  "desc": "Base-based DeFi lending protocol Moonwell was attacked. The attacker inflated the price of the low-liquidity token MAMO, posted it as collateral, and borrowed real assets such as cbBTC and USDC from markets including mCBTC and mUSDC. Blockaid first reported about 50.6 cbBTC (over $4,000,000) drained, later updating observed outflows to about $8,790,000."
+ },
+ {
+  "date": "2026-08-27",
+  "target": "CashCowCoin",
+  "loss": "$ 117,400",
+  "method": "Smart Contract Vulnerability",
+  "desc": "CashCowCoin\u2019s unverified trading router implementation contract had a flawed sell() flow. After the PancakeSwap Router completed the CCC\u2192WBNB swap, the proxy called a privileged token function to transfer post-tax CCC from the Pair to the dead address and invoked Pair.sync(). This burned the sell-side CCC while permanently retaining the reduced WBNB reserve, enabling repeated draining of the pool\u2019s WBNB through about 80 iterative sell cycles."
+ },
+ {
+  "date": "2026-08-26",
+  "target": "FH Token",
+  "loss": "$ 20,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "FH Token on the BSC chain was exploited in its FH/USDT liquidity pool on PancakeSwap V2. A flaw in the token\u2019s _transfer function and isSell logic caused incorrect token burns during sells, allowing the attacker to drain funds from the pool through repeated buy-and-sell loops, resulting in a loss of approximately $20,000."
+ },
+ {
+  "date": "2026-08-25",
+  "target": "CometDEX",
+  "loss": "$ 717,518.92",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The BLND-USDC liquidity pool of CometDEX (Comet AMM) on the Stellar network was exploited due to an accounting bug that allowed same-asset swaps (USDC\u2192USDC), corrupting reserve calculations. The attacker used flash loans from a Blend pool and repeated the process about 36 times to extract excess funds, resulting in a loss of approximately $717,518.92 USDC. Funds were subsequently moved."
+ },
+ {
+  "date": "2026-08-25",
+  "target": "Enjin",
+  "loss": "$ 162,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Enjin\u2019s legacy ERC-1155 Crypto Items platform on Ethereum was exploited. The attacker used a storage-layout mismatch in delegate-call adapters plus an unprotected initialize function to take over the Managed Delegate Proxy via DELEGATECALL. After gaining manager privileges, they registered a malicious adapter, transferred NFTs from about 52 wallets without approval, and melted them to redeem the backing ENJ from the reserve, draining approximately 5.24 million ENJ ."
+ },
+ {
+  "date": "2026-08-23",
+  "target": "TermFinance Vaults",
+  "loss": "$ 8,500,000",
+  "method": "Governance Attack",
+  "desc": "On August 23, 2026, Term Finance\u2019s Strategy Vaults (Ethereum-based fixed-rate lending protocol by Term Labs) suffered a governance exploit. The attacker acquired majority voting power (100% on several USDC vaults, ~91% on the ETH Meta Vault), passed malicious proposals to disable the timelock and drain ~2,843 ETH and 1.68M USDC (later swapped to DAI), resulting in ~$8.5 million losses (about 68% of the vaults\u2019 then-TVL)."
+ },
+ {
+  "date": "2026-08-23",
+  "target": "Arrakis V1",
+  "loss": "$ 7,018",
+  "method": "Flashloan Price Manipulation",
+  "desc": "On August 23, 2026, the Arrakis V1 / G-UNI ENS\u2013WETH liquidity-manager vault (0x7c687f775a3b73bbab0e15832f24caab5d53bdde) was drained via Uniswap V3 spot-price manipulation. The attacker flash-loaned 1,800 WETH from Morpho Blue, skewed the pool\u2019s instantaneous spot price, minted vault shares at the distorted valuation, restored the price, and burned the shares for a richer token mix, netting \u22482.94 WETH. Root cause: mint()/burn() valued the Uniswap V3 position off pool.slot0() with no TWAP or deviation guard (TWAP only protected rebalance())."
+ },
+ {
+  "date": "2026-08-23",
+  "target": "warp.green",
+  "loss": "$ 93,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The ERC-20 bridge of warp.green (a cross-chain messaging protocol between Chia and EVM chains) suffered an exploit due to a vulnerability in the Chia-side Chialisp puzzle. The attacker minted worthless CAT tokens, presented them as burned wUSDC, obtained validator signatures, and drained ~$93,000 USDC from the Base and Ethereum bridge contracts, later converting the funds to ETH. The CAT bridge (securing assets like wXCH) appears unaffected."
+ },
+ {
+  "date": "2026-08-22",
+  "target": "TAC",
+  "loss": "$ 7,500,000",
+  "method": "Contract Vulnerability",
+  "desc": "Layer 1 blockchain TAC was exploited when an attacker used a vulnerability in the shared Cosmos EVM precompile layer to drain approximately 2.985 billion TAC tokens (valued at around $7.5 million) from a single account. The project confirmed it was a drain (not a mint), total supply unchanged, only $TAC affected, and the flaw is not in TAC-specific code. The chain was halted at block 24,671,475; the team is coordinating with SEAL 911 and exchanges to track funds and plans to release a post-mortem and relaunch plan."
+ },
+ {
+  "date": "2026-08-22",
+  "target": "KiiChain",
+  "loss": "$ 9,700,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "An attacker exploited vulnerabilities in the shared Cosmos EVM module (an arithmetic underflow in the staking precompile\u2019s balance write-back after delegation, combined with vesting account handling and other undisclosed bugs). By creating a vesting account and deploying a contract to it, the attacker repeated the technique 18 times, draining approximately 148.3 million KII from various wallets. KiiChain halted the network at block 9355723 to stop further theft."
+ },
+ {
+  "date": "2026-08-21",
+  "target": "The Sandbox",
+  "loss": "$ 675,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The Sandbox\u2019s SAND cross-chain bridge (LayerZero OFT on Base and BNB Chain) was exploited. The attacker used a configuration function to gain sole verifier rights, minting large amounts of unbacked SAND and draining approximately 14.74 million real SAND (~$675,000) from the Ethereum vault. The project quickly halted affected bridging; Ethereum and Polygon assets remained unaffected."
+ },
+ {
+  "date": "2026-08-20",
+  "target": "MANTRA Chain",
+  "loss": "$ 3,600,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "An attacker exploited an unsigned integer underflow vulnerability in the upstream Cosmos EVM module to unauthorizedly transfer approximately 720.9 million MANTRA from two MANTRA-managed addresses (the burn address and a dormant genesis-era multisig). The chain was halted to contain the threat and later resumed after a v8.4.0 patch. No validator keys, admin privileges, or user funds were compromised."
+ },
+ {
+  "date": "2026-08-19",
+  "target": "Allbridge",
+  "loss": "$ 190,000",
+  "method": "Bridge Logic Flaw",
+  "desc": "On August 19, 2026, the cross-chain bridge Allbridge was attacked. The attacker had prepared on July 26 by calling Circle\u2019s MessageTransmitterV2.sendMessage on Polygon to forge a CCTP-style message claiming a 1M USDC transfer (with no actual burn) and obtained a valid attestation. On Aug 19, after a real CCTP deposit brought the Base Router balance to ~191k USDC, the attacker used the forged message via receiveCctpMessage (which lacked proper verification and credited it as a real deposit), flash-loaned ~809k USDC from Aave to match the claimed amount, and withdrew ~999k USDC, netting ~$189,800."
+ },
+ {
+  "date": "2026-08-19",
+  "target": "BounceBit",
+  "loss": "$ 3,000,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "An attacker exploited a protocol-level authorization flaw in the Evmos stack, transferring approximately 286.5 million BB from nine mainnet accounts across 14 transactions without the owners\u2019 authorization. No private keys were compromised, no signatures forged, and no wallets breached. BounceBit permanently sunset the L1 chain and reissued BB as a BEP-20 token on BNB Chain based on a pre-attack snapshot."
+ },
+ {
+  "date": "2026-08-18",
+  "target": "Maya Protocol",
+  "loss": "$ 1,700,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Maya Protocol (MAYAChain) suffered a security vulnerability attack. The attacker exploited 6 chained edge-case bugs in Trade Account, outbound handling, and pool math, inflating accounting via false subsidy (e.g., ARB.LINK pool), then added/removed liquidity to extract ~48.87M CACAO and convert to ~20.83 BTC plus other assets, causing ~$1.7 million loss. The team paused global operations to fix the issues and seeks fund recovery."
+ },
+ {
+  "date": "2026-08-15",
+  "target": "FoxMarket",
+  "loss": "$ 118,700",
+  "method": "Flash Loan Attack",
+  "desc": "FoxMarket (a DeFi project on BSC) had its FoxLpBondsPool.stake() function calculate and fix _stakeAmount from a manipulable Pancake AMM spot quote before a large USDT\u2192Fox swap. The attacker used flash loans to skew pair reserves, then addLiquidity used a mismatched ratio; Treasury.lpBonds() trusted the stale value, minted excess Fox tokens, and sent inviter rewards to an attacker-controlled address, which were sold in the same transaction."
+ },
+ {
+  "date": "2026-08-11",
+  "target": "Harmony Protocol",
+  "loss": "$ 3,200,000",
+  "method": "Protocol Logic Vulnerability",
+  "desc": "The Harmony Layer-1 blockchain was exploited, allowing an attacker to unauthorizedly mint approximately 4 billion ONE tokens (about 26% of the supply) via empty blocks and related flaws. Large amounts were quickly funneled to exchanges for sale, causing the token price to crash ~30-40%. The team confirmed the incident, paused the cross-chain bridge, released an emergency validator patch to stop further minting, coordinated with exchanges to freeze funds, and is evaluating a chain rollback."
+ },
+ {
+  "date": "2026-08-10",
+  "target": "USM",
+  "loss": "$ 136,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The USM protocol suffered an exploit due to a pricing logic flaw in the ethFromDefund() function within defund(). It uses the arithmetic mean of the current and estimated final FUM sell prices for a single redemption but lacks \u201csplit invariance.\u201d Combined with the per-redemption state contraction (adjShrinkFactor) and integer rounding, an attacker used a flash loan to call fund() to manipulate internal pricing, then split the same FUM amount into 64 small defund() calls, extracting more ETH than a single large call and causing a loss of ~70.83 ETH."
+ },
+ {
+  "date": "2026-08-09",
+  "target": "Coinsbuy",
+  "loss": "$ 7,900,000",
+  "method": "Unknown",
+  "desc": "Wallets linked to Coinsbuy (a B2B crypto payment processor) were drained of more than $7.9 million across Ethereum and TRON around 13:00 UTC on August 9, 2026. The attacker laundered part of the funds into Monero (XMR) via exchanges, while ChangeNOW helped freeze a six-figure amount; Coinsbuy temporarily paused deposits and withdrawals, which have since resumed."
+ },
+ {
+  "date": "2026-08-09",
+  "target": "Oraichain",
+  "loss": "-",
+  "method": "Cross-Chain Bridge Exploit",
+  "desc": "Oraichain (AI Layer 1) suffered from a vulnerability in its EVM cross-chain transfer path, enabling unauthorized minting of ORAI tokens. The network has been halted since 04:00 UTC on August 9, 2026, with bridges, cross-chain routes, and public interfaces restricted. The exploit path has been identified and addressed; the team is working with partners and CEXs to limit fund movements and is preparing to burn the unauthorized minted balances and reconcile protocol states to restore the canonical ORAI supply."
+ },
+ {
+  "date": "2026-08-09",
+  "target": "Coreum Bridge",
+  "loss": "$ 200,000",
+  "method": "Bridge Logic Vulnerability",
+  "desc": "On August 9, 2026, the cross-chain bridge connecting the XRP Ledger and Coreum (now tx) was exploited. The attacker abused a flaw in the deposit-verification/relayer logic by creating fake deposits (self-transfers of the bridge\u2019s own wrapped tokens with valid memos), tricking the relayers into authorizing real XRP withdrawals from the bridge\u2019s reserve. Nearly 200,000 XRP (~$200,000) was drained in 94 multisig transactions over 97 minutes."
+ },
+ {
+  "date": "2026-08-08",
+  "target": "Atomic Green",
+  "loss": "$ 29,984.27",
+  "method": "Signature Replay Attack",
+  "desc": "Atomic Green (a non-custodial leveraged trading protocol on Arbitrum) was exploited due to a signature replay vulnerability. The same manager signature could be replayed across 21 different Uniswap V3 LP positions, combined with flashloan-based price manipulation, allowing the attacker to trigger unauthorized full LP burns and resulting in a loss of approximately 29,984.27 USDC."
+ },
+ {
+  "date": "2026-08-06",
+  "target": "RRWallet",
+  "loss": "$ 2,000,000",
+  "method": "Supply Chain Attack",
+  "desc": "Security firm Coinspect disclosed that RRWallet (RenrenBit\u2019s wallet) generated vulnerable seed phrases due to a weak RNG in the CryptoJS library (Ill Bloom vulnerability, CVE-2026-71851), making private keys predictable and leading to theft. One user lost approximately $2 million."
+ },
+ {
+  "date": "2026-08-06",
+  "target": "Unistreets",
+  "loss": "$ 17,750",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Unistreets LaunchpadFactoryAuto contract on Ethereum was exploited via arbitrary calldata injection. The factory custodied all launched tokens\u2019 Uniswap V4 LP NFTs; the attacker injected setApprovalForAll approval and burned multiple LP positions, draining liquidity for a loss of approximately $17,750."
+ },
+ {
+  "date": "2026-08-06",
+  "target": "KITE Foundation",
+  "loss": "0",
+  "method": "Private Key Leakage",
+  "desc": "The KITE Foundation detected abnormal KITE token transfers on Ethereum mainnet, confirming that some wallet addresses had been compromised by hackers. The team urgently paused ERC-20 transfers and related cross-chain channels, with no asset losses to users or the project. A new contract was later deployed, airdropping new tokens 1:1 to legitimate addresses based on the snapshot at block 25,692,498, excluding attacker-controlled addresses."
+ },
+ {
+  "date": "2026-08-05",
+  "target": "ZEUS",
+  "loss": "0",
+  "method": "Infrastructure Compromise",
+  "desc": "ZEUS (Bitcoin Lightning Network wallet and LSP provider) infrastructure suffered a cybersecurity incident/attack within the last few hours; the attack was mitigated. Services were temporarily taken offline for a full systems audit out of caution; no customer funds were lost or at risk, and closed LSP channels will be replaced upon restoration. The incident appears limited to ZEUS infrastructure, with no evidence of a Lightning node software vulnerability."
+ },
+ {
+  "date": "2026-08-03",
+  "target": "RISEx",
+  "loss": "$ 673,011.56",
+  "method": "Smart Contract Vulnerability",
+  "desc": "On August 3, 2026, an unauthorized withdrawal of 673,011.56 USDC occurred from the RWA strategy linked to RISEx\u2019s XLP vault due to a misconfiguration present since its July 13 deployment. The team detected it within minutes, patched it by 08:09 UTC, and fully compensated XLP depositors using a portion of July fees; the platform and other components continued operating normally."
+ },
+ {
+  "date": "2026-08-02",
+  "target": "LOOPSDAO",
+  "loss": "$ 690000",
+  "method": "Price Manipulation",
+  "desc": "LOOPSDAO\u2019s LpdFi protocol on BSC was exploited. The attacker used a flash loan to manipulate the spot price of the thin PancakeSwap LPD/USDC pair (no TWAP or deviation guard), opened a massively inflated interest-bearing position with minimal LPD, and claimed interest right across the daily settlement boundary. This triggered the protocol to burn its own Cake-LP and pay out the inflated amount, draining approximately $690,000."
+ },
+ {
+  "date": "2026-08-02",
+  "target": "MOKE",
+  "loss": "$ 907700",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The MOKE token protocol on BNB Chain was exploited via a smart contract vulnerability. The attacker abused an unprotected public claim() function in MokeToken.releaseContract() (no eligibility check on the caller), repeatedly draining ~166 million MOKE from the protocol\u2019s internal reserve pool, then used flash loans, Venus leverage, LP removal, and dividend distribution mechanisms to convert it into ~1,546 BNB, resulting in a loss of approximately $907,700."
+ },
+ {
+  "date": "2026-07-30",
+  "target": "Coldcard",
+  "loss": "$ 100000000",
+  "method": "Firmware Vulnerability",
+  "desc": "Coldcard hardware wallets (by Coinkite) suffered from a firmware bug (since March 2021 on certain versions) that generated seeds with insufficient entropy (~40 bits on Mk3, ~72 bits on newer models vs. the intended 128 bits). Attackers offline brute-forced predictable private keys and drained numerous single-signature Bitcoin addresses across multiple waves without ever accessing the devices, with cumulative losses exceeding $100 million and the incident ongoing."
+ },
+ {
+  "date": "2026-07-30",
+  "target": "Set Protocol",
+  "loss": "$ 9,600",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The DeFi protocol Set Protocol (involving Index Coop\u2019s ExchangeIssuance contract) was exploited due to insufficient state locking in the smart contract. The attacker used a malicious manager pre-issue hook to artificially inflate asset valuations (e.g., positionMultiplier), causing the contract to transfer excess assets based on falsified data, resulting in a loss of approximately $9,600."
+ },
+ {
+  "date": "2026-07-30",
+  "target": "Swan Treasury",
+  "loss": "$ 625,000",
+  "method": "Private Key Leakage",
+  "desc": "The decentralized asset management protocol Swan Treasury on BNB Chain was exploited due to the leakage of an off-chain signer's private key (the _signer key hardcoded in the ZhaiquanBuy contract). The attacker forged valid signatures and used PancakeSwap flash loans to purchase approximately 687,000 STY tokens at around a 100x discount (spending approximately 19,700 USDT). The attacker then forged the related claim()/transfer signatures and dumped the tokens into the STY/USDT pool, making a profit of approximately $625,000."
+ },
+ {
+  "date": "2026-07-28",
+  "target": "Crypto DAO",
+  "loss": "$ 52,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The Pro token contract of Crypto DAO was exploited due to missing access control, with the attacker calling publicly accessible vault functions. According to GoPlus Security\u2019s analysis, the attacker\u2019s actual profit was approximately $52,000, while the contract lost around 167,200 Pro tokens. The related addresses monitored by Blockaid collectively held approximately $8.2 million worth of USDT (not the actual stolen amount)."
+ },
+ {
+  "date": "2026-07-28",
+  "target": "LULA",
+  "loss": "$ 578,100",
+  "method": "Price Manipulation Attack",
+  "desc": "The LULA token on BSC was exploited when attackers abused the privileged recycle() function in its contract, combined with an approximately $237 million flash loan to manipulate PancakeSwap V2 liquidity pool reserves, resulting in a loss of about $578,100."
+ },
+ {
+  "date": "2026-07-26",
+  "target": "WEMIX",
+  "loss": "$ 6,250,000",
+  "method": "Private Key Leakage",
+  "desc": "The owner privileges of a WEMIX$-related smart contract were compromised, allowing the attacker to illegally mint approximately 5.23 million WEMIX$ stablecoins (worth about $6.25 million), which were swapped into WEMIX and USDC.e before being bridged out. The team has suspended bridges and related services while working with exchanges, security firms, and law enforcement to track the funds."
+ },
+ {
+  "date": "2026-07-26",
+  "target": "Garden Finance",
+  "loss": "$ 450,000",
+  "method": "Supply Chain Attack",
+  "desc": "Security firm Blockaid detected an ongoing exploit targeting Garden Finance\u2019s HTLC contracts, draining about $450,000 in USDT across Ethereum, Base, Arbitrum, and BNB Chain. The project stated that an independent solver\u2019s off-chain database was compromised and fraudulent records were inserted, causing improper fund releases; the protocol and smart contracts themselves were not compromised, and the app has been temporarily taken offline."
+ },
+ {
+  "date": "2026-07-26",
+  "target": "ChainConnect",
+  "loss": "$ 650,000",
+  "method": "Unauthorized Access",
+  "desc": "ChainConnect\u2019s EVM integration was compromised through unauthorized access. Approximately $650,000 in tokens was drained from the bridge contracts across Ethereum, BNB Chain, Avalanche C-Chain and Polygon in 23 transactions; bridge operations were paused immediately."
+ },
+ {
+  "date": "2026-07-25",
+  "target": "Bankrbot",
+  "loss": "$ 479,885",
+  "method": "Account Compromise",
+  "desc": "The Bankrbot X account (despite on-device passkey) was compromised and posted fake airdrop links; concurrently, the project's Bankr wallet (without MFA) was drained of ~1.5 billion $BNKR tokens which were then dumped."
+ },
+ {
+  "date": "2026-07-25",
+  "target": "Projekt",
+  "loss": "$ 560000",
+  "method": "Flash Loan Attack",
+  "desc": "The Projekt (GREEN/GOLD) reward vault on Ethereum was exploited. The attacker flash-loaned ~14K WETH from Morpho, pushed it into multiple Uniswap V2 memecoin pairs and used skim() to create fake \u201cpurchase\u201d records. Exploiting the permissionless trackPurchase function (which only reads token balance deltas to size rewards without verifying actual ETH spent), they inflated reward allocations and drained ~301.7 ETH (~$560K) from the vault\u2019s reward pool via massWithdraw."
+ },
+ {
+  "date": "2026-07-24",
+  "target": "Lien Finance",
+  "loss": "$ 542,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "On July 24, 2026, Lien Finance (an Ethereum DeFi structured products protocol) was exploited. The attacker abused a validation flaw in the exchangeEquivalentBonds function of the BondMakerCollateralizedEth contract (missing multiset integrity checks), minting unbacked bond tokens and draining approximately $542K USDC via OTC pools."
+ },
+ {
+  "date": "2026-07-24",
+  "target": "Triple-A",
+  "loss": "$ 11,800,000",
+  "method": "Hot Wallet Compromise",
+  "desc": "Singapore-based stablecoin payments firm Triple-A suffered unauthorized access to its hot wallets across multiple chains, with attackers draining approximately $9.7M\u2013$11.8M in company-owned digital assets that were swapped and bridged/consolidated to a single Ethereum address. Client funds remained unaffected in separate trust accounts; services were briefly paused for security checks and have been fully restored."
+ },
+ {
+  "date": "2026-07-23",
+  "target": "Verus Ethereum Bridge",
+  "loss": "$ 7,540,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The Verus Ethereum Bridge was exploited again. The attacker abused the bridge\u2019s import path to trigger unbacked payouts on the Ethereum side, draining approximately $7.54 million in assets (ETH, tBTC, USDC, etc.) from the bridge reserves. This is the second exploit of the same flaw from May. The project has not issued a detailed official statement yet."
+ },
+ {
+  "date": "2026-07-23",
+  "target": "Solido Cash",
+  "loss": "$ 73,400",
+  "method": "Oracle Misassignment",
+  "desc": "Solido Cash (the largest DeFi protocol on Supra) was exploited due to an oracle misassignment on SOLID collateral (stale feed fallback to CASH oracle, severely overvaluing collateral). The attacker, in two waves (one atomic tx + one multi-wallet manual), deposited cheap collateral, minted excess CASH, and sold it on DEXs for SUPRA, netting ~293.7M SUPRA. No user funds were affected; losses primarily hit LPs (mostly the foundation) and protocol reserves. The protocol paused relevant functions and released a forensic report."
+ },
+ {
+  "date": "2026-07-22",
+  "target": "AFX Bridge",
+  "loss": "$ 24,150,000",
+  "method": "Private Key Leakage",
+  "desc": "The AFX-operated cross-chain/USDC custody bridge on Arbitrum was exploited. The attacker used compromised validator hot keys to meet the quorum and drain approximately $24.15 million USDC. The funds were bridged to Ethereum and swapped for ETH. Arbitrum\u2019s native bridge was unaffected, and AFX\u2019s core trading infrastructure remained secure. The team suspended bridge operations and is investigating with security partners."
+ },
+ {
+  "date": "2026-07-22",
+  "target": "42DAO",
+  "loss": "$ 915,000",
+  "method": "Price Oracle Manipulation",
+  "desc": "The 42DAO protocol was exploited. The attacker manipulated the Median Oracle with an abnormally low BTCB price, triggering forced liquidations of multiple BTCB vaults and profiting approximately $915,000. This caused its algorithmic stablecoin Balance Coin (BLC) to crash over 99% from near $1 to about $0.001."
+ },
+ {
+  "date": "2026-07-21",
+  "target": "FlashTrade",
+  "loss": "$ 98,000",
+  "method": "Unknown",
+  "desc": "FlashTrade (a Solana perps protocol) detected an unauthorized $98,000 withdrawal from its ephemeral instance. As a precaution, trading, deposits, and withdrawals were paused. Thanks to the newly rolled-out withdrawal batching and monitoring system, the incident was detected quickly and contained. The team will fully cover the amount, with all user funds safe."
+ },
+ {
+  "date": "2026-07-21",
+  "target": "Wanchain Cardano-BNB Chain Bridge",
+  "loss": "$10,000,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Wanchain\u2019s Cardano-to-BNB Chain cross-chain bridge was exploited. The attacker drained approximately 515 million NIGHT tokens from the Cardano-side lock address. The incident may involve signature validation or replay flaws. Wanchain suspended the bridge; Midnight\u2019s core network was unaffected. Multiple exchanges froze related funds, and NIGHT price dropped sharply before partial recovery."
+ },
+ {
+  "date": "2026-07-19",
+  "target": "Allbridge Core",
+  "loss": "$ 1,650,000",
+  "method": "Flash Loan Price Manipulation",
+  "desc": "Cross-chain bridge protocol Allbridge Core was exploited on July 19-20, 2026. The attacker used a ~$1.12M USDC flash loan from Kamino to rapidly swap in the Solana USDC/USDT liquidity pools, manipulating ratios and draining approximately $1.65 million. The team paused the protocol, urged affected LPs to withdraw funds immediately, and asked arbitrage profiteers to return funds for LP compensation."
+ },
+ {
+  "date": "2026-07-19",
+  "target": "Zilliqa exchange partner",
+  "loss": "-",
+  "method": "Private Key Leakage",
+  "desc": "Zilliqa announced that ZIL was stolen from a cold wallet of one of its exchange partners. Investigation confirmed the root cause was a nonce-generation vulnerability in the Zilliqa Ledger app (present since 2019), allowing private key recovery from on-chain Schnorr signatures (after ~5+ native transactions). It was not due to the exchange\u2019s operations. Native transactions were suspended and a fix is being coordinated."
+ },
+ {
+  "date": "2026-07-17",
+  "target": "Across",
+  "loss": "0",
+  "method": "Deposit signal spoofing",
+  "desc": "Cross-chain bridge protocol Across was attacked on its Solana deployment on July 17, 2026. The attacker exploited a gap in Solana\u2019s event system to spoof deposit signals, tricking relayers into paying out on fake deposits. User funds remained completely safe with zero losses; all transactions were completed or fully refunded. Losses were contained to the Risk Labs-operated relayer. The team paused Solana deposits and restored operations the next day, with a full post-mortem planned."
+ },
+ {
+  "date": "2026-07-16",
+  "target": "DefiTuna Lending",
+  "loss": "$ 580,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "The Solana-based DeFi protocol DefiTuna's lending pools were exploited by an attacker who drained approximately $580K, creating a matching deficit in the USDC lending pool. The attack vector has been identified and patched; the team is investigating and working on fund recovery."
+ },
+ {
+  "date": "2026-07-15",
+  "target": "Ostium",
+  "loss": "$ 18,000,000",
+  "method": "Private Key Leakage",
+  "desc": "Ostium, an RWA-focused perpetuals DEX on Arbitrum, suffered an oracle manipulation exploit. The attacker used a compromised oracle signer key to submit fraudulent future-dated price reports, generating artificial trading profits and draining approximately $18 million USDC from the liquidity vault. The protocol has halted trading and is investigating."
+ },
+ {
+  "date": "2026-07-15",
+  "target": "TeleSwap",
+  "loss": "$ 735,000",
+  "method": "Unknown",
+  "desc": "The cross-chain bridge protocol TeleSwap was suspected of being exploited on July 15, 2026. Suspicious outflows of over $735,000 occurred from its Bitcoin hot wallet, which then stopped processing transactions. Five days later, the project has still not publicly disclosed the incident, and the attacker has moved funds toward Tornado Cash for laundering."
+ },
+ {
+  "date": "2026-07-15",
+  "target": "BarnBridge",
+  "loss": "$ 776,000",
+  "method": "Governance Attack",
+  "desc": "DeFi protocol BarnBridge suffered a governance attack on July 15, 2026. The attacker gained control of the DAO via a malicious governance proposal, upgraded the proxy contract to a malicious implementation, and drained approximately $776,000 USDC by exploiting pre-existing approvals from around 50 user addresses."
+ },
+ {
+  "date": "2026-07-15",
+  "target": "Cascade",
+  "loss": "$ 1,343,921",
+  "method": "Price Manipulation",
+  "desc": "Cascade, a perpetual contract platform backed by institutions including Polychain, was attacked on Arbitrum through its pre-launch locked CLS vault (First Wave invite-only deposits). The attacker accumulated long positions in a low-liquidity market to hedge against CLS short positions, artificially manipulated the mark price upward, triggering large-scale liquidations of CLS short positions. After profiting from the attack, the attacker immediately withdrew approximately $1.34 million USDC. The project team paused trading and withdrawals, and the funds were largely recovered afterward, with full compensation arranged for affected users."
+ },
+ {
+  "date": "2026-07-14",
+  "target": "Drips Network",
+  "loss": "$ 24,900",
+  "method": "Smart Contract Vulnerability",
+  "desc": "DeFi streaming payments protocol Drips Network was exploited on July 14, 2026. The attacker used an unsafe integer cast vulnerability (uint128 to int128) in the DaiDripsHub.give() function on Ethereum, causing a negative value to flip positive and reverse the transfer direction, draining 24,882.99 DAI (~$24,900) from the DaiReserve."
+ },
+ {
+  "date": "2026-07-13",
+  "target": "Lumi Finance",
+  "loss": "$ 270,000",
+  "method": "Smart Contract Logic Vulnerability",
+  "desc": "The DeFi protocol Lumi Finance on Arbitrum suffered an exploit where attackers leveraged Sodium smart accounts that performed token approvals as a side effect during UserOp validation. This allowed a malicious Paymaster to gain allowances from multiple accounts and drain funds, resulting in approximately $270,000 in losses."
+ },
+ {
+  "date": "2026-07-13",
+  "target": "Chi Protocol",
+  "loss": "$ 8,500",
+  "method": "Smart Contract Logic Vulnerability",
+  "desc": "Chi Protocol (a DeFi stablecoin protocol issuing $USC backed by LSTs/LRTs on Ethereum) was exploited due to a logic error in the ArbitrageV5 contract\u2019s burn() function. The attacker used a flash loan to buy heavily depegged $USC cheaply on a thin Uniswap V2 pool and burned it to redeem full-value collateral (weETH/stETH/WETH) at the hardcoded $1 peg, without the burn function checking the actual peg (unlike the mint function). This resulted in approximately $8,500 loss, nearly draining the protocol\u2019s reserves."
+ },
+ {
+  "date": "2026-07-11",
+  "target": "Bonzo Lend",
+  "loss": "$ 9,050,000",
+  "method": "Oracle Price Manipulation",
+  "desc": "Bonzo Lend on Hedera was exploited through a third-party oracle (Supra) vulnerability. An attacker submitted a massively manipulated SAUCE price, allowing them to borrow approximately $9.05 million in assets with minimal collateral. The borrowed funds were subsequently swapped on SaucerSwap and bridged to Ethereum via LayerZero (over $5M tracked on-chain). Bonzo Lend paused the protocol shortly after detecting abnormal activity."
+ },
+ {
+  "date": "2026-07-06",
+  "target": "Lazy Summer Protocol",
+  "loss": "$ 6,040,000",
+  "method": "Smart Contract Vulnerability",
+  "desc": "Lazy Summer Protocol (under Summer.fi) USDC vaults were exploited due to NAV/share price calculation flaw. The attacker used flash loans and pre-accumulated overvalued Silo tokens to inflate vault NAV (~9.5%), redeeming at inflated price and extracting ~$6.04M from other depositors."
+ },
+ {
+  "date": "2026-07-06",
+  "target": "BonkDAO",
+  "loss": "$ 20,000,000",
+  "method": "Governance Attack",
+  "desc": "BonkDAO suffered a governance attack. The attacker spent ~$4M to buy BONK tokens for sufficient voting power and passed a malicious governance proposal (BIP-76) to transfer ~$20M BONK from the treasury to controlled wallets. No smart contract exploit; used the DAO's own voting system."
+ }
+]

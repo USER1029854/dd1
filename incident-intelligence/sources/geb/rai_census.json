@@ -1,0 +1,12 @@
+{
+ "manager": "0xefe0b4ca532769a3ae758fd82e1426a03a94f185 (RAI GebSafeManager, mainnet)",
+ "safes_total": 2453,
+ "safes_read": 2397,
+ "owners_distinct": 2277,
+ "owner_classes": {
+  "EOA (self-guarded)": 1837,
+  "DSProxy (owner-guarded, codehash 572b73..)": 389
+ },
+ "non_dsproxy_contract_owners": 0,
+ "conclusion": "No SAFE owned by an anyone-callable singleton (e.g. GebProxyActions). RAI is clean for this class at head."
+}
