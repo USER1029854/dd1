@@ -1,0 +1,1267 @@
+{
+ "F6_doublecount_registration": [
+  {
+   "name": "Gryphon",
+   "slug": "gryphon",
+   "cat": "Liquid Staking",
+   "tvl": 59028,
+   "chains": [
+    "Injective"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Injectives premier liquid staking platform.With an integrated money market to earn compounded interest on Injective while accessing your loc"
+  },
+  {
+   "name": "Astarter Launch ISPO",
+   "slug": "astarter-launch-ispo",
+   "cat": "Staking Pool",
+   "tvl": 52150,
+   "chains": [
+    "Cardano"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Astarter is a key DeFi infrastructure hub on Cardano that features four core applications: Launchpad(Launchpool), DEX, Money Market & Tech S"
+  },
+  {
+   "name": "WEMIX.FI Staking",
+   "slug": "wemix.fi-staking",
+   "cat": "Staking Pool",
+   "tvl": 19353132,
+   "chains": [
+    "WEMIX"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Stake your assets in staking products guaranteed by WEMIX and earn stable profits. Receive various rewards through various programs."
+  },
+  {
+   "name": "InceptionLRT (Isolated Restaking)",
+   "slug": "inceptionlrt-(isolated-restaking)",
+   "cat": "Liquid Restaking",
+   "tvl": 6936341,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Restake ETH LSTs on Inception, built on Eigenlayer to earn 2 layers of rewards"
+  },
+  {
+   "name": "K2",
+   "slug": "k2",
+   "cat": "Chain",
+   "tvl": 5371389,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Karak Network is a universal restaking layer that enables the use of staked assets from various blockchains to secure new protocols, reducin"
+  },
+  {
+   "name": "Phase Stake",
+   "slug": "phase-stake",
+   "cat": "Liquid Staking",
+   "tvl": 1866709,
+   "chains": [
+    "Solana"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "YIELD is Phase's liquid staking token for its institutional validator service. The SOL backing it is staked to a validator Phase operates it"
+  },
+  {
+   "name": "tramplin.io",
+   "slug": "tramplin.io",
+   "cat": "Staking Pool",
+   "tvl": 978719,
+   "chains": [
+    "Solana"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Tramplin is a non-custodial Premium staking platform with verifiable and random rewards distribution. Tramplin is first platform to utilise "
+  },
+  {
+   "name": "Cyber",
+   "slug": "cyber",
+   "cat": "Chain",
+   "tvl": 559277,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Cyber is an L2 built on the OP stack, designed for social interactions. It offers native yield from Ethereum restaking, native smart account"
+  },
+  {
+   "name": "Geode",
+   "slug": "geode",
+   "cat": "Liquid Staking",
+   "tvl": 425647,
+   "chains": [
+    "Avalanche"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Saddle Finance"
+   ],
+   "desc": "Protocol Owned Staking Derivatives. Revolutionizing the Liquid Staking while saving PoS chains from monopolization, boosting yields for all "
+  },
+  {
+   "name": "Orchai LST",
+   "slug": "orchai-lst",
+   "cat": "Liquid Staking",
+   "tvl": 340324,
+   "chains": [
+    "Orai"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Lido"
+   ],
+   "desc": "Orchai - DeFi Orchestrator Powered by AI - provides a set of multiple protocols and features, which assist users not only in optimizing the "
+  },
+  {
+   "name": "Lido Impact Staking",
+   "slug": "lido-impact-staking",
+   "cat": "Liquid Staking",
+   "tvl": 230030,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Lido"
+   ],
+   "desc": "Stake your Ethereum with Lido Impact Staking (LIS) and gift a share of your returns to fund social impact."
+  },
+  {
+   "name": "Hubra Yield",
+   "slug": "hubra-yield",
+   "cat": "Yield",
+   "tvl": 50439,
+   "chains": [
+    "Solana"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Hubra is a Solana-based DeFi protocol providing institutional-grade, non-custodial yield products, including liquid staking (raSOL) and auto"
+  }
+ ],
+ "F2_thin_collateral_oracle": [
+  {
+   "name": "Alpaca Finance 2.0",
+   "slug": "alpaca-finance-2.0",
+   "cat": "Lending",
+   "tvl": 12767581,
+   "chains": [
+    "Binance"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Alpaca Finance offers a simple way for both beginners and professionals to earn high yields in DeFi through Lend & Stake"
+  },
+  {
+   "name": "Ionic Protocol",
+   "slug": "ionic-protocol",
+   "cat": "Lending",
+   "tvl": 2042239,
+   "chains": [
+    "Mode",
+    "Base",
+    "Lisk",
+    "Optimism",
+    "BOB",
+    "Fraxtal"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "Ionic is a decentralised non-custodial money market protocol, supported by a comprehensive security monitoring and failsafe systems. Ionic g"
+  },
+  {
+   "name": "Scream",
+   "slug": "scream",
+   "cat": "Lending",
+   "tvl": 1288677,
+   "chains": [
+    "Fantom"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "Scream is a highly scalable decentralized lending protocol powered by Fantom."
+  },
+  {
+   "name": "Orbit Protocol",
+   "slug": "orbit-protocol",
+   "cat": "Lending",
+   "tvl": 620955,
+   "chains": [
+    "Blast"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "Orbit is a decentralized liquidity protocol that facilitates the lending and borrowing of Blast assets"
+  },
+  {
+   "name": "ReactorFusion",
+   "slug": "reactorfusion",
+   "cat": "Lending",
+   "tvl": 281800,
+   "chains": [
+    "zkSync Era",
+    "Telos"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "ReactorFusion, a native lending and borrowing market on zkSync era, is based on Compound Finance and offers unique bribe-reward tokenomics. "
+  },
+  {
+   "name": "ABEL Finance",
+   "slug": "abel-finance",
+   "cat": "Lending",
+   "tvl": 239596,
+   "chains": [
+    "Aptos"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "A Cross-Chain Lending Platform Built on Aptos and Sui"
+  },
+  {
+   "name": "Vaultedge",
+   "slug": "vaultedge",
+   "cat": "CDP",
+   "tvl": 187026,
+   "chains": [
+    "Base",
+    "Plasma"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Liquity V1"
+   ],
+   "desc": "Vaultedge is a decentralized borrowing protocol built around yield-generating vaults that optimize returns across the deployed chain. Users "
+  },
+  {
+   "name": "Tender Finance",
+   "slug": "tender-finance",
+   "cat": "Lending",
+   "tvl": 178369,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": " Tender Finance is an innovative open-source decentralized protocol for borrowing and lending. It will support whole-portfolio collateraliza"
+  },
+  {
+   "name": "Fountain Protocol",
+   "slug": "fountain-protocol",
+   "cat": "Lending",
+   "tvl": 102215,
+   "chains": [
+    "Oasis"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "Fountain Protocol is a lending platform powered by Oasis. The protocol enables users to experience high capital efficiency one-stop manageme"
+  },
+  {
+   "name": "PolyQuity",
+   "slug": "polyquity",
+   "cat": "CDP",
+   "tvl": 93811,
+   "chains": [
+    "Polygon"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Liquity V1"
+   ],
+   "desc": "PolyQuity is a decentralized borrowing protocol that allows you to draw interest-free loans against Matic used as collateral. Loans are paid"
+  },
+  {
+   "name": "Sendit",
+   "slug": "sendit",
+   "cat": "Lending",
+   "tvl": 75007,
+   "chains": [
+    "Solana"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Save"
+   ],
+   "desc": "Sendit is a fully permissionless money market protocol and margin trading platform, purpose-built to serve the high-velocity world of memeco"
+  },
+  {
+   "name": "SiO2 Finance",
+   "slug": "sio2-finance",
+   "cat": "Lending",
+   "tvl": 54661,
+   "chains": [
+    "Astar"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Aave V2"
+   ],
+   "desc": "SiO2 Finance is the Astar-native lending hub supporting both EVM and WASM."
+  },
+  {
+   "name": "Pac Finance",
+   "slug": "pac-finance",
+   "cat": "Lending",
+   "tvl": 7017651,
+   "chains": [
+    "Blast"
+   ],
+   "dep": true,
+   "rev30d": 10217,
+   "fork": [
+    "Aave V3"
+   ],
+   "desc": "A self-repaying lending and margin trading protocol on Blast"
+  },
+  {
+   "name": "Longbow",
+   "slug": "longbow",
+   "cat": "Lending",
+   "tvl": 1701127,
+   "chains": [
+    "Robinhood Chain"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Longbow is a curated lending protocol on Robinhood Chain."
+  },
+  {
+   "name": "JustLend V2",
+   "slug": "justlend-v2",
+   "cat": "Lending",
+   "tvl": 1538075,
+   "chains": [
+    "Tron"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Morpho Blue"
+   ],
+   "desc": "An isolated-collateral lending protocol that enhances security by separating collateral assets."
+  },
+  {
+   "name": "Moola Market",
+   "slug": "moola-market",
+   "cat": "Lending",
+   "tvl": 995277,
+   "chains": [
+    "Celo"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Aave V2"
+   ],
+   "desc": "Moola Market is a DeFi lending platform that allows loans to anyone! It supports CELO, cUSD (Celo Dollar) and cEUR (Celo Euro!)"
+  },
+  {
+   "name": "Incprinter",
+   "slug": "incprinter",
+   "cat": "CDP",
+   "tvl": 795200,
+   "chains": [
+    "Pulse"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Liquity V1"
+   ],
+   "desc": "Incprinter.com is a fork of liquity V1 on Pulsechain blockchain, chain ID 369, it uses $INC as collateral to mint $INCD stable coint and has"
+  },
+  {
+   "name": "Phiat Protocol",
+   "slug": "phiat-protocol",
+   "cat": "Lending",
+   "tvl": 767699,
+   "chains": [
+    "Pulse"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Aave V2"
+   ],
+   "desc": "An Aave v2 fork on PulseChain with noval design of risk control and governance token staking"
+  },
+  {
+   "name": "Bastion",
+   "slug": "bastion",
+   "cat": "Lending",
+   "tvl": 725122,
+   "chains": [
+    "Aurora"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "DeFi evolved. The world's first to combine Lending and Stableswap"
+  },
+  {
+   "name": "Aurigami",
+   "slug": "aurigami",
+   "cat": "Lending",
+   "tvl": 517107,
+   "chains": [
+    "Aurora"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "MultiPLY with Aurigami, the noncustodial lending and borrowing haven on Aurora"
+  },
+  {
+   "name": "VETRO",
+   "slug": "vetro",
+   "cat": "CDP",
+   "tvl": 508102,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Vetro is a decentralized CDP and yield protocol issuing pegged assets (VUSD and vetBTC) backed by yield-bearing collateral reserves"
+  },
+  {
+   "name": "Kona Lend",
+   "slug": "kona-lend",
+   "cat": "Lending",
+   "tvl": 500232,
+   "chains": [
+    "Abstract"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Aave V3"
+   ],
+   "desc": "Supply assets to earn interest, or borrow with collateral."
+  },
+  {
+   "name": "USDFC",
+   "slug": "usdfc",
+   "cat": "CDP",
+   "tvl": 437171,
+   "chains": [
+    "Filecoin"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Liquity V1"
+   ],
+   "desc": "USDFC is a Filecoin-backed Stablecoin."
+  },
+  {
+   "name": "Ripe Protocol",
+   "slug": "ripe-protocol",
+   "cat": "Lending",
+   "tvl": 289308,
+   "chains": [
+    "Robinhood Chain",
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Ripe is a lending protocol where your entire portfolio \u2014 crypto, yield-bearing positions, tokenized stocks, NFTs \u2014 can back a single loan. Y"
+  },
+  {
+   "name": "Amply Finance",
+   "slug": "amply-finance",
+   "cat": "Lending",
+   "tvl": 261519,
+   "chains": [
+    "Cronos zkEVM"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Aave V3"
+   ],
+   "desc": "Peer-to-Pool Lending Protocol on Cronos zkEVM Chain"
+  },
+  {
+   "name": "WanLend",
+   "slug": "wanlend",
+   "cat": "Lending",
+   "tvl": 186284,
+   "chains": [
+    "Wanchain"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Compound V2"
+   ],
+   "desc": "WanLend is a decentralized financial management platform, users can deposit cryptos to gain interests, or borrow cryptos and pay interests"
+  }
+ ],
+ "F9_illiquid_perp_selftrade": [
+  {
+   "name": "Taiga Karura",
+   "slug": "taiga-karura",
+   "cat": "Synthetics",
+   "tvl": 131374,
+   "chains": [
+    "Karura"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": null,
+   "desc": "A synthetic asset protocol designed to enable maximum efficiency for uniform assets on Kusama."
+  },
+  {
+   "name": "Mycelium Perpetual Swaps",
+   "slug": "mycelium-perpetual-swaps",
+   "cat": "Derivatives",
+   "tvl": 113196,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "GMX V1 Perps"
+   ],
+   "desc": "Trade Perpetual Swaps on Ethereum scaling solution, Arbitrum, with liquid markets for BTC, ETH, LINK, UNI, CRV, FXS, & BAL."
+  },
+  {
+   "name": "Alpaca Perpetual Futures Exchange",
+   "slug": "alpaca-perpetual-futures-exchange",
+   "cat": "Derivatives",
+   "tvl": 52559,
+   "chains": [
+    "Binance"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "GMX V1 Perps"
+   ],
+   "desc": "Perpetual Futures allow users to have leveraged long or short exposure on assets without an expiration date. In place of expiration, users p"
+  },
+  {
+   "name": "SakePerp",
+   "slug": "sakeperp",
+   "cat": "Dexs",
+   "tvl": 50009,
+   "chains": [
+    "Ethereum",
+    "Binance"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": null,
+   "desc": "SAKE is a transaction-driven decentralized perpetual contract and spot trading protocol. SakePerp.fi is the first on-chain perpetual contrac"
+  },
+  {
+   "name": "Flipster",
+   "slug": "flipster",
+   "cat": "CEX",
+   "tvl": 28320868,
+   "chains": [
+    "Ethereum",
+    "Binance",
+    "Tron",
+    "Bitcoin",
+    "Aptos",
+    "Arbitrum",
+    "Klaytn",
+    "Solana",
+    "Stable",
+    "Ripple",
+    "Algorand",
+    "Polygon",
+    "Near",
+    "Avalanche",
+    "Sui",
+    "TON",
+    "Cosmos",
+    "Celo",
+    "Base",
+    "Sonic",
+    "Optimism",
+    "Blast"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Flipster has a wide selection of over 300 perpetual futures listings, including Bitcoin (BTC) and Ethereum (ETH), that can be traded with le"
+  },
+  {
+   "name": "Arcus pTokens",
+   "slug": "arcus-ptokens",
+   "cat": "Derivatives",
+   "tvl": 1252102,
+   "chains": [
+    "Robinhood Chain"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Arcus pTokens are transferable ERC-20 vault shares representing proportional exposure to managed Arcus perpetual accounts with predefined ma"
+  },
+  {
+   "name": "Strat Perps",
+   "slug": "strat-perps",
+   "cat": "Derivatives",
+   "tvl": 1204119,
+   "chains": [
+    "Strat"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Strat is a decentralized perpetuals exchange providing full-stack onchain prop trading."
+  },
+  {
+   "name": "Scientix",
+   "slug": "scientix",
+   "cat": "Synthetics",
+   "tvl": 367418,
+   "chains": [
+    "Binance"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Alchemix V2"
+   ],
+   "desc": "Future-yield-backed Synthetic Token. Interest-free, Self-repaying and Liquidation-free Loans. Your collateral earns you yields in the backgr"
+  },
+  {
+   "name": "Gambit Financial",
+   "slug": "gambit-financial",
+   "cat": "Derivatives",
+   "tvl": 228055,
+   "chains": [
+    "Binance"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "GMX V1 Perps"
+   ],
+   "desc": "The goal of Gambit is to build a better leverage platform. There are no price impacts to enter and exit a position and liquidations only occ"
+  },
+  {
+   "name": "Jetbit",
+   "slug": "jetbit",
+   "cat": "Derivatives",
+   "tvl": 96460,
+   "chains": [
+    "Binance"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Jetbit is a perpetual-futures exchange where every position fills against a single on-chain USDT pool on BNB Chain, priced by oracle \u2014 no or"
+  },
+  {
+   "name": "10KDex",
+   "slug": "10kdex",
+   "cat": "Derivatives",
+   "tvl": 90956,
+   "chains": [
+    "Scroll"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "GMX V1 Perps"
+   ],
+   "desc": "Empowering more DeFi users to relish a centralized exchange-like on-chain trading encounter."
+  },
+  {
+   "name": "PHAME Protocol",
+   "slug": "phame-protocol",
+   "cat": "Derivatives",
+   "tvl": 561373,
+   "chains": [
+    "Pulse"
+   ],
+   "dep": false,
+   "rev30d": 0,
+   "fork": [
+    "GMX V1 Perps"
+   ],
+   "desc": "Decentralized Perpetual DEX on PulseChain with noval design of LP (PHLP) & governance token staking (PHAME)"
+  },
+  {
+   "name": "FusionX V3",
+   "slug": "fusionx-v3",
+   "cat": "Dexs",
+   "tvl": 94356,
+   "chains": [
+    "Mantle"
+   ],
+   "dep": false,
+   "rev30d": 479.23664122137404,
+   "fork": [
+    "Uniswap V3"
+   ],
+   "desc": "FusionX builds the native DeFi ecosystem of Mantle Network which powers it's concentrated liquidity AMM which is highly efficient, isolated "
+  },
+  {
+   "name": "HertzFlow",
+   "slug": "hertzflow",
+   "cat": "Derivatives",
+   "tvl": 7219999,
+   "chains": [
+    "Binance"
+   ],
+   "dep": false,
+   "rev30d": 3419.71,
+   "fork": null,
+   "desc": "HertzFlow is a permissionless, self-custodial perpetuals exchange on BNB Chain with isolated liquidity pools and multi-market liquidity vaul"
+  },
+  {
+   "name": "Bounce.Tech",
+   "slug": "bounce.tech",
+   "cat": "Derivatives",
+   "tvl": 925475,
+   "chains": [
+    "Hyperliquid L1"
+   ],
+   "dep": false,
+   "rev30d": 86072.81,
+   "fork": null,
+   "desc": "Bounce.Tech is a non-custodial leveraged token protocol on Hyperliquid that lets users mint and redeem ERC-20 tokens representing rebalanced"
+  },
+  {
+   "name": "Alchemix V3",
+   "slug": "alchemix-v3",
+   "cat": "Synthetics",
+   "tvl": 37779376,
+   "chains": [
+    "Ethereum",
+    "Optimism",
+    "Arbitrum"
+   ],
+   "dep": false,
+   "rev30d": 88032,
+   "fork": null,
+   "desc": "Alchemix is a DeFi protocol that allows for the creation of synthetic tokens that represent the future yield of a deposit. It enables users "
+  }
+ ],
+ "F1_slot0_LPshare": [
+  {
+   "name": "vfat.io",
+   "slug": "vfat.io",
+   "cat": "Yield Aggregator",
+   "tvl": 26129440,
+   "chains": [
+    "Base",
+    "Ethereum",
+    "Arbitrum",
+    "Optimism",
+    "Binance",
+    "Avalanche",
+    "Polygon",
+    "Ink",
+    "Unichain",
+    "Sonic",
+    "Hemi",
+    "Katana",
+    "Linea",
+    "Fraxtal",
+    "Mantle",
+    "Lisk",
+    "Mode",
+    "Fantom"
+   ],
+   "dep": false,
+   "rev30d": 32913,
+   "fork": null,
+   "desc": "vfat.io is a yield aggregator, underpinned by Sickle, a smart contract wallet for yield farming. It reduces complex operations such as enter"
+  }
+ ],
+ "F7_settlement_no_snapshot": [
+  {
+   "name": "Satsuma",
+   "slug": "satsuma",
+   "cat": "Dexs",
+   "tvl": 779969,
+   "chains": [
+    "Citrea"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Algebra Integral"
+   ],
+   "desc": "Satsuma is the main DEX of Citrea, fully supported by Citrea Foundation, the first ZK-Rollup that posts proofs directly to Bitcoin L1. We're"
+  },
+  {
+   "name": "PredictEX",
+   "slug": "predictex",
+   "cat": "Prediction Market",
+   "tvl": 241617,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "PredictEX is a boosted sports prediction exchange on Base. The platform brings leverage to sports markets through boosts, letting users ampl"
+  },
+  {
+   "name": "OPINION",
+   "slug": "opinion",
+   "cat": "Prediction Market",
+   "tvl": 3539216,
+   "chains": [
+    "Binance"
+   ],
+   "dep": false,
+   "rev30d": 45230,
+   "fork": null,
+   "desc": "Opinion is building a prediction exchange that enables direct trading of macroeconomic data, predictions, and news as standardized assets, l"
+  },
+  {
+   "name": "Sport.fun",
+   "slug": "sport.fun",
+   "cat": "Prediction Market",
+   "tvl": 2714076,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": 92612,
+   "fork": null,
+   "desc": "Sport.fun is a Base chain fantasy soccer protocol where users trade fractional player shares backed by actual football performance, using Go"
+  },
+  {
+   "name": "PredictStreet",
+   "slug": "predictstreet",
+   "cat": "Prediction Market",
+   "tvl": 4382782,
+   "chains": [
+    "ADI"
+   ],
+   "dep": false,
+   "rev30d": 670774.38,
+   "fork": null,
+   "desc": "PredictStreet is a prediction-market exchange where users trade binary (YES/NO) outcome shares on real-world events \u2014 sports and beyond \u2014 an"
+  },
+  {
+   "name": "Predict Fun",
+   "slug": "predict-fun",
+   "cat": "Prediction Market",
+   "tvl": 11330881,
+   "chains": [
+    "Binance",
+    "Blast"
+   ],
+   "dep": false,
+   "rev30d": 849523,
+   "fork": null,
+   "desc": "Predict is a BNB-based prediction market, enabling users to trade real-world outcomes in categories spanning sports, crypto, global affairs "
+  }
+ ],
+ "F8_orderbook_unfilled_filled": [
+  {
+   "name": "ChickenSwap",
+   "slug": "chickenswap",
+   "cat": "Dexs",
+   "tvl": 121724,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Uniswap V2"
+   ],
+   "desc": "ChickenSwap DEX is a Decentralized Exchange, similar to Uniswap. All users can provide liquidity and trade crypto assets here without any ce"
+  },
+  {
+   "name": "Alien Base V3",
+   "slug": "alien-base-v3",
+   "cat": "Dexs",
+   "tvl": 1190269,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Uniswap V3"
+   ],
+   "desc": "Alien Base is building the Base trading hub for efficiently trading tokens and memecoins onchain. Offering aggregated liquidity, limit order"
+  },
+  {
+   "name": "Alien Base V2",
+   "slug": "alien-base-v2",
+   "cat": "Dexs",
+   "tvl": 363269,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Uniswap V2"
+   ],
+   "desc": "Alien Base is building the Base trading hub for efficiently trading tokens and memecoins onchain. Offering aggregated liquidity, limit order"
+  },
+  {
+   "name": "Fluxion Network",
+   "slug": "fluxion-network",
+   "cat": "Dexs",
+   "tvl": 7252271,
+   "chains": [
+    "Mantle"
+   ],
+   "dep": false,
+   "rev30d": 0,
+   "fork": [
+    "Uniswap V3"
+   ],
+   "desc": "A RWA-optimized Native DEX on Mantle. AMM v2/v3 and order book hybrid, 24/7 full cycle RWA trading experience with low slippage."
+  },
+  {
+   "name": "Deepstate",
+   "slug": "deepstate",
+   "cat": "Dexs",
+   "tvl": 126280,
+   "chains": [
+    "Robinhood Chain"
+   ],
+   "dep": false,
+   "rev30d": 167581,
+   "fork": null,
+   "desc": "Deepstate is a permissionless onchain central-limit order book DEX with radix-tree matching and optional top-of-book maker rewards."
+  }
+ ],
+ "F4_bridge_unbacked_mint": [
+  {
+   "name": "Alephium Bridge",
+   "slug": "alephium-bridge",
+   "cat": "Bridge",
+   "tvl": 237843,
+   "chains": [
+    "Ethereum",
+    "Binance",
+    "Alephium"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Portal"
+   ],
+   "desc": "The Alephium Bridge enables unlimited, decentralized cross-chain transfer of tokens."
+  },
+  {
+   "name": "Rhino.fi",
+   "slug": "rhino.fi",
+   "cat": "Bridge",
+   "tvl": 1436132,
+   "chains": [
+    "Polygon",
+    "Arbitrum",
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "Rhino.fi is the lightening fast stablecoin liquidity layer powering instant, scalable, cross-chain liquidity all through a single API. We op"
+  },
+  {
+   "name": "XO Bridge",
+   "slug": "xo-bridge",
+   "cat": "Bridge",
+   "tvl": 311007,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "XO Market is a permissionless prediction market protocol on its own Celestia-based EVM rollup, letting users create, trade, and resolve Yes/"
+  },
+  {
+   "name": "RWA Perp Bridge",
+   "slug": "rwa-perp-bridge",
+   "cat": "Bridge",
+   "tvl": 65640,
+   "chains": [
+    "X Layer"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "RWA Perp is a perpetual futures trading platform."
+  }
+ ],
+ "F11_split_invariance_rounding": [
+  {
+   "name": "Iron Finance",
+   "slug": "iron-finance",
+   "cat": "CDP",
+   "tvl": 315872,
+   "chains": [
+    "Polygon",
+    "Avalanche",
+    "Fantom"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Frax"
+   ],
+   "desc": "Building a multi-chain partial-collateralized algorithmic stablecoin ecosystem."
+  },
+  {
+   "name": "WESO DeFi",
+   "slug": "weso-defi",
+   "cat": "Dexs",
+   "tvl": 394979,
+   "chains": [
+    "Terra"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": null,
+   "desc": "WESO DeFi is an AMM DEX on Terra Classic with a $WESO LUNC bonding curve and CW20 wraps (CWLUNC, CWUSTC) for tax-efficient swaps."
+  },
+  {
+   "name": "Frontier",
+   "slug": "frontier",
+   "cat": "Launchpad",
+   "tvl": 64080,
+   "chains": [
+    "Robinhood Chain"
+   ],
+   "dep": false,
+   "rev30d": 669.5299999999999,
+   "fork": null,
+   "desc": "Bonding-curve token launchpad on Robinhood Chain. Tokens trade on a shared bonding curve until it fills, then graduate to a Uniswap V4 pool"
+  }
+ ],
+ "F14_unauth_v3_callback": [
+  {
+   "name": "HyperBloom",
+   "slug": "hyperbloom",
+   "cat": "DEX Aggregator",
+   "tvl": 79289,
+   "chains": [
+    "Hyperliquid L1"
+   ],
+   "dep": false,
+   "rev30d": 16.53,
+   "fork": [
+    "Beefy"
+   ],
+   "desc": "DEX Aggregator & Yield Optimizer"
+  },
+  {
+   "name": "swap.coffee",
+   "slug": "swap.coffee",
+   "cat": "DEX Aggregator",
+   "tvl": 113897,
+   "chains": [
+    "TON"
+   ],
+   "dep": false,
+   "rev30d": 61.57000000000001,
+   "fork": null,
+   "desc": "DEX aggregator in the TON ecosystem"
+  },
+  {
+   "name": "GroypFi",
+   "slug": "groypfi",
+   "cat": "DEX Aggregator",
+   "tvl": 84059,
+   "chains": [
+    "TON"
+   ],
+   "dep": false,
+   "rev30d": 55718,
+   "fork": null,
+   "desc": "GroypFi is an all-in-one DeFi Protocol powered by the TON Blockchain."
+  },
+  {
+   "name": "Hypertrade V3",
+   "slug": "hypertrade-v3",
+   "cat": "Dexs",
+   "tvl": 196023,
+   "chains": [
+    "Hyperliquid L1"
+   ],
+   "dep": false,
+   "rev30d": 983.0600000000001,
+   "fork": [
+    "Uniswap V3"
+   ],
+   "desc": ""
+  },
+  {
+   "name": "KrokoSwap V3",
+   "slug": "krokoswap-v3",
+   "cat": "Dexs",
+   "tvl": 171084,
+   "chains": [
+    "Kasplex"
+   ],
+   "dep": false,
+   "rev30d": 379.6000000000001,
+   "fork": [
+    "Uniswap V3"
+   ],
+   "desc": ""
+  },
+  {
+   "name": "Laminar",
+   "slug": "laminar",
+   "cat": "Dexs",
+   "tvl": 110495,
+   "chains": [
+    "Hyperliquid L1"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Uniswap V3"
+   ],
+   "desc": ""
+  },
+  {
+   "name": "Junoswap.trade CLMM",
+   "slug": "junoswap.trade-clmm",
+   "cat": "Dexs",
+   "tvl": 72317,
+   "chains": [
+    "Bitkub",
+    "JBC"
+   ],
+   "dep": false,
+   "rev30d": 0,
+   "fork": [
+    "Uniswap V3"
+   ],
+   "desc": ""
+  },
+  {
+   "name": "Sonex",
+   "slug": "sonex",
+   "cat": "Dexs",
+   "tvl": 70209,
+   "chains": [
+    "Soneium"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "fork": [
+    "Uniswap V3"
+   ],
+   "desc": ""
+  },
+  {
+   "name": "Tetu Swap",
+   "slug": "tetu-swap",
+   "cat": "Yield",
+   "tvl": 50770,
+   "chains": [
+    "Polygon"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Uniswap V2"
+   ],
+   "desc": ""
+  }
+ ],
+ "F3_amm_accounting_edge": [
+  {
+   "name": "Polycat",
+   "slug": "polycat",
+   "cat": "Farm",
+   "tvl": 221096,
+   "chains": [
+    "Polygon"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Uniswap V2"
+   ],
+   "desc": ""
+  },
+  {
+   "name": "Polycat Dex",
+   "slug": "polycat-dex",
+   "cat": "Dexs",
+   "tvl": 98908,
+   "chains": [
+    "Polygon"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "fork": [
+    "Uniswap V2"
+   ],
+   "desc": ""
+  }
+ ]
+}
