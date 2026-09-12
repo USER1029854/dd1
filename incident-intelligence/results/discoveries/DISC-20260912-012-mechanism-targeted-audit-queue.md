@@ -148,16 +148,14 @@ audit needs: `name, cat, tvl, chains, addr, check, desc` (+ `deprecated`/`watche
 flags only when true). `addr` is the DefiLlama-listed address (may be `chain:0x…`, may be a
 token rather than the core — confirm the core on-chain), or `null` where none is listed.
 
-**Module = `<vm>` (+`,bridge` if a bridge) (+`,generic` if no corresponding primitive module):**
-- **vm** from the chain: `evm` (Ethereum/L2s/BSC/Polygon/Avalanche/Tron/… EVM-compatible),
-  `solana`, `move` (Aptos/Sui), `cosmos` (Osmosis/Injective/Terra/Thorchain/… appchains),
-  else `generic` (Stacks, Cardano, TON, Near, Starknet, Radix, Algorand, Tezos, Stellar, …).
-- **`bridge`** appended for cross-chain bridges.
-- **`generic`** appended (on a known vm) for categories with no corresponding specific
-  primitive module (Algo-Stables, RWA, Reserve Currency, Indexes, Stablecoin Wrapper,
-  Services, SoFi, Gaming, …) — matching `evm,generic :: oin-finance`.
+**Module = the SET of every module that applies** (not one VM + one extra). Comma-joined in canonical order `evm, solana, move, cosmos, bridge, generic`:
+- **VM (one tag per chain family the protocol is actually deployed on — a multichain protocol gets several):** `evm` (Ethereum/L2s/BSC/Polygon/Avalanche/Tron/… EVM-compatible), `solana`, `move` (Aptos/Sui), `cosmos` (Osmosis/Injective/Terra/Thorchain/… appchains). Any chain in **no** known family contributes `generic`.
+- **`bridge`** — cross-chain bridges.
+- **`generic`** — also added when the protocol's category has no corresponding specific primitive module (Algo-Stables, RWA, Reserve Currency, Indexes, Stablecoin Wrapper, Services, SoFi, Gaming, …).
+
+So a protocol that spans everything can carry every module, e.g. `evm,solana,move,generic :: skate-amm`, `evm,solana :: ribbon`, `evm,cosmos :: umee`, `evm,move :: omnibtc`.
 
 Validated against the supplied examples: `move::argo`, `evm::predy-v3.2`,
 `solana::synthetify`, `evm,bridge::everrise`, `cosmos::ion-dao`, `evm,generic::oin-finance`
-— all reproduced. Distribution: evm 233, generic 112, solana 26, cosmos 11, evm,generic 10,
-move 9. Ordering preserved as the audit priority A2→A3→A1→B→C.
+— all reproduced. Distribution: evm 211, generic 104, evm,generic 36, solana 25, cosmos 11, move 8, plus multi-VM combos
+(evm,solana / evm,cosmos / evm,move / evm,solana,move,generic). Ordering preserved as the audit priority A2→A3→A1→B→C.

@@ -79,7 +79,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "Abracadabra.money is a spell book that allows users to produce magic internet money ($MIM) which is a stable coin that y"
  },
- "generic :: bifi": {
+ "evm,generic :: bifi": {
   "name": "BiFi",
   "cat": "Lending",
   "tvl": 4706327,
@@ -161,7 +161,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "USDR is a T-bill backed stablecoin built on top of the M^0 protocol."
  },
- "evm :: termfinance-lend": {
+ "evm,generic :: termfinance-lend": {
   "name": "TermFinance Lend",
   "cat": "Lending",
   "tvl": 4009645,
@@ -396,7 +396,7 @@
   "chains": [
    "Telos"
   ],
-  "addr": null,
+  "addr": "",
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "REX is short for \u201cResource Exchange\u201d and is a marketplace that allows for the risk-free leasing of network resources (CP"
  },
@@ -411,7 +411,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "ETH0 is a synthetic Ethereum-based asset fully collateralized by Lido\u2019s wrapped staked ETH (wstETH)."
  },
- "generic :: yala": {
+ "evm,generic :: yala": {
   "name": "Yala",
   "cat": "CDP",
   "tvl": 2291019,
@@ -481,7 +481,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "Every dollar deposited into a Hyperbeat Liquid banking account mints Hyperbeat USD, a treasury backed stablecoin"
  },
- "move :: omnibtc": {
+ "evm,move :: omnibtc": {
   "name": "OmniBTC",
   "cat": "Lending",
   "tvl": 1818179,
@@ -595,7 +595,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "Lending vaults that supply liquidity to the Rezerve ecosystem"
  },
- "evm :: silo-v3": {
+ "evm,generic :: silo-v3": {
   "name": "Silo V3",
   "cat": "Lending",
   "tvl": 1408394,
@@ -670,7 +670,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "Architect is a regulated investment manager and technical curator that deploys institutional, long-horizon capital strat"
  },
- "evm :: surge-credit": {
+ "evm,generic :: surge-credit": {
   "name": "Surge Credit",
   "cat": "Lending",
   "tvl": 1252970,
@@ -763,7 +763,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "XOXNO Stellar Lending is an overcollateralized lending protocol on Stellar"
  },
- "evm :: teller": {
+ "evm,generic :: teller": {
   "name": "Teller",
   "cat": "Lending",
   "tvl": 1104981,
@@ -1003,7 +1003,7 @@
   "desc": "Decentralized lending protocol and stablecoin built on Algorand",
   "deprecated": true
  },
- "evm :: vendor-v2": {
+ "evm,generic :: vendor-v2": {
   "name": "Vendor V2",
   "cat": "Lending",
   "tvl": 634500,
@@ -1380,7 +1380,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "The first lending protocol for Robinhood tokenized stocks. Oter is building an incentive-driven lending market for oncha"
  },
- "evm :: timeswap-v2": {
+ "evm,generic :: timeswap-v2": {
   "name": "Timeswap V2",
   "cat": "Lending",
   "tvl": 332223,
@@ -1455,7 +1455,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "Puzzle Lend is the safest Lending Protocol built on the Waves blockchain"
  },
- "generic :: ripe-protocol": {
+ "evm,generic :: ripe-protocol": {
   "name": "Ripe Protocol",
   "cat": "Lending",
   "tvl": 288908,
@@ -1877,7 +1877,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "Green Planet is an incentivized, non-custodial lending protocol for earning interest on deposits and borrowing assets."
  },
- "generic :: accumulated-finance-lending": {
+ "evm,generic :: accumulated-finance-lending": {
   "name": "Accumulated Finance Lending",
   "cat": "Lending",
   "tvl": 154225,
@@ -2205,7 +2205,7 @@
   "desc": "Yama is a novel omnichain stablecoin that facilitates extremely high leverage and liquidity.",
   "deprecated": true
  },
- "generic :: secured-finance-lending": {
+ "evm,generic :: secured-finance-lending": {
   "name": "Secured Finance Lending",
   "cat": "Lending",
   "tvl": 77532,
@@ -2261,7 +2261,7 @@
   "desc": "A synthetic asset protocol designed to enable maximum efficiency for uniform assets on Polkadot.",
   "deprecated": true
  },
- "evm :: avalon-usdalend": {
+ "evm,cosmos :: avalon-usdalend": {
   "name": "Avalon USDaLend",
   "cat": "Lending",
   "tvl": 72736,
@@ -2345,7 +2345,7 @@
   "desc": "Parallel Lending is a decentralized lending protocol enabling users to borrow and lend using both Non-Fungible Tokens (N",
   "deprecated": true
  },
- "evm :: ajna-v2": {
+ "evm,generic :: ajna-v2": {
   "name": "Ajna V2",
   "cat": "Lending",
   "tvl": 61888,
@@ -2392,7 +2392,7 @@
   "desc": "FINEXT is a decentralized finance (DeFi) with a seigniorage algorithmic token on Arbitrum, bringing a model that follows",
   "deprecated": true
  },
- "generic :: yusan": {
+ "evm,generic :: yusan": {
   "name": "Yusan",
   "cat": "Lending",
   "tvl": 60794,
@@ -2446,7 +2446,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "Duo Exchange is an interest rate swapping protocol that allows LPs to access (1) fixed rate yield until maturity and (2)"
  },
- "generic :: bitstable-finance": {
+ "evm,generic :: bitstable-finance": {
   "name": "BitStable Finance",
   "cat": "CDP",
   "tvl": 58641,
@@ -2865,7 +2865,7 @@
   "check": "what prices collateral? DEX spot / low-liquidity feed / curator-set oracle with no TWAP -> flash-skew over-borrow (Tectonic/Moonwell/Solido shape)",
   "desc": "Easily segment your crypto assets into senior and junior tranches to use across DeFi."
  },
- "evm :: enclabs": {
+ "evm,generic :: enclabs": {
   "name": "Enclabs",
   "cat": "Lending",
   "tvl": 31207,
@@ -2889,7 +2889,7 @@
   "desc": "RociFi - On-chain Credit Scoring and Capital-Efficient Lending Protocol",
   "deprecated": true
  },
- "evm :: alterscope": {
+ "evm,generic :: alterscope": {
   "name": "Alterscope",
   "cat": "Risk Curators",
   "tvl": 29850,
@@ -3127,7 +3127,7 @@
   "desc": "Earn high yields on stablecoin loans and borrow capital without collateral",
   "deprecated": true
  },
- "evm :: umee": {
+ "evm,cosmos :: umee": {
   "name": "Umee",
   "cat": "Lending",
   "tvl": 20112,
@@ -3162,7 +3162,7 @@
   "check": "share price tied to a live hedge/funding rate movable or desyncable within one tx? deposit/withdraw flash-reachable?",
   "desc": "Monetrix is the first fully on-chain funding-driven yield-bearing stable token, native to Hyperliquid"
  },
- "evm :: desyn-basis-trading": {
+ "evm,generic :: desyn-basis-trading": {
   "name": "DeSyn Basis Trading",
   "cat": "Basis Trading",
   "tvl": 1717536,
@@ -3246,7 +3246,53 @@
   "desc": "HawkFi is the leading analytics & automation platform for on-chain market makers to get the smartest yield on Solana mem",
   "deprecated": true
  },
- "evm :: stability": {
+ "evm,generic :: gamma": {
+  "name": "Gamma",
+  "cat": "Liquidity Manager",
+  "tvl": 3195884,
+  "chains": [
+   "Ethereum",
+   "Binance",
+   "Polygon",
+   "Arbitrum",
+   "xDai",
+   "Linea",
+   "Base",
+   "Optimism",
+   "Metis",
+   "Zircuit",
+   "Unichain",
+   "BOB",
+   "Sonic",
+   "Mantle",
+   "Scroll",
+   "Manta",
+   "Immutable zkEVM",
+   "Blast",
+   "Rollux",
+   "IOTA EVM",
+   "Avalanche",
+   "Celo",
+   "Berachain",
+   "Taiko",
+   "World Chain",
+   "Hemi",
+   "ApeChain",
+   "RSK",
+   "CORE",
+   "X Layer",
+   "Mode",
+   "Fantom",
+   "Op_Bnb",
+   "Polygon zkEVM",
+   "Moonbeam",
+   "Kava"
+  ],
+  "addr": "0x6bea7cfef803d1e3d5f7c0103f7ded065644e197",
+  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
+  "desc": "A protocol for active liquidity management and market-making strategies. Gamma offers non-custodial, automated, and acti"
+ },
+ "evm,generic :: stability": {
   "name": "Stability",
   "cat": "Liquidity Manager",
   "tvl": 2839296,
@@ -3273,6 +3319,68 @@
   "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
   "desc": "Aegis is a Dynamic Fee Protocol built on Uniswap v4 designed to maximize yield for Liquidity Providers. This is done thr"
  },
+ "evm :: baseline-protocol": {
+  "name": "Baseline Protocol",
+  "cat": "Liquidity Manager",
+  "tvl": 1943770,
+  "chains": [
+   "Ethereum",
+   "Base",
+   "Blast"
+  ],
+  "addr": "ethereum:0x9fdbde76236998dc2836fe67a9954ede456a1d63",
+  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
+  "desc": "Baseline is a DEX built for project tokens, combining token-owned liquidity with a custom AMM curve for efficient market"
+ },
+ "evm,generic :: charm-finance-v2": {
+  "name": "Charm Finance V2",
+  "cat": "Liquidity Manager",
+  "tvl": 1905148,
+  "chains": [
+   "Berachain",
+   "Ethereum",
+   "Katana",
+   "Arbitrum",
+   "Base",
+   "Polygon",
+   "Optimism",
+   "Blast",
+   "Scroll",
+   "Linea",
+   "Boba"
+  ],
+  "addr": null,
+  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
+  "desc": "Alpha Vaults is a binary smart contract system for decentralised liquidity management. It creates liquidity vaults for a"
+ },
+ "evm :: arrakis-v1": {
+  "name": "Arrakis V1",
+  "cat": "Liquidity Manager",
+  "tvl": 1390254,
+  "chains": [
+   "Ethereum",
+   "Optimism",
+   "Polygon"
+  ],
+  "addr": null,
+  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
+  "desc": "Arrakis is a protocol that specializes in concentrated & active liquidity management. By creating a curated marketplace "
+ },
+ "evm :: xtoken": {
+  "name": "xToken",
+  "cat": "Liquidity Manager",
+  "tvl": 941955,
+  "chains": [
+   "Ethereum",
+   "Optimism",
+   "Arbitrum",
+   "Polygon"
+  ],
+  "addr": "0x7f3edcdd180dbe4819bd98fee8929b5cedb3adeb",
+  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
+  "desc": "Permissionless Investment Bank",
+  "deprecated": true
+ },
  "solana :: defituna-liquidity": {
   "name": "DefiTuna Liquidity",
   "cat": "Liquidity Manager",
@@ -3284,7 +3392,7 @@
   "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
   "desc": "DefiTuna Liquidity is a layer built on top of DefiTuna AMM, you can supercharge your earnings by providing leveraged liq"
  },
- "evm :: defiedge": {
+ "evm,generic :: defiedge": {
   "name": "DefiEdge",
   "cat": "Liquidity Manager",
   "tvl": 878330,
@@ -3321,7 +3429,7 @@
   "desc": "Armada's suite of tools revolutionizes how tokens are launched and managed, giving project treasuries the power to seaml",
   "deprecated": true
  },
- "evm :: ezmanager": {
+ "evm,generic :: ezmanager": {
   "name": "EZManager",
   "cat": "Liquidity Manager",
   "tvl": 526334,
@@ -3370,6 +3478,17 @@
   "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
   "desc": "Bonzo Yield Vaults are Hedera vault strategies that manage single-asset, concentrated-liquidity, and ICHI positions to e"
  },
+ "evm :: charm-finance-v1": {
+  "name": "Charm Finance V1",
+  "cat": "Liquidity Manager",
+  "tvl": 323977,
+  "chains": [
+   "Ethereum"
+  ],
+  "addr": null,
+  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
+  "desc": "An ecosystem of innovative products within DeFi"
+ },
  "evm :: krystal-community-vault": {
   "name": "Krystal Community Vault",
   "cat": "Liquidity Manager",
@@ -3414,7 +3533,7 @@
   "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
   "desc": "Metropolis is a Liquidity Book DLMM DEX native to Sonic, offering zero-slippage trades and higher yields for liquidity p"
  },
- "evm :: yieldflow-yield-farming": {
+ "evm,generic :: yieldflow-yield-farming": {
   "name": "YieldFlow Yield Farming",
   "cat": "Liquidity Manager",
   "tvl": 243801,
@@ -3427,7 +3546,21 @@
   "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
   "desc": "YieldFlow is a decentralized platform for yieldfarming through staking, lending and liquidity mining."
  },
- "evm :: skate-fi": {
+ "evm :: arrakis-v2": {
+  "name": "Arrakis V2",
+  "cat": "Liquidity Manager",
+  "tvl": 164779,
+  "chains": [
+   "Ethereum",
+   "Polygon",
+   "Arbitrum",
+   "Optimism"
+  ],
+  "addr": null,
+  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
+  "desc": "Arrakis V2 is a next-generation market-making infrastructure built on top of Uniswap V3. Its unique functionalities allo"
+ },
+ "evm,generic :: skate-fi": {
   "name": "Skate Fi",
   "cat": "Liquidity Manager",
   "tvl": 150186,
@@ -3448,7 +3581,7 @@
   "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
   "desc": "Skate Fi (formerly known as Range Protocol): Liquidity Layer of Skate Chain"
  },
- "generic :: ezmoney": {
+ "evm,generic :: ezmoney": {
   "name": "EZMoney",
   "cat": "Liquidity Manager",
   "tvl": 92683,
@@ -3500,7 +3633,7 @@
   "desc": "A platform that lets you easily exit your locked DeFi positions, while still earning rewards, and rewards those that sup",
   "deprecated": true
  },
- "evm :: springx": {
+ "evm,generic :: springx": {
   "name": "SpringX",
   "cat": "Yield",
   "tvl": 37968,
@@ -3618,146 +3751,6 @@
   "addr": "0xadaf95906c05c5c5de12db00a38e0b02d7ffd5e9",
   "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
   "desc": "Lode is a Uniswap v4 LP protocol that captures top-of-block MEV through sealed-bid auctions and streams the proceeds bac"
- },
- "evm :: gamma": {
-  "name": "Gamma",
-  "cat": "Liquidity Manager",
-  "tvl": 3195884,
-  "chains": [
-   "Ethereum",
-   "Binance",
-   "Polygon",
-   "Arbitrum",
-   "xDai",
-   "Linea",
-   "Base",
-   "Optimism",
-   "Metis",
-   "Zircuit",
-   "Unichain",
-   "BOB",
-   "Sonic",
-   "Mantle",
-   "Scroll",
-   "Manta",
-   "Immutable zkEVM",
-   "Blast",
-   "Rollux",
-   "IOTA EVM",
-   "Avalanche",
-   "Celo",
-   "Berachain",
-   "Taiko",
-   "World Chain",
-   "Hemi",
-   "ApeChain",
-   "RSK",
-   "CORE",
-   "X Layer",
-   "Mode",
-   "Fantom",
-   "Op_Bnb",
-   "Polygon zkEVM",
-   "Moonbeam",
-   "Kava"
-  ],
-  "addr": "0x6bea7cfef803d1e3d5f7c0103f7ded065644e197",
-  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
-  "desc": "A protocol for active liquidity management and market-making strategies. Gamma offers non-custodial, automated, and acti",
-  "watched_known": true
- },
- "evm :: baseline-protocol": {
-  "name": "Baseline Protocol",
-  "cat": "Liquidity Manager",
-  "tvl": 1943770,
-  "chains": [
-   "Ethereum",
-   "Base",
-   "Blast"
-  ],
-  "addr": "ethereum:0x9fdbde76236998dc2836fe67a9954ede456a1d63",
-  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
-  "desc": "Baseline is a DEX built for project tokens, combining token-owned liquidity with a custom AMM curve for efficient market",
-  "watched_known": true
- },
- "evm :: charm-finance-v2": {
-  "name": "Charm Finance V2",
-  "cat": "Liquidity Manager",
-  "tvl": 1905148,
-  "chains": [
-   "Berachain",
-   "Ethereum",
-   "Katana",
-   "Arbitrum",
-   "Base",
-   "Polygon",
-   "Optimism",
-   "Blast",
-   "Scroll",
-   "Linea",
-   "Boba"
-  ],
-  "addr": null,
-  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
-  "desc": "Alpha Vaults is a binary smart contract system for decentralised liquidity management. It creates liquidity vaults for a",
-  "watched_known": true
- },
- "evm :: arrakis-v1": {
-  "name": "Arrakis V1",
-  "cat": "Liquidity Manager",
-  "tvl": 1390254,
-  "chains": [
-   "Ethereum",
-   "Optimism",
-   "Polygon"
-  ],
-  "addr": null,
-  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
-  "desc": "Arrakis is a protocol that specializes in concentrated & active liquidity management. By creating a curated marketplace ",
-  "watched_known": true
- },
- "evm :: xtoken": {
-  "name": "xToken",
-  "cat": "Liquidity Manager",
-  "tvl": 941955,
-  "chains": [
-   "Ethereum",
-   "Optimism",
-   "Arbitrum",
-   "Polygon"
-  ],
-  "addr": "0x7f3edcdd180dbe4819bd98fee8929b5cedb3adeb",
-  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
-  "desc": "Permissionless Investment Bank",
-  "deprecated": true,
-  "watched_known": true
- },
- "evm :: charm-finance-v1": {
-  "name": "Charm Finance V1",
-  "cat": "Liquidity Manager",
-  "tvl": 323977,
-  "chains": [
-   "Ethereum"
-  ],
-  "addr": null,
-  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
-  "desc": "An ecosystem of innovative products within DeFi",
-  "watched_known": true
- },
- "evm :: arrakis-v2": {
-  "name": "Arrakis V2",
-  "cat": "Liquidity Manager",
-  "tvl": 164779,
-  "chains": [
-   "Ethereum",
-   "Polygon",
-   "Arbitrum",
-   "Optimism"
-  ],
-  "addr": null,
-  "check": "deposit/withdraw share pricing: reads slot0/reserves with NO TWAP/deviation AND no onlyEOA, flash-reachable? (Arrakis/Float shape)",
-  "desc": "Arrakis V2 is a next-generation market-making infrastructure built on top of Uniswap V3. Its unique functionalities allo",
-  "watched_known": true
  },
  "generic :: cantex": {
   "name": "Cantex",
@@ -4428,7 +4421,7 @@
   "check": "reserve-accounting edge: empty-pool mint, same-asset swap, or fee-on-transfer reserve desync (CometDEX/Balancer-V1 shape)",
   "desc": "One-Stop Trading Platform with Spot and Perp on Flow"
  },
- "evm :: skate-amm": {
+ "evm,solana,move,generic :: skate-amm": {
   "name": "Skate AMM",
   "cat": "Dexs",
   "tvl": 23174,
@@ -4500,7 +4493,7 @@
   "check": "reserve-accounting edge: empty-pool mint, same-asset swap, or fee-on-transfer reserve desync (CometDEX/Balancer-V1 shape)",
   "desc": "MacaronSwap is a DEX that allows users to be Liquidity Provider, Farming, Staking, Exchange, Bridge Assets across chains"
  },
- "evm :: ribbon": {
+ "evm,solana :: ribbon": {
   "name": "Ribbon",
   "cat": "Options Vault",
   "tvl": 4202224,
@@ -4535,6 +4528,19 @@
   "addr": null,
   "check": "is mint/settle/exercise gated, and each payoff bound to an oracle snapshot taken at open? pooled depositor collateral (SOFA shape)",
   "desc": "Panoptic is the first on-chain, permissionless options protocol, revolutionizing trading and liquidity provision."
+ },
+ "evm :: opyn-gamma": {
+  "name": "Opyn Gamma",
+  "cat": "Options",
+  "tvl": 1095747,
+  "chains": [
+   "Ethereum",
+   "Polygon",
+   "Avalanche"
+  ],
+  "addr": null,
+  "check": "is mint/settle/exercise gated, and each payoff bound to an oracle snapshot taken at open? pooled depositor collateral (SOFA shape)",
+  "desc": "Options market"
  },
  "evm :: ribbon-earn": {
   "name": "Ribbon Earn",
@@ -4649,7 +4655,7 @@
   "check": "is mint/settle/exercise gated, and each payoff bound to an oracle snapshot taken at open? pooled depositor collateral (SOFA shape)",
   "desc": "Deri, your option, your future! Deri Protocol is a decentralized protocol for users to exchange risk exposures precisely"
  },
- "solana :: cega-v1": {
+ "evm,solana :: cega-v1": {
   "name": "Cega V1",
   "cat": "Options",
   "tvl": 308260,
@@ -4674,6 +4680,19 @@
   "addr": null,
   "check": "is mint/settle/exercise gated, and each payoff bound to an oracle snapshot taken at open? pooled depositor collateral (SOFA shape)",
   "desc": "Earn passive income on your ETH, WBTC or USDC by setting time-limit orders with yield"
+ },
+ "evm :: gammaswap-open-interest": {
+  "name": "GammaSwap Open Interest",
+  "cat": "Options",
+  "tvl": 236349,
+  "chains": [
+   "Base",
+   "Arbitrum",
+   "Ethereum"
+  ],
+  "addr": "arbitrum:0xb08d8becab1bf76a9ce3d2d5fa946f65ec1d3e83",
+  "check": "is mint/settle/exercise gated, and each payoff bound to an oracle snapshot taken at open? pooled depositor collateral (SOFA shape)",
+  "desc": "Trade perpetual options using DEX liquidity"
  },
  "solana :: dual-finance": {
   "name": "Dual Finance",
@@ -4908,33 +4927,5 @@
   "addr": null,
   "check": "is mint/settle/exercise gated, and each payoff bound to an oracle snapshot taken at open? pooled depositor collateral (SOFA shape)",
   "desc": "MarginZero is an omni-chain, oracle-less and permission-less options & protected perpetual protocol"
- },
- "evm :: opyn-gamma": {
-  "name": "Opyn Gamma",
-  "cat": "Options",
-  "tvl": 1095747,
-  "chains": [
-   "Ethereum",
-   "Polygon",
-   "Avalanche"
-  ],
-  "addr": null,
-  "check": "is mint/settle/exercise gated, and each payoff bound to an oracle snapshot taken at open? pooled depositor collateral (SOFA shape)",
-  "desc": "Options market",
-  "watched_known": true
- },
- "evm :: gammaswap-open-interest": {
-  "name": "GammaSwap Open Interest",
-  "cat": "Options",
-  "tvl": 236349,
-  "chains": [
-   "Base",
-   "Arbitrum",
-   "Ethereum"
-  ],
-  "addr": "arbitrum:0xb08d8becab1bf76a9ce3d2d5fa946f65ec1d3e83",
-  "check": "is mint/settle/exercise gated, and each payoff bound to an oracle snapshot taken at open? pooled depositor collateral (SOFA shape)",
-  "desc": "Trade perpetual options using DEX liquidity",
-  "watched_known": true
  }
 }
