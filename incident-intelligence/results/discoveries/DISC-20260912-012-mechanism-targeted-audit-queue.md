@@ -140,3 +140,24 @@ To prove the check discriminates (and to avoid sending the auditor at already-sa
 - **This queue is mechanism-matched leads, not code-confirmed vulns** (except the two cleared reads). The value is the narrowing: you open one function and check three guards, instead of reading a repo cold.
 - **Evidence caveats:** mechanism labels are keyword-classified from incident text (a few land in 'other'); the \$1.78B 'other/unclear' bucket is dominated by a handful of L1/precompile mega-incidents outside our contract scope.
 - Backing data: `sources/mechlib/` (2-yr incidents + on-chain classification), `sources/mechA/` (Universe read), `DISC-20260912-012-candidates.json` (the full 401-row queue).
+
+## 7. Module tags on the candidates JSON (audit routing)
+
+`DISC-20260912-012-candidates.json` is keyed `"<module> :: <slug>"` and trimmed to what an
+audit needs: `name, cat, tvl, chains, addr, check, desc` (+ `deprecated`/`watched_known`
+flags only when true). `addr` is the DefiLlama-listed address (may be `chain:0x…`, may be a
+token rather than the core — confirm the core on-chain), or `null` where none is listed.
+
+**Module = `<vm>` (+`,bridge` if a bridge) (+`,generic` if no corresponding primitive module):**
+- **vm** from the chain: `evm` (Ethereum/L2s/BSC/Polygon/Avalanche/Tron/… EVM-compatible),
+  `solana`, `move` (Aptos/Sui), `cosmos` (Osmosis/Injective/Terra/Thorchain/… appchains),
+  else `generic` (Stacks, Cardano, TON, Near, Starknet, Radix, Algorand, Tezos, Stellar, …).
+- **`bridge`** appended for cross-chain bridges.
+- **`generic`** appended (on a known vm) for categories with no corresponding specific
+  primitive module (Algo-Stables, RWA, Reserve Currency, Indexes, Stablecoin Wrapper,
+  Services, SoFi, Gaming, …) — matching `evm,generic :: oin-finance`.
+
+Validated against the supplied examples: `move::argo`, `evm::predy-v3.2`,
+`solana::synthetify`, `evm,bridge::everrise`, `cosmos::ion-dao`, `evm,generic::oin-finance`
+— all reproduced. Distribution: evm 233, generic 112, solana 26, cosmos 11, evm,generic 10,
+move 9. Ordering preserved as the audit priority A2→A3→A1→B→C.
