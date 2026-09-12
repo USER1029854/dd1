@@ -1,0 +1,2571 @@
+{
+ "tier1": [
+  {
+   "name": "Stake DAO Curator",
+   "slug": "stake-dao-curator",
+   "cat": "Risk Curators",
+   "tvl": 1368181,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f",
+   "desc": "Stake DAO curates Morpho lending vaults that supply USDC and frxUSD.",
+   "cname": "SDT",
+   "compiler": "v0.6.7+commit.b8d736ae",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Moonpot",
+   "slug": "moonpot",
+   "cat": "Yield",
+   "tvl": 44741,
+   "chains": [
+    "Binance",
+    "Fantom"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "bsc:0x3Fcca8648651E5b974DD6d3e50F61567779772A8",
+   "desc": "Win-Win Prize Pots on Binance Smart Chain. Earn interest, win big crypto prizes, and always keep your deposit. Powered by Beefy Finance",
+   "cname": "POTS",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Paladin Vote",
+   "slug": "paladin-vote",
+   "cat": "Lending",
+   "tvl": 41472,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0xAB846Fb6C81370327e784Ae7CbB6d6a6af6Ff4BF",
+   "desc": "Paladin is a decentralized, non-custodial governance lending protocol where users can either loan the voting power in their governance token, or borro",
+   "cname": "PaladinToken",
+   "compiler": "v0.8.4+commit.c7e474f2",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Magic Land",
+   "slug": "magic-land",
+   "cat": "Yield",
+   "tvl": 41388,
+   "chains": [
+    "Arbitrum",
+    "IoTeX"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "arbitrum:0x2c852D3334188BE136bFC540EF2bB8C37b590BAD",
+   "desc": "Magicland is an emerging sustainable decentralized one-stop DeFI portal that starts with yield farming powered on Arbitrium.",
+   "cname": "MagicToken",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Lunos",
+   "slug": "lunos",
+   "cat": "Insurance",
+   "tvl": 40402,
+   "chains": [
+    "Ethereum",
+    "Binance",
+    "Kava",
+    "Rollux"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "bsc:0x474021845C4643113458ea4414bdb7fB74A01A77",
+   "desc": "Automated on-chain coverage & advanced security to protect your assets. No claims, no delays\u2014just protection that works.",
+   "cname": "UnoRe",
+   "compiler": "v0.5.17+commit.d19bba13",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "settlement",
+   "hk": false
+  },
+  {
+   "name": "Warp Protocol",
+   "slug": "warp-protocol",
+   "cat": "Lending",
+   "tvl": 39268,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0xed40834a13129509a89be39a9be9c0e96a0ddd71",
+   "desc": "Warp Finance is an open-source protocol on Ethereum that is creating a novel use case for unused Liquidity Provider (LP) tokens by allowing them to be",
+   "cname": "MiniMeToken",
+   "compiler": "v0.4.18+commit.9cf6e910",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": true,
+   "hacked": true,
+   "surface": "lending_credit",
+   "hk": true
+  },
+  {
+   "name": "CompliFi",
+   "slug": "complifi",
+   "cat": "Derivatives",
+   "tvl": 37351,
+   "chains": [
+    "Ethereum",
+    "Polygon"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x752efadc0a7e05ad1bcccda22c141d01a75ef1e4",
+   "desc": "Decentralised derivatives. No defaults, no margin calls, no liquidations.",
+   "cname": "Comfi",
+   "compiler": "v0.5.17+commit.d19bba13",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Tranche Finance",
+   "slug": "tranche-finance",
+   "cat": "Yield",
+   "tvl": 35501,
+   "chains": [
+    "Ethereum",
+    "Polygon",
+    "Avalanche",
+    "Fantom"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0x0aee8703d34dd9ae107386d3eff22ae75dd616d1",
+   "desc": "Tranche splits any yield-generating asset from the DeFi ecosystem into two perpetual assets: a fixed rate asset that lets you manage your risk, and a ",
+   "cname": "Token",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": true,
+   "hacked": false,
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Hyper Finance",
+   "slug": "hyper-finance",
+   "cat": "Yield",
+   "tvl": 35242,
+   "chains": [
+    "Binance"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "bsc:0x9a319b959e33369C5eaA494a770117eE3e585318",
+   "desc": "Hyper Finance (HyFi.pro) is a decentralized aggregate mining platform based on the \u200cBinance\u200c Smart Chain.",
+   "cname": "SushiToken",
+   "compiler": "v0.7.4+commit.3f05b770",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "DinoSwap",
+   "slug": "dinoswap",
+   "cat": "Dexs",
+   "tvl": 31268,
+   "chains": [
+    "Polygon"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "polygon:0xaa9654becca45b5bdfa5ac646c939c62b527d394",
+   "desc": "DinoSwap is a cross-chain infrastructure project that builds liquidity for layer-one blockchains, AMMs and partnering projects.",
+   "cname": "UChildERC20Proxy",
+   "compiler": "v0.6.6+commit.6c089d02",
+   "proxy": "1",
+   "impl": "0x6548fef3fd79e93b0098f7eea8172290240842f6",
+   "era": "pre-AI",
+   "generic_read": true,
+   "hacked": false,
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "DFX V3",
+   "slug": "dfx-v3",
+   "cat": "Dexs",
+   "tvl": 30831,
+   "chains": [
+    "Ethereum",
+    "Polygon",
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0x888888435fde8e7d4c54cab67f206e4199454c60",
+   "desc": "DFX is a decentralized foreign exchange protocol optimized for trading fiat-backed foreign stablecoins",
+   "cname": "DFXToken",
+   "compiler": "v0.7.3+commit.9bfce1f6",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": true,
+   "surface": "amm_dex",
+   "hk": true
+  },
+  {
+   "name": "Panda Chef",
+   "slug": "panda-chef",
+   "cat": "Farm",
+   "tvl": 30305,
+   "chains": [
+    "Binance"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "bsc:0x47DcC83a14aD53Ed1f13d3CaE8AA4115f07557C0",
+   "desc": "Stake PandaSwap LP tokens to earn PNDA",
+   "cname": "PndaToken",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Loopring",
+   "slug": "loopring",
+   "cat": "Dexs",
+   "tvl": 30089,
+   "chains": [
+    "Ethereum",
+    "Taiko",
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
+   "desc": "Loopring is a zkRollup Exchange and Payment Protocol.",
+   "cname": "LRC_v2",
+   "compiler": "v0.5.7+commit.6da8b019",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Beta Finance V2",
+   "slug": "beta-finance-v2",
+   "cat": "Lending",
+   "tvl": 29704,
+   "chains": [
+    "Ethereum",
+    "Binance",
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0xbe1a001fe942f96eea22ba08783140b9dcc09d28",
+   "desc": "Beta Finance is the permissionless money market for borrowing, lending, and shorting crypto assets.",
+   "cname": "BetaToken",
+   "compiler": "v0.8.6+commit.11564f7e",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Boardwalk",
+   "slug": "boardwalk",
+   "cat": "Launchpad",
+   "tvl": 29251,
+   "chains": [
+    "Base",
+    "Robinhood Chain",
+    "Ethereum",
+    "Arbitrum"
+   ],
+   "dep": false,
+   "rev30d": 141.2,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0xf9a352b7c7b62a852e5c8a64a455246dd9596461",
+   "desc": "Boardwalk is a permissionless, community-centered fee-protection protocol for launching, discovering, and participating in token economies.",
+   "cname": "BatchSender",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": true,
+   "hacked": false,
+   "surface": "other",
+   "hk": false
+  },
+  {
+   "name": "Ethernity Chain",
+   "slug": "ethernity-chain",
+   "cat": "Yield",
+   "tvl": 29068,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0xbbc2ae13b23d715c30720f079fcd9b4a74093505",
+   "desc": "A community-oriented platform that produces limited edition authenticated NFTs and trading cards created by your favorite artists and endorsed by nota",
+   "cname": "ERNToken",
+   "compiler": "v0.6.2+commit.bacdbe57",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "CoFiX",
+   "slug": "cofix",
+   "cat": "Dexs",
+   "tvl": 28533,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0x1a23a6bfbadb59fa563008c0fb7cf96dfcf34ea1",
+   "desc": "CoFiX is the most efficient DEX on Ethereum.",
+   "cname": "CoFiToken",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Ooki",
+   "slug": "ooki",
+   "cat": "Lending",
+   "tvl": 27516,
+   "chains": [
+    "Ethereum",
+    "Binance",
+    "Arbitrum",
+    "Optimism",
+    "Polygon"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x0De05F6447ab4D22c8827449EE4bA2D5C288379B",
+   "desc": "Ooki is a flexible decentralized finance protocol for margin trading, borrowing, lending and staking on multiple blockchains.",
+   "cname": "OokiTokenProxy",
+   "compiler": "v0.8.9+commit.e5eed63a",
+   "proxy": "1",
+   "impl": "0x5a06e8b21c8362720f6fc5587b22c07c957718e3",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": true,
+   "surface": "lending_credit",
+   "hk": true
+  },
+  {
+   "name": "Sperax Demeter V2",
+   "slug": "sperax-demeter-v2",
+   "cat": "Farm",
+   "tvl": 27327,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": "arbitrum:0x5575552988a3a80504bbaeb1311674fcfd40ad4b",
+   "desc": "Farming-as-a-service infrastructure on UniswapV3. Demeter protocol is a new protocol for DAOs to launch and manage decentralized exchange liquidity - ",
+   "cname": "SperaxTokenL2",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": true,
+   "surface": "yield_vault",
+   "hk": true
+  },
+  {
+   "name": "Alkemi",
+   "slug": "alkemi",
+   "cat": "Lending",
+   "tvl": 27136,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x6C16119B20fa52600230F074b349dA3cb861a7e3",
+   "desc": "Alkemi Network is bridging CeFi to DeFi, building an institution-grade liquidity network for financial institutions and individuals to access professi",
+   "cname": "MiniMeToken",
+   "compiler": "v0.4.24+commit.e67f0147",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": true,
+   "hacked": false,
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Tidal Finance",
+   "slug": "tidal-finance",
+   "cat": "Insurance",
+   "tvl": 24742,
+   "chains": [
+    "Polygon"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "polygon:0xB41EC2c036f8a42DA384DDE6ADA79884F8b84b26",
+   "desc": "TIDAL is a decentralized discretionary mutual cover protocol that offers the DeFi community the ability to hedge against the failure of any DeFi proto",
+   "cname": "TidalTokenChild",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": true,
+   "surface": "settlement",
+   "hk": true
+  },
+  {
+   "name": "Auctus",
+   "slug": "auctus",
+   "cat": "Options",
+   "tvl": 23173,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0xc12d099be31567add4e4e4d0d45691c3f58f5663",
+   "desc": "Auctus brings on-chain options to the ecosystem.",
+   "cname": "AuctusToken",
+   "compiler": "v0.4.21+commit.dfe3193c",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "options_structured",
+   "hk": false
+  },
+  {
+   "name": "DSU Money",
+   "slug": "dsu-money",
+   "cat": "CDP",
+   "tvl": 21973,
+   "chains": [
+    "Ethereum",
+    "Arbitrum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x24aE124c4CC33D6791F8E8B63520ed7107ac8b3e",
+   "desc": "DSU is a trust-minimized, fully backed, & collateral-efficient stablecoin.",
+   "cname": "Stake",
+   "compiler": "v0.5.17+commit.d19bba13",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "synth_cdp_stable",
+   "hk": false
+  },
+  {
+   "name": "TrueFi",
+   "slug": "truefi",
+   "cat": "Uncollateralized Lending",
+   "tvl": 21740,
+   "chains": [
+    "Ethereum",
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x4c19596f5aaff459fa38b0f7ed92f11ae6543784",
+   "desc": "Earn high yields on stablecoin loans and borrow capital without collateral",
+   "cname": "TimeOwnedUpgradeabilityProxy",
+   "compiler": "v0.5.13+commit.5b0b510c",
+   "proxy": "1",
+   "impl": "0x095527f5bea113e9575b662c5ba01d990a280f2f",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "MacaronSwap",
+   "slug": "macaronswap",
+   "cat": "Dexs",
+   "tvl": 21166,
+   "chains": [
+    "Binance",
+    "Polygon"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "bsc:0xacb2d47827c9813ae26de80965845d80935afd0b",
+   "desc": "MacaronSwap is a DEX that allows users to be Liquidity Provider, Farming, Staking, Exchange, Bridge Assets across chains and more...",
+   "cname": "MacaronToken",
+   "compiler": "v0.6.12+commit.27d51765",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": false,
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Orion Money",
+   "slug": "orion-money",
+   "cat": "Yield",
+   "tvl": 20067,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0x727f064a78dc734d33eec18d5370aef32ffd46e4",
+   "desc": "Orion Money's vision is to become a cross-chain stablecoin bank providing seamless and frictionless stablecoin saving, lending, and spending.",
+   "cname": "OrionToken",
+   "compiler": "v0.8.7+commit.e28d00a7",
+   "proxy": "0",
+   "impl": "",
+   "era": "pre-AI",
+   "generic_read": false,
+   "hacked": true,
+   "surface": "yield_vault",
+   "hk": true
+  }
+ ],
+ "tier2": [
+  {
+   "name": "Summer.fi Pro",
+   "slug": "summer.fi-pro",
+   "cat": "CDP Manager",
+   "tvl": 17188771,
+   "chains": [
+    "Ethereum",
+    "Arbitrum",
+    "Optimism",
+    "Base"
+   ],
+   "dep": true,
+   "rev30d": 0,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "base:0x194f360d130f2393a5e9f3117a6a1b78abea1624",
+   "desc": "Borrow, Multiply and Earn on the assets you hold across multiple protocols. Take advantage of powerful automation strategies and simple UX.",
+   "surface": "synth_cdp_stable",
+   "hk": false
+  },
+  {
+   "name": "USDR",
+   "slug": "usdr",
+   "cat": "Stablecoin Wrapper",
+   "tvl": 4142567,
+   "chains": [
+    "RISE"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "USDR is a T-bill backed stablecoin built on top of the M^0 protocol.",
+   "surface": "synth_cdp_stable",
+   "hk": true
+  },
+  {
+   "name": "Presto",
+   "slug": "presto",
+   "cat": "Risk Curators",
+   "tvl": 3321496,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Presto is a risk curator on Morpho.",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Monetrix USDM",
+   "slug": "monetrix-usdm",
+   "cat": "Basis Trading",
+   "tvl": 2539741,
+   "chains": [
+    "Hyperliquid L1"
+   ],
+   "dep": false,
+   "rev30d": 3087.46,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Monetrix is the first fully on-chain funding-driven yield-bearing stable token, native to Hyperliquid",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "1212 Capital",
+   "slug": "1212-capital",
+   "cat": "Risk Curators",
+   "tvl": 2486890,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "1212 Capital is an investment firm specializing in DeFi and Stablecoin yield strategies. Founded by private banking professionals, the firm brings tra",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Cantex",
+   "slug": "cantex",
+   "cat": "Dexs",
+   "tvl": 2377174,
+   "chains": [
+    "Canton"
+   ],
+   "dep": false,
+   "rev30d": 9826.77,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Cantex is an institutional-grade on-chain exchange built on the Canton Network. Users swap Canton-native and bridged assets against AMM liquidity pool",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "friend.tech V1",
+   "slug": "friend.tech-v1",
+   "cat": "SoFi",
+   "tvl": 2308091,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": 0,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "base:0x0bd4887f7d41b35cd75dff9ffee2856106f86670",
+   "desc": "Your network is your net worth.",
+   "surface": "lending_credit",
+   "hk": true
+  },
+  {
+   "name": "Joe V2.2",
+   "slug": "joe-v2.2",
+   "cat": "Dexs",
+   "tvl": 2224498,
+   "chains": [
+    "Avalanche",
+    "Arbitrum",
+    "Monad"
+   ],
+   "dep": false,
+   "rev30d": 4185.73,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": "avax:0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd",
+   "desc": "LFJ Liquidity Book V2.2 gives Liquidity Providers control over liquidity ranges, offers real-time onchain incentives with reward ranges, and phases ou",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Levr Bet",
+   "slug": "levr-bet",
+   "cat": "Prediction Market",
+   "tvl": 1917731,
+   "chains": [
+    "Monad"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Prediction markets with 2x-5x leverage on single-game sports lines",
+   "surface": "settlement",
+   "hk": false
+  },
+  {
+   "name": "DeSyn Basis Trading",
+   "slug": "desyn-basis-trading",
+   "cat": "Basis Trading",
+   "tvl": 1717536,
+   "chains": [
+    "Bitlayer",
+    "Mode",
+    "CORE",
+    "AILayer",
+    "BSquared",
+    "Hemi",
+    "Binance",
+    "Goat",
+    "Plume Mainnet",
+    "Arbitrum",
+    "zkLink",
+    "Linea",
+    "Merlin",
+    "Scroll",
+    "exSat",
+    "HashKey Chain"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "DeSyn is a decentralized liquidity infrastructure on Web3, empowering investors, projects, and security companies to invest, build, and manage collabo",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Monetrix mxHYPE",
+   "slug": "monetrix-mxhype",
+   "cat": "Basis Trading",
+   "tvl": 1685786,
+   "chains": [
+    "Hyperliquid L1"
+   ],
+   "dep": false,
+   "rev30d": 254.92999999999998,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "HYPE-denominated yield vault on Hyperliquid. Deposited HYPE backs a borrowed-USDC delta-neutral overlay on Hyperliquid Core; yield is converted back t",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Mt Pelerin",
+   "slug": "mt-pelerin",
+   "cat": "Risk Curators",
+   "tvl": 1675081,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Mt Pelerin, active in self-custodial crypto-fiat exchange services.",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Zia",
+   "slug": "zia",
+   "cat": "Dexs",
+   "tvl": 1664411,
+   "chains": [
+    "0G"
+   ],
+   "dep": false,
+   "rev30d": 0,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Prompt to trade with Zia, a natural language DEX on 0G and Robinhood Chain",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "STRATO Bridge",
+   "slug": "strato-bridge",
+   "cat": "Bridge",
+   "tvl": 1470473,
+   "chains": [
+    "Ethereum",
+    "Base",
+    "Strato",
+    "Robinhood Chain",
+    "Linea"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Lock-and-mint bridge between STRATO and Ethereum, Base, Linea and Robinhood Chain. Assets escrowed on the source chain back 1:1 wrapped *ST tokens on ",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Architect",
+   "slug": "architect",
+   "cat": "Risk Curators",
+   "tvl": 1254795,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Architect is a regulated investment manager and technical curator that deploys institutional, long-horizon capital strategies through Morpho vaults.",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Bizantine Labs",
+   "slug": "bizantine-labs",
+   "cat": "Risk Curators",
+   "tvl": 1049861,
+   "chains": [
+    "Flare"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Bizantine Labs is the DeFi risk and curation arm of Bizantine Capital.",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "XOXNO Lending",
+   "slug": "xoxno-lending",
+   "cat": "Lending",
+   "tvl": 978434,
+   "chains": [
+    "Elrond",
+    "Stellar"
+   ],
+   "dep": false,
+   "rev30d": 1411.02,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": false,
+   "addr": "elrond:XOXNO-c1293a",
+   "desc": "XOXNO Stellar Lending is an overcollateralized lending protocol on Stellar",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Liberty Swap",
+   "slug": "liberty-swap",
+   "cat": "Dexs",
+   "tvl": 923904,
+   "chains": [
+    "Pulse"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Liberty Swap is a decentralized exchange ecosystem on PulseChain",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "BDEX V2",
+   "slug": "bdex-v2",
+   "cat": "Dexs",
+   "tvl": 858016,
+   "chains": [
+    "BOT Chain"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "BDEX V2 is an AMM on BOT Chain",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "SUN.io",
+   "slug": "sun.io",
+   "cat": "Dexs",
+   "tvl": 777399,
+   "chains": [
+    "Tron"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "tron:TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+   "desc": "First integrated platform for stablecoin swap, stake-mining, and self-governance on TRON",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "USX.Capital",
+   "slug": "usx.capital",
+   "cat": "Stablecoin Wrapper",
+   "tvl": 763669,
+   "chains": [
+    "Scroll"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "USX is a fully collateralized neodollar built by Scroll that combines TradFi and DeFi to deliver stable rewards",
+   "surface": "synth_cdp_stable",
+   "hk": false
+  },
+  {
+   "name": "AllBlue V2",
+   "slug": "allblue-v2",
+   "cat": "Dexs",
+   "tvl": 759726,
+   "chains": [
+    "Avalanche"
+   ],
+   "dep": false,
+   "rev30d": 123.95999999999998,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Allblue is a decentralized liquidity platform on Avalanche supporting both V2 and V3 (Trident) AMM models, offering multi-token farms and on-chain yie",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Krown DEX",
+   "slug": "krown-dex",
+   "cat": "Dexs",
+   "tvl": 659803,
+   "chains": [
+    "Krown Network"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Krown DEX is a concentrated-liquidity decentralized exchange on Krown Network",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "GOLDSTATION RWA",
+   "slug": "goldstation-rwa",
+   "cat": "RWA",
+   "tvl": 580036,
+   "chains": [
+    "Klaytn",
+    "Avalanche"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "GPC(Gold-Pegged coin) is 100% physical gold-based RWA issued on Kaia network",
+   "surface": "other",
+   "hk": false
+  },
+  {
+   "name": "Web3.world",
+   "slug": "web3.world",
+   "cat": "Dexs",
+   "tvl": 560205,
+   "chains": [
+    "Venom"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": "venom:0:a53178ec8c6fe0c62413edd9eed25508f357cfba8bf8a7dbfad9290413b2e6be",
+   "desc": "Web3.World is an Automated Market Maker, Yield Farming, and Staking platform developed on the Venom blockchain. It currently stands as the most versat",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "DACM",
+   "slug": "dacm",
+   "cat": "Risk Curators",
+   "tvl": 442886,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "DACM is an institutional digital asset fund manager.",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "EARN",
+   "slug": "earn",
+   "cat": "Liquidity Automation",
+   "tvl": 368205,
+   "chains": [
+    "Robinhood Chain"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": "robinhood:0xa3b6aee90017b72c0812dc1e013de70eb2917ba3",
+   "desc": "Yield vaults for tokenized stocks on Robinhood Chain. Deposit stock tokens and USDG into automated concentrated-liquidity strategies that earn swap fe",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "set.wtf",
+   "slug": "set.wtf",
+   "cat": "Yield",
+   "tvl": 320267,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "set.wtf is a USDT staking protocol offering 20.00% APY, compounded daily. Simply stake your USDT to start earning passive rewards - paid out daily and",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "TONCO V1",
+   "slug": "tonco-v1",
+   "cat": "Dexs",
+   "tvl": 307186,
+   "chains": [
+    "TON"
+   ],
+   "dep": false,
+   "rev30d": 344.02000000000004,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "The first DEX on TON with concentrated liquidity",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Umbrae",
+   "slug": "umbrae",
+   "cat": "Dexs",
+   "tvl": 159154,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": 145.74,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": "base:0x14a4e80d633aF55Ace1160c320f5a36D41CCEd3E",
+   "desc": "Umbrae is a DeFi trading platform on Base offering DLMM discrete-bin concentrated liquidity and DAMM dynamic-fee constant-product liquidity pools.",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "YBTC.B",
+   "slug": "ybtc.b",
+   "cat": "Anchor BTC",
+   "tvl": 147378,
+   "chains": [
+    "Bitlayer"
+   ],
+   "dep": false,
+   "rev30d": 0,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "YBTC.B is a wrapped version of Bitlayer's Native BTC, designed to function as a universal cross-chain liquidity standard across both EVM and non-EVM c",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Ruby.Exchange Yield",
+   "slug": "ruby.exchange-yield",
+   "cat": "Yield",
+   "tvl": 137564,
+   "chains": [
+    "Europa"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "skale:0x2b4e4899b53e8b7958c4591a6d02f9c0b5c50f8f",
+   "desc": "Yield Farm on Europa chain",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Thorn Protocol",
+   "slug": "thorn-protocol",
+   "cat": "Dexs",
+   "tvl": 53995,
+   "chains": [
+    "Sapphire"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Thorn Protocol is the pioneering Stableswap platform that offers private trading and cross-chain utility, all empowered by our AI Wallet.",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "cipher.rip",
+   "slug": "cipher.rip",
+   "cat": "SoFi",
+   "tvl": 50209,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": 8.469999999999999,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Social Finance project on Arbitrum",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "fan.fun",
+   "slug": "fan.fun",
+   "cat": "SoFi",
+   "tvl": 49566,
+   "chains": [
+    "Hyperliquid L1"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "fan.fun enables creators to monetize exclusive content and engage in social trading, all built on Hyperliquid",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Blastoff",
+   "slug": "blastoff",
+   "cat": "Farm",
+   "tvl": 47697,
+   "chains": [
+    "Blast"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": "blast:0xD55eDfc79c0d14084260D16f38BdA75e28AbFb6A",
+   "desc": "A Native Yield Based - LaunchPad and Yield Aggregator. Unlocking a new world of idle earnings.",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "GenesisLRT (Native Restaking)",
+   "slug": "genesislrt-(native-restaking)",
+   "cat": "Liquid Restaking",
+   "tvl": 47304,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Unveil a new era of staking with Genesis protocol. The restaking flow is as simple as 1,2,3: Deposit amount of ETH you want to restake. Receive genETH",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Euclid Protocol",
+   "slug": "euclid-protocol",
+   "cat": "Cross Chain Bridge",
+   "tvl": 47265,
+   "chains": [
+    "Polygon",
+    "Arbitrum",
+    "Binance",
+    "Ethereum",
+    "Base",
+    "Hyperliquid L1",
+    "Monad",
+    "0G",
+    "Optimism",
+    "Somnia"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Euclid Protocol is a cross-chain settlement infrastructure enabling unified liquidity, token swaps, and optimized routing across DeFi",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Hedgehog Markets",
+   "slug": "hedgehog-markets",
+   "cat": "Prediction Market",
+   "tvl": 46067,
+   "chains": [
+    "Solana",
+    "Eclipse"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Hedgehog Markets is the first Prediction Market market platform on Solana. They offer various markets types and markets that cover any and all topics",
+   "surface": "settlement",
+   "hk": false
+  },
+  {
+   "name": "time.fun",
+   "slug": "time.fun",
+   "cat": "SoFi",
+   "tvl": 45986,
+   "chains": [
+    "Base"
+   ],
+   "dep": true,
+   "rev30d": 0,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Tokenize your time, in minutes, and let fans trade & redeem time with you. Exclusively on Base. Earn ETH from trading fees & redemptions whenever peop",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Zino Finance",
+   "slug": "zino-finance",
+   "cat": "Yield Aggregator",
+   "tvl": 45385,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Zino Finance is the premier multichain DeFi hub for yield. Zino allows users to deposit capital which is then deployed by Zino across various differen",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "AYIN",
+   "slug": "ayin",
+   "cat": "Dexs",
+   "tvl": 44601,
+   "chains": [
+    "Alephium"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "alephium:vT49PY8ksoUL6NcXiZ1t2wAmC7tTPRfFfER8n3UCLvXy",
+   "desc": "Seamlessly swap Alephium native token pairs, earn, and explore our ecosystem. Enter app to explore the different options for trading, staking, utility",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "eesee",
+   "slug": "eesee",
+   "cat": "Prediction Market",
+   "tvl": 43409,
+   "chains": [
+    "Blast"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x908ddb096bfb3acb19e2280aad858186ea4935c4",
+   "desc": "Gamified liquidity solution and marketplace for digital assets, tokens and RWAs on Blast_L2",
+   "surface": "settlement",
+   "hk": false
+  },
+  {
+   "name": "Credit Guild",
+   "slug": "credit-guild",
+   "cat": "Lending",
+   "tvl": 42454,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "The Credit Guild is a protocol for trust minimized pooled lending",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "CobaltX",
+   "slug": "cobaltx",
+   "cat": "Dexs",
+   "tvl": 41812,
+   "chains": [
+    "Soon Network",
+    "svmBNB",
+    "soonBase"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "A Concentrated Liquidity AMM, Building DeFi Ecosystem on Soon Network",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "CookieBase Farm",
+   "slug": "cookiebase-farm",
+   "cat": "Farm",
+   "tvl": 39681,
+   "chains": [
+    "Base"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "base:0x614747C53CB1636b4b962E15e1D66D3214621100",
+   "desc": "Sweeten your DeFi journey with CookieBase! Embrace creamy yields and crumbly rewards on Base Blockchain.",
+   "surface": "yield_vault",
+   "hk": true
+  },
+  {
+   "name": "Covenant",
+   "slug": "covenant",
+   "cat": "Lending",
+   "tvl": 39647,
+   "chains": [
+    "Monad"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Covenant is a tranching layer on Monad that converts any tokenized asset intofully-backed leverage and yield markets. Each market mints two synthetict",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Jasper Vault",
+   "slug": "jasper-vault",
+   "cat": "Options",
+   "tvl": 39387,
+   "chains": [
+    "Arbitrum",
+    "Bitlayer",
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Jasper Vault is a peer-to-peer interoperable options protocol. Jasper Vault's mission is to revolutionize the decentralised finance (DeFi) options spa",
+   "surface": "options_structured",
+   "hk": false
+  },
+  {
+   "name": "GoodEntry",
+   "slug": "goodentry",
+   "cat": "Derivatives",
+   "tvl": 39055,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Good Entry is an onchain derivative exchange enabling leveraged day trading with built-in downside protection, built on top of Uniswap v3. Liquidity p",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "NOME Protocol",
+   "slug": "nome-protocol",
+   "cat": "Algo-Stables",
+   "tvl": 39052,
+   "chains": [
+    "Berachain"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": false,
+   "addr": "berachain:0xfaf4c16847bd0ebac546c49a9c9c6b81abd4b08c",
+   "desc": "Synthetic algostable",
+   "surface": "synth_cdp_stable",
+   "hk": false
+  },
+  {
+   "name": "exit.tech",
+   "slug": "exit.tech",
+   "cat": "Liquidity Manager",
+   "tvl": 38856,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "A platform that lets you easily exit your locked DeFi positions, while still earning rewards, and rewards those that support your move.",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "AshPerp",
+   "slug": "ashperp",
+   "cat": "Derivatives",
+   "tvl": 38114,
+   "chains": [
+    "Elrond"
+   ],
+   "dep": false,
+   "rev30d": 4771.071428571428,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "A Decentralized Perpetual Trading Protocol on MultiversX",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Multiplier",
+   "slug": "multiplier",
+   "cat": "Lending",
+   "tvl": 38057,
+   "chains": [
+    "Binance",
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x8a6f3BF52A26a21531514E23016eEAe8Ba7e7018",
+   "desc": "Multiplier is an algorithmic money market system designed to bring secure and unique lending and borrowing opportunities like flash loans onto the Bin",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Saturn Swap",
+   "slug": "saturn-swap",
+   "cat": "Dexs",
+   "tvl": 37815,
+   "chains": [
+    "Cardano"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": "cardano:0xecbe846aa1a535579d67f9480fa6173b64d7e239df0460eba36e3ad0",
+   "desc": "Saturn Swap is a no batcher order book DEX on Cardano. Saturn Swap is the fastest DEX on the chain by several multiples due to batcher removal allowin",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "O.LAB",
+   "slug": "o.lab",
+   "cat": "Prediction Market",
+   "tvl": 37593,
+   "chains": [
+    "Base"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "The World's Opinion Protocol, enabling anyone to create predictions using any token in a decentralized, permissionless way. The O.LAB product suite em",
+   "surface": "settlement",
+   "hk": false
+  },
+  {
+   "name": "DYAD",
+   "slug": "dyad",
+   "cat": "CDP",
+   "tvl": 35560,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "DYAD is a stablecoin optimized for unit economics, leveraging shared collateral pools and DYAD NFTs (dNFTs) that compete for the lowest mint cost",
+   "surface": "synth_cdp_stable",
+   "hk": false
+  },
+  {
+   "name": "JediSwap V2",
+   "slug": "jediswap-v2",
+   "cat": "Dexs",
+   "tvl": 35244,
+   "chains": [
+    "Starknet"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "A community-led fully permissionless and composable AMM on Starknet by StarkWareLtd.",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "FIVA",
+   "slug": "fiva",
+   "cat": "Yield",
+   "tvl": 34298,
+   "chains": [
+    "TON"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "FIVA is a yield optimization protocol on TON that enables users to lock in guaranteed fixed yields, farm future airdrops with up to 100x leverage, and",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Hyperlynx V3",
+   "slug": "hyperlynx-v3",
+   "cat": "Dexs",
+   "tvl": 34297,
+   "chains": [
+    "Hyperliquid L1"
+   ],
+   "dep": false,
+   "rev30d": 233.45,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Hyperlynx V3 is a HyperEVM DEX for trading HYPE, liquid-staked HYPE, and tokenized stocks, with both concentrated and standard liquidity pools",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Derivio",
+   "slug": "derivio",
+   "cat": "Derivatives",
+   "tvl": 34064,
+   "chains": [
+    "zkSync Era"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Institutional-grade decentralized derivatives ecosystem. Permissionlessly trade, earn, and compose.",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "BaseVol",
+   "slug": "basevol",
+   "cat": "Options",
+   "tvl": 33646,
+   "chains": [
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": false,
+   "addr": "base:0xE095B8127823708dC07E739ef4149050aCC836E7",
+   "desc": "BaseVol is building the onchain options stack for everyone, from zero-day options trading to vaults",
+   "surface": "options_structured",
+   "hk": false
+  },
+  {
+   "name": "Phera DEX",
+   "slug": "phera-dex",
+   "cat": "Dexs",
+   "tvl": 33558,
+   "chains": [
+    "Robinhood Chain"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": true,
+   "addr": "robinhood:0x9D4A92aA4Cd18C75316070bf60c34de1CAB99999",
+   "desc": "PheraDEX is a concentrated-liquidity (CLMM) DEX and token launchpad on Robinhood Chain.",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Onchain Trade",
+   "slug": "onchain-trade",
+   "cat": "Derivatives",
+   "tvl": 33056,
+   "chains": [
+    "zkSync Era",
+    "Base"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": "era:0xD0eA21ba66B67bE636De1EC4bd9696EB8C61e9AA",
+   "desc": "Onchain Trade(OT) is a vertically integrated DeFi protocol where people can provide liquidity, swap, borrow and trading perpetuals with 0 slippage. OT",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Hyperlock Finance",
+   "slug": "hyperlock-finance",
+   "cat": "Yield",
+   "tvl": 32108,
+   "chains": [
+    "Blast"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Yield & metagovernance protocol built on ThrusterFi and optimized for Blast",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Astarter AMM",
+   "slug": "astarter-amm",
+   "cat": "Dexs",
+   "tvl": 31622,
+   "chains": [
+    "Cardano"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Astarter is a key DeFi infrastructure hub on Cardano that features four core applications: Launchpad(Launchpool), DEX, Money Market & Tech Service Pla",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Button Wrappers",
+   "slug": "button-wrappers",
+   "cat": "CDP",
+   "tvl": 31610,
+   "chains": [
+    "Base",
+    "Ethereum",
+    "Avalanche",
+    "Arbitrum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Easily segment your crypto assets into senior and junior tranches to use across DeFi.",
+   "surface": "synth_cdp_stable",
+   "hk": false
+  },
+  {
+   "name": "Gasp",
+   "slug": "gasp",
+   "cat": "Cross Chain Bridge",
+   "tvl": 31483,
+   "chains": [
+    "Ethereum",
+    "Base",
+    "Arbitrum"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x736ecc5237b31edec6f1ab9a396fae2416b1d96e",
+   "desc": "Gasp is a cross-chain DEX and protocol designed for exchanging crypto assets between blockchains, such as Ethereum L2s and rollups, Solana, Bitcoin, R",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Ulysses",
+   "slug": "ulysses",
+   "cat": "Bridge",
+   "tvl": 31087,
+   "chains": [
+    "Ethereum",
+    "Metis",
+    "Optimism",
+    "Binance",
+    "Base",
+    "Avalanche",
+    "Sonic",
+    "Arbitrum",
+    "Berachain",
+    "Swellchain",
+    "Fraxtal",
+    "Polygon"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Ulysses Protocol is a decentralized and permissionless 'Omnichain Liquidity Protocol' owned by the community. It's innovative solution is designed to ",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Zeno Exchange",
+   "slug": "zeno-exchange",
+   "cat": "Derivatives",
+   "tvl": 30287,
+   "chains": [
+    "Metis"
+   ],
+   "dep": true,
+   "rev30d": 0,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Premier Decentralized Perpetual Exchange With Cross-Margin, Multi-Asset Collateral, and Gasless Trading on MetisL2.",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Bloom Trading",
+   "slug": "bloom-trading",
+   "cat": "Derivatives",
+   "tvl": 30053,
+   "chains": [
+    "Blast"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Bloom is a fully decentralized leverage trading and market-making platform utilizing Blast's native yield and offers up to 50x leverage on crypto asse",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Alterscope",
+   "slug": "alterscope",
+   "cat": "Risk Curators",
+   "tvl": 29850,
+   "chains": [
+    "Base",
+    "Ethereum",
+    "Starknet"
+   ],
+   "dep": false,
+   "rev30d": 0.05,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Alterscope is a permissionless platform for creating, deploying and managing verified, autonomous risk agents. By leveraging zero-knowledge proofs and",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "HeLa Bridge",
+   "slug": "hela-bridge",
+   "cat": "Bridge",
+   "tvl": 29476,
+   "chains": [
+    "HeLa",
+    "Polygon",
+    "Ethereum",
+    "Binance"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Opening a New Era of Modular Layer 1 Blockchain for AI.",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Numoen",
+   "slug": "numoen",
+   "cat": "Derivatives",
+   "tvl": 29011,
+   "chains": [
+    "Arbitrum",
+    "Polygon",
+    "Celo"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Numoen is an application for interacting with the Power Market Maker Protocol (PMMP). Deployed as a set of smart contracts on the blockchain, PMMP is ",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Nemo Vault",
+   "slug": "nemo-vault",
+   "cat": "Yield Aggregator",
+   "tvl": 28827,
+   "chains": [
+    "Sui"
+   ],
+   "dep": false,
+   "rev30d": 11801.666666666668,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Nemo Vaults lower the barrier to entry for users in DeFi, offering advanced asset management tools through smart rebalancing and auto-compounding",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "zLot",
+   "slug": "zlot",
+   "cat": "Liquid Staking",
+   "tvl": 28754,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "The first staking protocol built upon Hegic.",
+   "surface": "other",
+   "hk": false
+  },
+  {
+   "name": "Morpho Optimizer AaveV3",
+   "slug": "morpho-optimizer-aavev3",
+   "cat": "Lending",
+   "tvl": 27980,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0x58D97B57BB95320F9a05dC918Aef65434969c2B2",
+   "desc": "Morpho's AaveV3-ETH Optimizer allows WETH-only transactions in ETH efficiency mode. It offers high-leverage WETH borrowing using stETH, USDC, WBTC, an",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Tristero Margin",
+   "slug": "tristero-margin",
+   "cat": "Derivatives",
+   "tvl": 27952,
+   "chains": [
+    "Ethereum",
+    "Arbitrum",
+    "Base"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Tristero Margin is a margin trading platform that allows users to trade with leverage.",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Tonic",
+   "slug": "tonic",
+   "cat": "Dexs",
+   "tvl": 26665,
+   "chains": [
+    "Near"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Tonic is an open source, decentralized limit order book and perps exchange built on NEAR",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Lorenzo stBTC",
+   "slug": "lorenzo-stbtc",
+   "cat": "Restaked BTC",
+   "tvl": 26250,
+   "chains": [
+    "Bitcoin"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": "bsc:0x3aee7602b612de36088f3ffed8c8f10e86ebf2bf",
+   "desc": "Lorenzo is the Bitcoin Liquidity Finance Layer, creates an efficient market in which Bitcoin holders can easily find the best opportunities to invest ",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Agility LSD",
+   "slug": "agility-lsd",
+   "cat": "Indexes",
+   "tvl": 26169,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0x5f18ea482ad5cc6bc65803817c99f477043dce85",
+   "desc": "LSD Liquidity Layer & LSD Trading Platform.",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "stake.link index",
+   "slug": "stake.link-index",
+   "cat": "Indexes",
+   "tvl": 25650,
+   "chains": [
+    "Ethereum"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "0xa95c5ebb86e0de73b4fb8c47a45b792cfea28c23",
+   "desc": "Earn blended returns on the top LSDs available today.",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "TON Hedge",
+   "slug": "ton-hedge",
+   "cat": "Options",
+   "tvl": 25346,
+   "chains": [
+    "TON"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Options trading protocol on ton_blockchain",
+   "surface": "options_structured",
+   "hk": false
+  },
+  {
+   "name": "Bitparty",
+   "slug": "bitparty",
+   "cat": "Farm",
+   "tvl": 24839,
+   "chains": [
+    "Bitlayer"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "BitParty is the first Asset Gamified Community Network in the BTC ecosystem.",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Rubin Trade",
+   "slug": "rubin-trade",
+   "cat": "Derivatives",
+   "tvl": 24632,
+   "chains": [
+    "Arbitrum",
+    "Ethereum",
+    "Polygon"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2026,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Rubin is a self-custody decentralized perpetual & spot exchange",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Roots",
+   "slug": "roots",
+   "cat": "CDP",
+   "tvl": 24427,
+   "chains": [
+    "Berachain"
+   ],
+   "dep": true,
+   "rev30d": 0,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": false,
+   "addr": "berachain:0xedb5180661f56077292c92ab40b1ac57a279a396",
+   "desc": "Collateralize Berachain LP tokens, Mint MEAD stablecoin, retain all your BGT faming upside",
+   "surface": "synth_cdp_stable",
+   "hk": false
+  },
+  {
+   "name": "BasisOS",
+   "slug": "basisos",
+   "cat": "Basis Trading",
+   "tvl": 23776,
+   "chains": [
+    "Arbitrum"
+   ],
+   "dep": true,
+   "rev30d": 73.91000000000001,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": "base:0x73Cb479f2ccf77BAd90BcDA91e3987358437240A",
+   "desc": "BasisOS Agent is an autonomous AI system built to manage DeFi protocols, executing trading strategies, managing risk, and optimizing operations throug",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Sirio Finance",
+   "slug": "sirio-finance",
+   "cat": "Lending",
+   "tvl": 23287,
+   "chains": [
+    "Hedera"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "The DeFAI Lending & Borrowing Layer of hedera",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "Bountive",
+   "slug": "bountive",
+   "cat": "Yield",
+   "tvl": 23107,
+   "chains": [
+    "Starknet"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Bountive is the first decentralized prize savings protocol on Starknet, empowering users with no-risk prize games",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Superp",
+   "slug": "superp",
+   "cat": "Derivatives",
+   "tvl": 22745,
+   "chains": [
+    "Binance"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": false,
+   "addr": "bsc:0x19ed254efa5e061d28d84650891a3db2a9940c16",
+   "desc": "Superp(formerly Vanilla Finance) is a perp DEX for any meme, up to 10,000x leverage.",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "Umbra",
+   "slug": "umbra",
+   "cat": "Dexs",
+   "tvl": 22424,
+   "chains": [
+    "Eclipse"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2025,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Dexs on Eclipse Chain",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Chakra",
+   "slug": "chakra",
+   "cat": "Restaked BTC",
+   "tvl": 22235,
+   "chains": [
+    "Bitcoin"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Chakra Network is an innovative blockchain platform designed to overcome the limitations of existing cross-chain solutions by providing a secure, effi",
+   "surface": "bridge_wrap",
+   "hk": false
+  },
+  {
+   "name": "Coffin.Meme",
+   "slug": "coffin.meme",
+   "cat": "Derivatives",
+   "tvl": 22081,
+   "chains": [
+    "TON"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Coffin.Meme is a DeFi Platform powered by EVAA Lending Smart contracts to short-sell memecoins and earn money",
+   "surface": "derivatives_basis",
+   "hk": false
+  },
+  {
+   "name": "MSwap",
+   "slug": "mswap",
+   "cat": "Dexs",
+   "tvl": 22034,
+   "chains": [
+    "Matchain"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "MSwap is a UniswapV2 fork deployed on Matchain",
+   "surface": "amm_dex",
+   "hk": false
+  },
+  {
+   "name": "Wand Protocol",
+   "slug": "wand-protocol",
+   "cat": "CDP",
+   "tvl": 21864,
+   "chains": [
+    "Blast",
+    "Story"
+   ],
+   "dep": false,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": false,
+   "addr": null,
+   "desc": "Wand protocol offers stablecoins for low-risk stability and margin tokens for higher volatility, catering to diverse investment strategies through sta",
+   "surface": "synth_cdp_stable",
+   "hk": false
+  },
+  {
+   "name": "BlastUp",
+   "slug": "blastup",
+   "cat": "Farm",
+   "tvl": 21806,
+   "chains": [
+    "Blast"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2024,
+   "preai": false,
+   "new_surface": true,
+   "addr": "blast:0x59c159e5a4f4d1c86f7abdc94b7907b7473477f6",
+   "desc": "BlastUP is an innovative launchpad platform for early-stage projects within the Blast ecosystem.",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "StakeSteak",
+   "slug": "stakesteak",
+   "cat": "Yield",
+   "tvl": 21027,
+   "chains": [
+    "Fantom"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "fantom:0x05848B832E872d9eDd84AC5718D58f21fD9c9649",
+   "desc": "The first Fantom-native, interest-bearing Stable Coin: iFUSD",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "StakedICP",
+   "slug": "stakedicp",
+   "cat": "Liquid Staking",
+   "tvl": 20677,
+   "chains": [
+    "ICP"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "StakedICP is a non-custodial liquid staking protocol built on the Internet Computer.",
+   "surface": "other",
+   "hk": false
+  },
+  {
+   "name": "Gaj Finance",
+   "slug": "gaj-finance",
+   "cat": "Yield",
+   "tvl": 20544,
+   "chains": [
+    "Avalanche",
+    "Polygon"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": null,
+   "preai": false,
+   "new_surface": true,
+   "addr": "polygon:0xf4b0903774532aee5ee567c02aab681a81539e92",
+   "desc": "Gaj, previously known as PolyGaj, is a multichain platform covering the two most promising subsects of cryptocurrency namely DeFi and NFT.",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Struct Finance",
+   "slug": "struct-finance",
+   "cat": "Yield",
+   "tvl": 20355,
+   "chains": [
+    "Avalanche"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": null,
+   "desc": "Struct Finance is a DeFi protocol offering structured financial products, Interest Rate Vaults, and tranching mechanisms, facilitating predictable and",
+   "surface": "yield_vault",
+   "hk": false
+  },
+  {
+   "name": "Umee",
+   "slug": "umee",
+   "cat": "Lending",
+   "tvl": 20112,
+   "chains": [
+    "Ethereum",
+    "Umee"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": false,
+   "addr": "0xc0a4df35568f116c370e6a6a6022ceb908eeddac",
+   "desc": "The most programmable, safety-first, autonomous lending algorithm built as a blockchain. Umee is reshaping the global debt markets in Web3.",
+   "surface": "lending_credit",
+   "hk": false
+  },
+  {
+   "name": "TronNRG",
+   "slug": "tronnrg",
+   "cat": "Staking Pool",
+   "tvl": 20072,
+   "chains": [
+    "Tron"
+   ],
+   "dep": true,
+   "rev30d": null,
+   "yr": 2023,
+   "preai": false,
+   "new_surface": true,
+   "addr": "tron:TH9PgthUFmDfL9Ajiso2LBeT2XGm7mLhts",
+   "desc": "TronNRG is a decentralized energy rental system on the Tron blockchain. Users can provide or rent energy in a secure and transparent way. With a 70% r",
+   "surface": "other",
+   "hk": false
+  }
+ ]
+}
